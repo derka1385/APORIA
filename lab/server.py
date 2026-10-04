@@ -19,6 +19,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 import engine
+import ltm
 import metrics
 from profiles import TARGETS, policy
 
@@ -49,6 +50,7 @@ class Job:
 
 
 JOBS: dict[str, Job] = {}
+LATEST: list[str] = []  # job ids in start order; /api/live follows the newest
 
 
 def chat_models() -> list[str]:
@@ -84,13 +86,19 @@ def run_experiment(job: Job, question: str, condition: str, delta: float, seed: 
             job.emit({"type": "error", "agent": name, "msg": str(ex), **tag})
             r.s.conclusion = r.s.conclusion or {"position": r.s.hypothesis, "stance": "qualified", "credence": 0.5,
                                                 "key_reasons": [], "open_objection": "", "error": str(ex)}
-        return name, r.s.snapshot()
+        return name, r
 
     with ThreadPoolExecutor(len(PROFILES)) as ex:
-        agents = dict(ex.map(go, enumerate(PROFILES)))
+        reasoners = dict(ex.map(go, enumerate(PROFILES)))
+    agents = {n: r.s.snapshot() for n, r in reasoners.items()}
     m = metrics.compute(agents)
     job.emit({"type": "metrics", "metrics": m, **cfg})
     rid = time.strftime("%Y%m%d-%H%M%S") + f"-{condition}-{delta:.1f}"
+    for r in reasoners.values():  # what this session learned outlives it
+        try:
+            ltm.write(r.memories(rid))
+        except Exception:
+            traceback.print_exc()
     (RUNS / f"{rid}.json").write_text(json.dumps({"id": rid, **cfg, "agents": agents, "metrics": m}, indent=1))
     return m
 
@@ -103,6 +111,7 @@ def start(body: dict) -> str:
     deltas = [max(0.0, min(1.0, float(d))) for d in deltas][:6]
     jid, job = uuid.uuid4().hex[:8], Job()
     JOBS[jid] = job
+    LATEST.append(jid)
 
     def worker():
         try:
@@ -127,6 +136,7 @@ class Handler(SimpleHTTPRequestHandler):
 
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")  # a local lab: always serve the current files
+        self.send_header("Access-Control-Allow-Origin", "*")  # the visual engine runs on another localhost port
         super().end_headers()
 
     def send_json(self, obj, code=200):
@@ -146,6 +156,10 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/api/events/"):
             return self.stream(self.path.rsplit("/", 1)[1])
+        if self.path == "/api/live":
+            return self.live()
+        if self.path == "/api/memory":
+            return self.send_json(ltm.stats())
         if self.path == "/api/models":
             return self.send_json({"default": engine.MODEL, "available": chat_models(), "profiles": PROFILES})
         if self.path == "/api/runs":
@@ -160,14 +174,37 @@ class Handler(SimpleHTTPRequestHandler):
             return self.send_json(json.loads(f.read_text())) if f.exists() else self.send_error(404)
         return super().do_GET()
 
-    def stream(self, jid: str):
+    def live(self):
+        """Follow whatever job is newest, switching when a new one starts (for the visual engine)."""
+        self.sse_headers()
+        while True:
+            while not LATEST:
+                time.sleep(1)
+                if not self.write(": waiting\n\n"):
+                    return
+            jid = LATEST[-1]
+            if not self.stream(jid, headers=False, until_newer=True):
+                return
+
+    def sse_headers(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.end_headers()
+
+    def write(self, payload: str) -> bool:
+        try:
+            self.wfile.write(payload.encode())
+            self.wfile.flush()
+            return True
+        except (BrokenPipeError, ConnectionResetError):
+            return False
+
+    def stream(self, jid: str, headers=True, until_newer=False):
         job = JOBS.get(jid)
         if not job:
             return self.send_error(404)
-        self.send_response(200)
-        self.send_header("Content-Type", "text/event-stream")
-        self.send_header("Cache-Control", "no-cache")
-        self.end_headers()
+        if headers:
+            self.sse_headers()
         i = 0
         try:
             while True:
@@ -178,13 +215,21 @@ class Handler(SimpleHTTPRequestHandler):
                             break  # heartbeat
                     batch, done = job.events[i:], job.done
                 i += len(batch)
-                payload = "".join(f"data: {json.dumps(e)}\n\n" for e in batch) or ": ping\n\n"
-                self.wfile.write(payload.encode())
-                self.wfile.flush()
+                payload = "".join(f"data: {json.dumps({**e, 'job': jid})}\n\n" for e in batch) or ": ping\n\n"
+                if not self.write(payload):
+                    return False
+                if until_newer and LATEST[-1] != jid:
+                    return True
                 if done and i >= len(job.events):
-                    return
+                    if not until_newer:
+                        return True
+                    while LATEST[-1] == jid:  # idle until the next job starts
+                        time.sleep(1)
+                        if not self.write(": idle\n\n"):
+                            return False
+                    return True
         except (BrokenPipeError, ConnectionResetError):
-            return
+            return False
 
 
 if __name__ == "__main__":

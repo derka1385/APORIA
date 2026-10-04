@@ -1,138 +1,132 @@
-# APORIA: architecture
+# APORIA lab: architecture
 
-Research question: can artificially differentiated cognitive architectures built
-around one LLM produce meaningfully different reasoning trajectories and
-conclusions from the same philosophical question?
+Research questions:
+
+1. Can artificially differentiated cognitive architectures built around one LLM
+   produce meaningfully different reasoning trajectories and conclusions from
+   the same philosophical question?
+2. Can explicit cognitive functions, dynamically orchestrated around an LLM,
+   produce more adaptive, diverse and useful philosophical reasoning than a
+   single-pass LLM?
 
 ## Environment (inspected 2026-10-04)
 
-- Apple M4, 16 GB, macOS. Python 3.14, Node 26, Ollama 0.35 (server running).
-- Model: `qwen2.5:3b` via Ollama (fits easily, ~3-6 s per JSON step).
-  Embeddings: `nomic-embed-text` via Ollama, bag-of-words fallback.
-- No external API keys are used. Everything runs on localhost.
+- Apple M4, 16 GB, macOS. Python 3.14 (stdlib only), Ollama 0.35.
+- Reasoning model `qwen2.5:3b` (~2-4 s per JSON step). Embeddings
+  `nomic-embed-text`, with a bag-of-words fallback. Model-condition variants:
+  `qwen2.5:3b-instruct-q8_0`, `qwen2.5:3b-instruct-q2_K`, `qwen2.5:1.5b`, `llama3.2:3b`.
+- No API keys. Everything runs on localhost.
 
 ## LobBot, what it actually does
 
 `~/Coding/lobbot-repo` (github.com/OliverVillson/LobBot) compresses a 30B
 mixture-of-experts teacher (Qwen3-30B-A3B) into a ~6.5 GB task model:
+`data` (teacher writes ~2k task examples, vLLM) → `reap` (REAP expert pruning:
+experts scored by router weight × output norm on the task data, least used 50%
+removed per layer) → `heal` (LoRA distillation on teacher answers) →
+`quantize` (per-layer bit widths from layer importance and imatrix energy) →
+`eval` / `package` (judge vs teacher, GGUF + Ollama Modelfile).
 
-1. `data`: the teacher writes ~2k examples for one task (vLLM).
-2. `reap`: REAP expert pruning. Each expert is scored by router weight x
-   output norm on the task data; the least used 50% are removed per layer.
-3. `heal`: LoRA distillation of the pruned model on teacher answers.
-4. `quantize`: per-layer bit widths from layer importance + imatrix energy.
-5. `eval` / `package`: judge vs teacher, emit GGUF + Ollama Modelfile.
+It specialises a model *for a task* by removing what the task does not route
+through. That is a real structural change, but it optimises fidelity to one
+task distribution; it does not by itself create a cognitive personality. It
+needs a CUDA GPU VM (vLLM, TRL, ~60 GB weights), so it cannot run on this Mac.
 
-So LobBot specialises a model *for a task*, by removing what the task does not
-route through. That is a real structural modification, but it optimises
-fidelity to one task distribution; it does not by itself create a "cognitive
-personality". It also needs a CUDA GPU VM (vLLM, TRL, ~60 GB weights), so it
-cannot run on this Mac.
+The honest version of "compression as cognitive differentiation" would
+calibrate REAP on *different reasoning corpora* (counterexample generation,
+formal derivation, analogy) so each pruned model keeps different experts.
+That is a GPU-VM experiment and is not done here. Locally, the `model`
+condition uses quantization levels (q8 / q4 / q2 of the same model), a smaller
+size and a different family through Ollama.
 
-How it could create differentiated reasoners (experimental, not done here):
-calibrate REAP on *different* reasoning corpora (counterexample generation,
-formal derivation, analogy) so each pruned model keeps different experts, then
-run each profile on its own pruned model. That is the honest version of
-"compression as cognitive differentiation", and it is a GPU-VM job.
+## Component map
 
-What is feasible locally today as the model-level condition: the same base
-model at different quantization levels (q2/q4/q8 tags lose different
-precision), and different small model families. The `model` condition uses
-whatever variants are pulled in Ollama.
+| Layer | v1 | v2 (now) | Where |
+|---|---|---|---|
+| Structured state | scalars + tree | scalars + typed graph + experiments + learned values | `engine.State` |
+| Argument / world model | parent links only | typed nodes (hypothesis, premise, assumption, evidence, objection, counterexample, counterfactual, contradiction, response, question, alternative, thought_experiment) and typed edges (supports, attacks, depends_on, tests, refines, derived_from, analogous_to, responds_to) | `State.add`, `Reasoner.new` |
+| Controller | state drives × policy | state drives + metacognitive signals, × policy weight × learned multiplier, softmax(policy temperature) | `Reasoner.choose` |
+| Metacognition | none (scalars only) | per-claim assessment from the graph: evidence strength, attackers, unresolved tests, weakest assumption, source quality, formal status. Rules turn it into signals that push specific ops at specific nodes | `assess`, `metacognition` |
+| Curiosity | per-node number set by intuition | expected information value: uncertainty × importance (depth, dependents) × missing evidence × novelty × contradiction × learned branch yield × intuition | `curiosity`, `pick_focus` |
+| Attention | weighted node score | softmax over curiosity with the policy's explore temperature (0 = exploit) | `pick_focus` |
+| Tool use | literature only, implicit | explicit tool layer with per-policy access: literature_search, memory_search, similarity, graph_query, logic_check (truth-table validity + countermodel), theorem_prover (interface, propositional fallback), calculator. `formalize` = LLM translates, the truth table decides | `tools.py`, `op_formalize` |
+| Counterfactual reasoning | none | dedicated op choosing a mode from state: decisive assumption (when the target is an assumption), failure world (when the target is confident), minimal change, opposite conditions. Each output becomes an experiment | `op_counterfactual` |
+| Adversarial experiments | conflicts | every objection, counterexample, counterfactual, formal countermodel and recalled objection is an experiment; `adjudicate` runs the most informative pending one and records the outcome and information gain | `experiment`, `op_adjudicate` |
+| Learning within a session | none | information gain per step updates an EMA value per op (routing), dead-end branches lose yield (attention), hypotheses resembling rejected ones start with a lower prior, recurring assumptions gain load instead of duplicating | `learn`, `op_revise`, `new` |
+| Long-term memory | none | SQLite `memory.db`: hypotheses (survived / rejected), objections (defeated / failed), assumptions (recurrence), counterfactuals, unresolved questions, trajectories, question outcomes. Recalled by embedding similarity: shifts the prior of a hypothesis seen before, brings back objections that defeated similar claims as live experiments, revives unresolved questions, lowers node novelty | `ltm.py`, `recall_start`, `op_memory`, `memories` |
+| Decide next question | none | `inquire` poses the sub-question most likely to move confidence, then answers it later | `op_inquire` |
+| Cognitive diversity | Δ-scaled policy vectors | same, plus explore temperature, learning rate, long-term memory access and tool access | `profiles.py` |
+| Measurement | Δ metrics | + per-reasoner process: hypotheses, rejected / surviving, experiments, resolution rate, defeats, novelty, information gain per step, tool calls, recalls, compute allocation by function | `metrics.py` |
+| Visual connection | state-driven nebula | + `cog` event stream (STREAM.md) for any visual client | `server.py /api/live` |
 
-## Design
+## The loop
 
 ```
-question ─► 5 reasoners (same engine, different policy vectors) ─► metrics
-              │
-              ▼
-       ┌─ controller ◄──────────── shared cognitive state ──┐
-       │  scores every operation from the state + policy    │
-       │  softmax(policy temperature) picks op, attention    │
-       │  picks the focus node                               │
-       ▼                                                     │
-   operation (one LLM call, JSON out) ── updates state ──────┘
+          ┌──────────── metacognition reads the graph ───────────┐
+          │  "confident but weakly supported" → doubt            │
+          │  "rests on a weak assumption"     → counterfactual   │
+          │  "unresolved contradiction"       → adjudicate       │
+          │  "assumptions unexamined"         → introspect       │
+          │  "never tested counterfactually"  → counterfactual   │
+          │  "not formally checked"           → formalize (tool) │
+          │  "stagnating"                     → imagine / revise │
+          ▼                                                      │
+ controller: drive(op) = (state drive + signals) × policy weight × learned value
+          ▼                                                      │
+ attention: branch ~ softmax(curiosity / explore)               │
+          ▼                                                      │
+ operation (LLM call and/or tool) edits graph, opens or resolves experiments
+          ▼                                                      │
+ learning: information gain → op value, branch yield ────────────┘
 ```
 
-### Cognitive state (per reasoner, `engine.py: State`)
+At the end of a run every reasoner writes what it learned to long-term memory,
+so the next session on a related question starts from it.
 
-`hypothesis`, an argument graph of typed nodes (claim, premise, assumption,
-objection, counterexample, thought_experiment, alternative, evidence), each
-with status (open / supported / rejected / stable) and confidence; scalars
-`confidence`, `uncertainty`, `novelty`, `surprise`; `curiosity` per node;
-`conflicts` (unresolved contradictions); full op history and time series.
-
-### Operations (cognitive functions)
-
-| op | question | state effect |
-|---|---|---|
-| memory | what already exists? | retrieves literature entries (k by policy), adds evidence, lowers novelty |
-| reason | does this follow? | verifies focus node: supported / rejected; moves confidence |
-| imagine | alternative / thought experiment? | adds branches (count = branch factor), raises novelty |
-| intuit | promising direction before verification? | sets curiosity on nodes |
-| introspect | what does my conclusion depend on? | adds hidden assumptions, raises uncertainty |
-| doubt | how could this be wrong? | adds objections / counterexamples, opens conflicts |
-| adjudicate | does the objection survive? | resolves a conflict; surviving objection raises surprise, lowers confidence, may reject the hypothesis |
-| revise | update the hypothesis | rewrites the hypothesis from surviving material |
-| conclude | final position | stance + credence; ends the run |
-
-Attention is the focus choice; curiosity is the per-node value attention uses;
-decision is the controller's op choice. They are code, not LLM calls.
-
-### Controller (`engine.py: Controller`)
-
-Each op gets a drive computed from state, multiplied by the policy weight:
-verify ∝ uncertainty, memory ∝ novelty·(1−confidence), doubt ∝
-confidence·adversarial pressure, adjudicate ∝ open conflicts, imagine ∝
-curiosity, introspect ∝ novelty of hypothesis vs. assumptions found, conclude
-when confidence > stop threshold and no conflicts, or budget runs out.
-High surprise grants extra budget. The op is sampled with the policy's
-temperature from a seeded RNG, so runs are reproducible.
-
-### Profiles and Δ (`profiles.py`)
+## Profiles and Δ
 
 A profile is a vector of real parameters: op weights, controller temperature,
-LLM temperature / top_p, context visibility (how many graph nodes the LLM
-sees), literature k, branch factor, objections per doubt, premise acceptance
-threshold, stop confidence, step budget, surprise budget bonus, focus policy
-(curiosity vs. surprise vs. confidence vs. recency).
+explore temperature, learning rate, LLM temperature / top_p, context
+visibility, literature k and spread, long-term memory k, tool access, branch
+factor, objections per doubt, adversarial intensity, acceptance threshold,
+rejection threshold, stop confidence, minimum steps, budget, surprise bonus,
+assumption cap.
 
-`param(profile) = base + Δ · (profile_target − base)`. At Δ=0 every reasoner
-has the base policy (only seeds differ); at Δ=1 each has its full profile.
-Explorer, Formalist, Skeptic, Synthesizer, Minimalist.
+`param = base + Δ · (target − base)`; tool lists switch at Δ ≥ 0.5. At Δ = 0
+every reasoner has the base policy and only seeds differ.
 
-### Experimental conditions
+- Explorer: imagination, intuition, counterfactuals, inquiry; high explore and
+  sampling temperature; no formal tools.
+- Formalist: verification and formalization; strict acceptance; near-greedy
+  attention; all tools.
+- Skeptic: doubt, counterfactuals, adjudication; 4 objections per doubt; 1.8×
+  damage; long-term memory of objections; no literature.
+- Synthesizer: memory with deliberately distant literature, 8 recalled
+  memories, wide context, fast learning; no formal tools.
+- Minimalist: introspection and formalization; at most 2 assumptions; narrow
+  context; no literature or long-term memory.
 
-- `base`: identical policies, no persona, Δ ignored (noise floor).
-- `prompt`: identical controller; a persona sentence whose strength scales with Δ.
-- `architecture`: the policy vectors above scale with Δ, no persona text.
-- `model`: base policies, no persona; each reasoner runs on a different model
-  variant (quantization level or family). Δ < 0.15 puts them all on the default model.
+## Conditions
 
-### Metrics (`metrics.py`)
+- `base`: identical policies, no persona (noise floor).
+- `prompt`: identical policies, a persona sentence whose strength scales with Δ.
+- `architecture`: policy vectors scale with Δ, no persona.
+- `model`: base policies; each reasoner on a different model variant (Δ < 0.15 = all default).
 
-Pairwise across reasoners, from embeddings of their own nodes:
-semantic diversity (1 − mean cosine of argument-set centroids), branch
-diversity (Jensen–Shannon distance of node-type distributions), disagreement
-rate (pairs whose stance differs or credence differs by >0.3), unique
-assumptions / objections (no match above 0.8 cosine in any other reasoner),
-path similarity (1 − normalised edit distance of op sequences), conclusion
-similarity (cosine of final positions). A sweep runs Δ ∈ {0, .3, .6, 1}.
+## Metrics
 
-### UI (`static/`)
+Across reasoners: semantic diversity (1 − symmetric best-match cosine of
+argument sets), branch diversity (Jensen–Shannon distance of node-type
+distributions), disagreement rate (stance differs or credence differs by
+> 0.3), unique hypotheses / assumptions / objections (no match ≥ 0.8 cosine
+in any other reasoner), reasoning-path similarity (1 − normalised edit
+distance of op sequences), conclusion similarity. Per reasoner: see the
+component map.
 
-Landing: "What should we investigate?" → lab. Canvas particle nebula with
-one cloud per reasoner, driven only by streamed state: spread = uncertainty,
-cohesion = confidence, outward drift = curiosity, split into two competing
-clusters while conflicts are open, flashing links on memory/synthesis, a
-fading burst on rejection, colour = active cognitive function. Per-reasoner
-trajectory strip, confidence/uncertainty traces, argument tree with rejected
-branches struck through, final position. Metrics panel and a divergence
-callout naming the most different pair.
+## Experimental or not done
 
-## Experimental / not done
-
-- REAP-based model differentiation (needs GPU VM, see above).
-- Activation steering, adapters: not attempted; small models via Ollama do
-  not expose activations.
-- Metrics use a small embedding model; treat absolute values as rough.
+- REAP-based model differentiation (needs the GPU VM, see LobBot above).
+- Activation steering and adapters: Ollama does not expose activations.
+- First-order theorem proving: interface only (`tools.theorem_prover`).
+- Metrics rely on a small embedding model; treat absolute values as rough
+  and compare conditions against the `base` noise floor.

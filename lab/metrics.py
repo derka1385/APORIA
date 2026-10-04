@@ -11,7 +11,8 @@ from itertools import combinations
 
 from engine import cos, embed
 
-ARG_TYPES = ["premise", "assumption", "objection", "counterexample", "thought_experiment", "alternative", "evidence", "claim"]
+ARG_TYPES = ["premise", "assumption", "objection", "counterexample", "counterfactual", "thought_experiment",
+             "alternative", "evidence", "question", "response", "hypothesis"]
 MATCH = 0.8  # cosine above which two items count as "the same idea"
 
 
@@ -65,10 +66,36 @@ def _unique(per_agent: dict[str, list[str]]) -> dict[str, list[str]]:
     return out
 
 
+def process(s: dict) -> dict:
+    """Per-reasoner research-process measures."""
+    hyps = [n for n in s["nodes"] if n["type"] == "hypothesis"]
+    xs = s.get("experiments", [])
+    done = [x for x in xs if x["status"] in ("defeated", "answered")]
+    steps = [h for h in s["history"] if h["op"] != "start"]
+    ms = sum(h.get("ms", 0) for h in steps) or 1
+    alloc: dict[str, float] = {}
+    for h in steps:
+        alloc[h["op"]] = alloc.get(h["op"], 0) + h.get("ms", 0) / ms
+    return {
+        "hypotheses": len(hyps),
+        "rejected_hypotheses": sum(n["status"] == "rejected" for n in hyps),
+        "surviving_hypotheses": sum(n["status"] == "stable" for n in hyps),
+        "experiments": len(xs),
+        "resolution_rate": round(len(done) / len(xs), 3) if xs else 0.0,
+        "defeats": sum(x["status"] == "defeated" for x in xs),
+        "novelty": round(_mean(n.get("novelty", 0) for n in s["nodes"]), 3),
+        "gain_per_step": round(_mean(h.get("gain", 0) for h in steps), 3),
+        "tool_calls": len(s.get("tool_log", [])),
+        "recalls": len(s.get("recalls", [])),
+        "compute": {k: round(v, 3) for k, v in sorted(alloc.items(), key=lambda kv: -kv[1])},
+        "steps": len(steps),
+    }
+
+
 def compute(agents: dict[str, dict]) -> dict:
     names = list(agents)
     pairs = list(combinations(names, 2))
-    texts = {a: [n["text"] for n in s["nodes"] if n["type"] != "claim"] for a, s in agents.items()}
+    texts = {a: [n["text"] for n in s["nodes"] if n["type"] != "hypothesis"] for a, s in agents.items()}
     vecs = {a: embed(t) if t else [] for a, t in texts.items()}
     concl = {a: (s["conclusion"] or {}).get("position", s["hypothesis"]) for a, s in agents.items()}
     cvec = dict(zip(names, embed([concl[a] for a in names])))
@@ -89,7 +116,8 @@ def compute(agents: dict[str, dict]) -> dict:
 
     by_type = lambda kinds: {a: [n["text"] for n in s["nodes"] if n["type"] in kinds] for a, s in agents.items()}
     uniq_asm = _unique(by_type({"assumption"}))
-    uniq_obj = _unique(by_type({"objection", "counterexample"}))
+    uniq_obj = _unique(by_type({"objection", "counterexample", "counterfactual"}))
+    uniq_hyp = _unique(by_type({"hypothesis"}))
     most = max(pair.items(), key=lambda kv: (kv[1]["disagree"], 1 - kv[1]["concl_sim"] + kv[1]["semantic"]),
                default=(None, None))
     return {
@@ -100,7 +128,9 @@ def compute(agents: dict[str, dict]) -> dict:
         "conclusion_similarity": round(_mean(p["concl_sim"] for p in pair.values()), 3),
         "unique_assumptions": sum(len(v) for v in uniq_asm.values()),
         "unique_objections": sum(len(v) for v in uniq_obj.values()),
-        "unique": {a: {"assumptions": uniq_asm[a], "objections": uniq_obj[a]} for a in names},
+        "unique_hypotheses": sum(len(v) for v in uniq_hyp.values()),
+        "unique": {a: {"assumptions": uniq_asm[a], "objections": uniq_obj[a], "hypotheses": uniq_hyp[a]} for a in names},
+        "per_agent": {a: process(s) for a, s in agents.items()},
         "pairs": pair,
         "most_divergent": most[0],
     }

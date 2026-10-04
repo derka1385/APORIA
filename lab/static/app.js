@@ -1,11 +1,12 @@
 // APORIA lab front end. Everything drawn here is driven by streamed engine state.
 const $ = (s) => document.querySelector(s);
 const css = getComputedStyle(document.documentElement);
-const FN = ["memory", "reason", "imagine", "intuit", "introspect", "doubt", "adjudicate", "revise", "conclude"];
+const FN = ["memory", "reason", "imagine", "intuit", "introspect", "doubt", "counterfactual", "formalize", "inquire", "adjudicate", "revise", "conclude"];
 const COLOR = Object.fromEntries(FN.map((f) => [f, css.getPropertyValue("--" + f).trim()]));
 const RGB = Object.fromEntries(FN.map((f) => [f, hexRgb(COLOR[f])]));
-const TYPE_FN = { claim: "reason", premise: "reason", assumption: "introspect", objection: "doubt",
-  counterexample: "doubt", thought_experiment: "imagine", alternative: "imagine", evidence: "memory" };
+const TYPE_FN = { hypothesis: "reason", claim: "reason", premise: "reason", assumption: "introspect", objection: "doubt",
+  counterexample: "doubt", contradiction: "doubt", counterfactual: "counterfactual", thought_experiment: "imagine",
+  alternative: "imagine", evidence: "memory", question: "inquire", response: "adjudicate" };
 const PER_AGENT = matchMedia("(max-width: 640px)").matches ? 600 : 1300;
 
 function hexRgb(h) { const n = parseInt(h.slice(1), 16); return [n >> 16, (n >> 8) & 255, n & 255]; }
@@ -14,7 +15,7 @@ function hash(s) { let h = 2166136261; for (const c of String(s)) h = Math.imul(
 function gauss() { return Math.sqrt(-2 * Math.log(Math.random() + 1e-9)) * Math.cos(2 * Math.PI * Math.random()); }
 function nodeFn(n) {
   if (n.text.startsWith("Hunch:")) return "intuit";
-  if (n.text.startsWith("Reply:")) return "adjudicate";
+  if (n.formal) return "formalize";
   return TYPE_FN[n.type] || "reason";
 }
 
@@ -165,7 +166,8 @@ function frame(t) {
       col = RGB[FN[P.ag[i] % FN.length]]; alpha = 0.22;
     }
     // uncertainty diffuses the cloud, confidence tightens it, conclusion freezes it
-    const sigma = g.R * (0.04 + 0.2 * unc) * (1.2 - 0.6 * conf) * (stable ? 0.5 : 1);
+    const crystal = a?.crystal?.[a.ids?.[P.node[i]]] || 0;
+    const sigma = g.R * (0.04 + 0.2 * unc) * (1.2 - 0.6 * conf) * (stable ? 0.5 : 1) * (1 - 0.7 * crystal);
     tx += P.g1[i] * sigma; ty += P.g2[i] * sigma;
     const k = stable ? 0.02 : 0.012 + 0.01 * conf;
     P.vx[i] = P.vx[i] * 0.86 + (tx - P.x[i]) * k + (stable ? 0 : (Math.random() - 0.5) * unc * 0.6);
@@ -186,14 +188,23 @@ function frame(t) {
       const ex = g.cx + Math.cos(ang) * Math.max(W, g.rect.width) * 0.48, ey = g.cy + Math.sin(ang) * g.rect.height * 0.55;
       const [r, gg, b] = RGB.memory;
       ctx.strokeStyle = `rgba(${r},${gg},${b},${0.35 * l.life})`;
+      ctx.setLineDash(l.recall ? [3, 4] : []);
       ctx.beginPath(); ctx.moveTo(c[0] + p[0] * g.R, c[1] + p[1] * g.R);
-      ctx.quadraticCurveTo(g.cx, g.cy, ex, ey); ctx.stroke();
+      ctx.quadraticCurveTo(g.cx, g.cy, ex, ey); ctx.stroke(); ctx.setLineDash([]);
       for (const other of l.shared || []) {
         const o = agents[other]; if (!o) continue;
         const oc = g.centers[o.idx];
         ctx.strokeStyle = `rgba(${r},${gg},${b},${0.5 * l.life})`;
         ctx.beginPath(); ctx.moveTo(c[0], c[1]); ctx.quadraticCurveTo(g.cx, g.cy, oc[0], oc[1]); ctx.stroke();
       }
+    } else if (l.kind === "insight" && a.layout?.[l.node]) {
+      const p = a.layout[l.node];
+      ctx.strokeStyle = `rgba(255,255,255,${0.7 * l.life})`;
+      ctx.beginPath(); ctx.arc(c[0] + p[0] * g.R, c[1] + p[1] * g.R, 4 + (1 - l.life) * g.R * 0.5, 0, 7); ctx.stroke();
+    } else if (l.kind === "tool") {
+      const [r, gg, b] = l.ok ? RGB.formalize : RGB.doubt, sz = 6 + (1 - l.life) * 18;
+      ctx.strokeStyle = `rgba(${r},${gg},${b},${0.8 * l.life})`;
+      ctx.strokeRect(c[0] - sz / 2, c[1] - sz / 2, sz, sz);
     } else if (l.kind === "compute") {
       ctx.strokeStyle = `rgba(240,213,98,${0.5 * l.life})`;
       ctx.beginPath(); ctx.arc(c[0], c[1], g.R * (1.6 - l.life * 0.6), 0, 7); ctx.stroke();
@@ -217,19 +228,20 @@ function placeLabels(g) {
 function onEvent(e) {
   if (e.type === "run_start") return startRun(e);
   if (e.type === "op") {
-    const a = agents[e.agent]; a.op = e.op; a.focus = e.focus;
+    const a = agents[e.agent]; a.op = e.op; a.focus = e.focus; a.why = e.why || [];
     if (a.state.nodes.length) layout(a);
     return updateLabel(e.agent);
   }
+  if (e.type === "op") return;
   if (e.type === "state") {
     const a = agents[e.agent];
     a.state = e.state; a.budget = e.budget;
     if (a.state.conclusion) a.op = null;
     layout(a);
-    for (const ev of e.events || []) visualEvent(e.agent, ev);
     updateLabel(e.agent); scheduleCard(e.agent);
     return;
   }
+  if (e.type === "cog" && agents[e.agent]) return visualEvent(e.agent, e);
   if (e.type === "metrics") return showMetrics(e);
   if (e.type === "error") {
     if (e.agent && agents[e.agent]) { agents[e.agent].error = e.msg; scheduleCard(e.agent); }
@@ -240,7 +252,8 @@ function onEvent(e) {
 
 function visualEvent(agent, ev) {
   const a = agents[agent];
-  if (ev.kind === "rejected") {
+  if (ev.kind === "rejection") {
+    if (!a.ids) return;
     const k = a.ids.indexOf(ev.node);
     for (let i = 0; i < P.N; i++) if (P.ag[i] === a.idx && P.node[i] === k) {
       P.kick[i] = 1; P.vx[i] += gauss() * 4; P.vy[i] += gauss() * 4;
@@ -252,6 +265,13 @@ function visualEvent(agent, ev) {
     links.push({ kind: "association", agent, node: ev.node, source: ev.source || ev.node, shared, life: 1 });
   } else if (ev.kind === "compute") {
     links.push({ kind: "compute", agent, life: 1 });
+  } else if (ev.kind === "insight") {
+    (a.crystal ||= {})[ev.node] = 1;  // local crystallisation, permanent for a stable conclusion
+    links.push({ kind: "insight", agent, node: ev.node, life: 1 });
+  } else if (ev.kind === "recall") {
+    links.push({ kind: "association", agent, node: ev.node, source: "memory:" + ev.memory_kind, shared: [], life: 1, recall: true });
+  } else if (ev.kind === "tool") {
+    links.push({ kind: "tool", agent, ok: ev.ok, life: 1 });
   }
 }
 
@@ -278,7 +298,8 @@ function updateLabel(p) {
   if (!el) return;
   const st = a.state, op = st.conclusion ? "concluded" : a.op || "";
   const c = st.conclusion ? COLOR.conclude : COLOR[a.op] || "var(--dim)";
-  el.innerHTML = `<b>${p}</b><span class="op" style="color:${c}">${op}</span><br>` +
+  const why = !st.conclusion && a.why?.length ? `<br><span class="why">${esc(a.why[0])}</span>` : "";
+  el.innerHTML = `<b>${p}</b><span class="op" style="color:${c}">${op}</span>${why}<br>` +
     `conf ${st.confidence.toFixed(2)} · unc ${st.uncertainty.toFixed(2)} · step ${st.step}/${a.budget}`;
 }
 
@@ -298,11 +319,36 @@ function renderCard(p) {
   el.innerHTML = `<h4>${p}</h4><div class="model">${esc(a.model)}</div>
     <div class="strip">${strip}</div>${spark(st.series)}
     <div class="sparkkey"><span style="color:var(--ink)">— confidence</span> &nbsp;<span style="color:var(--doubt)">— uncertainty</span> &nbsp;<span style="color:var(--imagine)">— novelty</span></div>
+    ${learned(a)}
     <p class="hyp">${esc(st.hypothesis || "…")}</p>
     ${tree(st, uniqSet)}
     ${st.conclusion ? `<div class="final"><div class="stance">${esc(st.conclusion.stance)} · credence ${st.conclusion.credence.toFixed(2)}</div>
       <p>${esc(st.conclusion.position)}</p>${st.conclusion.open_objection ? `<p class="obj">Open: ${esc(st.conclusion.open_objection)}</p>` : ""}</div>` : ""}
+    ${experiments(st)}
     ${a.error ? `<p class="err">${esc(a.error)}</p>` : ""}`;
+}
+
+// In-session learning: how the controller has re-weighted each function from the information it produced
+function learned(a) {
+  const v = a.state.values || {}, ops = Object.keys(v);
+  if (!ops.length) return "";
+  const mean = ops.reduce((s, k) => s + v[k], 0) / ops.length, lr = a.policy.learning_rate;
+  return `<div class="learn" title="learned routing multiplier per function">` + ops.filter((k) => k !== "conclude").map((k) => {
+    const m = Math.max(0.4, Math.min(2.2, 1 + lr * (v[k] - mean) / (mean + 0.05)));
+    return `<span title="${k} ×${m.toFixed(2)}"><i style="height:${m * 9}px;background:${COLOR[k]}"></i></span>`;
+  }).join("") + `</div>`;
+}
+
+function experiments(st) {
+  const xs = st.experiments || [], tl = st.tool_log || [], rc = st.recalls || [];
+  if (!xs.length && !tl.length && !rc.length) return "";
+  const mark = { pending: "…", defeated: "✕ target lost", answered: "✓ target held", moot: "— moot" };
+  const node = (id) => st.nodes.find((n) => n.id === id)?.text || id;
+  return `<details class="exps"><summary>${xs.length} experiments · ${tl.length} tool calls · ${rc.length} recalls</summary>` +
+    xs.map((x) => `<div class="x ${x.status}"><span>${x.kind}</span> ${esc(node(x.node).slice(0, 110))} <em>${mark[x.status] || x.status}</em></div>`).join("") +
+    tl.map((t) => `<div class="x tool"><span>${t.tool}</span> ${t.ok ? "" : "failed: "}${esc(t.summary.slice(0, 90))}</div>`).join("") +
+    rc.map((r) => `<div class="x recall"><span>recall ${r.kind}</span> ${esc(r.text.slice(0, 90))} <em>${esc(r.outcome).slice(0, 40)}</em></div>`).join("") +
+    `</details>`;
 }
 
 function spark(series) {
@@ -331,7 +377,7 @@ function tree(st, uniq) {
 const MLABEL = {
   semantic_diversity: ["semantic diversity", 1], branch_diversity: ["branch diversity", 1], disagreement_rate: ["disagreement rate", 1],
   path_similarity: ["reasoning-path similarity", 1], conclusion_similarity: ["conclusion similarity", 1],
-  unique_assumptions: ["unique assumptions", 0], unique_objections: ["unique objections", 0],
+  unique_assumptions: ["unique assumptions", 0], unique_objections: ["unique objections", 0], unique_hypotheses: ["unique hypotheses", 0],
 };
 
 function showMetrics(e) {
@@ -345,9 +391,19 @@ function showMetrics(e) {
   $("#pairs").innerHTML = `<div class="tablewrap"><table><tr><th>pair</th><th>semantic dist.</th><th>branch dist.</th><th>path sim.</th><th>conclusion sim.</th><th>disagree</th></tr>` +
     Object.entries(m.pairs).sort((x, y) => x[1].concl_sim - y[1].concl_sim).map(([k, v]) =>
       `<tr><td>${k.replace("|", " × ")}</td><td>${v.semantic}</td><td>${v.branch}</td><td>${v.path_sim}</td><td>${v.concl_sim}</td><td>${v.disagree ? "yes" : "—"}</td></tr>`).join("") + "</table></div>";
+  const pa = m.per_agent || {};
+  const cols = [["hypotheses", "hypotheses"], ["rejected_hypotheses", "rejected"], ["surviving_hypotheses", "surviving"],
+    ["experiments", "experiments"], ["resolution_rate", "resolution"], ["defeats", "defeats"], ["novelty", "novelty"],
+    ["gain_per_step", "info gain/step"], ["tool_calls", "tools"], ["recalls", "recalls"]];
+  $("#pairs").innerHTML += `<div class="tablewrap"><table><tr><th>reasoner</th>${cols.map((c) => `<th>${c[1]}</th>`).join("")}<th>compute allocation</th></tr>` +
+    Object.entries(pa).map(([n, v]) => `<tr><td>${n}</td>${cols.map((c) => `<td>${v[c[0]]}</td>`).join("")}<td>${alloc(v.compute)}</td></tr>`).join("") + "</table></div>";
   verdict(m);
   profiles.forEach(renderCard);
   if (sweep.length > 1) sweepChart();
+}
+
+function alloc(c) {
+  return `<span class="alloc">` + Object.entries(c || {}).map(([k, v]) => `<i title="${k} ${(v * 100).toFixed(0)}%" style="width:${v * 160}px;background:${COLOR[k] || "#666"}"></i>`).join("") + "</span>";
 }
 
 function verdict(m) {
