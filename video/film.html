@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>APORIA · one-minute explainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #121416; overflow: hidden; }
+  canvas { display: block; width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.78vh; margin: auto; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script>
+// Every frame is a pure function of time: seek(t) draws the film at t seconds (render.mjs screenshots it).
+// ?play plays it in real time for preview.
+const W = 1920, H = 1080, END = 56;
+const cv = document.getElementById("c"), ctx = cv.getContext("2d");
+const BG = "#121416", INK = "#F4F1E9", DIM = "#B4BBC2", FAINT = "#808A94";
+const SERIF = (px, it) => `${it ? "italic " : ""}300 ${px}px Newsreader`, MONO = (px, w = 400) => `${w} ${px}px "IBM Plex Mono"`;
+// the five reasoners in the lab's function colours (lab/STREAM.md)
+const R = [
+  { name: "explorer", c: "#b38cff" }, { name: "formalist", c: "#8c93ff" }, { name: "skeptic", c: "#ff6b4f" },
+  { name: "synthesizer", c: "#e2a85a" }, { name: "minimalist", c: "#5fd4c4" },
+];
+
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = clamp(x); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const out = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const lerp = (a, b, k) => a + (b - a) * k;
+const rnd = (i, k = 0) => { const s = Math.sin(i * 127.1 + k * 311.7) * 43758.5453; return s - Math.floor(s); };
+// visibility of an element shown on [a, b] with fades
+const vis = (t, a, b, fi = 0.6, fo = 0.5) => clamp((t - a) / fi) * clamp((b - t) / fo);
+
+function text(str, x, y, font, color, alpha, align = "center", rise = 0) {
+  if (alpha <= 0) return;
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.font = font; ctx.fillStyle = color; ctx.textAlign = align; ctx.textBaseline = "middle";
+  ctx.fillText(str, x, y + (1 - alpha) * rise);
+  ctx.restore();
+}
+// a statement that fades in rising slightly and fades out
+const say = (t, a, b, str, y, px = 66, it = false, color = INK) => text(str, W / 2, y, SERIF(px, it), color, vis(t, a, b, 0.7, 0.5), "center", 14);
+
+function dot(x, y, r, color, alpha = 1) {
+  ctx.globalAlpha = alpha; ctx.fillStyle = color;
+  ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill(); ctx.globalAlpha = 1;
+}
+
+// ---------------------------------------------------------------- scene 2: a thousand copies converge
+const N = 70, C2 = [960, 640], ATT = [1380, 610];
+function copyPos(i, t) {
+  const th = (i / N) * Math.PI * 2 + rnd(i) * 0.3, rr = 170 + rnd(i, 1) * 230;
+  const spread = out((t - 8.2) / 2.6);
+  const p = [C2[0] + Math.cos(th) * rr * spread, C2[1] + Math.sin(th) * rr * 0.55 * spread];
+  const k = ease((t - 11.4) / 3.6);  // every copy bends to the same answer
+  return [lerp(p[0], ATT[0] + (rnd(i, 2) - 0.5) * 26, k), lerp(p[1], ATT[1] + (rnd(i, 3) - 0.5) * 26, k)];
+}
+function sceneCopies(t) {
+  const a = vis(t, 8.0, 17.2, 0.8, 0.8);
+  if (a <= 0) return;
+  for (let i = 0; i < N; i++) {
+    ctx.strokeStyle = `rgba(180,187,194,${0.16 * a})`; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let s = 8.2; s <= t; s += 0.12) { const p = copyPos(i, s); s === 8.2 ? ctx.moveTo(...p) : ctx.lineTo(...p); }
+    ctx.stroke();
+    const p = copyPos(i, t);
+    dot(p[0], p[1], 3.2, DIM, 0.85 * a);
+  }
+  dot(C2[0], C2[1], 6, INK, a * clamp((t - 8) / 0.5));
+  text("one model", C2[0], C2[1] + 34, MONO(22), FAINT, a * vis(t, 8.4, 11.2), "center");
+  text("the same answer", ATT[0], ATT[1] + 58, MONO(22), FAINT, a * vis(t, 14.2, 17.2), "center");
+}
+
+// ---------------------------------------------------------------- scenes 4-5: five policies and the Δ dial
+const C4 = [520, 620];
+function delta(t) { return ease((t - 30.6) / 3.6); }   // Δ goes 0 → 1
+function grow(t) { return out((t - 24.6) / 4.2); }      // paths extend over time
+// path of reasoner k at parameter s∈[0,1]: identical at Δ 0, five distinct strategies at Δ 1
+function path(k, s, d) {
+  const L = 900;
+  const common = [C4[0] + s * L, C4[1] + Math.sin(s * Math.PI * 1.2) * 60];
+  const ang = -0.45 + k * 0.225;
+  const shape = [
+    (u) => Math.sin(u * 14) * 46 * u,           // explorer: wide wandering branches
+    () => 0,                                       // formalist: straight, verified steps
+    (u) => (Math.floor(u * 9) % 2 ? 38 : -38) * u, // skeptic: back-and-forth attacks
+    (u) => Math.sin(u * Math.PI) * 120,           // synthesizer: one wide arc joining distant ideas
+    () => 0,                                       // minimalist: short and direct
+  ][k];
+  const len = k === 4 ? 0.62 : 1;
+  const u = s * len;
+  const dx = Math.cos(ang), dy = Math.sin(ang), nx = -dy, ny = dx, off = shape(u);
+  const own = [C4[0] + dx * u * L + nx * off, C4[1] + dy * u * L * 0.8 + ny * off];
+  return [lerp(common[0], own[0], d), lerp(common[1], own[1], d)];
+}
+function scenePolicies(t) {
+  const a = vis(t, 23.6, 47.6, 0.8, 0.8);
+  if (a <= 0) return;
+  const d = delta(t), g = grow(t), fade = t > 36.2 ? lerp(1, 0.07, clamp((t - 36.2) / 1)) : 1;
+  dot(C4[0], C4[1], 7, INK, a);
+  text("one model · one question", C4[0] - 26, C4[1], MONO(22), FAINT, a * vis(t, 24.0, 36.0), "right");
+  for (let k = 0; k < 5; k++) {
+    ctx.strokeStyle = R[k].c; ctx.globalAlpha = a * fade * (0.55 + 0.45 * d); ctx.lineWidth = 3; ctx.lineCap = "round";
+    ctx.beginPath();
+    for (let s = 0; s <= g + 1e-6; s += 0.01) { const p = path(k, s, d); s === 0 ? ctx.moveTo(...p) : ctx.lineTo(...p); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+    const h = path(k, g, d);
+    dot(h[0], h[1], 7, R[k].c, a * fade);
+    text(R[k].name, h[0] + 18, h[1], MONO(22, 500), R[k].c, a * fade * clamp((d - 0.55) / 0.3), "left");
+  }
+  // the dial
+  const sx = 640, sw = 640, sy = 940, va = a * vis(t, 29.6, 36.4);
+  if (va > 0) {
+    ctx.globalAlpha = va; ctx.strokeStyle = "#353B42"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(sx + sw, sy); ctx.stroke();
+    ctx.strokeStyle = INK; ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(sx + sw * d, sy); ctx.stroke();
+    ctx.globalAlpha = 1;
+    dot(sx + sw * d, sy, 9, INK, va);
+    text(`Δ ${d.toFixed(2)}`, sx + sw / 2, sy - 40, MONO(30, 500), INK, va, "center");
+    text("identical policies", sx, sy + 36, MONO(20), FAINT, va, "left");
+    text("five cognitive policies", sx + sw, sy + 36, MONO(20), FAINT, va, "right");
+  }
+}
+
+// ---------------------------------------------------------------- logo: three open apertures (brand symbol)
+function logo(x, y, size, prog, alpha) {
+  if (alpha <= 0) return;
+  const s = size / 128, arcs = [[48, -23, 271], [32, 21, 315], [16, 65, 359]];
+  ctx.save(); ctx.globalAlpha = alpha; ctx.strokeStyle = INK; ctx.lineWidth = 7 * s; ctx.lineCap = "butt";
+  arcs.forEach(([r, a0, a1], i) => {
+    const p = out((prog - i * 0.15) / 0.7);
+    if (p <= 0) return;
+    ctx.beginPath(); ctx.arc(x, y, r * s, a0 * Math.PI / 180, (a0 + (a1 - a0) * p) * Math.PI / 180); ctx.stroke();
+  });
+  ctx.restore();
+}
+
+// ---------------------------------------------------------------- the film
+function seek(t) {
+  ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
+
+  // 1 · the problem
+  say(t, 0.5, 7.4, "Philosophy moves forward through objections.", 470, 70);
+  text("the counterexample nobody had thought of", W / 2, 580, MONO(26), FAINT, vis(t, 2.6, 7.4), "center", 10);
+
+  // 2 · AI copies think alike
+  say(t, 8.0, 11.6, "AI can now generate thousands of them.", 250, 62);
+  say(t, 11.8, 17.2, "But a thousand copies of one model think alike.", 250, 62);
+  sceneCopies(t);
+  text("same moves", 620, 900, MONO(28, 500), DIM, vis(t, 14.0, 17.2, 0.4), "center");
+  text("same objections", 960, 900, MONO(28, 500), DIM, vis(t, 14.6, 17.2, 0.4), "center");
+  text("same answer", 1300, 900, MONO(28, 500), DIM, vis(t, 15.2, 17.2, 0.4), "center");
+
+  // 3 · science has it too
+  say(t, 17.8, 22.4, "Science has the same trap:", 470, 66);
+  say(t, 18.6, 22.4, "minds that reason alike find the same things.", 560, 66, true, DIM);
+
+  // 4 · APORIA
+  logo(W / 2, 330, 150, (t - 22.6) / 1.4, vis(t, 22.6, 24.4, 0.3, 0.6));
+  text("APORIA", W / 2, 470, '600 40px "Source Sans 3"', INK, vis(t, 23.0, 24.4, 0.5, 0.6), "center");
+  scenePolicies(t);
+  say(t, 24.4, 29.4, "One model. One question. Five ways of thinking.", 170, 58);
+  const fx = [["doubt", "#ff6b4f"], ["counterfactuals", "#3fd0f2"], ["formal proof", "#8c93ff"], ["memory", "#e2a85a"], ["curiosity", "#b38cff"]];
+  fx.forEach(([f, c], i) => text(f, 1500, 300 + i * 52, MONO(26), c, vis(t, 26.0 + i * 0.35, 30.2, 0.4), "left", 8));
+  say(t, 29.8, 35.8, "One dial, Δ, sets how differently they think.", 170, 58);
+
+  // 5 · measured
+  say(t, 36.4, 47.0, "Measured on Qwen3-30B, across four questions:", 170, 54, false, DIM);
+  const big = (str, y, a, b) => text(str, W / 2 + 200, y, SERIF(84), INK, vis(t, a, b, 0.6), "center", 16);
+  const lab = (str, y, a, b) => text(str, W / 2 + 200, y, MONO(24), FAINT, vis(t, a, b, 0.6), "center", 8);
+  big("0.44 → 0.32", 360, 37.4, 47.0); lab("reasoning-path similarity, Δ 0 → Δ 1", 430, 37.6, 47.0);
+  big("×3.8", 570, 39.4, 47.0); lab("objections no other reasoner raised", 640, 39.6, 47.0);
+  lab("and their conclusions still converge: the next experiment", 790, 42.2, 47.0);
+
+  // 6 · why it matters, end card
+  say(t, 47.6, 51.6, "Discovery needs the objection no one else would raise.", 540, 64);
+  logo(W / 2, 360, 170, (t - 51.8) / 1.4, vis(t, 51.8, END + 1, 0.3));
+  text("APORIA", W / 2, 520, '600 46px "Source Sans 3"', INK, vis(t, 52.2, END + 1, 0.6), "center");
+  text("The way an AI thinks, made testable.", W / 2, 610, SERIF(52, true), INK, vis(t, 52.8, END + 1, 0.7), "center", 10);
+  text("derka1385.github.io/APORIA", W / 2, 760, MONO(26), DIM, vis(t, 53.6, END + 1, 0.6), "center");
+  text("Hack-Nation · Agentic Scientific Discovery", W / 2, 806, MONO(22), FAINT, vis(t, 53.9, END + 1, 0.6), "center");
+}
+
+window.seek = seek;
+window.END = END;
+Promise.all([
+  document.fonts.load(SERIF(64)), document.fonts.load(SERIF(64, true)), document.fonts.load(MONO(24)),
+  document.fonts.load(MONO(24, 500)), document.fonts.load('600 40px "Source Sans 3"'),
+]).then(() => document.fonts.ready).then(() => {
+  seek(0); window.ready = true;
+  if (location.search.includes("play")) {
+    const t0 = performance.now();
+    const loop = () => { const t = (performance.now() - t0) / 1000 % END; seek(t); requestAnimationFrame(loop); };
+    loop();
+  }
+});
+</script>
+</body>
+</html>
