@@ -307,7 +307,7 @@ fetch("data/index.json").then((r) => r.json()).then((D) => {
     $("#kpinote").textContent = `${g}, one question, Δ 1, five reasoners per run, n = ${A.length} architecture and ${B.length} base run(s). Small n: a direction, not a significance test.`;
   }
   // one comparison table per model and budget that has more than one condition at Δ 1
-  const groups = [...new Set(ok.map(group))];
+  const groups = [...new Set([g, ...ok.map(group)])];  // the featured model first
   $("#tables").innerHTML = groups.map((gg) => {
     const rs = ok.filter((r) => group(r) === gg && r.delta === 1);
     return new Set(rs.map((r) => r.condition)).size > 1 ? `<h3 style="margin-top:48px">${esc(gg)}</h3>${table(rs)}` : "";
