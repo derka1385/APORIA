@@ -1,0 +1,233 @@
+{
+  "id": "brief-W3208436359.arg1.o39f2d5",
+  "objection_id": "W3208436359.arg1.o39f2d5",
+  "research_question": "Does the well-formedness of a transfinite decision problem require that every utility correspond to a determinate terminal outcome, or can mathematically specified limits of non-terminating processes serve as adequate relata in an expected utility framework?",
+  "argument": {
+    "id": "W3208436359.arg1",
+    "title": "Surreal Numbers Ground Transfinite Decision Theory",
+    "paper_id": "oa:W3208436359",
+    "paper_title": "Surreal decisions",
+    "premises": [
+      {
+        "id": "W3208436359.c001",
+        "text": "Expected utility theory is fruitful and elegant in the finite realm, but attempts to generalize it to infinite values have produced many paradoxes.",
+        "quote": "Although expected utility theory has proven a fruitful and elegant theory in the finite realm, attempts to generalize it to infinite values have resulted in many paradoxes."
+      },
+      {
+        "id": "W3208436359.c006",
+        "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities.",
+        "quote": "We find decision problems with transfinite utilities (or transfinite state spaces) to be no less sensible or well‑formed than those involving only finite ones."
+      },
+      {
+        "id": "W3208436359.c007",
+        "text": "Standard expected utility theory is not well‑equipped to handle transfinite utilities.",
+        "quote": "Unfortunately, standard expected utility (EU) theory is not well‑equipped to handle them."
+      },
+      {
+        "id": "W3208436359.c008",
+        "text": "The problem’s origin lies in the limitation of mathematical representations of infinite utilities, not in the conceptual framework of EU theory.",
+        "quote": "After examining the structure of infinitistic decision puzzles, we observe that the origin of the problem lies not in the general conceptual framework of EU theory but in the limitation of the mathematical representations of infinite utilities."
+      },
+      {
+        "id": "W3208436359.c010",
+        "text": "A decision theory framed entirely in Conway’s surreal numbers serves as a conservative extension of finitist EU theory.",
+        "quote": "We therefore offer, as a conservative extension of finitist EU theory and a solution to this problem, a decision theory framed entirely in John Conway’s surreal numbers."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3208436359.arg1.mp",
+      "text": "If a decision theory framed entirely in surreal numbers is a conservative extension of finitist EU theory, then surreal numbers provide a firm mathematical foundation for transfinite decision theory."
+    },
+    "conclusion": {
+      "id": "W3208436359.c002",
+      "text": "Using John Conway’s surreal numbers provides a firm mathematical foundation for transfinite decision theory."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3208436359.c006",
+    "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities."
+  },
+  "objection": "A firefighter chooses between two rescue plans. Plan A saves five people for certain; the outcome is complete in ten minutes, with a determinate finite value. Plan B promises to save one additional person every minute thereafter forever, labeled with surreal utility ω. The commander asks the crew to maximize expected lives saved, but Plan B never reaches a terminal state: after any finite time the tally is finite, and there is no moment when the infinite total is realized. Assigning a transfinite utility requires positing a completed limit the crew cannot operationalize—payoffs, probabilities, and outcomes all presuppose a determinate final state. The finite problem is complete and actionable; the transfinite analogue lacks the well-formed terminal outcome necessary for a coherent decision matrix. Because the infinite rescue has no determinate terminus, its utility assignment is parasitic on a non-existent final world-state.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A argued that expected utility well-formedness requires only assignable utilities and coherent preferences over functions from states to values, not physically realized terminal states, and that Plan B’s surreal payoff is fully specified by its finite stages.",
+      "why_it_failed": "It failed because the objector replied that c006 claims the infinite problem is no less sensible than the finite one, and a sensible problem requires utilities that map onto determinate terminal outcomes; since Plan B’s ω is the value of an unbounded sequence with no terminal world-state, the infinite case lacks the outcome-determinacy that underwrites the action-guiding character of finite expected utility."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B conceded that the firefighter scenario is a genuine counterexample to c006 as broadly stated, but replied that the paper’s intended focus on finite state spaces with determinate terminal outcomes means the restricted claim survives.",
+      "why_it_failed": "It got as far as forcing an explicit revision of c006 to exclude non-terminating processes without determinate outcomes, thereby narrowing the argument’s scope but leaving the core surrealist extension for finite state spaces untouched."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W7119524508",
+      "paper_id": "oa:W7119524508",
+      "title": "Why Pascal's Wager Needs a Dual-System Framework: Evaluative System Asymmetry and the Limits of Expected Utility",
+      "authors": [
+        "Boris Kriger"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.18190126",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "it presupposes a unified outcome space where none is structurally available"
+    },
+    {
+      "record_id": "abs:oa:W1975104173",
+      "paper_id": "oa:W1975104173",
+      "title": "On Pascal's Wager and Infinite Utilities",
+      "authors": [
+        "John Byl",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1994,
+      "url": "https://doi.org/10.5840/faithphil199411354",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "It is argued that the indeterminacies can be readily avoided by treating the infinities as limits."
+    },
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities",
+      "authors": [
+        "Jeffrey J. Jordan",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1993,
+      "url": "https://doi.org/10.5840/faithphil199310111",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy."
+    },
+    {
+      "record_id": "W1975104173.a1",
+      "paper_id": "oa:W1975104173",
+      "title": "On Pascal's Wager and Infinite Utilities",
+      "authors": [
+        "John Byl",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1994,
+      "url": "https://doi.org/10.5840/faithphil199411354",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W2201076590.a3",
+      "paper_id": "oa:W2201076590",
+      "title": "Blaise and Bayes",
+      "authors": [
+        "Alan Hájek"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199604760.003.0009",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W1975104173.a2",
+      "paper_id": "oa:W1975104173",
+      "title": "On Pascal's Wager and Infinite Utilities",
+      "authors": [
+        "John Byl",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1994,
+      "url": "https://doi.org/10.5840/faithphil199411354",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W7119524508",
+      "paper_id": "oa:W7119524508",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "it presupposes a unified outcome space where none is structurally available",
+      "title": "Why Pascal's Wager Needs a Dual-System Framework: Evaluative System Asymmetry and the Limits of Expected Utility"
+    },
+    {
+      "record_id": "abs:oa:W1975104173",
+      "paper_id": "oa:W1975104173",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "It is argued that the indeterminacies can be readily avoided by treating the infinities as limits.",
+      "title": "On Pascal's Wager and Infinite Utilities"
+    },
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy.",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities"
+    }
+  ],
+  "open_questions": [
+    "Does the action-guiding character of expected utility theory require that every utility correspond to a determinate terminal world-state, or can mathematically specified limits function as adequate relata?",
+    "Is the restriction of transfinite decision theory to finite state spaces with determinate outcomes a principled boundary or an ad hoc retreat from the broader ambition of handling infinite-horizon processes?",
+    "If finite expected utility already evaluates acts by expectations over unrealized states, what additional constraints must be met for transfinite analogues to preserve the same normative structure?",
+    "Can a surreal-valued decision problem be well-formed when its utilities are attached to sequences that never yield a terminal state, and if so, what ontology of outcomes would ground those assignments?"
+  ],
+  "paper_direction": "A paper here would argue that the well-formedness of transfinite decision problems requires a determinate terminal outcome for every utility assignment, and that using surreal numbers to label infinite-horizon processes conflates formal definability with genuine decision-theoretic well-formedness. The case would turn on the firefighter counterexample: because Plan B never yields a terminal world-state, the surreal value ω lacks a relatum in the state space, producing a formally calculable expectation that is not a well-formed decision matrix. The strongest reply to anticipate is that the target argument restricts itself to finite state spaces with determinate terminal outcomes, so the counterexample strikes only a broader formulation that the revised premise already abandons. To succeed, the paper would need to show either that this restriction is ad hoc and surrenders the ambition of a general transfinite decision theory, or that even within finite state spaces the shift from finite to surreal utilities introduces a discontinuity in outcome-determinacy that the surreal apparatus cannot bridge.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent but aimed at utilities generated by non-terminating aggregation rather than at transfinite utilities as such. Its key requirement, terminal outcomes, is imported rather than drawn from EU theory, and the 'finite state space' revision the transcript settles on does not even exclude the firefighter case, whose state space is already finite.",
+      "robustness": "The obvious reply, that outcomes are complete histories and that determinacy does not require temporal completion, is raised by Defender A. The transcript answers it only by restating the terminal-outcome requirement, and the proposal offers no further defense.",
+      "significance": "Success would repackage the familiar potential-versus-actual-infinity worry and at most restrict one source of infinite value. That would leave surreal decision theory over lexical or non-aggregative infinite values untouched, so it would be a minor refinement rather than a challenge to the argument.",
+      "specificity": "There is a definite thesis and a case, but the plan's second disjunct (a 'discontinuity in outcome-determinacy' within finite state spaces) is undeveloped. Nothing specifies how the terminal-outcome requirement would be argued for."
+    },
+    "strongest_objection": "Decision theory has never required outcomes to be terminal world-states: Savage consequences and Jeffrey propositions are whole histories, and an act's outcome is the complete infinite trajectory, which is fully determinate even though it is never completed at any moment. The 'terminal state' requirement would also condemn standard finite-valued infinite-horizon decision theory (discounted reward streams, infinite-horizon MDPs) and Pascal-style eternal rewards. So the argument rests on a contestable potentialist premise about the actual infinite, not on anything specific to transfinite utilities. Worse, transfinite utilities need not arise from unbounded aggregation at all; lexically superior goods can be assigned ω with a determinate outcome. So even granting the premise, the objection does not touch c006 as stated, which is a comparative claim about the class of such problems, not a claim that every transfinite case is well-formed.",
+    "reply_available": false,
+    "what_it_needs": "The paper must give an independent argument that decision-theoretic outcomes must be temporally terminal states rather than complete histories, one that does not also invalidate finite-valued infinite-horizon theory. It must then show why that requirement bears on transfinite utilities generally, including non-aggregative sources such as lexical superiority, rather than only on utilities obtained as limits of unbounded sums.",
+    "summary": "As framed, this would be dismissed quickly: it rests on an unargued potentialist requirement that outcomes be terminal states, a requirement standard decision theory rejects, and the student would need to defend that premise independently before there is a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:18:13.116605+00:00"
+  },
+  "revision": {
+    "research_question": "Is a transfinite decision problem well-formed when each utility is assigned to a determinate outcome, whether that outcome is a complete history of a non-terminating process or a lexically specified good, and does the surreal framework respect that determinacy?",
+    "paper_direction": "A paper here would argue, in narrower form, that a transfinite decision problem is well-formed whenever every act maps every state to a uniquely determined outcome in the outcome space, and that this determinacy condition does not require a temporally terminal world-state. Outcomes may be complete histories of non-terminating processes, which are fully determinate even though they are never completed at any moment, or lexically specified goods to which a surreal utility is assigned directly. On this view the firefighter case is well-formed: Plan B's outcome is the complete trajectory fixed by the act, so its utility of ω attaches to a determinate relatum and the 'no terminus' objection fails. The terminal-state requirement is dropped because it would also invalidate finite-valued infinite-horizon theories such as discounted reward streams and infinite-horizon MDPs, which are accepted as well-formed. The paper then argues that surreal numbers can serve as the utility scale for such determinate outcomes, using the conservative-extension result for finitist expected utility theory to show that the transfinite assignments add no inconsistency to the finite theory. The paper concedes that a potentialist who denies that a complete infinite history is an actual outcome can reject the complete-history reading. The claim is therefore conditional: it holds within an actualist treatment of outcomes, and the potentialist question about actual infinities is treated as a separate metaphysical issue that the decision-theoretic thesis does not need to settle. The original general ambition is restricted to the class of transfinite problems with determinate outcomes, and the aggregative-limit source of infinite value is treated as one case within that class, not the whole of it.",
+    "reply_to_strongest_objection": "The referee's objection is decisive against the terminal-state requirement, so the paper drops that requirement rather than defending it. It replies with a distinction between a terminal state and a determinate outcome. Expected utility theory requires only that each act assign a unique outcome to each state, and a complete infinite history satisfies this without being completed at any time. This answers the referee's point that the requirement is imported and would condemn finite-valued infinite-horizon theory. For lexical superiority, the paper argues that the same determinacy condition is met by directly specified goods, so the thesis covers non-aggregative sources as well. The paper does not claim the potentialist premise is false; it limits its claim to actualist outcome spaces and states this explicitly.",
+    "what_changed": "The thesis is narrowed from a terminal-outcome requirement to a determinate-outcome condition, which the complete-history and lexical cases both satisfy, and the potentialist premise is made an explicit conditional rather than a load-bearing claim.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:20:18.626354+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.25,
+      "scores": {
+        "coherence": 4,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction correctly targets c006 and cleanly separates terminal states from determinate outcomes. It slightly overreaches in treating conservative extension as evidence of well-formedness rather than of mere consistency.",
+        "robustness": "Its central reply largely restates Defender A's move, which the trial already found insufficient. It leaves the obvious objection unaddressed: determinacy of outcome does not yield a non-arbitrary surreal value, given that the surreals have no limits or infinite sums.",
+        "significance": "A successful outcome-versus-terminus distinction with an actualist conditional would be a useful clarification of what transfinite well-formedness requires, but not a reshaping of the debate.",
+        "specificity": "It has a definite thesis, a worked case, an explicit concession to potentialism and a stated scope restriction. However, the plan for the surreal-assignment step is thin."
+      },
+      "strongest_objection": "Showing that the outcome is determinate does not show that its utility is determinate. Grant that Plan B's complete history is a well-defined relatum. It still has no canonical surreal value. The surreals are not Cauchy-complete and lack a limit operation, so the sum 1+1+1+... does not converge to ω rather than ω−1, ω/2 or √ω. The attachment of ω to the history is therefore a stipulation rather than a determination. If every candidate assignment is equally licensed, then the comparative verdicts that make a decision problem action-guiding are hostage to the choice. That is exactly the respect in which the problem is less well-formed than its finite analogue. The infinite-horizon MDP analogy does not help. Those models are well-formed because discounting secures convergence to a unique real value, not merely because outcomes are determinate trajectories. The conservative-extension result establishes only consistency with finite EU theory, not the non-arbitrariness of the transfinite assignments.",
+      "reply_available": false,
+      "what_it_needs": "The paper must add a principled account of how a determinate infinite outcome fixes a unique surreal utility, or at least a unique utility ordering under the relevant operations, for example via a specified summation or valuation rule with independent motivation. It must also show that decision verdicts are invariant across the admissible choices. Separately, it must replace the MDP analogy with an argument that does not depend on convergence.",
+      "summary": "There is a clear thesis here, but as planned it would be stopped by the first referee who asks why the infinite history is worth ω rather than any other infinite surreal, so it is not yet a defensible paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:20:37.511338+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

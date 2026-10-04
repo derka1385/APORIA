@@ -1,0 +1,198 @@
+{
+  "id": "brief-W4220703499.arg1.ocfad31",
+  "objection_id": "W4220703499.arg1.ocfad31",
+  "research_question": "Can an eternalist theory of time reconcile divine foreknowledge with libertarian freedom once deliberation is recognized as an extended activity of choosing, or does the Grounding Principle generate a fixed future that violates the open-options condition?",
+  "argument": {
+    "id": "W4220703499.arg1",
+    "title": "Eternity Reconciles Foreknowledge and Freedom",
+    "paper_id": "oa:W4220703499",
+    "paper_title": "Saving Eternity (and Divine Foreknowledge and Free Will): A Reply to Hasker",
+    "premises": [
+      {
+        "id": "W4220703499.c006",
+        "text": "The Anselmian thesis: a created agent can choose with aseity only if he faces open options and it is up to him which option he chooses.",
+        "quote": "The Anselmian thesis is that in a universe made by God the created agent can choose with aseity only if he faces open options and it is up to him which option he chooses."
+      },
+      {
+        "id": "W4220703499.c007",
+        "text": "The truth about, and knowledge of, a free choice depends upon that actual choice (Grounding Principle).",
+        "quote": "This entails that truth about, and knowledge of, a free choice depends upon that actual choice. I label this the “Grounding Principle”."
+      },
+      {
+        "id": "W4220703499.c010",
+        "text": "An internal necessity of the form “If X then X” does not conflict with free will.",
+        "quote": "I take it that this sort of necessity does not conflict with free will."
+      },
+      {
+        "id": "W4220703499.c025",
+        "text": "Positing God as eternal, with all time present to Him, best respects both divine foreknowledge and libertarian free will.",
+        "quote": "If the grounding principle is correct—the truth about, and knowledge of, a free choice is dependent upon the actual making of the choice itself—then positing that God is eternal, and all of time is immediately present to Him, seems the most adequate way to respect both sides of the dilemma."
+      },
+      {
+        "id": "W4220703499.c019",
+        "text": "At T1 S cannot choose between A and B because he cannot be choosing before he is choosing.",
+        "quote": "It is not possible for S to choose between A and B at T1, since S cannot be choosing before he is choosing."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4220703499.arg1.mp",
+      "text": "God is eternal, with all time present to Him, and if positing such an eternal God respects both divine foreknowledge and libertarian freedom, then, given that theory of time, reconciliation is possible."
+    },
+    "conclusion": {
+      "id": "W4220703499.c002",
+      "text": "Given a certain theory of time, it is possible to reconcile divine foreknowledge with libertarian freedom."
+    },
+    "skeleton": "A -> B; C; ~D; E -> F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4220703499.c019",
+    "text": "At T1 S cannot choose between A and B because he cannot be choosing before he is choosing."
+  },
+  "objection": "Consider Maya, a chess player at T1 who is weighing two moves, A (Nf3) and B (d4). She deliberates for ten seconds, then plays A. Her premise is that she is choosing now, while the options are open. Suppose a rival says: 'At T1 you cannot choose between A and B, since choosing is something you can only be doing after you have chosen.' Test this against Maya's case. Her deliberation is itself the process of choosing: weighing reasons, rejecting B, settling on A. Nothing in that process requires the choice to be complete before it begins. If choosing could occur only after it had finished, no one could ever deliberate toward a decision, and Maya's ten seconds would be idle. The inference treats 'is choosing' as a state that must already hold, when for a free agent it is the activity that makes the choice occur. The claim that one cannot be choosing before one is choosing is true only if 'choosing' names a completed event, which begs the question about whether T1 is open.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A argued that c019 does not prohibit deliberation but only says the agent cannot already be in the settled state of choosing one option while remaining open to the other, and that the argument survives if c019 means the outcome is not yet fixed while deliberation proceeds.",
+      "why_it_failed": "The objector showed that this reading is not what c019 states, and Defender A conceded that c019 as worded asserts an incapacity that does not survive the Maya case, and that the dilemma about God's eternal perception being prior to yet grounded in the choice remains unresolved."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B argued that c019 invokes the internal necessity that one cannot have settled on an option before settling on it, and that God's eternal knowledge is grounded in the actual settled choice rather than the deliberative process, so Maya's reflection preserves the required openness.",
+      "why_it_failed": "The objector's dilemma applies equally to this reformulation: if the outcome is open at T1 then the prohibition is redundant, and if it is already fixed by God's eternal perception then the open-options condition fails, so narrowing c019 does not reconcile the Grounding Principle with the priority of eternal knowledge."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2995194683.c045",
+      "paper_id": "oa:W2995194683",
+      "title": "The philosopher’s paradox: How to make a coherent decision in the Newcomb Problem",
+      "authors": [
+        "Carl Hoefer",
+        "Christopher Viger",
+        "Daniel Viger"
+      ],
+      "year": 2019,
+      "url": "https://doi.org/10.1387/theoria.20040",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "treats the decision process as a single event occurring only at the last moment"
+    },
+    {
+      "record_id": "abs:oa:W4394605413",
+      "paper_id": "oa:W4394605413",
+      "title": "24 Reflections on Infinite Utility and Deliberation in Pascal’s Wager",
+      "authors": [
+        "Alan Hájek"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.1515/9783111332536-027",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "while deliberating about what you will do, you cannot rationally have credences for what you will do"
+    },
+    {
+      "record_id": "W2124966002.c038",
+      "paper_id": "oa:W2124966002",
+      "title": "Faith as doxastic venture",
+      "authors": [
+        "John Bishop"
+      ],
+      "year": 2002,
+      "url": "https://doi.org/10.1017/s0034412502006121",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W2995194683.c045",
+      "paper_id": "oa:W2995194683",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "treats the decision process as a single event occurring only at the last moment",
+      "title": "The philosopher’s paradox: How to make a coherent decision in the Newcomb Problem"
+    },
+    {
+      "record_id": "abs:oa:W4394605413",
+      "paper_id": "oa:W4394605413",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "while deliberating about what you will do, you cannot rationally have credences for what you will do",
+      "title": "24 Reflections on Infinite Utility and Deliberation in Pascal’s Wager"
+    },
+    {
+      "record_id": "W2124966002.c038",
+      "paper_id": "oa:W2124966002",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Faith as doxastic venture"
+    }
+  ],
+  "open_questions": [
+    "If deliberation is itself a process of choosing, can any premise like c019 distinguish between an agent's being open to alternatives and the choice's being undetermined without begging the question against libertarianism?",
+    "Does the Grounding Principle entail that God's eternal knowledge of a choice is logically posterior to the choice, and if so, can that knowledge still be prior to every temporal event in the way eternalism requires?",
+    "Can an eternalist theory of time block the inference from 'God eternally knows that S will choose A' to 'S's outcome is fixed during deliberation' without surrendering the claim that divine knowledge is genuinely foreknowledge?",
+    "Is the determinative act of choosing a punctiliar event, or does the extended process of deliberation itself satisfy the Anselmian thesis's requirement that the agent choose with aseity?"
+  ],
+  "paper_direction": "A paper here would argue that reconciling divine foreknowledge with libertarian freedom on an eternalist theory of time requires recognizing deliberation as constitutive of choosing, which undermines the premise that an agent cannot be choosing before that agent is choosing. The case would draw on the extended-process model of agency to show that treating choosing as an activity unfolding over time makes the original c019 either false or question-begging, and would then press the dilemma that either God's eternal perception fixes the outcome during deliberation, violating the open-options condition, or it does not, rendering the prohibition on prior choosing redundant. The strongest reply to anticipate is that God's knowledge is grounded in the settled choice alone, not in the deliberative process, so the paper would need to show that this grounding relation still makes the eternal fact of God's knowledge prior to the choice in a way that collapses the distinction between logical posteriority and temporal fixity, thereby demonstrating that the eternalist reconciliation fails once deliberation is taken seriously.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The Maya case refutes a strawman ('choosing only after it has finished') and reads c019 as banning deliberation. Read correctly, c019 is a near-tautology about a pre-choice time, so the objection largely misses the premise as stated.",
+      "robustness": "The obvious reply (re-index T1, or note that atemporal knowledge is not temporally prior) defeats it. The proposed answer, a 'collapse' of logical posteriority into temporal fixity, is asserted rather than argued, and the defenders' concessions in the transcript do not supply an argument.",
+      "significance": "Even if it succeeded, the paper would mostly repackage Hasker's existing priority/grounding objection to Rogers. The extended-deliberation angle adds little unless it shows a specific time at which fixity arises.",
+      "specificity": "There is a definite thesis, a case, and a named strongest reply. But the decisive step is only gestured at, and the cited literature (Newcomb, Pascal's Wager, doxastic venture) is largely irrelevant to the eternity/foreknowledge debate (Hasker, Rogers, Stump–Kretzmann, Zagzebski)."
+    },
+    "strongest_objection": "The objection and paper attack a claim c019 does not make. In Rogers' reply to Hasker, T1 is simply a time before the choice, and c019 is a harmless instance of the internal necessity in c010: one is not choosing before one is choosing. It does not deny deliberation, and it is not the rival's 'one can choose only after having chosen.' If deliberation is part of choosing, T1 just moves to before deliberation begins, and nothing changes. The dilemma also assumes eternal knowledge is 'prior to' the choice or 'fixes' it 'during deliberation.' That smuggles in a temporal ordering the atemporalist explicitly denies. Rogers' whole point is that God's eternal knowledge is not located at any time, earlier or simultaneous, so it cannot fix anything at any time. The paper therefore restates Hasker's original objection in its own premises rather than answering Rogers.",
+    "reply_available": false,
+    "what_it_needs": "It must engage c019 as Rogers uses it: a reply to Hasker's question about what S can do at a pre-choice time, backed by c010. It must then argue that atemporal grounding by an extended choice yields fixity at some time during deliberation, without assuming that eternity is 'prior to' temporal events.",
+    "summary": "As framed, a competent referee would dismiss this: it attacks a tautological premise on a misreading and then reasserts Hasker's objection while presupposing the temporal priority of eternity that Rogers denies.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:18:35.619656+00:00"
+  },
+  "revision": {
+    "research_question": "Given that deliberation is an extended activity of choosing, does the Grounding Principle, together with an atemporal God whose knowledge is not located at any time, force the choice to become fixed at some time before it is made, and if so, does that violate the open-options condition or only the claim that T1 is a pre-choice time?",
+    "paper_direction": "A paper here would argue that the Maya case does not refute the premise at c019. Read as Rogers uses it, c019 says only that at a time before S's choice, S is not yet choosing, which is an instance of the internal necessity at c010 and is compatible with deliberation being an extended activity of choosing. The paper therefore concedes that c019 is true and drops the claim that it bans deliberation. The live question shifts to where settledness falls. If choosing is extended, there is a series of times within deliberation at which the choice is still open and a time at which it becomes actual. The paper would argue that the Grounding Principle at c007 makes the truth and knowledge of the choice depend on the actual choice, so the eternal knowledge of God is grounded in an event that occurs at a definite point in the deliberative sequence. It would then press the question whether the open-options condition at c006 requires that the choice be unsettled at every time before its occurrence, and whether the atemporalist can accept that settledness is a feature of the choice's own temporal profile, not of God's knowledge, without assuming that eternity is temporally prior to events. The paper would show that the answer depends on whether the grounding relation generates temporal fixity at any time within deliberation or only logical posteriority, and it would argue that the eternalist reconciliation survives only if the second holds. This is a narrower thesis than the original one, and it engages Hasker's priority objection and Rogers' reply directly rather than reconstructing Hasker's objection in new premises.",
+    "reply_to_strongest_objection": "The referee is right that the Maya case attacks a strawman, since c019 does not deny deliberation. The paper concedes this and treats c019 as an instance of the c010 internal necessity, so the premise stands. The substantive challenge is then the one Hasker presses: whether the Grounding Principle at c007 yields temporal fixity at some time during deliberation. The paper answers with the distinction between logical posteriority and temporal fixity. Eternal knowledge is logically posterior to the actual choice because the truth of the knowledge depends on that choice, but the eternal knowledge is located at no time and so fixes nothing at any time. Fixity, if it arises, is a feature of the choice's own temporal profile, specifying when the option is no longer open. The paper argues that the atemporalist can accept settledness as a temporal property of the choice without granting that eternity is temporally prior to events. The paper does not assume eternal priority.",
+    "what_changed": "The revision drops the claim that the Maya case refutes c019, concedes that c019 is a harmless instance of c010, and relocates the argument to whether the Grounding Principle yields temporal fixity at some time during deliberation, which the atemporalist can address without assuming eternity is temporally prior.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:20:54.056788+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The redirected thesis is internally consistent and properly reads c019 as a trivial internal necessity, but it openly concedes that the original Maya objection attacked a claim c019 does not make, so the direction no longer bears on the challenged premise at all.",
+        "robustness": "The paper's sole answer is the familiar distinction that 'atemporal knowledge fixes nothing at any time', and neither the plan nor the transcript engages Hasker's established rejoinders that make that distinction contested, so it would fall to a competent referee's first reply.",
+        "significance": "Even if successful, it would yield only a conditional ('eternalism survives only if grounding is mere logical posteriority') that is already the shared understanding in the Hasker–Rogers exchange, so it is at best a minor clarification.",
+        "specificity": "There is a definite conditional thesis and a rough sequence of steps (concede c019, locate settledness within extended deliberation, distinguish posteriority from fixity), but the plan never says what argument would establish the crucial antecedent or which of Hasker's texts it must answer."
+      },
+      "strongest_objection": "The logical-posteriority versus temporal-fixity distinction is the standard Boethian/Anselmian eternalist reply. Rogers already relies on it, and Hasker's critique of eternalism is aimed directly at it. Hasker grants that atemporal knowledge is 'located at no time'. His point is that if God's eternal knowledge is accessible to or efficacious in time (prophecy, providential use, revelation at T0), or is ET-simultaneous with every time, then the content is settled relative to times before the choice, and the choice's grounding role becomes a backtracking dependence that the libertarian cannot accept. So the paper's conditional thesis, that reconciliation survives if grounding yields only logical posteriority, restates Rogers' position without answering Hasker's reasons for denying that antecedent. Having conceded c019, the paper also loses any distinctive contribution from the Maya case.",
+      "reply_available": false,
+      "what_it_needs": "It must give a non-question-begging argument that grounding yields only logical posteriority, one that survives Hasker's specific arguments: the use of eternal knowledge in temporal providence or prophecy, and the relational reading of ET-simultaneity. Without that, the thesis is a restatement of the eternalist reply rather than a contribution to the debate.",
+      "summary": "Drop the Maya strawman and the restated Boethian distinction; the only paper here is one that argues against Hasker that eternal knowledge cannot generate temporal fixity through its use or accessibility in time, and this proposal does not yet do that.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:21:13.168775+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

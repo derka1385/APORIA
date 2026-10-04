@@ -1,0 +1,193 @@
+{
+  "id": "brief-W2995194683.arg1.o773262",
+  "objection_id": "W2995194683.arg1.o773262",
+  "research_question": "How can the coherence condition for rational agents' cross‑temporal intentional states be formulated so as to accommodate both evidence‑driven revisions and unexplained preference shifts without circularity, and what consequences does this have for the Newcomb‑Problem argument that relies on psychological coherence?",
+  "argument": {
+    "id": "W2995194683.arg1",
+    "title": "Coherence-based One-Boxing Argument",
+    "paper_id": "oa:W2995194683",
+    "paper_title": "The philosopher’s paradox: How to make a coherent decision in the Newcomb Problem",
+    "premises": [
+      {
+        "id": "W2995194683.c001",
+        "text": "A rational person's intentional states are psychologically coherent across time, and rational decisions are made against this coherent backdrop.",
+        "quote": "Our analysis begins by observing that the intentional states of a rational person are essentially psychologically coherent and that rational decisions are made against this backdrop of personal ratio155nality."
+      },
+      {
+        "id": "W2995194683.c002",
+        "text": "Decisions are extended processes like a golf swing; their coherence with other psychological states links the choice to the predictor's prediction.",
+        "quote": "Decisions, like golf swings, are extended processes, and their coherence with other psychological states of a player in the Newcomb scenario links her choice with the way she is predicted."
+      },
+      {
+        "id": "W2995194683.c004",
+        "text": "Psychological coherence requires certain backtracking counterfactuals to be true, which entail that choosing one box is the rational decision.",
+        "quote": "We argue that psychological coherence requires certain backtracking counterfactuals to be true in the scenario stipulated in the Newcomb Problem, which entail that choosing one box is the rational decision."
+      },
+      {
+        "id": "W2995194683.c009",
+        "text": "When the predictor's success is nomic, it provides counterfactual support for the prediction.",
+        "quote": "The interesting case is when the predictor’s success is nomic, hence counterfactual supporting."
+      },
+      {
+        "id": "W2995194683.c011",
+        "text": "The predictor's high success rate evidences a causal process that leads to the player's decision and can be foreseen by the predictor.",
+        "quote": "we take the stipulated facts about the predictor’s success as evidence for a causal process leading to a player’s decision that the predictor can foresee"
+      }
+    ],
+    "missing_premise": null,
+    "conclusion": {
+      "id": "W2995194683.c012",
+      "text": "Once rationality is understood in terms of psychological coherence, the rational decision in Newcomb's Problem is to choose one box."
+    },
+    "skeleton": "B; C; (B -> D) & (D -> E); F -> G; H |- A -> E",
+    "valid": true
+  },
+  "challenged_premise": {
+    "id": "W2995194683.arg1.r1",
+    "text": "A rational agent's later intentional states need only be coherent with her earlier ones in the sense that any conflict is explained by evidence acquired since the earlier state was formed, so that apparent cross-time conflicts are defeasible revisions rather than incoherence."
+  },
+  "objection": "Dana forms an intention on Monday to finish her thesis by June, and plans her spring around it. In March she receives evidence that her advisor will leave, making the thesis impossible to finish in time. She now intends to abandon it. Her later state conflicts with her earlier one, and the revised premise classifies this as a defeasible revision, since the conflict is explained by new evidence. But suppose Dana never learns the advisor's departure at all. Instead, in March she simply finds the thesis unappealing and drops the goal, with no new information bearing on whether June is achievable. Her earlier intention and her later state still conflict, yet nothing acquired since Monday explains the change. The revised premise says apparent cross-time conflicts are revisions only when evidence accounts for them, so it classifies Dana's shift as incoherence, which the premise itself rules out as rational-coherent. The premise therefore cannot state the coherence condition it needs: it either counts Dana's unexplained drift as coherent, which it was not meant to, or it denies that rational agents ever change course without evidence, which the argument does not license.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Acknowledges that r1 is silent on unexplained drift and treats this silence as a wording gap; argues that unexplained cross‑time conflict is a coherence failure and proposes adding a clause separating integrated revision from drift, while conceding the premise was underspecified.",
+      "why_it_failed": "The added integration clause remains underspecified and may be circular, leaving the coherence condition without a clear, non‑trivial formulation."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Points out that the evidentialist restriction is over‑restrictive, argues the argument only needs a coherence condition for the extended decision process linking to the predictor, and proposes a broader premise allowing any rational pressure (evidential, preferential, etc.) to justify revisions.",
+      "why_it_failed": "Broadening the premise still leaves open how to delineate permissible rational pressures and how to avoid circularity in defining coherence, so the revised condition is not fully resolved."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W7171201669",
+      "paper_id": "oa:W7171201669",
+      "title": "Newcomb's Problem Without a Fixed Past: A Decision Rule From Observer-Indexed Determinacy",
+      "authors": [
+        "Ajax Benander"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.21561288",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W7164053780.a3",
+      "paper_id": "oa:W7164053780",
+      "title": "Pascal’s Wager and Theory-Induced Blindness",
+      "authors": [
+        "Joseph Mark Haykov"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.21111/jocrise.v3i02.79",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W2480519347.a1",
+      "paper_id": "oa:W2480519347",
+      "title": "Many Gods, Many Wagers: Pascal’s Wager Meets the Replicator Dynamics",
+      "authors": [
+        "Paul F. A. Bartha"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199604760.003.0010",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.9,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W7171201669",
+      "paper_id": "oa:W7171201669",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Newcomb's Problem Without a Fixed Past: A Decision Rule From Observer-Indexed Determinacy"
+    },
+    {
+      "record_id": "W7164053780.a3",
+      "paper_id": "oa:W7164053780",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Pascal’s Wager and Theory-Induced Blindness"
+    },
+    {
+      "record_id": "W2480519347.a1",
+      "paper_id": "oa:W2480519347",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Many Gods, Many Wagers: Pascal’s Wager Meets the Replicator Dynamics"
+    }
+  ],
+  "open_questions": [
+    "How can ‘integrated revision’ be formally distinguished from ‘unexplained drift’ without invoking circular definitions?",
+    "What normative criteria determine which rational pressures (evidential, preferential, etc.) legitimately explain cross‑temporal conflicts?",
+    "Does the revised coherence condition preserve the necessary link between decision coherence and the predictor’s success in Newcomb’s Problem?",
+    "Can the extended‑process view of decisions be reconciled with standard decision‑theoretic models while maintaining a robust coherence requirement?"
+  ],
+  "paper_direction": "A paper here would argue that the central obstacle to the Newcomb‑Problem argument is the lack of a precise, non‑circular coherence condition for rational agents' cross‑temporal intentional states. It would first reconstruct the original coherence premise and the objections concerning unexplained drift, then develop a formal distinction between integrated revisions—changes that are assimilated into an overall plan—and mere drift, drawing on theories of plan revision and intention coherence. Anticipating Defender A’s reply, the paper would show how to articulate the integration clause without circularity by grounding it in a hierarchy of intentions and plan‑maintenance mechanisms. It would also address Defender B’s broader premise by specifying the class of rational pressures that count as legitimate explanations, perhaps via a normative account of preference stability and evidential updating. Finally, the paper would demonstrate that the refined coherence condition still supports the causal‑psychological link to the predictor required for the Newcomb conclusion, thereby preserving the original argument while resolving the identified gap.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection's dilemma is muddled: its first horn ('counts drift as coherent') is not something the premise does. Its real point, that the premise wrongly condemns evidence-free preference change, targets a reading of coherence the Newcomb argument does not obviously need.",
+      "robustness": "Neither the direction nor the transcript answers the worry that coherence across time is orthogonal to the CDT/EDT dispute. The final step, 'demonstrate that the refined condition still supports the link to the predictor', is asserted, not argued.",
+      "significance": "Even if it succeeded, distinguishing integrated revision from drift would mostly restate existing planning-theory work (Bratman on non-reconsideration, Holton on resolutions) and would tidy a peripheral premise rather than the argument's crux.",
+      "specificity": "There is a recognisable thesis and a sequence of steps (intention hierarchies, a class of legitimate rational pressures). But the non-circular criterion and the bridge to Newcomb are left as promissory notes with no case or mechanism specified."
+    },
+    "strongest_objection": "Cross-temporal preference drift is beside the point of the Newcomb argument. In Newcomb's Problem nothing happens between the prediction and the choice: no new evidence, no preference shift. The causal decision theorist can grant any coherence condition you like, Bratmanian or otherwise, and still deny that coherence makes the backtracking counterfactuals in c004 true or decision-relevant. Refining the drift/revision distinction therefore leaves the inference from coherence to one-boxing exactly where it was, and the paper's claim that this is 'the central obstacle' to the argument is false.",
+    "reply_available": false,
+    "what_it_needs": "The paper must show that some specific formulation of cross-temporal coherence actually entails, or at least supports, the backtracking counterfactuals that link choice to prediction, and that a two-boxer cannot accept that formulation while rejecting those counterfactuals. Failing that, it should drop the Newcomb framing and become a self-standing paper on reconsideration norms that engages Bratman, Holton and Broome directly.",
+    "summary": "A tidy-up of a peripheral premise wrongly billed as the crux of the Newcomb argument; unless it connects coherence to the backtracking counterfactuals, a competent referee would dismiss it as missing the real issue.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:27.158064+00:00"
+  },
+  "revision": {
+    "research_question": "Which reconsideration norm separates legitimate change in an agent's intentions over time from unexplained drift, and does a coherence condition built on that norm entail the backtracking counterfactuals the Newcomb argument needs, or does the link to one-boxing fail even when coherence is granted?",
+    "paper_direction": "A paper here would argue that the premise that a rational agent's later intentional states must cohere with her earlier ones is best stated as a norm on reconsideration. A later conflict is permissible when it is a reasons-responsive revision, grounded in evidence or in a practical consideration the agent can cite and actually weighs. It is impermissible when it is unexplained drift. The paper would first show that the original premise, whose explanation clause admits only evidence, cannot classify value-based reconsideration correctly. The Dana case exposes this: the operative dividing line is between reasons-responsive change and change with no reason-bearing basis, not between evidence-driven and evidence-free change. The paper would then state this norm precisely enough to be tested. It would treat the Newcomb link as a separate, explicit claim rather than a consequence of the norm. It would argue that cross-temporal coherence bears on Newcomb only if the condition constrains the relation between the choice and the prediction, and it would test whether any formulation of the norm entails the backtracking counterfactuals in the argument. It would concede that a causal decision theorist can accept the coherence norm while rejecting those counterfactuals, and it would identify the exact premise a two-boxer must reject for the bridge to fail. If no formulation of the norm forces the backtracking counterfactuals, the paper's conclusion is that the Newcomb argument's coherence step is not secured by the reconsideration norm. The paper would then stand as a self-contained account of reconsideration norms, with the Newcomb application reported as a conditional result.",
+    "reply_to_strongest_objection": "The paper accepts the referee's central point: refining the drift/revision distinction does not by itself move the CDT/EDT dispute. It therefore no longer presents that refinement as the central obstacle to the Newcomb argument. It first answers the dilemma. The original premise does not count drift as coherent. Its defect is that its explanation clause has no way to say why unexplained change is a failure, since it admits only evidence as explanation. The paper replaces that clause with a reasons-responsiveness clause, which permits value-based reconsideration and excludes bare drift, using the distinction between a change the agent can cite as a reason and a change with no reason-bearing basis. For the Newcomb link, the paper does not assert the bridge. It states the premise the bridge requires and checks whether a two-boxer can accept the coherence norm while rejecting the backtracking counterfactuals. If they can, the paper reports that result and does not claim the link.",
+    "what_changed": "The revision narrows the thesis from claiming that a refined drift/revision distinction is the central obstacle to the Newcomb argument to a self-standing account of reconsideration norms, with the link to one-boxing treated as a tested conditional rather than an asserted conclusion.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:31:39.703518+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The Dana case does correctly show that an evidence-only explanation clause misclassifies value-based reconsideration, but the objection's first horn (that the premise counts drift as coherent) is confused, and 'finds the thesis unappealing' is ambiguous between drift and a reason-based change of preference, so the case is loosely aimed until the direction cleans it up.",
+        "robustness": "The direction anticipates the irrelevance-to-Newcomb worry only by conceding it and downgrading the Newcomb link to a conditional report, which answers neither the novelty problem for the reconsideration norm nor the predictable negative outcome of the bridge test.",
+        "significance": "Success would at most be a minor rewording of one premise plus a likely negative result that CDT proponents already take for granted, so it would not change how the coherence-based one-boxing argument is discussed.",
+        "specificity": "There is a stated thesis (replace the evidence clause with a reasons-responsiveness clause) and a two-stage test, but the norm is never actually formulated, the circularity worry about 'reason-bearing basis' is left open, and it is not said which counterfactuals c004 needs or how entailment would be tested."
+      },
+      "strongest_objection": "The paper is two loosely connected projects. Its first half, a reasons-responsiveness norm on reconsidering intentions, restates well-developed work on diachronic rationality: Bratman on non-reconsideration, Holton on willpower and resolution, Broome and Kolodny on rational requirements, and Gauthier and McClennen on resolute choice. Its second half will almost certainly find what it already concedes: a causal decision theorist can accept any such norm and still reject the backtracking counterfactuals. Cross-temporal coherence of the agent's own states says nothing about how her choice depends counterfactually on a third party's earlier prediction. So the drift/revision refinement neither adds to the intention literature nor bears on the Newcomb argument's actual crux, premise c004.",
+      "reply_available": false,
+      "what_it_needs": "The paper must pick one project. Either it shows a specific way a diachronic coherence norm (for example, an extended-process or resolute-choice model of decision) constrains the choice–prediction dependence and so does work on c004, or it drops Newcomb and offers a reconsideration norm that improves on Bratman, Holton and Broome. Either way it must engage that literature, which the lab's search entirely missed.",
+      "summary": "The objection identifies a real wording defect in the premise, but the proposed paper either rehearses existing work on intention reconsideration or reaches the obvious conclusion that coherence does not force one-boxing, so as framed it would not survive a competent referee.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:32:00.100267+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

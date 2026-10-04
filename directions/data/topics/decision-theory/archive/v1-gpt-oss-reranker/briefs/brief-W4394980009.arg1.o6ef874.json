@@ -1,0 +1,220 @@
+{
+  "id": "brief-W4394980009.arg1.o6ef874",
+  "objection_id": "W4394980009.arg1.o6ef874",
+  "research_question": "What kind of certainty and hope must a version of Pascal's wager provide to be suitable for apologetic use, and how should the premise that the postmodern rendition lacks certainty and hope be properly qualified?",
+  "argument": {
+    "id": "W4394980009.arg1",
+    "title": "Prefer original Pascal over postmodern",
+    "paper_id": "oa:W4394980009",
+    "paper_title": "Pascal’s Wager and Its Postmodern Counterpart",
+    "premises": [
+      {
+        "id": "W4394980009.c057",
+        "text": "The postmodern rendition of the wager is far too ambivalent.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c058",
+        "text": "The postmodern rendition does not give the seeker any certainty and hope.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c060",
+        "text": "Pascal is certain about where our certainty lies.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      },
+      {
+        "id": "W4394980009.c054",
+        "text": "Pascal clearly clarifies the object of the wager in the remainder of his Pensées, providing certainty.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4394980009.arg1.mp",
+      "text": "If the postmodern rendition is ambivalent, fails to give the seeker certainty and hope, and Pascal provides certainty about the object of the wager, then Pascal's wager should be used in apologetics instead of the postmodern rendition."
+    },
+    "conclusion": {
+      "id": "W4394980009.c071",
+      "text": "We should use Pascal’s wager in apologetics instead of the postmodern rendition of the wager."
+    },
+    "skeleton": "A; ~B; C; D |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4394980009.c058",
+    "text": "The postmodern rendition does not give the seeker any certainty and hope."
+  },
+  "objection": "Kael, a thirty-year-old former atheist in a small coastal town, reads a postmodern rendition of the wager that frames it not as a bet on a deity's existence but as a commitment to a 'language of care': you wager that your life matters to others, and the only rational move is to live as though that narrative is true. Kael does not waver. He knows precisely what to do tomorrow: he will sit with his neighbor's grieving widow, because the narrative structure requires it. He feels certainty—not metaphysical certainty about God, but procedural certainty about his next action and the shape of his week. He feels hope, because the narrative gives him a forward arc: his small acts of care compound into a life worth continuing. Three months later Kael tells a friend, 'I stopped drifting. I have a script now.' The postmodern rendition gave him exactly the two things the premise denies it can: a clear decision procedure (certainty) and a reason to keep going (hope). Kael's case is not an edge case; it is the paradigmatic use of the postmodern wager as a practical orientation rather than a metaphysical bet.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "You are right that the premise as written is too strong, and I will not pretend otherwise. c058 says the postmodern rendition gives the seeker no certainty and no hope, full stop, and Kael's case shows the determinate next action and a forward arc. The inference that matters is the unstated arg1.mp, which needs the certainty relevant to apologetics to be object‑directed. I concede that the premise must be restricted to object‑directed certainty and hope.",
+      "why_it_failed": "The reply concedes the objection but does not supply a justification for why only object‑directed certainty matters for apologetics, leaving the revised premise unsupported."
+    },
+    {
+      "defender": "Defender B",
+      "response": "You are right that Kael gains a practical script and immanent hope, so c058 overstates by saying 'any' certainty and hope. However, the argument’s context limits the relevant certainty to that which Pascal provides about the object of the wager, i.e., confidence in God’s existence and an afterlife. Kael’s procedural certainty is genuine but not metaphysical, so his case does not supply the specific certainty and hope the argument requires, though it exposes an ambiguity in c058 that must be fixed.",
+      "why_it_failed": "While it clarifies the needed distinction, it still assumes without argument that apologetics requires metaphysical certainty, which remains an unproved premise."
+    },
+    {
+      "defender": "Defender A",
+      "response": "You are right that Kael feels something real, and the paper does not deny that people can derive a daily script from the postmodern wager. But the premise is about what the rendition gives the seeker in its own terms. Kael's certainty is procedural, not about the object of the wager, and his hope rests on a narrative without a fixed referent, so the objection shows the postmodern wager can motivate action but does not give the certainty and hope the apologetic use needs.",
+      "why_it_failed": "The reply distinguishes procedural from object certainty but fails to argue why the latter is the only kind relevant to apologetics, leaving the core premise unsubstantiated."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2127143773.a3",
+      "paper_id": "oa:W2127143773",
+      "title": "Pascal's Wager Today: Belief and the Gift of Existence",
+      "authors": [
+        "Joel Hodge"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1111/nbfr.12058",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W2980021551.a1",
+      "paper_id": "oa:W2980021551",
+      "title": "(QPH - ver.1.1 - 14.10.2019 - 4 A4 pages) A Quantitative Philosophy of Happiness (QPH) based on some proposed happiness scores, a quantitative version of Pascal's wager and a model of collective approach of Divinity in the Christian definition",
+      "authors": [
+        "Andrei Lucian Drăgoi"
+      ],
+      "year": 2019,
+      "url": "https://doi.org/10.13140/rg.2.2.26517.27367",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W1531160469.a2",
+      "paper_id": "oa:W1531160469",
+      "title": "Pascal's Wager",
+      "authors": [
+        "Kevin Shaun Grumball"
+      ],
+      "year": 2013,
+      "url": "http://eprints.nottingham.ac.uk/14569/",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W2044291092.a1",
+      "paper_id": "oa:W2044291092",
+      "title": "Pascal's Wager: Combining Continuous Glucose Monitoring and Continuous Subcutaneous Insulin Infusion",
+      "authors": [
+        "David Kerr",
+        "Tolu Olateju"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1089/dia.2010.0017",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W3208436359.c034",
+      "paper_id": "oa:W3208436359",
+      "title": "Surreal decisions",
+      "authors": [
+        "Eddy Keming Chen",
+        "Daniel Rubio"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.1111/phpr.12510",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 1.0,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W2127143773.a3",
+      "paper_id": "oa:W2127143773",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Pascal's Wager Today: Belief and the Gift of Existence"
+    },
+    {
+      "record_id": "W2980021551.a1",
+      "paper_id": "oa:W2980021551",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "(QPH - ver.1.1 - 14.10.2019 - 4 A4 pages) A Quantitative Philosophy of Happiness (QPH) based on some proposed happiness scores, a quantitative version of Pascal's wager and a model of collective approach of Divinity in the Christian definition"
+    },
+    {
+      "record_id": "W1531160469.a2",
+      "paper_id": "oa:W1531160469",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Pascal's Wager"
+    }
+  ],
+  "open_questions": [
+    "What criteria determine whether a form of certainty is appropriate for apologetic argumentation?",
+    "Can procedural certainty and immanent hope be leveraged in apologetics, or must the certainty be metaphysical?",
+    "How should the premise c058 be reformulated to capture the relevant kind of certainty and hope without being overly restrictive?",
+    "Does restricting the premise to object‑directed certainty preserve the original comparative advantage of Pascal’s wager over the postmodern version?"
+  ],
+  "paper_direction": "A paper here would argue that the debate hinges on an ambiguous use of the term 'certainty' in the original premise, and that a defensible apologetic deployment of the postmodern rendition requires a precise qualification of what kind of certainty and hope are relevant. It would reconstruct the argument by distinguishing procedural certainty (knowledge of concrete actions) from object‑directed metaphysical certainty (confidence in the existence of a divine object), and would defend the claim that apologetics demands the latter. Anticipating Defender B’s strongest reply, the paper would need to show that procedural certainty cannot fulfill the epistemic role required for persuasive apologetics, perhaps by analyzing the function of belief in theodicy and afterlife promises. The paper would then propose a revised premise that limits c058 to object‑directed certainty and hope, and assess whether this amendment sustains the original conclusion that Pascal’s wager remains the preferable apologetic tool.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The Kael objection targets a literal 'any certainty' reading that the surrounding premises already narrow to object-directed certainty. The direction is also internally muddled: it speaks of a 'defensible apologetic deployment of the postmodern rendition' while setting out to defend Pascal's superiority, and it slides between certainty about the object and certainty of its existence.",
+      "robustness": "The proposed fix, restricting c058 to metaphysical certainty of existence, makes the argument prove too much against Pascal's own wager. Neither the direction nor the transcript notices this or offers the determinacy distinction that might rescue it.",
+      "significance": "As planned, the paper amounts to disambiguating a word in a single apologetic argument, which is a modest, largely verbal clarification. It would matter more only if it showed which notion of certainty survives the comparison.",
+      "specificity": "There is a recognizable thesis (a procedural vs. object-directed distinction, followed by a revised premise) and a case. However, the decisive step, showing that apologetics demands metaphysical certainty, is left as 'perhaps by analyzing theodicy and afterlife promises', with no argument sketched."
+    },
+    "strongest_objection": "If the revised c058 restricts the relevant certainty to object-directed metaphysical certainty, defined in the direction as confidence in the existence of a divine object, then Pascal's wager fails the same test. The wager is explicitly a decision under uncertainty, premised on reason being unable to settle God's existence. So the restriction either removes the comparative advantage the conclusion needs, or depends on an unnoticed shift. c054 and c060 concern certainty about what the object of the wager is (determinacy), not certainty that it exists. Meanwhile, the Kael objection only works against a hyper-literal reading of c058 that the argument's context (c054, c060) already rules out.",
+    "reply_available": false,
+    "what_it_needs": "The paper must separate determinacy of the wager's object from certainty of that object's existence. It must then show that the determinacy notion is the one apologetics needs, that Pascal supplies it, and that the postmodern rendition does not. It also needs an argument, not a stipulation, for why procedural certainty and immanent hope cannot do apologetic work.",
+    "summary": "As framed, this is a terminological tidy-up that, carried through, would undermine the very comparative conclusion it aims to defend; it is worth pursuing only if recast around the determinacy-versus-existence-certainty distinction.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:30:06.561778+00:00"
+  },
+  "revision": {
+    "research_question": "What kind of certainty and hope must a version of Pascal's wager provide to be suitable for apologetic use, and does the postmodern rendition lack the determinacy of object that apologetics requires, once procedural certainty and immanent hope are granted?",
+    "paper_direction": "A paper here would argue that the premise c058, read as 'the postmodern rendition gives the seeker no certainty and no hope', is false and should be withdrawn, because the Kael case shows procedural certainty about daily action and immanent hope in a forward arc. The defensible premise is narrower: the postmodern rendition does not give the seeker certainty about the determinate object of the wager, and it does not give hope directed at that object. The paper distinguishes two things the referee's objection runs together. The first is determinacy, certainty about what the wager is on (which good is promised, which commitments are being staked, what the stake is). The second is existence, certainty that the object is real. Pascal's wager is explicitly a decision under uncertainty about existence, so it does not supply existence-certainty, and the paper does not require it. c054 and c060 concern determinacy, and Pascal supplies determinacy in the remainder of the Pensees. The paper then argues that apologetics needs determinacy, because apologetic persuasion must direct the hearer toward a specified object whose identity can be assented to, worshipped, and tested against the hearer's life, not merely toward a course of action. Procedural certainty cannot supply this, for a structural reason: Kael's certainty about tomorrow is invariant under the truth or falsity of the narrative. If the language-of-care story were false, his visit to the widow would still be the same act with the same procedural clarity, so the certainty does not discriminate among candidate objects and cannot function as a reason to assent to one. Immanent hope has the same limit. It is hope in the continuation of his own project, conditional on his acts, whereas the hope apologetics offers is hope in a good whose reality is the wager's stake, as in the afterlife and theodicy promises. The paper therefore argues that Pascal's wager remains the preferable apologetic tool because it supplies determinacy about the object while leaving existence open, and that the postmodern rendition, though it yields real procedural certainty and hope, does not supply the determinacy that apologetic use needs.",
+    "reply_to_strongest_objection": "The referee is right that the object-directed restriction must not remove Pascal's advantage, and the paper avoids that by separating determinacy of the object (what it is) from certainty of its existence. Pascal's wager keeps existence open, so it passes the same test as the restricted premise, and the restriction does not prove too much. The paper argues that apologetics needs determinacy, because a persuasive call must specify an object to assent to, and that Pascal supplies this in the Pensees. It then gives the argument the referee asks for. Procedural certainty is invariant under the truth of the narrative: Kael's visit to the widow is equally clear and equally compelling if the story is false, so it cannot discriminate among candidate objects. Immanent hope is conditional on his own acts and does not point to a determinate good beyond them. The Kael case is therefore granted as a real counterexample to the literal premise, and the premise is narrowed to what survives it.",
+    "what_changed": "The revision narrows c058 from 'no certainty and hope' to 'no certainty of the wager's determinate object and no object-directed hope', separates determinacy from existence, and supplies an argument that procedural certainty and immanent hope cannot meet the apologetic requirement.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:32:43.126434+00:00",
+    "assessment": {
+      "grade": "needs work",
+      "overall": 3.25,
+      "scores": {
+        "coherence": 4,
+        "robustness": 3,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction correctly concedes that the literal 'any certainty and hope' premise is false. It then aims its narrowed premise precisely at the inference that arg1.mp needs, and the determinacy/existence distinction keeps it from asking Pascal for certainty of existence he does not offer.",
+        "robustness": "The invariance argument gives the defenders the missing reason why procedural certainty cannot ground assent: Kael's certainty does not discriminate among candidate objects. But the key premise, that apologetics needs determinacy, is asserted in one line and remains exposed to the charge that it defines away the postmodern alternative.",
+        "significance": "Success would yield a cleaner statement of an apologetic thesis about one secondary source, but the narrowed premise is close to what c057 already says, so the payoff is a modest local repair rather than anything that changes how wager debates proceed.",
+        "specificity": "There is a definite thesis (narrow c058 to object-determinacy), a two-part distinction (determinacy vs existence), and a concrete argumentative step (invariance under the narrative's truth), though it lacks textual grounding in Pascal and in the postmodern authors."
+      },
+      "strongest_objection": "The claim that apologetics requires determinacy of object is stipulated rather than argued, and it begs the question against the postmodern rendition. Postmodern theologians such as Caputo, Kearney and Vattimo present indeterminacy as the apologetic appeal itself: a 'religion without religion' that meets the secular seeker where determinate dogma cannot. Defining apologetics as persuasion toward a specified object to be assented to and worshipped rules this out by definition. That makes the narrowed c058 nearly analytic and largely redundant with c057's charge of ambivalence. The Kael case is also an unanchored construction: a 'language of care' wager may not match the postmodern rendition the source paper actually criticises.",
+      "reply_available": true,
+      "what_it_needs": "The paper must give an independent, non-stipulative account of what apologetics aims at, for example via the role of assent, worship or testability in conversion, that a postmodern theologian could recognise. It must then show the invariance argument separates procedural from object-directed certainty without also undercutting Pascal's own habituation advice (holy water, acting 'as if'), and it should engage the actual postmodern rendition in the literature rather than an invented case.",
+      "summary": "A competent, writable repair of an overstated premise with one genuinely useful argument (invariance), but its central claim about what apologetics requires is stipulated and risks begging the question against the postmodern view, so it needs real argument and textual grounding before it is more than a minor refinement.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:33:08.869231+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

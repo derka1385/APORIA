@@ -1,0 +1,202 @@
+{
+  "id": "brief-W2124966002.arg1.o9b4a93",
+  "objection_id": "W2124966002.arg1.o9b4a93",
+  "research_question": "Can the Jamesian doxastic‑venture model consistently account for cases where a believer’s later, evidence‑independent certitude seems to eliminate the phenomenological sense of risk without thereby terminating the original venture?",
+  "argument": {
+    "id": "W2124966002.arg1",
+    "title": "Jamesian doxastic venture preferred",
+    "paper_id": "oa:W2124966002",
+    "paper_title": "Faith as doxastic venture",
+    "premises": [
+      {
+        "id": "W2124966002.c001",
+        "text": "Defending a doxastic venture model of faith requires that such venturesome believing be both possible and ethically acceptable.",
+        "quote": "A ‘doxastic venture’ model of faith – according to which having faith involves believing beyond what is rationally justiﬁable – can be defended only on condition that such venturesome believing is both possible and ethically acceptable."
+      },
+      {
+        "id": "W2124966002.c002",
+        "text": "A development of William James’s position can satisfy the conditions of possibility and ethical acceptability for a doxastic venture model.",
+        "quote": "I show how a development of the position argued by William James in ‘The will to believe’ can succeed in meeting these conditions."
+      },
+      {
+        "id": "W2124966002.c030",
+        "text": "An attenuated sub‑doxastic view of faith is too weak because Christian faith involves assurance, certitude, and belief rather than mere assumption.",
+        "quote": "But surely such an attenuated sub-doxastic understanding of faith is too weak? Theistic – particularly Christian – faith seems to involve a certain kind of assurance or certitude – an assurance or certitude which may, indeed, need to be carefully distinguished from any epistemic certainty, but which nevertheless involves believing rather than merely assuming that God exists and is to be trusted."
+      },
+      {
+        "id": "W2124966002.c031",
+        "text": "The Jamesian doxastic‑venture model supplies what is needed by treating faith as a passionally based tendency to believe and as believingly accepting an unestablished claim.",
+        "quote": "the Jamesian doxastic venture model provides just what is needed, since it understands the gift of faith as a passionally based tendency to believe the religious claim, and the act of venture as an act of believingly accepting it, in the face of the recognition that it cannot be established epistemically."
+      },
+      {
+        "id": "W2124966002.c046",
+        "text": "Doxastic venture involves the more contentious overbelief, not the familiar overassumption.",
+        "quote": "Doxastic venture involves the more contentious overbelief, not the wholly familiar overassumption."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2124966002.arg1.mp",
+      "text": "Whenever the Jamesian doxastic-venture model supplies what faith needs, it is phenomenologically superior to its rivals."
+    },
+    "conclusion": {
+      "id": "W2124966002.c047",
+      "text": "The Jamesian doxastic venture account should be preferred as phenomenologically superior because it accommodates the common view of Christian faith as involving assurance or certitude."
+    },
+    "skeleton": "A -> B; C -> B; E -> ~D; F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2124966002.arg1.r1",
+    "text": "Faith on the Jamesian model can be assurance-bearing while remaining a venture, because the risk is borne in the act of committing before proof and the felt certitude is a subsequent state of the committed believer, not a bracketing of the contingency that constituted the venture."
+  },
+  "objection": "Consider Marta, a hospice chaplain who commits to trusting that her dying patients meet a loving God. Her commitment is made before any proof, with real risk: she could be wrong, and she knows it. Two years later, after many deathbeds, she feels settled, unshakeable certitude that God is there. The premise says this certitude is a later state that leaves the venture intact. But her certitude now treats the contingency as closed: she no longer experiences the belief as something she might lose or that could have turned out otherwise. When she prays, she does not feel herself wagering. The risk she bore has been converted into a certainty she takes to be evidence-independent. So the felt assurance is not a subsequent state standing beside the venture; it is the venture's risk dissolved from the inside, and the premise's distinction between the act and the state cannot be drawn in her case.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The risk is borne in the committing act and the later certitude is a subsequent state; the venture persists because the original act was made under live contingency, and the distinction between act and state remains drawable via a counterfactual test.",
+      "why_it_failed": "The counterfactual test is weak—if the believer’s certitude treats the ground as closed, her “would still commit” answer is idle, so the test cannot separate a sustained venture from a conviction that has absorbed the risk, and the added answerability condition is not supplied by James."
+    },
+    {
+      "defender": "Defender A",
+      "response": "Revises the premise to say the risk is fixed at the time of commitment and the later felt certitude need not display that risk, so the venture’s occurrence does not depend on later introspective access.",
+      "why_it_failed": "Although it avoids the answerability clause, it still offers no way to empirically or phenomenologically distinguish a venture that endures from a conviction that has merged with the original risk, leaving the core objection unresolved."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Clarifies that the venture remains because the original act of committing under epistemic risk is constitutive, and subsequent assurance may obscure the risk without dissolving the venture’s structure.",
+      "why_it_failed": "The reply does not engage the objection that the believer’s self‑understanding treats the risk as eliminated; without a clear criterion for when risk is merely obscured versus erased, the premise remains vulnerable."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W1531160469",
+      "paper_id": "oa:W1531160469",
+      "title": "Pascal's Wager",
+      "authors": [
+        "Kevin Shaun Grumball"
+      ],
+      "year": 2013,
+      "url": "http://eprints.nottingham.ac.uk/14569/",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W2013022620",
+      "paper_id": "oa:W2013022620",
+      "title": "Betting Against Pascal's Wager",
+      "authors": [
+        "Gregory Mougin",
+        "Elliott R. Sober"
+      ],
+      "year": 1994,
+      "url": "https://doi.org/10.2307/2216065",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W2060565581.a1",
+      "paper_id": "oa:W2060565581",
+      "title": "Following God without Belief: Moral Objections to Agnostic Religious Commitment",
+      "authors": [
+        "Samantha Corte"
+      ],
+      "year": 2008,
+      "url": "https://doi.org/10.1111/j.1747-9991.2008.00129.x",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    }
+  ],
+  "novelty": 1.0,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W1531160469",
+      "paper_id": "oa:W1531160469",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Pascal's Wager"
+    },
+    {
+      "record_id": "abs:oa:W2013022620",
+      "paper_id": "oa:W2013022620",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Betting Against Pascal's Wager"
+    },
+    {
+      "record_id": "W2060565581.a1",
+      "paper_id": "oa:W2060565581",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Following God without Belief: Moral Objections to Agnostic Religious Commitment"
+    }
+  ],
+  "open_questions": [
+    "How can one reliably discriminate, from the inside of a believer’s experience, whether a later certitude merely obscures or actually eliminates the original epistemic risk?",
+    "Does the Jamesian model require an answerability or revisability condition for the later state, and if so, is that condition philosophically justified?",
+    "What is the ontological status of the original risk after a belief hardens into settled conviction within the doxastic‑venture framework?",
+    "Can a phenomenological account capture the persistence of risk independent of the believer’s introspective access to it?"
+  ],
+  "paper_direction": "A paper here would argue that the Jamesian doxastic‑venture model must be refined to include a structural account of the original risk that survives independently of later phenomenology, while also providing a clear, testable criterion for when a later assurance merely obscures versus when it dissolves that risk. It would begin by reconstructing the original argument and the objector’s case study of Marta, then critically assess Defender A’s counterfactual and answerability revisions and Defender B’s claim that risk can be merely hidden. Anticipating the strongest reply—that risk is constitutive and persists regardless of introspective access—the paper would need to demonstrate that such a claim either entails an implicit revisability condition or fails to explain the believer’s epistemic self‑understanding, and would propose a revised premise that ties the venture’s persistence to an external, perhaps normative, standard rather than to internal phenomenology alone.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets a claim the premise does not make, namely that the venture's risk must remain phenomenally present, whereas the premise and Bishop's model locate risk in the evidential situation and the committing act.",
+      "robustness": "The obvious reply, that venture is constituted by belief outstripping evidence regardless of felt contingency, is exactly what the defenders gestured at; the direction dismisses it for lacking an introspective test without showing why such a test is required.",
+      "significance": "Even if it succeeded, the paper would mostly sharpen a terminological point about 'venture' unless it were redirected to show that the structural reading undercuts the phenomenological-superiority conclusion c047.",
+      "specificity": "It names a case, interlocutors and a target revision, but the thesis wavers between demanding an inside criterion and endorsing an external standard, and the cited literature (Pascal's Wager pieces) misses the directly relevant work on Bishop, faith and risk."
+    },
+    "strongest_objection": "The objection, and the paper built on it, conflate felt risk with the epistemic risk that makes a belief a venture. On Bishop's Jamesian model, a doxastic venture is believing (and acting on) p beyond what one's total evidence supports. That is a standing relation between the belief and the evidence, not something the believer must experience. Bishop explicitly allows that venture-beliefs can be held with full certitude. Marta's losing the sense of wagering therefore leaves the venture untouched, so long as her evidence still underdetermines p. The paper's own endpoint, tying persistence to an external normative standard, simply restates the model it claims to refine. The genuinely threatening reading of the Marta case is different: her deathbed experiences have become evidence that closes the gap. The proposal never isolates that reading.",
+    "reply_available": false,
+    "what_it_needs": "The paper should drop the demand for an introspective criterion and choose between two theses. (a) Certitude that is evidence-independent yet experientially grounded erodes the evidential gap, so the belief ceases to be a venture and becomes an experience-based (perhaps Alstonian) belief. Or (b) a venture whose riskiness is wholly inaccessible to the believer cannot do the phenomenological work c047 needs, because the model would then explain assurance only by making the 'venture' component phenomenologically idle. Either thesis must be argued against Bishop's actual texts (Believing by Faith, 2007) and the faith-and-risk literature (Buchak, Howard-Snyder, McKaughan).",
+    "summary": "As framed, this would be dismissed for confusing felt risk with evidential risk; there is a better paper nearby on whether the model's structural notion of venture leaves it any phenomenological advantage at all.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:13.822274+00:00"
+  },
+  "revision": {
+    "research_question": "On Bishop's Jamesian model, does a doxastic venture survive a believer's later evidence-independent certitude when the believer no longer feels any risk, and if it does, can the venture component contribute to the phenomenological superiority claimed in c047?",
+    "paper_direction": "A paper here would argue that, on Bishop's Jamesian model, whether a belief is a doxastic venture is fixed by a standing relation between the belief and total evidence, not by the believer's felt sense of risk. So Marta's loss of the sense of wagering does not by itself end the venture. The paper would isolate the threatening reading that the original proposal missed: Marta's deathbed experiences either are evidence that closes the evidential gap on p, in which case her belief ceases to be a venture and becomes an experience-based belief, or they are not evidence bearing on p, in which case the venture persists but its riskiness is inaccessible to her and so cannot explain her assurance. The paper defends the second horn as the thesis: a venture wholly inaccessible to the believer cannot do the phenomenological work that the superiority conclusion requires, so the Jamesian account cannot be preferred on phenomenological grounds. It drops both the demand for an introspective criterion and the appeal to an external normative standard. It tests the dilemma against Bishop's Believing by Faith and the faith-and-risk literature on Buchak, Howard-Snyder and McKaughan. Its central claim is that the venture's persistence is a fact about evidential relations, while any phenomenological advantage must come from something the believer can register.",
+    "reply_to_strongest_objection": "The referee is right that felt risk is not the venture. On Bishop's model the venture is a standing relation between believing p and total evidence, and Bishop allows full certitude, so the introspective criterion and the external standard are both dropped and the paper does not rest on the act/state distinction in the premise. The paper accepts persistence and turns to the dilemma the referee's reading exposes. If Marta's deathbed experiences are evidence closing the gap, the belief is no longer a venture and the case is experience-based. If they are not, the venture survives, but its riskiness is idle in explaining the assurance, so the venture component cannot support c047's phenomenological superiority.",
+    "what_changed": "The revision drops the introspective and external-standard criteria, concedes that the venture is a standing evidential relation, and relocates the argument to a dilemma that undercuts the phenomenological-superiority conclusion c047.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:30:58.802114+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The case and the dilemma hold together, but the thesis is aimed at a stronger claim than c047 states, and the paper concedes the challenged premise (persistence) instead of contesting it.",
+        "robustness": "The obvious reply is that c047 needs only compatibility between venture and assurance, and nothing in the direction or transcript answers it; the binary dilemma also ignores the partial-evidence case.",
+        "significance": "Even if it succeeded, the paper would refute an explanatory role for felt risk that Bishop does not claim, so at most it clarifies that the venture component is phenomenologically idle, which is a minor point.",
+        "specificity": "It has a definite thesis, a worked case, an explicit dilemma and named texts to test against, though the plan does not say how it will establish what c047 requires of the venture component."
+      },
+      "strongest_objection": "The paper attacks a claim the argument does not make. c047 says the Jamesian account is phenomenologically superior because it accommodates assurance or certitude. That is a compatibility claim made against sub-doxastic rivals, which leave no room for genuine belief. It is not a claim that the venture's riskiness produces or explains the assurance. On Bishop's model the assurance comes from the belief component (believingly accepting p), and the venture component only needs to be consistent with it. So the paper's second horn is exactly what Bishop needs, not a problem for him. That horn is a venture that persists as a fact about evidential relations while the believer feels full certitude. The dilemma is also too sharp. Deathbed experiences could bear on p partially, narrowing the evidential gap without closing it. That middle case is the one most faith-and-risk authors (Buchak, Howard-Snyder, McKaughan) would use.",
+      "reply_available": false,
+      "what_it_needs": "The paper must show from Bishop's text that the superiority claim requires the venture component itself to contribute felt content, not merely to be compatible with assurance, or else retarget its thesis at a claim Bishop actually makes. It must also handle the partial-evidence case its dilemma currently excludes.",
+      "summary": "A well-organised proposal built on a misreading: conceding that the venture persists inaccessibly gives Bishop what he needs, so as framed the paper would not survive a first competent referee.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:31:21.501604+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

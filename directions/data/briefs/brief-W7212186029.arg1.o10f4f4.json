@@ -1,0 +1,201 @@
+{
+  "id": "brief-W7212186029.arg1.o10f4f4",
+  "objection_id": "W7212186029.arg1.o10f4f4",
+  "research_question": "Can a similarity-relative parthood relation adequately track the metaphysical constituency denied by the traditional doctrine of divine simplicity?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Divine simplicity as symmetric parthood",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c006",
+        "text": "Divine simplicity is most plausibly understood as the claim that God lacks proper parts.",
+        "quote": "Instead, DDS is more plausibly understood as saying that God lacks proper parts – call this the mereological formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is non-symmetric parthood, the claim that God has no proper parts yields the symmetry formulation of divine simplicity.",
+        "quote": "But if proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c013",
+        "text": "Instantiation can be modelled as parthood because objects may be understood as mereological fusions of their properties.",
+        "quote": "On the mereological bundle theory suggested by Laurie Paul (2002, 2006, 2012, 2017), for instance, objects are mereological fusions of the properties they bear."
+      },
+      {
+        "id": "W7212186029.c016",
+        "text": "God and omniscience can be mutual parts with respect to similarity while remaining numerically distinct.",
+        "quote": "it is also possible, at least in principle, for this symmetric parthood relation to hold while God remains numerically distinct from his omniscience."
+      },
+      {
+        "id": "W7212186029.c018",
+        "text": "Defining proper parthood as non-symmetric similarity-based parthood makes proper parthood irreflexive, asymmetric, and transitive.",
+        "quote": "If proper parthood is defined as non-symmetric parthood with respect to similarity, it would immediately be irreflexive, asymmetric, and transitive."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Proper parthood is non-symmetric parthood, and the symmetry formulation of divine simplicity is the thesis that God is part of all God's parts."
+    },
+    "conclusion": {
+      "id": "W7212186029.c044",
+      "text": "Divine simplicity can viably be formulated as the thesis that God is part of all God’s parts."
+    },
+    "skeleton": "A; B -> (A -> C); D; E; F -> H |- G",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.c013",
+    "text": "Instantiation can be modelled as parthood because objects may be understood as mereological fusions of their properties."
+  },
+  "objection": "Consider a chemist, Mara, studying a copper wire. She believes physical objects are composed of their physical constituents: atoms, fields, and their arrangements. She heats the wire, and it loses its coiled shape while every atom stays put. If the wire were a fusion of its properties, losing the property 'coiled' would mean losing a part. But nothing material left the wire. The wire also gains the property 'being thought of by Mara' when she reflects on it, yet no part arrives. The wire's real composition, the things that would show up in any physical inventory, is constant through both changes. Its properties track how its parts are arranged and related. They are not further ingredients. Treating instantiation as parthood confuses what an object is made of with what is true of it. The God case depends on this confusion: omniscience can be a 'part' of God only if parthood has been redefined until it no longer tracks composition. At that point, 'having no proper parts' says nothing about what God is made of.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The wire case shows only that properties are not physical constituents. The proposed relation is explicitly similarity-relative, so it is a formal model of structural relations between God and attributes rather than an inventory of material parts.",
+      "why_it_failed": "This reply concedes that the model does not by itself state the traditional denial of metaphysical composition. It therefore leaves an equivocation between the constituent sense of \"parts\" in the initial premise and the similarity-relative sense in the conclusion."
+    },
+    {
+      "defender": "Defender A",
+      "response": "God need not have contingent proper parts when relational properties are acquired, because the model counts only relevant similarity-parts; it does not guarantee that God is similar to every relational property in the required way.",
+      "why_it_failed": "The response blocks an automatic inference from every relational property to a divine part, but it does not specify the relevance or similarity conditions. Without such conditions, it remains unclear whether the account is non-trivial and whether it excludes contingent relational properties principledly."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The property-fusion account should be restricted to divine attributes and treated as non-compositional. Mutual parthood then explains how God and an attribute can be distinct without either standing in non-symmetric proper parthood to the other.",
+      "why_it_failed": "Restricting the model avoids the most direct lessons of the wire case, but it does not establish that non-compositional similarity-based parthood captures metaphysical constituency. The restriction thus requires the bridging premise Defender A identifies."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7213496574.a3",
+      "paper_id": "oa:W7213496574",
+      "title": "Life in Himself Through Eternal Generation: St. Augustine of Hippo's Metaphysical Analysis of John 5:26 and Its Relevance",
+      "authors": [
+        "Hendi Hendi"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.18566/cueteo.v53n120.a02",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": ""
+    },
+    {
+      "record_id": "W7213609609.a3",
+      "paper_id": "oa:W7213609609",
+      "title": "Does the Law Explain Itself? On Physical Order, the Two Stops, and the Ground the Figure Cannot Supply",
+      "authors": [
+        "Oscar Gaitan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.22834812",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": ""
+    },
+    {
+      "record_id": "W7216005646.a1",
+      "paper_id": "oa:W7216005646",
+      "title": "The Inversion of Greatness: From the Nature of Necessity to Maximum Possibility",
+      "authors": [
+        "Procyon"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.23094354",
+      "verdict": "different",
+      "similarity": 0.06,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.92,
+  "records_searched": 4139,
+  "nearest": [
+    {
+      "record_id": "W7213496574.a3",
+      "paper_id": "oa:W7213496574",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": "",
+      "title": "Life in Himself Through Eternal Generation: St. Augustine of Hippo's Metaphysical Analysis of John 5:26 and Its Relevance"
+    },
+    {
+      "record_id": "W7213609609.a3",
+      "paper_id": "oa:W7213609609",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": "",
+      "title": "Does the Law Explain Itself? On Physical Order, the Two Stops, and the Ground the Figure Cannot Supply"
+    },
+    {
+      "record_id": "W7216005646.a1",
+      "paper_id": "oa:W7216005646",
+      "verdict": "different",
+      "similarity": 0.06,
+      "quote": "",
+      "title": "The Inversion of Greatness: From the Nature of Necessity to Maximum Possibility"
+    }
+  ],
+  "open_questions": [
+    "What criteria determine which divine attributes or relational properties count as relevant similarity-parts?",
+    "Can a relation that is explicitly non-compositional nevertheless track metaphysical constituency closely enough for the traditional doctrine?",
+    "Does the formal profile assigned to similarity-relative proper parthood prevent trivial mutual parthood between God and attributes?",
+    "What independent reason supports applying the property-fusion model to divine attributes but not to ordinary objects or arbitrary relational properties?"
+  ],
+  "paper_direction": "A paper here would argue that the symmetric-parthood formulation of divine simplicity succeeds only if its similarity-relative parthood relation is shown to represent the constituent relation excluded by traditional simplicity. It would distinguish the formal reconstruction from ordinary material composition, assess the proposed restriction to divine attributes, and anticipate the reply that formal modelling need not reproduce a physical inventory. To establish the thesis, it would need independently motivated criteria for relevant similarity-parts and an account of why those criteria make the relation sufficiently constituency-tracking, non-trivial, and resistant to contingent relational-property cases.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 3,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The equivocation charge is consistent and bears on the step from c006 to c044, but the wire case targets a material sense of 'parts' that c013's 'may be understood' claim never asserts, so the objection is only loosely aimed.",
+      "robustness": "A referee would answer at once that constituent ontology already treats properties as non-material parts, and the transcript only gestures at the needed bridge criteria without supplying them, so the direction lacks a developed answer.",
+      "significance": "Showing whether a similarity-relative parthood relation can stand in for metaphysical constituency would usefully discipline formal reconstructions of simplicity, but it refines the debate rather than reshaping it.",
+      "specificity": "The research question and the required deliverables (relevance criteria, non-triviality, exclusion of relational properties) are clear, but the paper has no positive case and no chosen standard of traditional constituency to test against."
+    },
+    "strongest_objection": "The wire case attacks c013 with a physicalist inventory criterion, counting only atoms and fields as parts. Neither the argument nor the tradition accepts that criterion. Constituent ontologists (Armstrong, Loux, Wolterstorff on Aquinas) and mereological bundle theorists (L.A. Paul) already treat properties as non-material metaphysical constituents. They usually restrict this to intrinsic properties and handle change through temporal parts or states of affairs. Classical simplicity denies exactly this kind of metaphysical composition (subject/accident, essence/existence), not material composition. So 'nothing material left the wire' begs the question and misses the premise. Once the paper drops the wire case, its thesis is only an adequacy demand: the formal relation must match the constituency the tradition denies. Any formalizer would accept that demand, so the paper must say what it adds.",
+    "reply_available": false,
+    "what_it_needs": "The paper must abandon the physical-inventory framing and engage constituent ontology directly. It should then argue concretely that the similarity-relative relation fails, or succeeds, by a criterion the traditional doctrine itself uses (e.g., Aquinas's composition of potency and act, or subject and accident). It must also state the relevance conditions and test whether they rule out trivial mutual parthood and contingent relational properties.",
+    "summary": "There is a real question about whether a formal similarity-parthood relation captures what classical simplicity denies, but the copper-wire argument begs the question against constituent ontology and must be replaced by engagement with the traditional notion of metaphysical composition before this becomes a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T09:05:16.197849+00:00"
+  },
+  "revision": {
+    "research_question": "Can a similarity-relative parthood relation, with relevance criteria taken from the tradition's own criteria of metaphysical composition (subject and accident, potency and act), model the constituency that classical divine simplicity denies?",
+    "paper_direction": "A paper here would argue that the symmetric-parthood formulation of divine simplicity succeeds only if its similarity-relative parthood relation tracks the metaphysical constituency the tradition denies, and that this condition is met only under relevance criteria drawn from the tradition itself. It drops the physical-inventory framing and treats the wire case as a test of a material reading that the instantiation premise does not assert. The paper would first fix a standard of traditional constituency, namely subject and accident and the composition of potency and act, and then state explicit relevance conditions for similarity-parts. It would then test whether those conditions exclude trivial mutual parthood between God and a divine attribute, and whether they exclude contingent relational properties, which are instantiated without composing the subject. If the relation fails either test, the paper would locate the failure precisely and state which restricted version of the symmetric formulation survives. The thesis is conditional and adequacy-based: it claims that the formulation is viable only under stated criteria, and it does not claim that the similarity-relative relation is already a faithful model of constituency.",
+    "reply_to_strongest_objection": "The paper concedes that the wire case, which appeals to a physical inventory of atoms and fields, misses the premise. Constituent ontology already allows non-material metaphysical parts, so the physical sense of parthood is the wrong standard. The paper replies by adopting the referee's standard: the test is whether the relation matches the composition that classical simplicity denies, namely subject and accident and potency and act. It supplies what the adequacy demand alone does not: explicit relevance conditions, a test for trivial mutual parthood between God and omniscience, and a test for contingent relational properties. Those conditions are the paper's contribution. Without them, the claim that a formal relation can stand in for constituency is unsupported.",
+    "what_changed": "The revision drops the physical-inventory wire argument, makes the thesis a conditional adequacy test against the tradition's own composition criteria, and adds explicit relevance conditions that the paper must satisfy.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T09:15:44.646647+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The direction rightly concedes that the wire case attacks a physical-inventory reading that the modelling premise does not assert. But its own project is an adequacy test of the whole formulation (closer to c016 and c044) rather than an engagement with c013's claim that instantiation may be modelled as parthood, so it is coherent but only loosely aimed at the challenged premise.",
+        "robustness": "The obvious tension between a substratum-free property-fusion model and subject/accident criteria, together with the risk that tradition-derived relevance conditions trivialize the formal relation, is not anticipated, and the direction defers its supposed contribution (the conditions themselves) entirely.",
+        "significance": "If it worked, it would be a useful refinement, giving a principled criterion for when mereological formulations of simplicity are faithful to the classical doctrine, but it would not reshape the debate.",
+        "specificity": "There is a conditional thesis and a test sequence (fix the standard, state the conditions, test for trivial mutual parthood and contingent relational properties), but the decisive relevance conditions are only promised, never sketched, so the paper's core is not yet writable."
+      },
+      "strongest_objection": "The proposal cannot have both halves of its plan. The challenged premise models objects as fusions of their properties, which is a bundle-theoretic ontology with no subject or substratum distinct from the properties. The relevance criteria the paper borrows from the tradition, subject/accident and potency/act, presuppose exactly such a subject (a substance, or a hylomorphic composite). Imported into a property-fusion model, those criteria fall into a dilemma. Either they are reinterpreted until they no longer mean what the tradition meant, and the adequacy test is not met. Or they carry their original content, and then the classical denial of composition does all the work, so the symmetric-parthood apparatus is idle and adds nothing to the formulation.",
+      "reply_available": false,
+      "what_it_needs": "The paper must state the relevance conditions explicitly and show that they are statable inside a property-fusion (substratum-free) ontology without collapsing into the tradition's own denial of composition. It must also engage the existing literature on non-antisymmetric and non-extensional mereology and on constituent ontology, notably Cotnoir on mutual parthood and Brower and Pruss on simplicity, which the lab's search entirely missed.",
+      "summary": "A reasonable adequacy question, but as proposed it defers its only real contribution and has not noticed that its traditional criteria presuppose a substance ontology that the property-fusion premise rejects; revise before writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T09:16:05.382793+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

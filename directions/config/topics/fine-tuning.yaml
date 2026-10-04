@@ -1,0 +1,26 @@
+# Example second topic: configured, not yet run. Run it with `make corpus targets map runs export TOPIC=fine-tuning`.
+slug: fine-tuning
+name: The fine-tuning argument
+description: >-
+  Arguments from the apparent fine-tuning of physical constants and initial conditions to a designer, and the
+  replies: the multiverse, observation-selection effects, the normalizability problem, and doubts about the
+  probabilities involved.
+area: philosophy of religion and philosophy of physics
+queries:
+  fine-tuning argument: '"fine-tuning argument"'
+  fine-tuning and design: '"fine-tuning" AND design AND God'
+  multiverse objection: 'multiverse AND "fine-tuning"'
+  anthropic principle: '"anthropic principle" AND (God OR design)'
+  normalizability problem: 'normalizability AND "fine-tuning"'
+  observation selection: '"observation selection" AND "fine-tuning"'
+fresh_from: "2026-08-01"
+fresh_queries: ['"fine-tuning"', '"design argument"', '"anthropic principle"', 'multiverse AND God',
+                '"philosophy of religion"', 'God AND argument']
+relevant: 'fine.?tun|design|anthropic|multiverse|constants|cosmolog|teleolog|god\b|theis|atheis'
+relevance_levels:
+  - none
+  - touches arguments for God's existence or cosmology
+  - concerns design arguments, anthropic reasoning or the multiverse
+  - directly about the fine-tuning argument
+schools: [Bayesian confirmation theory, multiverse naturalism, classical theism, observation-selection reasoning,
+          skeptical theism]

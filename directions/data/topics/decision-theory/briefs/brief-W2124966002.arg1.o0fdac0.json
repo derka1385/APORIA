@@ -1,0 +1,212 @@
+{
+  "id": "brief-W2124966002.arg1.o0fdac0",
+  "objection_id": "W2124966002.arg1.o0fdac0",
+  "research_question": "Can the Jamesian doxastic-venture model claim phenomenological superiority over sub-doxastic rivals if faith’s assurance-laden core consists in an unstabilised passional tendency expressed through committed action rather than in settled belief?",
+  "argument": {
+    "id": "W2124966002.arg1",
+    "title": "Jamesian doxastic venture preferred",
+    "paper_id": "oa:W2124966002",
+    "paper_title": "Faith as doxastic venture",
+    "premises": [
+      {
+        "id": "W2124966002.c001",
+        "text": "Defending a doxastic venture model of faith requires that such venturesome believing be both possible and ethically acceptable.",
+        "quote": "A ‘doxastic venture’ model of faith – according to which having faith involves believing beyond what is rationally justiﬁable – can be defended only on condition that such venturesome believing is both possible and ethically acceptable."
+      },
+      {
+        "id": "W2124966002.c002",
+        "text": "A development of William James’s position can satisfy the conditions of possibility and ethical acceptability for a doxastic venture model.",
+        "quote": "I show how a development of the position argued by William James in ‘The will to believe’ can succeed in meeting these conditions."
+      },
+      {
+        "id": "W2124966002.c030",
+        "text": "An attenuated sub‑doxastic view of faith is too weak because Christian faith involves assurance, certitude, and belief rather than mere assumption.",
+        "quote": "But surely such an attenuated sub-doxastic understanding of faith is too weak? Theistic – particularly Christian – faith seems to involve a certain kind of assurance or certitude – an assurance or certitude which may, indeed, need to be carefully distinguished from any epistemic certainty, but which nevertheless involves believing rather than merely assuming that God exists and is to be trusted."
+      },
+      {
+        "id": "W2124966002.c031",
+        "text": "The Jamesian doxastic‑venture model supplies what is needed by treating faith as a passionally based tendency to believe and as believingly accepting an unestablished claim.",
+        "quote": "the Jamesian doxastic venture model provides just what is needed, since it understands the gift of faith as a passionally based tendency to believe the religious claim, and the act of venture as an act of believingly accepting it, in the face of the recognition that it cannot be established epistemically."
+      },
+      {
+        "id": "W2124966002.c046",
+        "text": "Doxastic venture involves the more contentious overbelief, not the familiar overassumption.",
+        "quote": "Doxastic venture involves the more contentious overbelief, not the wholly familiar overassumption."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2124966002.arg1.mp",
+      "text": "Whenever the Jamesian doxastic-venture model supplies what faith needs, it is phenomenologically superior to its rivals."
+    },
+    "conclusion": {
+      "id": "W2124966002.c047",
+      "text": "The Jamesian doxastic venture account should be preferred as phenomenologically superior because it accommodates the common view of Christian faith as involving assurance or certitude."
+    },
+    "skeleton": "A -> B; C -> B; E -> ~D; F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2124966002.arg1.r1",
+    "text": "The Jamesian model supplies what faith needs only where the passionally motivated tendency to believe is stabilised into believingly accepting the unestablished claim, and c031 should be restricted accordingly."
+  },
+  "objection": "Consider Marta, a hospice chaplain who, after her sister's death, is passionately drawn to believe that God holds the dead in mercy. She acts on this tendency: she prays, sings the hymns, and tells the grieving family she is sure. Yet when a colleague asks whether she is certain the afterlife exists, she says plainly that she is not; she holds the claim as a live hope she would abandon if evidence turned against it. Her tendency to believe has not stabilised into believingly accepting the claim as settled, since she still regards it as unestablished and revisable. Nonetheless, her faith is robust, lived, and assurance-laden in the practical sense her community means by it. The restriction in arg1.r1 says the Jamesian model supplies what faith needs only where stabilisation occurs, so Marta's case is excluded from the model's scope. But her case shows that the faith-relevant work is done by the passionate tendency together with committed action, not by stabilised doxastic acceptance. The stabilisation condition therefore restricts the model to cases where it is not needed.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A conceded that r1 excludes Marta and cannot alone support c047, then proposed a revised premise on which the Jamesian model supplies what faith needs wherever a passionally motivated tendency to believe, expressed in committed action, constitutes faith’s assured practical core, whether or not that tendency has stabilised into believingly accepting the claim.",
+      "why_it_failed": "It got as far as identifying the needed revision, but left the objector’s dilemma unanswered: without stabilisation, the revised premise must still explain what makes the tendency doxastic rather than merely sub-doxastic in order to satisfy c030, and no subsequent reply addressed whether it can do so."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2483078889.a3",
+      "paper_id": "oa:W2483078889",
+      "title": "God, Hope, and Evidence",
+      "authors": [
+        "Jeff Jordan"
+      ],
+      "year": 2006,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199291328.003.0006",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The permissibility conditions of hope differ from those of belief."
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "title": "Rational Faith and Justified Belief",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199672158.003.0003",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "stopping one’s search for evidence for P and committing to act on it without further evidence"
+    },
+    {
+      "record_id": "abs:oa:W3112351533",
+      "paper_id": "oa:W3112351533",
+      "title": "Believing without Evidence: Pragmatic Arguments for Religious Belief in Life of Pi",
+      "authors": [
+        "Alberto Oya"
+      ],
+      "year": 2020,
+      "url": "https://philpapers.org/rec/OYABWE",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "as referring to a subjective, non-truth-dependent way of understanding the world and of relating to it"
+    },
+    {
+      "record_id": "W2906683816.a2",
+      "paper_id": "oa:W2906683816",
+      "title": "Augustine and William James on the Rationality of Faith",
+      "authors": [
+        "Mark J. Boone"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.1111/heyj.13123",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W4413292369.a2",
+      "paper_id": "oa:W4413292369",
+      "title": "The Moral Hope Argument",
+      "authors": [
+        "Eric H. Reitan"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.3390/rel16081060",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W2483078889.a3",
+      "paper_id": "oa:W2483078889",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The permissibility conditions of hope differ from those of belief.",
+      "title": "God, Hope, and Evidence"
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "stopping one’s search for evidence for P and committing to act on it without further evidence",
+      "title": "Rational Faith and Justified Belief"
+    },
+    {
+      "record_id": "abs:oa:W3112351533",
+      "paper_id": "oa:W3112351533",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "as referring to a subjective, non-truth-dependent way of understanding the world and of relating to it",
+      "title": "Believing without Evidence: Pragmatic Arguments for Religious Belief in Life of Pi"
+    }
+  ],
+  "open_questions": [
+    "Can practical assurance generated by committed passional action be phenomenologically distinguished from the assurance that supposedly requires settled belief?",
+    "Does dropping the stabilisation condition from the Jamesian model collapse the distinction between doxastic venture and sub-doxastic hope or assumption?",
+    "If faith’s core is an unstabilised tendency expressed in action, does the Jamesian model retain any advantage over the pragmatic or hope-based accounts it was meant to supplant?"
+  ],
+  "paper_direction": "A paper here would argue that the Jamesian doxastic-venture model loses its claimed phenomenological superiority once the stabilisation condition is removed, because the revised, unstabilised account cannot distinguish faith from the attenuated sub-doxastic views it was meant to supplant. The case would centre on cases like Marta’s, where practical assurance is present without doxastic settlement, to show that assurance-in-action is insufficient to mark a distinctly doxastic venture and that c030’s requirement of belief and certitude is undermined rather than satisfied by dropping stabilisation. The strongest reply to anticipate is the revised premise that committed passional tendency alone constitutes faith’s assured core; the paper would need to show that this either tacitly reintroduces a form of acceptance equivalent to stabilised belief, or else concedes that the model collapses into a sub-doxastic hope account and therefore cannot claim phenomenological superiority over its rivals.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection treats 'regards it as unestablished' as incompatible with believing acceptance, which misreads the premise as stated. The paper direction then switches from attacking r1's restriction to defending what amounts to the stabilisation requirement, so the project is aimed at a different claim than the objection was.",
+      "robustness": "A referee would reply that Marta either believes beyond the evidence or merely hopes, so the dilemma is already built into c030 and the direction offers no answer beyond restating that dilemma's horns.",
+      "significance": "Even if it succeeded, the result is that an account without belief is not a doxastic account, which adds little to the existing doxastic-versus-non-doxastic faith debate (Pojman, Audi, Howard-Snyder) beyond what c030 already asserts.",
+      "specificity": "There is a definite thesis, a case, and a stated reply to anticipate, but the plan does not say how belief is to be distinguished from hope or acceptance, which is the work the argument depends on."
+    },
+    "strongest_objection": "The case and the paper rest on a conflation. On the doxastic-venture model, 'believingly accepting an unestablished claim' just is taking p to be true in practical reasoning while recognising that p is not settled by the evidence. So Marta's regarding the claim as 'unestablished and revisable' does not show that her tendency has failed to stabilise into belief. Read one way, she believes beyond her evidence, which is a paradigm doxastic venture that r1 already covers. Read the other way (she says she is not certain and calls it 'a live hope'), she merely hopes or assumes, which is exactly the sub-doxastic faith that c030 sets aside. On neither reading does the 'unstabilised tendency' mark out a third category. The paper's main thesis, that a model without belief cannot be distinctively doxastic, is close to analytic. And its target, Defender A's revised premise, is a construction of the lab's own debate that no defender of the model actually holds.",
+    "reply_available": false,
+    "what_it_needs": "It must first show that 'stabilised believing acceptance' differs from the model's own notion of believing a claim recognised as evidentially unestablished. That requires an independent criterion separating belief from hope or acceptance, such as dispositions in practical reasoning or the role of credence. It must then show that Marta-type cases fall genuinely between the two, so that the collapse argument has a non-trivial target in the actual doxastic-venture literature rather than in a revised premise that no one defends.",
+    "summary": "As framed, this would be dismissed quickly: it attacks an artificial revision of the premise and depends on running together 'unestablished by evidence' with 'not believed', so the student would need to rebuild it around a real criterion for belief before it is worth drafting.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:17:35.998292+00:00"
+  },
+  "revision": {
+    "research_question": "On the Jamesian doxastic-venture model, does the assurance-laden core of Christian faith require believing acceptance in the practical-reasoning sense, and can an independent test distinguish such acceptance from hope in cases like Marta's?",
+    "paper_direction": "A paper here would argue that the stabilisation restriction in arg1.r1 misreads the doxastic-venture model, because on that model believing acceptance of an unestablished claim is taking p to be true in practical reasoning while recognising that the evidence does not settle p. The paper would therefore drop the claim that Marta's case falls outside the model's scope and would instead test whether her case falls inside it. It would give an independent criterion for the difference between believing acceptance and hope: believing acceptance treats p as a premise in practical and assertoric reasoning, so that the agent answers questions about p from p and reasons from it to conclusions such as what to say and do; hope takes the desired outcome as the object of motivation, with action conditioned on p without p functioning as a premise. Credence-level reports, such as 'I am not certain', are relevant evidence but do not settle which state is present, since the inferential role is what does the work. Applied to Marta, the criterion yields a split: her assertion to the family that she is sure, and her reasoning from the afterlife claim in her ministry, are believing-acceptance evidence, while her disavowal of certainty and her reluctance to treat p as settled are hope evidence. The paper would argue that the Marta-type case is a real test only if these two strands can be separated in an actual agent, and that where they cannot, the model is committed to classifying the agent as believing beyond evidence. The paper's claim about phenomenological superiority in c047 is withdrawn in favour of the narrower claim that assurance-laden faith, read through inferential role, is a doxastic venture rather than a sub-doxastic hope.",
+    "reply_to_strongest_objection": "The referee is right that the revised premise is a construction no defender holds, and that on the model's own notion 'regards it as unestablished' is compatible with believing acceptance. The paper therefore concedes the coherence point and drops the stabilisation restriction. It answers the robustness point by supplying an independent criterion, inferential role in practical and assertoric reasoning, which separates believing acceptance from hope without relying on the belief/acceptance labels. It answers the specificity point by stating how the test applies to Marta. It concedes the significance point: the claim that a non-belief account is not doxastic is near-analytic, so the paper's contribution lies in the criterion and in the case analysis, not in the thesis that non-doxastic faith is non-doxastic.",
+    "what_changed": "The revision drops the stabilisation-based collapse thesis and the claim of phenomenological superiority, and reframes the paper around an inferential-role criterion that tests whether Marta-type assurance is believing acceptance or hope.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:19:16.605636+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The direction is internally consistent, but it abandons both the challenged premise and c047's superiority claim. It ends up aimed at a different and narrower thesis than the argument actually states.",
+        "robustness": "Its only defence against the doxastic/sub-doxastic dilemma is a criterion that by its own definition fits sub-doxastic acceptance equally well, so it fails the c030 requirement it was introduced to meet.",
+        "significance": "An inferential-role test distinguishing acceptance from hope is well trodden (Cohen, Alston, Audi, Howard-Snyder on propositional faith and hope), and the paper concedes its central thesis is near-analytic.",
+        "specificity": "There is a definite criterion and an application to Marta, but the application ends in an unresolved 'split' and an ad hoc default rule, with no plan for adjudicating mixed evidence."
+      },
+      "strongest_objection": "The inferential-role criterion separates the wrong pair of states. Treating p as a premise in practical and assertoric reasoning while recognising the evidence does not settle p is the standard definition of non-doxastic acceptance (Cohen, Bratman), which is exactly the 'overassumption' that c046 and c030 contrast with overbelief. So the criterion can at best show that Marta accepts rather than merely hopes. It cannot show that her acceptance is doxastic. That is precisely the unanswered dilemma from the trial: what makes the tendency belief rather than sub-doxastic assumption. The rule that inseparable cases count as 'believing beyond evidence' simply stipulates the answer.",
+      "reply_available": false,
+      "what_it_needs": "The paper must supply a mark of belief, not merely of acceptance, that is independent of inferential role. Candidates include involuntariness, a truth-directed correctness norm, or the persistence of the state outside deliberative contexts. It must then show that Marta-type agents can meet it while sincerely disavowing certainty, and it must say whether her 'I am sure' to the family is sincere assertion or pastoral performance.",
+      "summary": "A tidy acceptance-versus-hope criterion that leaves untouched the real problem, distinguishing doxastic venture from sub-doxastic acceptance, so the first competent reader would note that it reproduces Cohen's acceptance and send it back.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:19:32.497949+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

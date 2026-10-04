@@ -1,0 +1,195 @@
+{
+  "id": "brief-W2124966002.arg1.o11fa20",
+  "objection_id": "W2124966002.arg1.o11fa20",
+  "research_question": "Can the Jamesian doxastic‑venture model coherently accommodate the simultaneous phenomenology of absolute certitude and the presence of epistemic risk without requiring the believer to maintain reflective awareness of the claim’s unestablished status?",
+  "argument": {
+    "id": "W2124966002.arg1",
+    "title": "Jamesian doxastic venture preferred",
+    "paper_id": "oa:W2124966002",
+    "paper_title": "Faith as doxastic venture",
+    "premises": [
+      {
+        "id": "W2124966002.c001",
+        "text": "Defending a doxastic venture model of faith requires that such venturesome believing be both possible and ethically acceptable.",
+        "quote": "A ‘doxastic venture’ model of faith – according to which having faith involves believing beyond what is rationally justiﬁable – can be defended only on condition that such venturesome believing is both possible and ethically acceptable."
+      },
+      {
+        "id": "W2124966002.c002",
+        "text": "A development of William James’s position can satisfy the conditions of possibility and ethical acceptability for a doxastic venture model.",
+        "quote": "I show how a development of the position argued by William James in ‘The will to believe’ can succeed in meeting these conditions."
+      },
+      {
+        "id": "W2124966002.c030",
+        "text": "An attenuated sub‑doxastic view of faith is too weak because Christian faith involves assurance, certitude, and belief rather than mere assumption.",
+        "quote": "But surely such an attenuated sub-doxastic understanding of faith is too weak? Theistic – particularly Christian – faith seems to involve a certain kind of assurance or certitude – an assurance or certitude which may, indeed, need to be carefully distinguished from any epistemic certainty, but which nevertheless involves believing rather than merely assuming that God exists and is to be trusted."
+      },
+      {
+        "id": "W2124966002.c031",
+        "text": "The Jamesian doxastic‑venture model supplies what is needed by treating faith as a passionally based tendency to believe and as believingly accepting an unestablished claim.",
+        "quote": "the Jamesian doxastic venture model provides just what is needed, since it understands the gift of faith as a passionally based tendency to believe the religious claim, and the act of venture as an act of believingly accepting it, in the face of the recognition that it cannot be established epistemically."
+      },
+      {
+        "id": "W2124966002.c046",
+        "text": "Doxastic venture involves the more contentious overbelief, not the familiar overassumption.",
+        "quote": "Doxastic venture involves the more contentious overbelief, not the wholly familiar overassumption."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2124966002.arg1.mp",
+      "text": "Whenever the Jamesian doxastic-venture model supplies what faith needs, it is phenomenologically superior to its rivals."
+    },
+    "conclusion": {
+      "id": "W2124966002.c047",
+      "text": "The Jamesian doxastic venture account should be preferred as phenomenologically superior because it accommodates the common view of Christian faith as involving assurance or certitude."
+    },
+    "skeleton": "A -> B; C -> B; E -> ~D; F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2124966002.c031",
+    "text": "The Jamesian doxastic‑venture model supplies what is needed by treating faith as a passionally based tendency to believe and as believingly accepting an unestablished claim."
+  },
+  "objection": "Elias experiences faith as a state of absolute, unshakable certitude. The model defines faith as 'believingly accepting an unestablished claim.' To accept a claim as unestablished requires a psychological awareness of its lack of proof. This awareness of epistemic contingency is fundamentally incompatible with the phenomenological state of absolute certitude. If the mechanism of faith is the acceptance of the unestablished, it cannot produce the specific sense of total assurance required. W2124966002.c031 fails because accepting an unestablished claim is psychologically incompatible with the state of certitude it is intended to supply.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The venture consists in the act of committing before proof, and the subsequent feeling of assurance is a later phenomenological state, not a simultaneous one.",
+      "why_it_failed": "This temporal separation leaves the original claim that venture and assurance co‑occur unsubstantiated, so the gap identified by the objector remains."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Faith is a passionally based tendency that objectively outstrips the evidence while generating occurrent certitude, without the believer consciously accepting the claim as unestablished.",
+      "why_it_failed": "By relegating the unestablishedness to an objective fact, the reply evades the required first‑person awareness of risk, failing to resolve the phenomenological incompatibility."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W4394980009.c044",
+      "paper_id": "oa:W4394980009",
+      "title": "Pascal’s Wager and Its Postmodern Counterpart",
+      "authors": [
+        "Bill Nyman"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.19108/koers.89.1.2505",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Postmodern theology holds that the beauty of faith lies in its lack of absoluteness and certainty."
+    },
+    {
+      "record_id": "W7170998925.a3",
+      "paper_id": "oa:W7170998925",
+      "title": "Would a Rational God Endorse Faith Beyond Evidence - 22",
+      "authors": [
+        "Phil Stilwell"
+      ],
+      "year": null,
+      "url": "https://philpapers.org/rec/STIWAR",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "title": "Rational Faith and Justified Belief",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199672158.003.0003",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.45,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W4394980009.c044",
+      "paper_id": "oa:W4394980009",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Postmodern theology holds that the beauty of faith lies in its lack of absoluteness and certainty.",
+      "title": "Pascal’s Wager and Its Postmodern Counterpart"
+    },
+    {
+      "record_id": "W7170998925.a3",
+      "paper_id": "oa:W7170998925",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": "",
+      "title": "Would a Rational God Endorse Faith Beyond Evidence - 22"
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": "",
+      "title": "Rational Faith and Justified Belief"
+    }
+  ],
+  "open_questions": [
+    "How can a believer experience absolute certitude while remaining psychologically aware of epistemic contingency?",
+    "Does locating risk in the act of commitment rather than in ongoing doubt preserve the phenomenological integrity of a \"venture\"?",
+    "What empirical or phenomenological evidence can support the claim that risk can be bracketed without diminishing the sense of venture?"
+  ],
+  "paper_direction": "A paper here would argue that the Jamesian doxastic‑venture model can be salvaged only by articulating a two‑stage phenomenology: an initial risk‑laden commitment followed by a distinct, certitude‑filled state. It would reconstruct the argument to make explicit the premise that the venture’s risk resides in the act of committing before proof, while the later assurance is a post‑commitment affect that does not require ongoing awareness of epistemic contingency. The paper would anticipate Defender A’s temporal‑sequencing reply and Defender B’s objective‑status move, showing why each either preserves or undermines the venture’s phenomenological core. To succeed, the paper must provide a detailed phenomenological analysis (drawing on James and contemporary cognitive‑philosophical work) and, if possible, experimental data demonstrating that agents can feel absolute certitude after a risk‑bearing commitment without retaining conscious doubt about the claim’s evidential status.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection rests on a scope ambiguity and inflates the certitude requirement beyond what c030/c031 assert, so it is aimed at a stronger claim than the premise makes; the proposal's own open questions also contradict its research question by asking how awareness of contingency and certitude can coexist, while the research question asks how to avoid requiring that awareness.",
+      "robustness": "The obvious de re reply is already in the transcript as Defender B, and the lab's dismissal of it simply reasserts the contested assumption of 'required first-person awareness'. Meanwhile the paper adopts Defender A's temporal split, which sits poorly with James's view of the will to believe as a sustained, ongoing commitment.",
+      "significance": "Even if it succeeded, the paper would at most clarify the phenomenology of a model whose core claims are untouched, a minor refinement and partly verbal, since the doubt-and-certitude-in-faith literature already covers this ground.",
+      "specificity": "There is a definite thesis (a two-stage phenomenology) and a named structure, but the plan rests on vague appeals to 'contemporary cognitive-philosophical work' and hoped-for experimental data, with no specified case, no specified texts, and no specified argument for why the transition from risk to certitude is not mere self-deception."
+    },
+    "strongest_objection": "The objection, and the paper built on it, misreads c031 de dicto ('accepting a claim *as* unestablished') when the Jamesian/Bishop formulation is naturally de re: believing a claim that is in fact evidentially unestablished. On that reading, which is Defender B's, no first-person awareness of unestablishedness is required, the alleged incompatibility never arises, and the two-stage phenomenology is an unmotivated repair. A second problem compounds this: the objection inflates the target state to 'absolute, unshakable certitude', whereas c030/c031 require only assurance, certitude and full belief. That is a weaker state, and on traditional accounts such as Aquinas's certitude of faith it is compatible with acknowledged evidential shortfall.",
+    "reply_available": false,
+    "what_it_needs": "It must first show, with textual evidence from James and Bishop, that the doxastic-venture model is committed to the believer's occurrent or reflective awareness of the claim's unestablished status, and that the certitude required is one this awareness excludes. Without that, the puzzle dissolves. If that cannot be shown, the paper should be recast as a defence of the de re reading (Defender B), with an account of what 'venture' means when the risk is not consciously represented.",
+    "summary": "Not a paper as it stands: the incompatibility it sets out to fix comes from reading 'unestablished' de dicto and inflating 'certitude', and once those are corrected the dismissed Defender B reply answers the objection.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:28:51.027527+00:00"
+  },
+  "revision": {
+    "research_question": "On a de re reading of the Jamesian doxastic-venture model, can believing a claim that is in fact evidentially unestablished yield the assurance, certitude and full belief that Christian faith is standardly taken to involve, without the believer needing to represent the claim as unestablished? And what does 'venture' amount to when its risk is not consciously represented?",
+    "paper_direction": "A paper here would argue that premise c031 should be read de re, as believing a claim that is in fact evidentially unestablished, and that on this reading the model supplies the passionally based tendency to believe and the believing acceptance that c031 requires without any occurrent first-person awareness of the claim's unestablished status. It would first examine James's and Bishop's texts to determine whether the model makes such awareness a condition of venturesome believing. The central claim depends on that examination. If the texts do require reflective awareness, the paper will concede that the objection holds against that version and will restrict its thesis to the de re reading as one the model can coherently adopt. It would then specify the state that c030 and c031 actually require, namely assurance, certitude and full belief. It will argue that this state is weaker than absolute, unshakable certitude and is compatible with acknowledged evidential shortfall, as on the traditional account of the certitude of faith. The venture is located in the believer's evidential situation: the commitment is made where the evidence does not settle the matter, and the risk is the real possibility of error that the commitment carries, whether or not that risk is represented. The two-stage phenomenology and the planned experimental support are dropped, since on the de re reading the two-stage structure is an unmotivated repair. The paper will address whether the move from risk to certitude is self-deception by asking whether the de re reading gives the believer any warrant for certitude that the evidence does not supply. The case rests on textual and conceptual analysis and does not depend on empirical claims about phenomenology.",
+    "reply_to_strongest_objection": "The paper answers the objection in three steps. First, it draws the scope distinction. The objection reads 'accepting a claim as unestablished' de dicto, which requires that the believer represent the claim's status. c031 is naturally de re, requiring only that the claim be in fact unestablished. On that reading no first-person awareness is needed, so the alleged incompatibility never arises. Second, it corrects the target state. c030 and c031 require assurance, certitude and full belief, not absolute, unshakable certitude, and on the traditional account of the certitude of faith these are compatible with acknowledged evidential shortfall. Third, it does not rely on the de re reading alone. It tests James's and Bishop's texts for any commitment to reflective awareness, and if such a commitment is found, the paper concedes the objection against that version and keeps only the de re version. The two-stage repair is dropped.",
+    "what_changed": "The revision drops the two-stage phenomenology and the experimental plan, and recasts the paper as a defence of the de re reading of c031 that narrows the target state to assurance, certitude and full belief.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:30:25.125961+00:00",
+    "assessment": {
+      "grade": "needs work",
+      "overall": 3.5,
+      "scores": {
+        "coherence": 4,
+        "robustness": 3,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction is internally consistent and rightly notes that the objection attacks 'absolute, unshakable certitude', a stronger state than c030/c031 require; but its two lines of reply are in tension, because step two grants acknowledged shortfall and so makes the de re move unnecessary.",
+        "robustness": "There is a viable fallback in the traditional, adherence-based account of the certitude of faith, but the headline de re strategy trivializes 'venture', conflicts with the ethics condition in c001, and repeats a defence the lab already found wanting, so the paper needs real restructuring to survive a referee.",
+        "significance": "If the paper succeeded, it would usefully refine how the assurance requirement and the venture requirement fit together in Bishop's model, but it would clarify rather than reshape the debate.",
+        "specificity": "The thesis, the textual test in James and Bishop, the fallback concession and the dropped empirical component are all stated concretely; the open questions still ask about absolute certitude and empirical evidence, which shows the plan is not fully reconciled."
+      },
+      "strongest_objection": "The de re reading saves c031 by emptying 'venture' of its content and by undercutting the argument it serves. If the believer need not represent the claim as unestablished, then any credulous, dogmatic or merely mistaken belief that in fact outruns the evidence counts as a doxastic venture, and nothing distinguishes faith from ordinary epistemic carelessness. Bishop's model also builds the venture around the believer's own recognition that the question cannot be settled on evidential grounds. The ethical-acceptability condition in c001 likewise presupposes that the believer knowingly commits beyond the evidence, since one cannot be responsible or permitted in taking a risk one has no grip on. So the de re reading either misreads the target or defends a model that no longer meets c001. It is also substantially Defender B's reply, which the trial already judged inadequate.",
+      "reply_available": false,
+      "what_it_needs": "The paper should drop or subordinate the de re move and build on its second step: certitude of faith, understood as firmness of adherence rather than evidential certainty, is compatible with a first-person acknowledgment of evidential shortfall. If it keeps the de re reading at all, it must say what non-trivial condition still marks a belief as a venture, and how c001's ethical constraint can be met without the risk being represented.",
+      "summary": "There is a publishable paper here only if it is rebuilt around the claim that certitude as firm adherence is compatible with acknowledged evidential shortfall; the de re scope move, as the main thesis, would be quickly dismissed as making venture vacuous and as Defender B's reply in new clothing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:30:47.489542+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

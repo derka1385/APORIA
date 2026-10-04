@@ -1,0 +1,218 @@
+{
+  "id": "brief-W3208436359.arg1.o061cdb",
+  "objection_id": "W3208436359.arg1.o061cdb",
+  "research_question": "Can a decision‑theoretic framework based on Conway's surreal numbers provide well‑formed transfinite utility assignments in contexts where the set of possible outcomes is not a completed totality, such as under open theism?",
+  "argument": {
+    "id": "W3208436359.arg1",
+    "title": "Surreal Numbers Ground Transfinite Decision Theory",
+    "paper_id": "oa:W3208436359",
+    "paper_title": "Surreal decisions",
+    "premises": [
+      {
+        "id": "W3208436359.c001",
+        "text": "Expected utility theory is fruitful and elegant in the finite realm, but attempts to generalize it to infinite values have produced many paradoxes.",
+        "quote": "Although expected utility theory has proven a fruitful and elegant theory in the finite realm, attempts to generalize it to infinite values have resulted in many paradoxes."
+      },
+      {
+        "id": "W3208436359.c006",
+        "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities.",
+        "quote": "We find decision problems with transfinite utilities (or transfinite state spaces) to be no less sensible or well‑formed than those involving only finite ones."
+      },
+      {
+        "id": "W3208436359.c007",
+        "text": "Standard expected utility theory is not well‑equipped to handle transfinite utilities.",
+        "quote": "Unfortunately, standard expected utility (EU) theory is not well‑equipped to handle them."
+      },
+      {
+        "id": "W3208436359.c008",
+        "text": "The problem’s origin lies in the limitation of mathematical representations of infinite utilities, not in the conceptual framework of EU theory.",
+        "quote": "After examining the structure of infinitistic decision puzzles, we observe that the origin of the problem lies not in the general conceptual framework of EU theory but in the limitation of the mathematical representations of infinite utilities."
+      },
+      {
+        "id": "W3208436359.c010",
+        "text": "A decision theory framed entirely in Conway’s surreal numbers serves as a conservative extension of finitist EU theory.",
+        "quote": "We therefore offer, as a conservative extension of finitist EU theory and a solution to this problem, a decision theory framed entirely in John Conway’s surreal numbers."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3208436359.arg1.mp",
+      "text": "If a decision theory framed entirely in surreal numbers is a conservative extension of finitist EU theory, then surreal numbers provide a firm mathematical foundation for transfinite decision theory."
+    },
+    "conclusion": {
+      "id": "W3208436359.c002",
+      "text": "Using John Conway’s surreal numbers provides a firm mathematical foundation for transfinite decision theory."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3208436359.c006",
+    "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities."
+  },
+  "objection": "Mia, a pastor who believes the future is genuinely open, must decide whether to fund a missionary project whose eventual impact is unknowable. She cannot assign a fixed, infinite utility to the project's success because, under open theism, the outcomes are not predetermined; they will be shaped by free agents and contingent events. Any attempt to label the project's payoff as a transfinite number presupposes a completed, static list of possibilities, which contradicts her conviction that God's knowledge of the future is dynamic and that the world’s future is not a settled totality. Consequently, the decision problem lacks a well‑formed utility scale, showing that transfinite utilities are not sensibly applicable in genuinely open scenarios.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The objection targets the claim that Mia's problem lacks a well‑formed utility scale, but c006 only asserts well‑formedness; the case shows her utilities are hard to assign, not that no well‑formed assignment exists.",
+      "why_it_failed": "It concedes a practical difficulty (lack of credences) but does not refute the objection’s ontological claim that an open future precludes a static outcome space, leaving c006 unchallenged on that front."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Transfinite utility assignment does not require a completed totality of future possibilities; surreal numbers extend the value scale without presupposing a settled set, just as finite utilities do.",
+      "why_it_failed": "It fails to address the objector’s point that assigning an infinite payoff may need a supremum over all conceivable impacts, which open theism denies, so the reply does not show how a surreal value can be anchored without such a supremum."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities",
+      "authors": [
+        "Jeffrey J. Jordan",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1993,
+      "url": "https://doi.org/10.5840/faithphil199310111",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy."
+    },
+    {
+      "record_id": "abs:oa:W2030006177",
+      "paper_id": "oa:W2030006177",
+      "title": "Pascal's wager revisited",
+      "authors": [
+        "Jeff Jordan"
+      ],
+      "year": 1998,
+      "url": "https://doi.org/10.1017/s0034412598004569",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "a transfinite version of the wager – one using the idea of an infinite utility – is incompatible with standard axiomatic constructions of decision‑theory."
+    },
+    {
+      "record_id": "abs:oa:W7119524508",
+      "paper_id": "oa:W7119524508",
+      "title": "Why Pascal's Wager Needs a Dual-System Framework: Evaluative System Asymmetry and the Limits of Expected Utility",
+      "authors": [
+        "Boris Kriger"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.18190126",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": ""
+    },
+    {
+      "record_id": "W2950780608.a1",
+      "paper_id": "oa:W2950780608",
+      "title": "Can God Know Tomorrow",
+      "authors": [
+        "Jacob Kristian Bergman"
+      ],
+      "year": 2018,
+      "url": "https://scholarworks.uni.edu/hpt/311",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W2016279323.a2",
+      "paper_id": "oa:W2016279323",
+      "title": "The Many Gods Objection to Pascal’s Wager",
+      "authors": [
+        "Lawrence Robin Pasternack"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.5840/philo20121529",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.45,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy.",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities"
+    },
+    {
+      "record_id": "abs:oa:W2030006177",
+      "paper_id": "oa:W2030006177",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "a transfinite version of the wager – one using the idea of an infinite utility – is incompatible with standard axiomatic constructions of decision‑theory.",
+      "title": "Pascal's wager revisited"
+    },
+    {
+      "record_id": "abs:oa:W7119524508",
+      "paper_id": "oa:W7119524508",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "",
+      "title": "Why Pascal's Wager Needs a Dual-System Framework: Evaluative System Asymmetry and the Limits of Expected Utility"
+    }
+  ],
+  "open_questions": [
+    "How can a probability measure be defined over a proper‑class‑sized outcome space required for infinite utilities under open theism?",
+    "Is there a principled way to assign surreal numbers to outcomes without referencing a maximal impact, perhaps via ordinal‑indexed utilities rather than supremum‑based ones?",
+    "Does restricting c006 to decision problems with set‑sized outcome spaces sufficiently salvage the surreal extension, or does it unduly limit the scope of transfinite decision theory?"
+  ],
+  "paper_direction": "A paper here would argue that the claim that surreal numbers furnish a firm foundation for transfinite decision theory must be qualified by a set‑sized outcome‑space requirement. It would first reconstruct the original argument and the objection grounded in open theism, then evaluate the defenders' replies, showing that while they preserve well‑formedness under a static outcome set, they do not resolve the ontological obstacle posed by a non‑completed future. Anticipating the strongest defender response—that surreal utilities need not rely on a supremum—the paper would develop a formal account of assigning surreal utilities to individual outcomes without invoking a global maximum, and examine whether such an account can coexist with a probability measure over a proper class. The paper would conclude by demonstrating whether the revised premise (requiring a set‑sized, measurable outcome space) restores the conservativity of surreal EU or reveals deeper limits to transfinite decision theory in open‑theist contexts.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 1.75,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "The objection targets a non-comparative claim, that open futures resist utility assignment, which c006 does not make. It rests on a confused supremum premise. The paper plan then shifts to proper-class outcome spaces, a different issue from the open-theism case it claims to develop.",
+      "robustness": "Defender A's well-formedness versus difficulty point and the parity point, that finite utilities face the same openness, dispose of the objection. The direction does not anticipate this and concedes Defender B's point about suprema without engaging it.",
+      "significance": "A careful treatment of whether surreal EU tolerates class-sized outcome spaces with surreal-valued probabilities would be a modest technical refinement. The open-theism angle adds nothing to the debate about the argument.",
+      "specificity": "There is a stated qualification thesis and a rough outline, but the actual thesis is left open ('whether... restores... or reveals deeper limits'). The central formal task is unspecified, and the case does not motivate the set-size requirement the paper proposes."
+    },
+    "strongest_objection": "c006 is a comparative claim: transfinite decision problems are no less well-formed than finite ones. The open-theist worry, that there is no completed, settled totality of future outcomes, applies equally to Mia's finite-utility version of the same funding decision. Decision theory never needs a metaphysically settled future, only the agent's partition of possibilities (Savage-style small worlds), and open theism leaves those epistemic possibilities perfectly well-defined. So the objection either proves too much, impugning finite EU as well and leaving the comparison untouched, or proves nothing. Its supporting claim, that a transfinite utility needs a supremum over all conceivable impacts, is simply false of surreal-valued utilities.",
+    "reply_available": false,
+    "what_it_needs": "It must first show some feature of transfinite utility, absent in the finite case, that depends on a completed outcome totality. Otherwise the open-theism case gives no grounds for restricting c006. If the real interest is the class-sized-outcome-space and measure problem, that should be pursued directly against Chen and Rubio's surreal framework, without the open-theism framing, which does no work.",
+    "summary": "Not a paper as framed: the open-theist case bears equally on finite utilities and so cannot touch c006's comparative claim, and the potentially interesting question about class-sized outcome spaces in surreal EU is disconnected from the motivating objection.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:25.410208+00:00"
+  },
+  "revision": {
+    "research_question": "Does a decision theory framed in Conway's surreal numbers, with surreal-valued probabilities over an outcome space that may be a proper class, remain a conservative extension of finitist expected utility theory, and does any failure of that conservativity show that transfinite decision problems are less well-formed than finite ones?",
+    "paper_direction": "A paper here would argue that the open-theist objection does not establish any asymmetry between transfinite and finite decision problems, so c006 survives as a comparative claim, and that the real test of the surreal foundation lies elsewhere. It would first show that the open-theist worry is a parity worry: if open futures undermine a utility scale, they undermine Mia's finite-utility funding decision equally, since Savage-style small-world partitions over epistemic possibilities are well-defined under open theism. It would then reject the supremum premise on which the objection depends, showing that a surreal-valued utility need not be the supremum over all conceivable impacts. Having set the open-theist framing aside, the paper would turn to the class-sized outcome-space and measure problem directly against Chen and Rubio's surreal framework. It would identify the feature that the finite case lacks: whether a surreal-valued probability measure can be defined over a proper class of outcomes while preserving the finite-case axioms and conservativity. It would then test whether the set-sized outcome-space requirement is needed to restore conservativity, or whether the framework is well-formed without it. If no feature absent in the finite case is found, the paper concludes that c006 holds as a parity claim and that the open-theist case contributes nothing to the debate.",
+    "reply_to_strongest_objection": "The referee is right that the open-theist objection is non-comparative and proves too much. The paper concedes that the open-theist case gives no grounds for restricting c006. It replies with two points. First, a parity point: the openness of the future affects finite and transfinite funding decisions alike, because Savage-style small-world partitions remain well-defined under open theism, so the objection does not discriminate between the two. Second, a rejection of the supremum premise: surreal-valued utilities do not require a global supremum over all conceivable impacts, so the objection's support fails. The paper then moves the burden to a feature the finite case lacks, namely class-sized outcome spaces with surreal-valued probabilities, and tests that feature directly rather than through the open-theist framing.",
+    "what_changed": "The revision drops open theism as the grounds for restricting c006, adopts the referee's parity and supremum replies, and reframes the paper around the class-sized outcome-space and measure problem as the direct test of the surreal foundation.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:31:32.640410+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The parity reply is aimed correctly at c006 as a comparative claim. But the research question equates conservativity failure with ill-formedness, and the open questions wrongly assume infinite utilities need class-sized outcome spaces, so the main test is aimed at something c006 does not assert.",
+        "robustness": "The direction answers the open-theist objection with parity, but it has no answer to the charge that its replacement test targets an inessential feature already handled or sidestepped in the surreal framework.",
+        "significance": "Showing that open theism yields no finite/transfinite asymmetry is a minor point. The measure-over-proper-classes question could matter in principle, but as framed it does not threaten the argument's actual premises.",
+        "specificity": "There is a stated thesis, a sequence of steps and a named target framework. But the decisive second half is a conditional ('test whether…', 'if no feature is found…') with no specified result, construction or criterion of well-formedness."
+      },
+      "strongest_objection": "The paper is two loosely joined projects, and neither bears cleanly on c006. The first half refutes an objection so weak it needs only a paragraph. Open theism concerns metaphysical openness, while decision problems are posed over epistemic partitions, so the parity reply works but is not a contribution. The second half's supposed 'feature the finite case lacks', proper-class outcome spaces, is not something transfinite utilities require: Pascal-style problems with infinite payoffs are two- or four-cell, set-sized problems. Its test is also confused in two ways. It treats failure of conservativity (a property of the theory, c010) as evidence that decision problems are ill-formed (c006). And it treats measure-theoretic trouble over proper classes as if it were special to the transfinite case, though Chen and Rubio already confront and constrain the absence of suprema and limits in the surreals, and with them countable additivity.",
+      "reply_available": false,
+      "what_it_needs": "Drop or compress the open-theist half to a short dismissal and identify a genuine disanalogy between finite and transfinite problems that c006 is actually committed to. For example, test whether surreal expected-utility comparisons fail for set-sized problems with infinitely many outcomes, where non-Archimedean values and the lack of countable additivity bite. Engage Chen and Rubio's own handling of this rather than an outcome-space size they never require. Keep the claim about ill-formed problems (c006) separate from the claim about a non-conservative theory (c010).",
+      "summary": "The open-theist rebuttal is too easy to carry a paper and the proposed real test is aimed at a feature transfinite decision theory does not need, so this would not survive a competent first reader without being rebuilt around a genuine finite/transfinite disanalogy.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:31:55.559229+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

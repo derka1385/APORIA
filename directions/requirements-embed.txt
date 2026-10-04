@@ -1,0 +1,2 @@
+# Optional: local embeddings (imported lazily). Without it the index falls back to LSA vectors.
+sentence-transformers>=3.0

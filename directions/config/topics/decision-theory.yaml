@@ -1,0 +1,37 @@
+# Third topic, run on 2026-10-04 with the evroc + Claude model mix. Run it with
+# `make corpus targets map runs assess revise export TOPIC=decision-theory`.
+slug: decision-theory
+name: Decision theory in philosophy of religion
+description: >-
+  Decision-theoretic reasoning about God and by God: Newcomb's problem and divine foreknowledge (God as the
+  perfect predictor), Pascal's wager with its infinite utilities and the many-gods objection, and God's own
+  decision problem, whether a perfect being must create the best world, and whether there is one to create.
+area: philosophy of religion and decision theory
+queries:
+  Newcomb's problem: '"Newcomb''s problem" OR "Newcomb problem" OR "Newcomb''s paradox"'
+  Pascal's wager: '"Pascal''s wager" OR "Pascalian wager"'
+  many-gods objection: '"many gods objection" OR "many-gods objection"'
+  decision theory and God: '"decision theory" AND (God OR theism OR religious)'
+  God's choice of world: '"best possible world" AND (God OR creation OR creator)'
+  divine foreknowledge and choice: '"divine foreknowledge" AND (decision OR choice OR deliberation OR Newcomb)'
+  infinite utility: '("infinite utility" OR "infinite expected utility" OR "infinite value") AND (God OR wager OR heaven)'
+  pragmatic arguments for belief: '"pragmatic argument" AND (God OR theism OR theistic)'
+max_per_query: 200       # one OpenAlex page per query: the keyless API allows ~100 list requests a day
+fresh_from: "2026-08-01"
+fresh_queries: ['"decision theory"', '"Pascal''s wager" OR Newcomb OR "expected utility"', '"philosophy of religion"']
+relevant: 'newcomb|wager|pascal|decision|expected (utilit|value)|infinite (utilit|value)|foreknow|predict|best possible world|divine (choice|freedom|creat)|many.gods|pragmatic|rational choice|god\b|theis|atheis'
+relevance_levels:
+  - none
+  - touches philosophy of religion or decision theory
+  - applies decision-theoretic or rational-choice reasoning to a religious question
+  - directly about decision theory and God (Newcomb-type problems, Pascal's wager, God's choice among worlds)
+targets:                 # few fresh open-access papers are on this topic: keep only on-topic ones, fill with classics
+  fresh: 2
+  classic: 4
+  fresh_min_relevance: 2
+  spread: true           # one classic per search in turn (Newcomb, the wager, God's choice...), not six wager papers
+  min_score: 4           # in area, argues for a thesis, English, clear argument, at least touches the topic
+schools: [causal decision theory, evidential decision theory, classical theism, Molinism and middle knowledge,
+          open theism, Bayesian formal epistemology]
+# Fresh searches like "decision theory" also find ecology and engineering: a fresh paper must touch religion.
+fresh_relevant: 'god\b|gods\b|theis|atheis|religio|divine|deity|pascal|newcomb|faith|heaven|afterlife|salvation|theolog|creator|providence|omnisci'

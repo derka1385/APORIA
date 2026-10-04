@@ -1,0 +1,6 @@
+# Databricks Apps: serves the Crux Lab API (live mode + prior-art search).
+# Deploy only after `make export` and with DATABRICKS_* configured; not deployed by the build agent.
+command: ["uvicorn", "crux_lab.api.server:app", "--host", "0.0.0.0", "--port", "8000"]
+env:
+  - name: CRUX_LAB_TRACING
+    value: "1"

@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  /* APORIA brand (derka1385/APORIA docs/index.html): dark lab, warm ink, outcome colours from its operation palette */
+  --color-paper: #121416;
+  --color-paper-deep: #1B1F23;
+  --color-paper-edge: #23282D;
+  --color-ink: #F4F1E9;
+  --color-ink-soft: #B4BBC2;
+  --color-ink-faint: #808A94;
+  --color-rule: #353B42;
+  --color-misreading: #808A94;        /* faint */
+  --color-known_answer: #A9C8FF;      /* reason */
+  --color-rebutted: #5FD4C4;          /* introspect */
+  --color-revision_required: #E2A85A; /* memory */
+  --color-standing: #FF6B4F;          /* doubt */
+  --color-misreading-text: #9AA3AC;
+  --color-known_answer-text: #A9C8FF;
+  --color-rebutted-text: #5FD4C4;
+  --color-revision_required-text: #E2A85A;
+  --color-standing-text: #FF8A72;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html, body, #root { background: var(--color-paper); color: var(--color-ink); }
+body {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+}
+
+::selection { background: #3A4049; }
+
+/* APORIA headings: Newsreader, light. Element + class beats Tailwind's single-class weight utilities. */
+h1.font-serif, h2.font-serif, h3.font-serif, h1, h2 { font-weight: 300; letter-spacing: -0.01em; }
+h1 em, h2 em { font-style: italic; }
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Section labels: small caps, tracked, marginalia voice. */
+/* APORIA eyebrow labels: small mono, faint (replaces small caps) */
+.smallcaps {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.02em;
+}
+
+.measure { max-width: 70ch; }
+
+.mono { font-family: var(--font-mono); }
+
+/* A thin double rule, like a ledger. */
+.ledger-rule { border-top: 1px solid var(--color-rule); box-shadow: 0 2px 0 -1px var(--color-paper), 0 3px 0 -1px var(--color-rule); }
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 120ms ease;
+}
+.link:hover { text-decoration-color: var(--color-ink); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.btn:hover:not(:disabled) { background: transparent; color: var(--color-ink); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-quiet { background: transparent; color: var(--color-ink-soft); border-color: var(--color-rule); }
+.btn-quiet:hover:not(:disabled) { border-color: var(--color-ink); color: var(--color-ink); }
+.btn[aria-pressed="true"] { background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink); }
+
+.field {
+  border: 1px solid var(--color-rule);
+  background: #1B1F23;
+  color: var(--color-ink);
+  border-radius: 2px;
+  padding: 0.45rem 0.6rem;
+}
+.field:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 0; }
+
+/* Agent turns are set like a typed lab record. */
+.turn-body { font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.65; }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.table th { text-align: left; font-weight: 400; color: var(--color-ink-faint); border-bottom: 1px solid var(--color-rule); padding: 0.35rem 0.6rem 0.35rem 0; font-family: var(--font-mono); font-size: 0.78rem; }
+.table td { border-bottom: 1px solid var(--color-rule); padding: 0.45rem 0.6rem 0.45rem 0; vertical-align: top; }
+.table td.num, .table th.num { text-align: right; font-family: var(--font-mono); font-size: 0.82rem; }
+
+/* xyflow on paper */
+.react-flow { --xy-background-color: transparent; --xy-edge-stroke: #808A94; --xy-controls-button-background-color: #1B1F23; --xy-controls-button-border-color: #353B42; --xy-controls-button-color: #F4F1E9; }
+.react-flow__node:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+.react-flow__attribution { background: transparent !important; font-family: var(--font-mono); font-size: 9px; }
+
+@keyframes ink-in { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+.ink-in { animation: ink-in 260ms ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .ink-in { animation: none; }
+  * { scroll-behavior: auto !important; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  html, body, #root { background: white !important; }
+  body { font-size: 11.5pt; }
+  a { text-decoration: none; }
+  .print-break-avoid { break-inside: avoid; }
+}

@@ -1,0 +1,196 @@
+{
+  "id": "brief-W7212186029.arg1.o192bde",
+  "objection_id": "W7212186029.arg1.o192bde",
+  "research_question": "Can instantiation be modelled as similarity-based parthood in a way that preserves the persistence of ordinary objects and supports the divine-simplicity application?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Divine simplicity as symmetric parthood",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c006",
+        "text": "Divine simplicity is most plausibly understood as the claim that God lacks proper parts.",
+        "quote": "Instead, DDS is more plausibly understood as saying that God lacks proper parts – call this the mereological formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is non-symmetric parthood, the claim that God has no proper parts yields the symmetry formulation of divine simplicity.",
+        "quote": "But if proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c013",
+        "text": "Instantiation can be modelled as parthood because objects may be understood as mereological fusions of their properties.",
+        "quote": "On the mereological bundle theory suggested by Laurie Paul (2002, 2006, 2012, 2017), for instance, objects are mereological fusions of the properties they bear."
+      },
+      {
+        "id": "W7212186029.c016",
+        "text": "God and omniscience can be mutual parts with respect to similarity while remaining numerically distinct.",
+        "quote": "it is also possible, at least in principle, for this symmetric parthood relation to hold while God remains numerically distinct from his omniscience."
+      },
+      {
+        "id": "W7212186029.c018",
+        "text": "Defining proper parthood as non-symmetric similarity-based parthood makes proper parthood irreflexive, asymmetric, and transitive.",
+        "quote": "If proper parthood is defined as non-symmetric parthood with respect to similarity, it would immediately be irreflexive, asymmetric, and transitive."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Proper parthood is non-symmetric parthood, and the symmetry formulation of divine simplicity is the thesis that God is part of all God's parts."
+    },
+    "conclusion": {
+      "id": "W7212186029.c044",
+      "text": "Divine simplicity can viably be formulated as the thesis that God is part of all God’s parts."
+    },
+    "skeleton": "A; B -> (A -> C); D; E; F -> H |- G",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.c013",
+    "text": "Instantiation can be modelled as parthood because objects may be understood as mereological fusions of their properties."
+  },
+  "objection": "Take a lamp, L, that is switched on at noon and off at one. Its property of being lit is instantiated at noon and not at one. Model instantiation as parthood: L is the fusion of its properties, so 'being lit' is a part of L. Now the lamp is switched off at one, and nothing in L's identity changes, yet the fusion has lost a part. But the fusion of its properties is supposed to be fixed by which properties it has, so the lamp at one o'clock is a different fusion from the lamp at noon, though it is the same lamp. Worse, the lamp also has the property of being a lamp, and that property is shared with every other lamp. A fusion of properties would then overlap with the fusion of a neighbouring lamp, so distinct objects share parts they should not share. Parthood cannot carry instantiation without either losing the lamp's persistence or making distinct objects overlap.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The unrestricted premise fails for ordinary objects, but the divine case can be isolated: God's relevant properties are timeless and essential, so changes in instantiated properties do not threaten divine persistence. The overlap of shared properties is already accepted by the similarity-based framework.",
+      "why_it_failed": "This response concedes that the challenged premise, as stated, is false or at least too broad, so it requires revision of the published argument. It reaches a restricted divine application but does not establish that timeless essential properties can be fusions or parts in the required sense."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The lamp case need not imply numerical replacement if the relevant relata are time-indexed property instances rather than one timeless fusion of universals. Shared properties need not be objectionable, since distinct fusions can overlap and the framework permits non-antisymmetric parthood.",
+      "why_it_failed": "Time-indexing answers the immediate persistence inference only by changing the proposed model from a fusion of an object's properties to an association with temporally indexed instances. It leaves open whether this revised relation is sufficiently unified, and whether its permissive overlap supports rather than weakens the intended account of instantiation."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W7204121442",
+      "paper_id": "oa:W7204121442",
+      "title": "Ist Existenz eine Eigenschaft? Und existiert also Gott? Eine Analyse von Existenzmodalitäten, Virtualität und Gödels Gottesbeweis.",
+      "authors": [
+        "Manfred Albert Hörz"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.22083688",
+      "verdict": "different",
+      "similarity": 0.18,
+      "quote": ""
+    },
+    {
+      "record_id": "W7213499087.a2",
+      "paper_id": "oa:W7213499087",
+      "title": "FROM INTELLIGIBILITY TO IDENTITY",
+      "authors": [
+        "Darrell James"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.22815335",
+      "verdict": "different",
+      "similarity": 0.16,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W7204213976",
+      "paper_id": "oa:W7204213976",
+      "title": "The Topology of Time: On Change, Identity, Presence, and the Ground That Holds",
+      "authors": [
+        "Oscar Gaitan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.22089328",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.82,
+  "records_searched": 4140,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W7204121442",
+      "paper_id": "oa:W7204121442",
+      "verdict": "different",
+      "similarity": 0.18,
+      "quote": "",
+      "title": "Ist Existenz eine Eigenschaft? Und existiert also Gott? Eine Analyse von Existenzmodalitäten, Virtualität und Gödels Gottesbeweis."
+    },
+    {
+      "record_id": "W7213499087.a2",
+      "paper_id": "oa:W7213499087",
+      "verdict": "different",
+      "similarity": 0.16,
+      "quote": "",
+      "title": "FROM INTELLIGIBILITY TO IDENTITY"
+    },
+    {
+      "record_id": "abs:oa:W7204213976",
+      "paper_id": "oa:W7204213976",
+      "verdict": "different",
+      "similarity": 0.08,
+      "quote": "",
+      "title": "The Topology of Time: On Change, Identity, Presence, and the Ground That Holds"
+    }
+  ],
+  "open_questions": [
+    "Does a time-indexed property-instance account genuinely model instantiation as parthood, or does it replace the original fusion account with a different relation?",
+    "What identity conditions govern an object across changes in its similarity-parts?",
+    "Can a timeless, essentially instantiated divine property be a similarity-part of God without presupposing the divine simplicity the argument is meant to formulate?",
+    "What constraints distinguish acceptable overlap or mutual parthood from cases that collapse the explanatory role of object-property instantiation?"
+  ],
+  "paper_direction": "A paper here would argue that the unrestricted fusion account of instantiation cannot support the divine-simplicity argument, because temporal change and shared properties expose missing identity and overlap conditions, while a restricted account may remain available for God's timeless essential properties. It would develop the lamp case to show why the original premise needs revision, anticipate Defender B's time-indexed-instance reply and Defender A's divine restriction, and determine whether either revision still supplies a coherent parthood relation capable of grounding the symmetry formulation. The paper would need to show either that the revised model has independently defensible persistence and identity conditions, or that its repairs make it too different or too weak to support the original argument.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent, but it treats a modest 'may be understood' modelling premise as a universal claim about ordinary persisting objects, so it aims at a stronger claim than the argument needs for the divine case.",
+      "robustness": "Both horns have standard replies (accepting overlap, temporal parts or indexing, tropes), and the divine restriction is not answered but explicitly granted by the direction, so the critical thesis largely dissolves.",
+      "significance": "Showing that the bundle-theoretic premise needs restriction to timeless essential properties is a minor clarification the defender can readily accept; only the underdeveloped circularity question in the open questions could matter more.",
+      "specificity": "There is a case and a list of replies to address, but the thesis is disjunctive ('either the revision is defensible or it is too weak'), and the plan does not commit to which result it will argue for or how."
+    },
+    "strongest_objection": "The lamp case rehearses two standard objections to mereological bundle theory: change in properties, and overlap through shared universals. Both have well-known answers the premise can draw on. L. A. Paul's mereological bundle theory openly accepts overlap via shared universals, and perdurance, time-indexing or trope bundles handle change. More decisively, the argument only needs the parthood model of instantiation to hold for God, whose relevant properties are timeless and essential, so a counterexample about temporal change in a lamp does not touch the divine application. The paper itself concedes that a restricted account 'may remain available', which leaves it showing only that an unrestricted premise the argument does not need is too broad.",
+    "reply_available": false,
+    "what_it_needs": "It must drop the lamp-change line and press an objection that bites in the timeless divine case. The best candidates are: whether a similarity-based parthood that permits mutual parthood and overlap still captures instantiation rather than mere co-characterization, or whether treating God's attributes as parts presupposes the simplicity thesis being formulated. It must also engage Paul's mereological bundle theory and the existing replies to change and overlap.",
+    "summary": "As framed, this restates textbook objections to bundle theory against a premise the argument only needs for a timeless God; it would need refocusing on the divine case, for example on circularity or on whether similarity-parthood really models instantiation, before it is a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T09:05:16.199245+00:00"
+  },
+  "revision": {
+    "research_question": "Can similarity-based parthood, which permits mutual parthood, capture the instantiation relation between God and God's attributes, or does it yield only co-characterization? And does the symmetry formulation of divine simplicity survive once the parthood model is restricted to God's timeless essential properties?",
+    "paper_direction": "A paper here would argue that the parthood model of instantiation fails in the one domain where the divine-simplicity argument needs it, so the symmetry formulation can be stated but not grounded as a claim about instantiation. The paper drops the lamp-change case. Its target is the timeless divine case. It takes the premise under discussion in its restricted form: for God's essential properties, instantiation may be modelled as parthood. It then tests whether similarity-based parthood, as defined so that proper parthood is irreflexive, asymmetric and transitive for ordinary objects, and as permitting mutual parthood between God and omniscience while they remain numerically distinct, still expresses instantiation. Instantiation is directed: God is the bearer of omniscience, and not conversely. Mutual parthood makes the relation symmetric on the pair. The paper argues that the model therefore delivers co-characterization, a symmetric relation of shared characterization, unless it adds a direction-marking condition. Any such condition is a new primitive, and the paper shows that adding it either reintroduces the asymmetry that the symmetry formulation was meant to deny or leaves the relation without a principled ground. The paper also tests a second horn: whether defining proper parthood through similarity presupposes the simplicity thesis, because treating God's attributes as parts is only a substantive claim if the similarity relation is specified independently of the claim that God has no proper parts. The paper engages Paul's mereological bundle theory as the strongest version of the unrestricted view. It grants that Paul's acceptance of overlap through shared universals and the standard replies to change are coherent for ordinary objects. Its claim is that these replies do not transfer to God, since in the divine case the problem is directionality and not persistence. The paper concludes that the symmetry formulation is coherent as a formal thesis, but that the argument for it from instantiation-as-parthood is unsound unless the directionality problem is solved independently of the simplicity thesis.",
+    "reply_to_strongest_objection": "The referee is right that the lamp case does not touch the timeless divine application, so the paper drops it and presses the objection at the point where it bites in that case. The paper uses one distinction: instantiation is directed, while the mutual-parthood clause of the similarity model is symmetric. The argument for the symmetry formulation needs a relation that holds from God to God's parts and fails in the reverse direction, and the model only supplies a relation that can hold both ways. The paper replies that bundle-theoretic responses to change and overlap do not address this, because they concern persistence and identity, not the direction of predication. It then shows that adding a direction-marking condition either reintroduces asymmetry the formulation was meant to avoid or depends on the simplicity thesis for its specification. The paper therefore does not rely on the unrestricted premise the referee identifies as too broad.",
+    "what_changed": "The revision drops the lamp-change objection and narrows the paper to the timeless divine case, where it argues that similarity-based mutual parthood yields co-characterization rather than instantiation and so cannot ground the symmetry formulation without an independent directionality condition.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T09:15:55.418617+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The restricted target (instantiation as parthood for God's essential properties) is a fair reading of c013 as the argument uses it, but the plan wrongly says the argument needs a relation holding from God to God's parts and failing in reverse, when the formulation explicitly asserts mutual parthood, so the aim is muddled at its central step.",
+        "robustness": "The obvious bite-the-bullet reply, that loss of direction in God's case is just what simplicity asserts, is not anticipated; the dilemma about direction-marking conditions assumes the defender must restore direction.",
+        "significance": "If it succeeded, it would show that the mereological route to simplicity cannot ground the formulation in a theory of instantiation, a useful refinement, though close to existing Plantinga-style objections.",
+        "specificity": "There is a definite thesis, a clear case (God and omniscience), two named horns, and a named interlocutor (Paul), though the second horn about circularity in specifying similarity is only gestured at."
+      },
+      "strongest_objection": "The directionality problem is plausibly a feature of the view rather than a refutation of it. The symmetry formulation is meant to say that in God's case the bearer/attribute asymmetry collapses: God is God's omniscience, as Aquinas has it. A defender can therefore accept that, for God, parthood-modelled instantiation becomes co-characterization, while for ordinary objects the asymmetric proper-parthood clause keeps the direction intact. If so, the paper's dilemma (add a direction-marking primitive or lose instantiation) has a third horn: no direction is needed in the divine case. This is also a rerun of Plantinga's 'God is a property' objection, so the paper must say what it adds beyond that debate and its standard replies (Brower's truthmaker account, Bergmann and Brower).",
+      "reply_available": false,
+      "what_it_needs": "The paper must show why instantiation has to remain directed even in the divine case. One route is to show that predication of God (e.g. 'God knows') becomes ill-formed or explanatorily idle under mutual parthood, without simply assuming the anti-simplicity intuition. It must also position the argument against Plantinga's objection and the truthmaker replies, and drop the misstatement that the symmetry formulation needs a relation that fails in the reverse direction.",
+      "summary": "A workable topic with a clear structure, but its central dilemma ignores the defender's natural reply that collapsing the direction of predication is exactly what divine simplicity claims, and it must engage the Plantinga literature before it can stand.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T09:16:15.394102+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

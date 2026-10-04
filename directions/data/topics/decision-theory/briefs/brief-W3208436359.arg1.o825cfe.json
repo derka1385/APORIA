@@ -1,0 +1,198 @@
+{
+  "id": "brief-W3208436359.arg1.o825cfe",
+  "objection_id": "W3208436359.arg1.o825cfe",
+  "research_question": "What normative work must a mathematical foundation for transfinite decision theory perform, and can surreal-number expected utility theory perform it once infinitesimal differences are detached from experientially realizable outcomes?",
+  "argument": {
+    "id": "W3208436359.arg1",
+    "title": "Surreal Numbers Ground Transfinite Decision Theory",
+    "paper_id": "oa:W3208436359",
+    "paper_title": "Surreal decisions",
+    "premises": [
+      {
+        "id": "W3208436359.c001",
+        "text": "Expected utility theory is fruitful and elegant in the finite realm, but attempts to generalize it to infinite values have produced many paradoxes.",
+        "quote": "Although expected utility theory has proven a fruitful and elegant theory in the finite realm, attempts to generalize it to infinite values have resulted in many paradoxes."
+      },
+      {
+        "id": "W3208436359.c006",
+        "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities.",
+        "quote": "We find decision problems with transfinite utilities (or transfinite state spaces) to be no less sensible or well‑formed than those involving only finite ones."
+      },
+      {
+        "id": "W3208436359.c007",
+        "text": "Standard expected utility theory is not well‑equipped to handle transfinite utilities.",
+        "quote": "Unfortunately, standard expected utility (EU) theory is not well‑equipped to handle them."
+      },
+      {
+        "id": "W3208436359.c008",
+        "text": "The problem’s origin lies in the limitation of mathematical representations of infinite utilities, not in the conceptual framework of EU theory.",
+        "quote": "After examining the structure of infinitistic decision puzzles, we observe that the origin of the problem lies not in the general conceptual framework of EU theory but in the limitation of the mathematical representations of infinite utilities."
+      },
+      {
+        "id": "W3208436359.c010",
+        "text": "A decision theory framed entirely in Conway’s surreal numbers serves as a conservative extension of finitist EU theory.",
+        "quote": "We therefore offer, as a conservative extension of finitist EU theory and a solution to this problem, a decision theory framed entirely in John Conway’s surreal numbers."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3208436359.arg1.mp",
+      "text": "If a decision theory framed entirely in surreal numbers is a conservative extension of finitist EU theory, then surreal numbers provide a firm mathematical foundation for transfinite decision theory."
+    },
+    "conclusion": {
+      "id": "W3208436359.c002",
+      "text": "Using John Conway’s surreal numbers provides a firm mathematical foundation for transfinite decision theory."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3208436359.arg1.r1",
+    "text": "Surreal-framed strict preferences over options whose expectations differ only by infinitesimal terms (such as 5 + 1/ω versus 5) correctly track genuine value differences, so the surreal verdicts added beyond the finitist fragment are normatively warranted."
+  },
+  "objection": "A hospital administrator chooses between protocol X, which saves five patients, and protocol Y, which saves five patients and appends an infinite sequence of ever-diminishing interventions whose surreal expected utility totals an extra 1/ω. The ωth intervention is never administered in finite time, and no patient experiences any difference beyond the five saved lives. The surreal framework strictly prefers Y, ranking 5 + 1/ω above 5. Yet the administrator recognizes no genuine extra value: the infinitesimal term is an artifact of an unreachable infinite stage, not an actual benefit to anyone.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Distinguishes the formal representation theorem from normative welfare verdicts, conceding that r1 as stated asserts too much because the surreal calculus cannot distinguish genuine infinitesimal benefit from artifact, but maintaining that the mathematical foundation claim survives because the representation result is a formal fact and not a verdict about welfare.",
+      "why_it_failed": "It was forced to abandon the original premise and narrow it to require that infinitesimal differences be grounded in actual, realizable outcomes, since the surreal machinery by itself provides no criterion for which infinitesimal differences are normatively authoritative."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Argues that preserving the ranking of 5 + 1/ω above 5 is required to maintain dominance, completeness, and structural rationality across the full ordered field, and that the administrator's intuition reflects a finitist bias rather than a genuine normative constraint.",
+      "why_it_failed": "It saved consistency only by shifting the normative basis from tracking experientially significant benefits to preserving structural coherence, leaving unresolved whether completeness in an extended field can justify strict preference when no finite patient experiences any additional benefit."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7114506908.a1",
+      "paper_id": "oa:W7114506908",
+      "title": "The Hubris of Reason and the Emptiness of Form: A Homologous Deconstruction of Pascal's Wager and the Simulation Hypothesis",
+      "authors": [
+        "Xu, Aodong"
+      ],
+      "year": null,
+      "url": "https://philarchive.org/rec/XUTHOU",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "The fallacy of category mistakenly treats incommensurable qualitative choices as quantitative calculations."
+    },
+    {
+      "record_id": "abs:oa:W1975104173",
+      "paper_id": "oa:W1975104173",
+      "title": "On Pascal's Wager and Infinite Utilities",
+      "authors": [
+        "John Byl",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1994,
+      "url": "https://doi.org/10.5840/faithphil199411354",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "It is argued that the indeterminacies can be readily avoided by treating the infinities as limits."
+    },
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities",
+      "authors": [
+        "Jeffrey J. Jordan",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 1993,
+      "url": "https://doi.org/10.5840/faithphil199310111",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy."
+    }
+  ],
+  "novelty": 0.65,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W7114506908.a1",
+      "paper_id": "oa:W7114506908",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "The fallacy of category mistakenly treats incommensurable qualitative choices as quantitative calculations.",
+      "title": "The Hubris of Reason and the Emptiness of Form: A Homologous Deconstruction of Pascal's Wager and the Simulation Hypothesis"
+    },
+    {
+      "record_id": "abs:oa:W1975104173",
+      "paper_id": "oa:W1975104173",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "It is argued that the indeterminacies can be readily avoided by treating the infinities as limits.",
+      "title": "On Pascal's Wager and Infinite Utilities"
+    },
+    {
+      "record_id": "W1976663166.a1",
+      "paper_id": "oa:W1976663166",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Calculating expected utility with infinite utilities creates rational indeterminacy.",
+      "title": "Pascal's Wager and the Problem of Infinite Utilities"
+    }
+  ],
+  "open_questions": [
+    "Can the surreal framework be supplemented with a principled criterion that distinguishes realizable infinitesimal benefits from mere formal artifacts?",
+    "Does preserving dominance and completeness in an extended ordered field provide sufficient normative warrant for strict preferences that have no experiential correlate within finite time?",
+    "Is the hospital administrator's refusal to prefer protocol Y a legitimate normative constraint that any transfinite decision theory must respect, or merely a finitist bias to be overcome?",
+    "How should a foundation for transfinite decision theory adjudicate between formal representability and outcome-grounded normative authority when the two diverge?"
+  ],
+  "paper_direction": "A paper here would argue that surreal-number expected utility theory faces a foundational dilemma exposed by the hospital case: its strict preferences over infinitesimally separated options either must be grounded in actual, realizable outcomes, in which case the surreal machinery itself offers no way to identify which differences qualify, or they must be justified by the structural demands of completeness and dominance in an extended ordered field, in which case the theory severs the link between preference and welfare. The paper would develop the case that ranking 5 + 1/ω above 5 when no finite patient experiences any extra benefit undermines the normative warrant for surreal strict preferences, and would anticipate the reply that preserving dominance and structural rationality suffices to justify the ranking. What the paper would need to show is that either structural coherence can genuinely normatively compel strict preference without any realizable difference, or that a principled, non-arbitrary criterion can be embedded within the surreal framework to filter out artifactual infinitesimal differences without collapsing the theory into finitism.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection asserts both that Y yields utility 1/ω and that Y yields no genuine value, so it targets the user's utility assignment rather than the premise that surreal verdicts track value differences given correct inputs, and its 'infinite sum' is not well-defined in the surreals.",
+      "robustness": "The obvious garbage-in-garbage-out reply, which Defender A essentially gave, defeats the case, and the direction offers no answer beyond relabeling that reply as a concession.",
+      "significance": "Even if it succeeded, it would only show that surreal EU needs a theory of which outcomes merit infinitesimal utility, which every EU theory already needs for utility assignment generally, so it is at most a minor clarification.",
+      "specificity": "There is a stated dilemma and a single case, but the 'what it must show' clause is a disjunction that includes the opponent's position, so the thesis and the success conditions are not settled."
+    },
+    "strongest_objection": "The case is incoherent as a counterexample to surreal EU. Surreal EU, like vNM, takes utilities as inputs and only says how to aggregate them. If Y genuinely adds no value to anyone, the correct assignment is 5 versus 5, and the theory is indifferent. If the extra stage really is worth 1/ω, the strict preference is correct. Assigning 1/ω while stipulating that nothing of value occurs is a modeling error, not a verdict of the framework. The case also relies on an 'infinite sequence totalling 1/ω', but surreal arithmetic has no general notion of infinite sums or limits, so this is a known technical gap rather than the framework's verdict. Either way, the dilemma's first horn ('the machinery cannot tell which differences are real') applies equally to finite EU, which also cannot tell which utility differences are real.",
+    "reply_available": false,
+    "what_it_needs": "The paper needs a case where the infinitesimal difference arises from the theory itself rather than from a stipulated utility assignment, for example infinitesimal probabilities in mixed Pascalian strategies, or a forced choice between a surreal and a hyperreal or ordinal representation. It must then show that the ranking is objectionable on grounds that do not equally impugn finite EU's dependence on input utilities.",
+    "summary": "Reject in current form: the hospital case misattributes a stipulated utility assignment to the surreal framework, and a paper built on it would be dismissed by the first referee who knows that EU theories take utilities as given.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:18:13.601854+00:00"
+  },
+  "revision": {
+    "research_question": "Can a surreal-number expected utility theory generate strict preferences from its own arithmetic, such as those arising from infinitesimal probabilities, that are normatively warranted when the utility inputs are fixed and shared across representations that agree on every finite outcome?",
+    "paper_direction": "A paper here would argue that the hospital case fails as a counterexample to surreal expected utility. It stipulates an infinitesimal utility for an outcome the case describes as valueless, and it relies on an infinite sum that surreal arithmetic does not define, so the verdict reflects a modeling error rather than the framework. The paper concedes this and narrows its thesis to a case the framework generates on its own terms: a decision in which the infinitesimal difference arises from the theory's probability arithmetic, for example when two options differ only by an infinitesimal probability of a finite benefit within a mixed strategy, while all utility inputs are fixed and identical. The argument is that in such a case the surreal verdict is not determined by the inputs, because the same inputs and the same finite outcomes admit surreal, hyperreal, and lexicographic representations that rank the options differently or leave them tied. Finite expected utility theory has no analogue of this. Once utilities are fixed, its verdicts are fixed, so the reply that the input is at fault does not transfer. The paper therefore claims that a strict surreal preference in this case is not normatively warranted by value differences, since no realizable difference in outcomes grounds it and its presence depends on a representational choice the decision problem does not supply. It then tests whether a non-arbitrary realizability criterion, requiring that an infinitesimal probability difference correspond to a difference in some realizable outcome distribution, can be stated within the surreal framework without collapsing it into finitism. If no such criterion is available, the thesis is that surreal strict preferences over infinitesimally separated options are underdetermined by value and should not be treated as decisive.",
+    "reply_to_strongest_objection": "The paper concedes the hospital case: the referee is right that assigning 1/ω while denying any value is a modeling error, and that surreal arithmetic lacks general infinite sums, so that case is dropped rather than defended. The remaining worry is answered by distinguishing two sources of infinitesimal terms. In the hospital case the term is an input, so the garbage-in reply applies. In the mixed-strategy case the term is produced by the theory's own probability arithmetic from fixed, shared inputs. Here the finite analogy fails: finite EU verdicts are fixed once utilities are fixed, whereas the verdict between options differing only by an infinitesimal probability can vary across representations (surreal, hyperreal, lexicographic) that agree on every finite outcome and every input. The paper argues that a strict preference which varies with representation and tracks no realizable outcome difference is not warranted by value, and it assesses whether a realizability criterion can be stated without collapsing into finitism.",
+    "what_changed": "The revision drops the hospital counterexample, which the referee showed rests on a modeling error and an undefined infinite sum, and relocates the challenge to infinitesimals generated by the theory's own probability arithmetic, where the input-dependence reply does not transfer from finite EU.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:20:23.359022+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The target, whether infinitesimal surreal differences track genuine value, is the right one. However, the central contrast between infinitesimal inputs and infinitesimals 'produced by the theory's own probability arithmetic' is muddled, since the arithmetic only combines infinitesimals that are already given as inputs.",
+        "robustness": "The paper's key move is that finite EU verdicts are fixed once inputs are fixed while surreal verdicts are not, but it dies to the observation that infinitesimal probabilities are themselves inputs. The paper also gives no case in which models that agree on all inputs disagree on a strict preference between 5 + ε and 5.",
+        "significance": "If it worked, a representation-dependence argument against surreal strict preferences would be a useful refinement of the challenged premise. It would, however, largely reprise known arbitrariness objections to infinitesimal probabilities rather than reshape the discussion of surreal decision theory.",
+        "specificity": "There is a definite thesis and a plan: concede the hospital case, construct a mixed-strategy case, show representation-dependence, then test a realizability criterion. But the decisive case is only gestured at ('for example when...') and never actually built with explicit values and representations."
+      },
+      "strongest_objection": "The new case does not escape the garbage-in reply; it relocates it. Infinitesimal probabilities, including infinitesimal mixing weights, are inputs to the decision problem just as utilities are. Surreal arithmetic does not generate them from fixed finite data. Once a determinate surreal probability is specified, the surreal verdict is fully determined, exactly as in finite EU. The alleged representation-dependence also looks false for the case described. Any ordered-field or lexicographic representation that assigns a positive infinitesimal weight to a finite benefit ranks that option strictly above its rival, so surreal, hyperreal and lexicographic models agree on the strict preference. Divergence or ties arise only if the problem leaves the infinitesimal unspecified, or assigns it differently, which means the problem is underdescribed, not that the framework is indeterminate.",
+      "reply_available": false,
+      "what_it_needs": "It must give a precisely specified decision problem with all inputs fixed. In that problem, it must show that surreal, hyperreal and lexicographic models disagree on a strict verdict, or that the surreal ordering itself depends on an arbitrary choice the problem does not fix (for example, which infinitesimal represents a given non-Archimedean credence). It must then engage the existing debate on the non-uniqueness of infinitesimal probabilities (Pruss, Williamson, Hájek, Easwaran) and Chen & Rubio's actual framework, rather than the Pascal-wager literature cited.",
+      "summary": "A reasonable target and a sensible concession, but the core argument rests on a contrast between input-generated and arithmetic-generated infinitesimals that does not survive scrutiny. It would need a genuinely specified case of model-divergent verdicts, grounded in the infinitesimal-probability literature, before it is worth writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:20:44.433428+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

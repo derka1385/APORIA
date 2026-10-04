@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "generated_at": "2026-10-04T00:59:42.233756+00:00",
+    "screened": 67,
+    "eligible_fresh": 21,
+    "eligible_classic": 17,
+    "note": "No fresh full-text paper on divine hiddenness itself was available; fresh targets fall back to philosophy of religion (CLAUDE.md order)."
+  },
+  "targets": [
+    {
+      "id": "oa-W7203761940",
+      "paper_id": "oa:W7203761940",
+      "kind": "fresh",
+      "title": "DOES GOD EXIST? CAN WE TELL IF WE BASED THIS QUESTION ONLY UPON THE APPARENT RANDOMNESS OF EVERYTHING?",
+      "authors": [
+        "Jeremy Tan"
+      ],
+      "year": 2026,
+      "published": "2026-08-18",
+      "url": "https://doi.org/10.67690/x8tmte22",
+      "text_path": "data/raw/text/oa_W7203761940.txt",
+      "thesis": "Apparent randomness in history and personal life challenges expectations of continuously visible divine control but does not by itself prove or disprove God's existence.",
+      "screen": {
+        "philosophy_of_religion": true,
+        "argues_for_thesis": true,
+        "thesis": "Apparent randomness in history and personal life challenges expectations of continuously visible divine control but does not by itself prove or disprove God's existence.",
+        "hiddenness_relevance": 2,
+        "argument_clarity": 3,
+        "english": true
+      },
+      "reason": "Published 2026-08-18 (after 2026-08-01), open-access full text (38,971 chars); argues for a thesis; hiddenness relevance 2/3 (divine love, availability or evidence); argument clarity 3/3."
+    },
+    {
+      "id": "oa-W7203485685",
+      "paper_id": "oa:W7203485685",
+      "kind": "fresh",
+      "title": "God and the View From Nowhere: De Se Knowledge and Divine Omniscience",
+      "authors": [
+        "Wandile Ganya"
+      ],
+      "year": 2026,
+      "published": "2026-08-14",
+      "url": "https://doi.org/10.1007/s11841-026-01169-y",
+      "text_path": "data/raw/text/oa_W7203485685.txt",
+      "thesis": "Given libertarian freedom and robust moral responsibility, divine omniscience must include irreducible self-locating knowledge.",
+      "screen": {
+        "philosophy_of_religion": true,
+        "argues_for_thesis": true,
+        "thesis": "Given libertarian freedom and robust moral responsibility, divine omniscience must include irreducible self-locating knowledge.",
+        "hiddenness_relevance": 1,
+        "argument_clarity": 3,
+        "english": true
+      },
+      "reason": "Published 2026-08-14 (after 2026-08-01), open-access full text (49,051 chars); argues for a thesis; hiddenness relevance 1/3 (God's attributes/existence); argument clarity 3/3."
+    },
+    {
+      "id": "oa-W7212186029",
+      "paper_id": "oa:W7212186029",
+      "kind": "fresh",
+      "title": "Divine simplicity as symmetric parthood",
+      "authors": [
+        "Nathaniel Gan"
+      ],
+      "year": 2026,
+      "published": "2026-09-10",
+      "url": "https://doi.org/10.1017/s0034412526101784",
+      "text_path": "data/raw/text/oa_W7212186029.txt",
+      "thesis": "Divine simplicity is best formulated as the claim that God is part of all of his parts, a formulation that preserves its motivations and answers major objections.",
+      "screen": {
+        "philosophy_of_religion": true,
+        "argues_for_thesis": true,
+        "thesis": "Divine simplicity is best formulated as the claim that God is part of all of his parts, a formulation that preserves its motivations and answers major objections.",
+        "hiddenness_relevance": 1,
+        "argument_clarity": 3,
+        "english": true
+      },
+      "reason": "Published 2026-09-10 (after 2026-08-01), open-access full text (55,601 chars); argues for a thesis; hiddenness relevance 1/3 (God's attributes/existence); argument clarity 3/3."
+    },
+    {
+      "id": "oa-W2072673546",
+      "paper_id": "oa:W2072673546",
+      "kind": "classic",
+      "title": "Some critical reflections on the hiddenness argument",
+      "authors": [
+        "Imran Aijaz",
+        "Markus Weidler"
+      ],
+      "year": 2007,
+      "published": "2007-02-01",
+      "url": "https://doi.org/10.1007/s11153-006-9103-8",
+      "text_path": "data/raw/text/oa_W2072673546.txt",
+      "thesis": "Schellenberg’s hiddenness argument and its plausible variants are substantially weakened by criticism of their supporting assumptions.",
+      "screen": {
+        "philosophy_of_religion": true,
+        "argues_for_thesis": true,
+        "thesis": "Schellenberg’s hiddenness argument and its plausible variants are substantially weakened by criticism of their supporting assumptions.",
+        "hiddenness_relevance": 3,
+        "argument_clarity": 3,
+        "english": true
+      },
+      "reason": "Classic fallback, open-access full text (85,865 chars); argues for a thesis; hiddenness relevance 3/3 (divine hiddenness); argument clarity 3/3."
+    },
+    {
+      "id": "oa-W2575351351",
+      "paper_id": "oa:W2575351351",
+      "kind": "classic",
+      "title": "Divine Hiddenness, Greater Goods, and Accommodation",
+      "authors": [
+        "Luke Teeninga"
+      ],
+      "year": 2017,
+      "published": "2017-01-18",
+      "url": "https://doi.org/10.1007/s11841-016-0561-x",
+      "text_path": "data/raw/text/oa_W2575351351.txt",
+      "thesis": "Valuable goods made sufficiently more valuable by divine hiddenness can give God a sufficient reason to remain hidden, so nonresistant nonbelief does not entail that God does not exist.",
+      "screen": {
+        "philosophy_of_religion": true,
+        "argues_for_thesis": true,
+        "thesis": "Valuable goods made sufficiently more valuable by divine hiddenness can give God a sufficient reason to remain hidden, so nonresistant nonbelief does not entail that God does not exist.",
+        "hiddenness_relevance": 3,
+        "argument_clarity": 3,
+        "english": true
+      },
+      "reason": "Classic fallback, open-access full text (55,619 chars); argues for a thesis; hiddenness relevance 3/3 (divine hiddenness); argument clarity 3/3."
+    }
+  ]
+}

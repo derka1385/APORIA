@@ -1,0 +1,213 @@
+{
+  "id": "brief-W4220703499.arg1.o8e15e0",
+  "objection_id": "W4220703499.arg1.o8e15e0",
+  "research_question": "Does an eternally present divine knowledge of a temporally situated free act constitute genuine knowledge, or is it merely a dispositional state that co‑extensively tracks the act?",
+  "argument": {
+    "id": "W4220703499.arg1",
+    "title": "Eternity Reconciles Foreknowledge and Freedom",
+    "paper_id": "oa:W4220703499",
+    "paper_title": "Saving Eternity (and Divine Foreknowledge and Free Will): A Reply to Hasker",
+    "premises": [
+      {
+        "id": "W4220703499.c006",
+        "text": "The Anselmian thesis: a created agent can choose with aseity only if he faces open options and it is up to him which option he chooses.",
+        "quote": "The Anselmian thesis is that in a universe made by God the created agent can choose with aseity only if he faces open options and it is up to him which option he chooses."
+      },
+      {
+        "id": "W4220703499.c007",
+        "text": "The truth about, and knowledge of, a free choice depends upon that actual choice (Grounding Principle).",
+        "quote": "This entails that truth about, and knowledge of, a free choice depends upon that actual choice. I label this the “Grounding Principle”."
+      },
+      {
+        "id": "W4220703499.c010",
+        "text": "An internal necessity of the form “If X then X” does not conflict with free will.",
+        "quote": "I take it that this sort of necessity does not conflict with free will."
+      },
+      {
+        "id": "W4220703499.c025",
+        "text": "Positing God as eternal, with all time present to Him, best respects both divine foreknowledge and libertarian free will.",
+        "quote": "If the grounding principle is correct—the truth about, and knowledge of, a free choice is dependent upon the actual making of the choice itself—then positing that God is eternal, and all of time is immediately present to Him, seems the most adequate way to respect both sides of the dilemma."
+      },
+      {
+        "id": "W4220703499.c019",
+        "text": "At T1 S cannot choose between A and B because he cannot be choosing before he is choosing.",
+        "quote": "It is not possible for S to choose between A and B at T1, since S cannot be choosing before he is choosing."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4220703499.arg1.mp",
+      "text": "God is eternal, with all time present to Him, and if positing such an eternal God respects both divine foreknowledge and libertarian freedom, then, given that theory of time, reconciliation is possible."
+    },
+    "conclusion": {
+      "id": "W4220703499.c002",
+      "text": "Given a certain theory of time, it is possible to reconcile divine foreknowledge with libertarian freedom."
+    },
+    "skeleton": "A -> B; C; ~D; E -> F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4220703499.arg1.r1",
+    "text": "God's knowing is ungrounded in creaturely acts while its objects are grounded in them."
+  },
+  "objection": "Consider Maren, a creature who at noon on Tuesday freely decides to keep a promise rather than break it. God, eternally present to all time, knows at dawn that Maren will keep it. Suppose God's knowing at dawn is grounded in nothing creaturely: it is wholly self-originating. Now ask what it is for that knowing to be the knowing that Maren keeps the promise. Its object is fixed by a fact that holds only because Maren's noon decision occurs. If the object is grounded in her act while the knowing is not, then the knowing is correct without being answerable to anything in the world, and it would be correct even had Maren broken the promise, provided the object had been different. So the knowing's content varies with her act while the knowing does not, which means it is a knowing of nothing in particular: a dispositional state that happens to be co-extensive with Maren's act. The premise stipulates an asymmetry that cannot be stated as knowledge at all.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The reply stresses that God’s knowing is correct because its object is the fact itself, and that the asymmetry of dependence (not of relation) secures answerability despite the knowledge being ungrounded in creaturely acts.",
+      "why_it_failed": "It conflates sensitivity of content with answerability and offers no argument that eternal presence turns a mere tracking disposition into genuine knowledge."
+    },
+    {
+      "defender": "Defender A",
+      "response": "In the closing remark the defender admits the earlier mistake, proposes a revised premise that eternal presence supplies the answerability relation, and claims the argument survives if that premise holds.",
+      "why_it_failed": "The revised premise is simply asserted, not defended; the response leaves the crucial question of why eternal presence yields answerability unanswered."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The reply argues that God’s knowledge is grounded in divine nature rather than causal priority, and that the atemporal vision of the actual temporal order provides intentional directedness.",
+      "why_it_failed": "It does not explain how this metaphysical grounding guarantees that the knowledge is not just a co‑extensive disposition, so the core objection remains unresolved."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W4386403713.a1",
+      "paper_id": "oa:W4386403713",
+      "title": "Tanrı’nın Ön Bilgisi Meselesinde Orta Bilgi Teorisinin Yeri ve İncelenmesi",
+      "authors": [
+        "İbrahim Halil Dündar"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.55709/tsbsbildirilerdergisi.2.125",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W4246671415.a3",
+      "paper_id": "oa:W4246671415",
+      "title": "Molina, Luis de (1535–1600)",
+      "authors": [
+        "Alfred J. Freddoso"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9780415249126-c024-1",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W3046629901",
+      "paper_id": "oa:W3046629901",
+      "title": "A Study of John Martin Fischer’s View Regarding Divine Foreknowledge and Man’s Moral Responsibility",
+      "authors": [
+        "Tavakkol Kouhi",
+        "Javad Danesh"
+      ],
+      "year": 2020,
+      "url": "https://doi.org/10.22091/jptr.2020.4887.2215",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W7202149095.a3",
+      "paper_id": "oa:W7202149095",
+      "title": "The Plan and the Hand: On Providence, Freedom, and the Guilt of Pilate",
+      "authors": [
+        "Oscar Gaitan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.21869745",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.9,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W4386403713.a1",
+      "paper_id": "oa:W4386403713",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Tanrı’nın Ön Bilgisi Meselesinde Orta Bilgi Teorisinin Yeri ve İncelenmesi"
+    },
+    {
+      "record_id": "W4246671415.a3",
+      "paper_id": "oa:W4246671415",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Molina, Luis de (1535–1600)"
+    },
+    {
+      "record_id": "abs:oa:W3046629901",
+      "paper_id": "oa:W3046629901",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "A Study of John Martin Fischer’s View Regarding Divine Foreknowledge and Man’s Moral Responsibility"
+    }
+  ],
+  "open_questions": [
+    "What precise feature of God’s eternal presence makes the divine knowledge answerable to the temporal act rather than merely correlated with it?",
+    "Can a principle be formulated that distinguishes knowledge from tracking when the knower’s epistemic relation is atemporal?",
+    "Does the revised premise that eternal presence supplies the answerability relation hold without invoking an additional, unexplained premise?",
+    "How might the grounding principle be reformulated to accommodate ungrounded divine knowledge without collapsing into a dispositional state?"
+  ],
+  "paper_direction": "A paper here would argue that the reconciliation of divine foreknowledge with libertarian free will hinges on a novel account of atemporal answerability: eternal presence must be shown to instantiate a non‑causal, yet intentional, relation that secures genuine knowledge of temporal acts. The case would begin by reconstructing the Anselmian thesis and the grounding principle, then critically assess the objector’s dispositional charge. Anticipating Defender A’s strongest reply, the paper would defend the claim that sensitivity of content is insufficient for answerability and would develop a metaphysical account—perhaps drawing on divine simplicity or timeless vision—that makes eternal presence itself the grounding of answerability. The paper would need to demonstrate that this account avoids the need for an extra upstream‑determination premise while preserving both foreknowledge and libertarian freedom.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 3,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "The objection misdescribes eternal knowledge as knowledge 'at dawn', equivocates between causal and content-grounding, and contains an internally unstable claim that content varies while the knowing does not, so it only loosely engages the premise as stated.",
+      "robustness": "A competent referee would reply that counterfactual covariation of content with fact is a mark of knowledge, not of mere disposition. Neither the direction nor the transcript answers this, and the defenders' failures reflect the objection's vagueness rather than its force.",
+      "significance": "A worked-out account of non-causal atemporal answerability would usefully sharpen the aseity-versus-passivity problem for eternalist reconciliations, but that problem is already well known.",
+      "specificity": "The direction changes sides from objection to defense, garbles which claim Defender A made, and leaves the central account as 'perhaps divine simplicity or timeless vision', so there is a topic but no definite thesis or argumentative plan."
+    },
+    "strongest_objection": "The dispositional charge rests on equivocations and dissolves under scrutiny. First, the Maren case has God know 'at dawn', which smuggles temporal foreknowledge into an eternalist view whose whole point is that God knows the noon choice by being atemporally present to it. Second, 'grounded' is used in two senses. In Rogers' Anselmian framework the relevant sense is causal or passive dependence bearing on divine aseity. The objection slides to dependence of content. A knowing whose content is fixed by the fact known, and which would have had a different content had the fact been different, is not a mere co-extensive disposition: that counterfactual covariation is exactly the sensitivity or safety profile of ordinary factive knowledge. Third, the claim that 'the content varies while the knowing does not' is incoherent if mental states are individuated by content. Once these points are cleared up, the proposal collapses into the familiar Hasker-style dilemma: divine knowledge either depends on creatures, which threatens aseity and impassibility, or causes them, which threatens libertarian freedom. That dilemma is already extensively discussed (Hasker, Rogers, Stump–Kretzmann, Leftow, Aquinas on causal divine knowledge).",
+    "reply_available": false,
+    "what_it_needs": "It must fix one precise sense of 'grounded' that Rogers actually uses and state the objection in properly atemporal terms. It must then give a non-question-begging criterion separating knowledge from mere tracking that eternal presence either meets or fails, positioned explicitly against the existing aseity/passivity literature, not against Molinist sources.",
+    "summary": "The underlying issue of whether eternal knowledge of free acts must be passive is real but well trodden, and this proposal frames it through a confused objection and an unspecified positive account, so it needs a fundamental rethink before it could become a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:55.607212+00:00"
+  },
+  "revision": {
+    "research_question": "Given that God's eternal knowing is not causally or passively dependent on creaturely acts, can it still be factive knowledge of a temporally located free act, with content fixed by that act, rather than a dispositional state that merely co-varies with it?",
+    "paper_direction": "A paper here would argue that the dispositional charge against eternal divine knowledge equivocates on 'grounded', and that once the two senses are separated, eternal knowledge of a noon free act is factive knowledge that satisfies a non-causal answerability condition, without any novel metaphysics of eternity. The paper would proceed in four steps. First, it fixes the operative sense of 'grounded' in the Anselmian aseity framework: dependence that is causal or passive and bears on divine aseity. Second, it states the objection in atemporal terms. The challenged premise (W4220703499.arg1.r1) holds that God's knowing is ungrounded in creaturely acts in this sense while its objects are grounded in them. The paper drops the 'at dawn' formulation, since on the eternalist view God knows the noon choice by being atemporally present to it. Third, it concedes the content-dependence the objector relies on. The Grounding Principle (W4220703499.c007) already says that the truth and knowledge of a free choice depend on the actual choice, so the objection's asymmetry is coherent only as a contrast between content-dependence and causal or passive dependence. The claim that content varies while the knowing does not is withdrawn, because it is incoherent if mental states are individuated by content. Fourth, the paper gives a criterion that does not presuppose the answer. A state S is knowledge of p, rather than a mere co-extensive disposition, when (a) S's correctness conditions are fixed by whether p obtains, and (b) S would be assessed as incorrect were p otherwise, so that the difference in content marks a different state. Counterfactual covariation of this kind is the sensitivity profile of ordinary factive knowledge. The paper argues that eternal presence meets (a) and (b) with respect to Maren's noon act, and that the knowing does so without causal or passive dependence on that act. The remaining aseity–passivity question is then the separate question the literature on eternalist reconciliations already debates, and the paper positions itself against that literature rather than against Molinist sources. The libertarian open-options condition (W4220703499.c006) is kept as a separate requirement on the created agent, not used to ground divine knowledge. The paper does not claim that eternal presence itself grounds answerability through a new relation, and it does not rely on divine simplicity or timeless vision to do so.",
+    "reply_to_strongest_objection": "The paper separates two senses of 'grounded': causal or passive dependence bearing on aseity, and content-dependence, where the fact known fixes the correctness conditions of the knowing. The objection slides from the first to the second. The paper concedes content-dependence, as the Grounding Principle already does, and denies causal or passive dependence. Counterfactual covariation of content with fact is the mark of factive knowledge, not of a mere disposition. The paper's criterion is that a state is knowledge of p when its correctness is fixed by p and it would be assessed incorrect were p otherwise. Eternal knowledge of Maren's noon act meets this criterion. The 'content varies while the knowing does not' claim is withdrawn as incoherent.",
+    "what_changed": "The revision drops the novel non-causal answerability account and the 'at dawn' framing, and replaces them with a disambiguation of 'grounded' plus a non-question-begging knowledge-versus-tracking criterion that the eternal knowing is argued to meet.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:32:15.094833+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The equivocation diagnosis is internally consistent and correctly notes that the Grounding Principle already concedes content-dependence. But conceding content-individuation quietly makes the knowing state depend on the act, so the paper in effect reinterprets rather than defends the challenged premise.",
+        "robustness": "The decisive step uses a criterion that either fails to distinguish knowledge from accurate co-variation or reintroduces dependence of the knowing on the act, and the direction explicitly postpones the only answer that could help.",
+        "significance": "Separating content-dependence from causal or passive dependence is a familiar move in eternalist replies, and without a working knowledge criterion it would be at most a modest clarification.",
+        "specificity": "There is a definite thesis, a case, and a four-step plan, but the crucial step ('eternal presence meets (a) and (b)') is asserted, not specified."
+      },
+      "strongest_objection": "The proposed criterion cannot separate knowledge from mere co-extension, and the paper faces a dilemma. On the weak reading, clauses (a) and (b) only say that S is correct iff p and incorrect otherwise. Any accurate representation that p meets this, including a lucky true belief or a correct disposition that merely co-varies with the act. So the criterion is correctness-conditional, not epistemic, and does not answer the charge. On the strong, Nozickian reading (were p false, God would not be in S), God's being in S counterfactually depends on Maren's act. Combined with the paper's own concession that states are individuated by content, this makes the knowing itself, not just its object, dependent on the creaturely act. That contradicts the challenged premise as stated. The paper can escape only by arguing that counterfactual or constitutive dependence is neither 'passive' nor aseity-threatening, and that is exactly the question it defers to 'the literature'.",
+      "reply_available": false,
+      "what_it_needs": "It must replace the correctness-condition criterion with a real anti-luck condition that eternal presence satisfies. It must also argue directly, not by deferral, that the resulting counterfactual and content-individuating dependence of the divine state on Maren's act is not the kind of dependence the Anselmian premise denies. This requires engaging Stump and Kretzmann, Rogers, Leftow, Zagzebski, and Hasker rather than Molinist sources.",
+      "summary": "A tidy disambiguation of 'grounded', but its knowledge criterion either fails to separate knowledge from co-variation or concedes the dependence the premise denies, so it needs a real answerability argument before it is a paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:32:38.096258+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

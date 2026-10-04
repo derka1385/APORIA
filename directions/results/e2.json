@@ -1,0 +1,338 @@
+{
+  "experiment": "E2 gauntlet calibration",
+  "n": 20,
+  "known_answer": {
+    "n": 10,
+    "labelled_known_answer": 1,
+    "correct_reply_cited": 1,
+    "gold_reply_cited_by_a_defender": 7
+  },
+  "misreading": {
+    "n": 10,
+    "caught": 10
+  },
+  "items": [
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2072673546, oa:W2575351351",
+      "objection_paper": "oa:W4408705954",
+      "reply_claims": [
+        "W2072673546.c014",
+        "W2575351351.c025"
+      ],
+      "objection": "EVAL.p2 is too strong. A perfectly loving God could remain open to relationship while delaying its initiation for unknown good reasons or because delay helps make a later relationship deeper and more freely chosen. Thus nonresistant nonbelief can occur without showing that God is not always open to personal relationship.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W2575351351.c026",
+        "W2575351351.c027",
+        "W2575351351.c029",
+        "W2575351351.c045",
+        "W7137819100.a2",
+        "W2072673546.c014"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2072673546, oa:W2492774818, oa:W4255790256",
+      "objection_paper": "oa:W2143316259",
+      "reply_claims": [
+        "W4255790256.a2",
+        "W2072673546.a1",
+        "W2492774818.a1",
+        "W2072673546.c014"
+      ],
+      "objection": "EVAL.p2 is false. Even a perfectly loving God may justly withhold indubitable belief and communion from persons who are unworthy of them and deserve exclusion. Thus God could remain open to relationship in the relevant loving sense while permitting some persons to be nonresistant nonbelievers because their exclusion is deserved.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W2072673546.a1",
+        "W2492774818.a1",
+        "W3137870136.a2",
+        "W7114583582.a1",
+        "W7149235149.a1"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2072673546, oa:W2575351351",
+      "objection_paper": "oa:W3150907602",
+      "reply_claims": [
+        "W2575351351.c027",
+        "W2575351351.c002",
+        "W2072673546.c015",
+        "W2575351351.c026"
+      ],
+      "objection": "EVAL.p2 is false. A person can stand in a genuine relationship with God without believing that God exists, because God may be present to every person through the cosmos that embodies God. Nonbelief therefore need not show that God is unavailable for relationship.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W3202492716.a2",
+        "W2072673546.c082",
+        "W2072673546.c074",
+        "W2575351351.c002",
+        "W2575351351.c027"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2492774818, oa:W2575351351",
+      "objection_paper": "oa:W3174087237",
+      "reply_claims": [
+        "W2575351351.c001",
+        "W2492774818.a1",
+        "W2575351351.c025"
+      ],
+      "objection": "EVAL.p2 is false. A God can remain genuinely open to a personal relationship with every finite person while initially concealing himself. Temporary concealment need not close the possibility of relationship; it may be part of a gradual pursuit that prepares a person for a deeper, freer relationship. Therefore nonresistant nonbelief can occur even if God is always open to relationship.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W3174087237.a1",
+        "W2575351351.c001",
+        "W2575351351.c002",
+        "W2575351351.c026",
+        "W2575351351.c045"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2575351351, oa:W4248964580",
+      "objection_paper": "oa:W7135197508",
+      "reply_claims": [
+        "W4248964580.a1",
+        "W2575351351.c004"
+      ],
+      "objection": "EVAL.p4 is unsupported because its classification of people as nonresistant nonbelievers uses an overly narrow conception of resistance. A person may lack conscious hostility or an explicit refusal of relationship while nevertheless exhibiting broader forms of resistance toward God. If such broader resistance is present, that person is not genuinely nonresistant in the relevant sense. Therefore the alleged cases of nonresistant nonbelief may not establish that any finite person has ever been nonresistantly in nonbelief.",
+      "target": "EVAL.p4",
+      "outcome": "revision_required",
+      "cited": [
+        "W2575351351.c004",
+        "W4248964580.a1",
+        "W3203925378.a1",
+        "W2575351351.c031"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W4252018205",
+      "objection_paper": "oa:W7114583582",
+      "reply_claims": [
+        "W4252018205.a1"
+      ],
+      "objection": "EVAL.p2 is false. In a fallen human world, unmistakable divine presence could be weaponized by some people as proof of their own superiority, intensifying domination, shame, and exclusion. A loving God may therefore sometimes remain hidden even from people who are not resisting belief, to prevent this predictable harm and preserve conditions for humble, noncoercive relationships.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W2503799061.a1",
+        "W2350550264.a1",
+        "W4252018205.a1",
+        "W2905280835.a2"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W4397042102",
+      "objection_paper": "oa:W7163263126",
+      "reply_claims": [
+        "W4397042102.a1"
+      ],
+      "objection": "EVAL.p4 is not philosophically established: whether an apparent seeker is genuinely nonresistant can only be discerned retrospectively through faith. Without that theological standpoint, one cannot reliably distinguish nonresistant nonbelief from hidden resistance, so the premise lacks adequate support.",
+      "target": "EVAL.p4",
+      "outcome": "revision_required",
+      "cited": [
+        "W7163263126.a3",
+        "W2575351351.c056",
+        "W3203925378.a1",
+        "W2575351351.c006",
+        "W2575351351.c026",
+        "W2575351351.c033"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W1552196402",
+      "objection_paper": "oa:W2950222172",
+      "reply_claims": [
+        "W1552196402.a1"
+      ],
+      "objection": "EVAL.p2: A perfectly loving God may temporarily withhold evidence of God’s existence when that hiddenness is necessary to bring about a greater good. Love need not require immediately preventing every instance of nonresistant nonbelief if doing so would frustrate that good.",
+      "target": "EVAL.p2",
+      "outcome": "misreading",
+      "cited": [],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W2575351351",
+      "objection_paper": "oa:W4303022550",
+      "reply_claims": [
+        "W2575351351.c007"
+      ],
+      "objection": "EVAL.p1 is false. Even a perfectly loving God, as creator, must remain hidden from creatures in some respect; therefore perfect love need not require being always open to a personal relationship with every finite person.",
+      "target": "EVAL.p1",
+      "outcome": "known_answer",
+      "cited": [
+        "W4303022550.a1",
+        "W7163263126.a1",
+        "W7168366306.a3",
+        "W2575351351.c007",
+        "W4231721003.a1",
+        "W2072673546.c014",
+        "W3137870136.a2",
+        "W2889076848.a1"
+      ],
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "known_answer",
+      "source_paper": "oa:W4252018205",
+      "objection_paper": "oa:W2310611875",
+      "reply_claims": [
+        "W4252018205.a1"
+      ],
+      "objection": "EVAL.p2 is false. A perfectly loving God could remain hidden from some nonresistant persons when doing so serves multiple sufficient goods or prevents harms that could not otherwise be avoided. Openness to relationship need not require ensuring immediate belief in every case.",
+      "target": "EVAL.p2",
+      "outcome": "revision_required",
+      "cited": [
+        "W2575351351.c045",
+        "W3174087237.a1",
+        "W2575351351.c027",
+        "W2072673546.c014"
+      ],
+      "correct": false,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 1 is far too strong. Perfect love does not require God to make every person's relationship with Him active or conscious at every moment. Love respects the freedom of the beloved, and a parent who loves a child does not force the child to speak to them constantly. Premise 1 demands that God actively compel every finite person into a personal relationship, a constant and coercive involvement that love does not entail. Once that overreach is removed, the inference from a perfectly loving God to constant openness collapses, and the argument's first step fails to support its conclusion.",
+      "target": "EVAL.p1",
+      "distorted_claim": "EVAL.p1 is read as claiming that a perfectly loving God must actively compel or constantly ensure every finite person's personal relationship with God, rather than merely being always open to such a relationship.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 2 fails because it assumes that a God who is always open to relationship must force every person to believe in Him. But openness is not coercion. A God could extend an invitation at every moment while leaving people free to decline or to remain unconvinced. Nothing in openness requires that God override anyone's rational or emotional resistance. Once we see that God can be fully available without compelling belief, the inference from openness to the absence of any nonresistant nonbelief collapses. The argument therefore gives no reason to think that the persistence of such nonbelief tells against God's existence.",
+      "target": "EVAL.p2",
+      "distorted_claim": "EVAL.p2 claims that a God who is always open to a personal relationship with any finite person must make every person believe that God exists (i.e., that openness requires compelling belief). The premise actually says only that no finite person is ever nonresistantly in a state of nonbelief, which is a claim about nonresistant nonbelief, not a claim that God forces belief in everyone.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 3 quietly assumes that any God worth the name must compel every person to believe in Him. Nothing in theism requires that. A God could exist and be perfectly loving while leaving room for reasonable unbelief, since love respects freedom and does not force assent. So the step from 'no perfectly loving God exists' to 'God does not exist' is unsupported. The argument at most shows that one particular kind of divine behavior is absent, not that God is absent. Without the added assumption that God must compel universal belief, the conclusion does not follow.",
+      "target": "EVAL.p3",
+      "distorted_claim": "EVAL.p3 is read as implying that any God must compel every person to believe in God's existence, a much stronger claim than the conditional that if no perfectly loving God exists, then God does not exist.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "The argument assumes that a God who is always open to relationship must make every person believe in Him. That does not follow. Openness means the relationship is always available, not that belief is forced on anyone. A person can be receptive in outward conduct and still not believe, because belief depends on evidence, upbringing, and reasoning that no invitation alone settles. Divine love that respects human agency would leave room for real, unforced nonbelief. So the observed nonbelief in EVAL.p4 does not show that the divine openness in EVAL.p2 fails, and the conclusion that God does not exist is unsupported.",
+      "target": "EVAL.p4",
+      "distorted_claim": "Premise EVAL.p2 claims that a God who is always open to a personal relationship must cause every finite person to believe that God exists, so any nonresistant nonbelief refutes such a God.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "The argument treats divine love as requiring that God guarantee every person's belief in God's existence. But a loving God could be open to relationship while leaving people free to disbelieve. Love in the relevant sense is about willingness to be present and to offer relationship, not about compelling assent. Premise one only asks that such openness be available to any finite person. It never says God must cause belief in everyone. So the inference from the absence of universal belief to the nonexistence of God depends on a stronger reading of love than the premises supply, and the argument fails to show that a loving God would produce universal belief.",
+      "target": "EVAL.p1",
+      "distorted_claim": "EVAL.p1 asserts that a perfectly loving God must ensure every finite person actually believes in God's existence, so that any person's nonbelief shows God is not loving or does not exist.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 2 quietly assumes that a God who is open to relationship must make every person believe in Him. That doesn't follow. Openness is a readiness to be in relationship, and relationships cannot be forced on anyone without undermining the freedom they require. A loving God could make His presence available while still letting people come to belief at their own pace, or not at all. So the step from openness to 'no finite person is ever nonresistantly in nonbelief' demands a compulsion the premise never licenses, and the argument's second premise fails.",
+      "target": "EVAL.p2",
+      "distorted_claim": "EVAL.p2 is read as requiring that God compel or bring about belief in every finite person, rather than only stating that no finite person is ever nonresistantly in a state of nonbelief.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "The argument's second premise is too strong to be credible. It seems to require that a God open to relationship with every person must force every person to believe in Him, so that no one could ever sincerely lack belief. But being open to a relationship only means making oneself available, not compelling assent. A loving God could extend that openness fully while leaving people free to decline it, and the argument gives no reason to think a relationship must be coerced into existence. Since the inference depends on this overreaching reading of openness, the conclusion does not follow.",
+      "target": "EVAL.p3",
+      "distorted_claim": "EVAL.p2 claims that a God who is always open to a personal relationship with every finite person must make every finite person believe that God exists, so that no one could ever be sincerely nonbelieving.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 2 quietly assumes that a God who is always open to relationship must ensure that every person believes in Him. That is far too strong. Openness to a relationship is compatible with people freely declining it, and with people never having considered the question at all, such as young children or those raised far from any religious tradition. Love offers a relationship but does not force its acceptance, so the premise overreaches by demanding universal belief. Once this overreach is removed, the inference from premise 4 to God's nonexistence fails, because the observed nonbelief could be the result of persons' own choices rather than a failure of divine openness.",
+      "target": "EVAL.p4",
+      "distorted_claim": "Premise 2 requires that a God open to relationship must make every finite person believe that God exists, so that any nonbelief at all counts against such a God, rather than only nonresistant nonbelief.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 1 is far too strong. Perfect love does not require God to make every person's relationship with Him active or conscious at every moment. Love respects the freedom of the beloved, and a parent who loves a child does not force the child to speak to them constantly. Premise 1 demands that God actively compel every finite person into a personal relationship, a constant and coercive involvement that love does not entail. Once that overreach is removed, the inference from a perfectly loving God to constant openness collapses, and the argument's first step fails to support its conclusion.",
+      "target": "EVAL.p1",
+      "distorted_claim": "EVAL.p1 is read as claiming that a perfectly loving God must actively compel or constantly ensure every finite person's personal relationship with God, rather than merely being always open to such a relationship.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    },
+    {
+      "kind": "misreading",
+      "source_paper": "",
+      "objection": "Premise 2 fails because it assumes that a God who is always open to relationship must force every person to believe in Him. But openness is not coercion. A God could extend an invitation at every moment while leaving people free to decline or to remain unconvinced. Nothing in openness requires that God override anyone's rational or emotional resistance. Once we see that God can be fully available without compelling belief, the inference from openness to the absence of any nonresistant nonbelief collapses. The argument therefore gives no reason to think that the persistence of such nonbelief tells against God's existence.",
+      "target": "EVAL.p2",
+      "distorted_claim": "EVAL.p2 claims that a God who is always open to a personal relationship with any finite person must make every person believe that God exists (i.e., that openness requires compelling belief). The premise actually says only that no finite person is ever nonresistantly in a state of nonbelief, which is a claim about nonresistant nonbelief, not a claim that God forces belief in everyone.",
+      "outcome": "misreading",
+      "correct": true,
+      "status": "ok"
+    }
+  ],
+  "settings": {
+    "argument": "The hiddenness argument (Schellenberg, standard form)",
+    "fixture_note": "Canonical eval fixture: the build agent's paraphrase of Schellenberg's standard (2015) formulation of the hiddenness argument. Used only by E2 (gauntlet calibration); not a corpus record and never cited.",
+    "known_items": "objection: an LLM restates a corpus claim (paper A) as an objection to one premise; reply: hybrid retrieval over the claim index (excluding paper A), then an LLM judge keeps passages that answer the objection (paper B). Correct = known_answer citing a B claim.",
+    "misreading_items": "LLM-written objections that attack a distorted premise (2 variants x 4 premises, round robin)",
+    "gauntlet": "full: pre-screen, two defenders with retrieved literature, referee labels"
+  },
+  "models": {
+    "defender_a": "anthropic:sonnet",
+    "defender_b": "openai:gpt-5.6-terra",
+    "referee": "openai:gpt-5.6-sol",
+    "reranker": "openai:gpt-5.6-terra",
+    "misreading_writer": "anthropic:sonnet"
+  },
+  "timestamp": "2026-10-04T01:39:21.282074+00:00",
+  "limits": "correct_reply_cited counts items labelled known_answer whose verified citations include a gold reply paper; gold_reply_cited_by_a_defender counts items where a defender cited (verified) a claim from a gold reply paper, whatever the label. Small n (10 + 10). Objections are LLM restatements of published claims, and the 'published reply' is chosen by retrieval + an LLM judge from abstract-level claims, so both the pairing and the gold reply are model-made. A first version of this eval paired each objection with its own source paper as the 'reply' (0/10 correct by construction) and was discarded. Misreadings are written by a model from the same pool as the defenders. The argument is a paraphrased fixture, not a corpus record. No human labels."
+}

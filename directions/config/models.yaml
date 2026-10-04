@@ -1,0 +1,53 @@
+# Candidate models per family. Name patterns, not final ids:
+# `make providers` lists what each provider actually offers, probes matches, and writes
+# config/resolved_models.json. Never use an id that was not probed successfully.
+# Order inside a list = preference (strongest first).
+# codex_cli / claude_cli are subscription CLIs (ChatGPT / Claude plans), added 2026-10-04
+# because no API key was available at kickoff; see NOTES.md.
+families:
+  llama:     {databricks: ["llama-4-maverick", "llama-3-3-70b"], openrouter: ["meta-llama/llama-4", "meta-llama/llama-3.3-70b"], evroc: ["Llama-3.3-70B-Instruct"]}
+  qwen:      {databricks: ["qwen3"], openrouter: ["qwen/qwen3"], evroc: ["Qwen3.8-27B", "Qwen3.6-35B"]}
+  gpt-oss:   {databricks: ["gpt-oss-120b"], openrouter: ["openai/gpt-oss-120b"], evroc: ["gpt-oss-120b"]}
+  gemma:     {databricks: ["gemma-3-12b"], openrouter: ["google/gemma-3"], evroc: ["gemma-4-26B"]}
+  mistral:   {evroc: ["Mistral-Medium-3.5", "Magistral"]}
+  kimi:      {evroc: ["Kimi-K2"]}
+  glm:       {evroc: ["GLM-5"]}
+  anthropic: {databricks: ["claude"], openrouter: ["anthropic/claude"], anthropic: ["claude"], claude_cli: ["sonnet", "opus", "haiku"]}
+  openai:    {codex_cli: ["gpt-5.6-terra", "gpt-5.6-sol", "gpt-5.6-luna"]}
+  small:     {databricks: ["llama-3-1-8b", "gemma-3-12b", "gpt-oss-20b"], openrouter: ["meta-llama/llama-3.1-8b"], codex_cli: ["gpt-5.6-luna"], claude_cli: ["haiku"], evroc: ["gemma-4-26B"]}
+embeddings:
+  databricks: ["gte-large", "bge-large", "qwen3-embedding"]
+  local: "BAAI/bge-small-en-v1.5"
+roles:
+  # strong = prefer the largest available model; families for defenders/referee must differ
+  extractor: strong
+  formalizer: strong
+  reranker: strong
+  defender_a: strong
+  defender_b: strong_other_family
+  referee: third_family
+  generators: rotate_all_families
+  naive_questioner: small
+# Family for high-volume roles (extractor, reranker) when available.
+bulk_family: [openai, gpt-oss, llama, qwen]
+# Judgement roles: the novelty check (restate + rerank) and the brief writer decide what reaches a researcher, so
+# they go to the strongest family available rather than the bulk one. Measured 2026-10-04 on 12 decision-theory
+# objections, same candidates: gpt-oss-120b scored 68/102 'different' passages at exactly 0 and was unstable
+# across reruns; Kimi-K2.6 was more lenient (5 checks at 1.0, 2 failed); Claude Sonnet was strictest (0 at 1.0,
+# 4/92 at 0). The brief writer avoids anthropic so the Assessor (Claude Opus) reads another family's work.
+role_preference:
+  reranker: [openai, anthropic, kimi, glm]
+  brief: [openai, kimi, glm, anthropic]
+# If evroc's /v1/models is unavailable, list exact ids here (from `evroc think model list`).
+evroc_ids: []
+# Reasoning effort for CLI providers (ignored by APIs).
+effort:
+  extractor: low
+  formalizer: medium
+  reranker: medium
+  brief: medium
+  defender_a: medium
+  defender_b: medium
+  referee: medium
+  generators: medium
+  naive_questioner: low

@@ -1,0 +1,223 @@
+{
+  "id": "brief-W4220703499.arg1.o58586e",
+  "objection_id": "W4220703499.arg1.o58586e",
+  "research_question": "Can the Grounding Principle be reformulated so that it grounds only the truth of contingent propositions (and knowledge‑of‑those propositions) without grounding any intrinsic aspect of God’s knowledge, thereby preserving divine simplicity while still enabling a reconciliation of divine foreknowledge with libertarian free will?",
+  "argument": {
+    "id": "W4220703499.arg1",
+    "title": "Eternity Reconciles Foreknowledge and Freedom",
+    "paper_id": "oa:W4220703499",
+    "paper_title": "Saving Eternity (and Divine Foreknowledge and Free Will): A Reply to Hasker",
+    "premises": [
+      {
+        "id": "W4220703499.c006",
+        "text": "The Anselmian thesis: a created agent can choose with aseity only if he faces open options and it is up to him which option he chooses.",
+        "quote": "The Anselmian thesis is that in a universe made by God the created agent can choose with aseity only if he faces open options and it is up to him which option he chooses."
+      },
+      {
+        "id": "W4220703499.c007",
+        "text": "The truth about, and knowledge of, a free choice depends upon that actual choice (Grounding Principle).",
+        "quote": "This entails that truth about, and knowledge of, a free choice depends upon that actual choice. I label this the “Grounding Principle”."
+      },
+      {
+        "id": "W4220703499.c010",
+        "text": "An internal necessity of the form “If X then X” does not conflict with free will.",
+        "quote": "I take it that this sort of necessity does not conflict with free will."
+      },
+      {
+        "id": "W4220703499.c025",
+        "text": "Positing God as eternal, with all time present to Him, best respects both divine foreknowledge and libertarian free will.",
+        "quote": "If the grounding principle is correct—the truth about, and knowledge of, a free choice is dependent upon the actual making of the choice itself—then positing that God is eternal, and all of time is immediately present to Him, seems the most adequate way to respect both sides of the dilemma."
+      },
+      {
+        "id": "W4220703499.c019",
+        "text": "At T1 S cannot choose between A and B because he cannot be choosing before he is choosing.",
+        "quote": "It is not possible for S to choose between A and B at T1, since S cannot be choosing before he is choosing."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4220703499.arg1.mp",
+      "text": "God is eternal, with all time present to Him, and if positing such an eternal God respects both divine foreknowledge and libertarian freedom, then, given that theory of time, reconciliation is possible."
+    },
+    "conclusion": {
+      "id": "W4220703499.c002",
+      "text": "Given a certain theory of time, it is possible to reconcile divine foreknowledge with libertarian freedom."
+    },
+    "skeleton": "A -> B; C; ~D; E -> F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4220703499.c007",
+    "text": "The truth about, and knowledge of, a free choice depends upon that actual choice (Grounding Principle)."
+  },
+  "objection": "Imagine a man named Elias who chooses to drink water at noon. According to the Grounding Principle, the truth of this choice and the knowledge of it are grounded in Elias's act. If God's knowledge of Elias's choice depends on that contingent act, then God's knowledge is not identical to His necessary essence. Since God is absolutely simple, His knowledge is His being. If His knowledge is grounded in a creature's choice, then God's very existence becomes contingent upon the world, violating divine simplicity and aseity.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Distinguishes between God’s intrinsic cognitive state and the extrinsic truth of the proposition ‘God knows X’, claiming the latter varies with the creature while God’s essence remains simple and ungrounded.",
+      "why_it_failed": "The reply does not show how the relational truth‑value can vary without affecting the immutable aspect of God’s essence, leaving the tension between grounding and aseity unresolved."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Restricts the Grounding Principle to the truth of the contingent proposition itself and asserts that God’s eternal knowledge of that truth is a necessary extrinsic relation that does not enter his simple essence.",
+      "why_it_failed": "Although it adds an explicit restriction, it still leaves open how to guarantee that such extrinsic relations do not, in fact, constitute a dependence of God’s essence on contingent facts."
+    },
+    {
+      "defender": "Defender A",
+      "response": "Concedes that if c007 were to ground God’s intrinsic knowing the argument would fail, and proposes a new premise that God’s knowing is ungrounded while its objects are grounded.",
+      "why_it_failed": "The concession admits the need for an extra premise but does not provide justification for that premise, so the core reconciliation remains unsupported."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W4386403713.a1",
+      "paper_id": "oa:W4386403713",
+      "title": "Tanrı’nın Ön Bilgisi Meselesinde Orta Bilgi Teorisinin Yeri ve İncelenmesi",
+      "authors": [
+        "İbrahim Halil Dündar"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.55709/tsbsbildirilerdergisi.2.125",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W2734972839",
+      "paper_id": "oa:W2734972839",
+      "title": "Divine Knowledge and Human Freedom",
+      "authors": [
+        "William Hasker"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/oxfordhb/9780195399691.003.0002",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W4403587904.a1",
+      "paper_id": "oa:W4403587904",
+      "title": "Freedom, Omniscience and the Contingent A Priori",
+      "authors": [
+        "Fabio Lampert"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.1093/mind/fzae058",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "W4246671415.a3",
+      "paper_id": "oa:W4246671415",
+      "title": "Molina, Luis de (1535–1600)",
+      "authors": [
+        "Alfred J. Freddoso"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9780415249126-c024-1",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W7202131248.a3",
+      "paper_id": "oa:W7202131248",
+      "title": "El Plan y la Mano: Sobre la Providencia, la Libertad y la Culpa de Pilato",
+      "authors": [
+        "Oscar Gaitan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.21875422",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 1.0,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W4386403713.a1",
+      "paper_id": "oa:W4386403713",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Tanrı’nın Ön Bilgisi Meselesinde Orta Bilgi Teorisinin Yeri ve İncelenmesi"
+    },
+    {
+      "record_id": "abs:oa:W2734972839",
+      "paper_id": "oa:W2734972839",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Divine Knowledge and Human Freedom"
+    },
+    {
+      "record_id": "W4403587904.a1",
+      "paper_id": "oa:W4403587904",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Freedom, Omniscience and the Contingent A Priori"
+    }
+  ],
+  "open_questions": [
+    "How can the Grounding Principle be precisely limited to propositional truth without inadvertently grounding any aspect of divine cognition?",
+    "Is the intrinsic/extrinsic distinction sufficient to safeguard divine simplicity when relational truths about God vary with contingent events?",
+    "What metaphysical account of eternalism validates the claim that God’s knowledge is temporally present yet not ontologically dependent on creaturely acts?",
+    "Can the added premise that God’s knowing is ungrounded be defended without sacrificing the explanatory power of the Grounding Principle for libertarian freedom?"
+  ],
+  "paper_direction": "A paper here would argue that a successful reconciliation of divine foreknowledge with libertarian free will requires a reformulated Grounding Principle that explicitly limits grounding to the truth‑makers of contingent propositions and to the knowledge‑of‑those propositions, while stipulating that God’s intrinsic cognitive act remains simple and ungrounded. The case would begin by reconstructing the original argument and the objector’s challenge concerning divine aseity, then evaluate the defenders’ replies that invoke an intrinsic/extrinsic split. Anticipating the strongest reply—that relational truths can vary without altering God’s essence—the paper would develop a rigorous metaphysical account of extrinsic predication within an eternalist framework, showing how such predication can be compatible with divine simplicity. Finally, the paper would need to demonstrate that the added premise is not ad hoc but follows from a defensible theory of divine knowledge, thereby preserving both the grounding mechanism for free choices and the immutability of God’s essence.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets c007 but works only by importing strong simplicity, a premise not in the argument. It also overreaches when it moves from God's knowledge being contingent to God's existence being contingent, so it is coherent but loosely aimed.",
+      "robustness": "Neither the direction nor the transcript answers the obvious dilemma about extrinsic knowledge. The plan only promises 'a rigorous metaphysical account' without saying what it is, and the defenders' replies are recorded as failures.",
+      "significance": "Even if it succeeded, the paper would restate a well-worn Thomist move inside an Anselmian eternalist framework. That is a modest refinement, especially as the free-will reconciliation does not obviously depend on it.",
+      "specificity": "There is a definite thesis (restrict grounding to truth and knowledge-of, leave the cognitive act ungrounded) and a rough sequence of steps, but the central account of extrinsic predication is left entirely unspecified and the literature review misses the directly relevant work."
+    },
+    "strongest_objection": "The proposed reformulation is the familiar Cambridge-relation or extrinsic-denomination account of God's contingent knowledge (Aquinas; Brower's truthmaker simplicity; Grant's extrinsic model). It runs straight into the standard dilemma. If God's intrinsic cognitive act is the same whether Elias drinks or not, then 'God knows Elias drinks' is a merely extrinsic predicate, and it is unclear that this is knowledge at all rather than a relabelled correspondence fact. If the cognitive act does differ across worlds, it is grounded in the creature and the simplicity and aseity worry returns. Rogers, the author being defended, explicitly accepts that God's knowledge is caused by creaturely choices, so the paper also risks fixing a commitment the original argument does not make.",
+    "reply_available": false,
+    "what_it_needs": "The paper must take a position on the dilemma, either by showing that an extrinsic account still delivers genuine divine knowledge or by arguing that dependence of knowledge-content does not threaten aseity. It must engage the existing extrinsic-model and modal-collapse literature, including Rogers' own acceptance of creature-dependent divine knowledge. It must also show why the reconciliation argument actually needs the reformulated principle.",
+    "summary": "This is a familiar and under-specified repackaging of the extrinsic-predication defence of simplicity, aimed at a commitment the argument does not clearly make; it is not yet a defensible paper without a worked answer to the extrinsic-knowledge dilemma and serious engagement with the existing literature.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:48.440557+00:00"
+  },
+  "revision": {
+    "research_question": "Does reconciling divine foreknowledge with libertarian freedom require restricting the Grounding Principle, or can the eternalist premise carry the reconciliation alone? If the Grounding Principle stands unrestricted, does creature-dependence of divine knowledge-content threaten divine simplicity or aseity?",
+    "paper_direction": "A paper here would argue that the reconciliation of divine foreknowledge with libertarian freedom rests on the eternalist premise (God is eternal, with all time present to Him, and this respects both foreknowledge and libertarian freedom), not on any restriction of the Grounding Principle. The paper would first show that the challenge to c007 works only by importing strong divine simplicity, which is not among the argument's premises, and that the challenge's move from contingent knowledge to contingent existence is a separate, unargued step. It would then distinguish the intrinsic identity of God's cognitive act from the relational profile of what that act is of. On this account the act is one, eternal and not grounded in any creature, while its object-directed content is fixed by how the eternally present choice actually occurs. The paper would argue that this profile yields genuine knowledge rather than a relabelled correspondence fact, because the knowing relation is real and is not merely a predicate imposed from outside. It would address the referee's dilemma directly: the first horn is answered by the claim that extrinsic-looking predication can be knowledge when the relation is grounded in the act's intrinsic direction toward its object, and the second horn is answered by denying that a difference in relational profile entails a difference in the intrinsic act. The paper would engage the extrinsic-model and modal-collapse literature, including Rogers' acceptance of creature-caused divine knowledge, and would state explicitly that the argument does not require Rogers' causal commitment. If the dilemma cannot be met, the paper would conclude that the reconciliation survives on the eternalist premise and that simplicity must be defended as a separate thesis.",
+    "reply_to_strongest_objection": "The paper accepts that the restricted-principle reformulation, as proposed, is an unspecified extrinsic-denomination account and drops it as the route to reconciliation. It keeps the Grounding Principle unrestricted and answers the dilemma with a distinction between the intrinsic identity of God's cognitive act and the relational profile of its object. First horn: the act is one and not world-relative, but its relation to Elias's choice is real, so 'God knows Elias drinks' reports genuine knowledge rather than a relabelled correspondence fact. Second horn: a difference in relational profile across worlds does not entail a difference in the intrinsic act, so the creature does not ground God's being. The paper treats simplicity as a separate premise to be defended, not as an assumption, and it does not claim the reconciliation depends on this reply.",
+    "what_changed": "The revision drops the restricted Grounding Principle as the reconciliation's foundation, makes the eternalist premise the load-bearing step, and answers the simplicity objection with an intrinsic-versus-relational distinction that the paper must defend.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:32:09.831915+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The direction rightly sees that the objection targets c007 only by importing strong simplicity and an unargued step from contingent knowledge to contingent existence. But its own key claims, a 'real' relation grounded in an 'intrinsic direction' alongside no intrinsic difference across worlds, pull against each other.",
+        "robustness": "The decisive reply to the objection is just that simplicity is not a premise. The positive account meant to carry the paper is open to the standard extrinsic-model dilemma, and it answers that dilemma only by asserting the two horns away, not by an argument.",
+        "significance": "The paper admits the reconciliation does not depend on its reply and reaches the same conclusion whether or not the dilemma is met. That leaves its contribution as a restatement of well-known mixed-relation or extrinsic-model moves, with no change to how Zagzebski/Rogers-style eternalist reconciliations are assessed.",
+        "specificity": "There is a definite thesis, an example case (Elias), and a two-stage plan with named interlocutors. But the central technical notions ('relational profile', a 'real' relation that is not intrinsic) are never defined, so it is unclear what must be shown at the crucial step."
+      },
+      "strongest_objection": "The proposed 'intrinsic act vs. relational profile' distinction is the extrinsic model under a new name, and it faces a dilemma it cannot escape by relabelling. If the knowing relation is 'real' and grounded in the act's 'intrinsic direction toward its object', then that direction varies with which choice Elias makes, so God's intrinsic act varies across worlds and is partly grounded in the creature. That contradicts the second-horn reply and reopens the simplicity and modal-collapse worry (Mullins, Tomaszewski). If instead the intrinsic act is world-invariant and only the relation varies, the relation is a mixed relation that is real only on the creature's side (Aquinas, Brower, Grant). Then 'God knows Elias drinks' is precisely the relabelled correspondence fact the paper says it avoids, and the paper has adopted the extrinsic model it claims to drop.",
+      "reply_available": false,
+      "what_it_needs": "It must give a precise account of 'relational profile' and of 'intrinsic direction toward an object', and show how a relation can be real on God's side without introducing intrinsic variation. Alternatively, it should openly adopt and defend a known extrinsic-denomination model against the modal-collapse literature rather than rebranding it. Separately, it should make the first-stage point (simplicity is not a premise of the argument) briefly, since that point alone answers the objection as stated.",
+      "summary": "The cheap point (simplicity is not among the argument's premises) is correct but too thin for a paper, and the substantive part repackages the extrinsic-denomination model without meeting its known dilemma, so a competent referee would send it back.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:32:28.894718+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

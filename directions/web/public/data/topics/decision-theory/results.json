@@ -1,0 +1,950 @@
+{
+ "e1": {
+  "experiment": "E1 prior-art recall",
+  "n": 50,
+  "methods": [
+   {
+    "name": "BM25 over abstracts",
+    "recall_at_5": 0.28,
+    "hits": 14,
+    "recall_at_5_strict_record": 0.24
+   },
+   {
+    "name": "embeddings over abstracts",
+    "recall_at_5": 0.38,
+    "hits": 19,
+    "recall_at_5_strict_record": 0.38
+   },
+   {
+    "name": "embeddings over claims",
+    "recall_at_5": 0.78,
+    "hits": 39,
+    "recall_at_5_strict_record": 0.78
+   },
+   {
+    "name": "claims + 3-way restatement + rerank",
+    "recall_at_5": 0.78,
+    "hits": 39,
+    "recall_at_5_strict_record": 0.78
+   }
+  ],
+  "unit": "work (duplicate records of one paper merged by title + first author)",
+  "settings": {
+   "items": "objection-like claims extracted from corpus abstracts (kind objection first, then conclusion/reply), one per paper, seed 7",
+   "rewording": "LLM removes names and jargon",
+   "k": 5,
+   "claims_indexed": 1682,
+   "abstracts_indexed": 648,
+   "embedder": "bge-small-en-v1.5 (local)"
+  },
+  "models": {
+   "reranker": "gpt-oss:openai/gpt-oss-120b"
+  },
+  "timestamp": "2026-10-04T10:16:08.075959+00:00",
+  "items": [
+   {
+    "claim_id": "W4395061063.a1",
+    "paper_id": "oa:W4395061063",
+    "original": "The many‑gods objection and the criticisms by Antony Duff and Alan Hájek are central challenges to Pascal’s wager.",
+    "reworded": "The idea that many different deities might exist, together with two prominent criticisms, forms the main obstacle to the classic argument that it is rational to believe because of the possible infinite reward.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2153934408.a1",
+    "paper_id": "oa:W2153934408",
+    "original": "Pascal’s wager seems to make it rational to hold mutually exclusive beliefs, thereby establishing nothing at all.",
+    "reworded": "The old bet about belief seems to let a person rationally accept contradictory positions, so it ultimately establishes nothing.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4401822646.a1",
+    "paper_id": "oa:W4401822646",
+    "original": "The book fails to engage with the philosophy of time, leaving the question ‘what is time?’ unanswered.",
+    "reworded": "The book does not examine ideas about how time works, so it leaves the question of what time is unanswered.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2013022620.a2",
+    "paper_id": "oa:W2013022620",
+    "original": "Even if Pascal’s theology is probable, his argument does not succeed.",
+    "reworded": "Even if the religious view seems plausible, the reasoning still fails.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4394980009.a3",
+    "paper_id": "oa:W4394980009",
+    "original": "Postmodern philosophers have re‑appropriated the Wager to fit their presuppositions, thereby playing into the many‑gods objection.",
+    "reworded": "Some contemporary thinkers have taken the famous belief‑bet and reshaped it to match their own assumptions, which actually supports the criticism that there are many possible gods.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7170998925.a3",
+    "paper_id": "oa:W7170998925",
+    "original": "Theological responses claim faith transcends rationality or that exclusivity is divine.",
+    "reworded": "Some religious answers say that belief goes beyond reason or that being exclusive is a sign of the divine.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2950780608.a2",
+    "paper_id": "oa:W2950780608",
+    "original": "Traditional views hold that divine foreknowledge includes all free choices and actions, which Open Theism critiques.",
+    "reworded": "Older ideas say that a higher power knows every future free decision and deed, and a newer perspective argues against that.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7214471565.a2",
+    "paper_id": "oa:W7214471565",
+    "original": "Newcomb finds Vasko's reading inaccurate and incomplete.",
+    "reworded": "A researcher thinks another's interpretation is mistaken and leaves out important aspects.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2157343496.a2",
+    "paper_id": "oa:W2157343496",
+    "original": "I reject the key premise of Rowe’s argument.",
+    "reworded": "I do not accept the main assumption of the argument.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7119524508.a3",
+    "paper_id": "oa:W7119524508",
+    "original": "Interpreting the wager as a universal rational proof is a historical and methodological misapplication.",
+    "reworded": "Treating that well‑known argument as a general logical demonstration is a mistake that ignores its original context and proper method.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2068941143.a1",
+    "paper_id": "oa:W2068941143",
+    "original": "I question the standard presuppositions about Sleeping Beauty and reformulate the problem in a subtly different but important way.",
+    "reworded": "I challenge the usual assumptions about a famous scenario involving a person who is awakened under uncertain conditions, and I restate the question in a slightly different but important way.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2066767217.a2",
+    "paper_id": "oa:W2066767217",
+    "original": "Leibnizian doctrines seem to preclude humans ever doing otherwise than they did.",
+    "reworded": "The idea that everything is fixed in advance appears to rule out the possibility that people could ever have acted differently than they actually did.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2900446333.a3",
+    "paper_id": "oa:W2900446333",
+    "original": "This solution rejects logical bivalence and treats the world as fragmentary and incoherent.",
+    "reworded": "It denies that every claim must be either true or false and sees reality as broken up and lacking overall sense.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W1500727847.a2",
+    "paper_id": "oa:W1500727847",
+    "original": "Standard Nash analysis cannot capture these puzzles; they require psychological games where payoffs depend on beliefs.",
+    "reworded": "The usual way of looking for stable outcomes doesn’t handle these problems; they need situations where what a player receives depends on what they believe about the others.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7126219234.a2",
+    "paper_id": "oa:W7126219234",
+    "original": "Contemporary rivals attempt escape via metaphysical “hatches” that collapse into hidden occasionalism or incoherence.",
+    "reworded": "Modern opponents try to evade the problem by using a hidden loophole that ends up turning into a secret version of the view that events occur only through occasional causes, or simply collapses into nonsense.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2740545936.a2",
+    "paper_id": "oa:W2740545936",
+    "original": "The recent crisis of confidence faced by the media is an alarming signal for media institutions.",
+    "reworded": "The current loss of trust in the press is a worrying sign for news organizations.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W3092923212.a3",
+    "paper_id": "oa:W3092923212",
+    "original": "The conclusion claims that the actual world, despite its evil, is as good as any logically possible world.",
+    "reworded": "The final point says that, even though our world contains bad things, it is no worse than any world that could possibly exist according to logic.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2596541429.a2",
+    "paper_id": "oa:W2596541429",
+    "original": "It is neither desirable nor possible to omit unjustifiable aspects of judgment from consideration.",
+    "reworded": "We both cannot and should not ignore parts of an assessment that lack good reasons.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W1983707825.a1",
+    "paper_id": "oa:W1983707825",
+    "original": "The mixed‑strategy approach claims Pascal’s wager does not obligate belief because other strategies yield the same infinite expected utility.",
+    "reworded": "The approach that mixes various options says the well‑known bet about belief doesn’t require you to believe, because other possible courses of action can lead to an equally limitless advantage.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7166926745.a3",
+    "paper_id": "oa:W7166926745",
+    "original": "Mackie challenges the logical consistency between God's attributes and the existence of evil.",
+    "reworded": "A thinker questions whether the notion of an all-powerful, all-good being can be reconciled with the fact that suffering exists.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W1538242891.a2",
+    "paper_id": "oa:W1538242891",
+    "original": "The predictor is not merely a fictional source of insufficient extra information.",
+    "reworded": "The one who makes predictions is not just an invented source that supplies only a limited amount of extra detail.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4319717584.a2",
+    "paper_id": "oa:W4319717584",
+    "original": "Voltaire openly attacks Leibnizian optimism.",
+    "reworded": "An 18th‑century author openly challenges the belief that this is the best possible world.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W3217219142.a1",
+    "paper_id": "oa:W3217219142",
+    "original": "The incompatibility argument claims that God’s past beliefs about our future actions are accidentally necessary and that this necessity transfers to our actions.",
+    "reworded": "The claim says that a divine being’s earlier expectations about what we will later do are unintentionally forced, and that this forced status is then passed on to our actual actions.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4415770268.a2",
+    "paper_id": "oa:W4415770268",
+    "original": "Skeptics object that Augustine’s project seems to require an odd cause‑and‑effect relationship.",
+    "reworded": "Critics argue that the plan seems to rely on a strange causal link.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4411971792.a1",
+    "paper_id": "oa:W4411971792",
+    "original": "Augustine’s early attribution of evil to human misuse of free will is philosophically inconsistent with divine foreknowledge and grace.",
+    "reworded": "Saying that wrongdoing results from people abusing their freedom conflicts with the view that an all‑knowing, all‑helpful higher power already knows everything and can intervene.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W998391039.a1",
+    "paper_id": "oa:W998391039",
+    "original": "Evidentialists argue that all beliefs, including religious ones, require adequate supporting evidence to be rational.",
+    "reworded": "Some thinkers say that any belief, even those about the divine, needs sufficient reasons or proof in order to be considered reasonable.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2046234320.a1",
+    "paper_id": "oa:W2046234320",
+    "original": "The widely held belief is that Newcomb's paradox is physically nonsensical and impossible to imagine because it involves backward causation.",
+    "reworded": "Many people think that the well‑known box‑and‑predictor thought experiment is physically impossible and cannot be imagined because it appears to require effects to occur before their causes.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2019128788.a3",
+    "paper_id": "oa:W2019128788",
+    "original": "I argue that one cannot identify them without assuming a wrong analysis of the notion of consequence of action.",
+    "reworded": "I say that you cannot recognize them unless you begin with a mistaken understanding of what it means for an action to produce results.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2087367401.a2",
+    "paper_id": "oa:W2087367401",
+    "original": "Foreknowledge seems incompatible with freedom because foreknown events must occur necessarily, while free choices are non‑necessary.",
+    "reworded": "If we already know what will happen, it appears that the event must occur, while the choices we make are not forced to happen.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W1479737893.a2",
+    "paper_id": "oa:W1479737893",
+    "original": "Process thought has challenged the traditional doctrine of divine omniscience.",
+    "reworded": "The idea that thinking is shaped by ongoing processes has questioned the usual belief that a deity knows everything.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7213364790.a2",
+    "paper_id": "oa:W7213364790",
+    "original": "Modern ephemerides embed relativistic corrections and fit data, creating circular reasoning that prevents genuine Newtonian perturbation results.",
+    "reworded": "Current planetary tables include adjustments from modern physics and are tuned to match observations, which creates a circular argument that blocks truly classical gravity calculations.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7126277369.a2",
+    "paper_id": "oa:W7126277369",
+    "original": "Contemporary rivals attempt escape via metaphysical “hatches” that collapse into hidden occasionalism or incoherence.",
+    "reworded": "Modern opponents try to escape by using special loopholes that end up turning into hidden occasional ideas or outright nonsense.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W3046629901.a3",
+    "paper_id": "oa:W3046629901",
+    "original": "The possible incompatibility between God’s foreknowledge and human free will makes the issue wide‑ranging.",
+    "reworded": "If a being knows everything that will happen before it occurs, that may conflict with people's ability to choose, which makes the question relevant to many areas.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2029177901.a3",
+    "paper_id": "oa:W2029177901",
+    "original": "I question his ensuing arguments about beauty and goodness, and thereby the practical value of his work in counterterrorist propaganda.",
+    "reworded": "I doubt the later points he makes about what is pleasing and what is right, and therefore I doubt how useful his writing is for fighting extremist messaging.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2071407100.a2",
+    "paper_id": "oa:W2071407100",
+    "original": "The argument appears obviously invalid in some lights yet slips past every supposed disproof, suggesting it may be valid.",
+    "reworded": "It looks clearly wrong at first glance, yet it evades every attempted refutation, which makes it seem possible that it is actually sound.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7217040306.a1",
+    "paper_id": "oa:W7217040306",
+    "original": "The predestinarian doctrine inevitably conflicts with the important requirement of free will and moral responsibility, so the prevailing tendency of Judaism and the Christian Church has been an ambivalent coexistence of predestination and human freedom.",
+    "reworded": "The belief that everything is fixed ahead of time clashes with the need for people to make choices and be held accountable, so religious traditions have often kept both ideas together in an uneasy way.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7215115228.a2",
+    "paper_id": "oa:W7215115228",
+    "original": "However, these cases do not illustrate the most counterintuitive implications of fanaticism.",
+    "reworded": "But these examples don’t show the most surprising consequences of extreme zeal.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2129852443.a1",
+    "paper_id": "oa:W2129852443",
+    "original": "The first objection claims that Pascal's habit‑forming recommendation amounts to religious brainwashing.",
+    "reworded": "The first criticism says that the advice to form a regular habit is really a kind of religious indoctrination.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2782184267.a1",
+    "paper_id": "oa:W2782184267",
+    "original": "The best possible world is not perfect and cannot exist because it would be internally contradictory.",
+    "reworded": "A world that is as good as it can possibly be cannot also be completely flawless, and a perfectly flawless version would involve a self‑contradiction, so it cannot exist.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2028628500.a1",
+    "paper_id": "oa:W2028628500",
+    "original": "The Pascalian conversion theory assumes an ideal reader and overlooks the non‑believer’s self‑illusion in becoming a believer.",
+    "reworded": "The idea that people change their mind presumes a flawless audience and fails to notice how a skeptic deceives themselves into accepting the view.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W2765559895.a2",
+    "paper_id": "oa:W2765559895",
+    "original": "The main objection to this belief concerns the existence of evil.",
+    "reworded": "The biggest challenge to this idea is how to explain why bad things exist.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7213296003.a1",
+    "paper_id": "oa:W7213296003",
+    "original": "The routine translation of the Yorùbá word ẹ̀sìn as “religion” is misguided and entrenched in scholarly and everyday usage.",
+    "reworded": "The habitual rendering of that native term as the usual idea of a set of spiritual beliefs is mistaken and firmly entrenched in both scholarly and everyday talk.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4415828130.a2",
+    "paper_id": "oa:W4415828130",
+    "original": "Almeida argues that proposed theories of theistic multiverse are incoherent.",
+    "reworded": "A writer claims that ideas linking a divine being with an endless collection of worlds are internally inconsistent.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W3181330022.a2",
+    "paper_id": "oa:W3181330022",
+    "original": "Some critics claim he allows too few options and question the validity of his conclusion.",
+    "reworded": "Some reviewers say he offers only a limited set of possibilities and doubt whether his ending is justified.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W3213625812.a2",
+    "paper_id": "oa:W3213625812",
+    "original": "There are standard objections to Pascal’s wager.",
+    "reworded": "Many have raised familiar criticisms of the well‑known argument that it is safer to believe in a higher power than to deny it.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W279045146.a1",
+    "paper_id": "oa:W279045146",
+    "original": "The improvability of the natural world is presented as a decisive obstacle to divine creation.",
+    "reworded": "The possibility of improving the world is used as a strong reason to question whether it was made by a god.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": false,
+     "claims + 3-way restatement + rerank": false
+    }
+   },
+   {
+    "claim_id": "W2016279323.a1",
+    "paper_id": "oa:W2016279323",
+    "original": "The Many Gods Objection is widely viewed as a decisive criticism of Pascal’s Wager.",
+    "reworded": "The suggestion that there are many possible deities is often regarded as a powerful challenge to the well‑known argument that one should bet on believing in a god.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4398759601.a2",
+    "paper_id": "oa:W4398759601",
+    "original": "Human foreknowledge is a sign that the foreknown event does not happen voluntarily.",
+    "reworded": "When people know something ahead of time, it indicates that the event they know will not be carried out by free choice.",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W7203719173.a3",
+    "paper_id": "oa:W7203719173",
+    "original": "Modern DE ephemerides embed relativistic corrections and fit data, creating circular reasoning that hinders pure‑Newtonian perturbation results.",
+    "reworded": "Current astronomical tables include adjustments from a modern theory and are tuned to match observations, which makes the reasoning circular and prevents results based purely on older mechanics.",
+    "hit": {
+     "BM25 over abstracts": true,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": true,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   },
+   {
+    "claim_id": "W4234627130.a3",
+    "paper_id": "oa:W4234627130",
+    "original": "Was god's choice to create not in some sense inevitable?",
+    "reworded": "Could the decision to bring the world into existence have been unavoidable in any way?",
+    "hit": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    },
+    "hit_strict_record": {
+     "BM25 over abstracts": false,
+     "embeddings over abstracts": false,
+     "embeddings over claims": true,
+     "claims + 3-way restatement + rerank": true
+    }
+   }
+  ],
+  "limits": "The query is a reworded version of a claim the Extractor took from the source paper's abstract, and that claim is itself in the claims index, so this measures recovery of a known move under paraphrase, not discovery of unknown prior art. Items come from the whole corpus of the topic (Decision theory in philosophy of religion: its searches plus recent work in the area), not only from papers directly on it. Corpus: OpenAlex abstracts only (no PhilArchive). One rewording per item; no human labels. Recall is scored per work: OpenAlex lists many papers more than once (versions), so duplicate records are merged (title + first-author surname) before taking the top 5; recall_at_5_strict_record gives the stricter record-level score."
+ },
+ "e2": null,
+ "e3": null
+}

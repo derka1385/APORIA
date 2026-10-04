@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APORIA · cognitive differentiation lab</title>
+<meta name="description" content="APORIA externalizes cognitive functions around one LLM and varies how five reasoners use them, then measures how differently they reasoned.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cg fill='none' stroke='%23F4F1E9' stroke-width='10'%3E%3Cpath d='M108.184 45.245 A48 48 0 1 1 64.838 16.007'/%3E%3Cpath d='M93.875 75.468 A32 32 0 1 1 86.627 41.373'/%3E%3Cpath d='M70.762 78.501 A16 16 0 1 1 79.998 63.721'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #121416; --surface: #1B1F23; --ink: #F4F1E9; --dim: #B4BBC2; --faint: #808A94; --rule: #353B42;
+  --memory: #e2a85a; --reason: #a9c8ff; --imagine: #b38cff; --intuit: #ff8fb4; --introspect: #5fd4c4; --doubt: #ff6b4f;
+  --counterfactual: #3fd0f2; --formalize: #8c93ff; --inquire: #ffc999; --adjudicate: #f0d562; --revise: #8fe08c; --conclude: #ffffff;
+  --serif: "Newsreader", Georgia, serif; --sans: "Source Sans 3", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); color-scheme: dark; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--faint); }
+a:hover { text-decoration-color: var(--ink); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+header.top { position: sticky; top: 0; z-index: 5; background: rgba(18,20,22,.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+header.top .wrap { display: flex; align-items: center; gap: 24px; height: 56px; }
+.mark { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: .11em; text-decoration: none; }
+.mark svg { width: 22px; height: 22px; }
+nav { display: flex; gap: 20px; margin-left: auto; font: 13px var(--mono); color: var(--dim); }
+nav a { text-decoration: none; }
+nav a:hover { color: var(--ink); }
+.eyebrow { font: 13px/1.4 var(--mono); letter-spacing: .02em; color: var(--faint); margin: 0 0 16px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 300; letter-spacing: -.01em; margin: 0; }
+h1 { font-size: clamp(40px, 5.2vw, 64px); line-height: 1.02; max-width: 15ch; }
+h1 em, h2 em { font-style: italic; }
+h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; max-width: 22ch; }
+h3 { font-size: 24px; line-height: 1.25; margin-bottom: 8px; }
+p { margin: 0 0 16px; max-width: 68ch; }
+.lead { font-size: 20px; color: var(--dim); max-width: 60ch; }
+section { padding: 96px 0; border-top: 1px solid var(--rule); }
+section:first-of-type { border-top: 0; }
+.hero { padding: 96px 0 72px; }
+.hero .lead { margin-top: 28px; }
+.herogrid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.object { margin: 0; }
+.object iframe { width: 100%; aspect-ratio: 1 / 1; border: 1px solid var(--rule); border-radius: 6px; background: #030407; display: block; }
+.object figcaption { font: 12px/1.6 var(--mono); color: var(--faint); margin-top: 10px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 1px solid var(--rule); border-radius: 4px; text-decoration: none; font: 14px var(--mono); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn:hover { border-color: var(--ink); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.mono { font-family: var(--mono); font-size: 13px; }
+.dim { color: var(--dim); } .faint { color: var(--faint); }
+.note { font: 13px/1.6 var(--mono); color: var(--faint); max-width: 80ch; }
+
+/* fingerprints: compute allocation per reasoner */
+.prints { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+.print { border: 1px solid var(--rule); border-radius: 6px; padding: 20px; background: var(--surface); }
+.print .ptitle { margin: 0 0 4px; font: 500 13px var(--mono); letter-spacing: .04em; }
+.print .sub { font: 12px var(--mono); color: var(--faint); margin-bottom: 16px; }
+.row { display: grid; grid-template-columns: 92px 1fr 44px; align-items: center; gap: 10px; margin: 8px 0; font: 12px var(--mono); color: var(--dim); }
+.bar { display: flex; height: 14px; border-radius: 2px; overflow: hidden; background: #0d0f11; }
+.bar i { display: block; height: 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 20px; font: 11px var(--mono); color: var(--dim); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 9px; height: 9px; border-radius: 1px; display: inline-block; }
+
+/* results */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; margin: 40px 0 16px; }
+.kpi { background: var(--bg); padding: 20px; }
+.kpi .v { font: 300 40px/1 var(--serif); }
+.kpi .v small { font: 13px var(--mono); color: var(--faint); margin-left: 6px; }
+.kpi .k { font: 12px/1.4 var(--mono); color: var(--dim); margin-top: 10px; }
+.tablewrap { overflow-x: auto; margin: 24px 0 8px; border: 1px solid var(--rule); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font: 13px var(--mono); }
+th, td { padding: 10px 14px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--faint); font-weight: 400; }
+tr:last-child td { border-bottom: 0; }
+td { color: var(--dim); }
+td:first-child, td.best { color: var(--ink); }
+td.best { font-weight: 500; }
+tr.failed td { color: var(--faint); text-decoration: line-through; }
+.chart { border: 1px solid var(--rule); border-radius: 6px; padding: 16px; margin-top: 24px; }
+.chart svg { width: 100%; height: auto; display: block; }
+.pending { border: 1px dashed var(--rule); border-radius: 6px; padding: 20px; color: var(--dim); }
+
+/* method */
+.loop { font: 13px/1.7 var(--mono); color: var(--dim); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; overflow-x: auto; white-space: pre; }
+.cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 32px; }
+.card { border: 1px solid var(--rule); border-radius: 6px; padding: 16px; }
+.card h3 { margin: 0 0 6px; font: 500 14px var(--mono); }
+.card p { font-size: 14px; color: var(--dim); margin: 0; }
+.ops { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.ops span { font: 12px var(--mono); padding: 4px 10px; border-radius: 3px; border: 1px solid var(--rule); }
+ol.steps { padding-left: 20px; max-width: 70ch; } ol.steps li { margin-bottom: 10px; color: var(--dim); } ol.steps b { color: var(--ink); font-weight: 600; }
+footer { border-top: 1px solid var(--rule); padding: 40px 0 64px; font: 13px var(--mono); color: var(--faint); }
+
+@media (max-width: 860px) {
+  .grid2, .prints, .herogrid { grid-template-columns: 1fr; gap: 24px; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .kpis { grid-template-columns: 1fr 1fr; }
+  nav { display: none; }
+  section { padding: 64px 0; }
+  .wrap { padding: 0 16px; }
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="mark" href="../"><svg viewBox="0 0 128 128" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="8"><path d="M108.184 45.245 A48 48 0 1 1 64.838 16.007"/><path d="M93.875 75.468 A32 32 0 1 1 86.627 41.373"/><path d="M70.762 78.501 A16 16 0 1 1 79.998 63.721"/></g></svg>APORIA</a>
+  <nav><a href="../">Research directions</a><a href="#results">Results</a><a href="../lab/">Lab</a><a href="#method">Method</a><a href="#lobbot">Compression</a><a href="#limits">Limits</a><a href="https://github.com/derka1385/APORIA">GitHub</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="herogrid"><div>
+  <p class="eyebrow">Experimental research lab · Hack-Nation Challenge 3 · Agentic scientific discovery</p>
+  <h1>Same model. Same question. <em>Five ways of thinking.</em></h1>
+  <p class="lead">Agent swarms built on one LLM tend to reason alike. APORIA externalizes the cognitive functions around the model: metacognition, curiosity, counterfactual tests, adversarial experiments, memory and formal tools. It then turns one parameter, <b>Δ</b>, to differentiate how five reasoners use those functions, and measures how differently they actually reasoned.</p>
+  <div class="cta"><a class="btn primary" href="../lab/">Launch an analysis →</a><a class="btn" id="replaylink" href="../lab/">Replay the featured run</a><a class="btn" href="#results">See the measurements</a></div>
+  </div>
+  <figure class="object">
+    <iframe id="object" title="Particle object replaying a recorded run" loading="lazy"></iframe>
+    <figcaption id="objectcap">The reasoning object, driven by a recorded run. Colour is the function running; two poles are open contradictions; a dissolving region is a revised hypothesis; crystallisation is a conclusion. Rebuilt from the saved trace.</figcaption>
+  </figure>
+  </div>
+
+  <div class="prints" id="prints"></div>
+  <div class="legend" id="legend"></div>
+  <p class="note" id="printnote" style="margin-top:16px"></p>
+</div></section>
+
+<section id="question"><div class="wrap grid2">
+  <div>
+    <p class="eyebrow">Research question</p>
+    <h2>Can explicit cognitive functions, orchestrated around one LLM, produce <em>genuinely different</em> reasoning?</h2>
+  </div>
+  <div>
+    <p>Most AI labs scale the <i>number</i> of agents. APORIA treats <i>how</i> an agent thinks as the experimental variable. Every reasoner gets the same question, the same model and the same tools. What differs is its cognitive policy: which operations its controller favours, how far its attention explores, how much evidence it needs before it accepts a claim, how hard it attacks, when it stops.</p>
+    <p class="mono dim">Hypothesis: Δ ↑ → reasoning-path diversity ↑ → argument diversity ↑ → unique objections ↑ → possibly different conclusions.</p>
+    <p>Philosophy is the test domain because a dialectical stress test needs no wet lab. An objection, a counterexample and a failed defence are already the experiment.</p>
+  </div>
+</div></section>
+
+<section id="results"><div class="wrap">
+  <p class="eyebrow">Measurements · generated from the recorded runs</p>
+  <h2>Architecture changes <em>how</em> the model reasons. It has not yet changed <em>what</em> it concludes.</h2>
+  <div class="kpis" id="kpis"></div>
+  <p class="note" id="kpinote"></p>
+  <div id="tables"></div>
+  <h3 style="margin-top:56px">Δ sweep</h3>
+  <p class="dim">Same question, architecture condition, Δ from 0 (identical policies, only seeds differ) to 1.</p>
+  <div id="sweep"></div>
+  <h3 style="margin-top:56px">Across questions</h3>
+  <p class="dim">The same comparison, Δ 0 against Δ 1, on every question recorded at both ends.</p>
+  <div id="across"></div>
+  <h3 style="margin-top:56px">Every recorded run</h3>
+  <p class="dim">Open any run to replay its five argument graphs step by step. Failed runs are listed and never analysed.</p>
+  <div id="allruns"></div>
+</div></section>
+
+<section id="method"><div class="wrap">
+  <p class="eyebrow">Method</p>
+  <h2>One engine, five <em>policies</em>, one dial.</h2>
+  <div class="grid2" style="margin-top:40px">
+    <div>
+      <p>Each reasoner holds a typed argument graph (hypotheses, premises, assumptions, objections, counterexamples, counterfactuals, evidence, questions) and runs this loop until it concludes or runs out of budget:</p>
+<div class="loop">metacognition reads the graph
+  "confident but weakly supported" → doubt
+  "rests on a weak assumption"     → counterfactual
+  "unresolved contradiction"       → adjudicate
+  "not formally checked"           → formalize (truth table)
+controller: drive(op) = (state + signals) × policy weight × learned value
+attention:  branch ~ softmax(curiosity / explore)
+operation:  one LLM call and/or a tool edits the graph
+learning:   information gain → op value, branch yield</div>
+      <div class="ops" id="ops"></div>
+    </div>
+    <div>
+      <ol class="steps">
+        <li><b>Policy vectors, not personas.</b> A profile sets about twenty real parameters: operation weights, controller and attention temperatures, sampling, context visibility, literature and memory access, tool access, objections per doubt, adversarial damage, acceptance, rejection and stopping thresholds, budget.</li>
+        <li><b>Δ interpolates.</b> <span class="mono">param = base + Δ · (target − base)</span>. At Δ = 0 all five reasoners run the identical base policy and only seeds differ. That run is the noise floor.</li>
+        <li><b>Four conditions.</b> <span class="mono">base</span> identical policies; <span class="mono">prompt</span> identical policies plus a persona sentence; <span class="mono">architecture</span> Δ-scaled policies, no persona; <span class="mono">model</span> each reasoner on a different model.</li>
+        <li><b>Measured, never rewarded.</b> No reasoner is told to disagree. Path similarity is one minus the normalised edit distance of operation sequences. Branch diversity is the Jensen–Shannon distance of node-type distributions. Unique objections are those with no match at cosine ≥ 0.8 in any other reasoner. Conclusion similarity is the cosine of final positions.</li>
+        <li><b>Live stream.</b> Every cognitive event (attention, contradiction, rejection, insight, recall, tool call) streams over SSE to the lab UI and to a separate particle engine, whose form follows the real state.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card"><h3 style="color:var(--imagine)">Explorer</h3><p>Imagination, intuition, counterfactuals, inquiry. High exploration and sampling temperature. No formal tools.</p></div>
+    <div class="card"><h3 style="color:var(--formalize)">Formalist</h3><p>Verification and formalization with every tool. Strict acceptance, near-greedy attention.</p></div>
+    <div class="card"><h3 style="color:var(--doubt)">Skeptic</h3><p>Doubt and adjudication. Four objections per doubt, 1.8× damage. Memory of past objections, no literature.</p></div>
+    <div class="card"><h3 style="color:var(--memory)">Synthesizer</h3><p>Deliberately distant literature, wide context, fast learning, shared memory.</p></div>
+    <div class="card"><h3 style="color:var(--introspect)">Minimalist</h3><p>Introspection and formalization from at most two assumptions. Narrow context, no literature.</p></div>
+  </div>
+</div></section>
+
+<section id="lobbot"><div class="wrap grid2">
+  <div>
+    <p class="eyebrow">Next experiment · model-level differentiation</p>
+    <h2>Compression as a <em>cognitive</em> intervention.</h2>
+  </div>
+  <div>
+    <p><a href="https://github.com/OliverVillson/LobBot">LobBot</a> compresses a 30B mixture-of-experts teacher (Qwen3-30B-A3B, 61 GB) into a 6.5 GB model for one task. It prunes the experts the task does not route through (REAP), heals with LoRA distillation and quantizes per layer. On a support-ticket task it kept 0.974 of the teacher's 0.981 judge score.</p>
+    <p>APORIA can use that pipeline in a different way. If REAP is calibrated on <i>a cognitive function's own traces</i> (the skeptic's objections, the formalist's formalizations, the explorer's thought experiments), each profile keeps different experts. Five reasoners would then differ in their weights as well as in their policies. The <span class="mono">model</span> condition then compares structural differentiation against policy differentiation on the same base model.</p>
+    <p class="note">Status: designed, not run. One LobBot job takes about 25 minutes on an evroc B200. TaskSpecs per profile are in <span class="mono">lab/lobbot/</span>. Until a run exists, the site reports no compression result.</p>
+  </div>
+</div></section>
+
+<section id="limits"><div class="wrap">
+  <p class="eyebrow">Limits · read before trusting a number</p>
+  <h2>What this does <em>not</em> show yet.</h2>
+  <ol class="steps" style="margin-top:32px">
+    <li><b>Small n.</b> One or two runs of five reasoners per condition. The full Δ sweep covers one question; the Δ 0 / Δ 1 comparison covers four. Differences are consistent in direction, not tested for significance.</li>
+    <li><b>Conclusions converge.</b> Conclusion similarity stays near 0.9 in every condition. Different processes have not yet produced different answers.</li>
+    <li><b>Model judgements.</b> Verdicts (valid, survives, damage) come from the same LLM. The truth-table check is real, but it only checks the model's own formalization.</li>
+    <li><b>Small embedding model.</b> Similarity uses nomic-embed-text. Absolute values are rough, so compare conditions against the base noise floor.</li>
+    <li><b>Infrastructure failures are shown.</b> A dropped tunnel to the VM produced empty runs. They are flagged and excluded, and the batch now stops when the endpoint is down.</li>
+  </ol>
+</div></section>
+</main>
+
+<footer><div class="wrap">APORIA · experimental research prototype · Qwen3-30B on an evroc VM, Qwen2.5-3B locally via Ollama · built for Hack-Nation's 7th Global AI Hackathon, Challenge 3 · <a href="https://github.com/derka1385/APORIA">source</a></div></footer>
+
+<script>
+const FN = ["memory", "reason", "imagine", "intuit", "introspect", "doubt", "counterfactual", "formalize", "inquire", "adjudicate", "revise", "conclude"];
+const css = getComputedStyle(document.documentElement);
+const COLOR = Object.fromEntries(FN.map((f) => [f, css.getPropertyValue("--" + f).trim()]));
+const AGENTS = ["explorer", "formalist", "skeptic", "synthesizer", "minimalist"];
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+const f2 = (x) => (Number.isInteger(x) ? String(x) : x.toFixed(2));
+const COND = { base: "base · identical policies", prompt: "prompt · persona sentence", architecture: "architecture · policy vectors", model: "model · different models" };
+// [key, label, higher is more diverse?]
+const KEYS = [["path_similarity", "path similarity", false], ["branch_diversity", "branch diversity", true], ["semantic_diversity", "semantic diversity", true],
+  ["unique_objections", "unique objections", true], ["unique_assumptions", "unique assumptions", true], ["disagreement_rate", "disagreement", true],
+  ["conclusion_similarity", "conclusion similarity", false]];
+
+$("#ops").innerHTML = FN.map((f) => `<span style="color:${COLOR[f]};border-color:${COLOR[f]}55">${f}</span>`).join("");
+$("#legend").innerHTML = FN.filter((f) => f !== "conclude").map((f) => `<span><i style="background:${COLOR[f]}"></i>${f}</span>`).join("");
+
+const model = (r) => (r.models || ["?"])[0];
+const group = (r) => `${model(r)}${r.quick ? " · half budget" : ""}`;
+
+function print(r, title) {
+  const rows = AGENTS.filter((a) => r.per_agent[a]).map((a) => {
+    const p = r.per_agent[a];
+    const segs = Object.entries(p.compute).map(([op, v]) => `<i title="${op} ${(v * 100).toFixed(0)}%" style="width:${v * 100}%;background:${COLOR[op] || "#666"}"></i>`).join("");
+    return `<div class="row"><span>${a}</span><span class="bar">${segs}</span><span>${p.steps} st</span></div>`;
+  }).join("");
+  return `<div class="print"><p class="ptitle">${title}</p><div class="sub">${esc(model(r))} · Δ ${r.delta} · path similarity ${r.metrics.path_similarity}</div>${rows}</div>`;
+}
+
+function table(runs) {
+  const conds = ["base", "prompt", "architecture", "model"].filter((c) => runs.some((r) => r.condition === c));
+  const agg = conds.map((c) => {
+    const rs = runs.filter((r) => r.condition === c);
+    return { c, n: rs.length, m: Object.fromEntries(KEYS.map(([k]) => [k, mean(rs.map((r) => r.metrics[k]))])) };
+  });
+  const best = Object.fromEntries(KEYS.map(([k, , up]) => [k, (up ? Math.max : Math.min)(...agg.map((a) => a.m[k]))]));
+  return `<div class="tablewrap"><table><tr><th>condition (Δ 1)</th><th>runs</th>${KEYS.map(([, l, up]) => `<th>${l} ${up ? "↑" : "↓"}</th>`).join("")}</tr>` +
+    agg.map((a) => `<tr><td>${COND[a.c]}</td><td>${a.n}</td>${KEYS.map(([k]) => `<td class="${agg.length > 1 && a.m[k] === best[k] ? "best" : ""}">${f2(a.m[k])}</td>`).join("")}</tr>`).join("") +
+    `</table></div>`;
+}
+
+function sweepChart(rs) {
+  const ds = [...new Set(rs.map((r) => r.delta))].sort((a, b) => a - b);
+  const pts = ds.map((d) => ({ d, n: rs.filter((r) => r.delta === d).length, m: Object.fromEntries(KEYS.map(([k]) => [k, mean(rs.filter((r) => r.delta === d).map((r) => r.metrics[k]))])) }));
+  const lines = [["path_similarity", "var(--reason)"], ["branch_diversity", "var(--introspect)"], ["semantic_diversity", "var(--imagine)"], ["conclusion_similarity", "var(--memory)"]];
+  const X = (d) => 50 + d * 560, Y = (v) => 230 - v * 200;
+  const svg = lines.map(([k, c]) => `<polyline fill="none" stroke="${c}" stroke-width="1.5" points="${pts.map((p) => `${X(p.d)},${Y(p.m[k])}`).join(" ")}"/>` +
+    pts.map((p) => `<circle cx="${X(p.d)}" cy="${Y(p.m[k])}" r="3" fill="${c}"><title>${k} Δ${p.d}: ${p.m[k].toFixed(3)} (n=${p.n})</title></circle>`).join("")).join("");
+  const axis = ds.map((d) => `<text x="${X(d)}" y="254" fill="#808A94" font-size="11" text-anchor="middle" font-family="IBM Plex Mono">Δ ${d}</text>`).join("") +
+    [0, 0.5, 1].map((v) => `<line x1="50" x2="610" y1="${Y(v)}" y2="${Y(v)}" stroke="#353B42"/><text x="40" y="${Y(v) + 4}" fill="#808A94" font-size="11" text-anchor="end" font-family="IBM Plex Mono">${v}</text>`).join("");
+  const leg = lines.map(([k, c], i) => `<text x="630" y="${40 + i * 20}" fill="${c}" font-size="11" font-family="IBM Plex Mono">${k.replace("_", " ")}</text>`).join("");
+  return `<div class="chart"><svg viewBox="0 0 800 264" role="img" aria-label="Diversity metrics against Δ">${axis}${svg}${leg}</svg></div>`;
+}
+
+function runsTable(rows) {
+  return `<div class="tablewrap"><table><tr><th>run</th><th>model</th><th>condition</th><th>Δ</th><th>path sim.</th><th>branch div.</th><th>unique obj.</th><th>concl. sim.</th><th>stances</th></tr>` +
+    rows.slice().reverse().map((r) => `<tr class="${r.failed.length ? "failed" : ""}"><td><a href="../lab/?run=${r.id}">${r.id.slice(0, 15)}</a>${r.failed.length ? " · failed" : ""}</td><td>${esc(model(r))}${r.quick ? " ½" : ""}</td><td>${r.condition}</td><td>${r.delta}</td>` +
+      `<td>${r.metrics.path_similarity}</td><td>${r.metrics.branch_diversity}</td><td>${r.metrics.unique_objections}</td><td>${r.metrics.conclusion_similarity}</td>` +
+      `<td>${AGENTS.map((a) => r.stances[a] ? `${a.slice(0, 3)} ${esc(r.stances[a].stance)} ${(r.stances[a].credence ?? 0).toFixed(2)}` : "").join(" · ")}</td></tr>`).join("") + `</table></div>`;
+}
+
+fetch("../data/index.json").then((r) => r.json()).then((D) => {
+  const ok = D.runs.filter((r) => !r.failed.length);
+  const featured = D.runs.find((r) => r.id === D.featured);
+  $("#replaylink").href = "lab/?run=" + D.featured;
+  $("#object").src = `../engine/?embed&replay=../data/runs/${D.featured}.json`;
+  // fingerprints: the featured architecture run beside the base run on the same model and budget
+  const base = ok.filter((r) => r.condition === "base" && group(r) === group(featured)).pop();
+  $("#prints").innerHTML = (base ? print(base, "Base: five copies of one policy") : "") + print(featured, "Architecture: five cognitive policies");
+  $("#printnote").textContent = "Each bar is one reasoner's compute, split by cognitive function, from recorded runs on the same question. " +
+    "Hover a segment for its share.";
+
+  // headline: largest model, architecture condition, Δ 0 (identical policies) against Δ 1, paired seeds
+  const g = group(featured), at = (c, d) => ok.filter((r) => group(r) === g && r.condition === c && r.delta === d);
+  const A = at("architecture", 1), B = at("architecture", 0).length ? at("architecture", 0) : at("base", 1);
+  const from = at("architecture", 0).length ? "Δ 0 → Δ 1" : "base → architecture";
+  if (A.length && B.length) {
+    const m = (rs, k) => mean(rs.map((r) => r.metrics[k]));
+    const k = [
+      [`${m(B, "path_similarity").toFixed(2)} → ${m(A, "path_similarity").toFixed(2)}`, `path similarity, ${from} (lower: the five processes differ more)`],
+      [`${m(B, "branch_diversity").toFixed(2)} → ${m(A, "branch_diversity").toFixed(2)}`, "branch diversity (different kinds of reasoning objects)"],
+      [`${f2(m(B, "unique_objections"))} → ${f2(m(A, "unique_objections"))}`, "unique objections per run, raised by no other reasoner"],
+      [`${m(B, "conclusion_similarity").toFixed(2)} → ${m(A, "conclusion_similarity").toFixed(2)}`, "conclusion similarity: the answers still converge"],
+    ];
+    $("#kpis").innerHTML = k.map(([v, l]) => `<div class="kpi"><div class="v">${v}</div><div class="k">${l}</div></div>`).join("");
+    const nq = new Set(A.concat(B).map((r) => r.question)).size;
+    $("#kpinote").textContent = `${g}, pooled over ${nq} question${nq > 1 ? "s" : ""}, five reasoners per run, n = ${B.length} and ${A.length} run(s). ` +
+      `Δ 0 runs the identical base policy in all five reasoners; only seeds differ. Small n: a direction, not a significance test.`;
+  }
+  // one comparison table per model and budget that has more than one condition at Δ 1
+  const groups = [...new Set([g, ...ok.map(group)])];  // the featured model first
+  $("#tables").innerHTML = groups.map((gg) => {
+    const rs = ok.filter((r) => group(r) === gg && r.delta === 1);
+    return new Set(rs.map((r) => r.condition)).size > 1 ? `<h3 style="margin-top:48px">${esc(gg)}</h3>${table(rs)}` : "";
+  }).join("");
+  const sw = ok.filter((r) => group(r) === g && r.condition === "architecture");
+  $("#sweep").innerHTML = new Set(sw.map((r) => r.delta)).size >= 3 ? sweepChart(sw)
+    : `<div class="pending">Pending. The Δ sweep (0, 0.25, 0.5, 0.75, 1, two seeds each) runs on the evroc VM with <span class="mono">python3 lab/batch.py --sweep --full</span>. Recorded Δ values so far on ${esc(g)}: ${[...new Set(sw.map((r) => r.delta))].join(", ") || "none"}.</div>`;
+  const arch = ok.filter((r) => group(r) === g && r.condition === "architecture");
+  const qs = [...new Set(arch.map((r) => r.question))].filter((q) => [0, 1].every((d) => arch.some((r) => r.question === q && r.delta === d)));
+  const mq = (q, d, k) => mean(arch.filter((r) => r.question === q && r.delta === d).map((r) => r.metrics[k]));
+  const cell = (q, k) => `${f2(mq(q, 0, k))} → ${f2(mq(q, 1, k))}`;
+  $("#across").innerHTML = `<div class="tablewrap"><table><tr><th>question (${esc(g)})</th><th>path similarity ↓</th><th>branch diversity ↑</th><th>unique objections ↑</th><th>conclusion similarity</th></tr>` +
+    qs.map((q) => `<tr><td>${esc(q)}</td><td>${cell(q, "path_similarity")}</td><td>${cell(q, "branch_diversity")}</td><td>${cell(q, "unique_objections")}</td><td>${cell(q, "conclusion_similarity")}</td></tr>`).join("") +
+    `</table></div>`;
+  $("#allruns").innerHTML = runsTable(D.runs);
+});
+</script>
+</body>
+</html>

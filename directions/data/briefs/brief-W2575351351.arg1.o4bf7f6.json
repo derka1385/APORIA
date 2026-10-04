@@ -1,0 +1,197 @@
+{
+  "id": "brief-W2575351351.arg1.o4bf7f6",
+  "objection_id": "W2575351351.arg1.o4bf7f6",
+  "research_question": "Can a many-goods response to divine hiddenness establish that the goods arising during a bounded episode of nonresistant nonbelief outweigh the relationship-loss of that episode once goods that require additional duration or severity are counted as part of its cost?",
+  "argument": {
+    "id": "W2575351351.arg1",
+    "title": "Many-goods response",
+    "paper_id": "oa:W2575351351",
+    "paper_title": "Divine Hiddenness, Greater Goods, and Accommodation",
+    "premises": [
+      {
+        "id": "W2575351351.c012",
+        "text": "A good may overcome the accommodation strategy if temporary nonresistant nonbelief makes that good sufficiently more valuable.",
+        "quote": "I suggest that a proposed good might overcome the accommodation strategy if that good is somehow more valuable given temporary nonresistant nonbelief. If nonresistant nonbelief sufficiently increases the value of some good, then it will constitute a sufficient reason for God to allow for nonresistant nonbelief."
+      },
+      {
+        "id": "W2575351351.c014",
+        "text": "Multiple goods may arise from a single instance of nonresistant nonbelief without increasing that evil.",
+        "quote": "This is because nonresistant nonbelief is a single evil (if it can be properly called an evil), and multiple goods may arise from a single instance of evil without that evil increasing."
+      },
+      {
+        "id": "W2575351351.c017",
+        "text": "Goods individually less valuable than a relationship with God can collectively make a world containing nonresistant nonbelief more valuable.",
+        "quote": "Any good at all that is brought about by nonresistant nonbelief will contribute to the overall value of W. This means that the task of identifying goods might actually be relatively simple."
+      },
+      {
+        "id": "W2575351351.c020",
+        "text": "Schellenberg’s accommodation strategy does not defeat the many-goods response merely because an individual good can occur within a relationship with God.",
+        "quote": "But the accommodation strategy is not so devastating against the MGR. Even if some particular good might be possible to acquire within a relationship with God, it might still count in favour of W, rather than W′."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2575351351.arg1.mp",
+      "text": "If every identified good can be realized within a relationship with God, the many-goods conditions still hold, so that multiple goods without increased evil, collectively outweighing goods, and no defeat by the accommodation strategy together make the many-goods response succeed."
+    },
+    "conclusion": {
+      "id": "W2575351351.c021",
+      "text": "The many-goods response may succeed even if every identified good can be realized within a relationship with God."
+    },
+    "skeleton": "B -> A; C; D; ~G |- H -> F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2575351351.c014",
+    "text": "Multiple goods may arise from a single instance of nonresistant nonbelief without increasing that evil."
+  },
+  "objection": "Mara is a sincere seeker who wants to believe in God but cannot. Consider three goods her nonbelief might produce. First, she shows moral courage by sheltering a refugee without any expectation of divine reward. That needs her nonbelief to last through the crisis, about two months. Second, she comes to deeply understand other doubters. That needs her to feel the full desolation of unanswered searching, which takes a sharper and lonelier phase of doubt, not just mild uncertainty. Third, her brother freely chooses to walk with her through doubt rather than being prompted by evident divine presence. He is slow to choose, so her nonbelief must persist until he does, eighteen months in all. Each good attaches to the same episode of nonbelief, but each requires that episode to be longer or more painful than the previous goods required. Securing all three turns two calm months of doubt into a year and a half of anguish. The goods are not extra fruit from a fixed cost. Each one buys itself by enlarging the evil.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A concedes that Mara’s escalating goods increase the duration and severity of nonbelief, hence the lost relationship-value, but argues that the relevant defense need only show that the combined goods exceed that increased loss.",
+      "why_it_failed": "This abandons c014 as originally stated and supplies no weighing that shows the goods cover the added loss. It preserves the strategy only under a restriction requiring that goods not lengthen or intensify the minimal supporting episode."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B argues that c014 remains modally possible if several goods arise within an independently bounded episode without requiring any further extension or intensification.",
+      "why_it_failed": "The objector challenges what could independently fix an episode permitted only for goods. Defender B ultimately accepts that the mere presence of several cost-free co-realized goods does not establish the aggregate required by c017."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B’s final revision holds that the goods warranting an episode’s full duration and severity, together with genuinely cost-free co-realized goods, may outweigh the relationship-loss over that episode.",
+      "why_it_failed": "This is a conditional reformulation rather than support for the original inference. It requires identification of a particular episode and a substantive comparative valuation that the exchange does not provide."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2950222172",
+      "paper_id": "oa:W2950222172",
+      "title": "The \"greater goods\" response to the argument from divine hiddenness",
+      "authors": [
+        "Luke Teeninga"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.5287/ora-2a650nq7d",
+      "verdict": "related",
+      "similarity": 0.58,
+      "quote": ""
+    },
+    {
+      "record_id": "W2072673546.c089",
+      "paper_id": "oa:W2072673546",
+      "title": "Some critical reflections on the hiddenness argument",
+      "authors": [
+        "Imran Aijaz",
+        "Markus Weidler"
+      ],
+      "year": 2007,
+      "url": "https://doi.org/10.1007/s11153-006-9103-8",
+      "verdict": "related",
+      "similarity": 0.42,
+      "quote": "Possible unknown greater goods may explain why propositional attitudes toward God are not universally available."
+    },
+    {
+      "record_id": "W2928796903.a1",
+      "paper_id": "oa:W2928796903",
+      "title": "Who Must Benefit 1 f rom Divine Hiddenness?",
+      "authors": [
+        "Luke Teeninga"
+      ],
+      "year": 2019,
+      "url": "https://doi.org/10.11612/resphil.1781",
+      "verdict": "related",
+      "similarity": 0.38,
+      "quote": "The requirement that goods permitting divine hiddenness benefit the hidden person has numerous exceptions, especially in cases of divine hiddenness."
+    }
+  ],
+  "novelty": 0.42,
+  "records_searched": 4139,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2950222172",
+      "paper_id": "oa:W2950222172",
+      "verdict": "related",
+      "similarity": 0.58,
+      "quote": "",
+      "title": "The \"greater goods\" response to the argument from divine hiddenness"
+    },
+    {
+      "record_id": "W2072673546.c089",
+      "paper_id": "oa:W2072673546",
+      "verdict": "related",
+      "similarity": 0.42,
+      "quote": "Possible unknown greater goods may explain why propositional attitudes toward God are not universally available.",
+      "title": "Some critical reflections on the hiddenness argument"
+    },
+    {
+      "record_id": "W2928796903.a1",
+      "paper_id": "oa:W2928796903",
+      "verdict": "related",
+      "similarity": 0.38,
+      "quote": "The requirement that goods permitting divine hiddenness benefit the hidden person has numerous exceptions, especially in cases of divine hiddenness.",
+      "title": "Who Must Benefit 1 f rom Divine Hiddenness?"
+    }
+  ],
+  "open_questions": [
+    "Can an episode of nonresistant nonbelief be bounded independently of the goods for which God permits it, and if so, what fixes its duration and severity?",
+    "How should the value of a lost relationship with God be measured across episodes that differ in length, intensity, and prospects of later relationship?",
+    "Which goods genuinely arise without requiring additional nonbelief, rather than being already priced into the duration or severity warranted by another good?",
+    "Can the good that warrants a maximally demanding episode plus its cost-free co-realized goods plausibly outweigh that episode’s total relationship-loss?"
+  ],
+  "paper_direction": "A paper here would argue that a viable many-goods response must distinguish goods that warrant the duration and severity of an episode of nonresistant nonbelief from goods that are genuinely co-realized at no additional relationship-loss. The case would show why aggregating all goods associated with an episode overstates the response when some goods require the episode to become longer or more anguished. It would anticipate the strongest reply: that bounded episodes can contain several cost-free goods and that temporary loss may still be outweighed. It would need to show either that such independently bounded episodes can be specified and valued in a way that supports the defense, or that the dependence of an episode’s cost on its goods makes the required aggregate comparison unavailable.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent and relevant to aggregation, but it targets a universal or typical version of c014 rather than the modal claim actually stated, which one cost-free case would satisfy.",
+      "robustness": "The obvious net-value reply (Defender A) is dismissed as abandoning c014 rather than answered, and the proposal's only escape route, that the comparison is 'unavailable', is announced but not argued.",
+      "significance": "Distinguishing warranting goods from cost-free co-realized goods is a modest accounting refinement that careful many-goods defenders already observe implicitly, so success would tidy the debate rather than reshape it.",
+      "specificity": "There is a definite thesis and an illustrative case, but the plan ends in an unresolved disjunction ('either episodes can be bounded or the comparison is unavailable') with no account of how either branch would be argued."
+    },
+    "strongest_objection": "c014 is a possibility claim ('may arise ... without increasing that evil'), and the many-goods response only needs one case where goods co-occur at no extra cost. Mara's case shows only that some goods raise the cost. That is a familiar bookkeeping point already built into any net-value greater-goods comparison: count marginal goods against marginal evil. So Defender A's reply (weigh the combined goods against the enlarged loss) is not an abandonment of c014. It is the standard form of the response, and the proposal offers no reason why that net comparison is unavailable rather than merely uncomputed.",
+    "reply_available": false,
+    "what_it_needs": "It must give a principled argument that an episode's duration and severity cannot be fixed independently of the goods that justify it. Such an argument would make the aggregate comparison required by c017 indeterminate or question-begging, and it must engage the existing greater-goods hiddenness literature on how goods are weighed against relationship-loss. Without that, the paper offers only a reminder not to double-count.",
+    "summary": "A legitimate bookkeeping observation that misreads the modal strength of the challenged premise and does not yet answer the obvious net-value reply. It is not a paper until it argues that the bounding of episodes makes the aggregate comparison genuinely unavailable.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T09:05:16.184659+00:00"
+  },
+  "revision": {
+    "research_question": "Can the aggregate comparison that a many-goods response needs, between the goods of a nonresistant nonbelief episode and its relationship-loss, be made determinate when some of those goods require the episode to be longer or more severe, so that the episode's cost is not fixed independently of the goods it is said to justify?",
+    "paper_direction": "A paper here would argue that the modal claim that multiple goods may arise from a single episode of nonresistant nonbelief without increasing its evil survives the referee's objection, but that this modal claim does not by itself secure the aggregate comparison the many-goods response needs. The paper would grant that Mara's case shows only that some goods raise the cost, which is compatible with one cost-free co-realization. It would then argue that the net comparison, in which marginal goods are weighed against marginal evil, presupposes that an episode's duration and severity can be fixed independently of the goods it is said to contain. For goods whose realization depends on the episode's extent, such as the brother's slow choice, that presupposition fails. The episode's length is set by the goods it must realize, so the cost assigned to any given good depends on which goods are counted as belonging to the episode. Different selections of goods yield different baselines and different net values, so the aggregate comparison required by the collective-outweighing premise is indeterminate, or question-begging if the goods are used to fix the cost they are weighed against. The paper would develop this as a principled argument about individuation, not a reminder not to double-count, and would engage the greater-goods hiddenness literature on how goods are weighed against relationship-loss. It would conclude that the many-goods response can succeed only for episodes whose duration is specified independently of the goods they support, and that the response's collective claim is therefore restricted to such episodes.",
+    "reply_to_strongest_objection": "The paper concedes the referee's central point: c014 is a possibility claim, and one cost-free co-occurrence would satisfy it, so Mara's case does not refute it. It rejects the claim that Defender A's net comparison merely restates c014. The reply uses a distinction between the modal possibility of cost-free co-realization and the determinacy of the aggregate comparison. The paper argues that net-value bookkeeping needs a baseline episode whose cost is fixed before its goods are counted. For goods that require extension, such as the brother's delayed choice, the baseline is not fixed independently of the goods, so the marginal-cost assignment depends on which goods are selected. The 'unavailable' branch is therefore argued, not announced: the comparison is indeterminate because the cost function's inputs are the goods it is meant to evaluate.",
+    "what_changed": "The thesis is narrowed from a claim that aggregation overstates the response to a claim that the aggregate comparison is indeterminate for goods requiring episode extension, while the modal claim of c014 is conceded as surviving the objection.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T09:14:14.291582+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction is internally consistent, but it openly concedes the challenged premise (c014) and shifts its target to the determinacy of c017's aggregate comparison, so it bears only loosely on the premise as stated.",
+        "robustness": "Its central inference, that goods-dependent episode length makes the cost comparison indeterminate or question-begging, dies to the obvious reply that comparing total packages needs no independent baseline, and neither the plan nor the transcript anticipates this.",
+        "significance": "If successful, restricting the many-goods response to episodes bounded independently of their goods would be a useful refinement of the greater-goods hiddenness debate, though not a reshaping of it.",
+        "specificity": "It offers a definite thesis, a worked case (Mara and the brother's delayed choice), a key distinction between modal possibility and aggregate determinacy, and a conclusion, though the engagement with the literature and the formal treatment of baselines are only gestured at."
+      },
+      "strongest_objection": "The indeterminacy argument confuses marginal cost attribution with aggregate comparison. For any candidate set S of goods there is a determinate minimal episode (duration and severity) needed to realize S, and so a determinate total relationship-loss. The many-goods response, and c017 in particular, needs only a holistic comparison of the total value of S against the total loss of that minimal episode, choosing the best package; it never needs to assign a cost to each individual good. As with joint-cost allocation in economics, splitting a shared cost among co-produced goods may be arbitrary, but maximizing total net value is well defined. So the fact that the episode's length is set by the goods it realizes yields neither indeterminacy nor question-begging.",
+      "reply_available": false,
+      "what_it_needs": "The paper must show why a package-level comparison (each set of goods against the loss of its minimal sufficient episode) is unavailable or itself indeterminate, for instance through incommensurability, vagueness in 'minimal sufficient episode,' or interdependence that defeats a well-ordering of packages. Otherwise it must drop the indeterminacy thesis and argue directly that the actual escalating packages fail to outweigh. It should also be explicit that its target is c017's aggregate claim rather than c014, which it concedes.",
+      "summary": "A clearly framed but misdiagnosed project: the interdependence of goods and episode cost undermines per-good cost attribution, not the aggregate comparison, so the indeterminacy thesis needs rebuilding before this is a defensible paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T09:14:31.592570+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

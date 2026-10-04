@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-10-04T00:54:29.492220+00:00",
+  "providers_available": [
+    "codex_cli",
+    "claude_cli"
+  ],
+  "provider_errors": {},
+  "models": [
+    {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 2.99,
+      "error": ""
+    },
+    {
+      "provider": "claude_cli",
+      "model": "opus",
+      "family": "anthropic",
+      "small": false,
+      "rank": 1,
+      "ok": true,
+      "latency_s": 8.23,
+      "error": ""
+    },
+    {
+      "provider": "claude_cli",
+      "model": "haiku",
+      "family": "anthropic",
+      "small": true,
+      "rank": 2,
+      "ok": true,
+      "latency_s": 4.14,
+      "error": ""
+    },
+    {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-terra",
+      "family": "openai",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 5.0,
+      "error": ""
+    },
+    {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-sol",
+      "family": "openai",
+      "small": false,
+      "rank": 1,
+      "ok": true,
+      "latency_s": 5.0,
+      "error": ""
+    },
+    {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-luna",
+      "family": "openai",
+      "small": true,
+      "rank": 2,
+      "ok": true,
+      "latency_s": 4.55,
+      "error": ""
+    }
+  ],
+  "families": [
+    "anthropic",
+    "openai"
+  ],
+  "diversity": "degraded: 2 families",
+  "roles": {
+    "formalizer": {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "effort": "medium"
+    },
+    "defender_a": {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "effort": "medium"
+    },
+    "extractor": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-terra",
+      "family": "openai",
+      "effort": "low"
+    },
+    "reranker": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-terra",
+      "family": "openai",
+      "effort": "low"
+    },
+    "defender_b": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-terra",
+      "family": "openai",
+      "effort": "medium"
+    },
+    "referee": {
+      "provider": "codex_cli",
+      "model": "gpt-5.6-sol",
+      "family": "openai",
+      "effort": "medium"
+    },
+    "generators": [
+      {
+        "provider": "claude_cli",
+        "model": "sonnet",
+        "family": "anthropic",
+        "effort": "medium"
+      },
+      {
+        "provider": "claude_cli",
+        "model": "opus",
+        "family": "anthropic",
+        "effort": "medium"
+      },
+      {
+        "provider": "codex_cli",
+        "model": "gpt-5.6-terra",
+        "family": "openai",
+        "effort": "medium"
+      },
+      {
+        "provider": "codex_cli",
+        "model": "gpt-5.6-sol",
+        "family": "openai",
+        "effort": "medium"
+      }
+    ],
+    "naive_questioner": {
+      "provider": "claude_cli",
+      "model": "haiku",
+      "family": "anthropic",
+      "effort": "low"
+    }
+  }
+}

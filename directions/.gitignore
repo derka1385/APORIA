@@ -1,0 +1,24 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+cache/
+data/raw/
+data/*.sqlite
+logs/
+mlruns/
+node_modules/
+web/dist/
+.DS_Store
+reference/
+data/*.sqlite-*
+*.egg-info/
+.pytest_cache/
+mlflow.db
+web/node_modules/
+web/test-results/
+web/playwright-report/
+
+# per-topic working files (the default topic keeps the same files ignored under data/ and data/raw/)
+data/topics/*/crux.sqlite*
+data/topics/*/fresh_candidates.json

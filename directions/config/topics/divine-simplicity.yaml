@@ -1,0 +1,34 @@
+# Fourth topic file, run on 2026-10-04 (evroc + Claude, judgement roles on Claude Sonnet / Kimi-K2.6).
+# Run it with `make corpus targets map runs assess revise export TOPIC=divine-simplicity`.
+slug: divine-simplicity
+name: Divine simplicity
+description: >-
+  The classical doctrine that God has no parts, properties or composition distinct from God, and the current
+  debate over it: the modal collapse argument, the problem of God's contingent knowledge and free choice, whether
+  God can be identical to a property, truthmaker and constituent-ontology reconstructions, and recent attempts to
+  restate simplicity in new metaphysical terms.
+area: philosophy of religion and analytic metaphysics
+queries:
+  divine simplicity: '"divine simplicity"'
+  modal collapse: '"modal collapse"'
+  God and properties: '"divine attributes" AND (identity OR identical OR simplicity)'
+  aseity: 'aseity AND God'
+  Aquinas on simplicity: 'Aquinas AND simplicity AND God'
+  constituent ontology: '"constituent ontology" OR ("truthmaker" AND God)'
+max_per_query: 200       # one OpenAlex page per query (keyless daily allowance)
+fresh_from: "2026-08-01"
+fresh_queries: ['"divine simplicity"', '"modal collapse" OR aseity OR "divine attributes"', '"philosophy of religion"']
+relevant: 'simplicit|simple|modal collapse|aseity|divine (attribute|nature|propert|essence|knowledge|freedom)|constituent|truthmaker|aquinas|anselm|god\b|theis'
+# A fresh paper must be about God or theology; the area-wide fresh search returns all of philosophy of religion.
+fresh_relevant: 'god\b|divine|deity|theis|theolog|aquinas|anselm|simplicity'
+relevance_levels:
+  - none
+  - touches philosophy of religion or the metaphysics of properties
+  - concerns the divine attributes, aseity or God's nature
+  - directly about divine simplicity (its formulations, the modal collapse and other objections, defences)
+targets:                 # the forefront first: recent papers directly on simplicity; then the strongest classics on it
+  fresh: 3
+  classic: 2
+  fresh_min_relevance: 3 # "touches the divine attributes" is not enough for this topic's recent targets
+schools: [Thomist classical theism, theistic personalism, truthmaker theory, Eastern Orthodox essence–energies theology,
+          open theism, Platonism about properties]

@@ -1,0 +1,26 @@
+# Bridge corpus for APORIA's question ("Is personal identity dependent on psychological continuity?"): the literature
+# APORIA's reasoners' objections are checked against. Abstract-level corpus only (no full-text targets, no runs).
+slug: personal-identity
+name: Personal identity and psychological continuity
+description: >-
+  Whether a person persists through time by psychological continuity (memory, character, intentions) or by something
+  else: the animal, the body, the brain, or nothing determinate at all; fission cases, Parfit on what matters,
+  the circularity objection, and narrative views. The literature behind APORIA's research question.
+area: metaphysics of personal identity
+queries:
+  psychological continuity: '"psychological continuity"'
+  personal identity and memory: '"personal identity" AND (memory OR "memory theory")'
+  animalism: 'animalism OR ("personal identity" AND "biological view")'
+  fission and what matters: '"personal identity" AND (fission OR Parfit OR "what matters")'
+  narrative identity: '"narrative identity" AND person'
+max_per_query: 200
+fresh_from: "2026-08-01"
+fresh_queries: ['"personal identity"']
+relevant: 'personal identity|psychological continuity|animalis|fission|parfit|memory|survival|persistence|person|self'
+relevance_levels:
+  - none
+  - touches the metaphysics of persons
+  - concerns persistence, memory or the self
+  - directly about personal identity and psychological continuity
+schools: [psychological continuity theory, animalism, narrative views of the self, Buddhist no-self, four-dimensionalism]
+bridge_question: Is personal identity dependent on psychological continuity?

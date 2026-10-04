@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-10-04T10:56:01.142213+00:00",
+  "providers_available": [
+    "evroc",
+    "claude_cli"
+  ],
+  "provider_errors": {},
+  "models": [
+    {
+      "provider": "evroc",
+      "model": "nvidia/Llama-3.3-70B-Instruct-FP8",
+      "family": "llama",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.09,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "Qwen/Qwen3.8-27B",
+      "family": "qwen",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.09,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "family": "qwen",
+      "small": false,
+      "rank": 1,
+      "ok": true,
+      "latency_s": 1.76,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "openai/gpt-oss-120b",
+      "family": "gpt-oss",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.09,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "google/gemma-4-26B-A4B-it",
+      "family": "gemma",
+      "small": true,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.11,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "mistralai/Mistral-Medium-3.5-128B",
+      "family": "mistral",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.13,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "moonshotai/Kimi-K2.6",
+      "family": "kimi",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.24,
+      "error": ""
+    },
+    {
+      "provider": "evroc",
+      "model": "zai-org/GLM-5.2",
+      "family": "glm",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 1.26,
+      "error": ""
+    },
+    {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "small": false,
+      "rank": 0,
+      "ok": true,
+      "latency_s": 3.99,
+      "error": ""
+    },
+    {
+      "provider": "claude_cli",
+      "model": "opus",
+      "family": "anthropic",
+      "small": false,
+      "rank": 1,
+      "ok": true,
+      "latency_s": 8.87,
+      "error": ""
+    },
+    {
+      "provider": "claude_cli",
+      "model": "haiku",
+      "family": "anthropic",
+      "small": true,
+      "rank": 2,
+      "ok": true,
+      "latency_s": 4.77,
+      "error": ""
+    }
+  ],
+  "families": [
+    "anthropic",
+    "kimi",
+    "glm",
+    "mistral",
+    "qwen",
+    "llama",
+    "gpt-oss",
+    "gemma"
+  ],
+  "diversity": "full",
+  "roles": {
+    "formalizer": {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "effort": "medium"
+    },
+    "defender_a": {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "effort": "medium"
+    },
+    "extractor": {
+      "provider": "evroc",
+      "model": "openai/gpt-oss-120b",
+      "family": "gpt-oss",
+      "effort": "low"
+    },
+    "reranker": {
+      "provider": "claude_cli",
+      "model": "sonnet",
+      "family": "anthropic",
+      "effort": "medium"
+    },
+    "defender_b": {
+      "provider": "evroc",
+      "model": "moonshotai/Kimi-K2.6",
+      "family": "kimi",
+      "effort": "medium"
+    },
+    "referee": {
+      "provider": "evroc",
+      "model": "zai-org/GLM-5.2",
+      "family": "glm",
+      "effort": "medium"
+    },
+    "generators": [
+      {
+        "provider": "claude_cli",
+        "model": "sonnet",
+        "family": "anthropic",
+        "effort": "medium"
+      },
+      {
+        "provider": "claude_cli",
+        "model": "opus",
+        "family": "anthropic",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "moonshotai/Kimi-K2.6",
+        "family": "kimi",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "zai-org/GLM-5.2",
+        "family": "glm",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "mistralai/Mistral-Medium-3.5-128B",
+        "family": "mistral",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "Qwen/Qwen3.8-27B",
+        "family": "qwen",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+        "family": "qwen",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "nvidia/Llama-3.3-70B-Instruct-FP8",
+        "family": "llama",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "openai/gpt-oss-120b",
+        "family": "gpt-oss",
+        "effort": "medium"
+      },
+      {
+        "provider": "evroc",
+        "model": "google/gemma-4-26B-A4B-it",
+        "family": "gemma",
+        "effort": "medium"
+      }
+    ],
+    "naive_questioner": {
+      "provider": "evroc",
+      "model": "google/gemma-4-26B-A4B-it",
+      "family": "gemma",
+      "effort": "low"
+    },
+    "brief": {
+      "provider": "evroc",
+      "model": "moonshotai/Kimi-K2.6",
+      "family": "kimi",
+      "effort": "medium"
+    }
+  }
+}

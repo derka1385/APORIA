@@ -1,0 +1,219 @@
+{
+  "id": "brief-W2072673546.arg1.o2eaa79",
+  "objection_id": "W2072673546.arg1.o2eaa79",
+  "research_question": "Can an analogy from vulnerable human love support a context-sensitive divine obligation to make relationship accessible to nonresistant persons without first establishing a general obligation of vulnerable love?",
+  "argument": {
+    "id": "W2072673546.arg1",
+    "title": "Hiddenness Argument Fails",
+    "paper_id": "oa:W2072673546",
+    "paper_title": "Some critical reflections on the hiddenness argument",
+    "premises": [
+      {
+        "id": "W2072673546.c041",
+        "text": "Schellenberg’s attempt to establish P1 as an a priori, necessary conceptual truth fails.",
+        "quote": "For this reason, we think that Schellenberg’s attempt to support P1 as a conceptual truth, one which is also necessarily true and known a priori, is a failure."
+      },
+      {
+        "id": "W2072673546.c064",
+        "text": "Schellenberg’s analogical argument for P1 is unsuccessful because it distorts Vanstone’s vulnerable conception of divine love.",
+        "quote": "we consider Schellenberg’s analogical argument in support of P1 as unsuccessful. Independent of whether or not one agrees with Vanstone’s conception of God on its own terms, Schellenberg’s reliance on a Vanstone-inspired notion of divine love has proven distorted in character."
+      },
+      {
+        "id": "W2072673546.c083",
+        "text": "The second premise of the expectations sub-argument is false because belief that God exists is unnecessary for a positively meaningful relationship with God.",
+        "quote": "For this, we do not need the belief that God exists. We conclude, therefore, that the second premise of the expectations sub-argument, P2, is false."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2072673546.arg1.mp",
+      "text": "Schellenberg's hiddenness argument succeeds only if its conditional premise is established, either by the a priori conceptual route or by the analogical route, and the second premise of the expectations sub-argument is true."
+    },
+    "conclusion": {
+      "id": "W2072673546.c084",
+      "text": "Schellenberg's hiddenness argument is unsuccessful because both its conditional premise and its belief requirement are independently vulnerable."
+    },
+    "skeleton": "~A; ~B; ~C & E |- ~D",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2072673546.arg1.r1",
+    "text": "Schellenberg's analogical route for P1 is successful only if he independently shows that a vulnerable God is obligated to make the beloved's access to relationship available, rather than merely permitted to do so."
+  },
+  "objection": "Mira loves her estranged adult son, Leon, who has repeatedly said he wants reconciliation but is ashamed to initiate contact. Mira knows Leon’s current address and sends a plain letter: “I want a relationship with you; call me anytime.” She does not independently prove a general obligation that vulnerable parents must make reconciliation accessible; such a proof would require settling every possible family circumstance. Yet in this case, the letter successfully shows that Mira’s vulnerability is compatible with, and helps explain, her making access available: she risks rejection precisely because love makes Leon’s response matter. The analogy can therefore support the relevant claim about vulnerable divine love without first establishing an independent obligation to provide access.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The original premise correctly distinguishes mere compatibility or motivational explanation from obligation: Mira's letter initially showed only that vulnerable love may make access available. After the case was strengthened, Defender A conceded that Mira has a local obligation but argued that this does not transfer unless analogous conditions obtain in the divine case, including conditions concerning dignity, safety, and permanent rather than temporary nonresistant nonbelief.",
+      "why_it_failed": "This reply could not preserve the original requirement of an independently established general obligation. Its concession supports the objector's point that a local, context-sensitive obligation may be enough for analogical reasoning, though it identifies unresolved transfer conditions."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The analogy need not establish a general duty, because Leon's expressed desire, shame, and Mira's low-cost ability to contact him supply case-specific normative grounds. But vulnerability alone does not establish P1's universal expectation; the analogy needs bridge grounds showing that comparable grounds apply for each nonresistant person in the divine case.",
+      "why_it_failed": "This response largely accommodates the objection by revising r1. It leaves the decisive issue open: whether the relevant divine circumstances supply grounds for accessible relationship in every case."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W243944806",
+      "paper_id": "oa:W243944806",
+      "title": "Divine openness and creaturely nonresistant nonbelief",
+      "authors": [
+        "Daniel Howard‐Snyder"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1017/cbo9781139939621.008",
+      "verdict": "related",
+      "similarity": 0.58,
+      "quote": "God is at t open to being in a positively meaningful and reciprocal conscious relationship with S at t, where one is open to relationship with another only if one never does anything (by commission or omission) that would have the result that the other was prevented from being able, just by trying, to participate in that relationship. I argue that we should resist the temptation."
+    },
+    {
+      "record_id": "W4206650469.a3",
+      "paper_id": "oa:W4206650469",
+      "title": "The problem of divine hiddenness",
+      "authors": [
+        "Andrew Ter Ern Loke"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.4324/9781003265689-7",
+      "verdict": "related",
+      "similarity": 0.49,
+      "quote": "God may provide sufficient evidence and ensure that those willing to enter a love relationship eventually encounter it."
+    },
+    {
+      "record_id": "W3005230083.a2",
+      "paper_id": "oa:W3005230083",
+      "title": "Teísmo escéptico, escepticismo sobre el libre albedrío y ateísmo: consideración sobre el alcance de la parálisis moral",
+      "authors": [
+        "Rafael Miranda Rojas"
+      ],
+      "year": 2019,
+      "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=7203442",
+      "verdict": "related",
+      "similarity": 0.44,
+      "quote": "The evidential argument from evil contains free will as a hidden premise without first assessing Free Will Skepticism."
+    },
+    {
+      "record_id": "W1552196402.a2",
+      "paper_id": "oa:W1552196402",
+      "title": "The Argument from Divine Hiddenness",
+      "authors": [
+        "Daniel Howard‐Snyder"
+      ],
+      "year": 1996,
+      "url": "https://doi.org/10.1080/00455091.1996.10717461",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W7168366306.a2",
+      "paper_id": "oa:W7168366306",
+      "title": "Asymmetry in Divine Love",
+      "authors": [
+        "Zach Miyazaki"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.15664/32wy7619",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W2575351351.c026",
+      "paper_id": "oa:W2575351351",
+      "title": "Divine Hiddenness, Greater Goods, and Accommodation",
+      "authors": [
+        "Luke Teeninga"
+      ],
+      "year": 2017,
+      "url": "https://doi.org/10.1007/s11841-016-0561-x",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.42,
+  "records_searched": 4130,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W243944806",
+      "paper_id": "oa:W243944806",
+      "verdict": "related",
+      "similarity": 0.58,
+      "quote": "God is at t open to being in a positively meaningful and reciprocal conscious relationship with S at t, where one is open to relationship with another only if one never does anything (by commission or omission) that would have the result that the other was prevented from being able, just by trying, to participate in that relationship. I argue that we should resist the temptation.",
+      "title": "Divine openness and creaturely nonresistant nonbelief"
+    },
+    {
+      "record_id": "W4206650469.a3",
+      "paper_id": "oa:W4206650469",
+      "verdict": "related",
+      "similarity": 0.49,
+      "quote": "God may provide sufficient evidence and ensure that those willing to enter a love relationship eventually encounter it.",
+      "title": "The problem of divine hiddenness"
+    },
+    {
+      "record_id": "W3005230083.a2",
+      "paper_id": "oa:W3005230083",
+      "verdict": "related",
+      "similarity": 0.44,
+      "quote": "The evidential argument from evil contains free will as a hidden premise without first assessing Free Will Skepticism.",
+      "title": "Teísmo escéptico, escepticismo sobre el libre albedrío y ateísmo: consideración sobre el alcance de la parálisis moral"
+    }
+  ],
+  "open_questions": [
+    "Which features make Mira's failure to initiate contact a failure of care, and which of those features have genuine divine analogues?",
+    "Does perfect vulnerable love require making relationship accessible to every nonresistant person, or only ensuring that willing persons eventually encounter it?",
+    "How should temporary and permanent nonresistant nonbelief affect the proposed obligation?",
+    "Can relationships with God that lack conscious reciprocity satisfy the relevant demands of divine love?"
+  ],
+  "paper_direction": "A paper here would argue that the analogical route need not rest on a general obligation of vulnerable love, because context-sensitive obligations can be established through the features of particular loving relationships. It would develop the Mira case as a model of why expressed willingness, inability to initiate, and safe available contact can make withholding access a failure of care; it would then anticipate the strongest reply that these grounds may not transfer to God, especially if God can ensure eventual encounter without compromising dignity or safety. The paper would need to specify the relevant transfer conditions, explain their application to nonresistant nonbelief, and show whether permanent nonresistant nonbelief is compatible with perfect vulnerable love.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets a stronger claim (a general proof covering every circumstance) than r1 states. Its initial case delivers compatibility rather than obligation, so it initially confirms the very distinction r1 draws.",
+      "robustness": "Both defenders' points were left unanswered: local obligation does not transfer without bridge conditions, and P1's universality needs grounds for each nonresistant person. The direction only names these as open questions instead of answering them.",
+      "significance": "If successful, the paper would mainly restate that Schellenberg's analogy needs plausible transfer conditions. That is a familiar point in the disanalogy literature, and it does not undercut the critic's argument, because an obligation is still required.",
+      "specificity": "There is a definite case and a list of what must be specified (transfer conditions, permanent versus temporary nonbelief). But the thesis wavers between denying r1 and accepting it in localized form, and there is no account of how universality would be secured."
+    },
+    "strongest_objection": "The objection mistakes the premise it attacks. r1 requires that Schellenberg independently show obligation rather than mere permission; it does not require a general, all-circumstances proof. The original Mira case shows only that vulnerable love is compatible with, and can explain, offering access. That is exactly the permission-level result r1 says is insufficient. The revised direction then grants that an obligation (a context-sensitive one) must be established. So it satisfies r1 rather than refuting it. Worse, P1 is a universal modal claim: a perfectly loving God would ensure that every nonresistant person, at every time, is able to relate. Case-by-case grounds cannot deliver that without a bridge principle that is effectively the general obligation the paper claims to do without.",
+    "reply_available": false,
+    "what_it_needs": "The paper must stop presenting itself as an objection to r1. It should openly become a positive account of which local grounds generate a duty to make relationship accessible, and argue that those grounds hold universally in the divine case, including against the 'eventual encounter' and 'non-conscious relationship' replies. It must also engage the existing parent-analogy and disanalogy literature (Schellenberg 2015, Howard-Snyder, Rea, Murray) to show what is new.",
+    "summary": "As written, this objection misreads the premise and ends up conceding it; there might be a modest paper on transfer conditions for parental-love analogies, but it would have to be reframed and positioned against substantial existing literature.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T09:05:16.178151+00:00"
+  },
+  "revision": {
+    "research_question": "Can a grounds-based account of when withholding access from a beloved is a failure of care, drawn from particular vulnerable loving relationships, establish a context-sensitive duty for a perfectly loving God to make relationship accessible to nonresistant persons, and does that duty hold for every such person?",
+    "paper_direction": "A paper here would argue that vulnerable human love generates a duty to make relationship accessible when specified local grounds obtain: the beloved has expressed willingness to relate, cannot initiate contact for reasons other than their own resistance, and the lover can provide safe and available access. It would defend this grounds-based principle as an explicit bridge principle that is itself the context-sensitive obligation the analogical route requires, rather than a permission inferred from the Mira case, and it would argue that the Mira case illustrates the principle without establishing it on its own. The paper would then argue that these grounds can hold in the divine case for each nonresistant person, because they concern present access to relationship, which a reply appealing to eventual encounter does not supply, and because a perfectly knowing lover can assess each person's situation without a further general proof covering all circumstances. The paper would state its conclusion in narrowed form: the analogical route establishes a duty for every nonresistant person in whom the grounds obtain. Whether the grounds obtain universally, and whether permanent nonresistant nonbelief is compatible with perfect vulnerable love, are the points on which the universal form of P1 stands or falls, and the paper would identify them as such rather than assume them.",
+    "reply_to_strongest_objection": "The referee is right that the Mira case as first stated shows compatibility and explanation, which is permission-level, and the paper concedes that the case alone does not prove obligation. It replies by making the bridge principle explicit: when a lover knows the beloved's expressed willingness, the beloved's inability to initiate for reasons other than resistance, and that access can be provided safely, withholding it is a failure of care. The paper argues that this principle is a context-sensitive obligation, not a general one, and that its grounds are what generate the duty; the Mira case illustrates it. For universality, the paper argues that the grounds are present-tense conditions that a perfectly knowing God can assess for each person, so no general proof covering every circumstance is needed, and it rejects eventual encounter as a substitute because it does not satisfy the present-access ground. Where the grounds fail, the paper makes no claim.",
+    "what_changed": "The revision replaces the claim that the Mira analogy supports obligation without a general principle with an explicit grounds-based bridge principle that is itself the local obligation, and narrows the universal claim to nonresistant persons in whom those grounds obtain.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T09:14:14.303749+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The original Mira objection shows only compatibility and motivational explanation, which is permission-level and so aimed below what P1 requires. The paper direction repairs this by arguing for a context-sensitive obligation, which in effect concedes r1's demand for an obligation and contests only its 'independent/general' form, so the aim is coherent but shifted.",
+        "robustness": "Neither the direction nor the transcript answers the transfer problem: the paper explicitly sets aside whether the grounds obtain universally, and God's omniscience bears only on assessing the grounds, not on whether they are satisfied.",
+        "significance": "If it succeeded, the paper would yield a conditional, grounds-relative duty that leaves the contested universal P1 open, which is a modest refinement of Defender B's position rather than a change in how the analogical route is assessed.",
+        "specificity": "The thesis, the three local grounds, the role of the Mira case as illustration, the rejection of eventual-encounter replies, and the narrowed conclusion are all stated concretely enough to write, though the decisive universality step is deferred rather than planned."
+      },
+      "strongest_objection": "The grounds-based principle does not transfer to the divine case, and where it seems to, it assumes what is in dispute. A nonresistant nonbeliever has not 'expressed willingness to relate' to God in the way Leon has to Mira, since he does not believe there is anyone to relate to. Whether God can provide access 'safely', without defeating goods such as soul-making, morally significant freedom, or non-coercive response, is exactly what greater-goods and skeptical-theist critics of P1 contest. The fallback conclusion (a duty holds for every nonresistant person in whom the grounds obtain) is close to trivially conditional and leaves P1's universal form, the only form the argument needs, untouched.",
+      "reply_available": false,
+      "what_it_needs": "The paper must reformulate the grounds so they demonstrably have divine analogues for nonbelievers, for example by replacing expressed willingness with dispositional openness and arguing why that suffices. It must also argue, rather than stipulate, that the 'safe access' condition is met against the standard greater-goods and skeptical-theist replies; otherwise it should openly recast itself as a partial defence of the analogical route.",
+      "summary": "A clearly organised but ultimately modest proposal: it turns the objection into a grounds-based bridge principle, then sets aside the transfer-to-every-person question on which any defence of P1's analogical route depends, so a competent referee would call it incomplete as it stands.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T09:14:36.863470+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

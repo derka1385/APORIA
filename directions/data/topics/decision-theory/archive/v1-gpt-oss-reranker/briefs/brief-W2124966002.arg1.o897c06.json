@@ -1,0 +1,206 @@
+{
+  "id": "brief-W2124966002.arg1.o897c06",
+  "objection_id": "W2124966002.arg1.o897c06",
+  "research_question": "Does a normative account of Christian faith require belief with assurance or certitude, or can sub‑doxastic, assumption‑based faith be genuinely Christian?",
+  "argument": {
+    "id": "W2124966002.arg1",
+    "title": "Jamesian doxastic venture preferred",
+    "paper_id": "oa:W2124966002",
+    "paper_title": "Faith as doxastic venture",
+    "premises": [
+      {
+        "id": "W2124966002.c001",
+        "text": "Defending a doxastic venture model of faith requires that such venturesome believing be both possible and ethically acceptable.",
+        "quote": "A ‘doxastic venture’ model of faith – according to which having faith involves believing beyond what is rationally justiﬁable – can be defended only on condition that such venturesome believing is both possible and ethically acceptable."
+      },
+      {
+        "id": "W2124966002.c002",
+        "text": "A development of William James’s position can satisfy the conditions of possibility and ethical acceptability for a doxastic venture model.",
+        "quote": "I show how a development of the position argued by William James in ‘The will to believe’ can succeed in meeting these conditions."
+      },
+      {
+        "id": "W2124966002.c030",
+        "text": "An attenuated sub‑doxastic view of faith is too weak because Christian faith involves assurance, certitude, and belief rather than mere assumption.",
+        "quote": "But surely such an attenuated sub-doxastic understanding of faith is too weak? Theistic – particularly Christian – faith seems to involve a certain kind of assurance or certitude – an assurance or certitude which may, indeed, need to be carefully distinguished from any epistemic certainty, but which nevertheless involves believing rather than merely assuming that God exists and is to be trusted."
+      },
+      {
+        "id": "W2124966002.c031",
+        "text": "The Jamesian doxastic‑venture model supplies what is needed by treating faith as a passionally based tendency to believe and as believingly accepting an unestablished claim.",
+        "quote": "the Jamesian doxastic venture model provides just what is needed, since it understands the gift of faith as a passionally based tendency to believe the religious claim, and the act of venture as an act of believingly accepting it, in the face of the recognition that it cannot be established epistemically."
+      },
+      {
+        "id": "W2124966002.c046",
+        "text": "Doxastic venture involves the more contentious overbelief, not the familiar overassumption.",
+        "quote": "Doxastic venture involves the more contentious overbelief, not the wholly familiar overassumption."
+      }
+    ],
+    "missing_premise": {
+      "id": "W2124966002.arg1.mp",
+      "text": "Whenever the Jamesian doxastic-venture model supplies what faith needs, it is phenomenologically superior to its rivals."
+    },
+    "conclusion": {
+      "id": "W2124966002.c047",
+      "text": "The Jamesian doxastic venture account should be preferred as phenomenologically superior because it accommodates the common view of Christian faith as involving assurance or certitude."
+    },
+    "skeleton": "A -> B; C -> B; E -> ~D; F; G |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W2124966002.c030",
+    "text": "An attenuated sub‑doxastic view of faith is too weak because Christian faith involves assurance, certitude, and belief rather than mere assumption."
+  },
+  "objection": "Sarah, a devout Anglican, has prayed the daily office, served the food bank, and led intercessions for 30 years. She has never achieved certitude about the resurrection or Christ's divinity—she lives these claims as working assumptions, not beliefs held with assurance. When her bishop asks about her faith, she says, 'I trust, but I cannot claim to know.' Her bishop confirms her as a faithful Christian, pointing to the evident fruits of her faith: hope, charity, perseverance. Her congregation recognizes her faith as exemplary. Yet it operates entirely at the sub-doxastic level of assumption rather than belief with certitude. The sub-doxastic view is not too weak for Sarah's faith—it accurately captures it, and her faith is robust by every standard her community recognizes as genuine Christian faith.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "You are right that the premise is a substantive claim about what Christian faith involves, and Sarah's case is a serious test of it. But the argument's claim in c030 is not that every believer must have certitude; it is that the faith the tradition names, the faith with assurance that Christians confess in the creeds and in the account of justifying faith, requires belief rather than mere assumption. Sarah's bishop recognizes her as faithful, but recognition of fruits tells us about her standing and her charity, not about the doxastic content of her faith. Her own self‑report, 'I trust, but I cannot claim to know,' is a report of a lack of assurance, which the tradition has long treated as compatible with real faith in its weak or struggling forms, yet not as the paradigm the premise describes. The Jamesian model is designed for exactly this gap: a passionally based tendency to believe that may fall short of certitude while still being belief, and so Sarah's case can be read as a case of incipient or wavering doxastic venture rather than sub‑doxastic assumption. That reading does not require any new premise. The objection shows that sub‑doxastic faith can be sincere and fruitful, which I grant, but sincerity and fruit do not by themselves establish that faith lacks belief‑components; that is the question c030 and c046 are actually answering.",
+      "why_it_failed": "The reply reinterprets Sarah's trust as already containing a belief component, but this rests on an equivocation that the objector explicitly rejects; it does not engage the self‑report that separates trust from knowledge."
+    },
+    {
+      "defender": "Objector",
+      "response": "You concede that Sarah's faith is genuine — only \"weak or struggling,\" not paradigmatic. But c030 doesn't say the sub‑doxastic view is too weak to capture the paradigm; it says it is too weak because Christian faith *involves* assurance, certitude, and belief. If Sarah's assumption‑based faith is genuinely Christian faith, the sub‑doxastic view isn't too weak — it accurately captures a real instance of what it claims to describe. Calling her faith \"weak\" concedes the point. Your re‑reading of Sarah as \"incipient doxastic venture\" presupposes that trust entails belief, but that is the very question at issue. Sarah explicitly separates trusting from knowing. She maintains a practical commitment without the doxastic attitude you attribute to her. You cannot assimilate her case to the Jamesian model by stipulating that trust is belief‑involving when her self‑report says otherwise.",
+      "why_it_failed": "The objection pinpoints the core disagreement: the objector's evidence (Sarah's self‑report) directly contradicts the defender's move to treat trust as belief, showing the revised premise is not yet justified."
+    },
+    {
+      "defender": "Defender A",
+      "response": "You are right that my earlier reply leaned on calling Sarah's faith 'weak or struggling,' and that this concession is awkward if her faith is fully Christian faith. Let me be precise about what c030 claims. It says Christian faith involves assurance, certitude and belief rather than mere assumption, and c046 adds that doxastic venture is the contentious overbelief, not overassumption. So the premise is about the doxastic content the tradition's account of justifying faith requires, not about whether a given believer's standing is secure. Sarah's bishop tracks fruits and charity, not that her mere assumption exhausts faith's normative content. Your strongest move is the self‑report: Sarah separates trusting from knowing, and I cannot stipulate that trust is belief‑involving to rescue c030. I concede that the argument as stated does not survive this case. If Sarah's sub‑doxastic faith is genuinely Christian faith, then c030's 'involves assurance' is false of the general case, or at least needs restriction. The argument would need a premise that restricts the requirement to a core that the tradition treats as normative, and that the Jamesian model then has to supply, not one that makes sub‑doxastic faith a deficient instance.",
+      "why_it_failed": "The concession acknowledges the failure but offers only a vague restriction, leaving the normative core undefined and providing no argument that the Jamesian model uniquely satisfies it."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Read in context, the argument treats assurance as a desideratum of Christian faith, not a necessary feature of every believer's psychology. Sarah's sub‑doxastic trust is a genuine but attenuated instantiation: her community affirms her hope and charity, not that her mere assumption exhausts faith's normative content. The Jamesian model can accommodate both her struggle and the common view that faith involves certitude, whereas the sub‑doxastic view cannot explain why assurance is ever sought. Still, the objection lands: premise [W2124966002.c030] overstates by implying no genuine Christian faith operates sub‑doxastically.\n\nRevised premise: An attenuated sub‑doxastic view of faith is too weak because the normative concept of Christian faith includes assurance and certitude as desiderata, which the sub‑doxastic view cannot accommodate even though some recognized instances of faith may fall short of them.",
+      "why_it_failed": "The reply shifts the premise to a weaker, desideratum‑based claim but does not demonstrate why the Jamesian model uniquely accounts for the desideratum, leaving the central comparative argument unsupported."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W4394980009.c044",
+      "paper_id": "oa:W4394980009",
+      "title": "Pascal’s Wager and Its Postmodern Counterpart",
+      "authors": [
+        "Bill Nyman"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.19108/koers.89.1.2505",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Postmodern theology holds that the beauty of faith lies in its lack of absoluteness and certainty."
+    },
+    {
+      "record_id": "W7170998925.a3",
+      "paper_id": "oa:W7170998925",
+      "title": "Would a Rational God Endorse Faith Beyond Evidence - 22",
+      "authors": [
+        "Phil Stilwell"
+      ],
+      "year": null,
+      "url": "https://philpapers.org/rec/STIWAR",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "title": "Rational Faith and Justified Belief",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199672158.003.0003",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.45,
+  "records_searched": 2340,
+  "nearest": [
+    {
+      "record_id": "W4394980009.c044",
+      "paper_id": "oa:W4394980009",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "Postmodern theology holds that the beauty of faith lies in its lack of absoluteness and certainty.",
+      "title": "Pascal’s Wager and Its Postmodern Counterpart"
+    },
+    {
+      "record_id": "W7170998925.a3",
+      "paper_id": "oa:W7170998925",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Would a Rational God Endorse Faith Beyond Evidence - 22"
+    },
+    {
+      "record_id": "abs:oa:W104223030",
+      "paper_id": "oa:W104223030",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Rational Faith and Justified Belief"
+    }
+  ],
+  "open_questions": [
+    "How can a normative account of Christian faith distinguish between desiderata (ideal features) and necessary conditions for genuine faith?",
+    "Does the Jamesian doxastic‑venture model adequately explain believers who lack certitude without collapsing into a sub‑doxastic assumption view?",
+    "What epistemic weight should the observable fruits of faith (hope, charity, perseverance) have in assessing the doxastic status of a believer's faith?",
+    "Can a revised premise that limits the requirement of assurance to a 'core' of normative doctrine be defended without circularly presupposing the Jamesian model?"
+  ],
+  "paper_direction": "A paper here would argue that the debate over the doxastic content of Christian faith hinges on whether assurance and certitude are normative desiderata or necessary conditions for authentic faith. It would first reconstruct the Jamesian doxastic‑venture model, emphasizing its claim that faith is a passionally motivated tendency to believe that may fall short of full certainty yet remains belief. The paper would then critically assess the revised premise suggested by the defenders, evaluating whether the tradition indeed treats assurance as a core requirement or merely an ideal. Anticipating the strongest defender reply—that the Jamesian model uniquely accommodates both the normative ideal and lived cases of sub‑doxastic believers—the paper would need to show either (a) that the Jamesian model fails to preserve the epistemic distinction between trust and belief, or (b) that an alternative model can account for the normative role of assurance without demanding full doxastic certainty. The argument would conclude by proposing a refined account of Christian faith that integrates normative desiderata with a spectrum of doxastic attitudes, thereby resolving the tension highlighted by Sarah's case.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "The objection runs together lack of certitude/knowledge with lack of belief, and it targets a universal necessary-condition reading rather than the paradigm-oriented 'involves' claim the argument actually uses, so it is only loosely aimed at c030.",
+      "robustness": "The obvious reply is that Sarah's report is compatible with belief held venturesomely, and the reply that her case is non-paradigmatic is also available. The direction's options (a) and (b) are too generic to answer either, and the transcript's verdict that the defender 'equivocated' arguably gets the equivocation backwards.",
+      "significance": "Even if it succeeded, the paper would largely restate the well-established distinction between doxastic and non-doxastic propositional faith, a debate already developed in detail, so it would at most be a minor refinement.",
+      "specificity": "The research question is clear, but the proposed thesis ('a refined account integrating desiderata with a spectrum of doxastic attitudes') is underdetermined, and the plan offers disjunctive goals rather than a definite argument or a well-constructed case."
+    },
+    "strongest_objection": "The Sarah case does not show what it needs to show. Her self-report, 'I trust, but I cannot claim to know,' disclaims knowledge and certitude, not belief. Believing a proposition one cannot claim to know is exactly what a doxastic venture is on the Jamesian/Bishop model, so the case is at least as well read as overbelief without knowledge as it is as sub-doxastic assumption. The objection also stipulates rather than argues that her attitude is non-doxastic. Even granting that, c030 and c047 concern the common or paradigm conception of Christian faith ('involves'). A single recognized sub-doxastic believer does not show that this conception lacks a belief component. That reading is one Bishop can accept while still holding that non-doxastic faith is a deficient case.",
+    "reply_available": false,
+    "what_it_needs": "The paper must first establish independently that Sarah's attitude is non-doxastic, not merely uncertain or short of knowledge. It must then engage the existing non-doxastic faith literature (Alston on acceptance, Audi, Howard-Snyder, Schellenberg, McKaughan, Buchak) to show what is new beyond 'assurance is an ideal, not a necessary condition.' It also needs a definite thesis about whether c030 is false or merely needs restricting, with an argument for that thesis.",
+    "summary": "As it stands this would be rejected: the central case confuses lacking certitude with lacking belief, and the direction rehearses the existing doxastic vs. non-doxastic faith debate without a distinctive thesis.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:29:12.788110+00:00"
+  },
+  "revision": {
+    "research_question": "Does the paradigm of Christian faith require belief held with assurance or certitude as a constitutive component, or can faith that operates as assumption without belief be genuinely Christian, if deficient?",
+    "paper_direction": "A paper here would argue that premise c030 should be restricted rather than rejected, and that the restriction changes what the Sarah case can show. The paper first fixes an independent criterion for a doxastic attitude: a subject believes p only if p functions for her as settled-true in theoretical and practical reasoning, and she revises p in belief's characteristic way when given counterevidence, treating not-p as a reason for surprise or inquiry. Self-report is evidence for this profile but does not settle it. An attitude adopted as a working assumption, used to guide practice without functioning as settled-true in theoretical reasoning, is non-doxastic by this criterion. Sarah's 'I trust, but I cannot claim to know' disclaims knowledge and certitude. Whether it also disclaims belief is a question the criterion answers, and the paper does not presuppose the answer. The paper then separates two readings of c030's 'too weak'. On the constitutive reading, any faith lacking a belief component is not faith at all. On the paradigm-normative reading, assurance and belief mark the standard against which faith is assessed, and a faith lacking them is deficient but still faith. The paper argues that the constitutive reading is refuted by any case that meets the non-doxastic criterion, and that the paradigm claim does not license it. The paradigm-normative reading survives, and it is the only reading on which the bishop's verdict of genuine but deficient faith is coherent. The thesis is therefore that c030 is false as a necessary-condition claim and true only as a claim about the paradigm, with the Sarah case refuting the first and leaving the second intact. The paper then engages the existing non-doxastic faith literature the referee identifies, to show what the criterion adds beyond the thesis that assurance is an ideal rather than a necessary condition. Its added content is a test that separates non-doxastic assumption from overbelief without knowledge, which the Jamesian model must pass to remain a rival account. If Sarah fails the test and is overbelieving, her case is compatible with c030, and the paper says so and rests on the paradigm reading.",
+    "reply_to_strongest_objection": "The paper answers the referee in three steps. First, it grants that Sarah's self-report disclaims knowledge and certitude, not belief, so it does not rest the non-doxastic claim on that report. It applies a functional criterion: whether p operates as settled-true in her theoretical reasoning and is revised in belief's characteristic way on counterevidence. It treats the case as non-doxastic only if the criterion is met. Otherwise it treats the case as overbelief, which leaves c030 untouched. Second, it separates the constitutive reading of 'involves' from the paradigm-normative reading, and argues that a non-doxastic Sarah refutes only the first. Third, it accepts that a paradigm claim is compatible with the bishop's view that non-doxastic faith is deficient, and makes that compatibility the surviving thesis rather than conceding that the case is trivial. The contribution lies in the criterion and the reading split, not in the doxastic/non-doxastic distinction itself.",
+    "what_changed": "The open-ended 'spectrum of doxastic attitudes' thesis is replaced by a narrowed claim that c030 is false as a constitutive necessary condition and true only as a paradigm claim, backed by an independent functional criterion for non-doxastic assumption.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:31:01.754083+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The two-readings split is internally clear, but it aims at a necessary-condition claim stronger than what c030 states in context, which is a comparative claim about phenomenological fit.",
+        "robustness": "The direction anticipates the triviality worry only by asserting that its contribution lies in the criterion and the reading split. It never shows the criterion is novel, or that refuting the constitutive reading damages an argument that does not rely on it.",
+        "significance": "If the paper succeeded, it would leave c030 intact on its most plausible reading and leave the inference to c047 untouched. That is a minor clarification, not a change to the debate.",
+        "specificity": "It has a definite thesis, a stated functional criterion, a two-reading analysis, and an explicit fallback, though the decisive application to Sarah is stipulative and no textual analysis of Bishop is planned."
+      },
+      "strongest_objection": "The constitutive reading of c030 is a straw target. Bishop's case against the sub-doxastic view is comparative and phenomenological: it is better fitted to the common view of faith as involving assurance. It is not a necessary-condition claim that acceptance-based faith is not faith at all, and Bishop himself allows non-doxastic acceptance as a lesser form. The surviving 'paradigm-normative' reading is therefore just Bishop's position. The functional test for belief versus working assumption is also not new. It restates the established belief/acceptance distinction of Cohen, Alston and Bratman, already applied to faith by Audi, Howard-Snyder, Schellenberg and McKaughan. Finally, because Sarah is a stipulated fictional case, the criterion cannot settle her status; the author simply stipulates which side she falls on. So the paper's net result is to refute a view no one holds and restate the target argument's own conclusion.",
+      "reply_available": false,
+      "what_it_needs": "The paper must show from the text that Bishop's c030 actually depends on the constitutive reading. Alternatively, it must show that the paradigm-normative reading cannot support the comparative step to c047. For example, it could argue that a sub-doxastic theorist can equally treat assurance as an ideal, so 'accommodating' the common view no longer favours the Jamesian model. It must also show that its belief/assumption criterion does work the Cohen/Alston acceptance literature does not already do.",
+      "summary": "A tidy but largely redundant paper: it refutes a reading of the premise Bishop does not hold and lands on his own view, so it needs to be redirected at the comparative step to c047 before it is worth writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:31:22.069765+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

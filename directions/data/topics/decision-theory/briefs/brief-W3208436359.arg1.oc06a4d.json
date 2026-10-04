@@ -1,0 +1,196 @@
+{
+  "id": "brief-W3208436359.arg1.oc06a4d",
+  "objection_id": "W3208436359.arg1.oc06a4d",
+  "research_question": "Does conservativeness over finite-valued decision problems suffice to establish surreal numbers as a foundation for transfinite decision theory, or must the surreal theory independently vindicate its strict preferences over gambles with infinitesimal probabilities?",
+  "argument": {
+    "id": "W3208436359.arg1",
+    "title": "Surreal Numbers Ground Transfinite Decision Theory",
+    "paper_id": "oa:W3208436359",
+    "paper_title": "Surreal decisions",
+    "premises": [
+      {
+        "id": "W3208436359.c001",
+        "text": "Expected utility theory is fruitful and elegant in the finite realm, but attempts to generalize it to infinite values have produced many paradoxes.",
+        "quote": "Although expected utility theory has proven a fruitful and elegant theory in the finite realm, attempts to generalize it to infinite values have resulted in many paradoxes."
+      },
+      {
+        "id": "W3208436359.c006",
+        "text": "Decision problems with transfinite utilities are no less sensible or well‑formed than those with only finite utilities.",
+        "quote": "We find decision problems with transfinite utilities (or transfinite state spaces) to be no less sensible or well‑formed than those involving only finite ones."
+      },
+      {
+        "id": "W3208436359.c007",
+        "text": "Standard expected utility theory is not well‑equipped to handle transfinite utilities.",
+        "quote": "Unfortunately, standard expected utility (EU) theory is not well‑equipped to handle them."
+      },
+      {
+        "id": "W3208436359.c008",
+        "text": "The problem’s origin lies in the limitation of mathematical representations of infinite utilities, not in the conceptual framework of EU theory.",
+        "quote": "After examining the structure of infinitistic decision puzzles, we observe that the origin of the problem lies not in the general conceptual framework of EU theory but in the limitation of the mathematical representations of infinite utilities."
+      },
+      {
+        "id": "W3208436359.c010",
+        "text": "A decision theory framed entirely in Conway’s surreal numbers serves as a conservative extension of finitist EU theory.",
+        "quote": "We therefore offer, as a conservative extension of finitist EU theory and a solution to this problem, a decision theory framed entirely in John Conway’s surreal numbers."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3208436359.arg1.mp",
+      "text": "If a decision theory framed entirely in surreal numbers is a conservative extension of finitist EU theory, then surreal numbers provide a firm mathematical foundation for transfinite decision theory."
+    },
+    "conclusion": {
+      "id": "W3208436359.c002",
+      "text": "Using John Conway’s surreal numbers provides a firm mathematical foundation for transfinite decision theory."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3208436359.c010",
+    "text": "A decision theory framed entirely in Conway’s surreal numbers serves as a conservative extension of finitist EU theory."
+  },
+  "objection": "Ann must choose between Gamble X and Gamble Y. Both pay only finite amounts, and both have finite expected utility of exactly 5. X pays 5 for certain. Y pays 5 with probability 1, plus, with probability 1/ω (an infinitesimal), an additional payoff of 1 to the agent. Finitist EU theory counts the two options as tied, so it permits Ann to pick either. Every payoff and probability she faces is either finite or infinitesimal, and all of her expected utilities are finite reals. A surreal-framed theory computes Y's expectation as 5 + 1/ω, so it ranks Y strictly above X. That verdict compares two options whose finitist expectations are both 5, so the surreal theory issues a strict preference the finitist theory does not, and the extension is not conservative over finitist decision claims.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Conservativeness is a claim only about the finite fragment of decision problems whose payoffs and probabilities are finite reals; Ann's gamble contains an infinitesimal probability, so it lies outside the fragment the finitist theory can express, and the finitist tie is merely a verdict about the truncated problem. A conservative extension may add strict preferences exactly where the base theory is silent.",
+      "why_it_failed": "The objector accepted that this restricted reading preserves agreement on finite-valued problems but showed it renders the conservativeness claim too weak to support the foundation claim that surreal numbers provide a firm foundation for transfinite decision theory; Defender A conceded that this reading cannot carry the conclusion and that an additional normative premise is needed to warrant surreal strict preferences over infinitesimal-probability options."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The finitist tie is an artifact of finitist theory's inability to register infinitesimal probabilities, not a judgment about a shared gamble; the surreal theory preserves every finitist preference among properly finitist gambles, and its strict ranking of Y over X is a feature that captures distinctions finitist theory must collapse, which is precisely why transfinite decision theory needs a richer number system.",
+      "why_it_failed": "The objector replied that this restricts conservativeness to finite state spaces, leaving the premise too weak to support the foundation claim, and that recharacterizing a finitist permissive verdict as an expressive collapse does not demonstrate preservation of finitist verdicts; Defender B offered no valid close."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2201076590.a3",
+      "paper_id": "oa:W2201076590",
+      "title": "Blaise and Bayes",
+      "authors": [
+        "Alan Hájek"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199604760.003.0009",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The paper proposes new decision rules for comparing acts with infinite or indeterminate expected utility."
+    },
+    {
+      "record_id": "W2030006177.a2",
+      "paper_id": "oa:W2030006177",
+      "title": "Pascal's wager revisited",
+      "authors": [
+        "Jeff Jordan"
+      ],
+      "year": 1998,
+      "url": "https://doi.org/10.1017/s0034412598004569",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "A transfinite version of the wager conflicts with standard decision theory, so one should adopt only a finite version."
+    },
+    {
+      "record_id": "abs:oa:W4417062856",
+      "paper_id": "oa:W4417062856",
+      "title": "Pascalian Expectations and Explorations",
+      "authors": [
+        "Alan Hájek",
+        "Elizabeth Grace Jackson"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.1002/9781394160631.ch29",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "We discuss infinite and finite utilities and zero, infinitesimal, extremely low, imprecise, and undefined probabilities (probability gaps)."
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "W2201076590.a3",
+      "paper_id": "oa:W2201076590",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The paper proposes new decision rules for comparing acts with infinite or indeterminate expected utility.",
+      "title": "Blaise and Bayes"
+    },
+    {
+      "record_id": "W2030006177.a2",
+      "paper_id": "oa:W2030006177",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "A transfinite version of the wager conflicts with standard decision theory, so one should adopt only a finite version.",
+      "title": "Pascal's wager revisited"
+    },
+    {
+      "record_id": "abs:oa:W4417062856",
+      "paper_id": "oa:W4417062856",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "We discuss infinite and finite utilities and zero, infinitesimal, extremely low, imprecise, and undefined probabilities (probability gaps).",
+      "title": "Pascalian Expectations and Explorations"
+    }
+  ],
+  "open_questions": [
+    "Is a finitist tie on a truncated expectation a genuine verdict that any extension must preserve, or merely an expressive silence that a richer theory may override?",
+    "What normative principle could justify strict preferences in surreal decision theory when the expected utilities differ only by an infinitesimal amount?",
+    "Can a decision theory count as a conservative extension of finitist EU theory if it issues strict preferences on gambles that finitist theory treats as permissively tied?"
+  ],
+  "paper_direction": "A paper here would argue that conservativeness over the finite fragment of expected utility theory is insufficient to justify surreal numbers as a foundation for transfinite decision theory, because the surreal theory's strict preferences over infinitesimal-probability gambles contradict finitist permissive verdicts without independent normative warrant. The case would focus on the Ann gamble, in which both options have finite expectations and finitist theory permits either choice, whereas surreal theory strictly prefers the option with an infinitesimally higher expectation. The strongest reply to anticipate is that finitist theory cannot express infinitesimal probabilities, so its tie is merely an artifact of expressive limitation rather than a verdict that a conservative extension must preserve. The paper would need to show that either this finitist permissiveness constitutes a binding constraint on any legitimate extension, or that surreal decision theory can supply a non-question-begging normative argument for why infinitesimally superior expectations should ground strict preference.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets a stronger claim than c010: agreement on problems containing infinitesimal probabilities, which finitist theory cannot express. It also depends on an unstated truncation step to manufacture the 'finitist tie'. The proposed paper quietly shifts its target to the unstated bridge premise without saying so.",
+      "robustness": "The obvious reply (out-of-language case) was conceded rather than answered in the transcript. The demand for an independent warrant is met immediately by weak dominance, which the direction never mentions.",
+      "significance": "Showing that conservativeness alone underdetermines foundational status is a modest, largely expected point. Surreal and hyperreal proponents already defend infinitesimal-probability strict preferences on dominance grounds, so success would refine the debate rather than reshape it.",
+      "specificity": "There is a definite case and a disjunctive goal. But the thesis wavers between refuting c010 and attacking the bridge premise, and no argument is sketched for either horn of 'what must be shown'."
+    },
+    "strongest_objection": "The Ann case lies outside the base language: finitist EU takes real-valued probabilities as inputs, so a gamble with probability 1/ω is not a finitist decision problem at all. The 'finitist tie' exists only after rounding 1/ω to 0, and that truncation step is not part of finitist EU theory. A conservative extension must agree with the base theory only on sentences the base theory can express, so the case fails to touch c010 as stated (this is Defender A's point, which the objector actually accepted). Worse, the paper asks for an independent warrant for ranking Y above X, but one already exists: Y weakly dominates X state by state. Weak dominance, and the regularity and lexicographic-probability literatures that motivate infinitesimals precisely to honour it, supplies the non-question-begging normative principle the paper claims is missing.",
+    "reply_available": false,
+    "what_it_needs": "The paper must drop the claim that c010 is false on its stated reading. It should either (a) argue explicitly against the bridge premise, that conservativeness plus expressive enrichment yields a 'firm foundation', or (b) argue that weak dominance, the principle that motivates ranking Y above X, fails or conflicts with other surreal verdicts. Either route must engage Chen & Rubio's own treatment of infinitesimal probabilities, lexicographic expected utility (Hausner, Fishburn, Blume–Brandenburger–Dekel), and the regularity debate (Easwaran, Pruss, Williamson).",
+    "summary": "As framed, a competent referee would dismiss this: the counterexample sits outside the finitist language, and the missing 'normative warrant' is plain weak dominance; only a reframed attack on the conservativeness-to-foundation inference, engaging the dominance and regularity literature, might yield a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:18:16.221382+00:00"
+  },
+  "revision": {
+    "research_question": "Does conservativeness over the finitist base language suffice to make Conway's surreal numbers a firm foundation for transfinite decision theory, or must the surreal theory independently warrant the verdicts it reaches only in its enriched language, such as strict preference over infinitesimal-probability gambles?",
+    "paper_direction": "A paper here would argue that conservativeness over the finitist base language does not, by itself, establish surreal numbers as a firm foundation for transfinite decision theory. The Ann case cannot refute the conservativeness claim as stated (c010), because finitist EU takes only real-valued probabilities as inputs, so the 'finitist tie' between X and Y is produced by rounding 1/omega to 0, a step outside the base theory. The paper therefore drops the claim that c010 is false and narrows its target to the unstated bridge premise (arg1.mp): that conservativeness plus expressive enrichment yields a firm foundation. It argues that the bridge fails because the enriched verdicts, including Y's strict preference over X, need warrant of their own. The paper takes the referee's proposed warrant seriously, namely weak dominance, which Y satisfies state by state. It then tests whether weak dominance can carry that burden. The test engages Chen & Rubio's treatment of infinitesimal probabilities, lexicographic expected utility (Hausner, Fishburn, Blume-Brandenburger-Dekel), and the regularity debate (Easwaran, Pruss, Williamson). The paper examines whether dominance-based strict preference conflicts with other surreal verdicts, and whether the regularity and lexicographic literatures that motivate infinitesimals already supply a non-question-begging principle or merely relocate the dispute. The paper's contribution is to show that foundational status requires an account of enriched verdicts beyond conservativeness, and to identify what that account must contain. It does not claim that surreal decision theory is refuted.",
+    "reply_to_strongest_objection": "The paper concedes the out-of-language point. Conservativeness quantifies over sentences the base theory can express, and the Ann case is a problem with infinitesimal probabilities, which finitist EU cannot state, so the case does not falsify c010. The paper's reply is a distinction between base-language agreement and enriched-language verdicts. It accepts that the surreal theory is conservative on finite problems and holds that the bridge premise, which would move from that conservativeness to foundational status, is the claim that needs independent support. On the demand for warrant, the paper grants that weak dominance is the natural candidate. It argues that dominance is a necessary component of the warrant and that the paper must show whether it is sufficient, through its interaction with the other surreal verdicts and with the lexicographic and regularity positions.",
+    "what_changed": "The revision drops the claim that c010 is false, which the out-of-language point defeats, and redirects the thesis to the bridge premise, using weak dominance as the warrant the paper must evaluate.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:20:24.612305+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 4,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "After conceding that the Ann case falls outside the base language, the direction aims consistently at a definite target, the move from conservativeness to foundational status, and it stops claiming c010 is false.",
+        "robustness": "Retreating to arg1.mp leaves the paper aimed at a reconstructed premise the original authors do not rely on, and the direction never addresses the representation theorem that supplies the 'independent warrant' it says is missing.",
+        "significance": "Showing that conservativeness alone does not confer foundational status is close to a truism, and the question of warrant for infinitesimal strict preferences is well trodden in non-Archimedean and lexicographic decision theory, so success would be at most a modest clarification.",
+        "specificity": "It has a definite thesis, a target premise, a candidate warrant (weak dominance), and named literatures to test it against, but it does not say what specific conflict or failure it expects to find."
+      },
+      "strongest_objection": "The bridge premise the paper attacks (arg1.mp) is the lab's own reconstruction, not Chen & Rubio's argument. They do not rest foundational status on conservativeness alone. They give a surreal analogue of the von Neumann–Morgenstern representation theorem, whose axioms (including continuity reformulated over the surreals) are the independent warrant for enriched verdicts such as Y over X. So 'conservativeness doesn't suffice' attacks a position no one holds. The residual question, whether infinitesimal-difference strict preferences are warranted, is already answered in the lexicographic EU literature: Hausner, Fishburn, Blume-Brandenburger-Dekel, and Hammond show such orderings are equivalent to lexicographic expected utility and are grounded in weak dominance plus dropping Archimedean continuity.",
+      "reply_available": false,
+      "what_it_needs": "It must engage Chen & Rubio's actual axiomatic justification, the surreal representation theorem and its non-Archimedean continuity axiom, and locate a specific axiom whose normative credentials are doubtful. It must also show a concrete conflict among surreal verdicts, for example between dominance-based strict preference and some other surreal verdict, that the lexicographic literature has not already resolved.",
+      "summary": "A clean, honest retreat from a failed counterexample, but the remaining thesis attacks a premise the authors never relied on and ignores their axiomatic justification, so in its current form it would not survive a referee familiar with Chen & Rubio and lexicographic EU.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:20:40.918281+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

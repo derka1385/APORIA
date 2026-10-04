@@ -2,6 +2,23 @@
 
 **Challenge:** 3 — Agentic Scientific Discovery
 
+## The combined lab (APORIA + research directions)
+
+**One-liner:** APORIA is a research-directions finder for philosophy: differently built AI reasoners attack the
+arguments of philosophy papers, every objection is checked against the literature and tried against two defenders,
+and the lab learns which way of thinking finds open questions, then hands students graded research directions.
+
+**For Challenge 3:** research (corpus, argument graphs with verbatim quotes) → hypotheses (objections from APORIA's
+five cognitive profiles × up to eight model families) → experiments (adversarial trials, Referee-labelled, citations
+verified) → learning (the Director's in-session value of each way of thinking; revised premises attacked again) →
+the next experiment (survival × novelty × dependence + curiosity) → research briefs graded by an Assessor.
+
+**Measured:** prior-art recall@5 86% vs 16% for keyword search (n=50; replicated 78% vs 28% on a second topic);
+the Referee caught 10/10 deliberate misreadings; APORIA's own 129 reasoner objections on personal identity scored
+mean novelty 0.38 against the literature (13% above 0.5), so divergence alone does not find new questions; the
+finder's gauntlet and prior-art check do the filtering. Topics run: divine hiddenness, decision theory in philosophy
+of religion, divine simplicity.
+
 ## One-liner
 APORIA is an AI research lab that makes *how an agent thinks* the experimental variable. Five reasoners on one LLM get
 the same question and differentiated cognitive policies, and the lab measures how differently they actually reasoned.

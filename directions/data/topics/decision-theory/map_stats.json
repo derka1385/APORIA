@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-10-04T10:09:10.039365+00:00",
+  "targets": [
+    {
+      "target": "oa-W2995194683",
+      "claims": 62,
+      "arguments": 2,
+      "premises": [
+        5,
+        3
+      ],
+      "valid": [
+        true,
+        false
+      ],
+      "missing_premise": [
+        false,
+        true
+      ]
+    },
+    {
+      "target": "oa-W3208436359",
+      "claims": 89,
+      "arguments": 2,
+      "premises": [
+        5,
+        4
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "oa-W4394980009",
+      "claims": 71,
+      "arguments": 2,
+      "premises": [
+        4,
+        5
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "oa-W2124966002",
+      "claims": 65,
+      "arguments": 2,
+      "premises": [
+        5,
+        5
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "oa-W1784340735",
+      "claims": 64,
+      "arguments": 2,
+      "premises": [
+        6,
+        5
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "oa-W4220703499",
+      "claims": 40,
+      "arguments": 2,
+      "premises": [
+        5,
+        2
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    }
+  ],
+  "fulltext_claims": {
+    "proposed": 438,
+    "kept": 391,
+    "drop_rate": 0.107
+  },
+  "abstract_claims": {
+    "proposed": 1320,
+    "kept": 1291,
+    "drop_rate": 0.022
+  },
+  "dropped_examples": [
+    {
+      "paper_id": "oa:W2995194683",
+      "quote": "We deny the assumption of independence.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2995194683",
+      "quote": "Consider the second-guessing-one-boxer, who convinces herself that she will choose one box. Having done so, at the moment she chooses she ... foreseeing the causal chain, the predictor links the conte",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3208436359",
+      "quote": "theorem 1 (Surreal von Neumann-Morgenstern Theorem): Let X be a finite space of lotteries, and let ⪯ be a binary relation ⊆X × X. Then ⪯ admits an expected utility representation U : X → No such that ",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3208436359",
+      "quote": "If we assume the Principle of Regularity (the thesis that we should assign probability 1 only to logical truths and 0 only to contradictions), then any act should have a non-zero probability for the e",
+      "reason": "quote > 2 sentences"
+    },
+    {
+      "paper_id": "oa:W4394980009",
+      "quote": "The Wager argument has been wrongly appropriated by postmodern theologians to further their theological viewpoints, playing in the hands of the so-called “Many Gods Objection.”",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2124966002",
+      "quote": "And a third doubt is linked with the second: if faith under the intended conception has to be broadly reasonable, how can doxastically venturesome faith qualify, if the venture takes the believer beyo",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2124966002",
+      "quote": "Thus, believing-acceptance beyond what we find to be rationally justifiable is entirely possible, provided the attitude of holding true required for belief has passional origins.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2124966002",
+      "quote": "If I say ‘Either accept this truth or go without it’, I put you on a forced option, for there is no standing place outside of the alternative.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2124966002",
+      "quote": "The Jamesian defence of ethically permissible doxastic venture applies only to options which are evidentially undecidable (condition (1) above).",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2124966002",
+      "quote": "Our acceptance of them may count as doxastic venture … but it is a ‘venture’ which is normally irresistible – a venture which requires no risk taking … therefore, in the ordinary sense, no venture at ",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W4220703499",
+      "quote": "God knows that S chooses B at T2 because T2, like all moments of time, is present to Him. ... strictly speaking, God’s knowledge of the agent’s choice is not foreknowledge, but rather eternal knowledg",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W4220703499",
+      "quote": "Church tradition has held divine foreknowledge of future contingents to be non‑negotiable.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W432758985",
+      "quote": "the “Chancy Dog Problem,” ... shows I‑CDT to give what I argue to be the correct recommendation in a chancy universe, where K‑CDT gives the incorrect one.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W432758985",
+      "quote": "The other example, the “Faulty Signal Problem,” ... reveals K‑CDT to fail to provide a recommendation even in certain nonchancy universes, particularly those that exhibit what I refer to as “counterfa",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W7141780836",
+      "quote": "This is the “Deliberationnal Causal Decision Theory” (DCDT) ... appears to be an evolution of CDT.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2027413261",
+      "quote": "Two modern short stories present wagerers who lose: Granny Weatherall ... and The Misfit ...",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2029177901",
+      "quote": "Lankford's essential empirical argument is that suicide attacks are caused by suicidality.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2170671083",
+      "quote": "The canonical version argues that Christian theism should be chosen because of the potentially infinite utility of belief in God, which, if true, leads to eternal life.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2161681727",
+      "quote": "The canonical version holds that one should cultivate religious belief because of the possibility of an infinite reward which, even if discounted by a tiny probability that God exists, swamps any expe",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4394922109",
+      "quote": "it is vulnerable to the many-gods objection to traditional versions of Pascal's wager.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4394922109",
+      "quote": "I argue that this pragmatic argument against nihilism is unconvincing because it is vulnerable to the many-gods objection to traditional versions of Pascal's wager.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4406867156",
+      "quote": "This chapter will provide a discussion of contemporary objections aimed at Aquinas, ... and then a discussion of how Aquinas avoids contemporary objections.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2062821858",
+      "quote": "It is necessary for God to create the best, but not necessary which is the best possible, because the criterion for judging perfection can itself be contingent.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4388338822",
+      "quote": "if there is a best world for God to create he would of necessity create the best world",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2032794600",
+      "quote": "His discussion is meant to be neutral between three different views of God's relationship to human freedom: theological determinism, Molinism, and open theism",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2765559895",
+      "quote": "G. W. Leibniz is noted for his metaphysical optimism, that is, his belief that this is the best possible world, chosen and created among all the others by God because it possesses the highest degree o",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4301386533",
+      "quote": "the culpability of man in the perpetration of evil is evidenced, ... God remains exempted from being responsible",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W1950665994",
+      "quote": "the creation of the best possible world is not just a matter of moral obligation, but also a matter of logic. ... would imply a logical contradiction.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W4375944562",
+      "quote": "The human soul’s experience of external and internal evil facilitates its recognition of and desire for goodness and perfection... provides occasions for the soul’s spiritual progress.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2498859243",
+      "quote": "heret... should not be the object of persecution ... as it was a part of the best possible world.",
+      "reason": "abstract quote"
+    }
+  ],
+  "claims_indexed": 1682,
+  "abstracts_indexed": 648,
+  "embedder": "bge-small-en-v1.5 (local)",
+  "llm": {
+    "calls": 156,
+    "cache_hits": 0,
+    "json_failures": 1,
+    "errors": 0
+  },
+  "budget": {
+    "spent_usd": 0.5833,
+    "limit_usd": 20.0,
+    "cli_calls": 1470,
+    "cli_limit": 4000,
+    "notional_cli_usd": 18.8923
+  }
+}

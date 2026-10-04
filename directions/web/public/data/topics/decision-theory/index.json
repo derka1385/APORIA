@@ -1,0 +1,354 @@
+{
+ "generated_at": "2026-10-04T11:22:08.734062+00:00",
+ "runs": [
+  {
+   "run_id": "run-oa-W1784340735",
+   "target_id": "oa-W1784340735",
+   "kind": "classic",
+   "title": "A Theological Argument for an Everett Multiverse",
+   "paper_id": "oa:W1784340735",
+   "argument_title": "Best‑Possible‑World Theodicy",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 5,
+    "misreading": 1
+   },
+   "briefs": [
+    "brief-W1784340735.arg1.o9562c1",
+    "brief-W1784340735.arg1.o8ee18f",
+    "brief-W1784340735.arg1.o38f866"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:08:45.669709+00:00"
+  },
+  {
+   "run_id": "run-oa-W2124966002",
+   "target_id": "oa-W2124966002",
+   "kind": "classic",
+   "title": "Faith as doxastic venture",
+   "paper_id": "oa:W2124966002",
+   "argument_title": "Jamesian doxastic venture preferred",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 4,
+    "misreading": 2
+   },
+   "briefs": [
+    "brief-W2124966002.arg1.oe8467f",
+    "brief-W2124966002.arg1.o11fa20",
+    "brief-W2124966002.arg1.o0fdac0"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:15:46.612574+00:00"
+  },
+  {
+   "run_id": "run-oa-W2995194683",
+   "target_id": "oa-W2995194683",
+   "kind": "classic",
+   "title": "The philosopher’s paradox: How to make a coherent decision in the Newcomb Problem",
+   "paper_id": "oa:W2995194683",
+   "argument_title": "Coherence-based One-Boxing Argument",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 5,
+    "misreading": 1
+   },
+   "briefs": [
+    "brief-W2995194683.arg1.o43f39a",
+    "brief-W2995194683.arg1.o773262",
+    "brief-W2995194683.arg1.o25a81e"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:12:03.389045+00:00"
+  },
+  {
+   "run_id": "run-oa-W3208436359",
+   "target_id": "oa-W3208436359",
+   "kind": "classic",
+   "title": "Surreal decisions",
+   "paper_id": "oa:W3208436359",
+   "argument_title": "Surreal Numbers Ground Transfinite Decision Theory",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "misreading": 2,
+    "revision_required": 3,
+    "rebutted": 1
+   },
+   "briefs": [
+    "brief-W3208436359.arg1.o825cfe",
+    "brief-W3208436359.arg1.oc06a4d",
+    "brief-W3208436359.arg1.o39f2d5"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:17:09.098444+00:00"
+  },
+  {
+   "run_id": "run-oa-W4220703499",
+   "target_id": "oa-W4220703499",
+   "kind": "classic",
+   "title": "Saving Eternity (and Divine Foreknowledge and Free Will): A Reply to Hasker",
+   "paper_id": "oa:W4220703499",
+   "argument_title": "Eternity Reconciles Foreknowledge and Freedom",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 3,
+    "misreading": 3
+   },
+   "briefs": [
+    "brief-W4220703499.arg1.o58586e",
+    "brief-W4220703499.arg1.o3aeab4",
+    "brief-W4220703499.arg1.ocfad31"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:12:30.651785+00:00"
+  },
+  {
+   "run_id": "run-oa-W4394980009",
+   "target_id": "oa-W4394980009",
+   "kind": "classic",
+   "title": "Pascal’s Wager and Its Postmodern Counterpart",
+   "paper_id": "oa:W4394980009",
+   "argument_title": "Prefer original Pascal over postmodern",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 4,
+    "misreading": 2
+   },
+   "briefs": [
+    "brief-W4394980009.arg1.o3c8ac1",
+    "brief-W4394980009.arg1.oa493de",
+    "brief-W4394980009.arg1.od4914e"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T11:11:35.219207+00:00"
+  }
+ ],
+ "targets": [
+  {
+   "id": "oa-W2995194683",
+   "paper_id": "oa:W2995194683",
+   "kind": "classic",
+   "title": "The philosopher’s paradox: How to make a coherent decision in the Newcomb Problem",
+   "authors": [
+    "Carl Hoefer",
+    "Christopher Viger",
+    "Daniel Viger"
+   ],
+   "year": 2019,
+   "published": "2019-12-05",
+   "url": "https://doi.org/10.1387/theoria.20040",
+   "text_path": "data/raw/text/oa_W2995194683.txt",
+   "thesis": "One-boxing is the rational choice in Newcomb's Problem because a decision must be psychologically coherent over time, linking the agent's choice to the predictor's prediction.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "One-boxing is the rational choice in Newcomb's Problem because a decision must be psychologically coherent over time, linking the agent's choice to the predictor's prediction.",
+    "topic_relevance": 1,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “Newcomb's problem”; open-access full text (53,273 chars); argues for a thesis; topic relevance 1/3 (touches philosophy of religion or decision theory); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W3208436359",
+   "paper_id": "oa:W3208436359",
+   "kind": "classic",
+   "title": "Surreal decisions",
+   "authors": [
+    "Eddy Keming Chen",
+    "Daniel Rubio"
+   ],
+   "year": 2018,
+   "published": "2018-06-05",
+   "url": "https://doi.org/10.1111/phpr.12510",
+   "text_path": "data/raw/text/oa_W3208436359.txt",
+   "thesis": "Surreal numbers provide a sound foundation for transfinite decision theory, showing that while Pascal's Wager is mathematically coherent, it does not deliver a rationally compelling argument for religious belief.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "Surreal numbers provide a sound foundation for transfinite decision theory, showing that while Pascal's Wager is mathematically coherent, it does not deliver a rationally compelling argument for religious belief.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “Pascal's wager”; open-access full text (61,291 chars); argues for a thesis; topic relevance 3/3 (directly about decision theory and God (Newcomb-type problems, Pascal's wager, God's choice among worlds)); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W4394980009",
+   "paper_id": "oa:W4394980009",
+   "kind": "classic",
+   "title": "Pascal’s Wager and Its Postmodern Counterpart",
+   "authors": [
+    "Bill Nyman"
+   ],
+   "year": 2024,
+   "published": "2024-04-04",
+   "url": "https://doi.org/10.19108/koers.89.1.2505",
+   "text_path": "data/raw/text/oa_W4394980009.txt",
+   "thesis": "When read in its proper context, Pascal’s Wager vindicates Christianity and the postmodern reinterpretations of it are erroneous.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "When read in its proper context, Pascal’s Wager vindicates Christianity and the postmodern reinterpretations of it are erroneous.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “many-gods objection”; open-access full text (39,567 chars); argues for a thesis; topic relevance 3/3 (directly about decision theory and God (Newcomb-type problems, Pascal's wager, God's choice among worlds)); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W2124966002",
+   "paper_id": "oa:W2124966002",
+   "kind": "classic",
+   "title": "Faith as doxastic venture",
+   "authors": [
+    "John Bishop"
+   ],
+   "year": 2002,
+   "published": "2002-11-21",
+   "url": "https://doi.org/10.1017/s0034412502006121",
+   "text_path": "data/raw/text/oa_W2124966002.txt",
+   "thesis": "The doxastic‑venture model of faith—believing beyond what is rationally justified—is both possible and ethically acceptable, and it is preferable to Swinburne’s more austere account of reasonable faith.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "The doxastic‑venture model of faith—believing beyond what is rationally justified—is both possible and ethically acceptable, and it is preferable to Swinburne’s more austere account of reasonable faith.",
+    "topic_relevance": 2,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “decision theory and God”; open-access full text (59,023 chars); argues for a thesis; topic relevance 2/3 (applies decision-theoretic or rational-choice reasoning to a religious question); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W1784340735",
+   "paper_id": "oa:W1784340735",
+   "kind": "classic",
+   "title": "A Theological Argument for an Everett Multiverse",
+   "authors": [
+    "Don Nelson Page"
+   ],
+   "year": 2012,
+   "published": "2012-12-21",
+   "url": "https://doi.org/10.48550/arxiv.1212.5608",
+   "text_path": "data/raw/text/oa_W1784340735.txt",
+   "thesis": "God would prefer to create an Everett multiverse because it maximizes divine value while preserving elegant physical laws",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "God would prefer to create an Everett multiverse because it maximizes divine value while preserving elegant physical laws",
+    "topic_relevance": 2,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “God's choice of world”; open-access full text (29,453 chars); argues for a thesis; topic relevance 2/3 (applies decision-theoretic or rational-choice reasoning to a religious question); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W4220703499",
+   "paper_id": "oa:W4220703499",
+   "kind": "classic",
+   "title": "Saving Eternity (and Divine Foreknowledge and Free Will): A Reply to Hasker",
+   "authors": [
+    "Katherin A. Rogers"
+   ],
+   "year": 2022,
+   "published": "2022-03-31",
+   "url": "https://doi.org/10.18290/rf2201.5",
+   "text_path": "data/raw/text/oa_W4220703499.txt",
+   "thesis": "An eternalist view that all times exist equally makes divine foreknowledge compatible with libertarian free will",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "An eternalist view that all times exist equally makes divine foreknowledge compatible with libertarian free will",
+    "topic_relevance": 1,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, found by the search “divine foreknowledge and choice”; open-access full text (28,950 chars); argues for a thesis; topic relevance 1/3 (touches philosophy of religion or decision theory); argument clarity 2/3."
+  }
+ ],
+ "briefs": 18,
+ "trials": 36,
+ "objections": 72,
+ "headline": [
+  {
+   "label": "objections still standing or forcing a revision after both defenders",
+   "value": "24/36",
+   "source": "data/runs"
+  },
+  {
+   "label": "prior-art recall@5 (embeddings over claims)",
+   "value": "78%",
+   "source": "results/e1.json"
+  },
+  {
+   "label": "research briefs ready for human review",
+   "value": "18",
+   "source": "data/briefs"
+  }
+ ]
+}

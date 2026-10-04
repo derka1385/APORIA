@@ -2,6 +2,31 @@
 
 **An experimental AI research lab that treats *how an agent thinks* as the experimental variable.**
 
+> **One research-directions finder.** APORIA now runs its cognitive engine *and* a full dialectical lab as one loop,
+> for philosophy students who need to know what to write next. **Live:** https://derka1385.github.io/APORIA/
+>
+> 1. **Research:** OpenAlex corpus, open-access full texts; a paper's argument is rebuilt as numbered premises with
+>    verbatim quotes, and a truth table finds its hidden premise.
+> 2. **Form hypotheses, diversely:** APORIA's five cognitive profiles (explorer, formalist, skeptic, synthesizer,
+>    minimalist; Δ sets how far apart) generate the objections, each with its own kind of move, across up to eight
+>    model families (evroc + Claude).
+> 3. **Check the literature:** every objection gets a prior-art check (hybrid retrieval + a strict reranker) and a
+>    novelty score, never a novelty claim.
+> 4. **Run experiments:** a trial against two defenders from different model families; a Referee labels the outcome
+>    (misreading, known answer, rebutted, revision required, standing) and verifies every citation.
+> 5. **Learn and decide the next experiment:** the Director ranks by survival × novelty × dependence plus curiosity,
+>    and learns in-session which way of thinking is finding open questions (APORIA's learning signal); a forced
+>    revision becomes a new premise that is attacked in turn.
+> 6. **Hand over:** survivors become research briefs, graded by an Assessor and revised once; ranked by lead score
+>    (survival × novelty × quality).
+>
+> The bridge closes the loop with APORIA's own measurements: all 129 objections its reasoners produced on personal
+> identity were checked against that literature (Claude Sonnet reranker). Mean novelty 0.38, 13% above 0.5:
+> divergent objections are mostly *known* ones, which is why the finder tests and filters what the reasoners
+> produce. Code: `directions/` (Python lab, site source, data, results, NOTES and PROGRESS logs). The site at the
+> repo root is built by `python3 directions/scripts/build_aporia_site.py`; APORIA's divergence measurements are at
+> `/divergence/`, its reasoner replay at `/lab/`.
+
 Five reasoners start from the same philosophical question, on the same LLM. They run one cognitive engine with
 explicit functions around the model: argument graph, metacognition, curiosity, counterfactual tests, adversarial
 experiments, memory, formal tools and in-session learning. What differs is their cognitive policy. One parameter,

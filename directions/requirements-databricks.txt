@@ -1,0 +1,2 @@
+# Optional: Databricks sponsor integration (imported lazily by crux_lab/databricks_sync.py)
+databricks-sdk>=0.40

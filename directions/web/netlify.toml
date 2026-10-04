@@ -1,0 +1,13 @@
+# Netlify: set the site's base directory to `web` (the build command and publish folder are read from here).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA fallback for deep links (/lab/..., /brief/...); also in public/_redirects.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

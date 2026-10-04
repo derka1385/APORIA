@@ -1,0 +1,1000 @@
+{
+  "experiment": "E1 prior-art recall",
+  "n": 50,
+  "methods": [
+    {
+      "name": "BM25 over abstracts",
+      "recall_at_5": 0.16,
+      "hits": 8,
+      "recall_at_5_strict_record": 0.12
+    },
+    {
+      "name": "embeddings over abstracts",
+      "recall_at_5": 0.24,
+      "hits": 12,
+      "recall_at_5_strict_record": 0.2
+    },
+    {
+      "name": "embeddings over claims",
+      "recall_at_5": 0.64,
+      "hits": 32,
+      "recall_at_5_strict_record": 0.58
+    },
+    {
+      "name": "claims + 3-way restatement + rerank",
+      "recall_at_5": 0.86,
+      "hits": 43,
+      "recall_at_5_strict_record": 0.86
+    }
+  ],
+  "unit": "work (duplicate records of one paper merged by title + first author)",
+  "settings": {
+    "items": "objection-like claims extracted from corpus abstracts (kind objection first, then conclusion/reply), one per paper, seed 7",
+    "rewording": "LLM removes names and jargon",
+    "k": 5,
+    "claims_indexed": 2918,
+    "abstracts_indexed": 1212,
+    "embedder": "bge-small-en-v1.5 (local)"
+  },
+  "models": {
+    "reranker": "openai:gpt-5.6-terra"
+  },
+  "timestamp": "2026-10-04T04:09:27.443363+00:00",
+  "items": [
+    {
+      "claim_id": "W7213626189.a1",
+      "paper_id": "oa:W7213626189",
+      "original": "The Euthyphro Dilemma treats goodness as either independent of God or dependent solely on divine command.",
+      "reworded": "It asks whether what is right has its own basis, or becomes right only because a god commands it.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7203578844.a3",
+      "paper_id": "oa:W7203578844",
+      "original": "The argument cannot establish the Personal Ultimate Ground because the premise U* is unproven.",
+      "reworded": "The reasoning cannot show that the deepest basis of everything is a person, because one of its starting assumptions has not been established.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W2921975962.a1",
+      "paper_id": "oa:W2921975962",
+      "original": "Pentecostals are often criticized for giving inadequate attention to Jesus’ life.",
+      "reworded": "This Christian movement is often faulted for not paying enough attention to the earthly life of its central figure.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7213953793.a3",
+      "paper_id": "oa:W7213953793",
+      "original": "Kossakowski criticized abundant French publications as hastily prepared and of poor quality.",
+      "reworded": "He criticized the large number of works coming from one country as rushed and badly made.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4234982327.a2",
+      "paper_id": "oa:W4234982327",
+      "original": "The assumption that perfect love entails infinite love is unwarranted.",
+      "reworded": "It does not follow that a love without flaw must also be without limit.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7203556966.a1",
+      "paper_id": "oa:W7203556966",
+      "original": "Tolerance is often treated as a normative ideal without pedagogical guidance for actual interreligious interactions.",
+      "reworded": "People are often urged to accept those with different faiths, yet are given little practical help for how to relate to them in real encounters.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W1602806076.a2",
+      "paper_id": "oa:W1602806076",
+      "original": "Skeptical theism is alleged to entail skepticism about moral decision-making and most or all theistic beliefs.",
+      "reworded": "This position is said to force doubt about how one ought to act and about many, perhaps all, beliefs concerning a divine being.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W2592287361.a2",
+      "paper_id": "oa:W2592287361",
+      "original": "Rea’s account of what justifies God in allowing divine hiddenness is unsuccessful.",
+      "reworded": "The proposed explanation of why a perfect being may remain unknown to people does not succeed.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W7164863935.a2",
+      "paper_id": "oa:W7164863935",
+      "original": "Background information used to generate positive theistic expectations cannot be insulated from adverse evidential assessment.",
+      "reworded": "The starting assumptions that make belief in a god seem likely must also be open to criticism from evidence that counts against them.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W4392623375.a3",
+      "paper_id": "oa:W4392623375",
+      "original": "Apophaticism risks becoming indistinguishable from something else.",
+      "reworded": "A way of speaking by refusing to make positive statements may end up being no different from another position.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7212356896.a2",
+      "paper_id": "oa:W7212356896",
+      "original": "Faith should not be treated as an independent solution to poverty.",
+      "reworded": "Religious belief should not be regarded as a separate way to overcome material deprivation.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7204686580.a3",
+      "paper_id": "oa:W7204686580",
+      "original": "Excessive faith in petung weton results may influence religious orientation.",
+      "reworded": "Putting too much trust in a traditional way of predicting personal fortune may shape how someone relates to religion.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4406798300.a1",
+      "paper_id": "oa:W4406798300",
+      "original": "Schellenberg holds that rational nonbelief gives reason to believe God does not exist.",
+      "reworded": "If a person has sincerely looked for a divine reality yet remains unconvinced without any fault in their inquiry, that counts in favor of thinking no such reality exists.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W7212003188.a3",
+      "paper_id": "oa:W7212003188",
+      "original": "A ground already within a modal domain cannot confer that domain of possibility.",
+      "reworded": "Something that is already part of a given range of what could be cannot be what makes that very range available in the first place.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W2265511046.a3",
+      "paper_id": "oa:W2265511046",
+      "original": "Schellenberg's analogy argument is unreasonable because it ignores the infinite disanalogy between a human mother and God.",
+      "reworded": "The comparison fails because it overlooks the immeasurable difference between an ordinary parent and a divine being.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7204213976.a2",
+      "paper_id": "oa:W7204213976",
+      "original": "A single universal Now is challenged by presentism, growing-block theory, branching-time semantics, truthmakers, and relativity.",
+      "reworded": "The idea that there is one shared present moment is disputed by views about what exists, how the past and future differ, what makes statements true, and modern physics.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7215855285.a1",
+      "paper_id": "oa:W7215855285",
+      "original": "Pantheistic identifications of God with the universe or everything equivocate between totality and grounding.",
+      "reworded": "A view that treats what is sacred as identical with all that exists blurs the difference between the collection of things and what accounts for their being there.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7203572996.a3",
+      "paper_id": "oa:W7203572996",
+      "original": "Resemblance alone does not justify identifying present technologies or institutions as the final beast system.",
+      "reworded": "Merely looking similar is not enough to conclude that today's tools or social arrangements are the ultimate oppressive order.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7210267631.a3",
+      "paper_id": "oa:W7210267631",
+      "original": "Alston's position faces objections concerning epistemic circularity, religious diversity, and asymmetry between perceptual and religious doxastic practices.",
+      "reworded": "The view is challenged because it seems to support a way of forming beliefs by relying on that very way, because different faith traditions reach incompatible conclusions, and because it is treated differently from ordinary sense experience.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4387875813.a1",
+      "paper_id": "oa:W4387875813",
+      "original": "Baker-Hytch’s epistemic-interdependence theodicy is incomplete or depends on a faulty modal judgment.",
+      "reworded": "The attempt to explain suffering by saying that people must rely on one another in forming beliefs is either unfinished or rests on a mistaken view of what might have been possible.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7135197508.a1",
+      "paper_id": "oa:W7135197508",
+      "original": "Schellenberg's conception of resistance is too narrow because it omits broader forms of resistance toward God.",
+      "reworded": "The idea is defined too narrowly because it leaves out wider ways people can oppose a divine being.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7212357645.a2",
+      "paper_id": "oa:W7212357645",
+      "original": "Faith should not be treated as an independent solution to poverty.",
+      "reworded": "Religious belief should not be regarded as a separate way to overcome material deprivation.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7213935560.a1",
+      "paper_id": "oa:W7213935560",
+      "original": "Modern interpretations characterize Solomon's command as deceptive, but the narrator does not describe it as a trick, pretence, or feigned judgment.",
+      "reworded": "Later readers treat the ruler’s order as misleading, yet the account itself never calls it a sham, an act, or an insincere decision.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4221131558.a1",
+      "paper_id": "oa:W4221131558",
+      "original": "Stump argues that God can have a personal relationship with people who do not believe God exists.",
+      "reworded": "A divine being could stand in a personal relationship with people even when they do not believe that being exists.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W2072673546.a3",
+      "paper_id": "oa:W2072673546",
+      "original": "The required revisions to hiddenness arguments leave them substantially less forceful.",
+      "reworded": "The changes these lines of reasoning need make them much less persuasive.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W2593563907.a1",
+      "paper_id": "oa:W2593563907",
+      "original": "The common sharp distinction between problems of evil and problems of divine hiddenness is doubtful.",
+      "reworded": "It is doubtful that the challenge raised by suffering and wrongdoing is sharply separate from the challenge raised by an apparently absent or unresponsive highest reality.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7212396249.a2",
+      "paper_id": "oa:W7212396249",
+      "original": "Faith should not be treated as an independent solution to poverty.",
+      "reworded": "Religious belief should not be regarded as a separate way to overcome material deprivation.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7204440384.a2",
+      "paper_id": "oa:W7204440384",
+      "original": "Arguments grounded in traditional metaphysics of being and the existent are limited.",
+      "reworded": "Arguments that begin from inherited ideas about what it means for something to be real are restricted in what they can establish.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W2208680356.a2",
+      "paper_id": "oa:W2208680356",
+      "original": "Divine goodness and power require God to provide evidence sufficient to overcome human volitional indisposition.",
+      "reworded": "A being who is wholly caring and able to do anything would have to give people enough reason to move past their reluctance to respond.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W7160904562.a3",
+      "paper_id": "oa:W7160904562",
+      "original": "The standard problem-of-evil question presupposes an impossible state of affairs.",
+      "reworded": "The familiar question about why a wholly good and powerful being permits suffering assumes a situation that could not possibly obtain.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7213905115.a1",
+      "paper_id": "oa:W7213905115",
+      "original": "Interpretations of Solomon's judgment as a clever test infer an intention the narrator does not report.",
+      "reworded": "Treating the proposed division of the child as a shrewd test assigns a purpose that the account itself never says was intended.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4246107558.a3",
+      "paper_id": "oa:W4246107558",
+      "original": "Critics argue that sceptical theism entails consequentialist ethics, moral paralysis, pervasive skepticism, or absurdity.",
+      "reworded": "Critics say this view would make right action depend only on outcomes, leave people unable to make moral choices, cast doubt on nearly everything, or lead to an untenable conclusion.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7210264302.a2",
+      "paper_id": "oa:W7210264302",
+      "original": "Evidence based on traditional metaphysics of being and existence is limited.",
+      "reworded": "Support drawn from old theories about what it means for something to be real has only a restricted reach.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7214958676.a1",
+      "paper_id": "oa:W7214958676",
+      "original": "Biblical passages about grace, election, and will do not address one identical question under identical conditions.",
+      "reworded": "The relevant passages do not all answer the very same question in the very same setting.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W1483488281.a1",
+      "paper_id": "oa:W1483488281",
+      "original": "Evil is incompatible with the existence of infinite goodness.",
+      "reworded": "If reality contains genuine wrongdoing and suffering, then there cannot be a being whose goodness has no limit.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W3113845873.a1",
+      "paper_id": "oa:W3113845873",
+      "original": "Divine hiddenness challenges belief in God by rendering the supposition that God exists absurd.",
+      "reworded": "The fact that a perfectly loving creator seems absent to many sincere seekers makes accepting that such a being is real unreasonable.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W7214126761.a1",
+      "paper_id": "oa:W7214126761",
+      "original": "The author no longer supports the paper's core claims or biological assertions.",
+      "reworded": "The writer has withdrawn their support for the article’s main conclusions and for what it says about living organisms.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4230467484.a1",
+      "paper_id": "oa:W4230467484",
+      "original": "Several objections to the hiddenness argument are irrelevant and therefore fail to address it.",
+      "reworded": "Some criticisms miss the point and so do not actually answer the reasoning at issue.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W3115591903.a2",
+      "paper_id": "oa:W3115591903",
+      "original": "Authorizing impious protest appears incompatible with the universal duty to worship God.",
+      "reworded": "Allowing disrespectful opposition to the divine seems inconsistent with everyone’s obligation to show it reverence.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W3137822470.a1",
+      "paper_id": "oa:W3137822470",
+      "original": "Germain rejects easy theodical consolations and solutions to the problem of evil.",
+      "reworded": "She refuses comforting, overly simple attempts to explain why suffering exists or to defend a good and powerful creator in light of it.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7154249892.a2",
+      "paper_id": "oa:W7154249892",
+      "original": "Christian and Gnostic traditions err by treating their partial readings of the composite YHWH figure as monovalent.",
+      "reworded": "These religious traditions go wrong by taking only part of a complex divine figure and treating it as having just one fixed meaning.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7210291927.a2",
+      "paper_id": "oa:W7210291927",
+      "original": "Evidence based on traditional metaphysics of being and existence is limited.",
+      "reworded": "Support drawn from old theories about what it means for something to be real has only a restricted reach.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7213296003.a1",
+      "paper_id": "oa:W7213296003",
+      "original": "Translating ẹ̀sìn as “religion” wrongly imports Western conceptual assumptions into Yorùbá thought.",
+      "reworded": "Rendering a local word for a community’s practices and commitments with a familiar foreign category falsely treats the two ways of organizing life as if they carried the same assumptions.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4285086949.a2",
+      "paper_id": "oa:W4285086949",
+      "original": "The problem of evil challenges how an all-powerful, all-knowing, perfectly good being could permit extensive pain and suffering.",
+      "reworded": "It is hard to see how a being able to prevent anything, aware of everything, and wholly good could allow so much misery.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4254314007.a1",
+      "paper_id": "oa:W4254314007",
+      "original": "Carlyle’s imperial reannouncement ignores Britain’s long colonial history and recasts it as eternal beginning.",
+      "reworded": "A renewed assertion of control over other peoples ignores a country’s long record of domination and portrays it as if history were always beginning anew.",
+      "hit": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": true,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W7214962767.a1",
+      "paper_id": "oa:W7214962767",
+      "original": "Biblical passages about grace, election, and will do not address one identical question under identical conditions.",
+      "reworded": "The relevant passages do not all answer the very same question in the very same setting.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": true,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W3205465617.a1",
+      "paper_id": "oa:W3205465617",
+      "original": "The surprise that God's existence is not more obvious does not by itself show that divine hiddenness is evidence against God.",
+      "reworded": "Being surprised that there is not clearer evidence for a supreme being does not, on its own, count as a reason to think no such being exists.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": true,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W4388978668.a1",
+      "paper_id": "oa:W4388978668",
+      "original": "Schellenberg’s hiddenness argument relies on an uncritically assumed account of love that can be challenged.",
+      "reworded": "The argument assumes, without examining it, a particular view of what it means to care for someone; that assumption can be questioned.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    },
+    {
+      "claim_id": "W3150907602.a1",
+      "paper_id": "oa:W3150907602",
+      "original": "Rea's claim that relationships with God are widely available leaves some nonbelievers unaccounted for.",
+      "reworded": "Saying that anyone can readily enter a relationship with the divine still does not explain why some people remain without belief.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": false
+      }
+    },
+    {
+      "claim_id": "W7207730899.a2",
+      "paper_id": "oa:W7207730899",
+      "original": "Marx cannot explain religion’s persistence in post-revolutionary situations.",
+      "reworded": "A view that treats faith mainly as a response to unjust social conditions cannot account for why it continues after those conditions have supposedly been transformed.",
+      "hit": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      },
+      "hit_strict_record": {
+        "BM25 over abstracts": false,
+        "embeddings over abstracts": false,
+        "embeddings over claims": false,
+        "claims + 3-way restatement + rerank": true
+      }
+    }
+  ],
+  "limits": "The query is a reworded version of a claim the Extractor took from the source paper's abstract, and that claim is itself in the claims index, so this measures recovery of a known move under paraphrase, not discovery of unknown prior art. Items come from the whole corpus (hiddenness papers and recent philosophy of religion), not only from hiddenness. Corpus: OpenAlex abstracts only (no PhilArchive). One rewording per item; no human labels. Recall is scored per work: OpenAlex lists many papers more than once (versions), so duplicate records are merged (title + first-author surname) before taking the top 5; recall_at_5_strict_record gives the stricter record-level score. Embedding-based retrieval is not bit-reproducible across runs (local model on Apple MPS): previous_runs holds the scores of earlier runs over the same 50 items and the same cached rewordings (each with its scoring unit; compare record-level runs with recall_at_5_strict_record), which shows the run-to-run variance.",
+  "previous_runs": [
+    {
+      "timestamp": "2026-10-04T01:21:57.011712+00:00",
+      "methods": [
+        {
+          "name": "BM25 over abstracts",
+          "recall_at_5": 0.12,
+          "hits": 6
+        },
+        {
+          "name": "embeddings over abstracts",
+          "recall_at_5": 0.18,
+          "hits": 9
+        },
+        {
+          "name": "embeddings over claims",
+          "recall_at_5": 0.54,
+          "hits": 27
+        },
+        {
+          "name": "claims + 3-way restatement + rerank",
+          "recall_at_5": 0.86,
+          "hits": 43
+        }
+      ],
+      "unit": "record"
+    },
+    {
+      "timestamp": "2026-10-04T03:38:49.517031+00:00",
+      "methods": [
+        {
+          "name": "BM25 over abstracts",
+          "recall_at_5": 0.12,
+          "hits": 6
+        },
+        {
+          "name": "embeddings over abstracts",
+          "recall_at_5": 0.2,
+          "hits": 10
+        },
+        {
+          "name": "embeddings over claims",
+          "recall_at_5": 0.58,
+          "hits": 29
+        },
+        {
+          "name": "claims + 3-way restatement + rerank",
+          "recall_at_5": 0.86,
+          "hits": 43
+        }
+      ],
+      "unit": "record"
+    }
+  ]
+}

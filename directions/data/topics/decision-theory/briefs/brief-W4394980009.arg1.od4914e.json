@@ -1,0 +1,224 @@
+{
+  "id": "brief-W4394980009.arg1.od4914e",
+  "objection_id": "W4394980009.arg1.od4914e",
+  "research_question": "Does Pascal's Pensées provide a determinate object for the wager sufficient to ground apologetic certainty, given that fragments 418, 277, and 282 present calculation, the heart, and tradition as competing or incompatible routes to certainty?",
+  "argument": {
+    "id": "W4394980009.arg1",
+    "title": "Prefer original Pascal over postmodern",
+    "paper_id": "oa:W4394980009",
+    "paper_title": "Pascal’s Wager and Its Postmodern Counterpart",
+    "premises": [
+      {
+        "id": "W4394980009.c057",
+        "text": "The postmodern rendition of the wager is far too ambivalent.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c058",
+        "text": "The postmodern rendition does not give the seeker any certainty and hope.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c060",
+        "text": "Pascal is certain about where our certainty lies.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      },
+      {
+        "id": "W4394980009.c054",
+        "text": "Pascal clearly clarifies the object of the wager in the remainder of his Pensées, providing certainty.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4394980009.arg1.mp",
+      "text": "If the postmodern rendition is ambivalent, fails to give the seeker certainty and hope, and Pascal provides certainty about the object of the wager, then Pascal's wager should be used in apologetics instead of the postmodern rendition."
+    },
+    "conclusion": {
+      "id": "W4394980009.c071",
+      "text": "We should use Pascal’s wager in apologetics instead of the postmodern rendition of the wager."
+    },
+    "skeleton": "A; ~B; C; D |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4394980009.c060",
+    "text": "Pascal is certain about where our certainty lies."
+  },
+  "objection": "A graduate student, Maria, reads through Pascal's Pensées carefully. In fragment 418, Pascal builds the wager on probabilistic decision theory, locating certainty in expected utility calculations. In fragment 277, he writes 'the heart has its reasons, which reason does not know,' locating certainty in an intuitive, non-rational faculty. In fragment 282, he insists Scripture and church tradition provide the only reliable path, locating certainty in institutional authority. Maria discovers that Pascal himself moves between at least three distinct and competing accounts of where certainty is to be found: calculation, intuition, and revelation. When she asks her seminar which of these Pascal actually endorses, the class splits three ways, each side citing fragments that contradict the others. Pascal never resolves the tension. He is not certain about where certainty lies; he circles the question from different angles without settling it.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The three fragments concern different routes by which the seeker comes to see the wager as live, not rival accounts of the object itself; the wager's object is clarified in the remainder of the Pensées, so the tension is at the level of means of persuasion rather than the object.",
+      "why_it_failed": "The objector countered that fragment 282's claim that Scripture and tradition are 'the only reliable path' introduces exclusivity that contradicts calculation as a legitimate route, creating tension that infects the object level, and that the Pensées never settles whether the object is God, the Christian God, or a way of life, forcing Defender A to concede that c060 as stated overreaches and must be replaced with a narrower premise about the object that still leaves the stake question unresolved."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The premise that Pascal is certain about 'where our certainty lies' is immediately glossed as clarifying the object of the wager, not as settling a single epistemological foundation; the fragments converge on the same object through multiple complementary paths.",
+      "why_it_failed": "This reading depends on interpreting 'where our certainty lies' as solely about the object, but the objector's challenge shows that Pascal's text does not clearly separate routes from object, and the outcome indicates that c060 as written does not survive without revision to a narrower claim that Pascal is unwavering about the object despite offering multiple paths."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2060598429",
+      "paper_id": "oa:W2060598429",
+      "title": "Le Pari De Pascal Et Ses Ambigüités",
+      "authors": [
+        "Stéphane Natan"
+      ],
+      "year": 2008,
+      "url": "https://doi.org/10.3200/symp.62.3.159-174",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Inexplicably, Pascal's position seems to contradict his vision of Christianity."
+    },
+    {
+      "record_id": "W7164053780.a3",
+      "paper_id": "oa:W7164053780",
+      "title": "Pascal’s Wager and Theory-Induced Blindness",
+      "authors": [
+        "Joseph Mark Haykov"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.21111/jocrise.v3i02.79",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W2497092686.a1",
+      "paper_id": "oa:W2497092686",
+      "title": "Pascal's Wagers and James's Will to Believe",
+      "authors": [
+        "Jeffrey J. Jordan"
+      ],
+      "year": 2009,
+      "url": "https://doi.org/10.1093/oxfordhb/9780195331356.003.0008",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    },
+    {
+      "record_id": "W2201076590.a1",
+      "paper_id": "oa:W2201076590",
+      "title": "Blaise and Bayes",
+      "authors": [
+        "Alan Hájek"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199604760.003.0009",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W4235227499.a3",
+      "paper_id": "oa:W4235227499",
+      "title": "Pascal and Irrationality",
+      "authors": [
+        "Elliott R. Sober"
+      ],
+      "year": 2020,
+      "url": "https://doi.org/10.4324/9781351043403-10",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W7165096423.a1",
+      "paper_id": "oa:W7165096423",
+      "title": "What is the Stake in Pascal's Wager?",
+      "authors": [
+        "Małgorzata Wiertlewska"
+      ],
+      "year": 2010,
+      "url": "http://hdl.handle.net/10593/8152",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.7,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2060598429",
+      "paper_id": "oa:W2060598429",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Inexplicably, Pascal's position seems to contradict his vision of Christianity.",
+      "title": "Le Pari De Pascal Et Ses Ambigüités"
+    },
+    {
+      "record_id": "W7164053780.a3",
+      "paper_id": "oa:W7164053780",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Pascal’s Wager and Theory-Induced Blindness"
+    },
+    {
+      "record_id": "W2497092686.a1",
+      "paper_id": "oa:W2497092686",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Pascal's Wagers and James's Will to Believe"
+    }
+  ],
+  "open_questions": [
+    "Can Pascal's competing epistemic routes in fragments 418, 277, and 282 be reconciled as complementary means converging on one object, or does the exclusivity claimed in fragment 282 undermine their compatibility?",
+    "Is the object of the wager in the Pensées sufficiently determinate—whether God, the Christian God, or a way of life—to ground apologetic certainty independently of disputes about the routes to it?",
+    "Does narrowing the argument from certainty about 'where our certainty lies' to certainty about the object preserve the original argument's comparative force against the postmodern rendition?",
+    "How does the unresolved question of the stake, acknowledged by the defenders, affect whether the revised premise can secure the apologetic certainty the argument requires?"
+  ],
+  "paper_direction": "A paper here would argue that Pascal's Pensées does not provide the apologetic certainty about the wager's object that the argument requires, because the three fragments identified by the objector present not merely different routes to a single object but competing conceptions of what warrants commitment, with fragment 282's exclusivity undermining the compatibility of calculation and tradition as legitimate paths. The case would examine whether the object-level claims in the remainder of the Pensées genuinely settle whether the seeker wagers on the God of Scripture, the Christian God, or a way of life, or whether the unresolved tension among faculties bleeds into indeterminacy about the object itself. The strongest reply to anticipate is that Pascal's multiple epistemic paths are complementary means of persuasion converging on one unambiguous object, and that the exclusivity in fragment 282 concerns only the reliability of the route, not the identity of the object. To succeed, the paper would need to show that the object-level clarification in the Pensées is robust enough to survive the charge of underdetermination, or alternatively, that the competing routes imply contradictory conditions for what counts as wagering rightly, which would prevent the narrowed premise from doing the work the apologetic argument demands.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 1.75,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "The objection slides from 'where certainty lies' (the faculty that supplies it) to 'what the object of the wager is'; the defenders flagged this slide but it was never repaired, and the exclusivity premise rests on a misattributed fragment.",
+      "robustness": "Strongest objection: Pascal explicitly harmonizes reason, custom and inspiration, and the cited 'only reliable path' text does not exist as described; nothing in the direction or the transcript answers this, because the trial's defenders conceded on textual grounds that were themselves erroneous.",
+      "significance": "Even if it succeeded, its only real payoff is that the wager's object is underdetermined among God, the Christian God and a way of life, which repackages the long-discussed many-gods and 'which wager' problems; the target premise belongs to a single apologetics paper and carries little weight in the wider debate.",
+      "specificity": "There is a stated thesis and a list of fragments, but the success condition is disjunctive and partly self-defeating (one branch would vindicate the premise it attacks), and the plan names no method for deciding route-object bleed-through."
+    },
+    "strongest_objection": "The textual case is unsound. It mixes numbering systems: Lafuma 418 is the wager, but 277 and 282 are Brunschvicg numbers. Brunschvicg 282 ('we know truth not only by reason but by the heart') says nothing about Scripture and tradition being 'the only reliable path', so the exclusivity claim that drives the whole argument has no source. More decisively, Pascal explicitly orders the routes as complementary: 'three means of belief: reason, custom, inspiration' (L808/B245). The heart knowing first principles (L110/B282) is offered as the ground reason relies on, not as its rival. The wager itself (L418) is framed as a device for someone who cannot reach certainty by proofs, and it points the seeker toward practice ('holy water, masses') so that custom and grace can do the rest. So the 'unresolved tension' is a misreading of a deliberately layered apologetic, not a discovery.",
+    "reply_available": false,
+    "what_it_needs": "The paper must rebuild its textual case from correctly cited fragments in a single edition, and it must engage L808/B245 and the order-of-the-heart scholarship (Mesnard, Sellier, Wetsel) that reads the faculties as hierarchically integrated. It also needs a precise thesis about object-indeterminacy that is distinguished from the well-worn many-gods objection, rather than relying on a manufactured conflict among faculties.",
+    "summary": "Reject in current form: the claimed three-way contradiction rests on miscited and misread fragments and ignores Pascal's own explicit integration of reason, custom and inspiration, and the salvageable core (indeterminacy of the wager's object) is the familiar many-gods problem unless it is sharpened considerably.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:18:56.098264+00:00"
+  },
+  "revision": {
+    "research_question": "Does the layered apologetic of the Pensées, in which reason, custom and inspiration are ordered as complementary means (L808/B245), fix a determinate object for the wager sufficient to ground apologetic certainty, or does the wager's object remain underdetermined in a way that differs from the many-gods problem?",
+    "paper_direction": "A paper here would argue that the premise that Pascal is certain about where certainty lies cannot carry the apologetic weight placed on it, but that a narrower question survives: whether the layered account of the Pensées fixes the object of the wager. The paper drops its earlier claim that Pascal's routes to certainty (calculation at L418, the heart at L110/B282, and tradition) are rival or incompatible. The textual case is rebuilt from fragments cited in a single edition (Lafuma), with Brunschvicg numbers given only as cross-references. The exclusivity claim previously attributed to a Brunschvicg fragment is withdrawn because no such text supports it. The paper engages L808/B245 and the order-of-the-heart scholarship (Mesnard, Sellier, Wetsel), which reads the faculties as hierarchically integrated. The central thesis is that the object question is separable from the faculty question. The faculty question asks what warrants commitment. The object question asks what the commitment is to, and the wager's stakes argument fixes only that some infinite good is at stake. The paper tests whether the practice-directed pointers (holy water, masses) that L418 offers pick out a single object, namely the God of Scripture, or whether custom leaves the object open to a way of life. The method for this test is to check, for each route, whether it individuates the object by its doctrinal content or by its practice, and then to see whether the object-level clarifications elsewhere in the Pensées settle the matter. This is distinct from the many-gods objection because the indeterminacy here arises from the wager's own expected-value structure, which specifies the payoff as infinite without specifying its bearer, and from the way the practice route presupposes an identified object. The paper argues that this is a narrower and testable claim, whose success condition is not self-defeating.",
+    "reply_to_strongest_objection": "The paper accepts the referee's textual point. The exclusivity claim has no source, and Pascal explicitly orders reason, custom and inspiration as complementary (L808/B245), with the heart offered as the ground that reason relies on (L110/B282). The paper therefore no longer argues that the faculties conflict. It keeps a distinct question: the faculty question (what warrants commitment) is separated from the object question (what the commitment is to). The layered account answers the first. The paper argues that the second is answered only by the practice pointers at L418, and it tests whether those pointers individuate a single object. This separation also answers the coherence objection, because the slide from 'where certainty lies' to 'what the object is' is now explicitly marked and handled rather than repeated. The paper uses a single edition, which addresses the numbering error.",
+    "what_changed": "The revision withdraws the claim that Pascal's routes to certainty conflict, keeps only the separable question of whether the layered apologetic fixes the wager's object, and rebuilds the textual case in one edition.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:21:27.853752+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "Separating the faculty question from the object question is a real improvement and is explicitly marked. But it shifts the target from c060 to a question that c054 already answers on the argument's own terms. The open questions still invoke the withdrawn 'fragment 282 exclusivity' claim and Brunschvicg numbering, contradicting the revised plan.",
+        "robustness": "The direction proposes a test but never anticipates the obvious reply that L418's payoff description and Catholic practices already individuate the Christian God. Its claimed distinction from many-gods ('payoff without bearer') is the many-gods objection's own formal basis, so it would not survive a first reading.",
+        "significance": "Even if successful, the result is a modest point in Pascal exegesis about the wager's object. Its bearing on the actual conclusion, that the Pascalian wager is apologetically preferable to the postmodern rendition, is left unaddressed.",
+        "specificity": "Edition, fragments, secondary literature (Mesnard, Sellier, Wetsel) and a per-route test are named. However, the 'thesis' is framed as 'testing whether' rather than asserting an answer, and no success or failure criterion for individuating the object is given."
+      },
+      "strongest_objection": "The 'underdetermined object' thesis is either the many-gods objection under another name, or it is settled by the text itself. L418 is addressed to an interlocutor inside a Christian frame. The payoff it names is 'an infinity of infinitely happy life', i.e. Christian beatitude. Its practice pointers (holy water, masses) are specifically Catholic. The surrounding apologetic (the A.P.R. project, the proofs-of-religion liasses, the Mémorial's 'God of Abraham, not of the philosophers') exists precisely to fix the object. So the only 'indeterminacy' left belongs to the abstracted expected-value schema, which is the standard formal point behind the many-gods objection, not a discovery about Pascal. And c054 already concedes that the object is clarified 'in the remainder of the Pensées', so the narrowed question collapses into the defender's own gloss.",
+      "reply_available": false,
+      "what_it_needs": "It must show, against the L418 wording, the Catholic specificity of the practice pointers, and the proofs-of-Christianity fragments, that some determinate alternative object (e.g. a non-theistic way of life) satisfies the wager's structure and Pascal's own constraints, in a way that does not reduce to many-gods. It must also tie that result back to the comparative claim against the postmodern rendition (c071), or the paper no longer bears on this argument.",
+      "summary": "The corrected textual groundwork is welcome, but the surviving 'object indeterminacy' thesis is either answered by L418 and the surrounding apologetic or is the many-gods objection restated, so it is not yet a paper a referee would accept.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:21:51.177078+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

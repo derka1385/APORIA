@@ -1,0 +1,350 @@
+{
+ "default": "divine-hiddenness",
+ "current_export": "divine-hiddenness",
+ "topics": [
+  {
+   "slug": "divine-hiddenness",
+   "name": "Divine hiddenness",
+   "description": "Schellenberg's hiddenness argument (1993 onward) and the debate it started: whether a perfectly loving God would allow nonresistant nonbelief, plus recent philosophy of religion.",
+   "area": "philosophy of religion",
+   "default": true,
+   "status": "ready",
+   "data": "",
+   "counts": {
+    "papers": 5,
+    "objections": 55,
+    "trials": 30,
+    "briefs": 14,
+    "records": 1212,
+    "works": 962
+   },
+   "families": [
+    "anthropic",
+    "openai"
+   ],
+   "lead": {
+    "id": "brief-W7203485685.arg1.ofd28a0",
+    "question": "Does robust contrastive responsibility for actualising one world rather than another require irreducibly de se content in divine cognition, or can a rigid, de re representation of an agent's controlling intention and its act suffice when the agent's identity is not in doubt?",
+    "score": 0.4224,
+    "outcome": "revision_required",
+    "novelty": 0.88,
+    "quality": 0.6
+   },
+   "searches": [
+    "divine hiddenness",
+    "nonresistant nonbelief",
+    "divine silence",
+    "hiddenness of God",
+    "skeptical theism hiddenness",
+    "Schellenberg hiddenness argument"
+   ],
+   "config": {
+    "slug": "divine-hiddenness",
+    "name": "Divine hiddenness",
+    "description": "Schellenberg's hiddenness argument (1993 onward) and the debate it started: whether a perfectly loving God would allow nonresistant nonbelief, plus recent philosophy of religion.",
+    "area": "philosophy of religion",
+    "queries": {
+     "divine hiddenness": "\"divine hiddenness\"",
+     "nonresistant nonbelief": "\"nonresistant nonbelief\" OR \"nonresistant nonbelievers\"",
+     "divine silence": "\"divine silence\"",
+     "hiddenness of God": "\"hiddenness of God\"",
+     "skeptical theism hiddenness": "\"skeptical theism\" AND hiddenness",
+     "Schellenberg hiddenness argument": "Schellenberg AND hiddenness"
+    },
+    "fresh_from": "2026-08-01",
+    "fresh_queries": [
+     "\"divine hiddenness\"",
+     "hiddenness AND God",
+     "theism",
+     "atheism",
+     "\"existence of God\"",
+     "\"philosophy of religion\"",
+     "God AND argument",
+     "\"religious belief\""
+    ],
+    "relevant": "hidden|nonbelie|non-belie|divine|god\\b|theis|atheis|religio|faith|silence",
+    "relevance_levels": [
+     "none",
+     "touches God's attributes or the existence of God",
+     "concerns divine love, God's availability to creatures, evidence for God or nonbelief",
+     "directly about divine hiddenness"
+    ],
+    "schools": [
+     "skeptical theism",
+     "Molinism",
+     "open theism",
+     "Reformed epistemology",
+     "naturalism"
+    ]
+   },
+   "schools": [
+    "skeptical theism",
+    "Molinism",
+    "open theism",
+    "Reformed epistemology",
+    "naturalism"
+   ],
+   "config_path": "config/topics/divine-hiddenness.yaml",
+   "commands": [
+    "make corpus",
+    "make targets",
+    "make map",
+    "make runs",
+    "make assess",
+    "make revise",
+    "make eval",
+    "make export"
+   ]
+  },
+  {
+   "slug": "decision-theory",
+   "name": "Decision theory in philosophy of religion",
+   "description": "Decision-theoretic reasoning about God and by God: Newcomb's problem and divine foreknowledge (God as the perfect predictor), Pascal's wager with its infinite utilities and the many-gods objection, and God's own decision problem, whether a perfect being must create the best world, and whether there is one to create.",
+   "area": "philosophy of religion and decision theory",
+   "default": false,
+   "status": "ready",
+   "data": "topics/decision-theory/",
+   "counts": {
+    "papers": 6,
+    "objections": 72,
+    "trials": 36,
+    "briefs": 18,
+    "records": 648,
+    "works": 561
+   },
+   "families": [
+    "anthropic",
+    "kimi",
+    "glm",
+    "mistral",
+    "qwen",
+    "llama",
+    "gpt-oss",
+    "gemma"
+   ],
+   "lead": {
+    "id": "brief-W2995194683.arg1.o43f39a",
+    "question": "Does diachronic psychological coherence, read as evidence-responsive, disposition-level coherence rather than persistence of every intention, license the backtracking counterfactuals in c004 that tie a token choice in Newcomb's Problem to the predictor's prediction, and if so, does this support one-boxing as the rational choice?",
+    "score": 0.3608,
+    "outcome": "revision_required",
+    "novelty": 0.82,
+    "quality": 0.55
+   },
+   "searches": [
+    "Newcomb's problem",
+    "Pascal's wager",
+    "many-gods objection",
+    "decision theory and God",
+    "God's choice of world",
+    "divine foreknowledge and choice",
+    "infinite utility",
+    "pragmatic arguments for belief"
+   ],
+   "config": {
+    "slug": "decision-theory",
+    "name": "Decision theory in philosophy of religion",
+    "description": "Decision-theoretic reasoning about God and by God: Newcomb's problem and divine foreknowledge (God as the perfect predictor), Pascal's wager with its infinite utilities and the many-gods objection, and God's own decision problem, whether a perfect being must create the best world, and whether there is one to create.",
+    "area": "philosophy of religion and decision theory",
+    "queries": {
+     "Newcomb's problem": "\"Newcomb's problem\" OR \"Newcomb problem\" OR \"Newcomb's paradox\"",
+     "Pascal's wager": "\"Pascal's wager\" OR \"Pascalian wager\"",
+     "many-gods objection": "\"many gods objection\" OR \"many-gods objection\"",
+     "decision theory and God": "\"decision theory\" AND (God OR theism OR religious)",
+     "God's choice of world": "\"best possible world\" AND (God OR creation OR creator)",
+     "divine foreknowledge and choice": "\"divine foreknowledge\" AND (decision OR choice OR deliberation OR Newcomb)",
+     "infinite utility": "(\"infinite utility\" OR \"infinite expected utility\" OR \"infinite value\") AND (God OR wager OR heaven)",
+     "pragmatic arguments for belief": "\"pragmatic argument\" AND (God OR theism OR theistic)"
+    },
+    "fresh_from": "2026-08-01",
+    "fresh_queries": [
+     "\"decision theory\"",
+     "\"Pascal's wager\" OR Newcomb OR \"expected utility\"",
+     "\"philosophy of religion\""
+    ],
+    "relevant": "newcomb|wager|pascal|decision|expected (utilit|value)|infinite (utilit|value)|foreknow|predict|best possible world|divine (choice|freedom|creat)|many.gods|pragmatic|rational choice|god\\b|theis|atheis",
+    "relevance_levels": [
+     "none",
+     "touches philosophy of religion or decision theory",
+     "applies decision-theoretic or rational-choice reasoning to a religious question",
+     "directly about decision theory and God (Newcomb-type problems, Pascal's wager, God's choice among worlds)"
+    ],
+    "schools": [
+     "causal decision theory",
+     "evidential decision theory",
+     "classical theism",
+     "Molinism and middle knowledge",
+     "open theism",
+     "Bayesian formal epistemology"
+    ]
+   },
+   "schools": [
+    "causal decision theory",
+    "evidential decision theory",
+    "classical theism",
+    "Molinism and middle knowledge",
+    "open theism",
+    "Bayesian formal epistemology"
+   ],
+   "config_path": "config/topics/decision-theory.yaml",
+   "commands": [
+    "make corpus TOPIC=decision-theory",
+    "make targets TOPIC=decision-theory",
+    "make map TOPIC=decision-theory",
+    "make runs TOPIC=decision-theory",
+    "make assess TOPIC=decision-theory",
+    "make revise TOPIC=decision-theory",
+    "make eval TOPIC=decision-theory",
+    "make export TOPIC=decision-theory"
+   ]
+  },
+  {
+   "slug": "divine-simplicity",
+   "name": "Divine simplicity",
+   "description": "The classical doctrine that God has no parts, properties or composition distinct from God, and the current debate over it: the modal collapse argument, the problem of God's contingent knowledge and free choice, whether God can be identical to a property, truthmaker and constituent-ontology reconstructions, and recent attempts to restate simplicity in new metaphysical terms.",
+   "area": "philosophy of religion and analytic metaphysics",
+   "default": false,
+   "status": "not_run",
+   "data": "topics/divine-simplicity/",
+   "counts": null,
+   "families": null,
+   "lead": null,
+   "searches": [
+    "divine simplicity",
+    "modal collapse",
+    "God and properties",
+    "aseity",
+    "Aquinas on simplicity",
+    "constituent ontology"
+   ],
+   "config": {
+    "slug": "divine-simplicity",
+    "name": "Divine simplicity",
+    "description": "The classical doctrine that God has no parts, properties or composition distinct from God, and the current debate over it: the modal collapse argument, the problem of God's contingent knowledge and free choice, whether God can be identical to a property, truthmaker and constituent-ontology reconstructions, and recent attempts to restate simplicity in new metaphysical terms.",
+    "area": "philosophy of religion and analytic metaphysics",
+    "queries": {
+     "divine simplicity": "\"divine simplicity\"",
+     "modal collapse": "\"modal collapse\"",
+     "God and properties": "\"divine attributes\" AND (identity OR identical OR simplicity)",
+     "aseity": "aseity AND God",
+     "Aquinas on simplicity": "Aquinas AND simplicity AND God",
+     "constituent ontology": "\"constituent ontology\" OR (\"truthmaker\" AND God)"
+    },
+    "fresh_from": "2026-08-01",
+    "fresh_queries": [
+     "\"divine simplicity\"",
+     "\"modal collapse\" OR aseity OR \"divine attributes\"",
+     "\"philosophy of religion\""
+    ],
+    "relevant": "simplicit|simple|modal collapse|aseity|divine (attribute|nature|propert|essence|knowledge|freedom)|constituent|truthmaker|aquinas|anselm|god\\b|theis",
+    "relevance_levels": [
+     "none",
+     "touches philosophy of religion or the metaphysics of properties",
+     "concerns the divine attributes, aseity or God's nature",
+     "directly about divine simplicity (its formulations, the modal collapse and other objections, defences)"
+    ],
+    "schools": [
+     "Thomist classical theism",
+     "theistic personalism",
+     "truthmaker theory",
+     "Eastern Orthodox essence–energies theology",
+     "open theism",
+     "Platonism about properties"
+    ]
+   },
+   "schools": [
+    "Thomist classical theism",
+    "theistic personalism",
+    "truthmaker theory",
+    "Eastern Orthodox essence–energies theology",
+    "open theism",
+    "Platonism about properties"
+   ],
+   "config_path": "config/topics/divine-simplicity.yaml",
+   "commands": [
+    "make corpus TOPIC=divine-simplicity",
+    "make targets TOPIC=divine-simplicity",
+    "make map TOPIC=divine-simplicity",
+    "make runs TOPIC=divine-simplicity",
+    "make assess TOPIC=divine-simplicity",
+    "make revise TOPIC=divine-simplicity",
+    "make eval TOPIC=divine-simplicity",
+    "make export TOPIC=divine-simplicity"
+   ]
+  },
+  {
+   "slug": "fine-tuning",
+   "name": "The fine-tuning argument",
+   "description": "Arguments from the apparent fine-tuning of physical constants and initial conditions to a designer, and the replies: the multiverse, observation-selection effects, the normalizability problem, and doubts about the probabilities involved.",
+   "area": "philosophy of religion and philosophy of physics",
+   "default": false,
+   "status": "not_run",
+   "data": "topics/fine-tuning/",
+   "counts": null,
+   "families": null,
+   "lead": null,
+   "searches": [
+    "fine-tuning argument",
+    "fine-tuning and design",
+    "multiverse objection",
+    "anthropic principle",
+    "normalizability problem",
+    "observation selection"
+   ],
+   "config": {
+    "slug": "fine-tuning",
+    "name": "The fine-tuning argument",
+    "description": "Arguments from the apparent fine-tuning of physical constants and initial conditions to a designer, and the replies: the multiverse, observation-selection effects, the normalizability problem, and doubts about the probabilities involved.",
+    "area": "philosophy of religion and philosophy of physics",
+    "queries": {
+     "fine-tuning argument": "\"fine-tuning argument\"",
+     "fine-tuning and design": "\"fine-tuning\" AND design AND God",
+     "multiverse objection": "multiverse AND \"fine-tuning\"",
+     "anthropic principle": "\"anthropic principle\" AND (God OR design)",
+     "normalizability problem": "normalizability AND \"fine-tuning\"",
+     "observation selection": "\"observation selection\" AND \"fine-tuning\""
+    },
+    "fresh_from": "2026-08-01",
+    "fresh_queries": [
+     "\"fine-tuning\"",
+     "\"design argument\"",
+     "\"anthropic principle\"",
+     "multiverse AND God",
+     "\"philosophy of religion\"",
+     "God AND argument"
+    ],
+    "relevant": "fine.?tun|design|anthropic|multiverse|constants|cosmolog|teleolog|god\\b|theis|atheis",
+    "relevance_levels": [
+     "none",
+     "touches arguments for God's existence or cosmology",
+     "concerns design arguments, anthropic reasoning or the multiverse",
+     "directly about the fine-tuning argument"
+    ],
+    "schools": [
+     "Bayesian confirmation theory",
+     "multiverse naturalism",
+     "classical theism",
+     "observation-selection reasoning",
+     "skeptical theism"
+    ]
+   },
+   "schools": [
+    "Bayesian confirmation theory",
+    "multiverse naturalism",
+    "classical theism",
+    "observation-selection reasoning",
+    "skeptical theism"
+   ],
+   "config_path": "config/topics/fine-tuning.yaml",
+   "commands": [
+    "make corpus TOPIC=fine-tuning",
+    "make targets TOPIC=fine-tuning",
+    "make map TOPIC=fine-tuning",
+    "make runs TOPIC=fine-tuning",
+    "make assess TOPIC=fine-tuning",
+    "make revise TOPIC=fine-tuning",
+    "make eval TOPIC=fine-tuning",
+    "make export TOPIC=fine-tuning"
+   ]
+  }
+ ]
+}

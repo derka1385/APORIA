@@ -1,0 +1,12 @@
+{
+  "note": "Canonical eval fixture: the build agent's paraphrase of Schellenberg's standard (2015) formulation of the hiddenness argument. Used only by E2 (gauntlet calibration); not a corpus record and never cited.",
+  "id": "EVAL.arg1",
+  "title": "The hiddenness argument (Schellenberg, standard form)",
+  "premises": {
+    "EVAL.p1": "If a perfectly loving God exists, then there exists a God who is always open to a personal relationship with any finite person.",
+    "EVAL.p2": "If there exists a God who is always open to a personal relationship with any finite person, then no finite person is ever nonresistantly in a state of nonbelief in relation to the proposition that God exists.",
+    "EVAL.p3": "If no perfectly loving God exists, then God does not exist.",
+    "EVAL.p4": "Some finite persons are or have been nonresistantly in a state of nonbelief in relation to the proposition that God exists."
+  },
+  "conclusion": {"EVAL.c": "God does not exist."}
+}

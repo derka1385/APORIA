@@ -1,0 +1,32 @@
+# The topic this build ran. Paths for the default topic stay at data/, results/, web/public/data/.
+slug: divine-hiddenness
+name: Divine hiddenness
+default: true
+description: >-
+  Schellenberg's hiddenness argument (1993 onward) and the debate it started: whether a perfectly loving God
+  would allow nonresistant nonbelief, plus recent philosophy of religion.
+area: philosophy of religion
+# OpenAlex title_and_abstract.search strings (label -> query). Quoted = phrase match.
+queries:
+  divine hiddenness: '"divine hiddenness"'
+  nonresistant nonbelief: '"nonresistant nonbelief" OR "nonresistant nonbelievers"'
+  divine silence: '"divine silence"'
+  hiddenness of God: '"hiddenness of God"'
+  skeptical theism hiddenness: '"skeptical theism" AND hiddenness'
+  Schellenberg hiddenness argument: 'Schellenberg AND hiddenness'
+# Fresh candidates (published since the fresh date) for target selection.
+fresh_from: "2026-08-01"
+fresh_queries: ['"divine hiddenness"', 'hiddenness AND God', 'theism', 'atheism', '"existence of God"',
+                '"philosophy of religion"', 'God AND argument', '"religious belief"']
+# A record is kept only if its title + abstract match this (case-insensitive).
+relevant: 'hidden|nonbelie|non-belie|divine|god\b|theis|atheis|religio|faith|silence'
+# How the target screen grades relevance (0..3).
+relevance_levels:
+  - none
+  - touches God's attributes or the existence of God
+  - concerns divine love, God's availability to creatures, evidence for God or nonbelief
+  - directly about divine hiddenness
+# Schools the Tradition Lens may argue from.
+schools: [skeptical theism, Molinism, open theism, Reformed epistemology, naturalism]
+# Canonical argument used by E2 (gauntlet calibration); omit for topics without one.
+e2_fixture: schellenberg.json

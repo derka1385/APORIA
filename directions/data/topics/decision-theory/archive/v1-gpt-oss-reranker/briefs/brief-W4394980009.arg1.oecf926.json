@@ -1,0 +1,196 @@
+{
+  "id": "brief-W4394980009.arg1.oecf926",
+  "objection_id": "W4394980009.arg1.oecf926",
+  "research_question": "How can apologetics justify privileging Pascal's wager as the primary apologetic tool while accommodating seekers who value the ambiguity of postmodern renditions?",
+  "argument": {
+    "id": "W4394980009.arg1",
+    "title": "Prefer original Pascal over postmodern",
+    "paper_id": "oa:W4394980009",
+    "paper_title": "Pascal’s Wager and Its Postmodern Counterpart",
+    "premises": [
+      {
+        "id": "W4394980009.c057",
+        "text": "The postmodern rendition of the wager is far too ambivalent.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c058",
+        "text": "The postmodern rendition does not give the seeker any certainty and hope.",
+        "quote": "In our apologetics we call on Pascal’s wager rather than the postmodern (e.g., Kearney’s) rendition of the wager, which is far too ambivalent and, still, does not give the seeker any certainty and hope (although this is exactly what postmodernists like Kearney shy away from)."
+      },
+      {
+        "id": "W4394980009.c060",
+        "text": "Pascal is certain about where our certainty lies.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      },
+      {
+        "id": "W4394980009.c054",
+        "text": "Pascal clearly clarifies the object of the wager in the remainder of his Pensées, providing certainty.",
+        "quote": "There is no doubt in the mind of Pascal where our certainty lies and he painstakingly clarifies the object of the Wager in the remainder of his Pensées."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4394980009.arg1.mp",
+      "text": "If the postmodern rendition is ambivalent, fails to give the seeker certainty and hope, and Pascal provides certainty about the object of the wager, then Pascal's wager should be used in apologetics instead of the postmodern rendition."
+    },
+    "conclusion": {
+      "id": "W4394980009.c071",
+      "text": "We should use Pascal’s wager in apologetics instead of the postmodern rendition of the wager."
+    },
+    "skeleton": "A; ~B; C; D |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4394980009.arg1.mp",
+    "text": "If the postmodern rendition is ambivalent, fails to give the seeker certainty and hope, and Pascal provides certainty about the object of the wager, then Pascal's wager should be used in apologetics instead of the postmodern rendition."
+  },
+  "objection": "Consider a seeker, Emma, who values intellectual honesty above certainty. Emma is drawn to the postmodern rendition's ambiguity, finding it more authentic. She believes that true faith requires embracing uncertainty, and the postmodern rendition resonates with her. Meanwhile, Pascal's wager, with its emphasis on certainty, strikes her as overly simplistic. In this scenario, the postmodern rendition's ambivalence is not a weakness, but a strength.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Acknowledges Emma’s preference for ambiguity but argues that the argument’s defect is tied to the aim of apologetics—providing certainty and hope—not to individual tastes, so the postmodern rendition’s ambivalence does not undermine the choice of Pascal’s wager for apologetic purposes.",
+      "why_it_failed": "It does not address the objection that ambiguity itself may furnish hope, leaving the claim that only certainty can serve apologetic aims insufficiently defended."
+    },
+    {
+      "defender": "Defender A",
+      "response": "Reiterates that the argument concerns the primary apologetic instrument, concedes the original premise was too broad, and proposes a narrowed premise that Pascal’s wager should be primary while the postmodern version can be supplementary.",
+      "why_it_failed": "The response admits the need to narrow the premise, indicating the original argument cannot stand as a universal claim; it still lacks justification for why Pascal’s rendition must remain primary over any ambiguous alternative."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Distinguishes between provisional ambiguity (which respects a seeker’s intellectual honesty) and permanent ambivalence (which withholds certainty and hope), claiming the argument survives only if the latter is the defect.",
+      "why_it_failed": "The defense rests on a contested distinction that is not demonstrated, and it does not show why permanent ambivalence cannot itself provide hope or fulfill apologetic aims."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2071407100",
+      "paper_id": "oa:W2071407100",
+      "title": "A defence of Pascal's wager",
+      "authors": [
+        "Geoffrey Brown"
+      ],
+      "year": 1984,
+      "url": "https://doi.org/10.1017/s0034412500016322",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W1990525430",
+      "paper_id": "oa:W1990525430",
+      "title": "Infinite Return: Two Ways of Wagering with Pascal",
+      "authors": [
+        "James Wetzel"
+      ],
+      "year": 1993,
+      "url": "https://doi.org/10.1017/s0034412500022162",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    },
+    {
+      "record_id": "abs:oa:W2190077887",
+      "paper_id": "oa:W2190077887",
+      "title": "信念と賭け : パスカルとジェイムズ : 社会空間における信念の生態学試論1",
+      "authors": [
+        "満 濵本"
+      ],
+      "year": 2008,
+      "url": "https://doi.org/10.15017/13864",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": ""
+    }
+  ],
+  "novelty": 1.0,
+  "records_searched": 2330,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2071407100",
+      "paper_id": "oa:W2071407100",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "A defence of Pascal's wager"
+    },
+    {
+      "record_id": "abs:oa:W1990525430",
+      "paper_id": "oa:W1990525430",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "Infinite Return: Two Ways of Wagering with Pascal"
+    },
+    {
+      "record_id": "abs:oa:W2190077887",
+      "paper_id": "oa:W2190077887",
+      "verdict": "different",
+      "similarity": 0.0,
+      "quote": "",
+      "title": "信念と賭け : パスカルとジェイムズ : 社会空間における信念の生態学試論1"
+    }
+  ],
+  "open_questions": [
+    "What criteria determine when ambiguity functions as a defect versus a virtue within apologetic discourse?",
+    "How can a flexible apologetics incorporate both the certainty of Pascal's wager and the authentic ambiguity valued by some seekers without compromising its core aim?",
+    "Is the proposed distinction between provisional and permanent ambivalence philosophically defensible, and how might it be operationalized?",
+    "What empirical evidence exists regarding seekers’ preferences for certainty versus ambiguity in religious apologetics?"
+  ],
+  "paper_direction": "A paper here would argue that apologetics should adopt Pascal's wager as its primary methodological framework while allowing the postmodern rendition as a supplementary pathway for seekers who prioritize intellectual honesty and ambiguity. The case would begin by reconstructing the original argument and the objection centered on Emma, then critically assess the defenders' replies, especially the distinction between provisional and permanent ambivalence. Anticipating Defender B's strongest reply, the paper would need to demonstrate whether the provisional/ permanent ambivalence split can be justified and whether permanent ambivalence indeed precludes hope. The thesis would maintain that a tiered apologetic model—primary certainty through Pascalian reasoning, with optional ambiguous engagement—best respects both the traditional aim of providing hope and the contemporary demand for authenticity.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 1.75,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "Emma's preference does not engage the conditional premise as stated, which is about what apologetics should use given its aim, not about what some seekers find attractive, and the objection runs together certainty about the wager's object with certainty as an epistemic state.",
+      "robustness": "A referee would immediately note that individual taste is irrelevant to the normative question and that Pascal's wager already presupposes uncertainty; neither the direction nor the transcript answers this, and the tiered model simply retreats from the original claim.",
+      "significance": "Even if successful, a 'primary plus supplementary' apologetic strategy is a modest methodological recommendation that would not change how the wager or its postmodern variants are discussed in philosophy of religion or decision theory.",
+      "specificity": "There is a nominal thesis (the tiered model), but the 'postmodern rendition' is never identified, the provisional/permanent ambivalence distinction is left undeveloped, and one of the open questions is empirical survey work outside the paper's scope."
+    },
+    "strongest_objection": "The paper treats apologetic choice as a matter of matching seekers' temperaments (Emma likes ambiguity, others like certainty). That makes its 'tiered model' a pastoral or rhetorical recommendation rather than a philosophical thesis about which argument is better. It also rests on a false contrast: Pascal's wager is itself an argument for acting under rational uncertainty ('reason can decide nothing here'). So 'Pascal = certainty vs. postmodern = ambiguity' misdescribes the wager, and Emma's preference for embracing uncertainty is something the Pascalian can claim to satisfy rather than a point against using it.",
+    "reply_available": false,
+    "what_it_needs": "It must define the 'postmodern rendition' with textual sources (e.g., Caputo, Vattimo, Kearney) and separate the epistemic status of the wager's premises from the psychological certainty or hope it produces. It must then give a non-preference-based criterion for when ambiguity is an apologetic defect, rather than a tiered compromise that simply concedes the objection.",
+    "summary": "As framed, this is a pastoral compromise built on a mischaracterization of the wager and an appeal to individual taste, and it would not survive a first competent reader without a fundamental reconception.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T10:30:04.404467+00:00"
+  },
+  "revision": {
+    "research_question": "Under what non-preference-based criterion is ambiguity an apologetic defect, such that Pascal's wager should be preferred to a postmodern rendition of it, given that the wager itself already reasons under uncertainty about God's existence?",
+    "paper_direction": "A paper here would argue that the conditional premise (if the postmodern rendition is ambivalent, fails to give the seeker certainty and hope, and Pascal fixes the object of the wager, then Pascal's wager should be used in apologetics) is valid only with an unstated bridge: that apologetics is answerable to the epistemic and practical ends the wager sets, not to the seeker's temperament. The paper would first identify the postmodern rendition from its textual sources, such as the works of Caputo, Vattimo and Kearney the referee names, and state precisely which claims about it are being attributed. It would then separate two things the original argument runs together: the epistemic status of the wager's premises (whether the probability of God's existence is known) and the psychological certainty or hope the argument is meant to produce in a seeker. Pascal's wager already accepts uncertainty about whether God exists, so ambiguity about existence cannot by itself be the defect. The criterion the paper defends is an object-level one. Ambiguity is an apologetic defect when it leaves the outcome matrix undefined, that is, when the seeker cannot say what is being wagered on, because the dominance comparison that makes the wager action-guiding requires a determinate object. Ambiguity about probability is compatible with the wager's reasoning; ambiguity about the object is not. On this criterion the postmodern rendition is defective only if its ambivalence reaches the object, and the paper would test that claim against the texts rather than against Emma's preference. The thesis is therefore narrowed: it does not claim that Pascal's wager should replace the postmodern rendition for seekers who value honesty, but that Pascal's wager is preferable for apologetics only where the postmodern rendition's ambiguity is shown to be object-level, and that uncertainty about existence is no objection to the wager at all.",
+    "reply_to_strongest_objection": "The paper concedes that individual taste is irrelevant to the normative question and that the wager presupposes uncertainty, so it drops the claim that Pascal offers certainty against the postmodern ambiguity of 'embracing uncertainty'. It replies with a distinction between uncertainty about whether God exists and uncertainty about what is wagered on. The wager tolerates the first, since its dominance reasoning is run on probabilities. It does not tolerate the second, since the comparison of outcomes needs a determinate object. The criterion is non-preferential: ambiguity is a defect when it makes the wager's outcome matrix undefined. The paper then tests whether the postmodern rendition's ambivalence falls on the object or only on the probability, using the textual sources. Only the first would count against it. The distinction between epistemic status and psychological certainty is applied throughout, so the premise is evaluated by what the wager can establish, not by what a seeker feels.",
+    "what_changed": "The revision drops the temperament-based tiered model, defines the postmodern rendition from textual sources, and replaces the certainty-versus-ambiguity contrast with a non-preference criterion that separates uncertainty about existence from uncertainty about the wager's object.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T10:32:47.245301+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The Emma objection rests on a seeker's preference, so it misses the premise's normative claim about apologetic aims; the paper direction keeps the premise but shifts its subject from certainty and hope to object-determinacy, which is coherent but no longer the conditional the argument states.",
+        "robustness": "The direction engages neither the well-known many-gods and partition objections, which threaten Pascal's object-determinacy as much as the postmodern rendition's, nor the question of whether the postmodern authors offer a wager in the decision-theoretic sense, so it would likely fail its first competent reader.",
+        "significance": "Separating uncertainty about God's existence from indeterminacy of what is wagered on is a modest refinement close to points already in the decision-theoretic literature on the wager, and its payoff is confined to a niche apologetic comparison.",
+        "specificity": "It has a definite narrowed thesis and a concrete criterion (an undefined outcome matrix), and it commits to identifying textual sources and testing them, though the texts and the test procedure are only gestured at."
+      },
+      "strongest_objection": "The object-level criterion begs the question against the postmodern rendition and does not favour Pascal. Caputo's 'religion without religion', Vattimo's weak thought and Kearney's anatheism do not offer a decision-theoretic wager with an outcome matrix. They reject that framing, so judging them by whether the matrix is defined imposes Pascal's standard on a rival that does not accept it. And Pascal's own matrix is not determinate either. The many-gods and mixed-strategy objections (Cargile, Hájek, Jordan) show that fixing the object as the Christian God, by appeal to the rest of the Pensées, does not settle the partition of states that dominance reasoning needs. So the criterion either convicts both renditions or neither.",
+      "reply_available": false,
+      "what_it_needs": "The paper must show that the postmodern texts claim to be wagers at all, so that the outcome-matrix test is not a category mistake. It must also show that Pascal's rendition meets the determinacy criterion despite the many-gods partition problem; otherwise the criterion cannot ground a comparative preference.",
+      "summary": "The epistemic/psychological and probability/object distinctions are a sensible start, but as planned the paper applies a decision-theoretic standard to texts that disclaim it and ignores the many-gods problem facing Pascal's own object, so it needs substantial rethinking before it is a defensible paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T10:33:15.930710+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}
