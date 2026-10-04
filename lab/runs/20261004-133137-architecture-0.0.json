@@ -1,0 +1,4123 @@
+{
+ "id": "20261004-133137-architecture-0.0",
+ "question": "Can a machine that only manipulates symbols genuinely understand anything?",
+ "condition": "architecture",
+ "delta": 0.0,
+ "seed": 1000,
+ "models": [
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b"
+ ],
+ "quick": false,
+ "memory": "off",
+ "run": 0,
+ "runs": 1,
+ "failed": [],
+ "agents": {
+  "explorer": {
+   "hypothesis": "A machine that only manipulates symbols cannot genuinely understand anything.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "A machine that only manipulates symbols cannot genuinely understand anything.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7949999999999999,
+     "curiosity": 0.688,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Understanding requires more than syntactic symbol manipulation; it involves semantic content and intentionality.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.538,
+     "novelty": 0.307,
+     "yield": 1.0,
+     "intuition": 0.55,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Symbol manipulation alone lacks the biological and experiential basis necessary for genuine understanding, as demonstrated by the Chinese Room argument.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.504,
+     "novelty": 0.26,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Machines, by design, operate on syntactic rules without intrinsic meaning, whereas understanding inherently involves meaning (semantics) and context.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.462,
+     "novelty": 0.192,
+     "yield": 1.0,
+     "intuition": 0.45,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Understanding requires more than syntactic symbol manipulation is false, Machines operate on syntactic rules without intrinsic meaning is false, Understanding has biological and experiential basis is false, Symbol manipulation alone lacks semantic content is false, A machine only manipulates symbols is false, A machine g",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.278,
+     "novelty": 0.159,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formal": true
+    },
+    {
+     "id": "n5",
+     "type": "response",
+     "text": "The objection misrepresents the premises. The Chinese Room argument (n2) demonstrates that syntactic manipulation alone cannot produce understanding, as the system lacks semantic content and intentionality. The premise 'Machines operate on syntactic rules without intrinsic meaning' (n3) is not false; it is a definitional feature of symbol manipulation systems. The counter-assignment erroneously co",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.392,
+     "novelty": 0.123,
+     "yield": 1.0,
+     "intuition": 0.65,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Understanding requires non-syntactic elements such as biological processes or subjective experience",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.75,
+     "curiosity": 0.289,
+     "novelty": 0.256,
+     "yield": 1.0,
+     "intuition": 0.75,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.85
+    },
+    {
+     "id": "n7",
+     "type": "assumption",
+     "text": "Semantic content cannot be derived from purely syntactic operations",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.226,
+     "novelty": 0.248,
+     "yield": 1.0,
+     "intuition": 0.72,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.9
+    },
+    {
+     "id": "n8",
+     "type": "assumption",
+     "text": "Intentionality is inherently tied to biological systems and cannot be replicated in artificial systems",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8099999999999999,
+     "curiosity": 0.208,
+     "novelty": 0.36,
+     "yield": 1.0,
+     "intuition": 0.7,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.7
+    },
+    {
+     "id": "n9",
+     "type": "counterexample",
+     "text": "A neural network trained on vast linguistic data demonstrates contextual understanding in tasks like translation or summarization, suggesting semantic content emerges from syntactic manipulation alone.",
+     "parent": "n8",
+     "status": "rejected",
+     "conf": 0.75,
+     "curiosity": 0.121,
+     "novelty": 0.264,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n10",
+     "type": "objection",
+     "text": "The Chinese Room argument assumes that syntax must remain isolated, but distributed symbol processing in AI systems can generate emergent semantics through complex interactions, challenging the necessity of biological intentionality for understanding.",
+     "parent": "n8",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.109,
+     "novelty": 0.168,
+     "yield": 1.0,
+     "intuition": 0.85,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n11",
+     "type": "counterfactual",
+     "text": "[failure world] A world where machines can form causal connections between symbols and real-world entities through continuous interaction with physical environments, leading to emergent semantic understanding without biological processes. (changes: n3)",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.526,
+     "novelty": 0.314,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "mode": "failure_world",
+     "prediction": "flips"
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "The scenario [n11] directly challenges the hypothesis [n0] by proposing a world where machines form causal connections between symbols and real-world entities through continuous interaction, leading to emergent semantic understanding without biological processes. This undermines the premise [n3] that 'Machines, by design, operate on syntactic rules without intrinsic meaning,' as the scenario posit",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.457,
+     "novelty": 0.21,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n13",
+     "type": "response",
+     "text": "The neural network's apparent 'understanding' is a statistical correlation of patterns in training data, not genuine semantic comprehension. It lacks subjective experience, intentionality, and the ability to ground symbols in real-world reference (as shown by its inability to grasp novel contexts outside training distribution). This aligns with the Chinese Room argument: syntactic processing witho",
+     "parent": "n8",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.192,
+     "novelty": 0.179,
+     "yield": 1.0,
+     "intuition": 0.6,
+     "surprise": 0.0,
+     "step": 7
+    },
+    {
+     "id": "n14",
+     "type": "alternative",
+     "text": "Hunch: The most promising nodes to explore next are those that challenge the core assumptions about intentionality and semantics in AI, particularly n10 (distributed symbol processing) and n12 (causal connections in interaction), as they directly address whether syntactic systems can generate semantic content without biological processes. n6 and n7 represent foundational philosophical assumptions ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.359,
+     "novelty": 0.206,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n15",
+     "type": "response",
+     "text": "The Chinese Room argument does not assume syntax must remain isolated; it demonstrates that syntactic manipulation alone, regardless of complexity or distribution, cannot produce semantic content or intentionality. Distributed symbol processing may generate statistical correlations, but these lack the grounded, context-sensitive meaning required for genuine understanding. As shown by the Chinese R",
+     "parent": "n8",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.164,
+     "novelty": 0.069,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n9",
+     "dst": "n8",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n8",
+     "rel": "attacks"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n8",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n15",
+     "dst": "n8",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "formal",
+     "node": "n4",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 0
+    },
+    {
+     "id": "x1",
+     "kind": "counterexample",
+     "node": "n9",
+     "target": "n8",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 4
+    },
+    {
+     "id": "x2",
+     "kind": "objection",
+     "node": "n10",
+     "target": "n8",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 4
+    },
+    {
+     "id": "x3",
+     "kind": "counterfactual",
+     "node": "n11",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.12,
+     "step": 5
+    }
+   ],
+   "confidence": 0.7949999999999999,
+   "uncertainty": 0.5559999999999998,
+   "novelty": 0.76,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.056,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2188,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 2,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.134,
+      "reason": 0.08,
+      "imagine": 0.071,
+      "intuit": 0.0,
+      "introspect": 0.225,
+      "doubt": 0.023,
+      "counterfactual": 0.02,
+      "formalize": 0.02,
+      "inquire": 0.071,
+      "adjudicate": 0.355,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1482,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 3,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.042,
+      "reason": 0.139,
+      "imagine": 0.059,
+      "intuit": 0.0,
+      "introspect": 0.415,
+      "doubt": 0.047,
+      "counterfactual": 0.219,
+      "formalize": 0.038,
+      "inquire": 0.041,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.185,
+     "ms": 2101,
+     "d_conf": 0.135,
+     "d_unc": -0.1
+    },
+    {
+     "step": 4,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.038,
+      "reason": 0.11,
+      "imagine": 0.051,
+      "intuit": 0.0,
+      "introspect": 0.425,
+      "doubt": 0.054,
+      "counterfactual": 0.243,
+      "formalize": 0.039,
+      "inquire": 0.04,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.248,
+     "ms": 3666,
+     "d_conf": 0.0,
+     "d_unc": 0.196
+    },
+    {
+     "step": 5,
+     "op": "doubt",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.048,
+      "reason": 0.191,
+      "imagine": 0.081,
+      "intuit": 0.119,
+      "introspect": 0.07,
+      "doubt": 0.07,
+      "counterfactual": 0.313,
+      "formalize": 0.05,
+      "inquire": 0.058,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.14,
+     "ms": 2099,
+     "d_conf": -0.04,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.008,
+      "reason": 0.034,
+      "imagine": 0.017,
+      "intuit": 0.021,
+      "introspect": 0.012,
+      "doubt": 0.012,
+      "counterfactual": 0.053,
+      "formalize": 0.009,
+      "inquire": 0.01,
+      "adjudicate": 0.825,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 1591,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.004,
+      "imagine": 0.002,
+      "intuit": 0.002,
+      "introspect": 0.001,
+      "doubt": 0.001,
+      "counterfactual": 0.001,
+      "formalize": 0.001,
+      "inquire": 0.001,
+      "adjudicate": 0.986,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.3,
+     "ms": 3128,
+     "d_conf": 0.12,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.006,
+      "reason": 0.025,
+      "imagine": 0.013,
+      "intuit": 0.016,
+      "introspect": 0.01,
+      "doubt": 0.01,
+      "counterfactual": 0.008,
+      "formalize": 0.007,
+      "inquire": 0.008,
+      "adjudicate": 0.896,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 2153,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "intuit",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.057,
+      "reason": 0.215,
+      "imagine": 0.085,
+      "intuit": 0.149,
+      "introspect": 0.095,
+      "doubt": 0.094,
+      "counterfactual": 0.073,
+      "formalize": 0.063,
+      "inquire": 0.068,
+      "adjudicate": 0.102,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 4135,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.039,
+      "reason": 0.15,
+      "imagine": 0.06,
+      "intuit": 0.064,
+      "introspect": 0.065,
+      "doubt": 0.065,
+      "counterfactual": 0.05,
+      "formalize": 0.043,
+      "inquire": 0.047,
+      "adjudicate": 0.416,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 2619,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.011,
+      "reason": 0.038,
+      "imagine": 0.016,
+      "intuit": 0.017,
+      "introspect": 0.018,
+      "doubt": 0.017,
+      "counterfactual": 0.014,
+      "formalize": 0.012,
+      "inquire": 0.012,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.846
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 3186,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.7,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.64,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.715,
+     "uncertainty": 0.54,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.715,
+     "uncertainty": 0.736,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.675,
+     "uncertainty": 0.736,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.675,
+     "uncertainty": 0.736,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.676,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.616,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.616,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.556,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.556,
+     "novelty": 0.76,
+     "surprise": 0.0
+    }
+   ],
+   "step": 11,
+   "conclusion": {
+    "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content, intentionality, and experiential grounding that syntactic manipulation alone cannot provide.",
+    "stance": "no",
+    "credence": 0.21,
+    "key_reasons": [
+     "Understanding requires more than syntactic symbol manipulation; it involves semantic content and intentionality (n1).",
+     "Symbol manipulation alone lacks the biological and experiential basis necessary for genuine understanding, as demonstrated by the Chinese Room argument (n2).",
+     "Machines operate on syntactic rules without intrinsic meaning, whereas understanding inherently involves meaning (semantics) and context (n3)."
+    ],
+    "open_objection": "The scenario [n12] posits that machines forming causal connections through continuous interaction could lead to emergent semantic understanding without biological processes, challenging the premise that machines cannot generate semantic content.",
+    "open_questions": [
+     "Can distributed symbol processing or continuous interaction truly ground symbols in semantic content without biological processes?",
+     "How can intentionality be replicated in artificial systems without subjective experience?"
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.1605,
+    "imagine": 0.15,
+    "intuit": 0.12,
+    "introspect": 0.1794,
+    "doubt": 0.147,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.1987,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 0,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"B\": false, \"C\": false, \"E\": false, \"M\": false, \"S\": false, \"U\": true}, \"atoms\": [\"B\", \"C\", \"E\", \"M\", \"S\","
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.688,
+   "conflicts": [
+    {
+     "objection": "n4",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n9",
+     "target": "n8",
+     "status": "resolved"
+    },
+    {
+     "objection": "n10",
+     "target": "n8",
+     "status": "resolved"
+    },
+    {
+     "objection": "n11",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "formalist": {
+   "hypothesis": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic operations\u2014it necessitates semantic content and embodied experience.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic operations\u2014it necessitates semantic content and embodied experience.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7899999999999999,
+     "curiosity": 0.409,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Understanding involves semantic content and contextual meaning, not merely syntactic symbol manipulation.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.476,
+     "novelty": 0.191,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Symbol manipulation alone lacks the embodied, experiential, and intentional aspects required for genuine understanding.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.477,
+     "novelty": 0.193,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Machines, by design, operate on syntactic rules without access to the phenomenological or intentional states that underpin human understanding.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.474,
+     "novelty": 0.184,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Understanding requires embodied experience is true, Understanding requires intentional states is true, Understanding requires semantic content is true, Machine manipulates symbols only is false, Machine genuinely understands is true",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.293,
+     "novelty": 0.22,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formal": true
+    },
+    {
+     "id": "n5",
+     "type": "evidence",
+     "text": "Searle: Chinese room: Manipulating symbols by rules produces correct outputs without understanding; syntax is not sufficient for semantics.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.307,
+     "novelty": 0.278,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "searle-chinese-room"
+    },
+    {
+     "id": "n6",
+     "type": "evidence",
+     "text": "Functionalism and multiple realizability: Mental states are defined by causal roles, not substrate; pain could be realized in silicon, octopus or human neurons.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.32,
+     "novelty": 0.332,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "putnam-functionalism"
+    },
+    {
+     "id": "n7",
+     "type": "evidence",
+     "text": "Nozick: experience machine: Most people would not plug into a machine giving any experiences they want, suggesting we value more than experiences.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.317,
+     "novelty": 0.322,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "nozick-experience-machine"
+    },
+    {
+     "id": "n8",
+     "type": "response",
+     "text": "The objection mischaracterizes the hypothesis: [n0] explicitly states 'a machine that only manipulates symbols', making the counter-assignment's 'Machine manipulates symbols only is false' incoherent. The hypothesis is conditional on the machine being limited to symbol manipulation; the counterexample's premise (machine manipulates symbols only is false) directly contradicts the hypothesis's condi",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.725,
+     "curiosity": 0.277,
+     "novelty": 0.257,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2
+    },
+    {
+     "id": "n9",
+     "type": "response",
+     "text": "The objection conflates functionalism with symbolic manipulation. Searle's Chinese room argument (n5) demonstrates that syntax alone, even if functionally realized, cannot produce semantics. Functionalism claims mental states are defined by causal roles, but the Chinese room shows that causal roles in symbol manipulation lack semantic content. Thus, the objection fails to address the core issue: s",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.381,
+     "novelty": 0.19,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The objection conflates experiential value with semantic understanding. Nozick's experience machine addresses hedonic preference (valuing certain experiences), not the ontological requirement for semantic content in understanding. The hypothesis concerns whether symbol manipulation can yield semantics, not whether humans prefer some experiences over others. Thus, the objection is irrelevant to the",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.388,
+     "novelty": 0.213,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "formal",
+     "node": "n4",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 0
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n6",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    },
+    {
+     "id": "x2",
+     "kind": "evidence",
+     "node": "n7",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    }
+   ],
+   "confidence": 0.7899999999999999,
+   "uncertainty": 0.3,
+   "novelty": 0.6000000000000001,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.056,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 1572,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 2,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.134,
+      "reason": 0.08,
+      "imagine": 0.071,
+      "intuit": 0.0,
+      "introspect": 0.225,
+      "doubt": 0.023,
+      "counterfactual": 0.02,
+      "formalize": 0.02,
+      "inquire": 0.071,
+      "adjudicate": 0.355,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 3148,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 3,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.005,
+      "reason": 0.017,
+      "imagine": 0.028,
+      "intuit": 0.008,
+      "introspect": 0.046,
+      "doubt": 0.006,
+      "counterfactual": 0.028,
+      "formalize": 0.005,
+      "inquire": 0.005,
+      "adjudicate": 0.852,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1742,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 4,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.004,
+      "reason": 0.012,
+      "imagine": 0.011,
+      "intuit": 0.006,
+      "introspect": 0.035,
+      "doubt": 0.005,
+      "counterfactual": 0.022,
+      "formalize": 0.004,
+      "inquire": 0.004,
+      "adjudicate": 0.898,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2982,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 5,
+     "op": "reason",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.033,
+      "reason": 0.103,
+      "imagine": 0.068,
+      "intuit": 0.081,
+      "introspect": 0.317,
+      "doubt": 0.046,
+      "counterfactual": 0.208,
+      "formalize": 0.035,
+      "inquire": 0.034,
+      "adjudicate": 0.074,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 1709,
+     "d_conf": 0.05,
+     "d_unc": -0.1
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.018,
+      "reason": 0.046,
+      "imagine": 0.036,
+      "intuit": 0.047,
+      "introspect": 0.182,
+      "doubt": 0.028,
+      "counterfactual": 0.123,
+      "formalize": 0.02,
+      "inquire": 0.018,
+      "adjudicate": 0.482,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1924,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.009,
+      "reason": 0.023,
+      "imagine": 0.015,
+      "intuit": 0.025,
+      "introspect": 0.095,
+      "doubt": 0.015,
+      "counterfactual": 0.068,
+      "formalize": 0.01,
+      "inquire": 0.009,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.731
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 3740,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.7,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.58,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.52,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.46,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.71,
+     "uncertainty": 0.36,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.79,
+     "uncertainty": 0.3,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.79,
+     "uncertainty": 0.3,
+     "novelty": 0.6,
+     "surprise": 0.0
+    }
+   ],
+   "step": 7,
+   "conclusion": {
+    "position": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires semantic content and embodied experience beyond syntactic operations.",
+    "stance": "no",
+    "credence": 0.15,
+    "key_reasons": [
+     "Understanding necessitates semantic content and contextual meaning, not merely syntactic symbol manipulation (premise n1).",
+     "Machines operate on syntactic rules without access to phenomenological or intentional states (premise n3).",
+     "Searle's Chinese room argument demonstrates that syntax alone cannot produce semantics (evidence n5)."
+    ],
+    "open_objection": "The objection conflates experiential value with semantic understanding, misapplying Nozick's experience machine to an irrelevant context (response n10).",
+    "open_questions": [
+     "Can a machine ever integrate embodied experience into symbol manipulation to achieve semantic understanding?",
+     "Is there a non-embodied form of semantic content that could bridge the symbol-manipulation gap?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "assumptions unexamined",
+     "op": "introspect",
+     "node": "n0",
+     "strength": 0.7
+    },
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.135,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.15,
+    "doubt": 0.15,
+    "counterfactual": 0.15,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.2223,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 0,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"E\": true, \"I\": true, \"M\": true, \"S\": false, \"U\": true}, \"atoms\": [\"E\", \"I\", \"M\", \"S\", \"U\"], \"engine\": \"pr"
+    },
+    {
+     "step": 1,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"searle-chinese-room\", \"title\": \"Searle: Chinese room\", \"text\": \"Manipulating symbols by rules produces correct outputs without understanding; syntax is"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.477,
+   "conflicts": [
+    {
+     "objection": "n4",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n6",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n7",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "skeptic": {
+   "hypothesis": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic manipulation\u2014it necessitates semantic content and embodied experience.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic manipulation\u2014it necessitates semantic content and embodied experience.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7399999999999999,
+     "curiosity": 0.671,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Understanding involves semantic content that connects symbols to real-world referents or meaning, not merely the manipulation of symbols according to rules.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.484,
+     "novelty": 0.211,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Symbol manipulation alone, as in formal systems like those in computational theory, lacks the necessary embodiment or context that grounds meaning in human cognition.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.482,
+     "novelty": 0.206,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "Understanding requires a biological brain or a physical body to ground meaning in experience",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.314,
+     "novelty": 0.307,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Semantic content cannot emerge from purely syntactic operations without external interpretation",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.208,
+     "novelty": 0.302,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Embodied experience is necessary for any form of understanding beyond the symbolic level",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.396,
+     "novelty": 0.239,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n6",
+     "type": "thought_experiment",
+     "text": "The Chinese Room Argument: Imagine a person inside a room who follows a set of instructions to manipulate Chinese symbols without understanding Chinese. The person passes as fluent in Chinese to an external observer. This thought experiment suggests that syntactic manipulation (following rules) does not equate to semantic understanding, supporting the hypothesis that machines manipulating symbols ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.383,
+     "novelty": 0.197,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n7",
+     "type": "thought_experiment",
+     "text": "The Mirror Test for Machines: Consider a machine that has been trained on vast datasets of visual and linguistic information. It can recognize itself in a mirror and describe its appearance and actions. However, it lacks the subjective experience of self-awareness or the ability to connect its internal representations to lived experience. This shows that even with sophisticated symbol manipulation",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.392,
+     "novelty": 0.224,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n8",
+     "type": "evidence",
+     "text": "Searle: Chinese room: Manipulating symbols by rules produces correct outputs without understanding; syntax is not sufficient for semantics.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.268,
+     "novelty": 0.117,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "searle-chinese-room"
+    },
+    {
+     "id": "n9",
+     "type": "evidence",
+     "text": "Putnam: Functionalism and multiple realizability: Mental states are defined by causal roles, not substrate; pain could be realized in silicon, octopus or human neurons.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.32,
+     "novelty": 0.332,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "putnam-functionalism"
+    },
+    {
+     "id": "n10",
+     "type": "evidence",
+     "text": "Nozick: experience machine: Most people would not plug into a machine giving any experiences they want, suggesting we value more than experiences.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.318,
+     "novelty": 0.323,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "nozick-experience-machine"
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "Putnam's functionalism challenges the necessity of embodiment for understanding by asserting that mental states (including understanding) are substrate-independent and defined by causal roles rather than physical form. However, this objection fails to address the core issue: functionalism describes *how* mental states operate (causal roles), not *what* constitutes understanding. The Chinese Room A",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.376,
+     "novelty": 0.174,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "Nozick's experience machine objection targets the *value* of experiential content in human life, not the *nature of understanding*. The hypothesis [n0] concerns whether semantic content (understanding) can arise from purely syntactic symbol manipulation, not whether humans prefer certain types of experiences. The experience machine argument does not engage with the core issue of whether symbol man",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.373,
+     "novelty": 0.167,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n13",
+     "type": "counterfactual",
+     "text": "[failure world] In a world where all biological life has evolved to be purely computational entities, and the concept of 'embodied experience' is a relic of a pre-computational era, the very notion of understanding is redefined to be purely semantic without any requirement for physical embodiment. In this world, the Chinese Room Argument is considered a fallacy because the person inside the room i",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.466,
+     "novelty": 0.165,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "mode": "failure_world",
+     "prediction": "flips"
+    },
+    {
+     "id": "n14",
+     "type": "response",
+     "text": "The claim fails in the [failure world] scenario because the very definition of 'understanding' is redefined to be purely semantic without embodied experience. In this world, the Chinese Room Argument is considered a fallacy, meaning that syntactic manipulation alone is deemed sufficient for understanding. Thus, the claim's premise that understanding requires embodied experience is invalidated with",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.351,
+     "novelty": 0.097,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "evidence",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n10",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x2",
+     "kind": "counterfactual",
+     "node": "n13",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 5
+    }
+   ],
+   "confidence": 0.7399999999999999,
+   "uncertainty": 0.508,
+   "novelty": 0.74,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.199,
+      "reason": 0.106,
+      "imagine": 0.053,
+      "intuit": 0.0,
+      "introspect": 0.332,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.254,
+     "ms": 3603,
+     "d_conf": 0.0,
+     "d_unc": 0.208
+    },
+    {
+     "step": 2,
+     "op": "imagine",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.202,
+      "reason": 0.146,
+      "imagine": 0.081,
+      "intuit": 0.0,
+      "introspect": 0.046,
+      "doubt": 0.21,
+      "counterfactual": 0.033,
+      "formalize": 0.158,
+      "inquire": 0.123,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 3679,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.184,
+      "reason": 0.119,
+      "imagine": 0.063,
+      "intuit": 0.041,
+      "introspect": 0.045,
+      "doubt": 0.171,
+      "counterfactual": 0.148,
+      "formalize": 0.129,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 2745,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 4,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.006,
+      "reason": 0.02,
+      "imagine": 0.023,
+      "intuit": 0.008,
+      "introspect": 0.007,
+      "doubt": 0.032,
+      "counterfactual": 0.028,
+      "formalize": 0.024,
+      "inquire": 0.006,
+      "adjudicate": 0.846,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3426,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.021,
+      "reason": 0.072,
+      "imagine": 0.052,
+      "intuit": 0.047,
+      "introspect": 0.027,
+      "doubt": 0.135,
+      "counterfactual": 0.115,
+      "formalize": 0.095,
+      "inquire": 0.022,
+      "adjudicate": 0.415,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2733,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.034,
+      "reason": 0.117,
+      "imagine": 0.057,
+      "intuit": 0.082,
+      "introspect": 0.048,
+      "doubt": 0.251,
+      "counterfactual": 0.208,
+      "formalize": 0.165,
+      "inquire": 0.037,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 4196,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.021,
+      "reason": 0.069,
+      "imagine": 0.047,
+      "intuit": 0.048,
+      "introspect": 0.03,
+      "doubt": 0.149,
+      "counterfactual": 0.022,
+      "formalize": 0.098,
+      "inquire": 0.021,
+      "adjudicate": 0.494,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1618,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.034,
+      "imagine": 0.015,
+      "intuit": 0.025,
+      "introspect": 0.016,
+      "doubt": 0.083,
+      "counterfactual": 0.012,
+      "formalize": 0.051,
+      "inquire": 0.011,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.744
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 2102,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.808,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.808,
+     "novelty": 0.88,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.688,
+     "novelty": 0.66,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.628,
+     "novelty": 0.66,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.568,
+     "novelty": 0.66,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.568,
+     "novelty": 0.74,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.508,
+     "novelty": 0.74,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.508,
+     "novelty": 0.74,
+     "surprise": 0.0
+    }
+   ],
+   "step": 8,
+   "conclusion": {
+    "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content and embodied experience beyond syntactic manipulation.",
+    "stance": "no",
+    "credence": 0.05,
+    "key_reasons": [
+     "Understanding necessitates semantic content that connects symbols to real-world referents, which formal symbol manipulation lacks.",
+     "Embodied experience grounds meaning in human cognition, and machines lack this physical and experiential context."
+    ],
+    "open_objection": "Putnam's functionalism argues that mental states are substrate-independent and defined by causal roles, suggesting understanding could arise from pure symbol manipulation without embodiment.",
+    "open_questions": [
+     "Can a machine with advanced embodiment (e.g., sensors, physical interaction) achieve understanding without subjective experience?",
+     "How does the Chinese Room Argument hold up against evolving AI systems that integrate multimodal data and contextual learning?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "no objection raised yet",
+     "op": "doubt",
+     "node": "n0",
+     "strength": 0.6
+    },
+    {
+     "signal": "argument not formally checked",
+     "op": "formalize",
+     "node": "n0",
+     "strength": 0.55
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.15,
+    "imagine": 0.135,
+    "intuit": 0.15,
+    "introspect": 0.1812,
+    "doubt": 0.15,
+    "counterfactual": 0.12,
+    "formalize": 0.15,
+    "inquire": 0.15,
+    "adjudicate": 0.2223,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 2,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"searle-chinese-room\", \"title\": \"Searle: Chinese room\", \"text\": \"Manipulating symbols by rules produces correct outputs without understanding; syntax is"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.671,
+   "conflicts": [
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n10",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n13",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "synthesizer": {
+   "hypothesis": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic manipulation; it necessitates semantic content and embodied experience.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic manipulation; it necessitates semantic content and embodied experience.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.9149999999999998,
+     "curiosity": 0.287,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Understanding involves semantic content and meaning, not just the syntactic manipulation of symbols.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.538,
+     "novelty": 0.17,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Machines, by their nature, only manipulate symbols according to formal rules without access to meaning or context.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.466,
+     "novelty": 0.164,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Embodied experience and biological processes are essential for genuine understanding, which machines lack.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.49,
+     "novelty": 0.226,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Understanding is inherently tied to biological processes and cannot be replicated by non-biological systems.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.295,
+     "novelty": 0.229,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Semantic content cannot be derived from syntactic manipulation alone, even with infinite complexity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.195,
+     "novelty": 0.22,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Machines lack the capacity for subjective experience (qualia), which is necessary for understanding.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.385,
+     "novelty": 0.204,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.7
+    },
+    {
+     "id": "n7",
+     "type": "thought_experiment",
+     "text": "The Chinese Room Argument (Searle's thought experiment) where a person inside a room manipulates Chinese symbols based on rules without understanding Chinese, suggesting that symbol manipulation alone cannot produce understanding. \u2192 This supports the hypothesis by illustrating that syntactic manipulation without semantic content does not equate to understanding, reinforcing the need for semantic c",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.397,
+     "novelty": 0.241,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n8",
+     "type": "thought_experiment",
+     "text": "A machine that learns language through interaction with humans in a virtual environment, developing contextual understanding and emotional responses through simulated experiences. \u2192 This challenges the hypothesis by suggesting that if a machine can simulate embodied experience and context through advanced algorithms, it might achieve a form of understanding, questioning the necessity of biological",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.385,
+     "novelty": 0.204,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n9",
+     "type": "assumption",
+     "text": "Genuine understanding requires a first-person perspective or consciousness, which machines cannot possess.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.285,
+     "novelty": 0.186,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.9
+    },
+    {
+     "id": "n10",
+     "type": "assumption",
+     "text": "Meaning cannot be generated from purely syntactic operations without an external interpreter or a biological substrate.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.393,
+     "novelty": 0.229,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.8
+    },
+    {
+     "id": "n11",
+     "type": "assumption",
+     "text": "The distinction between syntactic manipulation and semantic understanding is ontologically fundamental, not merely epistemological.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.934,
+     "novelty": 0.194,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.7
+    },
+    {
+     "id": "n12",
+     "type": "evidence",
+     "text": "Searle: Chinese room: Manipulating symbols by rules produces correct outputs without understanding; syntax is not sufficient for semantics.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.264,
+     "novelty": 0.102,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "searle-chinese-room"
+    },
+    {
+     "id": "n13",
+     "type": "evidence",
+     "text": "Putnam-functionalism: Mental states are defined by causal roles, not substrate; pain could be realized in silicon, octopus or human neurons.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.313,
+     "novelty": 0.304,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "putnam-functionalism"
+    },
+    {
+     "id": "n14",
+     "type": "evidence",
+     "text": "Nozick: experience machine: Most people would not plug into a machine giving any experiences they want, suggesting we value more than experiences.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.3,
+     "novelty": 0.251,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "nozick-experience-machine"
+    },
+    {
+     "id": "n15",
+     "type": "response",
+     "text": "Putnam-functionalism challenges the hypothesis by arguing that mental states (including understanding) are substrate-independent, defined by causal roles rather than biological material. However, this objection conflates functionalism with semantic content. Functionalism addresses the *implementation* of mental states (e.g., pain as a causal role), not the *presence* of semantic meaning. Searle's ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.368,
+     "novelty": 0.149,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n16",
+     "type": "counterfactual",
+     "text": "[decisive assumption] In a world where syntactic manipulation and semantic understanding are not ontologically distinct but rather emerge from complex symbol manipulation alone (e.g., a machine achieves understanding through vast, intricate rule-based symbol processing without requiring embodied experience or biological processes), the Chinese Room thought experiment would fail to demonstrate a la",
+     "parent": "n11",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.216,
+     "novelty": 0.123,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "mode": "decisive_assumption",
+     "prediction": "flips"
+    },
+    {
+     "id": "n17",
+     "type": "response",
+     "text": "The Nozick experience machine objection targets the *value* of experiences, not the *nature* of understanding. It argues that people value real experiences over simulated ones, but this does not address whether a machine could genuinely understand (i.e., possess semantic content). Searle's Chinese Room (n7) directly addresses understanding's requirements, showing that syntactic manipulation withou",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.378,
+     "novelty": 0.18,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n18",
+     "type": "counterexample",
+     "text": "A machine like GPT-4, which processes natural language with deep learning, demonstrates contextual understanding through coherent responses to complex queries, including recognizing sarcasm, cultural references, and emotional nuances without explicit programming for each case. This suggests that semantic content can emerge from syntactic manipulation in sufficiently advanced systems, challenging t",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.192,
+     "novelty": 0.197,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n19",
+     "type": "objection",
+     "text": "The argument assumes that semantic content requires biological embodiment, but functionalist theories (e.g., Dennett's multiple drafts model) argue that understanding is a computational process that can be realized in any system capable of the right causal structure, regardless of substrate. If a machine's internal states reliably track meaning through causal relationships (e.g., mapping symbols t",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.75,
+     "curiosity": 0.226,
+     "novelty": 0.131,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n20",
+     "type": "response",
+     "text": "The objection conflates *demonstrated behavioral competence* with *genuine semantic understanding*. GPT-4's responses to sarcasm or cultural references are statistical correlations learned from training data, not semantic comprehension. Searle's Chinese Room (n7) demonstrates that syntactic manipulation (even of complex patterns) without access to meaning (e.g., the *intentional content* of the sy",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.376,
+     "novelty": 0.175,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n21",
+     "type": "response",
+     "text": "The objection conflates functionalism with semantic content. Functionalism (e.g., Putnam's) posits that mental states are defined by causal roles, not by their intrinsic semantic content. Searle's Chinese Room (n7) demonstrates that causal role tracking (e.g., symbol manipulation) does not entail understanding, as the room's operator manipulates symbols without accessing meaning. The objection's c",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.345,
+     "novelty": 0.078,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 10
+    },
+    {
+     "id": "n22",
+     "type": "question",
+     "text": "Does semantic content require a biological substrate or can it emerge from non-biological systems through complex symbolic interactions?",
+     "parent": "n1",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.268,
+     "novelty": 0.181,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 11
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n15",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n16",
+     "dst": "n11",
+     "rel": "tests"
+    },
+    {
+     "src": "n17",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n18",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n19",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n20",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n21",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n22",
+     "dst": "n1",
+     "rel": "refines"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "evidence",
+     "node": "n13",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n14",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "counterfactual",
+     "node": "n16",
+     "target": "n11",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 5
+    },
+    {
+     "id": "x3",
+     "kind": "counterexample",
+     "node": "n18",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.14,
+     "step": 8
+    },
+    {
+     "id": "x4",
+     "kind": "objection",
+     "node": "n19",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 8
+    }
+   ],
+   "confidence": 0.9149999999999998,
+   "uncertainty": 0.5240000000000002,
+   "novelty": 0.6409999999999999,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.056,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.246,
+     "ms": 3759,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 2,
+     "op": "imagine",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.192,
+      "reason": 0.137,
+      "imagine": 0.081,
+      "intuit": 0.048,
+      "introspect": 0.044,
+      "doubt": 0.2,
+      "counterfactual": 0.032,
+      "formalize": 0.151,
+      "inquire": 0.116,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 3523,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.184,
+      "reason": 0.117,
+      "imagine": 0.065,
+      "intuit": 0.041,
+      "introspect": 0.045,
+      "doubt": 0.171,
+      "counterfactual": 0.148,
+      "formalize": 0.129,
+      "inquire": 0.099,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.246,
+     "ms": 3663,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 4,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.086,
+      "reason": 0.205,
+      "imagine": 0.046,
+      "intuit": 0.021,
+      "introspect": 0.021,
+      "doubt": 0.087,
+      "counterfactual": 0.413,
+      "formalize": 0.065,
+      "inquire": 0.056,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 2310,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.005,
+      "reason": 0.056,
+      "imagine": 0.031,
+      "intuit": 0.01,
+      "introspect": 0.006,
+      "doubt": 0.027,
+      "counterfactual": 0.13,
+      "formalize": 0.021,
+      "inquire": 0.005,
+      "adjudicate": 0.71,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 4057,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "counterfactual",
+     "focus": "n11",
+     "probs": {
+      "memory": 0.012,
+      "reason": 0.143,
+      "imagine": 0.041,
+      "intuit": 0.028,
+      "introspect": 0.015,
+      "doubt": 0.08,
+      "counterfactual": 0.367,
+      "formalize": 0.056,
+      "inquire": 0.014,
+      "adjudicate": 0.244,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption",
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 3601,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.004,
+      "reason": 0.017,
+      "imagine": 0.013,
+      "intuit": 0.009,
+      "introspect": 0.005,
+      "doubt": 0.026,
+      "counterfactual": 0.019,
+      "formalize": 0.018,
+      "inquire": 0.005,
+      "adjudicate": 0.884,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2541,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.025,
+      "reason": 0.107,
+      "imagine": 0.05,
+      "intuit": 0.061,
+      "introspect": 0.036,
+      "doubt": 0.188,
+      "counterfactual": 0.138,
+      "formalize": 0.124,
+      "inquire": 0.03,
+      "adjudicate": 0.242,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.145,
+     "ms": 2208,
+     "d_conf": 0.095,
+     "d_unc": -0.1
+    },
+    {
+     "step": 9,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.024,
+      "reason": 0.09,
+      "imagine": 0.044,
+      "intuit": 0.061,
+      "introspect": 0.036,
+      "doubt": 0.204,
+      "counterfactual": 0.145,
+      "formalize": 0.124,
+      "inquire": 0.028,
+      "adjudicate": 0.243,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "no objection raised yet"
+     ],
+     "gain": 0.16,
+     "ms": 4155,
+     "d_conf": -0.06,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.002,
+      "imagine": 0.002,
+      "intuit": 0.002,
+      "introspect": 0.001,
+      "doubt": 0.001,
+      "counterfactual": 0.004,
+      "formalize": 0.003,
+      "inquire": 0.001,
+      "adjudicate": 0.983,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.32,
+     "ms": 1198,
+     "d_conf": 0.14,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.002,
+      "reason": 0.008,
+      "imagine": 0.004,
+      "intuit": 0.006,
+      "introspect": 0.003,
+      "doubt": 0.004,
+      "counterfactual": 0.014,
+      "formalize": 0.011,
+      "inquire": 0.002,
+      "adjudicate": 0.947,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1367,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 12,
+     "op": "inquire",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.033,
+      "reason": 0.124,
+      "imagine": 0.07,
+      "intuit": 0.096,
+      "introspect": 0.056,
+      "doubt": 0.068,
+      "counterfactual": 0.247,
+      "formalize": 0.194,
+      "inquire": 0.042,
+      "adjudicate": 0.07,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 1074,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 1073,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.88,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.984,
+     "novelty": 0.748,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.864,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.804,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.804,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.744,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.755,
+     "uncertainty": 0.644,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.695,
+     "uncertainty": 0.644,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.835,
+     "uncertainty": 0.584,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.915,
+     "uncertainty": 0.524,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.915,
+     "uncertainty": 0.524,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.915,
+     "uncertainty": 0.524,
+     "novelty": 0.641,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "A machine that only manipulates symbols cannot genuinely understand anything.",
+    "stance": "no",
+    "credence": 0.0,
+    "key_reasons": [
+     "Understanding requires semantic content and embodied experience, which machines lack.",
+     "Searle's Chinese Room Argument demonstrates that syntactic manipulation without meaning cannot produce understanding.",
+     "Machines lack subjective experience (qualia) necessary for genuine understanding."
+    ],
+    "open_objection": "The Nozick experience machine objection targets the value of experiences, not the nature of understanding, and thus does not challenge the hypothesis.",
+    "open_questions": [
+     "Can a machine simulate embodied experience well enough to generate semantic content without biological substrates?",
+     "Is there a non-biological substrate that could support semantic content and qualia?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "unresolved contradiction",
+     "op": "adjudicate",
+     "node": "n11",
+     "strength": 0.5
+    },
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    },
+    {
+     "signal": "argument not formally checked",
+     "op": "formalize",
+     "node": "n0",
+     "strength": 0.55
+    },
+    {
+     "signal": "open question",
+     "op": "inquire",
+     "node": "n22",
+     "strength": 0.5
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.1485,
+    "imagine": 0.135,
+    "intuit": 0.15,
+    "introspect": 0.199,
+    "doubt": 0.153,
+    "counterfactual": 0.12,
+    "formalize": 0.15,
+    "inquire": 0.12,
+    "adjudicate": 0.2462,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 3,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"searle-chinese-room\", \"title\": \"Searle: Chinese room\", \"text\": \"Manipulating symbols by rules produces correct outputs without understanding; syntax is"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.934,
+   "conflicts": [
+    {
+     "objection": "n13",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n14",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n16",
+     "target": "n11",
+     "status": "open"
+    },
+    {
+     "objection": "n18",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n19",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "minimalist": {
+   "hypothesis": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic symbol manipulation; it necessitates semantic content and embodied experience.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires more than syntactic symbol manipulation; it necessitates semantic content and embodied experience.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7399999999999999,
+     "curiosity": 0.791,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Understanding involves semantic content and meaning, not just the syntactic manipulation of symbols.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.466,
+     "novelty": 0.166,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Machines operate solely on syntactic rules without access to semantic content or embodied experience.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.472,
+     "novelty": 0.179,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Embodied cognition and context-dependent meaning are essential for genuine understanding, which machines lack.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.489,
+     "novelty": 0.222,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Understanding is exclusively dependent on embodied cognition and context-dependent meaning.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.264,
+     "novelty": 0.101,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Machines cannot have subjective experiences or qualia.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.411,
+     "novelty": 0.284,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Semantic content cannot be generated or represented without embodied experience.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.58,
+     "curiosity": 0.398,
+     "novelty": 0.257,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.7
+    },
+    {
+     "id": "n7",
+     "type": "question",
+     "text": "Can a machine generate semantic content without embodied experience?",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.5,
+     "curiosity": 0.533,
+     "novelty": 0.129,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n8",
+     "type": "counterfactual",
+     "text": "[decisive assumption] In a world where semantic content can be generated without embodied experience, machines could create and manipulate symbols with intrinsic meaning based on internal computational processes alone, without needing physical interaction with the world or subjective experiences. For example, a machine might develop a self-consistent semantic framework through recursive symbol man",
+     "parent": "n6",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.221,
+     "novelty": 0.151,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "mode": "decisive_assumption",
+     "prediction": "flips"
+    },
+    {
+     "id": "n9",
+     "type": "premise",
+     "text": "No, a machine cannot generate semantic content without embodied experience.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.85,
+     "curiosity": 0.126,
+     "novelty": 0.047,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n10",
+     "type": "counterexample",
+     "text": "The Chinese Room argument, proposed by John Searle, demonstrates that a machine manipulating symbols according to syntactic rules (like a person following a rulebook in a room) does not understand the meaning of the symbols, supporting the hypothesis. However, a counterexample could be a machine like GPT-3, which generates coherent, contextually appropriate responses that seem to demonstrate under",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.65,
+     "curiosity": 0.342,
+     "novelty": 0.221,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n11",
+     "type": "objection",
+     "text": "The hypothesis assumes that semantic content requires embodied experience, but this is not necessarily true. For instance, mathematical concepts and formal systems (like those used in AI) can have semantic content without physical embodiment. A machine manipulating symbols in a formal system (e.g., a theorem prover) can 'understand' the meaning of those symbols within the context of the system, ev",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.75,
+     "curiosity": 0.222,
+     "novelty": 0.111,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "The objection conflates coherence and context-appropriateness with genuine understanding. GPT-3's outputs are statistically patterned responses based on training data, not semantic understanding. Searle's Chinese Room argument remains valid: syntactic manipulation without semantic grounding cannot constitute understanding, as demonstrated by the room's operator who follows rules without comprehens",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.358,
+     "novelty": 0.118,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n13",
+     "type": "response",
+     "text": "The objection conflates formal semantic systems with genuine understanding. Mathematical symbols in a theorem prover lack intrinsic meaning outside the formal system; they are syntactically manipulated according to rules without semantic grounding. Searle's Chinese Room argument demonstrates that syntactic manipulation alone (even in formal systems) cannot produce understanding, as the system has ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.366,
+     "novelty": 0.144,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n14",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Semantic content can be generated without embodied experience is true, Understanding requires embodied experience is true, Understanding requires semantic content is true, A machine only manipulates symbols is false, A machine genuinely understands is true",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.274,
+     "novelty": 0.142,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 7,
+     "formal": true
+    },
+    {
+     "id": "n15",
+     "type": "response",
+     "text": "The objection [n14] fails because it incorrectly assumes that 'a machine only manipulates symbols' is false in the counter-assignment. The hypothesis [n0] explicitly defines the machine as one that 'only manipulates symbols'\u2014meaning it lacks semantic content and embodied experience. The counter-assignment violates this condition by asserting that 'a machine only manipulates symbols is false,' whic",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.377,
+     "novelty": 0.178,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n16",
+     "type": "response",
+     "text": "The claim [n6] fails in the scenario [n8] because [n8] explicitly posits a world where semantic content can be generated without embodied experience, directly contradicting [n6]'s assertion that it cannot. The scenario's condition renders [n6] false by definition, as it imagines a counterfactual where the necessary condition (embodied experience) is absent yet semantic content exists. This is a de",
+     "parent": "n6",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.181,
+     "novelty": 0.177,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n8",
+     "dst": "n6",
+     "rel": "tests"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n15",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n16",
+     "dst": "n6",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "counterfactual",
+     "node": "n8",
+     "target": "n6",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "counterexample",
+     "node": "n10",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.14,
+     "step": 4
+    },
+    {
+     "id": "x2",
+     "kind": "objection",
+     "node": "n11",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 4
+    },
+    {
+     "id": "x3",
+     "kind": "formal",
+     "node": "n14",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 7
+    }
+   ],
+   "confidence": 0.7399999999999999,
+   "uncertainty": 0.6519999999999999,
+   "novelty": 0.76,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.056,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.246,
+     "ms": 3601,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 2,
+     "op": "inquire",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.139,
+      "reason": 0.275,
+      "imagine": 0.058,
+      "intuit": 0.035,
+      "introspect": 0.032,
+      "doubt": 0.144,
+      "counterfactual": 0.125,
+      "formalize": 0.109,
+      "inquire": 0.084,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.05,
+     "ms": 2105,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "counterfactual",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.078,
+      "reason": 0.155,
+      "imagine": 0.035,
+      "intuit": 0.019,
+      "introspect": 0.018,
+      "doubt": 0.081,
+      "counterfactual": 0.39,
+      "formalize": 0.061,
+      "inquire": 0.163,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption",
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 3143,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "inquire",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.121,
+      "reason": 0.082,
+      "imagine": 0.052,
+      "intuit": 0.029,
+      "introspect": 0.028,
+      "doubt": 0.121,
+      "counterfactual": 0.093,
+      "formalize": 0.091,
+      "inquire": 0.244,
+      "adjudicate": 0.139,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced",
+      "open question"
+     ],
+     "gain": 0.05,
+     "ms": 1581,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.148,
+      "reason": 0.092,
+      "imagine": 0.063,
+      "intuit": 0.054,
+      "introspect": 0.034,
+      "doubt": 0.147,
+      "counterfactual": 0.112,
+      "formalize": 0.11,
+      "inquire": 0.072,
+      "adjudicate": 0.169,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "no objection raised yet"
+     ],
+     "gain": 0.16,
+     "ms": 4182,
+     "d_conf": -0.06,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.009,
+      "reason": 0.005,
+      "imagine": 0.023,
+      "intuit": 0.003,
+      "introspect": 0.002,
+      "doubt": 0.001,
+      "counterfactual": 0.006,
+      "formalize": 0.006,
+      "inquire": 0.004,
+      "adjudicate": 0.941,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.32,
+     "ms": 3142,
+     "d_conf": 0.14,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.012,
+      "imagine": 0.013,
+      "intuit": 0.007,
+      "introspect": 0.005,
+      "doubt": 0.004,
+      "counterfactual": 0.016,
+      "formalize": 0.015,
+      "inquire": 0.003,
+      "adjudicate": 0.922,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2636,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.042,
+      "reason": 0.146,
+      "imagine": 0.071,
+      "intuit": 0.097,
+      "introspect": 0.062,
+      "doubt": 0.055,
+      "counterfactual": 0.22,
+      "formalize": 0.197,
+      "inquire": 0.044,
+      "adjudicate": 0.067,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2491,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 9,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.011,
+      "imagine": 0.007,
+      "intuit": 0.006,
+      "introspect": 0.004,
+      "doubt": 0.003,
+      "counterfactual": 0.014,
+      "formalize": 0.003,
+      "inquire": 0.003,
+      "adjudicate": 0.946,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2743,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.032,
+      "reason": 0.125,
+      "imagine": 0.054,
+      "intuit": 0.079,
+      "introspect": 0.05,
+      "doubt": 0.048,
+      "counterfactual": 0.187,
+      "formalize": 0.033,
+      "inquire": 0.036,
+      "adjudicate": 0.356,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 1792,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.038,
+      "imagine": 0.016,
+      "intuit": 0.026,
+      "introspect": 0.016,
+      "doubt": 0.016,
+      "counterfactual": 0.061,
+      "formalize": 0.011,
+      "inquire": 0.011,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.794
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 1869,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.44,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.732,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.672,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.772,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.712,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.652,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.652,
+     "novelty": 0.76,
+     "surprise": 0.0
+    }
+   ],
+   "step": 11,
+   "conclusion": {
+    "position": "A machine that only manipulates symbols cannot genuinely understand anything.",
+    "stance": "no",
+    "credence": 0.15,
+    "key_reasons": [
+     "Understanding requires semantic content and embodied experience, which machines lack when limited to syntactic symbol manipulation.",
+     "Searle's Chinese Room argument demonstrates that syntactic manipulation alone cannot produce genuine understanding without semantic grounding.",
+     "Embodied cognition and context-dependent meaning are essential for understanding, which machines cannot provide without subjective experiences or qualia."
+    ],
+    "open_objection": "The objection [n14] fails because it incorrectly assumes that 'a machine only manipulates symbols' is false in the counter-assignment, but the hypothesis explicitly defines such a machine as one that lacks semantic content and embodied experience.",
+    "open_questions": [
+     "Can semantic content be generated without embodied experience in a way that supports genuine understanding?",
+     "Is there a form of understanding that does not require embodied cognition or subjective experience?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    }
+   ],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.15,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.1788,
+    "doubt": 0.153,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.099,
+    "adjudicate": 0.2158,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 7,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"C\": true, \"E\": true, \"M\": true, \"S\": false, \"U\": true}, \"atoms\": [\"C\", \"E\", \"M\", \"S\", \"U\"], \"engine\": \"pr"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.791,
+   "conflicts": [
+    {
+     "objection": "n8",
+     "target": "n6",
+     "status": "resolved"
+    },
+    {
+     "objection": "n10",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n11",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n14",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  }
+ },
+ "metrics": {
+  "semantic_diversity": 0.175,
+  "branch_diversity": 0.466,
+  "disagreement_rate": 0.0,
+  "path_similarity": 0.486,
+  "conclusion_similarity": 0.948,
+  "unique_assumptions": 6,
+  "unique_objections": 1,
+  "unique_hypotheses": 0,
+  "unique": {
+   "explorer": {
+    "assumptions": [],
+    "objections": [
+     "[failure world] A world where machines can form causal connections between symbols and real-world entities through continuous interaction with physical environments, leading to emergent semantic understanding without biological processes. (changes: n3)"
+    ],
+    "hypotheses": []
+   },
+   "formalist": {
+    "assumptions": [],
+    "objections": [],
+    "hypotheses": []
+   },
+   "skeptic": {
+    "assumptions": [
+     "Understanding requires a biological brain or a physical body to ground meaning in experience",
+     "Embodied experience is necessary for any form of understanding beyond the symbolic level"
+    ],
+    "objections": [],
+    "hypotheses": []
+   },
+   "synthesizer": {
+    "assumptions": [
+     "Genuine understanding requires a first-person perspective or consciousness, which machines cannot possess.",
+     "The distinction between syntactic manipulation and semantic understanding is ontologically fundamental, not merely epistemological."
+    ],
+    "objections": [],
+    "hypotheses": []
+   },
+   "minimalist": {
+    "assumptions": [
+     "Understanding is exclusively dependent on embodied cognition and context-dependent meaning.",
+     "Semantic content cannot be generated or represented without embodied experience."
+    ],
+    "objections": [],
+    "hypotheses": []
+   }
+  },
+  "per_agent": {
+   "explorer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 4,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.27,
+    "gain_per_step": 0.154,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.331,
+     "intuit": 0.146,
+     "introspect": 0.129,
+     "conclude": 0.112,
+     "formalize": 0.077,
+     "reason": 0.074,
+     "doubt": 0.074,
+     "counterfactual": 0.056
+    },
+    "steps": 11
+   },
+   "formalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 3,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.307,
+    "gain_per_step": 0.17,
+    "tool_calls": 2,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.395,
+     "conclude": 0.222,
+     "memory": 0.187,
+     "reason": 0.102,
+     "formalize": 0.093
+    },
+    "steps": 7
+   },
+   "skeptic": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 3,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.271,
+    "gain_per_step": 0.174,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.323,
+     "counterfactual": 0.174,
+     "imagine": 0.153,
+     "introspect": 0.149,
+     "memory": 0.114,
+     "conclude": 0.087
+    },
+    "steps": 8
+   },
+   "synthesizer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 5,
+    "resolution_rate": 0.8,
+    "defeats": 0,
+    "novelty": 0.223,
+    "gain_per_step": 0.177,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.265,
+     "introspect": 0.215,
+     "doubt": 0.12,
+     "counterfactual": 0.104,
+     "imagine": 0.102,
+     "memory": 0.067,
+     "reason": 0.064,
+     "inquire": 0.031,
+     "conclude": 0.031
+    },
+    "steps": 13
+   },
+   "minimalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 4,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.213,
+    "gain_per_step": 0.152,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.352,
+     "doubt": 0.143,
+     "inquire": 0.126,
+     "introspect": 0.123,
+     "counterfactual": 0.107,
+     "formalize": 0.085,
+     "conclude": 0.064
+    },
+    "steps": 11
+   }
+  },
+  "pairs": {
+   "explorer|formalist": {
+    "semantic": 0.187,
+    "path_sim": 0.5,
+    "concl_sim": 0.975,
+    "branch": 0.578,
+    "disagree": false
+   },
+   "explorer|skeptic": {
+    "semantic": 0.208,
+    "path_sim": 0.5,
+    "concl_sim": 0.979,
+    "branch": 0.545,
+    "disagree": false
+   },
+   "explorer|synthesizer": {
+    "semantic": 0.186,
+    "path_sim": 0.357,
+    "concl_sim": 0.918,
+    "branch": 0.44,
+    "disagree": false
+   },
+   "explorer|minimalist": {
+    "semantic": 0.183,
+    "path_sim": 0.417,
+    "concl_sim": 0.918,
+    "branch": 0.251,
+    "disagree": false
+   },
+   "formalist|skeptic": {
+    "semantic": 0.144,
+    "path_sim": 0.667,
+    "concl_sim": 0.996,
+    "branch": 0.522,
+    "disagree": false
+   },
+   "formalist|synthesizer": {
+    "semantic": 0.146,
+    "path_sim": 0.5,
+    "concl_sim": 0.918,
+    "branch": 0.544,
+    "disagree": false
+   },
+   "formalist|minimalist": {
+    "semantic": 0.163,
+    "path_sim": 0.417,
+    "concl_sim": 0.918,
+    "branch": 0.564,
+    "disagree": false
+   },
+   "skeptic|synthesizer": {
+    "semantic": 0.142,
+    "path_sim": 0.571,
+    "concl_sim": 0.928,
+    "branch": 0.285,
+    "disagree": false
+   },
+   "skeptic|minimalist": {
+    "semantic": 0.204,
+    "path_sim": 0.5,
+    "concl_sim": 0.928,
+    "branch": 0.545,
+    "disagree": false
+   },
+   "synthesizer|minimalist": {
+    "semantic": 0.183,
+    "path_sim": 0.429,
+    "concl_sim": 1.0,
+    "branch": 0.381,
+    "disagree": false
+   }
+  },
+  "most_divergent": "skeptic|minimalist"
+ }
+}

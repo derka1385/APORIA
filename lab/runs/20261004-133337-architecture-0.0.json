@@ -1,0 +1,4009 @@
+{
+ "id": "20261004-133337-architecture-0.0",
+ "question": "Is moral responsibility compatible with determinism?",
+ "condition": "architecture",
+ "delta": 0.0,
+ "seed": 1000,
+ "models": [
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b"
+ ],
+ "quick": false,
+ "memory": "off",
+ "run": 0,
+ "runs": 1,
+ "failed": [],
+ "agents": {
+  "explorer": {
+   "hypothesis": "Moral responsibility is compatible with determinism.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Moral responsibility is compatible with determinism.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7949999999999999,
+     "curiosity": 0.668,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Determinism is the thesis that every event is necessitated by antecedent events and conditions.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.385,
+     "novelty": 0.268,
+     "yield": 1.0,
+     "intuition": 0.1,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Moral responsibility requires only that an agent could have acted otherwise in the sense of having the capacity for rational choice, not that the agent could have acted otherwise in a metaphysical sense.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.578,
+     "novelty": 0.225,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Determinism is the thesis that every event is necessitated by antecedent events and conditions. is false, Moral responsibility is compatible with determinism. is false, Moral responsibility requires only that an agent could have acted otherwise in the sense of having the capacity for rational choice, not that the agent c",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.276,
+     "novelty": 0.152,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formal": true
+    },
+    {
+     "id": "n4",
+     "type": "response",
+     "text": "The counterexample misrepresents the argument. The premises do entail the conclusion: determinism (as defined) does not undermine the capacity for rational choice (a requirement for moral responsibility), so compatibility holds. The counter-assignment incorrectly treats the premise about determinism as false, but the argument assumes its truth for the sake of the compatibility claim.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.292,
+     "novelty": 0.112,
+     "yield": 1.0,
+     "intuition": 0.2,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "The capacity for rational choice is sufficient for moral responsibility, even under determinism.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.222,
+     "novelty": 0.119,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.9
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Determinism does not eliminate the possibility of rational choice or decision-making processes that are causally effective.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.9099999999999999,
+     "curiosity": 0.088,
+     "novelty": 0.216,
+     "yield": 1.0,
+     "intuition": 0.7,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.85
+    },
+    {
+     "id": "n7",
+     "type": "assumption",
+     "text": "Moral responsibility does not require that an agent's actions be undetermined in a metaphysical sense.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.85,
+     "curiosity": 0.158,
+     "novelty": 0.088,
+     "yield": 1.0,
+     "intuition": 0.85,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.95
+    },
+    {
+     "id": "n8",
+     "type": "counterexample",
+     "text": "Consider a deterministic universe where an agent's decision is entirely determined by prior physical states (e.g., brain states influenced by genetics and environment). If the agent's decision is causally necessitated, then the agent could not have acted otherwise in any meaningful sense, undermining the capacity for rational choice required for moral responsibility.",
+     "parent": "n6",
+     "status": "rejected",
+     "conf": 0.85,
+     "curiosity": 0.068,
+     "novelty": 0.173,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n9",
+     "type": "objection",
+     "text": "The assumption that determinism does not eliminate rational choice overlooks the fact that if all events are causally determined, then the agent's 'rational choice' is itself a predetermined event. Thus, the agent's decision is not a genuine choice but a mechanical outcome, negating the capacity for moral responsibility.",
+     "parent": "n6",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.081,
+     "novelty": 0.125,
+     "yield": 1.0,
+     "intuition": 0.4,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n10",
+     "type": "counterfactual",
+     "text": "[failure world] A deterministic universe where causal determinism is not just true but is the only possible mode of explanation for all events, including human decisions. In this world, the concept of 'rational choice' is entirely redefined as a mechanical process of causal inference from prior states, with no room for genuine deliberation or alternative possibilities. Agents are aware of their de",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.475,
+     "novelty": 0.187,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "mode": "failure_world",
+     "prediction": "flips"
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "In the failure world described in [n10], the counterfactual scenario directly challenges the compatibility claim by redefining 'rational choice' as a mechanical process without genuine deliberation or alternative possibilities. This directly contradicts the key premise [n2] that moral responsibility requires only the capacity for rational choice (not metaphysical alternative possibilities). The sc",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.323,
+     "novelty": 0.147,
+     "yield": 1.0,
+     "intuition": 0.3,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "The objection conflates 'could have acted otherwise' with 'could have made a different choice given the same circumstances'. Determinism allows for the agent's decision to be causally effective (i.e., rationally determined by their mental states), which suffices for moral responsibility. The agent's 'rational choice' is not mechanical but the product of their reasons and deliberation, which are ca",
+     "parent": "n6",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.182,
+     "novelty": 0.117,
+     "yield": 1.0,
+     "intuition": 0.6,
+     "surprise": 0.0,
+     "step": 7
+    },
+    {
+     "id": "n13",
+     "type": "alternative",
+     "text": "Hunch: The most promising node to explore next is n5, as it directly addresses the sufficiency of rational choice capacity for moral responsibility under determinism, which is central to the compatibility claim. This node resolves the core tension between determinism and moral responsibility by clarifying the conditions under which responsibility can persist despite causal determination.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.347,
+     "novelty": 0.166,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n14",
+     "type": "response",
+     "text": "The objection conflates causal determination with the absence of genuine agency. Determinism allows for rational choices to be causally determined by an agent's reasons, character, and deliberation, which constitutes genuine agency. A 'mechanical outcome' would imply no role for the agent's reasons, but determinism does not require this; it merely requires that choices arise from prior causes, whi",
+     "parent": "n6",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.167,
+     "novelty": 0.084,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n8",
+     "dst": "n6",
+     "rel": "attacks"
+    },
+    {
+     "src": "n9",
+     "dst": "n6",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n12",
+     "dst": "n6",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n14",
+     "dst": "n6",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "formal",
+     "node": "n3",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 0
+    },
+    {
+     "id": "x1",
+     "kind": "counterexample",
+     "node": "n8",
+     "target": "n6",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 4
+    },
+    {
+     "id": "x2",
+     "kind": "objection",
+     "node": "n9",
+     "target": "n6",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 4
+    },
+    {
+     "id": "x3",
+     "kind": "counterfactual",
+     "node": "n10",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.12,
+     "step": 5
+    }
+   ],
+   "confidence": 0.7949999999999999,
+   "uncertainty": 0.5759999999999998,
+   "novelty": 0.76,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.199,
+      "reason": 0.106,
+      "imagine": 0.053,
+      "intuit": 0.0,
+      "introspect": 0.332,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2987,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 2,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.135,
+      "reason": 0.08,
+      "imagine": 0.066,
+      "intuit": 0.0,
+      "introspect": 0.226,
+      "doubt": 0.023,
+      "counterfactual": 0.02,
+      "formalize": 0.02,
+      "inquire": 0.072,
+      "adjudicate": 0.357,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2212,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 3,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.042,
+      "reason": 0.139,
+      "imagine": 0.057,
+      "intuit": 0.0,
+      "introspect": 0.416,
+      "doubt": 0.047,
+      "counterfactual": 0.22,
+      "formalize": 0.038,
+      "inquire": 0.041,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.185,
+     "ms": 2501,
+     "d_conf": 0.135,
+     "d_unc": -0.1
+    },
+    {
+     "step": 4,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.038,
+      "reason": 0.106,
+      "imagine": 0.05,
+      "intuit": 0.0,
+      "introspect": 0.428,
+      "doubt": 0.054,
+      "counterfactual": 0.244,
+      "formalize": 0.039,
+      "inquire": 0.04,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.258,
+     "ms": 3765,
+     "d_conf": 0.0,
+     "d_unc": 0.216
+    },
+    {
+     "step": 5,
+     "op": "doubt",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.048,
+      "reason": 0.192,
+      "imagine": 0.08,
+      "intuit": 0.118,
+      "introspect": 0.071,
+      "doubt": 0.07,
+      "counterfactual": 0.313,
+      "formalize": 0.05,
+      "inquire": 0.059,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.14,
+     "ms": 3807,
+     "d_conf": -0.04,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.009,
+      "reason": 0.034,
+      "imagine": 0.015,
+      "intuit": 0.021,
+      "introspect": 0.012,
+      "doubt": 0.012,
+      "counterfactual": 0.053,
+      "formalize": 0.009,
+      "inquire": 0.01,
+      "adjudicate": 0.825,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 4488,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.004,
+      "imagine": 0.002,
+      "intuit": 0.002,
+      "introspect": 0.001,
+      "doubt": 0.001,
+      "counterfactual": 0.001,
+      "formalize": 0.001,
+      "inquire": 0.001,
+      "adjudicate": 0.986,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.3,
+     "ms": 2807,
+     "d_conf": 0.12,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.006,
+      "reason": 0.026,
+      "imagine": 0.01,
+      "intuit": 0.016,
+      "introspect": 0.011,
+      "doubt": 0.01,
+      "counterfactual": 0.008,
+      "formalize": 0.007,
+      "inquire": 0.008,
+      "adjudicate": 0.898,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 3054,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "intuit",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.057,
+      "reason": 0.217,
+      "imagine": 0.084,
+      "intuit": 0.148,
+      "introspect": 0.095,
+      "doubt": 0.093,
+      "counterfactual": 0.073,
+      "formalize": 0.063,
+      "inquire": 0.068,
+      "adjudicate": 0.102,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 2586,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.039,
+      "reason": 0.152,
+      "imagine": 0.059,
+      "intuit": 0.064,
+      "introspect": 0.066,
+      "doubt": 0.065,
+      "counterfactual": 0.05,
+      "formalize": 0.043,
+      "inquire": 0.047,
+      "adjudicate": 0.414,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 3096,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.011,
+      "reason": 0.038,
+      "imagine": 0.016,
+      "intuit": 0.017,
+      "introspect": 0.018,
+      "doubt": 0.017,
+      "counterfactual": 0.014,
+      "formalize": 0.012,
+      "inquire": 0.012,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.846
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 3141,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.7,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.64,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.715,
+     "uncertainty": 0.54,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.715,
+     "uncertainty": 0.756,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.675,
+     "uncertainty": 0.756,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.675,
+     "uncertainty": 0.756,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.696,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.636,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.636,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.576,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.795,
+     "uncertainty": 0.576,
+     "novelty": 0.76,
+     "surprise": 0.0
+    }
+   ],
+   "step": 11,
+   "conclusion": {
+    "position": "Moral responsibility is compatible with determinism because the capacity for rational choice, which is causally determined by an agent's reasons and deliberation, suffices for responsibility without requiring metaphysical alternative possibilities.",
+    "stance": "yes",
+    "credence": 0.85,
+    "key_reasons": [
+     "Determinism does not undermine the capacity for rational choice; it merely describes how choices are causally determined by prior conditions.",
+     "Moral responsibility requires only the ability to make reasoned decisions (not metaphysical alternative possibilities), which remains intact under determinism.",
+     "The objection that determinism renders choices 'mechanical' misrepresents the causal role of rational deliberation in determinism."
+    ],
+    "open_objection": "The objection that determinism eliminates genuine agency by treating choices as mechanically predetermined, which would require a metaphysical 'could have done otherwise' beyond causal determination.",
+    "open_questions": [
+     "How to precisely define 'genuine agency' under determinism without invoking metaphysical indeterminacy?",
+     "Whether all moral responsibility requires the capacity for alternative possibilities in a non-causal sense."
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.1605,
+    "imagine": 0.15,
+    "intuit": 0.12,
+    "introspect": 0.1824,
+    "doubt": 0.147,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.1987,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 0,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"D\": false, \"M\": false, \"R\": true}, \"atoms\": [\"D\", \"M\", \"R\"], \"engine\": \"propositional-fallback\"}"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.668,
+   "conflicts": [
+    {
+     "objection": "n3",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n8",
+     "target": "n6",
+     "status": "resolved"
+    },
+    {
+     "objection": "n9",
+     "target": "n6",
+     "status": "resolved"
+    },
+    {
+     "objection": "n10",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "formalist": {
+   "hypothesis": "Moral responsibility is compatible with determinism.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Moral responsibility is compatible with determinism.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7899999999999999,
+     "curiosity": 0.388,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Determinism states that all events, including human actions, are determined by preceding causes.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.494,
+     "novelty": 0.235,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Moral responsibility requires only that actions are caused by the agent's character and motivations, not that they are uncaused.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.51,
+     "novelty": 0.274,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "The concept of 'free will' necessary for moral responsibility is compatible with a deterministic universe, as it does not require the absence of causation but rather the absence of external coercion or constraint.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.675,
+     "curiosity": 0.3,
+     "novelty": 0.154,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Moral responsibility requires only that actions are caused by the agent's character and motivations, not that they are uncaused is false, Determinism is true is false, The concept of 'free will' necessary for moral responsibility is compatible with a deterministic universe, as it does not require the absence of causation",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.268,
+     "novelty": 0.116,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formal": true
+    },
+    {
+     "id": "n5",
+     "type": "evidence",
+     "text": "Van Inwagen: consequence argument: If determinism is true, our acts follow from the laws and the remote past, which are not up to us; so our acts are not up to us.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.299,
+     "novelty": 0.245,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "van-inwagen-consequence"
+    },
+    {
+     "id": "n6",
+     "type": "evidence",
+     "text": "P.F. Strawson: reactive attitudes: Responsibility practices rest on attitudes like resentment and gratitude, which no general theoretical truth about determinism could make irrational.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.311,
+     "novelty": 0.295,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "strawson-reactive"
+    },
+    {
+     "id": "n7",
+     "type": "evidence",
+     "text": "Mill: utilitarianism: Actions are right in proportion as they tend to promote happiness; higher pleasures count for more than lower ones.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.319,
+     "novelty": 0.328,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "mill-utility"
+    },
+    {
+     "id": "n8",
+     "type": "response",
+     "text": "The objection mischaracterizes the premise. The premise [n2] states that moral responsibility requires actions to be caused by the agent's character and motivations, not that they are uncaused. This does not claim that moral responsibility requires actions to be uncaused, but rather that causation by character/motivations suffices. The counter-assignment incorrectly asserts that [n2] is false by m",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.363,
+     "novelty": 0.133,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2
+    },
+    {
+     "id": "n9",
+     "type": "response",
+     "text": "The consequence argument conflates 'up to us' with 'uncaused'. [n2] clarifies that moral responsibility requires causation by character/motivations (not absence of causation), and [n3] specifies that 'free will' for responsibility requires absence of external coercion, not absence of causation. The consequence argument mistakenly assumes that determinism implies no causal role for the agent, but S",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.357,
+     "novelty": 0.115,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The objection [n7] cites Mill's utilitarianism, which is about the morality of actions (what makes them right or wrong), not about moral responsibility (which concerns whether agents deserve praise/blame). Mill's theory does not address whether determinism affects responsibility; it focuses on consequences, not causal conditions for blame. The premise [n2] and evidence [n6] (Strawson) directly add",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.353,
+     "novelty": 0.103,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "formal",
+     "node": "n4",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 0
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n5",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    },
+    {
+     "id": "x2",
+     "kind": "evidence",
+     "node": "n7",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    }
+   ],
+   "confidence": 0.7899999999999999,
+   "uncertainty": 0.3,
+   "novelty": 0.6000000000000001,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.056,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2170,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 2,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.134,
+      "reason": 0.08,
+      "imagine": 0.071,
+      "intuit": 0.0,
+      "introspect": 0.225,
+      "doubt": 0.023,
+      "counterfactual": 0.02,
+      "formalize": 0.02,
+      "inquire": 0.071,
+      "adjudicate": 0.355,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 3163,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 3,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.005,
+      "reason": 0.017,
+      "imagine": 0.028,
+      "intuit": 0.008,
+      "introspect": 0.046,
+      "doubt": 0.006,
+      "counterfactual": 0.028,
+      "formalize": 0.005,
+      "inquire": 0.005,
+      "adjudicate": 0.852,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 4160,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 4,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.004,
+      "reason": 0.012,
+      "imagine": 0.011,
+      "intuit": 0.006,
+      "introspect": 0.035,
+      "doubt": 0.005,
+      "counterfactual": 0.022,
+      "formalize": 0.004,
+      "inquire": 0.004,
+      "adjudicate": 0.898,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3097,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 5,
+     "op": "reason",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.033,
+      "reason": 0.103,
+      "imagine": 0.068,
+      "intuit": 0.081,
+      "introspect": 0.317,
+      "doubt": 0.046,
+      "counterfactual": 0.208,
+      "formalize": 0.035,
+      "inquire": 0.034,
+      "adjudicate": 0.074,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 2580,
+     "d_conf": 0.05,
+     "d_unc": -0.1
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.018,
+      "reason": 0.046,
+      "imagine": 0.035,
+      "intuit": 0.047,
+      "introspect": 0.183,
+      "doubt": 0.028,
+      "counterfactual": 0.123,
+      "formalize": 0.02,
+      "inquire": 0.018,
+      "adjudicate": 0.482,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2764,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.009,
+      "reason": 0.023,
+      "imagine": 0.015,
+      "intuit": 0.025,
+      "introspect": 0.095,
+      "doubt": 0.015,
+      "counterfactual": 0.067,
+      "formalize": 0.01,
+      "inquire": 0.009,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.731
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 4410,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.7,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.58,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.52,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.46,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.71,
+     "uncertainty": 0.36,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.79,
+     "uncertainty": 0.3,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.79,
+     "uncertainty": 0.3,
+     "novelty": 0.6,
+     "surprise": 0.0
+    }
+   ],
+   "step": 7,
+   "conclusion": {
+    "position": "Moral responsibility is compatible with determinism.",
+    "stance": "yes",
+    "credence": 0.85,
+    "key_reasons": [
+     "The premise that moral responsibility requires causation by the agent's character and motivations (not absence of causation) aligns with Strawson's reactive attitudes, which ground responsibility in interpersonal practices rather than metaphysical freedom.",
+     "Determinism does not preclude the absence of external coercion, which is the relevant condition for free will as defined in the premise, making responsibility compatible with causal determinism."
+    ],
+    "open_objection": "The consequence argument claims that if determinism is true, no one could be responsible for their actions since all actions are determined by prior causes, but this conflates 'up to us' with 'uncaused' and misinterprets the causal role of agents in responsibility practices.",
+    "open_questions": [
+     "How do we reconcile the intuitions about 'free will' requiring uncaused actions with the compatibilist view that causation by character suffices?",
+     "Can reactive attitudes like resentment persist in a deterministic framework without undermining their rationality?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "assumptions unexamined",
+     "op": "introspect",
+     "node": "n0",
+     "strength": 0.7
+    },
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.135,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.15,
+    "doubt": 0.15,
+    "counterfactual": 0.15,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.2223,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 0,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"C\": false, \"D\": false, \"F\": false, \"M\": false}, \"atoms\": [\"C\", \"D\", \"F\", \"M\"], \"engine\": \"propositional-f"
+    },
+    {
+     "step": 1,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"van-inwagen-consequence\", \"title\": \"Van Inwagen: consequence argument\", \"text\": \"If determinism is true, our acts follow from the laws and the remote p"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.51,
+   "conflicts": [
+    {
+     "objection": "n4",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n5",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n7",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "skeptic": {
+   "hypothesis": "Moral responsibility is compatible with determinism.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Moral responsibility is compatible with determinism.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.645,
+     "curiosity": 1.021,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Determinism does not negate the causal relationships that underpin human decision-making.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.53,
+     "novelty": 0.251,
+     "yield": 1.0,
+     "intuition": 0.6,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Moral responsibility requires only that actions are causally connected to the agent's character and reasons, not that they are uncaused.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.554,
+     "novelty": 0.236,
+     "yield": 1.0,
+     "intuition": 0.7,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "An agent's character and reasons are not determined by external factors beyond their control.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.611,
+     "novelty": 0.302,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 1.0,
+     "recur": 2
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "The concept of 'causal connection' in moral responsibility includes the idea of internal psychological processes that are part of the agent's identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.234,
+     "novelty": 0.181,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Determinism does not preclude the possibility of alternative possibilities for the agent's actions.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.483,
+     "novelty": 0.208,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.6
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Determinism entails that all events, including human actions, are determined by prior causes, which means there are no genuine alternative possibilities for the agent's actions at the time of decision.",
+     "parent": "n5",
+     "status": "open",
+     "conf": 0.45,
+     "curiosity": 0.159,
+     "novelty": 0.119,
+     "yield": 1.0,
+     "intuition": 0.2,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.6
+    },
+    {
+     "id": "n7",
+     "type": "objection",
+     "text": "If determinism is true, then all human actions are the inevitable result of prior causes, leaving no room for genuine alternative possibilities. Without the ability to do otherwise, an agent cannot be held morally responsible for their actions, as moral responsibility requires that the agent could have acted differently.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.85,
+     "curiosity": 0.131,
+     "novelty": 0.093,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n8",
+     "type": "counterexample",
+     "text": "Consider a person who commits a heinous crime after being subjected to extreme psychological manipulation that completely overrides their normal decision-making processes. Under determinism, this action is causally determined by the manipulation, yet we intuitively do not hold the person morally responsible for the crime, suggesting that determinism undermines moral responsibility in cases where t",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.182,
+     "novelty": 0.135,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n9",
+     "type": "response",
+     "text": "The objection conflates 'could have acted differently' with 'had alternative possibilities at the time of decision'. Determinism does not require that agents could have done otherwise in a metaphysical sense; rather, moral responsibility can be grounded in the agent's character and reasons being causally connected to their actions, as in [n2] and [n4]. The counterexample [n8] fails because the man",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.419,
+     "novelty": 0.109,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The counterexample [n8] fails to undermine the compatibility of determinism and moral responsibility because it misidentifies the nature of the causal chain. In cases of extreme psychological manipulation, the agent's character and reasons are not genuinely part of their identity (as per [n3] and [n4]), but rather are overridden by external forces. Determinism does not require that all causally de",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.387,
+     "novelty": 0.081,
+     "yield": 1.0,
+     "intuition": 0.7,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n11",
+     "type": "counterfactual",
+     "text": "[minimal change] Introduce a premise that challenges the assumption that moral responsibility requires only causal connection to character and reasons, by asserting that moral responsibility requires the absence of determinism (i.e., indeterminism). (changes: n2)",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.475,
+     "novelty": 0.188,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6,
+     "mode": "minimal_change",
+     "prediction": "flips"
+    },
+    {
+     "id": "n12",
+     "type": "assumption",
+     "text": "Moral responsibility requires that agents have the ability to act otherwise in a relevant sense (i.e., 'could have done otherwise' under the same circumstances), but determinism does not provide this ability.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.45,
+     "curiosity": 0.345,
+     "novelty": 0.09,
+     "yield": 1.0,
+     "intuition": 0.3,
+     "surprise": 0.0,
+     "step": 7,
+     "load": 0.6
+    },
+    {
+     "id": "n13",
+     "type": "response",
+     "text": "The claim fails because [n11] correctly identifies that moral responsibility requires the ability to act otherwise (a compatibilist position that denies this requirement would be incoherent), and [n12] is a flawed response since determinism inherently denies the ability to act otherwise in the relevant sense (as per [n6]). [n9] and [n10] misinterpret the counterfactual by conflating 'could have do",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.328,
+     "novelty": 0.092,
+     "yield": 1.0,
+     "intuition": 0.4,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n14",
+     "type": "alternative",
+     "text": "Hunch: The deepest insight lies in exploring n4 (causal connection including internal psychological processes) and n9 (rejection of the 'could have done otherwise' requirement) to resolve the tension between determinism and moral responsibility.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.368,
+     "novelty": 0.237,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n15",
+     "type": "counterfactual",
+     "text": "[decisive assumption] In a world where an agent's character and reasons are determined by external factors beyond their control (i.e., [n3] is false), such as a person whose beliefs and desires are entirely shaped by genetic engineering or brainwashing, the agent's actions would be causally connected to these external forces rather than to their own internal psychological processes. For example, a",
+     "parent": "n3",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.224,
+     "novelty": 0.167,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 10,
+     "mode": "decisive_assumption",
+     "prediction": "flips"
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n5",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n15",
+     "dst": "n3",
+     "rel": "tests"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "objection",
+     "node": "n7",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.12,
+     "step": 3
+    },
+    {
+     "id": "x1",
+     "kind": "counterexample",
+     "node": "n8",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "counterfactual",
+     "node": "n11",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 6
+    },
+    {
+     "id": "x3",
+     "kind": "counterfactual",
+     "node": "n15",
+     "target": "n3",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 10
+    }
+   ],
+   "confidence": 0.645,
+   "uncertainty": 0.7040000000000001,
+   "novelty": 0.84,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.199,
+      "reason": 0.106,
+      "imagine": 0.053,
+      "intuit": 0.0,
+      "introspect": 0.332,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.242,
+     "ms": 3669,
+     "d_conf": 0.0,
+     "d_unc": 0.184
+    },
+    {
+     "step": 2,
+     "op": "reason",
+     "focus": "n5",
+     "probs": {
+      "memory": 0.151,
+      "reason": 0.272,
+      "imagine": 0.061,
+      "intuit": 0.0,
+      "introspect": 0.034,
+      "doubt": 0.157,
+      "counterfactual": 0.118,
+      "formalize": 0.118,
+      "inquire": 0.09,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption"
+     ],
+     "gain": 0.1,
+     "ms": 3146,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 3,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.175,
+      "reason": 0.131,
+      "imagine": 0.065,
+      "intuit": 0.0,
+      "introspect": 0.04,
+      "doubt": 0.182,
+      "counterfactual": 0.158,
+      "formalize": 0.137,
+      "inquire": 0.111,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.175,
+     "ms": 4716,
+     "d_conf": -0.15,
+     "d_unc": 0.05
+    },
+    {
+     "step": 4,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.055,
+      "reason": 0.059,
+      "imagine": 0.079,
+      "intuit": 0.0,
+      "introspect": 0.062,
+      "doubt": 0.249,
+      "counterfactual": 0.225,
+      "formalize": 0.213,
+      "inquire": 0.057,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "no objection raised yet"
+     ],
+     "gain": 0.14,
+     "ms": 3704,
+     "d_conf": -0.04,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.007,
+      "reason": 0.026,
+      "imagine": 0.027,
+      "intuit": 0.012,
+      "introspect": 0.007,
+      "doubt": 0.005,
+      "counterfactual": 0.025,
+      "formalize": 0.024,
+      "inquire": 0.007,
+      "adjudicate": 0.86,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.3,
+     "ms": 3113,
+     "d_conf": 0.12,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.025,
+      "reason": 0.099,
+      "imagine": 0.069,
+      "intuit": 0.049,
+      "introspect": 0.029,
+      "doubt": 0.023,
+      "counterfactual": 0.111,
+      "formalize": 0.1,
+      "inquire": 0.026,
+      "adjudicate": 0.47,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 4243,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.046,
+      "reason": 0.184,
+      "imagine": 0.083,
+      "intuit": 0.099,
+      "introspect": 0.059,
+      "doubt": 0.049,
+      "counterfactual": 0.231,
+      "formalize": 0.199,
+      "inquire": 0.051,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 3094,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 8,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.025,
+      "reason": 0.095,
+      "imagine": 0.071,
+      "intuit": 0.051,
+      "introspect": 0.032,
+      "doubt": 0.025,
+      "counterfactual": 0.022,
+      "formalize": 0.103,
+      "inquire": 0.026,
+      "adjudicate": 0.549,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.225,
+     "ms": 3783,
+     "d_conf": -0.15,
+     "d_unc": 0.05
+    },
+    {
+     "step": 9,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.029,
+      "reason": 0.111,
+      "imagine": 0.055,
+      "intuit": 0.051,
+      "introspect": 0.033,
+      "doubt": 0.023,
+      "counterfactual": 0.02,
+      "formalize": 0.104,
+      "inquire": 0.027,
+      "adjudicate": 0.548,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2522,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 10,
+     "op": "intuit",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.063,
+      "reason": 0.241,
+      "imagine": 0.089,
+      "intuit": 0.12,
+      "introspect": 0.077,
+      "doubt": 0.056,
+      "counterfactual": 0.049,
+      "formalize": 0.243,
+      "inquire": 0.061,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 3139,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 11,
+     "op": "counterfactual",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.065,
+      "reason": 0.252,
+      "imagine": 0.097,
+      "intuit": 0.079,
+      "introspect": 0.08,
+      "doubt": 0.059,
+      "counterfactual": 0.051,
+      "formalize": 0.254,
+      "inquire": 0.064,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 3683,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 12,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.044,
+      "reason": 0.162,
+      "imagine": 0.061,
+      "intuit": 0.05,
+      "introspect": 0.055,
+      "doubt": 0.037,
+      "counterfactual": 0.032,
+      "formalize": 0.163,
+      "inquire": 0.041,
+      "adjudicate": 0.355,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.255,
+     "ms": 1977,
+     "d_conf": 0.205,
+     "d_unc": -0.1
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 3297,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.784,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.884,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.35,
+     "uncertainty": 0.934,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.31,
+     "uncertainty": 0.934,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.43,
+     "uncertainty": 0.874,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.51,
+     "uncertainty": 0.814,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.51,
+     "uncertainty": 0.814,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.36,
+     "uncertainty": 0.864,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.44,
+     "uncertainty": 0.804,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.44,
+     "uncertainty": 0.804,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.44,
+     "uncertainty": 0.804,
+     "novelty": 0.84,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.645,
+     "uncertainty": 0.704,
+     "novelty": 0.84,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.645,
+     "uncertainty": 0.704,
+     "novelty": 0.84,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "Moral responsibility is compatible with determinism when we understand it as requiring causal connections to an agent's character and reasons, not uncaused actions or alternative possibilities.",
+    "stance": "yes",
+    "credence": 0.75,
+    "key_reasons": [
+     "Determinism does not negate the causal relationships that underpin human decision-making (n1).",
+     "Moral responsibility requires only that actions are causally connected to the agent's character and reasons (n2, n4).",
+     "The objection conflating 'could have acted differently' with 'had alternative possibilities' is resolved by recognizing that moral responsibility can be grounded in the agent's character and reasons (n9, n10)."
+    ],
+    "open_objection": "Determinism entails that all events, including human actions, are determined by prior causes, which means there are no genuine alternative possibilities for the agent's actions at the time of decision (n6).",
+    "open_questions": [
+     "How to consistently define the 'relevant sense' in which an agent must have the ability to act otherwise for moral responsibility, without requiring metaphysical indeterminacy?",
+     "In cases of psychological manipulation (e.g., brainwashing), where external forces shape the agent's character, how do we distinguish between genuine moral responsibility and mere causation by external forces?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "conclusion rests on a weak assumption",
+     "op": "counterfactual",
+     "node": "n12",
+     "strength": 0.61
+    },
+    {
+     "signal": "conclusion rests on a weak assumption",
+     "op": "reason",
+     "node": "n12",
+     "strength": 0.37
+    },
+    {
+     "signal": "unresolved contradiction",
+     "op": "adjudicate",
+     "node": "n3",
+     "strength": 0.5
+    },
+    {
+     "signal": "argument not formally checked",
+     "op": "formalize",
+     "node": "n0",
+     "strength": 0.55
+    }
+   ],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.1958,
+    "imagine": 0.15,
+    "intuit": 0.12,
+    "introspect": 0.1776,
+    "doubt": 0.147,
+    "counterfactual": 0.099,
+    "formalize": 0.15,
+    "inquire": 0.15,
+    "adjudicate": 0.2281,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 1.021,
+   "conflicts": [
+    {
+     "objection": "n7",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n8",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n11",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n15",
+     "target": "n3",
+     "status": "open"
+    }
+   ]
+  },
+  "synthesizer": {
+   "hypothesis": "Moral responsibility is compatible with determinism.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Moral responsibility is compatible with determinism.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.5299999999999998,
+     "curiosity": 2.529,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Determinism does not negate the causal connections that underpin our actions and decisions.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.506,
+     "novelty": 0.266,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Moral responsibility arises from the agent's capacity to act according to reasons and values, which can be consistent with a deterministic framework.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.45,
+     "novelty": 0.125,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "The concept of 'reasons and values' can exist within a deterministic universe without requiring indeterminism.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.306,
+     "novelty": 0.275,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Moral responsibility does not require the agent to have had alternative possibilities at the moment of action.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.365,
+     "novelty": 0.14,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 1.0,
+     "recur": 2
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Causal determinism does not undermine the meaningfulness of praise and blame in social contexts.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.194,
+     "novelty": 0.211,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8999999999999999,
+     "recur": 2
+    },
+    {
+     "id": "n6",
+     "type": "thought_experiment",
+     "text": "The 'Deterministic Robot' Thought Experiment: Imagine a robot programmed to make moral decisions based on a deterministic algorithm that processes all available information. The robot's decisions are entirely predictable from its initial programming and inputs, yet it can be praised or blamed for its actions in a way that mirrors human moral responsibility. This tests whether moral responsibility ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.376,
+     "novelty": 0.174,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n7",
+     "type": "alternative",
+     "text": "The 'Indeterminist Challenge' Hypothesis: If moral responsibility requires the agent to have had alternative possibilities (i.e., the ability to have done otherwise), then determinism would be incompatible with moral responsibility, as determinism implies that only one outcome was possible given the prior state of the universe. This directly challenges the compatibility hypothesis by asserting tha",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.368,
+     "novelty": 0.149,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n8",
+     "type": "assumption",
+     "text": "The causal connections underlying actions and decisions are sufficient for moral responsibility, even if they are deterministic.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.271,
+     "novelty": 0.129,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.8
+    },
+    {
+     "id": "n9",
+     "type": "evidence",
+     "text": "Van Inwagen's consequence argument: If determinism is true, our acts follow from the laws and the remote past, which are not up to us; so our acts are not up to us.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.3,
+     "novelty": 0.248,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "van-inwagen-consequence"
+    },
+    {
+     "id": "n10",
+     "type": "evidence",
+     "text": "P.F. Strawson's reactive attitudes: Responsibility practices rest on attitudes like resentment and gratitude, which no general theoretical truth about determinism could make irrational.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.31,
+     "novelty": 0.292,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "strawson-reactive"
+    },
+    {
+     "id": "n11",
+     "type": "evidence",
+     "text": "Mill's utilitarianism: Actions are right in proportion as they tend to promote happiness; higher pleasures count for more than lower ones.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.32,
+     "novelty": 0.333,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "mill-utility"
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "Van Inwagen's consequence argument assumes that 'up to us' implies indeterminism, but Strawson's reactive attitudes (n10) show that moral responsibility is grounded in social practices, not metaphysical freedom. Praise and blame remain meaningful even if actions are determined, as they function to regulate behavior and express attitudes like resentment, which are not invalidated by determinism.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.364,
+     "novelty": 0.138,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n13",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: The agent has alternative possibilities at the moment of action is true, Causal connections underpin our actions and decisions is true, Determinism is true is false, Moral responsibility is compatible with determinism is false, Praise and blame remain meaningful in social contexts is true, Moral responsibility arises fro",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.28,
+     "novelty": 0.166,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "formal": true
+    },
+    {
+     "id": "n14",
+     "type": "response",
+     "text": "Mill's utilitarianism (n11) does not directly address the compatibilism-determinism debate; it concerns moral rightness, not responsibility. The core issue is whether determinism undermines the conditions for holding agents responsible. Strawson's reactive attitudes (n10) and the response (n12) already provide a robust reply: moral responsibility is grounded in social practices (e.g., resentment, ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.37,
+     "novelty": 0.156,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n15",
+     "type": "assumption",
+     "text": "Moral responsibility requires the agent to have been able to act otherwise (alternative possibilities) for the compatibility claim to hold",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.375,
+     "curiosity": 0.475,
+     "novelty": 0.148,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 7,
+     "load": 0.6
+    },
+    {
+     "id": "n16",
+     "type": "counterfactual",
+     "text": "[decisive assumption] A world where moral responsibility does not require the agent to have been able to act otherwise (i.e., the assumption [n15] is false), and determinism is true. (changes: assumption [n15])",
+     "parent": "n15",
+     "status": "supported",
+     "conf": 0.5,
+     "curiosity": 0.231,
+     "novelty": 0.204,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0675,
+     "step": 8,
+     "mode": "decisive_assumption",
+     "prediction": "holds"
+    },
+    {
+     "id": "n17",
+     "type": "response",
+     "text": "The objection misrepresents the argument by introducing a counter-assignment where determinism is false. The compatibility claim (n0) explicitly assumes determinism is true. The objection's counter-assignment violates the premise of the hypothesis, making it irrelevant. Strawson's reactive attitudes (n10) and the response (n12) demonstrate that moral responsibility is grounded in social practices ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.369,
+     "novelty": 0.154,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n18",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Moral responsibility requires the agent to have been able to act otherwise (alternative possibilities) is true, Causal connections underpin our actions and decisions is false, Determinism is true is false, Moral responsibility is compatible with determinism is false, Moral responsibility arises from the agent's capacity ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.248,
+     "novelty": 0.032,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "formal": true
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n15",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n16",
+     "dst": "n15",
+     "rel": "tests"
+    },
+    {
+     "src": "n17",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n18",
+     "dst": "n0",
+     "rel": "attacks"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "evidence",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n11",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "formal",
+     "node": "n13",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 5
+    },
+    {
+     "id": "x3",
+     "kind": "counterfactual",
+     "node": "n16",
+     "target": "n15",
+     "status": "defeated",
+     "gain": 0.06,
+     "step": 8
+    },
+    {
+     "id": "x4",
+     "kind": "formal",
+     "node": "n18",
+     "target": "n0",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 11
+    }
+   ],
+   "confidence": 0.5299999999999998,
+   "uncertainty": 0.8285000000000001,
+   "novelty": 0.6409999999999999,
+   "surprise": 0.0601171875,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.199,
+      "reason": 0.106,
+      "imagine": 0.053,
+      "intuit": 0.0,
+      "introspect": 0.332,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.246,
+     "ms": 3763,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 2,
+     "op": "imagine",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.203,
+      "reason": 0.144,
+      "imagine": 0.082,
+      "intuit": 0.0,
+      "introspect": 0.046,
+      "doubt": 0.211,
+      "counterfactual": 0.033,
+      "formalize": 0.159,
+      "inquire": 0.122,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 5672,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.185,
+      "reason": 0.117,
+      "imagine": 0.063,
+      "intuit": 0.041,
+      "introspect": 0.045,
+      "doubt": 0.172,
+      "counterfactual": 0.149,
+      "formalize": 0.129,
+      "inquire": 0.099,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.082,
+     "ms": 4087,
+     "d_conf": 0.0,
+     "d_unc": 0.064
+    },
+    {
+     "step": 4,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.171,
+      "reason": 0.126,
+      "imagine": 0.075,
+      "intuit": 0.041,
+      "introspect": 0.038,
+      "doubt": 0.171,
+      "counterfactual": 0.148,
+      "formalize": 0.128,
+      "inquire": 0.102,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 4305,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.005,
+      "reason": 0.02,
+      "imagine": 0.027,
+      "intuit": 0.012,
+      "introspect": 0.006,
+      "doubt": 0.032,
+      "counterfactual": 0.027,
+      "formalize": 0.024,
+      "inquire": 0.006,
+      "adjudicate": 0.842,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2769,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.02,
+      "reason": 0.075,
+      "imagine": 0.059,
+      "intuit": 0.046,
+      "introspect": 0.024,
+      "doubt": 0.134,
+      "counterfactual": 0.113,
+      "formalize": 0.094,
+      "inquire": 0.022,
+      "adjudicate": 0.414,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 4046,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.004,
+      "reason": 0.016,
+      "imagine": 0.019,
+      "intuit": 0.009,
+      "introspect": 0.005,
+      "doubt": 0.005,
+      "counterfactual": 0.022,
+      "formalize": 0.004,
+      "inquire": 0.004,
+      "adjudicate": 0.913,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2734,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.021,
+      "reason": 0.089,
+      "imagine": 0.062,
+      "intuit": 0.052,
+      "introspect": 0.027,
+      "doubt": 0.029,
+      "counterfactual": 0.134,
+      "formalize": 0.022,
+      "inquire": 0.025,
+      "adjudicate": 0.538,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.225,
+     "ms": 4612,
+     "d_conf": -0.15,
+     "d_unc": 0.05
+    },
+    {
+     "step": 9,
+     "op": "counterfactual",
+     "focus": "n15",
+     "probs": {
+      "memory": 0.013,
+      "reason": 0.167,
+      "imagine": 0.055,
+      "intuit": 0.029,
+      "introspect": 0.015,
+      "doubt": 0.014,
+      "counterfactual": 0.383,
+      "formalize": 0.012,
+      "inquire": 0.014,
+      "adjudicate": 0.296,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption",
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 3148,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.014,
+      "imagine": 0.014,
+      "intuit": 0.007,
+      "introspect": 0.004,
+      "doubt": 0.004,
+      "counterfactual": 0.015,
+      "formalize": 0.003,
+      "inquire": 0.004,
+      "adjudicate": 0.932,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2618,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "adjudicate",
+     "focus": "n15",
+     "probs": {
+      "memory": 0.035,
+      "reason": 0.144,
+      "imagine": 0.068,
+      "intuit": 0.08,
+      "introspect": 0.044,
+      "doubt": 0.042,
+      "counterfactual": 0.174,
+      "formalize": 0.034,
+      "inquire": 0.038,
+      "adjudicate": 0.342,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.171,
+     "ms": 1099,
+     "d_conf": -0.06,
+     "d_unc": 0.022
+    },
+    {
+     "step": 12,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.053,
+      "reason": 0.203,
+      "imagine": 0.11,
+      "intuit": 0.116,
+      "introspect": 0.064,
+      "doubt": 0.059,
+      "counterfactual": 0.246,
+      "formalize": 0.049,
+      "inquire": 0.056,
+      "adjudicate": 0.0,
+      "revise": 0.042,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 2035,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 3155,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.88,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.856,
+     "novelty": 0.748,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.736,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.676,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.776,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.716,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.51,
+     "uncertainty": 0.766,
+     "novelty": 0.561,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.51,
+     "uncertainty": 0.766,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.706,
+     "novelty": 0.641,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.53,
+     "uncertainty": 0.729,
+     "novelty": 0.641,
+     "surprise": 0.107
+    },
+    {
+     "confidence": 0.53,
+     "uncertainty": 0.829,
+     "novelty": 0.641,
+     "surprise": 0.08
+    },
+    {
+     "confidence": 0.53,
+     "uncertainty": 0.829,
+     "novelty": 0.641,
+     "surprise": 0.06
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "Moral responsibility is compatible with determinism. This is supported by Strawson's reactive attitudes and the consistency of moral practices within a deterministic framework.",
+    "stance": "yes",
+    "credence": 0.85,
+    "key_reasons": [
+     "Strawson's reactive attitudes demonstrate that moral responsibility is grounded in social practices (e.g., resentment, gratitude) that remain meaningful even under determinism.",
+     "Moral responsibility arises from an agent's capacity to act according to reasons and values, which is consistent with deterministic causality.",
+     "The consequence argument's assumption that 'up to us' requires indeterminism is undercut by the fact that reactive attitudes function independently of metaphysical freedom."
+    ],
+    "open_objection": "The indeterminist challenge argues that moral responsibility requires alternative possibilities, which determinism denies; however, this objection conflates moral responsibility with metaphysical libertarianism.",
+    "open_questions": [
+     "How should we revise moral practices if determinism is true, without undermining their normative force?",
+     "Can moral responsibility be meaningfully attributed to non-human agents (e.g., AI) within a deterministic framework?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "unresolved contradiction",
+     "op": "adjudicate",
+     "node": "n0",
+     "strength": 0.8
+    },
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.1725,
+    "imagine": 0.135,
+    "intuit": 0.15,
+    "introspect": 0.1498,
+    "doubt": 0.15,
+    "counterfactual": 0.12,
+    "formalize": 0.1245,
+    "inquire": 0.15,
+    "adjudicate": 0.2069,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 3,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"van-inwagen-consequence\", \"title\": \"Van Inwagen: consequence argument\", \"text\": \"If determinism is true, our acts follow from the laws and the remote p"
+    },
+    {
+     "step": 5,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"A\": true, \"C\": true, \"D\": false, \"M\": false, \"P\": true, \"R\": false, \"S\": false, \"U\": false}, \"atoms\": [\"A"
+    },
+    {
+     "step": 11,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"A\": true, \"C\": false, \"D\": false, \"M\": false, \"R\": false, \"S\": false}, \"atoms\": [\"A\", \"C\", \"D\", \"M\", \"R\","
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 2.529,
+   "conflicts": [
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n11",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n13",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n16",
+     "target": "n15",
+     "status": "resolved"
+    },
+    {
+     "objection": "n18",
+     "target": "n0",
+     "status": "open"
+    }
+   ]
+  },
+  "minimalist": {
+   "hypothesis": "Moral responsibility is compatible with determinism.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Moral responsibility is compatible with determinism.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.71,
+     "curiosity": 0.724,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Determinism holds that all events, including human actions, are determined by prior causes.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.725,
+     "curiosity": 0.276,
+     "novelty": 0.255,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Moral responsibility requires only that an agent could have acted otherwise in the sense of having the capacity to respond to reasons, not that they could have done otherwise in a metaphysical sense.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.499,
+     "novelty": 0.247,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "The capacity to respond to reasons is sufficient for moral responsibility.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.189,
+     "novelty": 0.183,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Determinism does not eliminate the capacity to respond to reasons.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.302,
+     "novelty": 0.258,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Moral responsibility does not require the ability to have acted otherwise in a metaphysical sense.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.345,
+     "novelty": 0.077,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.7
+    },
+    {
+     "id": "n6",
+     "type": "question",
+     "text": "Does the capacity to respond to reasons require a metaphysical ability to have acted otherwise?",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.5,
+     "curiosity": 0.559,
+     "novelty": 0.184,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n7",
+     "type": "counterfactual",
+     "text": "[opposite] If determinism were false, meaning that human actions are not determined by prior causes but instead involve genuine metaphysical indeterminacy (e.g., random quantum events or libertarian free will), then moral responsibility might require a metaphysical ability to have acted otherwise. In this scenario, if an agent's action was not causally determined, they might have been able to act ",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.455,
+     "novelty": 0.137,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "mode": "opposite",
+     "prediction": "flips"
+    },
+    {
+     "id": "n8",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: The capacity to respond to reasons is sufficient for moral responsibility. is true, Determinism holds that all events, including human actions, are determined by prior causes. is true, Moral responsibility does not require the ability to have acted otherwise in a metaphysical sense. is true, Determinism does not eliminat",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.269,
+     "novelty": 0.119,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "formal": true
+    },
+    {
+     "id": "n9",
+     "type": "premise",
+     "text": "The capacity to respond to reasons does not require a metaphysical ability to have acted otherwise; it only requires that an agent's actions are guided by reasons in a way that is responsive to the reasons presented to them, even if those reasons were causally determined by prior events.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.95,
+     "curiosity": 0.042,
+     "novelty": 0.045,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The scenario [n7] posits a counterfactual where determinism is false and moral responsibility requires a metaphysical ability to have acted otherwise. However, this does not challenge the compatibility claim [n0] because [n0] asserts compatibility under determinism, not under indeterminism. The claim [n0] remains valid regardless of what happens in an indeterministic scenario; the argument for com",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.376,
+     "novelty": 0.176,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "The objection [n8] mischaracterizes the argument. The premises [n1], [n2], [n4], [n5], [n9] collectively entail [n0] because [n9] establishes that the capacity to respond to reasons (sufficient for moral responsibility per [n3]) does not require metaphysical freedom, and [n4] confirms determinism preserves this capacity. The counter-assignment in [n8] incorrectly assumes the premises must entail t",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.362,
+     "novelty": 0.132,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "counterfactual",
+     "node": "n7",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "formal",
+     "node": "n8",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    }
+   ],
+   "confidence": 0.71,
+   "uncertainty": 0.672,
+   "novelty": 0.76,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.199,
+      "reason": 0.106,
+      "imagine": 0.053,
+      "intuit": 0.0,
+      "introspect": 0.332,
+      "doubt": 0.035,
+      "counterfactual": 0.03,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.246,
+     "ms": 3642,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 2,
+     "op": "inquire",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.203,
+      "reason": 0.144,
+      "imagine": 0.082,
+      "intuit": 0.0,
+      "introspect": 0.046,
+      "doubt": 0.211,
+      "counterfactual": 0.033,
+      "formalize": 0.159,
+      "inquire": 0.122,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.05,
+     "ms": 2111,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.134,
+      "reason": 0.096,
+      "imagine": 0.058,
+      "intuit": 0.034,
+      "introspect": 0.03,
+      "doubt": 0.14,
+      "counterfactual": 0.121,
+      "formalize": 0.105,
+      "inquire": 0.282,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 4250,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.104,
+      "reason": 0.07,
+      "imagine": 0.092,
+      "intuit": 0.025,
+      "introspect": 0.024,
+      "doubt": 0.103,
+      "counterfactual": 0.016,
+      "formalize": 0.077,
+      "inquire": 0.208,
+      "adjudicate": 0.282,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 3547,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 5,
+     "op": "inquire",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.029,
+      "reason": 0.022,
+      "imagine": 0.066,
+      "intuit": 0.011,
+      "introspect": 0.007,
+      "doubt": 0.005,
+      "counterfactual": 0.004,
+      "formalize": 0.004,
+      "inquire": 0.061,
+      "adjudicate": 0.79,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced",
+      "open question"
+     ],
+     "gain": 0.05,
+     "ms": 1992,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.03,
+      "reason": 0.021,
+      "imagine": 0.067,
+      "intuit": 0.011,
+      "introspect": 0.007,
+      "doubt": 0.005,
+      "counterfactual": 0.005,
+      "formalize": 0.005,
+      "inquire": 0.015,
+      "adjudicate": 0.834,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3246,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.028,
+      "reason": 0.108,
+      "imagine": 0.093,
+      "intuit": 0.061,
+      "introspect": 0.038,
+      "doubt": 0.032,
+      "counterfactual": 0.026,
+      "formalize": 0.025,
+      "inquire": 0.029,
+      "adjudicate": 0.559,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3284,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "reason",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.068,
+      "reason": 0.264,
+      "imagine": 0.109,
+      "intuit": 0.158,
+      "introspect": 0.1,
+      "doubt": 0.089,
+      "counterfactual": 0.072,
+      "formalize": 0.066,
+      "inquire": 0.075,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 1753,
+     "d_conf": 0.05,
+     "d_unc": -0.1
+    },
+    {
+     "step": 9,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.011,
+      "reason": 0.035,
+      "imagine": 0.016,
+      "intuit": 0.027,
+      "introspect": 0.017,
+      "doubt": 0.016,
+      "counterfactual": 0.013,
+      "formalize": 0.011,
+      "inquire": 0.012,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.842
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 2298,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.892,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.892,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.832,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.772,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.71,
+     "uncertainty": 0.672,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.71,
+     "uncertainty": 0.672,
+     "novelty": 0.76,
+     "surprise": 0.0
+    }
+   ],
+   "step": 9,
+   "conclusion": {
+    "position": "Moral responsibility is compatible with determinism.",
+    "stance": "yes",
+    "credence": 0.85,
+    "key_reasons": [
+     "Determinism preserves the capacity to respond to reasons, which is sufficient for moral responsibility.",
+     "Moral responsibility does not require a metaphysical ability to have acted otherwise, only the capacity to respond to reasons.",
+     "The counterfactual scenario of indeterminism does not undermine the compatibility claim under determinism."
+    ],
+    "open_objection": "Some argue that moral responsibility requires a metaphysical ability to have acted otherwise, which determinism denies.",
+    "open_questions": [
+     "Does the capacity to respond to reasons fully capture the intuitive notion of moral responsibility?",
+     "How do we reconcile determinism with the experience of free will and moral deliberation?"
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.135,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.1788,
+    "doubt": 0.15,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.099,
+    "adjudicate": 0.2061,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 3,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"C\": true, \"D\": true, \"M\": true, \"N\": false, \"R\": false}, \"atoms\": [\"C\", \"D\", \"M\", \"N\", \"R\"], \"engine\": \"p"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.724,
+   "conflicts": [
+    {
+     "objection": "n7",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n8",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  }
+ },
+ "metrics": {
+  "semantic_diversity": 0.163,
+  "branch_diversity": 0.452,
+  "disagreement_rate": 0.0,
+  "path_similarity": 0.426,
+  "conclusion_similarity": 0.934,
+  "unique_assumptions": 4,
+  "unique_objections": 2,
+  "unique_hypotheses": 0,
+  "unique": {
+   "explorer": {
+    "assumptions": [],
+    "objections": [
+     "[failure world] A deterministic universe where causal determinism is not just true but is the only possible mode of explanation for all events, including human decisions. In this world, the concept of 'rational choice' is entirely redefined as a mechanical process of causal inference from prior states, with no room for genuine deliberation or alternative possibilities. Agents are aware of their de"
+    ],
+    "hypotheses": []
+   },
+   "formalist": {
+    "assumptions": [],
+    "objections": [],
+    "hypotheses": []
+   },
+   "skeptic": {
+    "assumptions": [
+     "An agent's character and reasons are not determined by external factors beyond their control."
+    ],
+    "objections": [
+     "[decisive assumption] In a world where an agent's character and reasons are determined by external factors beyond their control (i.e., [n3] is false), such as a person whose beliefs and desires are entirely shaped by genetic engineering or brainwashing, the agent's actions would be causally connected to these external forces rather than to their own internal psychological processes. For example, a"
+    ],
+    "hypotheses": []
+   },
+   "synthesizer": {
+    "assumptions": [
+     "The concept of 'reasons and values' can exist within a deterministic universe without requiring indeterminism.",
+     "Causal determinism does not undermine the meaningfulness of praise and blame in social contexts."
+    ],
+    "objections": [],
+    "hypotheses": []
+   },
+   "minimalist": {
+    "assumptions": [
+     "The capacity to respond to reasons is sufficient for moral responsibility."
+    ],
+    "objections": [],
+    "hypotheses": []
+   }
+  },
+  "per_agent": {
+   "explorer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 4,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.212,
+    "gain_per_step": 0.155,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.324,
+     "counterfactual": 0.13,
+     "doubt": 0.111,
+     "introspect": 0.109,
+     "conclude": 0.091,
+     "formalize": 0.087,
+     "intuit": 0.075,
+     "reason": 0.073
+    },
+    "steps": 11
+   },
+   "formalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 3,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.273,
+    "gain_per_step": 0.17,
+    "tool_calls": 2,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.448,
+     "conclude": 0.197,
+     "memory": 0.142,
+     "reason": 0.115,
+     "formalize": 0.097
+    },
+    "steps": 7
+   },
+   "skeptic": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 4,
+    "resolution_rate": 0.75,
+    "defeats": 0,
+    "novelty": 0.218,
+    "gain_per_step": 0.162,
+    "tool_calls": 0,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "reason": 0.309,
+     "adjudicate": 0.224,
+     "counterfactual": 0.154,
+     "doubt": 0.084,
+     "introspect": 0.083,
+     "conclude": 0.075,
+     "intuit": 0.071
+    },
+    "steps": 13
+   },
+   "synthesizer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 5,
+    "resolution_rate": 0.8,
+    "defeats": 1,
+    "novelty": 0.228,
+    "gain_per_step": 0.159,
+    "tool_calls": 3,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.209,
+     "introspect": 0.178,
+     "formalize": 0.138,
+     "imagine": 0.129,
+     "reason": 0.105,
+     "memory": 0.098,
+     "conclude": 0.072,
+     "counterfactual": 0.071
+    },
+    "steps": 13
+   },
+   "minimalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 2,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.234,
+    "gain_per_step": 0.124,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.25,
+     "counterfactual": 0.163,
+     "inquire": 0.157,
+     "introspect": 0.139,
+     "formalize": 0.136,
+     "conclude": 0.088,
+     "reason": 0.067
+    },
+    "steps": 9
+   }
+  },
+  "pairs": {
+   "explorer|formalist": {
+    "semantic": 0.185,
+    "path_sim": 0.5,
+    "concl_sim": 0.933,
+    "branch": 0.599,
+    "disagree": false
+   },
+   "explorer|skeptic": {
+    "semantic": 0.153,
+    "path_sim": 0.429,
+    "concl_sim": 0.958,
+    "branch": 0.174,
+    "disagree": false
+   },
+   "explorer|synthesizer": {
+    "semantic": 0.167,
+    "path_sim": 0.357,
+    "concl_sim": 0.891,
+    "branch": 0.395,
+    "disagree": false
+   },
+   "explorer|minimalist": {
+    "semantic": 0.143,
+    "path_sim": 0.333,
+    "concl_sim": 0.933,
+    "branch": 0.371,
+    "disagree": false
+   },
+   "formalist|skeptic": {
+    "semantic": 0.184,
+    "path_sim": 0.429,
+    "concl_sim": 0.938,
+    "branch": 0.669,
+    "disagree": false
+   },
+   "formalist|synthesizer": {
+    "semantic": 0.117,
+    "path_sim": 0.5,
+    "concl_sim": 0.923,
+    "branch": 0.514,
+    "disagree": false
+   },
+   "formalist|minimalist": {
+    "semantic": 0.172,
+    "path_sim": 0.5,
+    "concl_sim": 1.0,
+    "branch": 0.595,
+    "disagree": false
+   },
+   "skeptic|synthesizer": {
+    "semantic": 0.173,
+    "path_sim": 0.357,
+    "concl_sim": 0.903,
+    "branch": 0.394,
+    "disagree": false
+   },
+   "skeptic|minimalist": {
+    "semantic": 0.163,
+    "path_sim": 0.429,
+    "concl_sim": 0.938,
+    "branch": 0.357,
+    "disagree": false
+   },
+   "synthesizer|minimalist": {
+    "semantic": 0.17,
+    "path_sim": 0.429,
+    "concl_sim": 0.923,
+    "branch": 0.449,
+    "disagree": false
+   }
+  },
+  "most_divergent": "explorer|synthesizer"
+ }
+}
