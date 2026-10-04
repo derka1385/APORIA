@@ -11,7 +11,6 @@
 <style>
 :root {
   --bg: #121416; --surface: #1B1F23; --ink: #F4F1E9; --dim: #B4BBC2; --faint: #808A94; --rule: #353B42;
-  --iris: #B7A2E8; --cyan: #79C5CF; --amber: #DDB16B;
   --memory: #e2a85a; --reason: #a9c8ff; --imagine: #b38cff; --intuit: #ff8fb4; --introspect: #5fd4c4; --doubt: #ff6b4f;
   --counterfactual: #3fd0f2; --formalize: #8c93ff; --inquire: #ffc999; --adjudicate: #f0d562; --revise: #8fe08c; --conclude: #ffffff;
   --serif: "Newsreader", Georgia, serif; --sans: "Source Sans 3", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -32,7 +31,7 @@ nav a:hover { color: var(--ink); }
 .eyebrow { font: 13px/1.4 var(--mono); letter-spacing: .02em; color: var(--faint); margin: 0 0 16px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 300; letter-spacing: -.01em; margin: 0; }
 h1 { font-size: clamp(40px, 5.2vw, 64px); line-height: 1.02; max-width: 15ch; }
-h1 em, h2 em { font-style: italic; color: var(--iris); }
+h1 em, h2 em { font-style: italic; }
 h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; max-width: 22ch; }
 h3 { font-size: 24px; line-height: 1.25; margin-bottom: 8px; }
 p { margin: 0 0 16px; max-width: 68ch; }
@@ -78,7 +77,9 @@ th, td { padding: 10px 14px; text-align: right; border-bottom: 1px solid var(--r
 th:first-child, td:first-child { text-align: left; }
 th { color: var(--faint); font-weight: 400; }
 tr:last-child td { border-bottom: 0; }
-td.best { color: var(--cyan); }
+td { color: var(--dim); }
+td:first-child, td.best { color: var(--ink); }
+td.best { font-weight: 500; }
 tr.failed td { color: var(--faint); text-decoration: line-through; }
 .chart { border: 1px solid var(--rule); border-radius: 6px; padding: 16px; margin-top: 24px; }
 .chart svg { width: 100%; height: auto; display: block; }
@@ -292,19 +293,21 @@ fetch("data/index.json").then((r) => r.json()).then((D) => {
   $("#printnote").textContent = "Each bar is one reasoner's compute, split by cognitive function, from recorded runs on the same question. " +
     "Hover a segment for its share.";
 
-  // headline: largest model, Δ 1, architecture against base
-  const g = group(featured), at = (c) => ok.filter((r) => group(r) === g && r.condition === c && r.delta === 1);
-  const A = at("architecture"), B = at("base");
+  // headline: largest model, architecture condition, Δ 0 (identical policies) against Δ 1, paired seeds
+  const g = group(featured), at = (c, d) => ok.filter((r) => group(r) === g && r.condition === c && r.delta === d);
+  const A = at("architecture", 1), B = at("architecture", 0).length ? at("architecture", 0) : at("base", 1);
+  const from = at("architecture", 0).length ? "Δ 0 → Δ 1" : "base → architecture";
   if (A.length && B.length) {
     const m = (rs, k) => mean(rs.map((r) => r.metrics[k]));
     const k = [
-      [`${m(B, "path_similarity").toFixed(2)} → ${m(A, "path_similarity").toFixed(2)}`, "path similarity, base → architecture (lower: the five processes differ more)"],
+      [`${m(B, "path_similarity").toFixed(2)} → ${m(A, "path_similarity").toFixed(2)}`, `path similarity, ${from} (lower: the five processes differ more)`],
       [`${m(B, "branch_diversity").toFixed(2)} → ${m(A, "branch_diversity").toFixed(2)}`, "branch diversity (different kinds of reasoning objects)"],
-      [`${f2(m(B, "unique_objections"))} → ${f2(m(A, "unique_objections"))}`, "unique objections no other reasoner raised"],
-      [`${m(A, "conclusion_similarity").toFixed(2)}`, "conclusion similarity under architecture: answers still converge"],
+      [`${f2(m(B, "unique_objections"))} → ${f2(m(A, "unique_objections"))}`, "unique objections per run, raised by no other reasoner"],
+      [`${m(B, "conclusion_similarity").toFixed(2)} → ${m(A, "conclusion_similarity").toFixed(2)}`, "conclusion similarity: the answers still converge"],
     ];
     $("#kpis").innerHTML = k.map(([v, l]) => `<div class="kpi"><div class="v">${v}</div><div class="k">${l}</div></div>`).join("");
-    $("#kpinote").textContent = `${g}, one question, Δ 1, five reasoners per run, n = ${A.length} architecture and ${B.length} base run(s). Small n: a direction, not a significance test.`;
+    $("#kpinote").textContent = `${g}, one question, five reasoners per run, n = ${B.length} and ${A.length} run(s). ` +
+      `Δ 0 runs the identical base policy in all five reasoners; only seeds differ. Small n: a direction, not a significance test.`;
   }
   // one comparison table per model and budget that has more than one condition at Δ 1
   const groups = [...new Set([g, ...ok.map(group)])];  // the featured model first
