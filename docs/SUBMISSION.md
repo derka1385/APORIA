@@ -11,8 +11,9 @@ Agent swarms built on one LLM converge: same moves, same objections, same answer
 functions around the model as explicit, measurable machinery: a typed argument graph, metacognition, curiosity as
 expected information value, counterfactual and adversarial experiments, memory, a truth-table checker and in-session
 learning. Five reasoners (explorer, formalist, skeptic, synthesizer, minimalist) run the same engine with different
-policy vectors, and one parameter, Δ, sets how far apart those policies are. On Qwen3-30B (evroc VM), raising Δ made
-the five research processes measurably more different. Conclusions still converge, and the lab reports that too.
+policy vectors, and one parameter, Δ, sets how far apart those policies are. On Qwen3-30B (evroc VM), raising Δ from 0 to 1
+cut the similarity of the five research paths from 0.44 to 0.30 and multiplied unique objections by five.
+Conclusions still converge, and the lab reports that too.
 
 ## What is new
 - **Cognition as a controlled variable.** Profiles are policy vectors (about twenty real parameters: operation weights,
@@ -29,11 +30,14 @@ the five research processes measurably more different. Conclusions still converg
 - **Compression as a cognitive intervention (next).** LobBot TaskSpecs per profile, seeded with that profile's real
   outputs, so REAP expert pruning can give each reasoner different experts of Qwen3-30B-A3B.
 
-## Results (Qwen3-30B, one question, five reasoners per run; generated in `README.md`)
-- Δ 0 → Δ 1, architecture condition: path similarity 0.44 → 0.28, branch diversity 0.44 → 0.62, unique objections
-  0.5 → 4 (Δ 0: n = 2, Δ 1: n = 1; the remaining sweep points are in the README table).
-- At Δ 1: architecture 0.28 path similarity vs 0.33 for persona prompts and 0.46 for identical policies.
-- Conclusion similarity stays around 0.9 in every condition. Different processes, so far, the same answer.
+## Results (Qwen3-30B on an evroc VM, one question, five reasoners per run; table in `README.md`)
+- Δ sweep, two paired seeds per level: from Δ 0 to Δ 1 path similarity falls 0.44 → 0.30, branch diversity rises
+  0.44 → 0.56 and unique objections per run rise 0.5 → 2.5. The change appears from Δ 0.75; Δ 0.25 and 0.5 stay at
+  the noise floor.
+- At Δ 1: path similarity 0.30 with policy vectors, 0.33 with persona prompts, 0.46 with identical policies.
+- Different model families (the `model` condition) give the most unique objections (5) and the highest semantic
+  diversity (0.18) but the lowest branch diversity (0.36). Models change the content; policies change the process.
+- Conclusion similarity stays between 0.89 and 0.94 in every condition: different processes, so far, the same answer.
 
 ## Honest limits
 Small n (one or two runs per condition, one question); the verdicts inside the loop are the same LLM's judgements;
