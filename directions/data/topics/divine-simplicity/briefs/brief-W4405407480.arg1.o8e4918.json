@@ -1,0 +1,198 @@
+{
+  "id": "brief-W4405407480.arg1.o8e4918",
+  "objection_id": "W4405407480.arg1.o8e4918",
+  "research_question": "Does the sculptor counterexample demonstrate that the modal collapse argument's truthmaker-based inference to extrinsic properties is unsound as a general metaphysical principle, and can the argument be salvaged by redefining 'extrinsic' as content dependence or by restricting the inference to simple beings?",
+  "argument": {
+    "id": "W4405407480.arg1",
+    "title": "Extrinsic volition and knowledge solve modal collapse",
+    "paper_id": "oa:W4405407480",
+    "paper_title": "Divine Simplicity and the Theory of Action",
+    "premises": [
+      {
+        "id": "W4405407480.c008",
+        "text": "The modal collapse argument is probably the most difficult objection to the doctrine of divine simplicity.",
+        "quote": "Among objections to the doctrine of divine simplicity (DDS) frequently discussed in recent literature, the so called “modal collapse argument” is probably the more difficult one."
+      },
+      {
+        "id": "W4405407480.c012",
+        "text": "Divine simplicity requires that all non‑tautological truths only about God have only God himself as their minimal truthmaker.",
+        "quote": "divine simplicity requires that all non-tautological truths that are only about God, have only God himself as their minimal truthmaker (Pruss 2008, 152–54)."
+      },
+      {
+        "id": "W4405407480.c013",
+        "text": "Any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, so the property is at least partially extrinsic.",
+        "quote": "any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, and hence the property is at least in part extrinsic"
+      },
+      {
+        "id": "W4405407480.c014",
+        "text": "The truth of the proposition ‘God freely chooses to create the actual world’ depends on the conjunction of a necessary fact about God and a contingent fact about the world.",
+        "quote": "(4) Partial extrinsicness of divine volition of the contingent. What makes true the proposition “God freely chooses to create the actual world” is the conjunction of a necessary fact about God and a contingent fact about the world."
+      },
+      {
+        "id": "W4405407480.c015",
+        "text": "God’s relation to the world is partially based on facts extrinsic to God, not on contingent intrinsic facts.",
+        "quote": "Partial extrinsicness of God's relation to the world. The relations between God and the world are at least partially based on facts that are extrinsic to God, and are not based on contingent facts intrinsic to God."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4405407480.arg1.mp",
+      "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+    },
+    "conclusion": {
+      "id": "W4405407480.c009",
+      "text": "A satisfactory solution to the modal collapse argument requires a theory of volition and knowledge where properties (a) and (b) are extrinsic, thus denying premise (1)(ii)."
+    },
+    "skeleton": "H; A -> B; C -> D; F; G |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4405407480.arg1.r2",
+    "text": "If the truthmaker of God's accidental volitional property includes a contingent fact about the world, then that property is extrinsic to God, whatever its origin in God's nature."
+  },
+  "objection": "A sculptor intends to carve this specific block of marble. The truthmaker for 'she intends to carve this block' includes the block's existence, a contingent fact. The volitional property of intending-to-carve-this-block is intrinsic to the sculptor: it is realized entirely by her own mental state, does not inhere in the block, and is a feature of her mind rather than a relation that partly resides outside her. Since a volitional property has a truthmaker that reaches beyond the agent while remaining intrinsic to the agent, including a contingent world-fact in the truthmaker does not make the property extrinsic.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A distinguished the realizer of a volitional property from the truthmaker of the proposition attributing it, arguing that intrinsicness is secured by the bearer's realizer and that the argument can therefore accommodate the sculptor case while reinterpreting 'extrinsic' to mean content dependence on a contingent item rather than realization outside God.",
+      "why_it_failed": "The objector's case showed that r2 as written conflates these two notions, and Defender A explicitly conceded that the premise must be substantively reinterpreted, admitting that the original inference does not survive the counterexample without revision."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B granted that the sculptor shows arg1.r2 is too broad for ordinary agents, but contended that divine simplicity makes the case disanalogous because God is identical with His act of will, leaving no separable mental state that could intrinsically realize the property while the truthmaker reaches outward.",
+      "why_it_failed": "This response shifts the argument to a separate claim about the metaphysics of simple beings rather than defending the original premise, and the exchange left unanswered whether the identity of God and His act genuinely reinstates the extrinsicness inference or merely introduces a restricted, undefended principle."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing",
+      "authors": [
+        "W. Matthews Grant",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.5840/faithphil201229328",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God."
+    },
+    {
+      "record_id": "W4410838723.a2",
+      "paper_id": "oa:W4410838723",
+      "title": "God’s Creative Energies and Their Contingencies",
+      "authors": [
+        "Matthew Kirby"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.5840/ipq2025527253",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God's spontaneous creative choice is a necessary formality but is genuinely contingent regarding what is chosen."
+    },
+    {
+      "record_id": "abs:oa:W1969484479",
+      "paper_id": "oa:W1969484479",
+      "title": "Against Divine Truthmaker Simplicity",
+      "authors": [
+        "Noël Blas Saenz",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.5840/faithphil2014121725",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God is the truthmaker for all intrinsic essential predications about him."
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God.",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing"
+    },
+    {
+      "record_id": "W4410838723.a2",
+      "paper_id": "oa:W4410838723",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God's spontaneous creative choice is a necessary formality but is genuinely contingent regarding what is chosen.",
+      "title": "God’s Creative Energies and Their Contingencies"
+    },
+    {
+      "record_id": "abs:oa:W1969484479",
+      "paper_id": "oa:W1969484479",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God is the truthmaker for all intrinsic essential predications about him.",
+      "title": "Against Divine Truthmaker Simplicity"
+    }
+  ],
+  "open_questions": [
+    "Can a restriction of the extrinsicness inference to simple beings be motivated independently of the modal collapse conclusion, or does it amount to an ad hoc maneuver to preserve the argument?",
+    "If God's volitional properties are 'extrinsic' only in the sense that their content depends on contingent world-facts while their realizer remains wholly divine, does this weakened notion of extrinsicness still generate a genuine conflict with divine simplicity?",
+    "Does the identification of God with His act of will, which underwrites Defender B's restriction, itself presuppose the doctrine of divine simplicity that the argument is meant to defend, rendering the reply question-begging?",
+    "Is content-dependence a genuine metaphysical form of extrinsicness, or does Defender A's revised premise merely trade on an ambiguity between truthmaking and realization?"
+  ],
+  "paper_direction": "A paper here would argue that the sculptor counterexample undermines the modal collapse argument's central premise that including a contingent world-fact in the truthmaker of God's volition suffices to make that property extrinsic, because ordinary agency routinely exhibits precisely this structure without rendering the volitional property extrinsic to the agent. The case would examine the two revision strategies—Defender A's redefinition of extrinsicness as content dependence and Defender B's restriction to simple beings—and argue that neither preserves the original argument's validity without importing controversial, independently unsupported assumptions about divine identity or the metaphysics of content. The strongest reply to anticipate is that divine simplicity is sui generis and that the identity of God with His act blocks the sculptor analogy by eliminating the realizer-truthmaker gap on which the counterexample relies. To succeed, the paper would need to show either that this identity claim does not genuinely close the gap or that the revised premises are too weak to sustain the modal collapse conclusion, thereby demonstrating that the argument must abandon its truthmaker-based route to extrinsicness.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is aimed squarely at r2's inference from truthmaker-inclusion to extrinsicness. But the direction mislocates r2 as a premise of 'the modal collapse argument' when it belongs to a defender's proposed solution to it, and one open question even says simplicity is what the argument 'is meant to defend', which muddles what is under attack.",
+      "robustness": "The case dies to the obvious duplication-test reply, and nothing in the transcript or plan addresses it. Defender A's realizer/truthmaker distinction is in fact the extrinsic modelers' own view, so the plan's 'concession' framing misreads that response as a weakness.",
+      "significance": "If the paper succeeded, it would at most force extrinsic modelers to specify which sense of 'extrinsic' they intend, a terminological refinement already largely handled in the cited literature, and it does not touch the modal collapse argument itself.",
+      "specificity": "There is a definite thesis, a case and two targeted revision strategies. But the success conditions ('show the identity claim does not close the gap or the revised premises are too weak') are disjunctive and unspecified, and no account of intrinsicness is chosen."
+    },
+    "strongest_objection": "The sculptor case only works if one stipulates that intending-to-carve-this-block is intrinsic because it is 'realized entirely by her own mental state'. On the standard duplication test (Lewis, Langton), that stipulation fails: a perfect intrinsic duplicate of the sculptor in a world without the block would lack the de re intention. On content-externalist views (Burge and others), object-dependent intentions are paradigmatically extrinsic. So the counterexample assumes the very notion of intrinsicness that r2's truthmaker criterion rejects. Worse, the realizer/truthmaker split the objection relies on is not a problem for the target argument. It is the extrinsic-model view itself (Grant, Brower and others), on which God's intrinsic act is necessary and its contingent 'willing-that-w' is an extrinsic Cambridge-style property. The objection therefore does not undermine r2; it restates the position r2 is meant to support.",
+    "reply_available": false,
+    "what_it_needs": "The paper must first argue, rather than stipulate, for a criterion of intrinsicness on which de re intentions come out intrinsic despite failing the duplication test, and defend it against content externalism. It must then show why that criterion, and not the extrinsic modeler's, is the one relevant to divine simplicity. Without this, the sculptor case merely restates the extrinsic model in different vocabulary.",
+    "summary": "As framed, the paper would not survive a competent reader. The sculptor counterexample assumes an unargued notion of intrinsicness that standard accounts reject, and it ends up restating the extrinsic-model view it is meant to refute, so it needs a defended theory of intrinsicness before it can be a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:17:15.537362+00:00"
+  },
+  "revision": {
+    "research_question": "Given that a volitional property with a contingent truthmaker fails the standard duplication test for intrinsicness, does the modal collapse argument's step from truthmaker-inclusion to extrinsicness hold, and can a simplicity defender block it by adopting a non-duplication criterion of intrinsicness on which divine volition counts as intrinsic?",
+    "paper_direction": "A paper here would argue that the sculptor case cannot serve as a counterexample to the truthmaker-based step in the modal collapse argument, because it relies on an intrinsicness criterion that the standard duplication test rejects. The paper would grant that a perfect intrinsic duplicate of the sculptor in a world without the block would lack the de re intention, so the sculptor's volition is extrinsic on the criterion the argument's critics standardly use. The paper's thesis is therefore narrower: the modal collapse argument goes through on the duplication criterion, and a simplicity defender can avoid its conclusion only by adopting a different criterion of intrinsicness. The paper would then examine what such a criterion must do. It must classify de re intentions as intrinsic despite their failing the duplication test, and it must be defended against content externalism, on which object-dependent intentions are paradigmatically extrinsic. The paper would argue that a criterion meeting these demands must be independently motivated rather than tailored to divine simplicity, and it would test whether any such criterion can be applied to God's volition without equivocation. The paper would also treat the realizer/truthmaker distinction as the extrinsic modeler's own position to be tested, not as a defeater of the argument. The final question is whether the simplicity defender's identity claim, that God's volition is identical to God's act, can supply the intrinsic classification that the sculptor case could not. The paper would argue that it can do so only if the identity claim is itself shown to be independent of the criterion it is meant to satisfy.",
+    "reply_to_strongest_objection": "The referee is right that the sculptor case, as stated, stipulates intrinsicness and fails the duplication test, so the paper drops the claim that the case refutes the truthmaker step. The paper replies in three moves. First, it separates the truthmaker question (what must exist for the attribution to be true) from the intrinsicness question (what the property is in itself). Second, it concedes that the duplication test classifies the sculptor's de re intention as extrinsic, which supports the argument's conclusion under that criterion. Third, it argues that the only route left to the defender is a non-duplication criterion of intrinsicness, which the paper evaluates against content externalism and against the requirement that it be independently motivated. The referee's realizer/truthmaker point is treated as the extrinsic model's own view, so it is assessed rather than assumed to be a weakness.",
+    "what_changed": "The revision drops the claim that the sculptor counterexample refutes the truthmaker-based extrinsicness step and narrows the paper to evaluating whether any non-duplication criterion of intrinsicness can classify divine volition as intrinsic.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:43.940935+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The paper rightly retreats from the stipulated-intrinsic sculptor case, but it calls the reviewed argument 'the modal collapse argument' and casts the 'simplicity defender' as needing intrinsic volition, which inverts the actual dialectic of an argument whose conclusion is the extrinsic model.",
+        "robustness": "Conceding the duplication test leaves r2 standing on a widely accepted criterion, and neither the plan nor the transcript explains why anyone on the simplicity side should want the non-duplication criterion the paper sets out to evaluate.",
+        "significance": "Showing that de re volition is extrinsic under duplication is a known result, so a successful paper would at best mildly refine existing discussions of extrinsic models of divine willing and knowing.",
+        "specificity": "There is a stated thesis and a sequence of moves (separating truthmaker from intrinsicness, conceding duplication, assessing alternative criteria against externalism, examining the identity claim), but the target criterion is never specified and the closing condition about independence of the identity claim is left schematic."
+      },
+      "strongest_objection": "The direction misreads which side the argument is on. The argument under review is a simplicity defender's case for extrinsic models: modal collapse is answered by making God's accidental volition and knowledge extrinsic. So a 'simplicity defender' who adopts a non-duplication criterion making divine volition intrinsic would be reinstating accidental intrinsic properties in God, which is exactly what modal collapse and simplicity forbid, not 'blocking' the argument's conclusion. Once the paper concedes the duplication verdict, which is already standard (de re, object-dependent intentions are extrinsic on Lewis–Langton style tests), r2 is simply vindicated. The remaining project then either restates the existing extrinsic-model literature or pursues an option that helps the modal collapse proponent, not the defender.",
+      "reply_available": false,
+      "what_it_needs": "The paper must get the dialectic right: it should defend r2 for extrinsic-model theorists via the duplication test, then show who would want an intrinsic classification of divine volition and why. It also needs a non-trivial contribution beyond the well-known duplication verdict, for instance whether content-dependent 'extrinsicness' is enough to defuse modal collapse, or whether it collapses into intrinsic contingency given that the realizer is wholly divine.",
+      "summary": "Retreating from the sculptor counterexample is sound, but the resulting paper has the sides of the debate confused and would mostly confirm a standard result, so it needs reframing before it is worth writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:19:03.576378+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

@@ -1,0 +1,292 @@
+{
+ "generated_at": "2026-10-04T12:24:19.659151+00:00",
+ "runs": [
+  {
+   "run_id": "run-oa-W3115675310",
+   "target_id": "oa-W3115675310",
+   "kind": "classic",
+   "title": "Plantinga and Ash‘arites on Divine Simplicity",
+   "paper_id": "oa:W3115675310",
+   "argument_title": "Reductio against divine simplicity",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "misreading": 2,
+    "revision_required": 4
+   },
+   "briefs": [
+    "brief-W3115675310.arg1.o8a73eb",
+    "brief-W3115675310.arg1.oae023a",
+    "brief-W3115675310.arg1.o3627bf"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T12:06:29.188547+00:00"
+  },
+  {
+   "run_id": "run-oa-W4229080938",
+   "target_id": "oa-W4229080938",
+   "kind": "classic",
+   "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+   "paper_id": "oa:W4229080938",
+   "argument_title": "God cannot be a composite",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 5,
+    "misreading": 1
+   },
+   "briefs": [
+    "brief-W4229080938.arg1.of39007",
+    "brief-W4229080938.arg1.o1232c2",
+    "brief-W4229080938.arg1.o7f2e68"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T12:16:17.608764+00:00"
+  },
+  {
+   "run_id": "run-oa-W4405407480",
+   "target_id": "oa-W4405407480",
+   "kind": "classic",
+   "title": "Divine Simplicity and the Theory of Action",
+   "paper_id": "oa:W4405407480",
+   "argument_title": "Extrinsic volition and knowledge solve modal collapse",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 5,
+    "misreading": 1
+   },
+   "briefs": [
+    "brief-W4405407480.arg1.o8e4918",
+    "brief-W4405407480.arg1.o713b8b",
+    "brief-W4405407480.arg1.ob0d07b"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T12:14:37.851682+00:00"
+  },
+  {
+   "run_id": "run-oa-W7172336769",
+   "target_id": "oa-W7172336769",
+   "kind": "fresh",
+   "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+   "paper_id": "oa:W7172336769",
+   "argument_title": "Analogy grounds determinate theological language",
+   "objections": 12,
+   "trials": 6,
+   "outcomes": {
+    "misreading": 2,
+    "revision_required": 4
+   },
+   "briefs": [
+    "brief-W7172336769.arg1.o07ab08",
+    "brief-W7172336769.arg1.o35b399",
+    "brief-W7172336769.arg1.o5ae39d"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T12:09:56.813676+00:00"
+  },
+  {
+   "run_id": "run-oa-W7212186029",
+   "target_id": "oa-W7212186029",
+   "kind": "fresh",
+   "title": "Divine simplicity as symmetric parthood",
+   "paper_id": "oa:W7212186029",
+   "argument_title": "Symmetry formulation viable distinct DDS",
+   "objections": 11,
+   "trials": 6,
+   "outcomes": {
+    "revision_required": 3,
+    "misreading": 3
+   },
+   "briefs": [
+    "brief-W7212186029.arg1.o8e7787",
+    "brief-W7212186029.arg1.o501c14",
+    "brief-W7212186029.arg1.o05a058"
+   ],
+   "families": [
+    "anthropic",
+    "gemma",
+    "glm",
+    "gpt-oss",
+    "kimi",
+    "llama",
+    "mistral",
+    "qwen"
+   ],
+   "stop_reason": "trial budget per target reached (6)",
+   "finished_at": "2026-10-04T12:09:18.677730+00:00"
+  }
+ ],
+ "targets": [
+  {
+   "id": "oa-W7212186029",
+   "paper_id": "oa:W7212186029",
+   "kind": "fresh",
+   "title": "Divine simplicity as symmetric parthood",
+   "authors": [
+    "Nathaniel Gan"
+   ],
+   "year": 2026,
+   "published": "2026-09-10",
+   "url": "https://doi.org/10.1017/s0034412526101784",
+   "text_path": "data/raw/text/oa_W7212186029.txt",
+   "thesis": "God satisfies divine simplicity by being a part of all his parts, so the doctrine is best formulated as a symmetry-of-parthood thesis about God's relation to his attributes, which avoids the distinctness and modal collapse objections.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "God satisfies divine simplicity by being a part of all his parts, so the doctrine is best formulated as a symmetry-of-parthood thesis about God's relation to his attributes, which avoids the distinctness and modal collapse objections.",
+    "topic_relevance": 3,
+    "argument_clarity": 3,
+    "english": true
+   },
+   "reason": "Published 2026-09-10 (after 2026-08-01), open-access full text (55,601 chars); argues for a thesis; topic relevance 3/3 (directly about divine simplicity (its formulations, the modal collapse and other objections, defences)); argument clarity 3/3."
+  },
+  {
+   "id": "oa-W7172336769",
+   "paper_id": "oa:W7172336769",
+   "kind": "fresh",
+   "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+   "authors": [
+    "Maikki Aakko"
+   ],
+   "year": 2026,
+   "published": "2026-08-03",
+   "url": "https://doi.org/10.1017/nbf.2026.10161",
+   "text_path": "data/raw/text/oa_W7172336769.txt",
+   "thesis": "Fregean distinctions combined with the Thomistic doctrine of analogy defuse objections to divine simplicity and render theological language sufficiently determinate for meaning and religious practice.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "Fregean distinctions combined with the Thomistic doctrine of analogy defuse objections to divine simplicity and render theological language sufficiently determinate for meaning and religious practice.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Published 2026-08-03 (after 2026-08-01), open-access full text (70,533 chars); argues for a thesis; topic relevance 3/3 (directly about divine simplicity (its formulations, the modal collapse and other objections, defences)); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W4229080938",
+   "paper_id": "oa:W4229080938",
+   "kind": "classic",
+   "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+   "authors": [
+    "Jon McGinnis"
+   ],
+   "year": 2022,
+   "published": "2022-05-06",
+   "url": "https://doi.org/10.1017/s0034412522000130",
+   "text_path": "data/raw/text/oa_W4229080938.txt",
+   "thesis": "Most of the arguments against divine simplicity credited to Plantinga were nearly perfectly anticipated by al-Ghazālī, and his responses to Avicenna's stronger form of simplicity contain new arguments that remain valuable today.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "Most of the arguments against divine simplicity credited to Plantinga were nearly perfectly anticipated by al-Ghazālī, and his responses to Avicenna's stronger form of simplicity contain new arguments that remain valuable today.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, open-access full text (56,296 chars); argues for a thesis; topic relevance 3/3 (directly about divine simplicity (its formulations, the modal collapse and other objections, defences)); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W3115675310",
+   "paper_id": "oa:W3115675310",
+   "kind": "classic",
+   "title": "Plantinga and Ash‘arites on Divine Simplicity",
+   "authors": [
+    "Nazif Muhtaroğlu"
+   ],
+   "year": 2020,
+   "published": "2020-12-28",
+   "url": "https://doi.org/10.18317/kaderdergi.809068",
+   "text_path": "data/raw/text/oa_W3115675310.txt",
+   "thesis": "The objection that no distinction can be drawn within God, so that divine attributes cannot be distinguished from God's essence, is inconsistent with the doctrine of divine simplicity, and the reductio arguments against simplicity (Plantinga, Baghdādī, Taftāzānī) rest on a mistaken presumption of such a distinction.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "The objection that no distinction can be drawn within God, so that divine attributes cannot be distinguished from God's essence, is inconsistent with the doctrine of divine simplicity, and the reductio arguments against simplicity (Plantinga, Baghdādī, Taftāzānī) rest on a mistaken presumption of such a distinction.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, open-access full text (44,805 chars); argues for a thesis; topic relevance 3/3 (directly about divine simplicity (its formulations, the modal collapse and other objections, defences)); argument clarity 2/3."
+  },
+  {
+   "id": "oa-W4405407480",
+   "paper_id": "oa:W4405407480",
+   "kind": "classic",
+   "title": "Divine Simplicity and the Theory of Action",
+   "authors": [
+    "Clemente Huneeus Alliende"
+   ],
+   "year": 2024,
+   "published": "2024-12-15",
+   "url": "https://doi.org/10.14428/thl.v9i1.82053",
+   "text_path": "data/raw/text/oa_W4405407480.txt",
+   "thesis": "God's willing to create and God's knowing creatures can be at least partly extrinsic (Cambridge) properties, because a general theory of action allows an agent to remain intrinsically unchanged across different effects, and free volition is such a causal relation.",
+   "screen": {
+    "in_area": true,
+    "argues_for_thesis": true,
+    "thesis": "God's willing to create and God's knowing creatures can be at least partly extrinsic (Cambridge) properties, because a general theory of action allows an agent to remain intrinsically unchanged across different effects, and free volition is such a causal relation.",
+    "topic_relevance": 3,
+    "argument_clarity": 2,
+    "english": true
+   },
+   "reason": "Classic fallback, open-access full text (48,904 chars); argues for a thesis; topic relevance 3/3 (directly about divine simplicity (its formulations, the modal collapse and other objections, defences)); argument clarity 2/3."
+  }
+ ],
+ "briefs": 15,
+ "trials": 30,
+ "objections": 59,
+ "headline": [
+  {
+   "label": "objections still standing or forcing a revision after both defenders",
+   "value": "21/30",
+   "source": "data/runs"
+  },
+  {
+   "label": "research briefs ready for human review",
+   "value": "15",
+   "source": "data/briefs"
+  }
+ ]
+}

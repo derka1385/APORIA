@@ -1,0 +1,195 @@
+{
+  "id": "brief-W4405407480.arg1.oedfa51",
+  "objection_id": "W4405407480.arg1.oedfa51",
+  "research_question": "Can a defender of divine simplicity distinguish the extrinsic truthmaker of 'God creates world W' from the intrinsic content of God's volition in a way that preserves both the doctrine's truthmaker requirement and the contingency of creation?",
+  "argument": {
+    "id": "W4405407480.arg1",
+    "title": "Extrinsic volition and knowledge solve modal collapse",
+    "paper_id": "oa:W4405407480",
+    "paper_title": "Divine Simplicity and the Theory of Action",
+    "premises": [
+      {
+        "id": "W4405407480.c008",
+        "text": "The modal collapse argument is probably the most difficult objection to the doctrine of divine simplicity.",
+        "quote": "Among objections to the doctrine of divine simplicity (DDS) frequently discussed in recent literature, the so called “modal collapse argument” is probably the more difficult one."
+      },
+      {
+        "id": "W4405407480.c012",
+        "text": "Divine simplicity requires that all non‑tautological truths only about God have only God himself as their minimal truthmaker.",
+        "quote": "divine simplicity requires that all non-tautological truths that are only about God, have only God himself as their minimal truthmaker (Pruss 2008, 152–54)."
+      },
+      {
+        "id": "W4405407480.c013",
+        "text": "Any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, so the property is at least partially extrinsic.",
+        "quote": "any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, and hence the property is at least in part extrinsic"
+      },
+      {
+        "id": "W4405407480.c014",
+        "text": "The truth of the proposition ‘God freely chooses to create the actual world’ depends on the conjunction of a necessary fact about God and a contingent fact about the world.",
+        "quote": "(4) Partial extrinsicness of divine volition of the contingent. What makes true the proposition “God freely chooses to create the actual world” is the conjunction of a necessary fact about God and a contingent fact about the world."
+      },
+      {
+        "id": "W4405407480.c015",
+        "text": "God’s relation to the world is partially based on facts extrinsic to God, not on contingent intrinsic facts.",
+        "quote": "Partial extrinsicness of God's relation to the world. The relations between God and the world are at least partially based on facts that are extrinsic to God, and are not based on contingent facts intrinsic to God."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4405407480.arg1.mp",
+      "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+    },
+    "conclusion": {
+      "id": "W4405407480.c009",
+      "text": "A satisfactory solution to the modal collapse argument requires a theory of volition and knowledge where properties (a) and (b) are extrinsic, thus denying premise (1)(ii)."
+    },
+    "skeleton": "H; A -> B; C -> D; F; G |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4405407480.arg1.r3",
+    "text": "The truthmaker of 'God creates world W' must include the identity of W as the object fixed by God's volition, so that the content of the volition is partly determined by a contingent worldly fact rather than by God's intrinsic nature alone."
+  },
+  "objection": "Consider Ada, a potter who has resolved to make one bowl and no other, before any clay exists. Her resolve is fixed by her settled character and plan; the content 'make bowl B' is picked out by her intention alone, and B's specific identity is not yet anything. When clay is delivered, B comes to exist, and the sentence 'Ada made B' becomes true. Her intention did not change; what changed is that a contingent object now satisfies a description her intrinsic intention already determined. The truthmaker of 'Ada made B' includes B, yet the content of her volition, 'make the bowl that suits this plan,' was fixed without reference to any worldly fact. Analogously, God's volition can have a content specified intrinsically, such as 'bring about whatever world satisfies this plan,' with the identity of W entering only in the truth of 'God creates W,' not in the content of the volition. The revised premise conflates the truthmaker of an attribution with the determinant of the volition's content, and the case shows these come apart.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Conceded that the original premise r3 conflates truthmaker inclusion with content determination, and that r1 suffers the same problem, but maintained that the argument survives only if the volition's content itself is world-indexed, since an entirely general intrinsic plan would make the content necessary and threaten modal collapse unless the plan's satisfier is reflected in that content.",
+      "why_it_failed": "It conceded that the Ada case correctly separates truthmaker inclusion from content determination, thereby abandoning the original premise, and it succeeded only in shifting the burden to a stronger world-indexed content premise that the original argument did not defend."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Conceded that r3 overreaches by inferring content-determination from truthmaker-inclusion, but argued that the truthmaker of an accidental attribution still includes something contingent besides God, which suffices for the property to be partially extrinsic regardless of content, and that a general intrinsic plan either makes creation necessary or derives variation from the world after all.",
+      "why_it_failed": "It conceded the challenged premise overreaches, and while it insisted that truthmaker inclusion alone yields extrinsicness, it did not address whether the Ada analogy undermines the inference from truthmaker to property extrinsicness in the specific sense required by divine simplicity, and it assumed without argument that an intrinsic plan cannot contingently select a unique world without collapsing modality or reintroducing worldly determination."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7203485685.c035",
+      "paper_id": "oa:W7203485685",
+      "title": "God and the View From Nowhere: De Se Knowledge and Divine Omniscience",
+      "authors": [
+        "Wandile Ganya"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s11841-026-01169-y",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "“God actualises W1 rather than W0” plus I = God yields the same uncentred truth conditions as “I actualise W1 rather than W0”, but the latter includes self‑locating content the former lacks."
+    },
+    {
+      "record_id": "abs:oa:W2608452597",
+      "paper_id": "oa:W2608452597",
+      "title": "Molinism and divine aseity : a review of ontological commitment",
+      "authors": [
+        "Richard Matthew Pretorius"
+      ],
+      "year": 2017,
+      "url": "http://hdl.handle.net/10019.1/101157",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "God is empowered to select and create a feasible world in which all events which transpire do so because God created a world in which they would."
+    },
+    {
+      "record_id": "abs:oa:W1991655404",
+      "paper_id": "oa:W1991655404",
+      "title": "The World and Truth About What Is Not",
+      "authors": [
+        "Noël Blas Saenz"
+      ],
+      "year": 2013,
+      "url": "https://doi.org/10.1093/pq/pqt015",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "One way of articulating this requirement is to say that things, broadly construed, are the ontological ground of truths and, therefore, that things make truths true."
+    }
+  ],
+  "novelty": 0.65,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "W7203485685.c035",
+      "paper_id": "oa:W7203485685",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "“God actualises W1 rather than W0” plus I = God yields the same uncentred truth conditions as “I actualise W1 rather than W0”, but the latter includes self‑locating content the former lacks.",
+      "title": "God and the View From Nowhere: De Se Knowledge and Divine Omniscience"
+    },
+    {
+      "record_id": "abs:oa:W2608452597",
+      "paper_id": "oa:W2608452597",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "God is empowered to select and create a feasible world in which all events which transpire do so because God created a world in which they would.",
+      "title": "Molinism and divine aseity : a review of ontological commitment"
+    },
+    {
+      "record_id": "abs:oa:W1991655404",
+      "paper_id": "oa:W1991655404",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "One way of articulating this requirement is to say that things, broadly construed, are the ontological ground of truths and, therefore, that things make truths true.",
+      "title": "The World and Truth About What Is Not"
+    }
+  ],
+  "open_questions": [
+    "Does the inclusion of a contingent worldly particular in the truthmaker of an attribution suffice to make the attributed property partially extrinsic in a sense that threatens divine simplicity, or does the Ada analogy show that truthmaker inclusion can be benign?",
+    "Can an intrinsically specified divine plan contingently select a unique world without either collapsing into necessary creation or tacitly making the volition's content world-indexed?",
+    "If the content of God's volition is fixed independently of any worldly fact, what account of truthmaking for accidental divine attributions preserves both the contingency of creation and the doctrine that God's minimal truthmakers include only God?"
+  ],
+  "paper_direction": "A paper here would argue that the modal collapse argument against divine simplicity fails because it conflates the truthmaker of an accidental attribution with the intrinsic content of the volition it attributes. The case would develop the Ada analogy to show that an agent can have an intrinsically fixed volition whose content—such as 'make the bowl that satisfies this plan' or 'bring about whatever world satisfies this plan'—does not include any worldly particular, even though the truth of the resulting attribution depends on which contingent object later satisfies that description. The paper would anticipate Defender B's reply that the property of creating world W remains extrinsic simply because W figures in the truthmaker, and that a general intrinsic plan either makes creation necessary or reintroduces worldly variation; it would need to show either that truthmaker inclusion by itself does not yield the metaphysical extrinsicness required to threaten divine simplicity, or that an intrinsic plan can non-arbitrarily select a unique possible satisfier without collapsing modality or secretly indexing its content to the world.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection fairly separates truthmaker inclusion from content determination against r3. But the paper direction then aims at 'the modal collapse argument', when the argument under discussion is a defense of simplicity whose conclusion the objection largely shares.",
+      "robustness": "The disanalogy is obvious: Ada's contingency comes from external clay delivery, which God lacks. Neither the direction nor the transcript answers it; the key issue, contingent selection by an intrinsic plan, is merely listed as an open question.",
+      "significance": "Even if it succeeded, the content/truthmaker distinction is already central to the extrinsic-model replies to modal collapse, so the paper would at best be a minor refinement or restatement.",
+      "specificity": "There is a definite thesis and a case, and the paper names what must be shown. But it offers no plan for meeting the central burden, how intrinsic content yields contingent unique selection, and it misdescribes its target."
+    },
+    "strongest_objection": "The Ada case gets its contingency from something outside Ada's will: whether clay arrives and which clay it is. God has no external input of that kind. If God's intrinsic, necessary plan uniquely fixes which world satisfies it, creation of W is necessary and modal collapse returns. If the plan underdetermines the world, nothing settles which world is actual except a brute or extrinsic fact. Either way the analogy restates the dilemma instead of escaping it. Worse, 'intrinsic necessary content plus contingent extrinsic truthmaker' is essentially the extrinsic-property solution that conclusion c009 recommends. So the objection supports the argument's conclusion rather than refuting it, and the paper's framing ('the modal collapse argument fails') misidentifies its target.",
+    "reply_available": false,
+    "what_it_needs": "The paper must correctly identify its target: c009 is a pro-simplicity response to modal collapse, not the modal collapse argument itself. It must then show how a necessary intrinsic plan contingently selects a unique world with no external input, engaging the existing extrinsic-model literature on simplicity and modal collapse (e.g., Grant, Tomaszewski, Mullins, Schmid) rather than relying on a temporally sequenced potter case.",
+    "summary": "The distinction is real, but the paper attacks the wrong argument, rests on an analogy whose source of contingency has no divine counterpart, and ends up restating the extrinsic-model view it claims to refute; it should not go forward in this form.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:26.975635+00:00"
+  },
+  "revision": {
+    "research_question": "Can a defender of divine simplicity show that the truthmaker of 'God creates world W' includes W without the content of God's volition being partly fixed by W, and does that distinction block modal collapse, or does it only restate the extrinsic-model solution?",
+    "paper_direction": "A paper here would argue that the Ada case does not refute the modal collapse argument, and that the case instead isolates the point a simplicity defender must defend: whether an intrinsic, necessary volition can contingently select a unique world. The paper retargets its critique to c009, which is a pro-simplicity response to modal collapse, and not to the modal collapse argument itself. It argues that the Ada analogy fails as a model of contingency because Ada's selection depends on externally delivered clay, which God lacks. The truthmaker/content distinction is therefore at most a necessary part of the reply, not a sufficient one. The paper's narrower claim is that truthmaker inclusion of W does not by itself establish the metaphysical extrinsicness that threatens simplicity, so an extrinsic-truthmaker reply preserves the truthmaker requirement only if the relational character of 'creates W' is shown not to be intrinsic in the sense that matters. It engages the extrinsic-model literature (Grant, Tomaszewski, Mullins, Schmid) on exactly this question. It does not claim to show how an intrinsic plan selects a unique world without collapse; it names that as the residual burden and states the conditions under which the burden would be met.",
+    "reply_to_strongest_objection": "The paper concedes the referee's central point: the Ada case restates the dilemma and cannot supply contingency from within the will. It replies in four steps. First, it retargets the critique to c009, so the thesis no longer claims that the modal collapse argument fails. Second, it separates two senses of 'extrinsic': truthmaker inclusion (a relation to W) and dependence of the volition's content on W. It argues that the collapse threat requires the second sense, and that r3 runs the two together. Third, it shows that if content is intrinsic and necessary, contingency of creation lies in the relational truth of 'creates W', so the inference from extrinsic truthmaker to extrinsic property must be tested directly. Fourth, it leaves unique selection by an intrinsic plan as an open burden and does not claim to have discharged it.",
+    "what_changed": "The revision narrows the thesis from refuting the modal collapse argument via the Ada analogy to retargeting c009 and testing whether truthmaker inclusion alone yields the extrinsicness that threatens simplicity, while conceding that the contingent-selection problem remains unsolved.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:52:16.869258+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The paper says truthmaker inclusion may not yield the extrinsicness that 'threatens' simplicity, yet c009 treats extrinsicness as the cure. It also shifts its target between the modal collapse argument, r3 and c009, so the aim is loose and partly inverted.",
+        "robustness": "The paper concedes the decisive point: the Ada analogy cannot supply contingency from within the will. It then leaves unique contingent selection as an open burden, so it has no answer to the charge that it either restates the extrinsic model or inherits the explanatory-luck objection.",
+        "significance": "Even if it succeeded, distinguishing truthmaker inclusion from content determination is a minor clarification already implicit in the extrinsic-model debate. It would not change how modal collapse is discussed.",
+        "specificity": "There is a nameable thesis and a four-step plan with a stated literature. However, the central claim to be 'tested directly' (truthmaker inclusion versus property extrinsicness) comes with no criterion or case that would settle it."
+      },
+      "strongest_objection": "The truthmaker/content distinction the paper relies on is not a correction of c009. It is the extrinsic model itself. Grant, Tomaszewski and others already hold that God's intrinsic act is the same across worlds and that 'God wills/creates W' is true partly in virtue of W. So the paper either restates c009 or falls back into the familiar dilemma it explicitly declines to address. That dilemma is the explanatory-luck problem (Mullins, Schmid) of why an intrinsically invariant God yields W rather than W'. Worse, the paper treats truthmaker-extrinsicness as what 'threatens' simplicity, when in the argument extrinsicness is what rescues simplicity from collapse. That inversion leaves its target unclear.",
+      "reply_available": false,
+      "what_it_needs": "It must fix which way extrinsicness cuts in c009 and show that the truthmaker/content distinction adds something the extrinsic-model literature lacks. Alternatively, it must make real progress on the residual burden, namely how an intrinsically invariant volition contingently selects a unique world without brute luck. It cannot simply name that burden.",
+      "summary": "The idea is too thin and partly confused: once its concessions are made, the paper largely restates the extrinsic-model reply and defers the one hard question, so I would not encourage it in this form.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:52:36.165608+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

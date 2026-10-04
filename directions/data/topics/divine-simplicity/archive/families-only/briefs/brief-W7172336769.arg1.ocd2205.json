@@ -1,0 +1,195 @@
+{
+  "id": "brief-W7172336769.arg1.ocd2205",
+  "objection_id": "W7172336769.arg1.ocd2205",
+  "research_question": "Does the Thomistic doctrine of analogy supply merely negative constraints on divine predication, or can it provide partial positive truth-conditions sufficient to guide contested practical cases without collapsing into univocity?",
+  "argument": {
+    "id": "W7172336769.arg1",
+    "title": "Analogy grounds determinate theological language",
+    "paper_id": "oa:W7172336769",
+    "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+    "premises": [
+      {
+        "id": "W7172336769.c003",
+        "text": "The author employs modern analytic philosophy, specifically selected Fregean distinctions, to show how the criticisms of divine simplicity can be defused.",
+        "quote": "In this paper, I employ the resources of modern analytic philosophy – specifically, selected Fregean distinctions – to demonstrate how these critiques can be defused."
+      },
+      {
+        "id": "W7172336769.c009",
+        "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy.",
+        "quote": "I argue that in order to address these underlying concerns of the critics of simplicity, Fregean diagnostics must be located in the broader semantic‑metaphysical framework provided by the doctrine of analogy."
+      },
+      {
+        "id": "W7172336769.c010",
+        "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates.",
+        "quote": "It is this framework that introduces a crucial further distinction that Fregean diagnostics do not give us – namely, the distinction between res significata and modus significandi – and thereby provides the resources needed to ground the meaning of theological predicates."
+      },
+      {
+        "id": "W7172336769.c025",
+        "text": "Analogical semantics supplies principled constraints on admissible divine predications, allowing ‘God is good’ while excluding ‘God is evil’ or ‘God is a chair’.",
+        "quote": "Analogical semantics also supplies principled constraints on admissible divine predications that are grounded in participation and eminence (i.e., it explains why ‘God is good’ is eligible for intrinsic predication while ‘God is evil’ or ‘God is a chair’ is not)."
+      },
+      {
+        "id": "W7172336769.c042",
+        "text": "The Thomistic doctrine of analogy can provide principled constraints and sufficiently determinate content for divine predicates, thereby answering residual worries about meaning.",
+        "quote": "Our aim in this section is not to rehearse a generic version of the Thomistic doctrine of analogy but to demonstrate how this doctrine can answer the residual worries about meaning from Section 3 by providing principled constraints and sufficiently determinate content for divine predicates."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7172336769.arg1.mp",
+      "text": "If the Thomistic doctrine of analogy supplies sufficiently determinate content and principled constraints for divine predicates, then theological language is determinate enough for meaning and practice while semantic openness is left intact, so the determinacy it supplies is what answers the worries about meaning."
+    },
+    "conclusion": {
+      "id": "W7172336769.c005",
+      "text": "The Thomistic doctrine of analogy does not eliminate semantic openness but makes theological language sufficiently determinate for meaning and practice, grounding meaningful God‑talk in metaphysics and religious practice."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7172336769.arg1.r2",
+    "text": "The Thomistic doctrine of analogy supplies principled constraints on admissible divine predications (determining which predicates are said primarily of God and which derivatively), but not truth-conditional sense for each predicate, so the claim is that theological language is constrained enough for practice while semantic openness about its precise content remains."
+  },
+  "objection": "A parish council must decide whether to shelter refugees. They ask their pastor whether God commands hospitality. Under the Thomistic analogical framework, 'hospitable' is deemed admissible and said primarily of God, while 'cruel' is excluded. Yet the framework assigns no truth-conditional sense to 'God is hospitable': it does not specify whether divine hospitality welcomes all strangers unconditionally or only the righteous. Because the council cannot derive any actionable content from the predicate beyond its bare label, they remain unable to decide whether turning families away violates God's nature. The formal constraint on admissible words therefore fails to guide practice; without at least partial truth-conditional content, the distinction between primary and derivative predication collapses into a mere lexical permission list. The promised determinacy for practice is illusory.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The framework fixes which predicates are said primarily of God and which derivatively, and that is enough for practice because a community can rule out predications that contradict the admitted ones (for example, that God's hospitality is cruel) while leaving finer questions open.",
+      "why_it_failed": "It conceded that 'sufficiently determinate for practice' overstates what a constraint-only framework delivers, acknowledging that a permission list guides action in plainly cruel cases but is silent on borderline cases, so the argument survives only as the weaker claim that analogy provides constraint for practice rather than determinacy sufficient to decide hard cases."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The broader argument places analogy within a semantic-metaphysical framework invoking res significata and modus significandi, so the distinction between primary and derivative predication is never a mere lexical word list.",
+      "why_it_failed": "Even so, it conceded that if the challenged premise denies truth-conditional sense entirely, the parish council still lacks actionable content for borderline cases; without partial positive content the distinction cannot guide specific decisions, so the premise must be revised to claim that analogy supplies partial truth-conditional content sufficient to guide core practical decisions."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2912734992.a3",
+      "paper_id": "oa:W2912734992",
+      "title": "Meaning and the Word ‘God’",
+      "authors": [
+        "Jonathan Harrison"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9780429456770-2",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "the doctrine of analogy is of doubtful validity, and one wants God to possess certain characteristics, like goodness, literally."
+    },
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?",
+      "authors": [
+        "Alan Philip Darley"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1111/heyj.12321",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "whether analogy is primarily a grammatical or a metaphysical doctrine."
+    },
+    {
+      "record_id": "W3170792374.a3",
+      "paper_id": "oa:W3170792374",
+      "title": "Essays on Discourse by and about the Divine",
+      "authors": [
+        "Stephanie Nicole Nordby"
+      ],
+      "year": 2016,
+      "url": "http://hdl.handle.net/11244/47124",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Whether divine predications should be interpreted metaphorically, analogically, or univocally remains contested."
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "W2912734992.a3",
+      "paper_id": "oa:W2912734992",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "the doctrine of analogy is of doubtful validity, and one wants God to possess certain characteristics, like goodness, literally.",
+      "title": "Meaning and the Word ‘God’"
+    },
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "whether analogy is primarily a grammatical or a metaphysical doctrine.",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?"
+    },
+    {
+      "record_id": "W3170792374.a3",
+      "paper_id": "oa:W3170792374",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Whether divine predications should be interpreted metaphorically, analogically, or univocally remains contested.",
+      "title": "Essays on Discourse by and about the Divine"
+    }
+  ],
+  "open_questions": [
+    "Can a purely negative constraint on admissible predications still count as making theological language 'sufficiently determinate for practice,' or does practical guidance require partial positive truth-conditions?",
+    "If the doctrine of analogy must be supplemented by negation and eminence to yield actionable content, does the resulting view remain genuinely analogical or does it collapse into a qualified univocity?",
+    "Does the parish-council test set an unfairly high standard for semantic determinacy, given that ordinary moral language also leaves hard cases underdetermined?"
+  ],
+  "paper_direction": "A paper here would argue that the Thomistic doctrine of analogy, understood as supplying only principled constraints on admissible predicates, fails to make theological language sufficiently determinate for contested practical decisions, and that attempts to strengthen it by appealing to partial truth-conditional content via negation and eminence either collapse analogy into a qualified univocity or still leave hard cases undetermined. The case would turn on the parish-council scenario, showing that knowing 'hospitable' applies primarily and 'cruel' is excluded does not determine whether divine hospitality is unconditional, and that narrowing the claim to 'clear cases' trivializes the doctrine's practical relevance. The strongest reply to anticipate is that the semantic-metaphysical framework of res significata and modus significandi supplies enough partial positive content to guide core decisions without full specification; the paper would need to show that this partial content either imports univocal sense illicitly or is too thin to settle the borderline cases that actually trouble religious practice.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection runs together semantic determinacy for theological practice (worship, prayer, doctrinal exclusion) and determinacy sufficient to decide contested moral cases, and it misclassifies 'hospitable' as properly said of God, so it is aimed at a stronger claim than the premise states.",
+      "robustness": "The direction itself lists the companions-in-guilt worry as an open question but gives no answer, and the defenders' concessions came from accepting the inflated standard rather than from the objection surviving the obvious reply.",
+      "significance": "The dilemma that analogy either collapses into qualified univocity or leaves predicates too thin is the long-standing Scotist and Alstonian objection, so success would at most restate a familiar point through a weaker example.",
+      "specificity": "There is a definite thesis, a case and an anticipated reply, but the plan for showing that res significata and modus significandi content 'imports univocal sense illicitly' is not specified, and the central case needs replacing."
+    },
+    "strongest_objection": "The parish-council case does not show anything about analogy. The indeterminacy it shows equally affects the ordinary, univocally predicated creaturely term: knowing what 'hospitable' means of a human being also does not settle whether hospitality requires unconditional welcome of all strangers. So the hard case is underdetermined by moral reasoning, not by the semantics of divine predication. The case is also misbuilt. On Thomistic principles 'hospitable' is a mixed perfection, predicated of God metaphorically rather than properly and primarily. And Thomists settle practical questions through natural law, prudence and revelation, not through the semantics of divine names. The objection therefore tests a claim the premise never made.",
+    "reply_available": false,
+    "what_it_needs": "The paper must find a case where the indeterminacy is specific to analogical predication: one that the univocal creaturely predicate would settle but the analogical divine predicate leaves open. It must use a pure perfection such as 'good' or 'wise', not a mixed one. It must also engage the Scotus-versus-Aquinas univocity literature, Alston, Ross and Swinburne, rather than reinventing the dilemma between univocity and emptiness.",
+    "summary": "Not publishable as framed: the test case attributes to analogical semantics an indeterminacy that belongs to moral reasoning generally, and once that is corrected what remains is the familiar univocity dilemma without a new argument.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:28.023670+00:00"
+  },
+  "revision": {
+    "research_question": "When analogical predication applies a pure perfection such as 'good' to God, does the Thomistic framework leave open a practical verdict that the univocal creaturely predicate would settle, and if so, does the residual indeterminacy count against analogy specifically rather than against moral reasoning in general?",
+    "paper_direction": "A paper here would argue that the Thomistic doctrine of analogy leaves open a specific class of practical verdicts that the univocal creaturely predicate would settle, and that this indeterminacy is attributable to the analogical structure of divine predication rather than to moral underdetermination in general. The test case uses a pure perfection, not a mixed one. Take 'good'. For a human agent, 'a good person who can prevent a child's serious suffering at no cost to anyone else prevents it' carries a determinate creaturely verdict, because the ordinary sense of 'good' is fixed by a shared standard of practical reasoning about harm and benefit. Applied to God, the framework supplies the res significata of goodness, and the modus significandi that ties the creaturely verdict to human practical reasoning does not transfer. The paper would show that the analogical rules of primary and derivative predication fix that God is good, but supply no further rule settling whether divine goodness requires the same verdict in this case. The argument is that the verdict-carrying content is lost in transfer while the constraint survives, which is a narrower and testable result. The paper would engage the Scotus-versus-Aquinas literature on univocity, Alston's account of how partial content can be given to theological predicates, and the positions of Ross and Swinburne on whether divine attributes admit determinate application. It would show that the case is not an instance of the familiar dilemma between univocity and emptiness restated, because the univocal and analogical predicates share a res significata, and the question is whether that shared content settles the case. The paper would also concede that moral reasoning, natural law, prudence and revelation, not divine semantics, are the usual means of settling practical questions, and it would argue only that the semantic framework cannot itself settle this class of cases.",
+    "reply_to_strongest_objection": "The paper accepts two points from the referee. First, the original hospitality case is abandoned: 'hospitable' is a mixed perfection, and its indeterminacy is shared with the creaturely term. Second, the thesis must be stated as a claim about semantic determinacy, not moral determinacy. It then replies with a contrast. The test uses a pure perfection, 'good', where the univocal creaturely predicate yields a determinate verdict in the case of preventing serious suffering at no cost. The paper distinguishes the shared res significata from the modus significandi, and argues that the creaturely verdict depends on the modus that does not transfer. The indeterminacy is therefore specific to analogical predication: the univocal predicate would settle the case and the analogical one does not. The paper does not claim that analogy has no partial content, only that the partial content it supplies does not reach this verdict.",
+    "what_changed": "The revision replaces the mixed-perfection hospitality case with a pure-perfection case in which the univocal creaturely predicate settles the verdict and the analogical divine predicate does not, and it narrows the thesis to that specific indeterminacy.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:52:21.399904+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction is internally consistent but loosely aimed: the challenged premise already grants that analogy supplies no truth-conditional sense and claims only constraint enough for practice, while the paper's verdict about what God must do bears on divine action and theodicy, and the paper itself concedes that natural law, prudence and revelation settle practice.",
+        "robustness": "The claim that the univocal predicate 'would settle' the case fails against the obvious reply that no predicate's sense settles moral verdicts, and the res significata/modus significandi reply asserts rather than argues that the verdict-carrying content sits in the non-transferring modus.",
+        "significance": "If it succeeded, the result would mostly re-describe the established dispute over whether God is a moral agent and the problem of evil, a modest clarification that would not change how the analogy argument is assessed.",
+        "specificity": "It is writable, with a definite thesis, a concrete pure-perfection test case, a stated contrast with univocity and named interlocutors, but it gives no argumentative plan for the key step that verdict-carrying content belongs to the modus significandi, and it omits the most relevant Thomist literature."
+      },
+      "strongest_objection": "The test case does not isolate a semantic loss specific to analogy. Even for humans, the sense of 'good' does not by itself settle that a good person prevents costless serious suffering. That verdict comes from substantive moral principles about agents who stand under obligations within a shared order, together with facts about the case. Applied to God, the verdict fails because Thomists such as Davies, McCabe and Burrell deny those background premises: God is not a moral agent among others, and greater-good theodicies dispute whether intervening is 'at no cost'. The residual indeterminacy is therefore the familiar thesis that God is not morally good, or the problem of evil, restated in semantic terms, not content lost in analogical transfer. It also concerns divine conduct rather than the religious practice the challenged premise speaks of, and that premise already concedes semantic openness.",
+      "reply_available": false,
+      "what_it_needs": "The paper must show that the creaturely verdict is carried by the sense of 'good' itself rather than by moral principles and situational premises that independently fail for God, and it must engage the Davies/McCabe view that this non-transfer is the intended Thomist result. It should also aim its thesis at the premise's actual claim, 'constrained enough for practice', rather than at a determinacy the premise already disclaims.",
+      "summary": "A clearly framed but misattributed project: its test case recycles the debate over whether God is a moral agent rather than exposing a semantic gap specific to analogy, and a competent referee would say so on first reading.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:52:57.472937+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

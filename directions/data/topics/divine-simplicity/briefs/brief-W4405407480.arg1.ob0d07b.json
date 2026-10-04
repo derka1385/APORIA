@@ -1,0 +1,197 @@
+{
+  "id": "brief-W4405407480.arg1.ob0d07b",
+  "objection_id": "W4405407480.arg1.ob0d07b",
+  "research_question": "Can the doctrine of divine simplicity be defended by showing that God's accidental volitional and cognitive properties are extrinsic on the basis of their truthmakers, without presupposing a general entailment from extrinsic relations to extrinsic properties?",
+  "argument": {
+    "id": "W4405407480.arg1",
+    "title": "Extrinsic volition and knowledge solve modal collapse",
+    "paper_id": "oa:W4405407480",
+    "paper_title": "Divine Simplicity and the Theory of Action",
+    "premises": [
+      {
+        "id": "W4405407480.c008",
+        "text": "The modal collapse argument is probably the most difficult objection to the doctrine of divine simplicity.",
+        "quote": "Among objections to the doctrine of divine simplicity (DDS) frequently discussed in recent literature, the so called “modal collapse argument” is probably the more difficult one."
+      },
+      {
+        "id": "W4405407480.c012",
+        "text": "Divine simplicity requires that all non‑tautological truths only about God have only God himself as their minimal truthmaker.",
+        "quote": "divine simplicity requires that all non-tautological truths that are only about God, have only God himself as their minimal truthmaker (Pruss 2008, 152–54)."
+      },
+      {
+        "id": "W4405407480.c013",
+        "text": "Any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, so the property is at least partially extrinsic.",
+        "quote": "any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, and hence the property is at least in part extrinsic"
+      },
+      {
+        "id": "W4405407480.c014",
+        "text": "The truth of the proposition ‘God freely chooses to create the actual world’ depends on the conjunction of a necessary fact about God and a contingent fact about the world.",
+        "quote": "(4) Partial extrinsicness of divine volition of the contingent. What makes true the proposition “God freely chooses to create the actual world” is the conjunction of a necessary fact about God and a contingent fact about the world."
+      },
+      {
+        "id": "W4405407480.c015",
+        "text": "God’s relation to the world is partially based on facts extrinsic to God, not on contingent intrinsic facts.",
+        "quote": "Partial extrinsicness of God's relation to the world. The relations between God and the world are at least partially based on facts that are extrinsic to God, and are not based on contingent facts intrinsic to God."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4405407480.arg1.mp",
+      "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+    },
+    "conclusion": {
+      "id": "W4405407480.c009",
+      "text": "A satisfactory solution to the modal collapse argument requires a theory of volition and knowledge where properties (a) and (b) are extrinsic, thus denying premise (1)(ii)."
+    },
+    "skeleton": "H; A -> B; C -> D; F; G |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4405407480.arg1.mp",
+    "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+  },
+  "objection": "Consider a scenario where God's volition to create the world is an intrinsic property, driven by God's own nature and desires. In this case, God's relation to the world is still partially based on facts extrinsic to God, such as the world's existence and properties. However, the accidental property of volition remains intrinsic to God, as it is a fundamental aspect of God's character. This scenario suggests that the connection between God's relation to the world and the nature of accidental properties is not as straightforward as assumed.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Distinguish between a property flowing from God's nature and the argument's truthmaker-based notion of intrinsicality, and argue that the objection's scenario is coherent only if the world's existence drops out of the truthmaker for 'God wills to create this world', which the objector has not shown.",
+      "why_it_failed": "It conceded that the original unstated premise is too weak and must be replaced by an explicit bridge from truthmaker to extrinsicality, and it acknowledged that the object-based route it recommended faces the unresolved worry that including the contingent object in the truthmaker may itself compromise divine simplicity."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Reject the broad entailment from extrinsic relations to extrinsic properties and instead rest the argument directly on the claim that the same contingent facts about the world belong to the minimal truthmaker for both God's relation to the world and God's accidental volition and knowledge.",
+      "why_it_failed": "It conceded that the original premise overstates the case as a general entailment and saved the argument only by supplying a revised bridge premise that directly ties truthmaker overlap to the extrinsicality of the property."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing",
+      "authors": [
+        "W. Matthews Grant",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.5840/faithphil201229328",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God."
+    },
+    {
+      "record_id": "W2737654126.a2",
+      "paper_id": "oa:W2737654126",
+      "title": "God's Simplicity",
+      "authors": [
+        "Eleonore Stump"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/oxfordhb/9780195326093.013.0011",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "God cannot possess intrinsic accidental properties."
+    },
+    {
+      "record_id": "W4229080938.c013",
+      "paper_id": "oa:W4229080938",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+      "authors": [
+        "Jon McGinnis"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.1017/s0034412522000130",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Plantinga argues that God possesses accidental properties that correspond to Avicennan relational properties."
+    }
+  ],
+  "novelty": 0.55,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God.",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing"
+    },
+    {
+      "record_id": "W2737654126.a2",
+      "paper_id": "oa:W2737654126",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "God cannot possess intrinsic accidental properties.",
+      "title": "God's Simplicity"
+    },
+    {
+      "record_id": "W4229080938.c013",
+      "paper_id": "oa:W4229080938",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Plantinga argues that God possesses accidental properties that correspond to Avicennan relational properties.",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity"
+    }
+  ],
+  "open_questions": [
+    "Can a property that originates entirely from God's necessary nature nevertheless be extrinsic if its minimal truthmaker includes contingent objects?",
+    "Does the object-based analysis of volition, on which the contingent world is the object rather than an intrinsic constituent, preserve divine simplicity when that object enters the truthmaker?",
+    "Is the revised bridge premise—that the inclusion of contingent facts in the minimal truthmaker of God's volition suffices for its extrinsicality—an independent principle or merely a restatement of the conclusion?",
+    "Are there coherent models of intrinsic accidental properties on which God's volition has only God as its minimal truthmaker despite the world's contingency?"
+  ],
+  "paper_direction": "A paper here would argue that the modal-collapse objection to divine simplicity can be answered only by replacing the standard bridge from extrinsic relations to extrinsic properties with a direct truthmaker bridge: the contingent facts about the world enter the minimal truthmaker for God's accidental volitional and cognitive properties, and this inclusion alone renders those properties at least partially extrinsic regardless of whether they flow from God's necessary nature. The case would develop a rigorous truthmaker semantics for divine predication, show that the objector's scenario of an intrinsically-grounded volition collapses into an equivocation between metaphysical origins and truthmaker composition, and anticipate the strongest reply that the object-based route reintroduces complexity into God by making the world a constituent of the divine truthmaker. To succeed, the paper would need to show either that the object's presence in the truthmaker does not violate simplicity—perhaps by treating the object as a non-constituent truthmaker—or that an alternative truthmaker analysis can ground extrinsicality without including the world in God's being at all.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection runs together 'flowing from God's nature' and truthmaker-intrinsicality, so it is only loosely aimed at the premise. The proposal correctly diagnoses that equivocation, but its own revised bridge risks circularity, as its third open question admits.",
+      "robustness": "Neither the defenders nor the plan answer the worry that the world's inclusion in the truthmaker is assumed rather than argued. Defender A explicitly leaves the simplicity-compromise worry unresolved, and the explanatory-idleness objection is never addressed.",
+      "significance": "Even if successful, the paper mostly re-expresses the source paper's truthmaker formulation and the established extrinsic-model response, so it is at best a minor clarification of the bridge premise.",
+      "specificity": "There is a definite thesis and a named counter-reply, but 'a rigorous truthmaker semantics for divine predication' and 'non-constituent truthmaker' are gestured at rather than planned, and the plan offers two alternative success conditions without choosing between them."
+    },
+    "strongest_objection": "The proposed truthmaker bridge is either trivial or question-begging. If extrinsicality just means having a minimal truthmaker that includes something besides the bearer, then 'contingent facts in the truthmaker suffice for extrinsicality' is analytic. The real dispute is whether the world belongs to the minimal truthmaker of 'God wills to create this world'. Modal-collapse proponents deny that it does, because a choice whose truth requires no intrinsic difference in God looks explanatorily idle: nothing in God settles which world obtains. This is the familiar 'brute contingency' worry pressed against Grant-style extrinsic models, and the paper treats it as settled by stipulation rather than answering it. Moreover, c013 already states the truthmaker-based extrinsicality thesis, so the 'direct bridge' largely restates the source author's own view and the existing extrinsic-model literature.",
+    "reply_available": false,
+    "what_it_needs": "It must give an independent argument that the world belongs to the minimal truthmaker for divine volition, one that does not presuppose the extrinsic model, and answer the explanatory-idleness objection that an intrinsically invariant God fails to account for which world obtains. It must also show what it adds beyond existing extrinsic-model defenses such as Grant's and Tomaszewski's.",
+    "summary": "This is a tidy diagnosis of an equivocation in a weak objection, but as a paper it repackages the existing extrinsic-model defense and begs the central question of whether the world belongs in the truthmaker, so a referee would likely reject it as unoriginal unless it confronts the explanatory-idleness objection head-on.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:16:59.946396+00:00"
+  },
+  "revision": {
+    "research_question": "Is the premise that extrinsic grounding of God's relation to the world makes God's volition and knowledge extrinsic valid as stated, and if not, can God's accidental volitional and cognitive properties be shown extrinsic by an independent, non-trivial argument that the contingent world belongs to their content-individuated truthmakers, without presupposing that extrinsic relations yield extrinsic properties?",
+    "paper_direction": "A paper here would argue that the premise (arg1.mp) is invalid as stated, and that the modal-collapse objection can be answered only by supplying a separate, non-trivial bridge for God's volitional and cognitive properties. The paper first uses the objector's own scenario to show that grounding a relation partly in extrinsic facts does not by itself make the grounded property extrinsic, so the premise needs an independent support. It then defends a narrower claim: a volition whose correctness condition is that a particular world obtains is individuated partly by that world's identity, so the world enters the minimal truthmaker of 'God wills to create W' as the object of the act, not as a constituent of God. The argument for this runs from the intentional individuation of volitions, not from the extrinsic model. The paper answers explanatory idleness by distinguishing selection by content from intrinsic difference in the bearer: an invariant God explains which world obtains through a directed act whose content selects that world, and this selection is explanatory without intrinsic variation in God. Whether the inclusion violates simplicity is handled as a bounded question. The paper claims only that simplicity is preserved if the object is a non-constituent truthmaker, and it does not treat that as settled. Beyond the extrinsic-model defenses of Grant and Tomaszewski, the paper contributes the intentional-individuation argument for the bridge and an explicit treatment of idleness. It takes the truthmaker formulation in c013 as given and does not claim novelty for it. Its success depends on intentional individuation, which a modal-collapse proponent can contest, and the paper states that dependence openly.",
+    "reply_to_strongest_objection": "The referee's charge is that the world's inclusion in the truthmaker is either analytic or assumed. The revised paper does not stipulate inclusion. It argues for it from the individuation of volitions by content: a volition that God wills W is correct just in case W obtains, so its identity conditions involve W, and W therefore belongs to the minimal truthmaker of the volitional proposition. This is not analytic, because the claim that the truthmaker of a content-individuated attitude includes its object is substantive and a rival can deny it; the paper argues against that rival. On explanatory idleness, the paper separates selection by content from intrinsic difference in the bearer. The invariant divine act explains which world obtains by being directed at that world, and the demand that something in God settle the outcome conflates explaining an outcome with varying the explanans intrinsically. The paper concedes that this reply depends on intentional individuation and does not claim the bridge is neutral.",
+    "what_changed": "The revision narrows the thesis from a general truthmaker bridge to a claim that the premise is invalid as stated and that a content-based individuation argument, rather than stipulation, is needed to place the world in God's volitional truthmaker, with explanatory idleness answered by distinguishing selection from intrinsic variation.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:53.581579+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The objection is loosely aimed: it slides from 'flows from God's nature' to truthmaker-intrinsicality, which the argument does not use. The paper direction repairs the aim, but its central move conflates correctness with individuation (and it calls a false conditional 'invalid').",
+        "robustness": "The obvious reply, that content individuation brings in only a necessary proposition rather than W's contingent obtaining, goes unaddressed, and the stated concession about relying on intentional individuation does not meet it.",
+        "significance": "A sound independent bridge from intentional individuation to extrinsicality would be a useful refinement of extrinsic-model responses to modal collapse, but it would not reshape the debate.",
+        "specificity": "The thesis, the steps (refute the bridge premise, argue from content individuation, address idleness), and the bounded treatment of simplicity are concrete enough to write, though the key argumentative step is underspecified."
+      },
+      "strongest_objection": "The core argument confuses correctness conditions with individuation conditions. A volition or belief directed at W is individuated by its content: a proposition or possible world, which exists necessarily. It is not individuated by W's obtaining, just as a false belief that p is still the belief that p. Content individuation therefore puts at most a necessary abstract object into the truthmaker, not the contingent obtaining of W, and so cannot deliver extrinsicality in the sense c013 needs. Getting the contingent world into the truthmaker requires a success- or effectiveness-entailing reading of 'wills to create W'. That is just the Grant/Tomaszewski extrinsic model the paper claims to go beyond. The idleness reply inherits a dilemma. If the act's content is invariant across worlds, it cannot select which world obtains. If the content varies, then either something about God varies, which is intrinsic accident, or the content is extrinsic, which assumes the conclusion.",
+      "reply_available": false,
+      "what_it_needs": "It must give a non-question-begging argument that the minimal truthmaker of 'God wills to create W' includes W's obtaining, not merely W's content, and do so without sliding into a factive or success reading that collapses into existing extrinsic models. It also needs to show that an invariant act can select among worlds without its content varying across worlds.",
+      "summary": "The project is a reasonable repair job with a clear plan, but its central argument conflates what individuates a volition with what makes it correct, and a first competent reader would press exactly that point.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:18:53.583547+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

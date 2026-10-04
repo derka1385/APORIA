@@ -203,11 +203,34 @@
    "description": "The classical doctrine that God has no parts, properties or composition distinct from God, and the current debate over it: the modal collapse argument, the problem of God's contingent knowledge and free choice, whether God can be identical to a property, truthmaker and constituent-ontology reconstructions, and recent attempts to restate simplicity in new metaphysical terms.",
    "area": "philosophy of religion and analytic metaphysics",
    "default": false,
-   "status": "not_run",
+   "status": "ready",
    "data": "topics/divine-simplicity/",
-   "counts": null,
-   "families": null,
-   "lead": null,
+   "counts": {
+    "papers": 5,
+    "objections": 59,
+    "trials": 30,
+    "briefs": 15,
+    "records": 837,
+    "works": 753
+   },
+   "families": [
+    "anthropic",
+    "kimi",
+    "glm",
+    "mistral",
+    "qwen",
+    "llama",
+    "gpt-oss",
+    "gemma"
+   ],
+   "lead": {
+    "id": "brief-W4229080938.arg1.o7f2e68",
+    "question": "Does a composite, Platonist God face an aseity threat that the simplicity argument uniquely identifies, or is the threat fully explained by the independent existence of the forms, which would leave simplicity idle?",
+    "score": 0.264,
+    "outcome": "revision_required",
+    "novelty": 0.6,
+    "quality": 0.55
+   },
    "searches": [
     "divine simplicity",
     "modal collapse",
@@ -269,6 +292,74 @@
     "make revise TOPIC=divine-simplicity",
     "make eval TOPIC=divine-simplicity",
     "make export TOPIC=divine-simplicity"
+   ]
+  },
+  {
+   "slug": "personal-identity",
+   "name": "Personal identity and psychological continuity",
+   "description": "Whether a person persists through time by psychological continuity (memory, character, intentions) or by something else: the animal, the body, the brain, or nothing determinate at all; fission cases, Parfit on what matters, the circularity objection, and narrative views. The literature behind APORIA's research question.",
+   "area": "metaphysics of personal identity",
+   "default": false,
+   "status": "not_run",
+   "data": "topics/personal-identity/",
+   "counts": null,
+   "families": null,
+   "lead": null,
+   "searches": [
+    "psychological continuity",
+    "personal identity and memory",
+    "animalism",
+    "fission and what matters",
+    "narrative identity"
+   ],
+   "config": {
+    "slug": "personal-identity",
+    "name": "Personal identity and psychological continuity",
+    "description": "Whether a person persists through time by psychological continuity (memory, character, intentions) or by something else: the animal, the body, the brain, or nothing determinate at all; fission cases, Parfit on what matters, the circularity objection, and narrative views. The literature behind APORIA's research question.",
+    "area": "metaphysics of personal identity",
+    "queries": {
+     "psychological continuity": "\"psychological continuity\"",
+     "personal identity and memory": "\"personal identity\" AND (memory OR \"memory theory\")",
+     "animalism": "animalism OR (\"personal identity\" AND \"biological view\")",
+     "fission and what matters": "\"personal identity\" AND (fission OR Parfit OR \"what matters\")",
+     "narrative identity": "\"narrative identity\" AND person"
+    },
+    "fresh_from": "2026-08-01",
+    "fresh_queries": [
+     "\"personal identity\""
+    ],
+    "relevant": "personal identity|psychological continuity|animalis|fission|parfit|memory|survival|persistence|person|self",
+    "relevance_levels": [
+     "none",
+     "touches the metaphysics of persons",
+     "concerns persistence, memory or the self",
+     "directly about personal identity and psychological continuity"
+    ],
+    "schools": [
+     "psychological continuity theory",
+     "animalism",
+     "narrative views of the self",
+     "Buddhist no-self",
+     "four-dimensionalism"
+    ]
+   },
+   "schools": [
+    "psychological continuity theory",
+    "animalism",
+    "narrative views of the self",
+    "Buddhist no-self",
+    "four-dimensionalism"
+   ],
+   "config_path": "config/topics/personal-identity.yaml",
+   "commands": [
+    "make corpus TOPIC=personal-identity",
+    "make targets TOPIC=personal-identity",
+    "make map TOPIC=personal-identity",
+    "make runs TOPIC=personal-identity",
+    "make assess TOPIC=personal-identity",
+    "make revise TOPIC=personal-identity",
+    "make eval TOPIC=personal-identity",
+    "make export TOPIC=personal-identity"
    ]
   },
   {

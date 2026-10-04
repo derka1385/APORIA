@@ -1,0 +1,201 @@
+{
+  "id": "brief-W3115675310.arg1.o3627bf",
+  "objection_id": "W3115675310.arg1.o3627bf",
+  "research_question": "Can a trope-theoretic account of the divine essence block the inference from divine simplicity to God's abstractness, and does it leave a residual problem about whether a single concrete property-particular can be a personal agent?",
+  "argument": {
+    "id": "W3115675310.arg1",
+    "title": "Reductio against divine simplicity",
+    "paper_id": "oa:W3115675310",
+    "paper_title": "Plantinga and Ash‘arites on Divine Simplicity",
+    "premises": [
+      {
+        "id": "W3115675310.c003",
+        "text": "If divine simplicity is true, then every divine attribute is identical to the divine essence, making all attributes identical with each other.",
+        "quote": "First, if divine simplicity is accepted, then all the divine attributes would be identical with divine essence, and thus divine attributes would be identical to each other."
+      },
+      {
+        "id": "W3115675310.c004",
+        "text": "Consequently, there would be only one divine attribute if all attributes are identical.",
+        "quote": "That is to say, there would be only one attribute if they are identical."
+      },
+      {
+        "id": "W3115675310.c005",
+        "text": "The claim that all attributes are identical is hard to accept because divine attributes like omnipotence, omniscience, and omnibenevolence are multiple.",
+        "quote": "However, this result is not easy to accept given the multiplicity of divine attributes such as omnipotence, omniscience, and omnibenevolence."
+      },
+      {
+        "id": "W3115675310.c006",
+        "text": "Divine simplicity also implies that God is not a personal creator but an abstract object, since properties are abstract objects.",
+        "quote": "Second, via similar reasoning, it can be shown that God is not a personal being who created the universe but an abstract object since properties are abstract objects."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3115675310.arg1.mp",
+      "text": "If divine simplicity is false, it must be rejected."
+    },
+    "conclusion": {
+      "id": "W3115675310.c007",
+      "text": "If these absurd consequences are unacceptable, the doctrine of divine simplicity must be rejected."
+    },
+    "skeleton": "A -> (B & C); C -> D; ~C; A -> (~E & F) |- G -> H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3115675310.c006",
+    "text": "Divine simplicity also implies that God is not a personal creator but an abstract object, since properties are abstract objects."
+  },
+  "objection": "Consider trope theory, where properties are particularized, concrete entities rather than abstract universals. The redness of a specific apple is a concrete particular, not an abstract object. Now suppose divine simplicity identifies God with the divine essence, and the divine essence is a trope—a concrete, particularized property rather than a universal. On this view, God is identical to a concrete particular property, not an abstract object. God remains concrete, causally active, and capable of intentional action. A trope can be instantiated once and bear causal relations, so there is no entailment from 'God is identical to a property' to 'God is an abstract object.' The premise only follows if one assumes a Platonic universal theory of properties, where all properties are abstract, but this is not the only available metaphysics of properties. The move from 'God is a property' to 'God is abstract' requires an unstated and contestable assumption about the nature of properties.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A conceded that c006 depends on an unstated Platonic assumption and that trope theory is a serious alternative, but maintained that the personal-creator worry persists because a trope is still a property, and identifying God with a single property makes God a property rather than a person or agent.",
+      "why_it_failed": "Because the objector targeted only the inference to abstractness and not the personal-creator worry itself, Defender A was forced to weaken c006 to a conditional claim rather than defending the original unqualified premise."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B conceded that the trope-theoretic counterexample blocks the inference to abstractness and that the premise overreaches, but insisted that the deeper worry survives: even on trope theory, identifying God with a single concrete property-particular makes God a property rather than a person.",
+      "why_it_failed": "Defender B acknowledged that the original premise must be narrowed to a conditional, thereby granting the objector's central point that the move from 'God is a property' to 'God is abstract' is theory-dependent and not entailed by divine simplicity alone."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7172336769.c019",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "related",
+      "similarity": 0.6,
+      "quote": "God can act, know, and will without being a mere abstract object."
+    },
+    {
+      "record_id": "abs:oa:W4231829136",
+      "paper_id": "oa:W4231829136",
+      "title": "Divine Simplicity",
+      "authors": [
+        "William E. Mann"
+      ],
+      "year": 2015,
+      "url": "https://doi.org/10.1093/acprof:oso/9780199370764.003.0003",
+      "verdict": "related",
+      "similarity": 0.6,
+      "quote": "Plantinga's criticisms can be resisted if one accepts a theory of properties according to which they are causal powers"
+    },
+    {
+      "record_id": "W7212186029.c034",
+      "paper_id": "oa:W7212186029",
+      "title": "Divine simplicity as symmetric parthood",
+      "authors": [
+        "Nathaniel Gan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/s0034412526101784",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "it is unintuitive and makes it hard to explain how God interacts with the world if properties are causally inert."
+    },
+    {
+      "record_id": "W4229080938.c004",
+      "paper_id": "oa:W4229080938",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+      "authors": [
+        "Jon McGinnis"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.1017/s0034412522000130",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.4,
+  "records_searched": 3289,
+  "nearest": [
+    {
+      "record_id": "W7172336769.c019",
+      "paper_id": "oa:W7172336769",
+      "verdict": "related",
+      "similarity": 0.6,
+      "quote": "God can act, know, and will without being a mere abstract object.",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums"
+    },
+    {
+      "record_id": "abs:oa:W4231829136",
+      "paper_id": "oa:W4231829136",
+      "verdict": "related",
+      "similarity": 0.6,
+      "quote": "Plantinga's criticisms can be resisted if one accepts a theory of properties according to which they are causal powers",
+      "title": "Divine Simplicity"
+    },
+    {
+      "record_id": "W7212186029.c034",
+      "paper_id": "oa:W7212186029",
+      "verdict": "related",
+      "similarity": 0.55,
+      "quote": "it is unintuitive and makes it hard to explain how God interacts with the world if properties are causally inert.",
+      "title": "Divine simplicity as symmetric parthood"
+    }
+  ],
+  "open_questions": [
+    "Can a single concrete trope bear the causal and intentional properties required for personal theism, or does identifying God with one property-particular inevitably collapse personhood into propertyhood?",
+    "Does the revised conditional premise merely relocate the personal-creator objection, or does trope theory provide independent metaphysical resources for showing that a property-particular can be a subject of knowledge and will?",
+    "If the divine essence is a trope, how is it metaphysically distinct from ordinary concrete tropes, and can it avoid being treated as a sui generis entity that strains standard trope theory?"
+  ],
+  "paper_direction": "A paper here would argue that trope theory undermines the Plantinga-style inference from divine simplicity to God's abstractness by showing that the premise 'properties are abstract objects' encodes a contestable Platonic assumption rather than a necessary truth. The case would develop a trope-theoretic model of the divine essence as a concrete, particularized property that remains causally active, thereby blocking the step from 'God is identical to a property' to 'God is an abstract object.' The strongest reply to anticipate is that even on trope theory, identifying God with a single property—whether abstract universal or concrete trope—makes God a property rather than a person, so the personal-creator worry persists in a new form. To succeed, the paper would need to show either that a single trope can possess the complexity required for personal agency, knowledge, and will, or that the residual worry is no more damaging to divine simplicity than to alternative metaphysical accounts of God.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+      "coherence": 4,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent and precisely targets c006's inference from 'God is a property' to 'God is abstract'. It slightly elides the fact that trope theorists themselves often call tropes 'abstract' particulars, so the sense of 'concrete' at issue needs fixing.",
+      "robustness": "The paper's real burden is the personhood worry, which both defenders pressed, and neither the transcript nor the plan offers more than a disjunction of things that 'would need to be shown'. It also fails to address the existing literature that already makes and contests this move.",
+      "significance": "Blocking c006 via particularized properties is well established, so success would mainly restate Mann's reply. It would leave c003–c005 and the agency worry, which carry the real weight of Plantinga's case, untouched.",
+      "specificity": "There is a definite thesis and a named counter-reply, but the constructive part is left as an either/or with no indicated argument. Neither branch, a trope as agent or parity with rival views, is developed into a plan."
+    },
+    "strongest_objection": "The trope reply is the standard one, not a new direction. Mann (1982, 'Divine Simplicity') already answered Plantinga by identifying God with a 'rich property-instance', and the debate since (Wolterstorff, Brower, Vallicella, Leftow) has moved on to whether a free-standing, bearerless trope can be a knowing, willing subject. That residual personhood question is exactly the one the proposal defers. Trope theory makes it worse: tropes are standardly dependent 'natures of' bearers, and Williams and Campbell call them 'abstract particulars'. So a self-subsisting trope with no bearer has no clear credentials as an agent, and 'concrete' in the relevant sense is assumed rather than shown.",
+    "reply_available": false,
+    "what_it_needs": "It must engage Mann's property-instance view and the replies to it, then give a positive account of how a non-dependent trope can be a subject of knowledge and will. Gesturing at that as a disjunctive success condition is not enough. Alternatively, it must show that the personhood worry arises equally on rival non-simple accounts of God.",
+    "summary": "This is a correct but familiar point that Mann already made against Plantinga; without a worked-out account of how a bearerless trope can be a personal agent, it would not survive a referee familiar with the property-instance literature.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:16:43.862641+00:00"
+  },
+  "revision": {
+    "research_question": "Once premise c006 is restated with its hidden Platonic assumption made explicit, does the inference from divine simplicity to God's non-personal abstractness survive? If a trope-theoretic divine essence blocks that inference, does the residual question of whether a bearerless particular can be a knowing and willing subject count against simplicity more than against rival non-simple accounts of God?",
+    "paper_direction": "A paper here would argue that premise c006 is invalid as stated: the step from 'God is identical to a property' to 'God is an abstract object' needs the Platonic premise that all properties are abstract, and a trope-theoretic reading of the divine essence blocks that step. The paper then narrows its claim. It does not argue that a bearerless trope is thereby a personal agent. It argues that once the abstractness charge is removed, the personhood objection becomes a parity question: it bears on divine simplicity only if simplicity supplies no resource for subjecthood that a non-simple theism lacks. The paper states what a subject of knowledge and will would have to be on the trope view, and tests whether non-simple theism, where God is a bearer of many properties, secures a subject by another route. If it does not, the personhood worry is shared by both views. If it does, the paper identifies that as a genuine cost of simplicity rather than dissolving it.",
+    "reply_to_strongest_objection": "The referee is right that blocking c006 is the standard move and that Mann's property-instance view already occupies it, so the paper claims no novelty for that step. It adds an explicit distinction between being a property, an ontological category, and being a subject, a bearer of knowledge and will, and it concedes that the trope view does not by itself establish the second. The sense of 'concrete' is fixed as particularity and causal efficacy rather than non-abstractness, since trope theorists themselves call tropes abstract particulars. The personhood worry is then tested by parity against rival non-simple accounts, the alternative the referee offered, rather than deferred as a disjunction. Only if that test favours simplicity does the paper claim more than a partial result.",
+    "what_changed": "The thesis is narrowed from a claim that trope theory undermines the abstractness inference and resolves the personhood worry to a claim that blocks c006 alone, with personhood recast as an explicit parity test instead of a deferred disjunctive condition.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:01.768448+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 4,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "It accurately targets the inference in c006 from 'God is a property' to 'God is abstract' and keeps the property/subject distinction clean. But the sense of 'concrete' is stipulated as particularity plus causal efficacy, which sits uneasily with trope theorists' own talk of 'abstract particulars'.",
+        "robustness": "The first step survives but is conceded to be unoriginal. The second step's parity test seems rigged to favour non-simple theism, which has an obvious bearer-subject. The direction offers no resource showing a trope can be a subject, only the admission that, if it cannot, this is a cost of simplicity.",
+        "significance": "If it succeeds as planned, the paper reformulates c006 as a conditional and relocates the personhood worry. That is a modest clarification of a debate Mann, Wolterstorff, Brower and others have already reshaped well beyond the trope move.",
+        "specificity": "It has a definite thesis, a two-stage structure, explicit concessions, and a stated test with outcomes for each branch. It lacks a named target account of non-simple theism and a concrete model of a trope-as-subject to be tested."
+      },
+      "strongest_objection": "The trope move is not new: Mann's property-instance reply to Plantinga already makes it, and the paper concedes this. The new part, the parity test, looks like a foregone conclusion. Non-simple theism secures a subject by the most ordinary route: God is a substance that bears knowledge and will as properties. The 'bearerless particular as subject' problem arises only because simplicity removes the bearer. So the test almost certainly comes out against simplicity, and the paper ends where Plantinga began. Plantinga's real worry was always that a property, abstract or not, cannot know or will, and abstractness was only an aggravating feature.",
+      "reply_available": false,
+      "what_it_needs": "The paper needs a positive account of how a self-subsisting trope fills the substance-and-subject role. One route is Campbell-style tropes capable of independent existence, combined with the Thomist notion of ipsum esse subsistens. Another is to engage Brower's truthmaker reading, which denies that simplicity makes God 'a property' at all. Without one of these, the parity test must be shown to be non-trivial, for example by targeting bundle-theoretic or other specific non-simple accounts that also lack a robust bearer.",
+      "summary": "The paper is clearly organised but mostly re-treads Mann's reply, and its new parity test looks likely to confirm the very cost it hopes to neutralise, so it needs a substantive account of a self-subsisting trope as subject before it is worth writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:18:21.329720+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

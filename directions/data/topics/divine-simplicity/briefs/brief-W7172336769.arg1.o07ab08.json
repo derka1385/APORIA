@@ -1,0 +1,196 @@
+{
+  "id": "brief-W7172336769.arg1.o07ab08",
+  "objection_id": "W7172336769.arg1.o07ab08",
+  "research_question": "Does the Thomistic analogical framework possess independent exclusion power over ill-formed divine predications, or must its admissibility constraints be grounded in prior natural-theological judgments about pure perfections?",
+  "argument": {
+    "id": "W7172336769.arg1",
+    "title": "Analogy grounds determinate theological language",
+    "paper_id": "oa:W7172336769",
+    "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+    "premises": [
+      {
+        "id": "W7172336769.c003",
+        "text": "The author employs modern analytic philosophy, specifically selected Fregean distinctions, to show how the criticisms of divine simplicity can be defused.",
+        "quote": "In this paper, I employ the resources of modern analytic philosophy – specifically, selected Fregean distinctions – to demonstrate how these critiques can be defused."
+      },
+      {
+        "id": "W7172336769.c009",
+        "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy.",
+        "quote": "I argue that in order to address these underlying concerns of the critics of simplicity, Fregean diagnostics must be located in the broader semantic‑metaphysical framework provided by the doctrine of analogy."
+      },
+      {
+        "id": "W7172336769.c010",
+        "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates.",
+        "quote": "It is this framework that introduces a crucial further distinction that Fregean diagnostics do not give us – namely, the distinction between res significata and modus significandi – and thereby provides the resources needed to ground the meaning of theological predicates."
+      },
+      {
+        "id": "W7172336769.c025",
+        "text": "Analogical semantics supplies principled constraints on admissible divine predications, allowing ‘God is good’ while excluding ‘God is evil’ or ‘God is a chair’.",
+        "quote": "Analogical semantics also supplies principled constraints on admissible divine predications that are grounded in participation and eminence (i.e., it explains why ‘God is good’ is eligible for intrinsic predication while ‘God is evil’ or ‘God is a chair’ is not)."
+      },
+      {
+        "id": "W7172336769.c042",
+        "text": "The Thomistic doctrine of analogy can provide principled constraints and sufficiently determinate content for divine predicates, thereby answering residual worries about meaning.",
+        "quote": "Our aim in this section is not to rehearse a generic version of the Thomistic doctrine of analogy but to demonstrate how this doctrine can answer the residual worries about meaning from Section 3 by providing principled constraints and sufficiently determinate content for divine predicates."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7172336769.arg1.mp",
+      "text": "If the Thomistic doctrine of analogy supplies sufficiently determinate content and principled constraints for divine predicates, then theological language is determinate enough for meaning and practice while semantic openness is left intact, so the determinacy it supplies is what answers the worries about meaning."
+    },
+    "conclusion": {
+      "id": "W7172336769.c005",
+      "text": "The Thomistic doctrine of analogy does not eliminate semantic openness but makes theological language sufficiently determinate for meaning and practice, grounding meaningful God‑talk in metaphysics and religious practice."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7172336769.arg1.r2",
+    "text": "The Thomistic analogical framework supplies principled admissibility constraints and a fixed metaphysical relation to creatures sufficient to exclude ill-formed divine predications, though it does not by itself determine the positive content of divine predicates such as 'good'."
+  },
+  "objection": "Two trained Thomistic theologians, A and B, both accept the analogical framework and its fixed metaphysical relation between creatures and God. A argues 'God is mutable' is inadmissible: mutability belongs to creatures as material composites, and the metaphysical relation traces only perfections to God. B argues 'God is mutable' is admissible: creaturely mutability includes responsiveness to love, a perfection rooted in divine goodness, so the analogical relation permits the predication when understood analogically. Both invoke the same fixed metaphysical relation to creatures. The framework provides no principled mechanism to settle whether mutability traces to material potency (excluded) or to responsive goodness (included). Thus the fixed metaphysical relation fails to supply constraints sufficient to exclude 'God is mutable'—a predication classical theism must reject. The framework's exclusion power depends on prior, independent judgments about which creaturely features count as perfections—judgments the framework itself does not generate.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The framework's constraint is not a decision procedure; it requires that a predicate trace to a pure perfection, and it is the metaphysics of creaturely perfection, not analogical semantics, that decides which features count. The disagreement over 'mutable' therefore shows only that the framework is incomplete at the margins, not that it lacks exclusion power.",
+      "why_it_failed": "The defender conceded that the framework's exclusion power depends on prior, independent judgments about which creaturely features are pure perfections, and that the original claim does not survive without qualification; the revised premise makes admissibility conditional on a prior classification of pure perfections."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The fixed metaphysical relation is embedded in the metaphysics of participation, so that only pure perfections involving no limitation or potency are admissible, and mutability as such implies potency and change, which the metaphysics of pure act excludes; theologian B confuses a creaturely mode with a pure perfection.",
+      "why_it_failed": "The defender conceded that the prior identification of which creaturely features are pure perfections is delivered by natural theology rather than by the analogical framework itself, so the argument survives only by acknowledging a division of labor that leaves the framework dependent on external natural-theological judgments."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?",
+      "authors": [
+        "Alan Philip Darley"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1111/heyj.12321",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "Is it, to put it another way, only a matter of predication, or also a matter of participation?"
+    },
+    {
+      "record_id": "abs:oa:W3172222976",
+      "paper_id": "oa:W3172222976",
+      "title": "Analogical Predication and Divine Simplicity",
+      "authors": [
+        "Dolf te Velde"
+      ],
+      "year": 2021,
+      "url": "https://doi.org/10.1177/10638512211017525",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "Traditional Reformed theology understands analogy as an “analogy of attribution” based on the creature’s participation in God’s own perfections. Duby’s discussion of analogy addresses its grounds, main forms and variations, and limitations."
+    },
+    {
+      "record_id": "W2912734992.a3",
+      "paper_id": "oa:W2912734992",
+      "title": "Meaning and the Word ‘God’",
+      "authors": [
+        "Jonathan Harrison"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9780429456770-2",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "the doctrine of analogy is of doubtful validity, and one wants God to possess certain characteristics, like goodness, literally"
+    }
+  ],
+  "novelty": 0.55,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "Is it, to put it another way, only a matter of predication, or also a matter of participation?",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?"
+    },
+    {
+      "record_id": "abs:oa:W3172222976",
+      "paper_id": "oa:W3172222976",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "Traditional Reformed theology understands analogy as an “analogy of attribution” based on the creature’s participation in God’s own perfections. Duby’s discussion of analogy addresses its grounds, main forms and variations, and limitations.",
+      "title": "Analogical Predication and Divine Simplicity"
+    },
+    {
+      "record_id": "W2912734992.a3",
+      "paper_id": "oa:W2912734992",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "the doctrine of analogy is of doubtful validity, and one wants God to possess certain characteristics, like goodness, literally",
+      "title": "Meaning and the Word ‘God’"
+    }
+  ],
+  "open_questions": [
+    "Does making admissibility constraints conditional on prior natural-theological judgments about pure perfections undermine the claim that analogy itself supplies sufficiently determinate content for divine predicates?",
+    "Can the res significata and modus significandi distinction be reformulated so that contested cases such as 'God is mutable' are settled by semantic structure rather than by prior metaphysical classifications?",
+    "If the analogical framework is incomplete at the margins, how wide is the range of contested divine predications, and does this incompleteness affect predicates central to religious practice?",
+    "Does the dependence of analogical semantics on natural theology constitute a fatal circularity in the defense of divine simplicity, or is it consistent with standard Thomistic methodology?"
+  ],
+  "paper_direction": "A paper here would argue that the Thomistic analogical framework lacks independent exclusion power over ill-formed divine predications because its admissibility constraints presuppose prior natural-theological judgments about which creaturely features count as pure perfections. The case would center on contested predications such as 'God is mutable,' showing that the framework's fixed metaphysical relation and the distinction between res significata and modus significandi underdetermine verdicts when theologians disagree over whether a feature is a perfection or a defect. The strongest reply to anticipate is that this merely reflects the standard Thomistic division of labor: analogy governs the mode of predication, while natural theology supplies the content by identifying pure perfections through the metaphysics of participation and pure act. To succeed, the paper would need to show either that this division of labor renders analogy insufficient for the determinacy-of-meaning task the original argument assigned to it, or that the natural-theological classification of perfections itself relies on prior semantic or metaphysical commitments that are equally contested, so that the framework's constraints are not independently principled.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent and does bear on the premise's exclusion claim. But it reads 'the framework' narrowly as analogical semantics stripped of participation metaphysics, whereas the premise's 'fixed metaphysical relation' plausibly already includes that metaphysics, so the aim is loose.",
+      "robustness": "Both defenders gave the obvious and adequate reply: there is a division of labor between natural theology and analogy. Their 'concessions' merely restate standard Thomist doctrine, and the direction names this reply without supplying any argument that defeats it.",
+      "significance": "Showing that analogy depends on natural theology is a familiar point in the literature. Only the undeveloped second horn, that the perfection classification is itself non-neutral, could refine the debate, and even that would be a modest contribution.",
+      "specificity": "There is a definite thesis and a test case, and the paper plan names two success conditions. But neither horn comes with an argumentative strategy, and the central case is a stipulated hypothetical rather than a documented dispute."
+    },
+    "strongest_objection": "The objection attacks a claim no Thomist holds and the premise does not state. Aquinas himself (ST I q.13 aa.2-3; SCG I.30) separates pure from mixed perfections by the via causalitatis and via remotionis before any analogical predication. The premise's 'fixed metaphysical relation' already means participation in pure act, so a predicate implying potency, like mutability, is excluded by that relation. On this reading the 'dependence on prior natural-theological judgments' is the framework working as designed, not a defect in it. Theologian B is also not a Thomist using the framework; B is revising the metaphysics of pure act (as Clarke-style relational Thomists do). The disagreement is therefore about the metaphysics, not about any underdetermination in analogical semantics.",
+    "reply_available": false,
+    "what_it_needs": "The paper must take the second horn seriously. It needs to show that the pure/mixed perfection classification itself depends on contested semantic or metaphysical commitments, so that the participation metaphysics cannot settle cases like mutability or responsiveness without begging the question. It should anchor this in actual intra-Thomist disputes (e.g., Clarke, Hill, or Dodds on divine relationality) rather than a stipulated pair of theologians.",
+    "summary": "As framed, this restates the standard Thomistic division of labor between analogy and natural theology as though it were an objection; it would only be worth writing if the author develops the claim that the pure-perfection classification is itself question-begging, using real intra-Thomist disputes.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:17:16.529821+00:00"
+  },
+  "revision": {
+    "research_question": "Does the pure/mixed classification of creaturely perfections on which the Thomistic framework relies settle the admissibility of contested divine predications such as 'God is mutable', or is that classification itself settled by contested semantic or metaphysical commitments?",
+    "paper_direction": "A paper here would argue that the Thomistic framework's exclusion of ill-formed divine predications depends on a prior classification of creaturely features into pure and mixed perfections, and that this classification is not neutral. Analogy governs how a predicate is said of God, while the via causalitatis and the via remotionis, applied within participation in pure act, decide whether it may be said at all. The paper accepts this division of labor as the framework as designed, so it does not claim that analogical semantics lacks exclusion power in itself. Its claim is narrower. The criterion that sorts a feature as a pure perfection or a mixed one, for example whether responsiveness to another implies material potency or is an unlimited perfection, is itself settled by contested commitments about what it is for a creaturely feature to be a perfection as such. The test case is 'God is mutable'. Drawing on the documented intra-Thomist disputes over divine relationality involving Clarke, Hill, and Dodds, the paper would hold the participation metaphysics fixed and show that it yields divergent verdicts on whether mutability traces to potency or to responsive goodness. To avoid begging the question, it would not assume either verdict. It would identify the premises each side uses to classify responsiveness and show that participation in pure act does not select between them. The conclusion is that the framework's exclusion power is only as determinate as the perfection classification beneath it.",
+    "reply_to_strongest_objection": "The referee is right that the original thesis attacked a position no Thomist holds: analogy alone, stripped of participation metaphysics. The revised paper concedes the division of labor, in which the via causalitatis and the via remotionis sort perfections before analogical predication, and it drops the claim that analogy lacks exclusion power in itself. It meets the second-horn demand directly. The sorting criterion, whether a feature implies potency or is an unlimited perfection, is contested. The paper shows this by setting out the premises that relationalist and classical Thomists use to classify responsiveness, and by showing that participation in pure act does not choose between them. It does not assume a verdict on mutability, so it does not beg the question. Because the exclusion of 'God is mutable' then depends on a contested classification, the claim is more modest than the original, but it is no longer a restatement of the standard reply.",
+    "what_changed": "The thesis is narrowed from a claim that analogy lacks independent exclusion power to the claim that the pure/mixed perfection classification beneath the framework is non-neutral, tested on the disputed predication 'God is mutable' with the intra-Thomist disputes the referee named.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:19:09.787573+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The revised thesis is internally consistent, but it presses on a premise that already disclaims determining positive content and already presupposes participation metaphysics, so it is only loosely aimed at what the premise asserts.",
+        "robustness": "The obvious reply is that mutability is mixed by definition under the very criterion the paper holds fixed, and that the cited Thomists dispute relationality rather than mutability; neither the direction nor the transcript answers this.",
+        "significance": "Showing that the pure/mixed sorting rests on contestable metaphysics is close to the standard Thomist self-understanding (via causalitatis and via remotionis doing prior work), so success would be a modest clarification rather than a shift in the debate.",
+        "specificity": "There is a definite thesis, a named test case, a method (isolate each side's classificatory premises with participation held fixed) and a literature to engage, although the chosen case is poorly suited to the plan."
+      },
+      "strongest_objection": "The test case equivocates between 'mutable' and 'responsive'. On the classical criterion, mutability is passage from potency to act, so it is a mixed perfection by definition, and no participation-metaphysician, Thomist or not, classifies it as pure. What Clarke, Hill and Dodds actually dispute is whether divine relationality or responsiveness requires real change. Dodds, in particular, argues for responsive love without mutability. So the documented intra-Thomist dispute concerns the predicate 'responsive', not 'mutable', and it does not show that participation in pure act yields divergent verdicts on 'God is mutable'. Even granting a contested sorting criterion, the observation that a framework's verdicts depend on contestable metaphysical premises is true of every substantive theory. It does not show a lack of the determinacy the challenged premise claims, especially since that premise already concedes that the framework does not fix positive content.",
+      "reply_available": false,
+      "what_it_needs": "It must either find a predicate whose pure/mixed status is genuinely contested among those who share the participation-in-pure-act metaphysics (and show the dispute is not resolvable by that metaphysics), or retarget the case to 'responsive'/'related'. It must then explain why this contestation threatens the premise's specific claim of sufficient exclusion power, rather than merely restating the standard division of labor.",
+      "summary": "A clear and honestly narrowed proposal, but its test case targets a predicate that no participation-metaphysician counts as a pure perfection, and its conclusion risks restating the standard division of labor, so it needs a better case and a sharper account of why contested sorting undermines the premise before it is a paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:19:28.305100+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

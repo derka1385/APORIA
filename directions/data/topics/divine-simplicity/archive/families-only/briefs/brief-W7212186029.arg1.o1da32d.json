@@ -1,0 +1,190 @@
+{
+  "id": "brief-W7212186029.arg1.o1da32d",
+  "objection_id": "W7212186029.arg1.o1da32d",
+  "research_question": "Does the divergence between the identity and symmetry formulations of divine simplicity require a globally non-extensional mereology, or can it arise in a mereology that satisfies extensionality restricted to objects with proper parts?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Symmetry formulation viable distinct DDS",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c001",
+        "text": "The doctrine of divine simplicity says that God lacks proper parts, but it is also often formulated as identifying God with all his parts.",
+        "quote": "Taken at face value, the doctrine of divine simplicity (DDS) says that God lacks proper parts, but the doctrine is also often formulated as a thesis identifying God with all his parts."
+      },
+      {
+        "id": "W7212186029.c002",
+        "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts.",
+        "quote": "The two formulations are not generally equivalent – on some plausible mereological theories, something can lack proper parts by being a part of all its (possibly distinct) parts."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is defined as non‑symmetric parthood, then the mereological formulation yields the symmetry formulation of the doctrine of divine simplicity.",
+        "quote": "If proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c009",
+        "text": "When antisymmetry is not assumed, the symmetry formulation of divine simplicity is strictly weaker than the identity formulation: lacking distinct parts entails lacking non‑symmetric parts, but not the reverse.",
+        "quote": "Accordingly, DDS under the symmetric formulation is strictly weaker than under the identity formulation: if God lacks distinct parts, he also lacks non-symmetric parts, but not vice versa."
+      },
+      {
+        "id": "W7212186029.c004",
+        "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood.",
+        "quote": "The symmetry formulation is viable as a thesis about God’s relation to his attributes, because instantiation can plausibly be modelled as parthood."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Instantiation can plausibly be modeled as parthood, so the viability premise's antecedent holds."
+    },
+    "conclusion": {
+      "id": "W7212186029.c010",
+      "text": "Thus, within the formal mereological framework, the symmetry formulation provides a viable and distinct way of understanding the doctrine of divine simplicity."
+    },
+    "skeleton": "A & B; C -> ~(A <-> B); D -> (A -> E); ~F -> ((B -> E) & ~(E -> B)); G -> H |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.arg1.r1",
+    "text": "The two formulations diverge only in a non-extensional mereology that permits distinct mutual parts, so c002 should be restated as holding relative to such a theory rather than to plausible mereological theories generally."
+  },
+  "objection": "Let the domain be {a, b}, where a is part of b, b is part of a, and a ≠ b. Define proper part as parthood that is not mutual, so neither a nor b has a proper part. Take extensionality in the restricted form that applies only to things with proper parts: anything with proper parts is fixed by them. This restricted principle is vacuous for a and b, since neither has proper parts. The theory is therefore extensional in the sense the restriction supplies, yet it permits distinct mutual parts. Divergence between the identity and symmetry formulations occurs here: a and b lack distinct non-mutual parts, so the identity formulation's 'no distinct parts' condition is met, while the symmetry formulation's 'no non-symmetric parts' condition is also met, but a and b are distinct, so identifying God with all his parts fails. The restatement r1 assigns divergence to 'non-extensional' theories, but this extensional-by-restriction theory diverges too.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A adopted a uniform reading of the identity formulation on which an entity must be identical to each of its parts (including mutual and improper ones), showed that the counterexample then exhibits the divergence predicted by c009, and proposed revising r1 to state that divergence arises only in theories where unrestricted extensionality fails for the defined proper-part relation.",
+      "why_it_failed": "The objector noted that this repair works but changes the original claim, and the transcript records no answer to the further challenge of showing that divergence survives within unrestricted extensionality; the revision thus saves the argument only by introducing a new condition not present in the published r1."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W4394831903.a2",
+      "paper_id": "oa:W4394831903",
+      "title": "Pure Universals: Total and Partial",
+      "authors": [
+        "Youssef Aguisoul"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.47297/wspjhcwsp2515-469904.20220602",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "constitutive qualitative improper parts, unlike proper parts such as being yellow"
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition",
+      "authors": [
+        "L. J. Anderson"
+      ],
+      "year": 2026,
+      "url": "https://philpapers.org/rec/ANDUOP",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God possesses no intrinsic constituents at all"
+    },
+    {
+      "record_id": "abs:oa:W3145804924",
+      "paper_id": "oa:W3145804924",
+      "title": "Another Look at the Modal Collapse Argument",
+      "authors": [
+        "Omar Fakhri"
+      ],
+      "year": 2021,
+      "url": "https://doi.org/10.24204/ejpr.v13i1.3168",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": ""
+    }
+  ],
+  "novelty": 0.7,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "W4394831903.a2",
+      "paper_id": "oa:W4394831903",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "constitutive qualitative improper parts, unlike proper parts such as being yellow",
+      "title": "Pure Universals: Total and Partial"
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God possesses no intrinsic constituents at all",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition"
+    },
+    {
+      "record_id": "abs:oa:W3145804924",
+      "paper_id": "oa:W3145804924",
+      "verdict": "different",
+      "similarity": 0.1,
+      "quote": "",
+      "title": "Another Look at the Modal Collapse Argument"
+    }
+  ],
+  "open_questions": [
+    "Does restricted extensionality that holds vacuously for objects without proper parts suffice to make a mereology extensional in the sense relevant to the argument, or is an unrestricted principle for the defined proper-part relation required?",
+    "If the argument's viability premise must be narrowed to mereologies that fail unrestricted extensionality for proper parthood, does this revision still capture the class of plausible mereological theories originally intended?",
+    "Can the defender show that the divergence between formulations survives in a mereology that satisfies unrestricted extensionality, or does the symmetry formulation collapse into the identity formulation under that condition?"
+  ],
+  "paper_direction": "A paper here would argue that the published argument's premise r1 cannot be sustained as written because divergence between the identity and symmetry formulations of divine simplicity arises even in mereologies that satisfy restricted extensionality vacuously. The case would formalize the objector's model, in which distinct mutual parts lack proper parts and restricted extensionality holds trivially, to show that the original claim falsely assumes divergence requires a globally non-extensional theory. The strongest reply to anticipate is the defender's revision to unrestricted extensionality for the defined proper-part relation, which blocks the counterexample by noting that identical absence of proper parts still violates the unrestricted principle. The paper would need to show either that this unrestricted principle is the only legitimate gloss on extensionality for this debate, or that the repair unduly narrows the argument by excluding mereologies that might plausibly model divine attributes as parts, thereby weakening the original claim that the symmetry formulation offers a distinct and viable account of divine simplicity.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 1,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection aims at r1's word 'non-extensional', but the model is non-extensional on any standard reading. Its account of the divergence also wrongly says both formulations' conditions are met, then calls the identity formulation false, which is inconsistent.",
+      "robustness": "The obvious reply is that 'extensional' in r1 means failure of antisymmetry or of parts-extensionality, which the model satisfies. The direction offers only the hope of showing the restricted gloss is legitimate, with no argument for that.",
+      "significance": "Even if it succeeded, the paper would only relabel which mereologies count as 'extensional'. It would not affect c009, c004, or the viability conclusion c010.",
+      "specificity": "There is a definite thesis and a toy model. But the two-pronged plan ('either show X or show Y') is underdeveloped, and the proposal leaves undefined the key notion it must defend."
+    },
+    "strongest_objection": "The point is merely verbal. The model has a ≠ b with the same parts, so it violates antisymmetry, and on the strict standard reading it violates proper-parts extensionality too, since that principle covers anything with proper parts, i.e. anything with a part not identical to it. It is 'extensional' only under a gloss that makes the principle vacuous. Read naturally, r1 just says divergence requires a mereology that permits distinct mutual parts, which c009 already concedes. The counterexample therefore confirms r1 rather than refuting it. The objection's own description also misstates the divergence: a has b as a distinct part, so the identity formulation fails while the symmetry formulation holds.",
+    "reply_available": false,
+    "what_it_needs": "The paper needs a substantive argument that the vacuously satisfied restricted principle deserves to be called extensionality in this debate. Better, it should find a model that satisfies a non-trivial extensionality principle, one that bites on objects with proper parts, and still shows divergence. It must also state correctly which formulation fails in the model.",
+    "summary": "This is a terminological quibble resting on a vacuous notion of extensionality and a misdescribed counterexample, and the first competent reader would reject it as it stands.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:47.480930+00:00"
+  },
+  "revision": {
+    "research_question": "Does divergence between the identity and symmetry formulations of divine simplicity require failure of full extensionality (distinct things with the same parts), or can it arise in a mereology that satisfies proper-parts extensionality on the classical, non-vacuous notion of proper part?",
+    "paper_direction": "A paper here would argue that the divergence between the identity and symmetry formulations of divine simplicity requires distinct mutual parts, and that this is not the same as failure of extensionality for proper parts. The paper would draw two notions of proper part apart. The classical notion counts x as a proper part of y when x is part of y and x is distinct from y. The symmetry formulation uses the non-symmetric notion, on which proper parthood excludes mutual parthood. Proper-parts extensionality, stated with the classical notion (anything with classical proper parts is fixed by them), is non-vacuous for a two-element model with a and b distinct and mutually part of each other. Here a has classical proper part b and b has classical proper part a. Their classical proper-part sets, {b} and {a}, differ, so the principle is satisfied and is not idle. The paper would then state the model in full. Its parthood relation is reflexive, transitive and mutual, with a and b distinct. It satisfies proper-parts extensionality on the classical notion and violates antisymmetry and full extensionality (same parts, distinct things). In this model the identity formulation fails: a has the distinct part b. The symmetry formulation holds: a has no non-symmetric parts, because its only parts are itself and the mutual part b. The paper would argue that, given reflexivity and transitivity, distinct mutual parts and failure of full extensionality are equivalent, so the correct restatement of r1 is that divergence requires a mereology permitting distinct mutual parts, that is, failure of antisymmetry. The label 'non-extensional' should be reserved for failure of full extensionality, and the paper would concede that the model is non-extensional in that sense while satisfying the classical proper-parts principle. The paper would also defend pairing the classical notion with extensionality and the non-symmetric notion with the doctrine. Extensionality concerns individuation by parts, so it should use the notion that tracks distinct parts; on the non-symmetric notion the principle is vacuous for the model, as the referee noted. The paper would then state the cost of the symmetry formulation, namely that its distinctness from the identity formulation is bought by admitting distinct mutual parts, and assess whether that cost is acceptable for the viability claim. The conclusion c010 and the instantiation-as-parthood premise would be left as they are, apart from the restated r1 and c009.",
+    "reply_to_strongest_objection": "The referee is right that the original counterexample was non-extensional in the full-parts sense, and that r1's word 'non-extensional' was loose. The reply is a distinction between two principles. Full extensionality (same parts, distinct things) fails in the model, since a and b have the same parts. Proper-parts extensionality on the classical notion (same classical proper parts, distinct things) is non-vacuous in the model, because a and b have classical proper parts, and it holds there. The objector's vacuity worry arose only from using the non-symmetric notion of proper part in the principle. The paper also corrects the verdicts. The identity formulation fails because a has the distinct part b. The symmetry formulation holds because a has no non-symmetric parts. The restated r1 says divergence requires distinct mutual parts, which c009 already concedes.",
+    "what_changed": "The revision replaces the 'non-extensional' label on r1 with a precise restatement, divergence requires distinct mutual parts, and it adds a two-element model that satisfies non-vacuous proper-parts extensionality, while correcting which formulation fails.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:53:09.633631+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 4,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The model is stated correctly and the verdicts are right: identity fails because a has the distinct part b, symmetry holds, and the classical-notion proper-parts extensionality is non-vacuous and satisfied. It also correctly repairs the objection's muddled claim that both formulations were met, and it bears directly on r1's wording.",
+        "robustness": "The obvious reply is that the central equivalence is elementary and already implicit in c009, and the paper finally concedes r1's substance. Neither the direction nor the transcript says why the clarification is more than terminological.",
+        "significance": "At best it tidies the word 'non-extensional' in r1 into 'fails antisymmetry / full extensionality'. It leaves c010, the instantiation-as-parthood premise, and the real costs of the symmetry formulation untouched.",
+        "specificity": "The thesis, the two-element model, the principles checked, and the planned defence of pairing the classical notion with extensionality are all concrete. However, the listed open questions drift from the plan, and the 'cost' assessment is only gestured at."
+      },
+      "strongest_objection": "The paper has no substantive thesis. Given reflexivity and transitivity, having distinct mutual parts, failing antisymmetry, and failing full extensionality are trivially equivalent, and this is standard in the non-antisymmetric mereology literature (e.g. Cotnoir's work on anti-symmetry and non-extensional mereology). The source argument's c009 already conditions divergence on dropping antisymmetry. The paper also concedes that its model is non-extensional in the full sense, so it ends up vindicating r1 once 'non-extensional' is read as failure of full extensionality. What remains is a terminological gloss on one word in r1, not a paper.",
+      "reply_available": false,
+      "what_it_needs": "It must find a non-trivial question this distinction bears on. One option is to show that the choice between classical and non-symmetric proper parthood in the extensionality principle changes which mereologies count as 'plausible' for c002, or changes the theological viability of the symmetry formulation (for example, God and the attributes as distinct mutual parts). It must also engage the existing literature on non-antisymmetric mereology rather than re-deriving its basic equivalences.",
+      "summary": "A correct but thin clarification of a terminological slip that re-derives a known equivalence and largely concedes the challenged restatement; as proposed it would not survive a first referee without a more substantive payoff.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:53:32.367879+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

@@ -1,0 +1,258 @@
+{
+ "topic": {
+  "slug": "divine-simplicity",
+  "name": "Divine simplicity",
+  "description": "The classical doctrine that God has no parts, properties or composition distinct from God, and the current debate over it: the modal collapse argument, the problem of God's contingent knowledge and free choice, whether God can be identical to a property, truthmaker and constituent-ontology reconstructions, and recent attempts to restate simplicity in new metaphysical terms.",
+  "area": "philosophy of religion and analytic metaphysics"
+ },
+ "diversity": "full",
+ "families": [
+  "anthropic",
+  "kimi",
+  "glm",
+  "mistral",
+  "qwen",
+  "llama",
+  "gpt-oss",
+  "gemma"
+ ],
+ "roles": {
+  "formalizer": {
+   "provider": "claude_cli",
+   "model": "sonnet",
+   "family": "anthropic",
+   "effort": "medium"
+  },
+  "defender_a": {
+   "provider": "claude_cli",
+   "model": "sonnet",
+   "family": "anthropic",
+   "effort": "medium"
+  },
+  "extractor": {
+   "provider": "evroc",
+   "model": "openai/gpt-oss-120b",
+   "family": "gpt-oss",
+   "effort": "low"
+  },
+  "reranker": {
+   "provider": "claude_cli",
+   "model": "sonnet",
+   "family": "anthropic",
+   "effort": "medium"
+  },
+  "defender_b": {
+   "provider": "evroc",
+   "model": "moonshotai/Kimi-K2.6",
+   "family": "kimi",
+   "effort": "medium"
+  },
+  "referee": {
+   "provider": "evroc",
+   "model": "zai-org/GLM-5.2",
+   "family": "glm",
+   "effort": "medium"
+  },
+  "generators": [
+   {
+    "provider": "claude_cli",
+    "model": "sonnet",
+    "family": "anthropic",
+    "effort": "medium"
+   },
+   {
+    "provider": "claude_cli",
+    "model": "opus",
+    "family": "anthropic",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "moonshotai/Kimi-K2.6",
+    "family": "kimi",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "zai-org/GLM-5.2",
+    "family": "glm",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "mistralai/Mistral-Medium-3.5-128B",
+    "family": "mistral",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "Qwen/Qwen3.8-27B",
+    "family": "qwen",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "family": "qwen",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "nvidia/Llama-3.3-70B-Instruct-FP8",
+    "family": "llama",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "openai/gpt-oss-120b",
+    "family": "gpt-oss",
+    "effort": "medium"
+   },
+   {
+    "provider": "evroc",
+    "model": "google/gemma-4-26B-A4B-it",
+    "family": "gemma",
+    "effort": "medium"
+   }
+  ],
+  "naive_questioner": {
+   "provider": "evroc",
+   "model": "google/gemma-4-26B-A4B-it",
+   "family": "gemma",
+   "effort": "low"
+  },
+  "brief": {
+   "provider": "evroc",
+   "model": "moonshotai/Kimi-K2.6",
+   "family": "kimi",
+   "effort": "medium"
+  }
+ },
+ "models": [
+  {
+   "provider": "evroc",
+   "model": "nvidia/Llama-3.3-70B-Instruct-FP8",
+   "family": "llama",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "Qwen/Qwen3.8-27B",
+   "family": "qwen",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+   "family": "qwen",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "openai/gpt-oss-120b",
+   "family": "gpt-oss",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "google/gemma-4-26B-A4B-it",
+   "family": "gemma",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "mistralai/Mistral-Medium-3.5-128B",
+   "family": "mistral",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "moonshotai/Kimi-K2.6",
+   "family": "kimi",
+   "ok": true
+  },
+  {
+   "provider": "evroc",
+   "model": "zai-org/GLM-5.2",
+   "family": "glm",
+   "ok": true
+  },
+  {
+   "provider": "claude_cli",
+   "model": "sonnet",
+   "family": "anthropic",
+   "ok": true
+  },
+  {
+   "provider": "claude_cli",
+   "model": "opus",
+   "family": "anthropic",
+   "ok": true
+  },
+  {
+   "provider": "claude_cli",
+   "model": "haiku",
+   "family": "anthropic",
+   "ok": true
+  }
+ ],
+ "targets_meta": {
+  "generated_at": "2026-10-04T11:18:13.025987+00:00",
+  "screened": 53,
+  "eligible_fresh": 2,
+  "eligible_classic": 24,
+  "topic": "divine-simplicity",
+  "note": ""
+ },
+ "map_stats": {
+  "fulltext_claims": {
+   "proposed": 299,
+   "kept": 271,
+   "drop_rate": 0.094
+  },
+  "abstract_claims": {
+   "proposed": 140,
+   "kept": 136,
+   "drop_rate": 0.029
+  },
+  "claims_indexed": 2445,
+  "abstracts_indexed": 837,
+  "embedder": "bge-small-en-v1.5 (local)"
+ },
+ "corpus": {
+  "records": 837,
+  "distinct_works": 753,
+  "with_abstract": 837,
+  "full_texts": 60,
+  "fresh": 98,
+  "searches": [
+   "divine simplicity",
+   "modal collapse",
+   "God and properties",
+   "aseity",
+   "Aquinas on simplicity",
+   "constituent ontology"
+  ],
+  "fresh_from": "2026-08-01"
+ },
+ "method_notes": [
+  "Generators never see literature: their context builder only receives the argument's own premises (enforced by construction and by a test that inspects the module's imports).",
+  "Every extracted claim carries a verbatim quote (at most two sentences) found in the source text (rapidfuzz partial_ratio >= 90); claims whose quote cannot be found are dropped.",
+  "Citations are corpus claim ids only. Code verifies each cited id (it exists and the defender was shown it, or it belongs to the argument's own paper) and strikes the rest; known_answer requires a verified literature id.",
+  "The Formalizer's validity verdicts come from a truth table in code, not from the model; a proposed missing premise is kept only if the re-check makes the argument valid without making the premises inconsistent.",
+  "After a trial ends in revision_required, the revised premise joins the argument: later trials in the same run test the revised argument, and one new objection attacks the revised premise (depth at most 2).",
+  "The objection keeps the outcome most favourable to the original argument across the two defenders, so an outcome of revision_required means both defenders needed a premise change.",
+  "Blind generators run in parallel and are each assigned a different stated premise for coverage; the Hidden-Premise Attacker always targets the Formalizer's missing premise.",
+  "Subscription CLI providers (codex, claude -p) ignore temperature; diversity comes from different models and roles.",
+  "Novelty is never claimed: it is 1 - max similarity among same_move/related matches in what retrieval found, reported with records searched, the three nearest matches and 'Further human review required.'",
+  "Every research direction is graded by an Assessor agent from a different model family than the brief writer, acting as a journal referee; the grade (promising / needs work / not yet defensible) is computed in code from its four 1-5 scores, and a direction that falls to an obvious objection is never 'promising'.",
+  "Research directions are ranked by lead score = survival x novelty x quality, where quality is the Assessor's latest overall score / 5 (after the revision round if there was one): a direction leads only if it survived the defenders, nothing close to it was found, and the Assessor found it sound.",
+  "Outcome distribution across all trials: revision_required 21, misreading 9. No trial ended rebutted or standing or known_answer: defenders usually save the argument by narrowing a premise, which counts as revision_required, so read it as 'this premise needs work', not as a defeated argument.",
+  "OpenAlex lists some papers more than once (versions, preprint + article): the 837 corpus records are 753 distinct works. 'Records searched' counts records; nearest matches, the prior-art search box and E1 are scored per distinct work.",
+  "Novelty calibration on this topic: the reranker (claude_cli:sonnet) gave passages it judged 'different' a mean similarity of 0.10 (4% of them exactly 0). 0 of 59 assessed novelty checks scored 1.0 because every candidate was judged different at 0: a reading of what retrieval found in this corpus, not evidence that nothing like the objection exists. Compare novelty within a topic; rerankers from other model families score 'different' passages differently."
+ ],
+ "tracing": {
+  "backend": "local MLflow (mlruns/)",
+  "traces": 4236
+ }
+}

@@ -1,0 +1,201 @@
+{
+  "id": "brief-W4229080938.arg1.o1232c2",
+  "objection_id": "W4229080938.arg1.o1232c2",
+  "research_question": "Does reconceiving divine attributes as modes of a single act block the inference from composition to dependence, or does the revised appeal to ontological grounding by distinct constituents reintroduce the same dependence under a different relation?",
+  "argument": {
+    "id": "W4229080938.arg1",
+    "title": "God cannot be a composite",
+    "paper_id": "oa:W4229080938",
+    "paper_title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+    "premises": [
+      {
+        "id": "W4229080938.c001",
+        "text": "Divine simplicity is the claim that God is not a composite of more basic features.",
+        "quote": "the notion of divine simplicity, the idea that God is not a composite of more basic features"
+      },
+      {
+        "id": "W4229080938.c009",
+        "text": "It is contradictory for something to exist both through itself and through another.",
+        "quote": "It is simply a contradiction for something to exist both through itself and through another; it is tantamount to saying that something’s existence depends on nothing and depends on something"
+      },
+      {
+        "id": "W4229080938.c011",
+        "text": "Traditional theists fear that a composite God would be causally dependent on his distinct properties.",
+        "quote": "for traditional theists it is fundamentally the fear that a composite God, that is, a God having distinct properties, attributes, or the like, is in some way causally dependent upon those properties"
+      },
+      {
+        "id": "W4229080938.c012",
+        "text": "If God were not simple, he would depend on properties like power, wisdom, and blessedness as final causes.",
+        "quote": "if God were not simple, he would depend upon properties like power, wisdom, blessedness, in the order of final causation"
+      }
+    ],
+    "missing_premise": {
+      "id": "W4229080938.arg1.mp",
+      "text": "God is not causally dependent on his distinct properties, either efficiently or as final causes."
+    },
+    "conclusion": {
+      "id": "W4229080938.c010",
+      "text": "Therefore, the Necessary Existent (God) cannot be a composite; consequently, God’s existence is simple."
+    },
+    "skeleton": "F <-> ~A; ~(B & C); A -> D; A -> E |- ~A",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4229080938.c012",
+    "text": "If God were not simple, he would depend on properties like power, wisdom, and blessedness as final causes."
+  },
+  "objection": "Consider a being G with two distinct features: power P and wisdom W, with G composite. Suppose G's final cause is the good of exercising P and W together, so G is directed toward a state of affairs that includes both. Now stipulate that P and W are not standing sources that G consults; they are modes of G's own activity, individuated only by what G does. Mapping this onto c012: 'if G were not simple, G would depend on P, W as final causes' requires that each feature be an independent target G must aim at. But here G's end is an activity G itself performs, and the features are specifications of that activity, not external goals. Any composite whose parts are grounded in its own activity can have a final cause that is the whole, so no part is a final cause that G depends on in the sense the antecedent needs. The conditional's consequent fails: composition does not entail dependence on distinct final causes, because the final cause can be the composite's own unified act rather than its constituents.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A argued that the objection reads c012 as requiring independent final targets, whereas the argument requires only ontological dependence on distinct constituents, and that even act-specifications are distinct formal determinations; Defender A conceded that c012 is too strong as stated and proposed that composition entails dependence on distinct constituents that ground the composite’s unity.",
+      "why_it_failed": "The objector replied that if power and wisdom are individuated only by the unified act, they are not independent targets, so the restated premise must rest dependence on the unified act rather than on distinct properties, which threatens the inference to divine simplicity."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B conceded that c012 overreaches because final-cause dependence on distinct properties does not automatically follow from composition, and reframed the classical worry as ontological priority, offering a revised premise that broadens dependence to include constituents grounding existence or final causes distinct from the unified act.",
+      "why_it_failed": "It saved the argument only by restating the conditional with a broader dependence relation, leaving unresolved whether composition entails ontological grounding by distinct constituents once those constituents are treated as modes of a single act."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W2003018038.a2",
+      "paper_id": "oa:W2003018038",
+      "title": "Ockham on Identity and Distinction",
+      "authors": [
+        "Marilyn McCord Adams"
+      ],
+      "year": 1976,
+      "url": "https://doi.org/10.1353/frc.1976.0027",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "If divine wisdom and goodness are distinct attributes, they would remain distinct even without any intellectual activity"
+    },
+    {
+      "record_id": "W7212080526.a1",
+      "paper_id": "oa:W7212080526",
+      "title": "The Necessity of Unity and the Contingency of Distinction",
+      "authors": [
+        "Eric Needham"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.22673312",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "necessary closure does not entail necessary articulation."
+    },
+    {
+      "record_id": "abs:oa:W7202242951",
+      "paper_id": "oa:W7202242951",
+      "title": "The Terminus Problem: Constitutive Necessity and the Aseity of the Agápēic Ground",
+      "authors": [
+        "mark pelley"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.5281/zenodo.21909829",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "without any grounding relation running within or around the structure"
+    },
+    {
+      "record_id": "W2737667368.a1",
+      "paper_id": "oa:W2737667368",
+      "title": "Substances, Coincidentals, and Aristotle's Constituent Ontology",
+      "authors": [
+        "Michael J. Loux"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.1093/oxfordhb/9780195187489.013.0015",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "W2003018038.a2",
+      "paper_id": "oa:W2003018038",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "If divine wisdom and goodness are distinct attributes, they would remain distinct even without any intellectual activity",
+      "title": "Ockham on Identity and Distinction"
+    },
+    {
+      "record_id": "W7212080526.a1",
+      "paper_id": "oa:W7212080526",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "necessary closure does not entail necessary articulation.",
+      "title": "The Necessity of Unity and the Contingency of Distinction"
+    },
+    {
+      "record_id": "abs:oa:W7202242951",
+      "paper_id": "oa:W7202242951",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "without any grounding relation running within or around the structure",
+      "title": "The Terminus Problem: Constitutive Necessity and the Aseity of the Agápēic Ground"
+    }
+  ],
+  "open_questions": [
+    "Does reconceiving divine attributes as modes of a single act eliminate ontological dependence on distinct constituents, or does the relation of act-specification itself reintroduce dependence?",
+    "Can the revised premise—that composition entails dependence on distinct constituents grounding existence—be defended without assuming that composition requires metaphysical parts with independent being?",
+    "Does the shift from final-cause dependence to ontological grounding preserve the original classical motivation, or does it alter the argument sufficiently to require independent justification?"
+  ],
+  "paper_direction": "A paper here would argue that the standard divine simplicity argument from Plantinga and Ghazālī equivocates between teleological dependence on distinct properties and ontological grounding by distinct constituents. It would develop the objector’s model of a composite whose final cause is its own unified act, showing that composition does not entail dependence on parts as independent final causes. The paper would then argue that the defenders’ retreat to a revised premise about ontological grounding—where distinct constituents secure the composite’s unity—either assumes without argument that act-specifications function as independent metaphysical parts or changes the original subject from final-cause dependence to essential constitution. The strongest reply to anticipate is that even modes of a single act are distinct formal determinations on which the composite’s being relies, so ontological dependence survives the shift from teleology to activity. To succeed, the paper would need to show either that the act-individuation model genuinely dissolves dependence on distinct constituents or that the revised grounding claim cannot be motivated by the classical texts without collapsing into the very composition it seeks to rule out.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent but loosely aimed. It construes c012's final causes as independent goals rather than as the perfections the classical texts mean. The proposal also oddly treats Plantinga as a proponent of the argument rather than its critic.",
+      "robustness": "The proposal names the 'distinct formal determinations' reply but offers no answer to it. Defender A's point that the objector's model either reintroduces dependence or collapses into simplicity goes unrebutted.",
+      "significance": "Whether attributes as modes of one act escape composition is a well-worn question (Aquinas, Scotus, Ockham, Brower, Mullins), and a terminological equivocation charge against one premise would be a modest refinement at best.",
+      "specificity": "There is a definite thesis (equivocation between teleological dependence and ontological grounding) and a model, but the plan for meeting the central reply is stated only as a disjunction of things the paper 'would need to show'."
+    },
+    "strongest_objection": "The act-individuation model faces a dilemma. If power and wisdom are really distinct determinations of the act, the act is itself composite, and G depends on them, or on the act as something distinct from G, so dependence returns. If they are not really distinct, G is simple in the classical sense, since God as pure act with attributes differing only in reason is Aquinas's own view. Either way the model is not a counterexample to c012: it either concedes the consequent or abandons the antecedent. The objection also reads 'final cause' as an external target G aims at, whereas the Avicennan and Ghazālian notion is a perfection for whose sake the composite exists. That reading would let even the 'whole' of a unified act count as a final cause distinct from G's essence.",
+    "reply_available": false,
+    "what_it_needs": "It must identify an intermediate distinction (e.g., a Scotist formal distinction or a truthmaker account à la Brower) under which the modes are genuinely plural, so that G is composite, yet do not ground G's being or end. It must also defend this against the dilemma using the actual Avicennan and Ghazālian notion of final causation rather than a 'target' reading.",
+    "summary": "Not yet a paper: the central model is either a disguised version of classical simplicity or reintroduces the dependence it claims to remove, and the proposal neither sees nor resolves that dilemma.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:16:43.884062+00:00"
+  },
+  "revision": {
+    "research_question": "Does the composition-to-dependence inference in c012 hold when the distinct features are only formal distinctions in ratio, with the perfections for whose sake G exists identical to G's own act? If so, which further premise must be added to recover the conclusion that God's existence is simple?",
+    "paper_direction": "A paper here would argue that premise c012 holds only on a reading of composition that requires real distinctness among the features, and that the act-individuation model does not refute it on the reading that matters for simplicity. The paper would first fix the Avicennan and Ghazālian sense of final cause as a perfection for whose sake a composite exists, not an external target. It would then show that if power and wisdom are formally distinct, plural in ratio but one in reality, the composite is plural in its intelligibility without having a distinct final cause, because the perfection G exists for is G's own act under each description. This concedes the referee's first horn: a model with really distinct determinations reintroduces dependence and so refutes nothing. It accepts the second horn as a reason to narrow the thesis rather than reject it. The paper would argue that c012, as stated, is false on the formal-distinction reading, so the simplicity conclusion cannot be derived from c012 alone. It would then identify the further premise needed, namely that real plurality among the features is excluded, and assess whether the classical texts supply independent grounds for that premise. The paper would not claim that the act model shows God is simple, only that the composition-to-dependence step fails once the distinction is specified.",
+    "reply_to_strongest_objection": "The paper accepts the dilemma's first horn: if power and wisdom are really distinct determinations, G depends on them and the act-individuation counterexample fails. Against the second horn, it separates formal distinction, which yields plurality in ratio without real composition, from the classical denial of all plurality. A formal distinction does not make the perfections separable parts or grounds of G's being. Against the worry that the whole of a unified act counts as a distinct final cause, the paper holds that under the Avicennan notion the perfection for whose sake G exists is G's own act under each description, so no end distinct from G is required. The result is a narrowed claim: c012 fails on the formal-distinction reading, and simplicity needs a separate argument excluding real plurality.",
+    "what_changed": "The revision replaces the claim that act-individuation dissolves dependence with a narrower thesis: composition does not entail final-cause dependence on formally distinct features, so simplicity requires an extra premise excluding real plurality.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:00.233154+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The paper says c012 holds on the real-distinctness reading and fails on the formal-distinction reading, but never establishes that formal distinction satisfies 'not simple' in the argument's sense, so the counterexample is aimed at a premise whose antecedent it may not meet.",
+        "robustness": "The direction has no answer to the dilemma that formal distinction either falls outside the antecedent or makes the 'missing premise' identical to the conclusion; its reply only reasserts the formal/real contrast.",
+        "significance": "Showing that simplicity arguments need a premise excluding real plurality is already standard in the Scotus/Aquinas and Plantinga literature, so even success would be a minor clarification.",
+        "specificity": "There is a recognisable thesis and a three-step plan (fix the Avicennan notion of final cause, run the formal-distinction case, identify the missing premise), but the key notions of composition and simplicity are left unspecified, and the textual work on Ghazālī versus Avicenna is not planned."
+      },
+      "strongest_objection": "The paper equivocates on the antecedent 'God is not simple.' If a merely formal distinction (plural in ratio, one in reality) does not count as non-simplicity, then the formal-distinction model never satisfies c012's antecedent and cannot falsify it. If it does count as non-simplicity, then the 'further premise' the paper says is needed, that real plurality among the features is excluded, is just the simplicity conclusion restated. On either reading the paper either fails to touch c012 or ends by reporting that the argument needs its own conclusion as a premise.",
+      "reply_available": false,
+      "what_it_needs": "It must fix, with textual support, whether Avicennan and Ghazālian simplicity tolerates formal or rational distinction among attributes, so that the model demonstrably satisfies c012's antecedent. It must then show that the needed further premise is a substantive claim independently motivated in the texts, not a restatement of c010. It should also reckon with the fact that Ghazālī himself defends real attributes against the falāsifa.",
+      "summary": "As framed, the paper either misses c012 or concludes only that the argument needs its conclusion as a premise; it is not publishable until the meaning of 'not simple' is pinned down against the texts.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:18:20.777856+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

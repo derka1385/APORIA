@@ -1,0 +1,208 @@
+{
+  "id": "brief-W7212186029.arg1.o40f626",
+  "objection_id": "W7212186029.arg1.o40f626",
+  "research_question": "Can the symmetry formulation of divine simplicity satisfy truthmaker-theoretic constraints without collapsing into the identity formulation, and what ontological commitments does this require?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Symmetry formulation viable distinct DDS",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c001",
+        "text": "The doctrine of divine simplicity says that God lacks proper parts, but it is also often formulated as identifying God with all his parts.",
+        "quote": "Taken at face value, the doctrine of divine simplicity (DDS) says that God lacks proper parts, but the doctrine is also often formulated as a thesis identifying God with all his parts."
+      },
+      {
+        "id": "W7212186029.c002",
+        "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts.",
+        "quote": "The two formulations are not generally equivalent – on some plausible mereological theories, something can lack proper parts by being a part of all its (possibly distinct) parts."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is defined as non‑symmetric parthood, then the mereological formulation yields the symmetry formulation of the doctrine of divine simplicity.",
+        "quote": "If proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c009",
+        "text": "When antisymmetry is not assumed, the symmetry formulation of divine simplicity is strictly weaker than the identity formulation: lacking distinct parts entails lacking non‑symmetric parts, but not the reverse.",
+        "quote": "Accordingly, DDS under the symmetric formulation is strictly weaker than under the identity formulation: if God lacks distinct parts, he also lacks non-symmetric parts, but not vice versa."
+      },
+      {
+        "id": "W7212186029.c004",
+        "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood.",
+        "quote": "The symmetry formulation is viable as a thesis about God’s relation to his attributes, because instantiation can plausibly be modelled as parthood."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Instantiation can plausibly be modeled as parthood, so the viability premise's antecedent holds."
+    },
+    "conclusion": {
+      "id": "W7212186029.c010",
+      "text": "Thus, within the formal mereological framework, the symmetry formulation provides a viable and distinct way of understanding the doctrine of divine simplicity."
+    },
+    "skeleton": "A & B; C -> ~(A <-> B); D -> (A -> E); ~F -> ((B -> E) & ~(E -> B)); G -> H |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.c004",
+    "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood."
+  },
+  "objection": "A community of believers holds that God's wisdom, power, and love are parts of God, and they argue that this is viable because instantiation is modelled as parthood. In truthmaker theory each true statement must be grounded by a concrete reality that makes it true. The statement \"God's wisdom is a part of God\" would need a truthmaker: an entity that is both God and the particular instantiation of wisdom. Since God's attributes are not distinct entities but modes of a simple being, there is no separate grounding fact that can serve as a truthmaker for the parthood claim. Thus the purported parthood relation is truthmaker‑orphaned, showing the premise that such modelling makes the symmetry formulation viable is false.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A argued that formal consistency suffices for the viability of the symmetry formulation and cited the view that God himself can serve as truthmaker for divine predicates while attributes are treated as concepts rather than further objects, so the orphaning inference is not forced.",
+      "why_it_failed": "The objector showed that theoretical viability requires metaphysical grounding, not merely formal consistency, and Defender A conceded that the modeling premise survives only if truthmaker theory can be satisfied by a God-grounded account without distinct instantiations, which required a revised premise."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B argued that non-extensional mereology permits distinct mutual parts and that God can serve as truthmaker for divine predicates, with the specific modal profile of each parthood relation supplying non-arbitrary grounding that preserves numerical distinctness.",
+      "why_it_failed": "The objector replied that grounding all parthood claims in God alone underdetermines their distinctness and collapses the parts into one, and Defender B conceded that the viability premise must be tightened to require that the mutual parthood relations are formally distinct from one another and from strict identity."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W4235072123",
+      "paper_id": "oa:W4235072123",
+      "title": "Divine Simplicity",
+      "authors": [
+        "Brian Leftow",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2006,
+      "url": "https://doi.org/10.5840/faithphil200623433",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "Augustine, Aquinas and many other medievals held the doctrine of divine simplicity (DDS) -that God has no parts of any sort."
+    },
+    {
+      "record_id": "W7172336769.c035",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The fallacy arises from failing to distinguish predication from identification; 'good' and 'wise' are concepts, not objects, so the inference that God has multiple distinct properties is mistaken."
+    },
+    {
+      "record_id": "abs:oa:W2521362363",
+      "paper_id": "oa:W2521362363",
+      "title": "The Problem of Divine Attributes from Thomas Aquinas to Duns Scotus",
+      "authors": [
+        "Garrett R. Smith"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.7274/fj23611117n",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "reconcile a plurality of divine attributes with the simplicity of God"
+    },
+    {
+      "record_id": "W7172336769.c066",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W4235072123",
+      "paper_id": "oa:W4235072123",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "Augustine, Aquinas and many other medievals held the doctrine of divine simplicity (DDS) -that God has no parts of any sort.",
+      "title": "Divine Simplicity"
+    },
+    {
+      "record_id": "W7172336769.c035",
+      "paper_id": "oa:W7172336769",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The fallacy arises from failing to distinguish predication from identification; 'good' and 'wise' are concepts, not objects, so the inference that God has multiple distinct properties is mistaken.",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums"
+    },
+    {
+      "record_id": "abs:oa:W2521362363",
+      "paper_id": "oa:W2521362363",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "reconcile a plurality of divine attributes with the simplicity of God",
+      "title": "The Problem of Divine Attributes from Thomas Aquinas to Duns Scotus"
+    }
+  ],
+  "open_questions": [
+    "Whether treating God as the sole truthmaker for divine parthood claims underdetermines the distinctness of the attributes or merely calls for a non-standard truthmaker theory.",
+    "Whether formally distinct mutual parthood relations in non-extensional mereology can supply adequate truthmakers without reintroducing proper parts incompatible with divine simplicity.",
+    "Whether the revised grounding conditions for the modeling premise preserve the intended distinction between the symmetry formulation and the identity formulation.",
+    "If distinct relational facts are required as truthmakers, whether those facts themselves introduce unacceptable ontological complexity into the doctrine of divine simplicity."
+  ],
+  "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity can satisfy truthmaker-theoretic constraints within a non-extensional mereology by treating God as the truthmaker for divine predicates while insisting that the mutual parthood relations have formally distinct modal profiles. The case would show that these distinct relational facts prevent the collapse of the symmetry formulation into the identity formulation. The strongest reply to anticipate is that grounding every parthood truth in God alone underdetermines the content of each part-claim and effectively restores identity; to answer this, the paper would need to demonstrate that the formal distinctness of the parthood relations, together with a deflationary account of truthmaking for a simple God, supplies sufficient non-arbitrary grounding without positing separate attribute-instantiations or proper parts.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets truthmaking, not whether instantiation can be modeled as parthood as c004 states. It also assumes the attributes are not distinct entities, which presupposes the identity formulation the symmetry view is meant to differ from.",
+      "robustness": "The direction only restates Defender B's concession: 'formally distinct modal profiles' plus 'deflationary truthmaking' is named as the answer but never explained, and it falls straight into the deflation-or-complexity dilemma.",
+      "significance": "Even if it succeeded, it would be a niche refinement connecting one recent mereological formulation of simplicity to truthmaker theory, without much bearing on the wider simplicity debate.",
+      "specificity": "There is a definite thesis and a named counter-reply, but the central device (distinct modal profiles of instances of one parthood relation) is undefined, and there is no concrete model or step-by-step plan."
+    },
+    "strongest_objection": "The proposal faces a dilemma. If truthmaking is deflationary enough that God alone makes true every claim of the form 'attribute A is part of God', the truthmaker objection evaporates and the paper answers nothing. If truthmaking is robust enough that distinct truths need differentiated grounds, then the 'formally distinct modal profiles' of the mutual parthood relations are either distinct properties or facts within God, which is Plantinga-style complexity, or they are unexplained labels, so the symmetric case is indistinguishable from identity. Separately, the original objection begs the question: it assumes attributes are 'modes of a simple being', which is the identity reading the symmetry formulation is meant to depart from.",
+    "reply_available": false,
+    "what_it_needs": "It must say which truthmaker principle it adopts (maximalism, necessitation, any differentiation requirement) and state precisely what makes two mutual-parthood facts distinct without positing further entities, with a worked non-antisymmetric model in which the attribute-parthood truths differ in content. It must also show that the objection does not presuppose the identity formulation.",
+    "summary": "There is a possible topic here, but as framed the objection begs the question, and the proposed defence relies on an undefined notion of 'formally distinct modal profiles' that a competent referee would collapse with a simple dilemma, so it is not yet a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:46.373125+00:00"
+  },
+  "revision": {
+    "research_question": "Can the symmetry formulation of divine simplicity, which treats God as non-antisymmetrically related to his attributes, satisfy truthmaker constraints without collapsing into the identity formulation, and if so, what truthmaking principle and ontological commitments does this require?",
+    "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is viable only in a narrowed sense. Modelling instantiation as parthood does not by itself secure viability; the viability claim depends on a truthmaker principle. The paper adopts necessitation-based truthmaking: a truthmaker for a proposition p must necessitate p. It then argues that the symmetry formulation survives truthmaker constraints only on the deflationary horn. On that horn, God alone is the truthmaker for every attribute-parthood truth, and the paper gives a worked two-relatum model in which the mutual parthood truths 'wisdom is part of God' and 'God is part of wisdom' are both made true by God but necessitate different propositions, because the two truths differ in the order of their relata. The symmetry formulation is therefore distinct from identity at the level of truth-content and modal profile, not in entity count, and the paper says so explicitly. On the robust horn, where distinct truths require distinct grounds, the mutual parthood facts would have to be either complexity within God or unexplained labels. The paper concedes that premise c004 fails on that horn, and that the symmetry formulation then collapses into identity. The paper defends the deflationary horn as the only one on which the symmetry formulation remains a distinct thesis, and it states the ontological commitment as one simple entity together with an ordered, non-antisymmetric relational content.",
+    "reply_to_strongest_objection": "The referee's dilemma is answered by choosing the deflationary horn and making its cost explicit. The paper adopts necessitation-based truthmaking, under which God alone necessitates each attribute-parthood truth, so no extra grounding fact is needed. The distinctness of 'wisdom is part of God' from 'God is part of wisdom' is then located in relational content (relata order) and modal profile, not in further entities or properties, which avoids Plantinga-style complexity. The orphan objection succeeds only against a robust requirement that distinct truths have distinct truthmakers, and the paper rejects that requirement while conceding the resulting cost. The objection's premise that attributes are modes of a simple being is the identity reading, so the paper does not rely on it. It uses only the claim that no entity beyond God is required, which the symmetry view can accept.",
+    "what_changed": "The revision replaces the unexplained 'formally distinct modal profiles' device with an explicit necessitation-based truthmaking principle and a worked two-relatum model, and narrows the thesis to conditional viability on the deflationary horn, while conceding collapse into identity on the robust horn.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:53:06.319474+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The source objection is muddled: it demands a truthmaker that 'is both God and the instantiation of wisdom' and assumes the identity reading via 'modes of a simple being'. The paper direction inherits a truthmaker framing that bears only loosely on c004's actual claim, that instantiation can be modeled as parthood.",
+        "robustness": "The paper's chosen horn locates distinctness in relata order and modal profile, but those features are equally present under the identity formulation. Necessitation truthmaking trivializes God's truthmaking role, so the collapse the objector pressed is relocated rather than answered.",
+        "significance": "Even if it succeeded, the result would be a modest clarification that the symmetry formulation is distinct only in 'truth-content'. That would weaken rather than advance c010's claim of a viable and distinct formulation.",
+        "specificity": "There is a definite thesis, a named truthmaker principle and a promised two-relatum model. But the model is only gestured at, and the key step, how differing truth-content yields non-identity, is never specified."
+      },
+      "strongest_objection": "The deflationary horn cannot keep the symmetry formulation distinct from identity. The identity formulation also makes both 'wisdom is part of God' and 'God is part of wisdom' true, since identity entails mutual parthood under reflexivity, and those two truths also differ in relata order. So order-of-relata and modal-profile differences cannot separate the two formulations. What c009 needs is the further truth that wisdom ≠ God. That truth requires wisdom to be an entity distinct from God, which contradicts the paper's 'one simple entity' commitment. Necessitation-based truthmaking makes the problem worse: God, as a necessary being, trivially necessitates every necessary truth, so 'God alone is the truthmaker' carries no discriminating content.",
+      "reply_available": false,
+      "what_it_needs": "The paper must say what makes 'wisdom ≠ God' true without positing wisdom as a further entity. It must show this difference survives a non-trivial truthmaker principle, not bare necessitation. Alternatively, it should drop truthmaking and attack c004 directly, by asking whether instantiation-as-parthood respects the asymmetry of instantiation.",
+      "summary": "As framed, a competent referee would reject this, because the deflationary horn it defends cannot tell symmetry apart from identity, so the student should rethink the objection's target before writing.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:53:24.257687+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

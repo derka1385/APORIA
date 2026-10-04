@@ -1,0 +1,196 @@
+{
+  "id": "brief-W7212186029.arg1.o0dc332",
+  "objection_id": "W7212186029.arg1.o0dc332",
+  "research_question": "Can a non-extensional mereology that suspends antisymmetry provide a metaphysically coherent foundation for the symmetry formulation of divine simplicity, or does the necessary rejection of extensionality undermine the very claim that the symmetry formulation captures a distinct mereological relation?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Symmetry formulation viable distinct DDS",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c001",
+        "text": "The doctrine of divine simplicity says that God lacks proper parts, but it is also often formulated as identifying God with all his parts.",
+        "quote": "Taken at face value, the doctrine of divine simplicity (DDS) says that God lacks proper parts, but the doctrine is also often formulated as a thesis identifying God with all his parts."
+      },
+      {
+        "id": "W7212186029.c002",
+        "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts.",
+        "quote": "The two formulations are not generally equivalent – on some plausible mereological theories, something can lack proper parts by being a part of all its (possibly distinct) parts."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is defined as non‑symmetric parthood, then the mereological formulation yields the symmetry formulation of the doctrine of divine simplicity.",
+        "quote": "If proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c009",
+        "text": "When antisymmetry is not assumed, the symmetry formulation of divine simplicity is strictly weaker than the identity formulation: lacking distinct parts entails lacking non‑symmetric parts, but not the reverse.",
+        "quote": "Accordingly, DDS under the symmetric formulation is strictly weaker than under the identity formulation: if God lacks distinct parts, he also lacks non-symmetric parts, but not vice versa."
+      },
+      {
+        "id": "W7212186029.c004",
+        "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood.",
+        "quote": "The symmetry formulation is viable as a thesis about God’s relation to his attributes, because instantiation can plausibly be modelled as parthood."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Instantiation can plausibly be modeled as parthood, so the viability premise's antecedent holds."
+    },
+    "conclusion": {
+      "id": "W7212186029.c010",
+      "text": "Thus, within the formal mereological framework, the symmetry formulation provides a viable and distinct way of understanding the doctrine of divine simplicity."
+    },
+    "skeleton": "A & B; C -> ~(A <-> B); D -> (A -> E); ~F -> ((B -> E) & ~(E -> B)); G -> H |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.c002",
+    "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts."
+  },
+  "objection": "Consider two distinct objects A and B, where A is part of B and B is part of A. The premise needs exactly such a case: A lacks proper parts (since A is part of every part of A—A is part of A and part of B), yet A is not identical to all its parts, since A ≠ B. This would show the two formulations of divine simplicity diverge. But if A is part of B, transitivity makes every part of A a part of B. If B is part of A, every part of B is a part of A. So A and B have exactly the same parts. Mereological extensionality—objects with the same parts are identical—is a core commitment of any plausible mereological theory. Any theory permitting distinct mutual parts must reject extensionality and is therefore not plausible. The 'plausible mereological theories' the premise requires do not exist.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "The argument's own framework already rejects classical extensionality by defining proper parthood as non-symmetric parthood and dropping antisymmetry, so the non-equivalence of the two formulations is internal to the intended model; the cost is merely flagging this non-classical commitment rather than abandoning the premise.",
+      "why_it_failed": "It succeeded in locating the divergence within the argument's own formal framework, but it conceded that the original appeal to 'plausible mereological theories' was undefended and had to be replaced by an explicit restriction to non-extensional mereologies."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The argument explicitly grants that classical mereology makes the two formulations equivalent, and its aim is to explore non-classical alternatives where antisymmetry is suspended; in such frameworks, transitivity entails shared parts without identity because extensionality is exactly the principle being suspended, and the theological context offers some mitigation because divine attributes plausibly share one referent.",
+      "why_it_failed": "It conceded that calling such non-extensional theories 'plausible' overstates their general mereological standing and that the premise must be revised to drop the plausibility claim, leaving the argument dependent on a framework whose mereological credentials remain unestablished."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition",
+      "authors": [
+        "L. J. Anderson"
+      ],
+      "year": 2026,
+      "url": "https://philpapers.org/rec/ANDUOP",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "the stronger partlessness thesis, according to which God possesses no intrinsic constituents at all."
+    },
+    {
+      "record_id": "abs:oa:W3135842377",
+      "paper_id": "oa:W3135842377",
+      "title": "On Two Problems of Divine Simplicity",
+      "authors": [
+        "Alexander R. Pruss"
+      ],
+      "year": 2008,
+      "url": "https://doi.org/10.1093/oso/9780199542659.003.0007",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": ""
+    },
+    {
+      "record_id": "W7172336769.c016",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "so speaking of God’s goodness or wisdom does not pick out distinct parts in God."
+    }
+  ],
+  "novelty": 0.7,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "the stronger partlessness thesis, according to which God possesses no intrinsic constituents at all.",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition"
+    },
+    {
+      "record_id": "abs:oa:W3135842377",
+      "paper_id": "oa:W3135842377",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "",
+      "title": "On Two Problems of Divine Simplicity"
+    },
+    {
+      "record_id": "W7172336769.c016",
+      "paper_id": "oa:W7172336769",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "so speaking of God’s goodness or wisdom does not pick out distinct parts in God.",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums"
+    }
+  ],
+  "open_questions": [
+    "Does the loss of extensionality deprive non-classical mereology of any principled criterion for distinguishing God from his attributes, or can theological considerations supply an alternative principle of individuation?",
+    "Is a mereology without extensionality sufficiently distinct from set-theoretic membership or other reflexive relations to ground a metaphysically robust doctrine of simplicity?",
+    "Can the symmetry formulation retain theological significance if its formal advantage over the identity formulation depends on abandoning what the objector treats as the core principle of mereology?",
+    "If transitivity ensures that mutual parts share all parts, what non-extensional resource could prevent their collapse into identity without making parthood merely notational?"
+  ],
+  "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity constitutes a viable alternative to the identity formulation only within a non-extensional mereology that suspends antisymmetry, and that the formal possibility of distinct mutual parts provides the necessary logical space for the doctrine; the case would turn on showing that transitivity plus non-symmetric parthood yields a structure in which God can be part of his attributes and they part of him without collapsing into identity, while the strongest reply to anticipate is that extensionality is constitutive of any plausible mereological theory and that abandoning it dissolves the very distinction between parthood and other reflexive relations, so the paper would need to show that the loss of extensionality is compensated by theological constraints on divine attributes or by an alternative principle of individuation that preserves the non-identity of mutual parts in a way that is not merely ad hoc.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 3,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally coherent but overreaches: it answers an existential claim ('some plausible theories') with an undefended universal one, and its 'same parts implies identity' presupposes the antisymmetry the framework suspends. The paper direction also garbles the formal point: mutual parthood is symmetric parthood, so it is not something 'non-symmetric parthood yields'.",
+      "robustness": "The mereological worry has a known answer in the non-antisymmetric mereology literature, which the direction does not cite. The more serious theological dilemma between real and conceptual distinction is left unaddressed, and the direction's own proposal of a separate principle of individuation for God and his attributes makes that dilemma sharper.",
+      "significance": "Even if it succeeded, the paper would mostly restate the source argument's own restriction to non-antisymmetric frameworks plus a plausibility defence, which would be a minor refinement unless it settled whether the symmetry formulation counts as a doctrine of simplicity at all.",
+      "specificity": "There is a definite thesis and an anticipated reply, but the positive case ('theological constraints' or 'an alternative principle of individuation') is unspecified, so there is no concrete plan for what must be shown."
+    },
+    "strongest_objection": "The paper faces a dilemma about what makes God and his attributes 'distinct'. If the distinction between God and his attributes as mutual parts is real, the symmetry formulation gives up the core of the simplicity tradition: God is his goodness, and there is no real distinction between God and his attributes or among the attributes. It would be a doctrine of non-proper but genuinely multiple constituents, not simplicity. If the distinction is only conceptual or modal, the identity formulation already covers it, and the symmetry formulation is not a distinct thesis. Either way, conclusion c010 fails.",
+    "reply_available": false,
+    "what_it_needs": "First, drop the concession that extensionality is constitutive of parthood. The objector's 'same parts implies identity', given reflexivity and transitivity, just is antisymmetry, so it begs the question; the paper should engage the existing defences of non-antisymmetric mereology (e.g. Cotnoir; Cotnoir and Bacon). Second, give a precise account of the non-identity between God and his attributes that is weaker than real distinction but stronger than mere conceptual distinction, and show that this account is what the classical doctrine actually requires.",
+    "summary": "There is a real question here, but the proposal concedes the wrong point to the objector, ignores existing non-antisymmetric mereology, and leaves unaddressed the real threat: that mutual-but-distinct parthood is not simplicity at all. It needs substantial reframing before it is worth drafting.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:50.658002+00:00"
+  },
+  "revision": {
+    "research_question": "Can a non-antisymmetric mereology supply a coherent, distinct formal thesis for the symmetry formulation of divine simplicity, on which God and his attributes are mutual parts with no proper parts and no multiplicity of constituents? And does that thesis count as a doctrine of simplicity, or only as a weaker, separate doctrine?",
+    "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is a coherent and distinct thesis within non-antisymmetric mereology, but that it counts as a doctrine of simplicity only on one specific account of the non-identity between God and his attributes. The paper first disposes of the objection that extensionality is constitutive of parthood. Given reflexivity and transitivity, the principle that objects with the same parts are identical entails antisymmetry, so the objection assumes the point at issue. The existential claim that some plausible non-antisymmetric theories exist therefore survives, and the paper defends it by engaging the existing non-antisymmetric mereology literature (Cotnoir; Cotnoir and Bacon) rather than by assertion. The paper also corrects the formal point: mutual parthood is symmetric parthood, so the symmetry formulation is not derived from non-symmetric parthood. Its central claim is that God and an attribute can be distinct objects standing in mutual parthood while sharing all their parts. This is not a distinction between constituents, since neither has a proper part the other lacks, so it avoids the first horn of the referee's dilemma. It is also not merely conceptual, because it is a structural fact about the mereological model and not a fact about how we conceive the terms, so it avoids the second horn. The paper specifies this intermediate account precisely and argues that the classical requirements of no composition, no real plurality of constituents, and no non-conceptual grounding of distinction are met by it. It then states the cost openly: if the classical doctrine requires strict identity of God with his attributes, the symmetry formulation is a weaker, distinct thesis that captures part of simplicity, not the whole. The paper also flags as an unstated premise that instantiation can be modelled as parthood, and it treats that premise as something requiring independent defence.",
+    "reply_to_strongest_objection": "The paper answers the referee's dilemma by introducing a third kind of distinction. God and an attribute are non-identical as objects but share all their parts, so the distinction is structural rather than conceptual, and it does not yield a plurality of proper constituents, so it is not real composition. The paper answers the mereological worry by showing that 'same parts implies identity' is equivalent to antisymmetry given reflexivity and transitivity, so the objection begs the question, and by defending non-antisymmetric mereology on its own terms. Where the classical doctrine demands more than this, the paper concedes that the symmetry formulation is a distinct, weaker thesis.",
+    "what_changed": "The revision drops the claim that extensionality is constitutive of parthood, shows that the objection presupposes antisymmetry, specifies an intermediate non-identity between God and his attributes, and narrows the conclusion to a conditional claim about whether the symmetry formulation counts as simplicity.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:52:52.839936+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The extensionality point is sound and precisely aimed at c002, since given reflexivity and transitivity same-parts-implies-identity is equivalent to antisymmetry, but the paper misreads c008 (defining proper parthood as non-symmetric parthood does yield the symmetry formulation) and characterises its 'structural not conceptual' distinction only loosely.",
+        "robustness": "The reply to the mereologist works, though calling the objection question-begging overstates it, since the objector asserts a standard principle rather than assuming the conclusion; the decisive theological objection, that numerically distinct mutual parts amount to a real plurality in God, receives only a stipulated label, and the fallback to 'a weaker thesis' concedes the objection rather than answering it.",
+        "significance": "If it worked, a precise middle category between real and conceptual distinction would be a useful refinement of the formal-simplicity literature, but the mereological groundwork largely follows existing work by Cotnoir and Bacon, and the payoff rests on the weakest step.",
+        "specificity": "It has a definite thesis, a dialectical plan (dispose of extensionality, engage non-antisymmetric mereology, give the intermediate account, state the cost) and named literature, but the core intermediate account is promised rather than specified."
+      },
+      "strongest_objection": "The proposed 'third kind of distinction' collapses into a real distinction. If God and an attribute are numerically distinct objects that share all their parts, nothing in the mereology grounds their non-identity, so it is bare numerical distinctness. Bare numerical distinctness between God and goodness, and between goodness and power (which by transitivity are also mutual parts), is exactly the plurality of really distinct items in God that classical simplicity denies. Calling it 'structural rather than conceptual' relabels the problem and treats a feature of a formal model as if it were a metaphysical ground of distinction. On this reading the view introduces a plurality of distinct divine entities rather than avoiding composition, which is arguably worse for simplicity than having proper parts.",
+      "reply_available": false,
+      "what_it_needs": "The paper must say what makes God and an attribute numerically distinct despite sharing all their parts, and show that this ground does not count as a real distinction by the tradition's own standards (for example the Thomist distinctio rationis cum fundamento in re versus distinctio realis), while dealing with the multiplication of mutually-part attributes. It should also drop its mistaken 'correction' of c008 and supply an actual defence of modelling instantiation as parthood.",
+      "summary": "A competent formal setup with a correct answer to the extensionality objection, but its central theological move, a primitive 'structural' distinction between God and his attributes, looks like a real distinction under another name, and the paper is not publishable until it says what grounds that distinction.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:53:30.813824+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

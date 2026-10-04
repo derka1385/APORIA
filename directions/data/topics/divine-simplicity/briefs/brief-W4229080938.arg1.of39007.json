@@ -1,0 +1,223 @@
+{
+  "id": "brief-W4229080938.arg1.of39007",
+  "objection_id": "W4229080938.arg1.of39007",
+  "research_question": "Can the causal-dependence argument for divine simplicity succeed once the definition of simplicity is revised to exclude dependence rather than ontological priority, or does the required revision either introduce circularity or fail to motivate the stronger traditional claim that God lacks all composition of distinct features?",
+  "argument": {
+    "id": "W4229080938.arg1",
+    "title": "God cannot be a composite",
+    "paper_id": "oa:W4229080938",
+    "paper_title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+    "premises": [
+      {
+        "id": "W4229080938.c001",
+        "text": "Divine simplicity is the claim that God is not a composite of more basic features.",
+        "quote": "the notion of divine simplicity, the idea that God is not a composite of more basic features"
+      },
+      {
+        "id": "W4229080938.c009",
+        "text": "It is contradictory for something to exist both through itself and through another.",
+        "quote": "It is simply a contradiction for something to exist both through itself and through another; it is tantamount to saying that something’s existence depends on nothing and depends on something"
+      },
+      {
+        "id": "W4229080938.c011",
+        "text": "Traditional theists fear that a composite God would be causally dependent on his distinct properties.",
+        "quote": "for traditional theists it is fundamentally the fear that a composite God, that is, a God having distinct properties, attributes, or the like, is in some way causally dependent upon those properties"
+      },
+      {
+        "id": "W4229080938.c012",
+        "text": "If God were not simple, he would depend on properties like power, wisdom, and blessedness as final causes.",
+        "quote": "if God were not simple, he would depend upon properties like power, wisdom, blessedness, in the order of final causation"
+      }
+    ],
+    "missing_premise": {
+      "id": "W4229080938.arg1.mp",
+      "text": "God is not causally dependent on his distinct properties, either efficiently or as final causes."
+    },
+    "conclusion": {
+      "id": "W4229080938.c010",
+      "text": "Therefore, the Necessary Existent (God) cannot be a composite; consequently, God’s existence is simple."
+    },
+    "skeleton": "F <-> ~A; ~(B & C); A -> D; A -> E |- ~A",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4229080938.c001",
+    "text": "Divine simplicity is the claim that God is not a composite of more basic features."
+  },
+  "objection": "c001 defines divine simplicity as God not being a composite of 'more basic features.' This smuggles in a hierarchical assumption: that any genuine composition requires parts strictly ontologically prior to the whole. But c011 and c012 describe the actual threat—God depending on power, wisdom, and blessedness as final causes. These are not 'more basic' than God; they are co-equal attributes or modes at the same ontological level. A composite of co-equal features (a whole constituted by aspects none of which is 'more basic' than the others) is excluded by c001's definition yet is precisely the structure c012 fears. The argument needs c001 to rule out that structure, but c001's 'more basic' qualifier makes it incapable of doing so. The premise assumes a part-whole hierarchy the rest of the argument never establishes and that the causal-dependence worry does not require.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A replied that the argument's real target is dependence, not priority, and proposed replacing c001 with a revised premise that excludes composition of features on which God's existence or activity depends, whether ordered or co-equal.",
+      "why_it_failed": "This response conceded that the original 'more basic' qualifier was irretrievably too narrow and preserved the argument only by substituting a dependence-based definition that goes beyond the text's original wording."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B replied that the broader tradition understands divine simplicity as excluding all composition or metaphysical complexity, and proposed revising c001 to state that God is not a composite of distinct features or parts.",
+      "why_it_failed": "This response conceded that c001 as written is too narrow and appealed to a broader traditional formulation without showing that the causal-dependence worry in c011 and c012 alone warrants ruling out every form of composition rather than only dependence-grounding composition."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W4232242998",
+      "paper_id": "oa:W4232242998",
+      "title": "Divine Simplicity",
+      "authors": [
+        "Richard K. Cross"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9781315257303-7",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "what is ruled out very much depends on prior metaphysical assumptions about the ways in which things can be composed."
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition",
+      "authors": [
+        "L. J. Anderson"
+      ],
+      "year": 2026,
+      "url": "https://philpapers.org/rec/ANDUOP",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The sources consistently treat simplicity as excluding both assembly and intrinsic parthood."
+    },
+    {
+      "record_id": "W2967247711.a2",
+      "paper_id": "oa:W2967247711",
+      "title": "Divine Simplicity as a Necessary Condition for Affirming Creation Ex Nihilo",
+      "authors": [
+        "Chance Juliano"
+      ],
+      "year": 2019,
+      "url": "https://digitalcommons.acu.edu/etd/160",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The argument avoids assuming that a composite God's existence depends on its parts."
+    },
+    {
+      "record_id": "W4232242998.a1",
+      "paper_id": "oa:W4232242998",
+      "title": "Divine Simplicity",
+      "authors": [
+        "Richard K. Cross"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.4324/9781315257303-7",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W2086535520.a1",
+      "paper_id": "oa:W2086535520",
+      "title": "On God and Mann: A View of Divine Simplicity",
+      "authors": [
+        "Thomas V. Morris"
+      ],
+      "year": 1985,
+      "url": "https://doi.org/10.1017/s0034412500017418",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W7172336769.c016",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W4232242998",
+      "paper_id": "oa:W4232242998",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "what is ruled out very much depends on prior metaphysical assumptions about the ways in which things can be composed.",
+      "title": "Divine Simplicity"
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The sources consistently treat simplicity as excluding both assembly and intrinsic parthood.",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition"
+    },
+    {
+      "record_id": "W2967247711.a2",
+      "paper_id": "oa:W2967247711",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The argument avoids assuming that a composite God's existence depends on its parts.",
+      "title": "Divine Simplicity as a Necessary Condition for Affirming Creation Ex Nihilo"
+    }
+  ],
+  "open_questions": [
+    "Does the dependence-based revision of c001 risk circularity, given that the argument's unstated major premise already asserts that God is not causally dependent on his distinct properties?",
+    "Can the causal-dependence argument in c009-c012 motivate the stronger traditional claim that God lacks all composition of distinct features, or does it support only the narrower claim that God lacks parts on which he depends?",
+    "Is Ghazālī's non-compositional model of God and attributes compatible with the revised definitions, and does it introduce a form of complexity that the causal argument fails to address?"
+  ],
+  "paper_direction": "A paper here would argue that the causal-dependence argument for divine simplicity cannot rest on the definition of simplicity as the absence of hierarchical composition, because the causal-dependence worry applies equally to co-equal attributes. The case would show that c001 must be revised to exclude either all dependence-grounding composition or all composition of distinct features, and it would trace the consequences of each revision for the argument's validity and metaphysical commitments. The strongest reply to anticipate is that the broader traditional understanding of simplicity already rules out every form of composition, so the objection merely exposes an infelicitous formulation rather than a structural flaw. To succeed, the paper would need to show that the causal-dependence argument by itself cannot motivate the stronger, unrestricted anti-composition claim without relying on independent metaphysical assumptions about part-whole priority, and that the narrower, dependence-based revision either introduces circularity or leaves room for a non-hierarchical but complex conception of the divine that the tradition would reject.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection says c001 cannot exclude a structure that c012 itself describes as dependence-of-God-on-features, and such dependence is just what makes those features 'more basic' than God, so the objection is aimed at a hierarchy among attributes that c001 never mentions.",
+      "robustness": "The relativization reply is immediate and decisive. Neither the direction nor the transcript anticipates it, and both defenders needlessly conceded the point rather than answering it.",
+      "significance": "Even if it succeeded, the result would be that a one-line gloss of simplicity should be reworded. That is largely verbal and does not touch the substantive debate over whether attribute-distinctness entails dependence, which is where Plantinga and Ghazālī actually disagree.",
+      "specificity": "There is a stated thesis, a two-horned dilemma (dependence-based versus unrestricted anti-composition), and named success conditions. However, the circularity charge against the dependence revision is only gestured at, and no worked case of non-hierarchical yet dependence-grounding composition is supplied."
+    },
+    "strongest_objection": "The objection misreads 'more basic.' In c001, 'more basic' is relative to the composite whole (God), not to the other features. If God depends on power, wisdom and blessedness as final causes, as c012 says, then those features are more basic than God in exactly that dependence sense. So the 'co-equal' attributes the objection describes are co-equal only with each other, not with God, and c001 already excludes them. The structure c012 fears falls squarely within c001. The supposed gap comes from conflating priority among parts with priority of parts over the whole.",
+    "reply_available": false,
+    "what_it_needs": "The paper must show a case of composition that c001 genuinely fails to exclude: features on which God depends that are nonetheless not prior to God in any sense. It must also argue that this is coherent. Otherwise it should drop the definitional complaint and engage Ghazālī's actual position that the attributes are neither identical to nor other than the essence, together with the falāsifa's dependence premise (the unstated major premise).",
+    "summary": "The proposal rests on misreading 'more basic' as a ranking among the attributes rather than relative to God. Once that is corrected, the alleged gap in c001 disappears, and so the paper would not survive a first competent reader without being rebuilt around the real issue: whether distinct attributes entail dependence.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:16:59.940852+00:00"
+  },
+  "revision": {
+    "research_question": "Once 'more basic' in the definition of simplicity is read relative to the whole (God), does the causal-dependence argument for divine simplicity succeed, or does the definition become idle because it simply restates the dependence premise? If the definition does no independent work, can the argument still reach the traditional claim that God has no composition of distinct features, and how does the dispute over whether attribute-distinctness entails dependence (Ghazālī's view that the attributes are neither identical to nor other than the essence, against the falāsifa's dependence premise) decide the matter?",
+    "paper_direction": "A paper here would argue that the referee's relativization reply is correct: in c001, 'more basic' is relative to the composite whole, so any feature on which God depends as a final or efficient cause is more basic than God in that dependence sense, and c001 therefore already excludes the dependence-grounding composition that c012 fears. The original claim that c001 cannot exclude co-equal composition therefore fails as stated, and the paper narrows accordingly. The narrowed thesis is that the relativized definition is coextensive with the dependence-exclusion premise, so c001 adds no independent content: the argument's validity and force rest entirely on the unstated major premise (arg1.mp) that God is not causally dependent on distinct properties. The paper would show this by a dilemma. If 'more basic' means 'that on which God depends,' then c001 is defined by the very dependence relation the argument must establish, and the definition does no work beyond restating the conclusion's target. If 'more basic' is given an independent sense, the case the referee requests, features that God depends on yet that are not prior to God, cannot be supplied, because on the relativized reading dependence entails priority. The paper therefore does not claim a counterexample to c001. It moves the substantive dispute to the premise that matters: whether the distinctness of attributes entails dependence. It would assess the falāsifa dependence premise against Ghazālī's position that the attributes are neither identical to nor other than the essence, and ask whether Plantinga's treatment of these options gives independent grounds for the mp premise or only restates it. The paper concludes that the causal-dependence argument can establish simplicity only if the dependence premise is independently motivated, and that the definitional revision is largely verbal.",
+    "reply_to_strongest_objection": "The paper accepts the relativization reply. In c001, 'more basic' is relative to God, so any feature God depends on as a final or efficient cause is more basic than God in that sense, and c001 already excludes the structure c012 fears. The original claim that c001 fails to exclude co-equal composition is withdrawn, which is why the thesis is narrowed. The paper then argues that this reading makes c001 coextensive with the dependence premise, so its work is not independent. A non-hierarchical dependence-grounding composition cannot be supplied on the relativized reading, because dependence entails priority there. The paper therefore grounds the argument in the unstated major premise, that God is not dependent on distinct properties, and tests that premise against Ghazālī's identity-neither-nor-other view and the falāsifa's dependence premise.",
+    "what_changed": "The revision withdraws the claim that c001 cannot exclude co-equal composition, accepts the relativized reading of 'more basic,' and narrows the paper to showing that c001 then restates the dependence premise, so the debate turns on whether attribute-distinctness entails dependence.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:36.845243+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The relativization reading and the dilemma are internally consistent. But the second horn assumes the very dependence-entails-priority link it needs, and the target (c001's inferential role) is not one the argument actually assigns to c001.",
+        "robustness": "Neither the direction nor the transcript answers the obvious reply that definitional premises are supposed to be idle. The fallback onto the dependence premise is announced, not argued.",
+        "significance": "Showing that a definition restates the dependence premise is largely verbal, as the paper itself concedes. The substantive Ghazālī–falāsifa question is well-trodden, and no new angle on it is proposed.",
+        "specificity": "There is a definite narrowed thesis and a dilemma structure. The substantive half ('assess the falāsifa premise against Ghazālī', 'ask whether Plantinga gives independent grounds') has no stated argument, case, or criterion of success."
+      },
+      "strongest_objection": "c001 is a characterization of the thesis being argued for, not an inferential premise, so it is expected to restate what the conclusion asserts. Showing that it 'adds no independent content' and that the argument's force rests on the dependence premise (arg1.mp) is what any competent reader already assumes. The narrowed thesis is therefore trivial. Its one substantive move, the second horn's claim that on the relativized reading dependence entails priority, is stipulated rather than argued, so the dilemma begs the question against a non-hierarchical reading. Once that is set aside, what remains is the familiar Ghazālī–falāsifa dispute over whether distinct attributes entail dependence, with no new contribution identified.",
+      "reply_available": false,
+      "what_it_needs": "Drop the idle-definition thesis. Make an original, textually grounded argument on the real question: whether distinct attributes neither identical to nor other than the essence (Tahāfut, Discussion 6) entail causal dependence, efficient or final. Engage the existing scholarship on Ghazālī's attribute theory and Plantinga's property-identity objection, and say what the paper adds to it.",
+      "summary": "The proposal correctly retreats from the original objection, but what survives is either a trivial point about definitions or a gesture at a well-known debate, so it is not yet a paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:18:53.574668+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

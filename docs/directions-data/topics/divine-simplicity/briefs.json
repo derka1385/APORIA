@@ -1,0 +1,662 @@
+[
+ {
+  "id": "brief-W4229080938.arg1.o7f2e68",
+  "run_id": "run-oa-W4229080938",
+  "research_question": "Does the instantiation of independent Platonic universals by a necessary being constitute a grounding dependence that threatens divine aseity, or can a non-simple God exemplify distinct properties without depending on them for existence?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3291,
+  "survival": 0.8,
+  "paper_title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+  "challenged_premise": {
+   "id": "W4229080938.c012",
+   "text": "If God were not simple, he would depend on properties like power, wisdom, and blessedness as final causes."
+  },
+  "paper_direction": "A paper here would argue that the traditional simplicity argument against a composite God must abandon its reliance on final-causal dependence and instead be reformulated in terms of grounding: if a necessary being's unity consists in nothing over and above its exemplification of distinct Platonic universals, then its existence is asymmetrically grounded in constituents external to itself, violating aseity. The case would develop a metaphysics of instantiation showing that being the single subject of independent forms still leaves the being derivative for its character and unity, using the concession that final causation is not the only route to dependence. The strongest reply to anticipate is that instantiation is merely a non-dependent relation of exemplification that characterizes the being without constituting it. The paper would need to show that this 'single subject' account cannot explain unity without covertly presupposing a prior whole that is itself grounded in the forms, and that such grounding dependence is incompatible with existing through oneself alone.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.75,
+   "scores": {
+    "coherence": 4,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "A coherent observation that the final-cause premise is too narrow, but the proposed grounding repair is already in the literature and rests on a question-begging bundle-theoretic assumption, so it is not yet a publishable paper."
+  },
+  "revision": {
+   "research_question": "Does a composite, Platonist God face an aseity threat that the simplicity argument uniquely identifies, or is the threat fully explained by the independent existence of the forms, which would leave simplicity idle?",
+   "paper_direction": "A paper here would argue that the simplicity argument against a composite God does not establish its conclusion through final-causal dependence, and that the defensible residue is narrower than the original claim. Premise c012 fails as stated: instantiating independent, real properties does not by itself make those properties final causes or sources of causal dependence, so the paper drops final causation as the operative route. It then asks whether any non-final route survives. The paper distinguishes two claims a Platonist can accept: that exemplification characterizes a subject, and that exemplification constitutes the subject's unity or existence. It argues that on a bundle-type view of unity the second claim holds, so composition generates grounding of the subject's existence in constituents other than itself, and simplicity is needed to block that dependence. On a substratum or primitive-substance view the subject is prior to its instantiations, so only the first claim holds. There, composition yields no grounding of existence, and the aseity pressure comes from the independent existence of the forms, which threatens God whether or not God is composite. The paper therefore defends a conditional result: simplicity's force is confined to bundle-type unity, and for substratum theists the threat is a separate aseity problem about the forms that the simplicity argument cannot address. The paper does not claim that the grounding recasting of the argument is new. Its contribution is the conditional result and a test for which case a given theist occupies.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 4
+    },
+    "summary": "A competent but largely derivative project: the core conditional is Wolterstorff's point in new dress, and the bundle/substratum framing misdescribes the relevant views, so it needs a rebuilt taxonomy and an actual test before it is a paper."
+   }
+  },
+  "quality": 0.55,
+  "score": 0.264,
+  "tier": 0
+ },
+ {
+  "id": "brief-W4405407480.arg1.ob0d07b",
+  "run_id": "run-oa-W4405407480",
+  "research_question": "Can the doctrine of divine simplicity be defended by showing that God's accidental volitional and cognitive properties are extrinsic on the basis of their truthmakers, without presupposing a general entailment from extrinsic relations to extrinsic properties?",
+  "outcome": "revision_required",
+  "novelty": 0.55,
+  "records_searched": 3292,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and the Theory of Action",
+  "challenged_premise": {
+   "id": "W4405407480.arg1.mp",
+   "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+  },
+  "paper_direction": "A paper here would argue that the modal-collapse objection to divine simplicity can be answered only by replacing the standard bridge from extrinsic relations to extrinsic properties with a direct truthmaker bridge: the contingent facts about the world enter the minimal truthmaker for God's accidental volitional and cognitive properties, and this inclusion alone renders those properties at least partially extrinsic regardless of whether they flow from God's necessary nature. The case would develop a rigorous truthmaker semantics for divine predication, show that the objector's scenario of an intrinsically-grounded volition collapses into an equivocation between metaphysical origins and truthmaker composition, and anticipate the strongest reply that the object-based route reintroduces complexity into God by making the world a constituent of the divine truthmaker. To succeed, the paper would need to show either that the object's presence in the truthmaker does not violate simplicity—perhaps by treating the object as a non-constituent truthmaker—or that an alternative truthmaker analysis can ground extrinsicality without including the world in God's being at all.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.5,
+   "scores": {
+    "coherence": 3,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "This is a tidy diagnosis of an equivocation in a weak objection, but as a paper it repackages the existing extrinsic-model defense and begs the central question of whether the world belongs in the truthmaker, so a referee would likely reject it as unoriginal unless it confronts the explanatory-idleness objection head-on."
+  },
+  "revision": {
+   "research_question": "Is the premise that extrinsic grounding of God's relation to the world makes God's volition and knowledge extrinsic valid as stated, and if not, can God's accidental volitional and cognitive properties be shown extrinsic by an independent, non-trivial argument that the contingent world belongs to their content-individuated truthmakers, without presupposing that extrinsic relations yield extrinsic properties?",
+   "paper_direction": "A paper here would argue that the premise (arg1.mp) is invalid as stated, and that the modal-collapse objection can be answered only by supplying a separate, non-trivial bridge for God's volitional and cognitive properties. The paper first uses the objector's own scenario to show that grounding a relation partly in extrinsic facts does not by itself make the grounded property extrinsic, so the premise needs an independent support. It then defends a narrower claim: a volition whose correctness condition is that a particular world obtains is individuated partly by that world's identity, so the world enters the minimal truthmaker of 'God wills to create W' as the object of the act, not as a constituent of God. The argument for this runs from the intentional individuation of volitions, not from the extrinsic model. The paper answers explanatory idleness by distinguishing selection by content from intrinsic difference in the bearer: an invariant God explains which world obtains through a directed act whose content selects that world, and this selection is explanatory without intrinsic variation in God. Whether the inclusion violates simplicity is handled as a bounded question. The paper claims only that simplicity is preserved if the object is a non-constituent truthmaker, and it does not treat that as settled. Beyond the extrinsic-model defenses of Grant and Tomaszewski, the paper contributes the intentional-individuation argument for the bridge and an explicit treatment of idleness. It takes the truthmaker formulation in c013 as given and does not claim novelty for it. Its success depends on intentional individuation, which a modal-collapse proponent can contest, and the paper states that dependence openly.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 3.0,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 3,
+     "specificity": 4
+    },
+    "summary": "The project is a reasonable repair job with a clear plan, but its central argument conflates what individuates a volition with what makes it correct, and a first competent reader would press exactly that point."
+   }
+  },
+  "quality": 0.6,
+  "score": 0.264,
+  "tier": 0
+ },
+ {
+  "id": "brief-W7212186029.arg1.o8e7787",
+  "run_id": "run-oa-W7212186029",
+  "research_question": "Can the symmetry formulation of divine simplicity be vindicated if divine instantiation is modeled as symmetric parthood, or does such a model presuppose rather than establish the requisite mutual parthood between God and his attributes?",
+  "outcome": "revision_required",
+  "novelty": 0.65,
+  "records_searched": 3292,
+  "survival": 0.8,
+  "paper_title": "Divine simplicity as symmetric parthood",
+  "challenged_premise": {
+   "id": "W7212186029.c004",
+   "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood."
+  },
+  "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity cannot be derived from the mere claim that instantiation is modeled as parthood, because standard substance-attribute parthood is asymmetric and the formal mereological framework only permits, but does not entail, symmetric relations once antisymmetry is dropped. The case would examine the specific gap identified by the objector: modeling instantiation as parthood establishes at most that attributes are parts of God, whereas the symmetry formulation additionally requires that God be a part of each attribute. The strongest reply to anticipate is that the framework's rejection of antisymmetry makes symmetric parthood available and that divine attributes, as intrinsic parts of God's nature, are special cases where mutual parthood is plausible. To succeed, the paper would need to show either that there is an independent metaphysical argument for symmetric divine parthood that does not merely presuppose the doctrine's conclusion, or that the symmetry formulation, even if formally consistent, captures a genuinely distinct and theologically acceptable version of divine simplicity rather than a technical artifact of non-standard mereology.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.25,
+   "scores": {
+    "coherence": 2,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this paper would be dismissed for charging a formulation with failing to prove what it merely states. The student should refocus on whether symmetric parthood between God and his attributes is coherent and faithful to the tradition, which is where a real paper might lie."
+  },
+  "revision": {
+   "research_question": "Is a symmetric-parthood reading of divine instantiation, on which God and each of his attributes are parts of one another, a coherent and theologically faithful way of formulating divine simplicity, given that modeling instantiation as parthood by itself supplies only the attribute-to-God direction?",
+   "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is formulable within non-antisymmetric mereology, but that its application to God's attributes is not secured by modeling instantiation as parthood, since that model delivers only the one-way relation from attribute to God. The paper therefore does not claim that the model entails mutual parthood. Its thesis is that symmetric divine parthood is a substantive commitment that must be defended on its own terms, and it assesses whether that commitment is metaphysically coherent and theologically faithful. It tests whether God being part of wisdom makes sense on mereological bundle theories and on trope views, and compares this with identity readings such as the truthmaker account. It engages the non-antisymmetric mereology literature, including the work of Cotnoir, Thomson and Varzi, to determine whether symmetry can be assigned to the God-attribute pair without erasing the distinction the formulation is meant to mark and without becoming a technical artifact of non-standard mereology.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "There is a real paper nearby, on whether symmetric divine parthood collapses into identity under transitivity and supplementation, but as framed this proposal mostly restates a concession any proponent would grant, and a competent referee would send it back."
+   }
+  },
+  "quality": 0.5,
+  "score": 0.26,
+  "tier": 0
+ },
+ {
+  "id": "brief-W7172336769.arg1.o07ab08",
+  "run_id": "run-oa-W7172336769",
+  "research_question": "Does the Thomistic analogical framework possess independent exclusion power over ill-formed divine predications, or must its admissibility constraints be grounded in prior natural-theological judgments about pure perfections?",
+  "outcome": "revision_required",
+  "novelty": 0.55,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+  "challenged_premise": {
+   "id": "W7172336769.arg1.r2",
+   "text": "The Thomistic analogical framework supplies principled admissibility constraints and a fixed metaphysical relation to creatures sufficient to exclude ill-formed divine predications, though it does not by itself determine the positive content of divine predicates such as 'good'."
+  },
+  "paper_direction": "A paper here would argue that the Thomistic analogical framework lacks independent exclusion power over ill-formed divine predications because its admissibility constraints presuppose prior natural-theological judgments about which creaturely features count as pure perfections. The case would center on contested predications such as 'God is mutable,' showing that the framework's fixed metaphysical relation and the distinction between res significata and modus significandi underdetermine verdicts when theologians disagree over whether a feature is a perfection or a defect. The strongest reply to anticipate is that this merely reflects the standard Thomistic division of labor: analogy governs the mode of predication, while natural theology supplies the content by identifying pure perfections through the metaphysics of participation and pure act. To succeed, the paper would need to show either that this division of labor renders analogy insufficient for the determinacy-of-meaning task the original argument assigned to it, or that the natural-theological classification of perfections itself relies on prior semantic or metaphysical commitments that are equally contested, so that the framework's constraints are not independently principled.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.5,
+   "scores": {
+    "coherence": 3,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this restates the standard Thomistic division of labor between analogy and natural theology as though it were an objection; it would only be worth writing if the author develops the claim that the pure-perfection classification is itself question-begging, using real intra-Thomist disputes."
+  },
+  "revision": {
+   "research_question": "Does the pure/mixed classification of creaturely perfections on which the Thomistic framework relies settle the admissibility of contested divine predications such as 'God is mutable', or is that classification itself settled by contested semantic or metaphysical commitments?",
+   "paper_direction": "A paper here would argue that the Thomistic framework's exclusion of ill-formed divine predications depends on a prior classification of creaturely features into pure and mixed perfections, and that this classification is not neutral. Analogy governs how a predicate is said of God, while the via causalitatis and the via remotionis, applied within participation in pure act, decide whether it may be said at all. The paper accepts this division of labor as the framework as designed, so it does not claim that analogical semantics lacks exclusion power in itself. Its claim is narrower. The criterion that sorts a feature as a pure perfection or a mixed one, for example whether responsiveness to another implies material potency or is an unlimited perfection, is itself settled by contested commitments about what it is for a creaturely feature to be a perfection as such. The test case is 'God is mutable'. Drawing on the documented intra-Thomist disputes over divine relationality involving Clarke, Hill, and Dodds, the paper would hold the participation metaphysics fixed and show that it yields divergent verdicts on whether mutability traces to potency or to responsive goodness. To avoid begging the question, it would not assume either verdict. It would identify the premises each side uses to classify responsiveness and show that participation in pure act does not select between them. The conclusion is that the framework's exclusion power is only as determinate as the perfection classification beneath it.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 4
+    },
+    "summary": "A clear and honestly narrowed proposal, but its test case targets a predicate that no participation-metaphysician counts as a pure perfection, and its conclusion risks restating the standard division of labor, so it needs a better case and a sharper account of why contested sorting undermines the premise before it is a paper."
+   }
+  },
+  "quality": 0.55,
+  "score": 0.242,
+  "tier": 0
+ },
+ {
+  "id": "brief-W4229080938.arg1.of39007",
+  "run_id": "run-oa-W4229080938",
+  "research_question": "Can the causal-dependence argument for divine simplicity succeed once the definition of simplicity is revised to exclude dependence rather than ontological priority, or does the required revision either introduce circularity or fail to motivate the stronger traditional claim that God lacks all composition of distinct features?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+  "challenged_premise": {
+   "id": "W4229080938.c001",
+   "text": "Divine simplicity is the claim that God is not a composite of more basic features."
+  },
+  "paper_direction": "A paper here would argue that the causal-dependence argument for divine simplicity cannot rest on the definition of simplicity as the absence of hierarchical composition, because the causal-dependence worry applies equally to co-equal attributes. The case would show that c001 must be revised to exclude either all dependence-grounding composition or all composition of distinct features, and it would trace the consequences of each revision for the argument's validity and metaphysical commitments. The strongest reply to anticipate is that the broader traditional understanding of simplicity already rules out every form of composition, so the objection merely exposes an infelicitous formulation rather than a structural flaw. To succeed, the paper would need to show that the causal-dependence argument by itself cannot motivate the stronger, unrestricted anti-composition claim without relying on independent metaphysical assumptions about part-whole priority, and that the narrower, dependence-based revision either introduces circularity or leaves room for a non-hierarchical but complex conception of the divine that the tradition would reject.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.0,
+   "scores": {
+    "coherence": 2,
+    "robustness": 1,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "The proposal rests on misreading 'more basic' as a ranking among the attributes rather than relative to God. Once that is corrected, the alleged gap in c001 disappears, and so the paper would not survive a first competent reader without being rebuilt around the real issue: whether distinct attributes entail dependence."
+  },
+  "revision": {
+   "research_question": "Once 'more basic' in the definition of simplicity is read relative to the whole (God), does the causal-dependence argument for divine simplicity succeed, or does the definition become idle because it simply restates the dependence premise? If the definition does no independent work, can the argument still reach the traditional claim that God has no composition of distinct features, and how does the dispute over whether attribute-distinctness entails dependence (Ghazālī's view that the attributes are neither identical to nor other than the essence, against the falāsifa's dependence premise) decide the matter?",
+   "paper_direction": "A paper here would argue that the referee's relativization reply is correct: in c001, 'more basic' is relative to the composite whole, so any feature on which God depends as a final or efficient cause is more basic than God in that dependence sense, and c001 therefore already excludes the dependence-grounding composition that c012 fears. The original claim that c001 cannot exclude co-equal composition therefore fails as stated, and the paper narrows accordingly. The narrowed thesis is that the relativized definition is coextensive with the dependence-exclusion premise, so c001 adds no independent content: the argument's validity and force rest entirely on the unstated major premise (arg1.mp) that God is not causally dependent on distinct properties. The paper would show this by a dilemma. If 'more basic' means 'that on which God depends,' then c001 is defined by the very dependence relation the argument must establish, and the definition does no work beyond restating the conclusion's target. If 'more basic' is given an independent sense, the case the referee requests, features that God depends on yet that are not prior to God, cannot be supplied, because on the relativized reading dependence entails priority. The paper therefore does not claim a counterexample to c001. It moves the substantive dispute to the premise that matters: whether the distinctness of attributes entails dependence. It would assess the falāsifa dependence premise against Ghazālī's position that the attributes are neither identical to nor other than the essence, and ask whether Plantinga's treatment of these options gives independent grounds for the mp premise or only restates it. The paper concludes that the causal-dependence argument can establish simplicity only if the dependence premise is independently motivated, and that the definitional revision is largely verbal.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "The proposal correctly retreats from the original objection, but what survives is either a trivial point about definitions or a gesture at a well-known debate, so it is not yet a paper."
+   }
+  },
+  "quality": 0.5,
+  "score": 0.24,
+  "tier": 1
+ },
+ {
+  "id": "brief-W7212186029.arg1.o05a058",
+  "run_id": "run-oa-W7212186029",
+  "research_question": "Can the symmetric parthood formulation of divine simplicity be grounded in a metaphysically respectable account of the God-attribute relation, or does it remain a merely formal stipulation?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine simplicity as symmetric parthood",
+  "challenged_premise": {
+   "id": "W7212186029.arg1.r1",
+   "text": "Instantiation, modeled as parthood, holds symmetrically between God and each of his attributes, so that God is part of each attribute as well as each attribute part of God."
+  },
+  "paper_direction": "A paper here would argue that the symmetric parthood formulation of divine simplicity survives the fire-heat objection only as a claim of formal consistency, and that its status as a philosophically viable doctrine depends on whether an independent metaphysical account of the God-attribute relation can be provided. The case would trace how the objection exposes the original premise as an undefended stipulation, and would evaluate whether non-causal grounding or intrinsic nature claims can supply the needed symmetry without collapsing into asymmetric dependence. The strongest reply to anticipate is that formal viability is all the conclusion claims, so no further metaphysical motivation is required. The paper would need to show either that this retreat leaves the symmetry formulation too thin to count as an interpretation of divine simplicity, or that a substantive metaphysics of mutual parthood for divine attributes can be developed and defended against standard asymmetric models of instantiation.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.0,
+   "scores": {
+    "coherence": 2,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 2
+   },
+   "summary": "As framed, the paper would not get past a first reader: its central counterexample is a creaturely case that simplicity theorists already reject as a model for God. A real paper might exist in asking whether symmetric dependence can motivate mutual parthood, but this direction has not yet found it."
+  },
+  "revision": {
+   "research_question": "Can the symmetry formulation of divine simplicity be given a specified, non-causal parthood relation in which God and his attributes are mutual parts without collapsing into identity, and does the lab's premise that instantiation can be modeled as parthood license that symmetry, or must the symmetry be argued for separately?",
+   "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is formally distinct from the identity formulation only under a non-antisymmetric parthood relation, and that the premise linking instantiation-as-parthood to symmetry is not supplied by the modeling claim alone. The paper drops the fire-heat analogy entirely, since it concerns creaturely composites and causal dependence and so does not bear on the divine case. It argues directly about that case in three steps. First, it shows the inference is a gap: the stated premise says only that instantiation can be modeled as parthood, while the challenged premise requires that the relation hold symmetrically between God and each attribute. Second, it sets out a criterion for when the symmetry formulation counts as an interpretation of simplicity rather than a formal option: the mutual parthood must be specified by a relation that is non-antisymmetric, is not grounded in causal or asymmetric dependence, and is motivated by the doctrine's claim that God is not a composite of distinct constituents. Third, it argues that the criterion is not met by the parthood model as stated, because nothing in the model fixes a symmetric relation rather than the asymmetric one that ordinary instantiation displays. The paper therefore commits to one horn: it does not claim that a substantive metaphysics of mutual parthood has been supplied. Its positive result is narrower: the symmetry formulation is consistent and distinct from the identity formulation, and it becomes an interpretation of simplicity only if a non-causal, non-antisymmetric grounding for the divine case is specified. The paper states that specification as an open requirement and does not claim to have met it.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "As framed, this mostly restates the source's own formal-viability claim while charging it with a gap it does not have; the real paper lies in the question it leaves open, namely whether any principled symmetric parthood or grounding relation fits the divine case without collapsing into identity."
+   }
+  },
+  "quality": 0.5,
+  "score": 0.24,
+  "tier": 1
+ },
+ {
+  "id": "brief-W7172336769.arg1.o35b399",
+  "run_id": "run-oa-W7172336769",
+  "research_question": "Is the relationship between Fregean semantics and Thomistic analogy in defenses of divine simplicity one of structural subordination, conditional dependence, or mere supplementation, and does the argument's success depend on which relation obtains?",
+  "outcome": "revision_required",
+  "novelty": 0.5,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+  "challenged_premise": {
+   "id": "W7172336769.c009",
+   "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy."
+  },
+  "paper_direction": "A paper here would argue that the defense of divine simplicity overstates the relationship between Fregean semantics and Thomistic analogy by claiming that Fregean diagnostics must be located within the analogical framework, when in fact the Fregean sense/reference distinction independently resolves the identity worry that distinct predicates imply distinct properties in a simple God, while analogy separately supplies determinate content and admissibility constraints. The paper would show that the argument survives only if its central premise is revised from structural subordination to conditional dependence, so that Fregean diagnostics are deemed insufficient for the determinacy concern without analogy rather than embedded within it. The strongest reply to anticipate is that without subordinating Fregean tools to analogy, the two frameworks yield a disjointed semantics in which formal coherence is purchased at the cost of unified metaphysical grounding. To succeed, the paper would need to demonstrate that conditional dependence still leaves analogy as the metaphysically prior framework for fixing which senses are admissible for God, while conceding that the identity worry requires no analogical embedding.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.25,
+   "scores": {
+    "coherence": 2,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this is a terminological quibble resting on a misapplied Frege example; the student should first establish that sense/reference alone handles attribute-identity, and that is precisely the step the literature on simplicity contests."
+  },
+  "revision": {
+   "research_question": "For predicate-level worries about divine simplicity, does the Fregean sense/reference distinction by itself secure the claim that distinct predicates such as 'wise' and 'good' do not imply distinct attributes in God, or does that claim require a reassignment of what the predicates designate, and if so, does the analogical framework supply that reassignment?",
+   "paper_direction": "A paper here would argue that the Fregean sense/reference distinction cannot, by itself, defuse the identity worry for attribute-predicates in a simple God, because on Frege's own semantics distinct predicates express distinct concepts, so sameness of reference is not available for 'is wise' and 'is good' unless the predicates are reconstrued as designating God or the divine essence. The test case of 'the morning star' and 'the evening star' concerns co-referring subject terms with a shared predicate and so does not model the divine-attributes problem; the paper drops it. It then argues that the identity claim requires a further semantic step, namely a reassignment of predicate reference, and that the res significata/modus significandi apparatus of the doctrine of analogy is the candidate that licenses this step, with the Fregean distinction retained to characterise the mode of signification. The paper's thesis is therefore narrower than the original: for the identity worry, Fregean diagnostics are insufficient without a reassignment of predicate reference, and analogy is the proposed source of that reassignment. For the broader concern about admissible predications and determinate content, the paper makes no claim beyond the predicate case and treats the reach of c009 as a question to be tested rather than assumed. To give a non-verbal criterion distinguishing 'located within' from 'insufficient without', the paper proposes the following test: a Fregean diagnostic is located within analogy for a given worry if the worry's resolution holds only once the reference-type of the predicates is fixed by the analogical framework, and it is merely supplemented by analogy if the worry is already resolved in purely Fregean terms with predicates keeping their concept-reference. The two readings disagree on whether a theorist who holds predicates to express concepts can accept that the attributes are identical in God; if the Fregean-only theorist cannot, the difference bears directly on the argument's conclusion. The paper must first show that no purely Fregean reassignment of predicate reference secures attribute identity without importing analogical semantics, and only then evaluate whether the analogical reassignment is the best available candidate.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 3.0,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 3,
+     "specificity": 4
+    },
+    "summary": "This is a sharper and better-aimed proposal than the original objection, but it currently rests on a shaky reading of Frege and ignores the obvious purely Fregean nominalization reply, so it is not yet a defensible paper."
+   }
+  },
+  "quality": 0.6,
+  "score": 0.24,
+  "tier": 1
+ },
+ {
+  "id": "brief-W7172336769.arg1.o5ae39d",
+  "run_id": "run-oa-W7172336769",
+  "research_question": "Does the Thomistic analogical framework, through the res significata/modus significandi distinction, provide determinate semantic content for divine predicates, or does it merely supply formal constraints on admissibility?",
+  "outcome": "revision_required",
+  "novelty": 0.5,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+  "challenged_premise": {
+   "id": "W7172336769.c010",
+   "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates."
+  },
+  "paper_direction": "A paper here would argue that the Thomistic res significata/modus significandi distinction, even when supplemented by a fixed metaphysical relation between God and creatures, does not provide the semantic resources to ground the positive content of divine predicates and instead yields only formal constraints on admissibility. The case would press the objector's claim that mapping semantic relations is not the same as determining their content, and would show that the metaphysical grounding relation, absent an independent theory of content, leaves truth-conditions for analogical predications unsettled. The strongest reply to anticipate is that determinacy should be reconstrued as constrained admissibility and truth-conditions relative to a grounding relation rather than as a positive inventory of divine attributes. To succeed, the paper would need to demonstrate that this restricted determinacy either fails to stop semantic regress or leaves the charge that analogy is of doubtful validity unanswered, while engaging the defender's contention that the formal distinction operating in tandem with metaphysical relations suffices to exclude ill-formed predications without collapsing into literal predication.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.25,
+   "scores": {
+    "coherence": 2,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this would be dismissed quickly: it misdescribes the res/modus distinction and attacks a positive-content claim the argument never makes, so it needs reworking to target the modest 'sufficient determinacy' thesis before it is a paper."
+  },
+  "revision": {
+   "research_question": "Does the Thomistic doctrine of analogy, once res significata is correctly located in the creaturely-known perfection rather than the divine essence, fix truth-conditions for divine predicates well enough to separate admissible from inadmissible predications such as 'God is good' from 'God is evil' or 'God is a chair', and to guide practice, or does it supply only formal constraints?",
+   "paper_direction": "A paper here would argue that, once res significata is correctly identified as the perfection signified (goodness itself, known through creatures and refined by negation), the Thomistic framework still fails to fix truth-conditions for divine predications well enough to separate admissible from inadmissible ones or to guide practice. The argument does not claim that the distinction is merely formal or that it fails to pick out a perfection; it claims that the perfection, together with causal-participation grounding and negation, leaves undetermined whether predications that the doctrine of simplicity makes hard to distinguish, such as 'God is just' and 'God is merciful', pick out distinct or identical content in God. A test case is required: if the grounding relation yields no verdict on whether these ascriptions can be true together of a simple being, or on what follows practically from each, the determinacy it supplies is constraint-level rather than content-level, and the conclusion's sufficiency claim fails for the purpose of meaning and practice. The paper will state the regress claim precisely: the grounding relation must be specified either in terms that reintroduce a content gap, or in terms that can only be cashed by further analogical predication, which is not yet a determination of truth-conditions. It will engage Rocca, Hochschild, Ross, Alston, Burrell, and Scotus's univocity argument, and will treat the Thomist's reply (the perfection is known from creatures and only its divine mode is unknown) as correct on its own terms, locating the dispute at whether knowing the perfection in creatures settles what can be truly said of God.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 3.0,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 3,
+     "specificity": 4
+    },
+    "summary": "A concrete and honestly corrected proposal, but its test case is already answered by the target paper's Fregean resources, so as planned it would be dismissed unless the author picks a harder case and makes the regress argument do real work."
+   }
+  },
+  "quality": 0.6,
+  "score": 0.24,
+  "tier": 2
+ },
+ {
+  "id": "brief-W3115675310.arg1.o8a73eb",
+  "run_id": "run-oa-W3115675310",
+  "research_question": "Does the Fregean sense–reference distinction suffice to discharge the explanatory burden posed by the distinct satisfaction conditions and explanatory roles of divine attributes under divine simplicity, or must the doctrine incorporate a substantive semantic theory of divine predication?",
+  "outcome": "revision_required",
+  "novelty": 0.5,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Plantinga and Ash‘arites on Divine Simplicity",
+  "challenged_premise": {
+   "id": "W3115675310.arg1.r1",
+   "text": "Multiplicity of divine attributes must be ontologically real (differences in being, not only in sense or description), since only real multiplicity makes the attributes' non-identity a datum that simplicity must deny."
+  },
+  "paper_direction": "A paper here would argue that the reductio against divine simplicity from the multiplicity of divine attributes requires a premise establishing that the distinct satisfaction conditions and explanatory roles of attributes such as omnipotence and omniscience cannot be discharged by the Fregean sense–reference distinction alone. The case would proceed by showing that treating conceptual multiplicity as a mere difference in sense presupposes rather than proves that one simple reality can satisfy heterogeneous conditions, and that the objector’s scenario of theologians deriving attributes through independent epistemic routes generates a genuine datum—distinct explanatory commitments—that simplicity must accommodate. The strongest reply to anticipate is the Fregean maneuver itself, namely that conceptual difference never entails ontological difference and that sense–reference successfully explains co-reference without ontological cost. To succeed, the paper would need to show either that the sense–reference model cannot be extended to predicates with distinct satisfaction conditions without tacitly reintroducing complexity, or that the defender of simplicity must offer a positive semantic theory of divine predication that independently justifies why heterogeneous explanatory roles do not entail distinct properties in the divine essence.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.25,
+   "scores": {
+    "coherence": 2,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this misreads the premise and reinvents a well-trodden debate; it could only become a paper by directly confronting the truthmaker and analogy accounts of divine predication."
+  },
+  "revision": {
+   "research_question": "Given divine simplicity, what must ground the truth of distinct predications such as 'God is omnipotent' and 'God is omniscient' when they are not grounded in ontologically distinct properties, and do the existing positive accounts (Brower's truthmaker view, Thomistic analogy, and the Ash'arite claim that attributes are neither identical with nor other than the essence) supply that ground?",
+   "paper_direction": "A paper here would argue that the reductio of divine simplicity from the multiplicity of divine attributes should be restated as a demand on truthmakers or grounds for distinct predications, not as a demand that simplicity deny conceptual or explanatory data. The premise that ontological multiplicity must be real is retained only in the form the referee accepts: simplicity must deny ontological difference among the attributes. What the objector's scenario shows is that distinct true predications require something in the divine reality to make them true. The paper would test three positive accounts against that demand: Brower's truthmaker account, the Thomistic doctrine of analogical predication, and the Ash'arite sifat formula. For each account it would ask whether the truthmaker for 'God is omnipotent' and the truthmaker for 'God is omniscient' can be distinct items in the divine reality without reintroducing ontological composition, and whether the account can state that difference without appeal to a distinct property. The Fregean sense-reference distinction is no longer the target. It figures only as a secondary consideration, showing why conceptual multiplicity alone does not settle the truthmaker question. The paper would conclude by identifying which account, if any, meets the grounding demand without tacit complexity, and what that verdict implies for the reductio.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 4
+    },
+    "summary": "A competent and writable comparative paper, but its central test begs the question against Brower and its main reframing is already in the literature, so it needs an argued criterion for differentiated grounding before it amounts to more than a survey."
+   }
+  },
+  "quality": 0.55,
+  "score": 0.22,
+  "tier": 0
+ },
+ {
+  "id": "brief-W4229080938.arg1.o1232c2",
+  "run_id": "run-oa-W4229080938",
+  "research_question": "Does reconceiving divine attributes as modes of a single act block the inference from composition to dependence, or does the revised appeal to ontological grounding by distinct constituents reintroduce the same dependence under a different relation?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3292,
+  "survival": 0.8,
+  "paper_title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+  "challenged_premise": {
+   "id": "W4229080938.c012",
+   "text": "If God were not simple, he would depend on properties like power, wisdom, and blessedness as final causes."
+  },
+  "paper_direction": "A paper here would argue that the standard divine simplicity argument from Plantinga and Ghazālī equivocates between teleological dependence on distinct properties and ontological grounding by distinct constituents. It would develop the objector’s model of a composite whose final cause is its own unified act, showing that composition does not entail dependence on parts as independent final causes. The paper would then argue that the defenders’ retreat to a revised premise about ontological grounding—where distinct constituents secure the composite’s unity—either assumes without argument that act-specifications function as independent metaphysical parts or changes the original subject from final-cause dependence to essential constitution. The strongest reply to anticipate is that even modes of a single act are distinct formal determinations on which the composite’s being relies, so ontological dependence survives the shift from teleology to activity. To succeed, the paper would need to show either that the act-individuation model genuinely dissolves dependence on distinct constituents or that the revised grounding claim cannot be motivated by the classical texts without collapsing into the very composition it seeks to rule out.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.5,
+   "scores": {
+    "coherence": 3,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "Not yet a paper: the central model is either a disguised version of classical simplicity or reintroduces the dependence it claims to remove, and the proposal neither sees nor resolves that dilemma."
+  },
+  "revision": {
+   "research_question": "Does the composition-to-dependence inference in c012 hold when the distinct features are only formal distinctions in ratio, with the perfections for whose sake G exists identical to G's own act? If so, which further premise must be added to recover the conclusion that God's existence is simple?",
+   "paper_direction": "A paper here would argue that premise c012 holds only on a reading of composition that requires real distinctness among the features, and that the act-individuation model does not refute it on the reading that matters for simplicity. The paper would first fix the Avicennan and Ghazālian sense of final cause as a perfection for whose sake a composite exists, not an external target. It would then show that if power and wisdom are formally distinct, plural in ratio but one in reality, the composite is plural in its intelligibility without having a distinct final cause, because the perfection G exists for is G's own act under each description. This concedes the referee's first horn: a model with really distinct determinations reintroduces dependence and so refutes nothing. It accepts the second horn as a reason to narrow the thesis rather than reject it. The paper would argue that c012, as stated, is false on the formal-distinction reading, so the simplicity conclusion cannot be derived from c012 alone. It would then identify the further premise needed, namely that real plurality among the features is excluded, and assess whether the classical texts supply independent grounds for that premise. The paper would not claim that the act model shows God is simple, only that the composition-to-dependence step fails once the distinction is specified.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+     "coherence": 2,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "As framed, the paper either misses c012 or concludes only that the argument needs its conclusion as a premise; it is not publishable until the meaning of 'not simple' is pinned down against the texts."
+   }
+  },
+  "quality": 0.45,
+  "score": 0.216,
+  "tier": 2
+ },
+ {
+  "id": "brief-W4405407480.arg1.o8e4918",
+  "run_id": "run-oa-W4405407480",
+  "research_question": "Does the sculptor counterexample demonstrate that the modal collapse argument's truthmaker-based inference to extrinsic properties is unsound as a general metaphysical principle, and can the argument be salvaged by redefining 'extrinsic' as content dependence or by restricting the inference to simple beings?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and the Theory of Action",
+  "challenged_premise": {
+   "id": "W4405407480.arg1.r2",
+   "text": "If the truthmaker of God's accidental volitional property includes a contingent fact about the world, then that property is extrinsic to God, whatever its origin in God's nature."
+  },
+  "paper_direction": "A paper here would argue that the sculptor counterexample undermines the modal collapse argument's central premise that including a contingent world-fact in the truthmaker of God's volition suffices to make that property extrinsic, because ordinary agency routinely exhibits precisely this structure without rendering the volitional property extrinsic to the agent. The case would examine the two revision strategies—Defender A's redefinition of extrinsicness as content dependence and Defender B's restriction to simple beings—and argue that neither preserves the original argument's validity without importing controversial, independently unsupported assumptions about divine identity or the metaphysics of content. The strongest reply to anticipate is that divine simplicity is sui generis and that the identity of God with His act blocks the sculptor analogy by eliminating the realizer-truthmaker gap on which the counterexample relies. To succeed, the paper would need to show either that this identity claim does not genuinely close the gap or that the revised premises are too weak to sustain the modal collapse conclusion, thereby demonstrating that the argument must abandon its truthmaker-based route to extrinsicness.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.5,
+   "scores": {
+    "coherence": 3,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, the paper would not survive a competent reader. The sculptor counterexample assumes an unargued notion of intrinsicness that standard accounts reject, and it ends up restating the extrinsic-model view it is meant to refute, so it needs a defended theory of intrinsicness before it can be a paper."
+  },
+  "revision": {
+   "research_question": "Given that a volitional property with a contingent truthmaker fails the standard duplication test for intrinsicness, does the modal collapse argument's step from truthmaker-inclusion to extrinsicness hold, and can a simplicity defender block it by adopting a non-duplication criterion of intrinsicness on which divine volition counts as intrinsic?",
+   "paper_direction": "A paper here would argue that the sculptor case cannot serve as a counterexample to the truthmaker-based step in the modal collapse argument, because it relies on an intrinsicness criterion that the standard duplication test rejects. The paper would grant that a perfect intrinsic duplicate of the sculptor in a world without the block would lack the de re intention, so the sculptor's volition is extrinsic on the criterion the argument's critics standardly use. The paper's thesis is therefore narrower: the modal collapse argument goes through on the duplication criterion, and a simplicity defender can avoid its conclusion only by adopting a different criterion of intrinsicness. The paper would then examine what such a criterion must do. It must classify de re intentions as intrinsic despite their failing the duplication test, and it must be defended against content externalism, on which object-dependent intentions are paradigmatically extrinsic. The paper would argue that a criterion meeting these demands must be independently motivated rather than tailored to divine simplicity, and it would test whether any such criterion can be applied to God's volition without equivocation. The paper would also treat the realizer/truthmaker distinction as the extrinsic modeler's own position to be tested, not as a defeater of the argument. The final question is whether the simplicity defender's identity claim, that God's volition is identical to God's act, can supply the intrinsic classification that the sculptor case could not. The paper would argue that it can do so only if the identity claim is itself shown to be independent of the criterion it is meant to satisfy.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+     "coherence": 2,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "Retreating from the sculptor counterexample is sound, but the resulting paper has the sides of the debate confused and would mostly confirm a standard result, so it needs reframing before it is worth writing."
+   }
+  },
+  "quality": 0.45,
+  "score": 0.216,
+  "tier": 1
+ },
+ {
+  "id": "brief-W7212186029.arg1.o501c14",
+  "run_id": "run-oa-W7212186029",
+  "research_question": "Can a mereological model of divine simplicity that treats God and his attributes as mutual parts avoid collapsing God into his attributes while respecting the symmetry formulation?",
+  "outcome": "revision_required",
+  "novelty": 0.6,
+  "records_searched": 3292,
+  "survival": 0.8,
+  "paper_title": "Divine simplicity as symmetric parthood",
+  "challenged_premise": {
+   "id": "W7212186029.c004",
+   "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood."
+  },
+  "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity cannot be vindicated by modeling instantiation as standard non-symmetric parthood, because constituent ontology makes God's attributes non-symmetric parts of God, directly contradicting the thesis that God lacks such parts. The case would trace the objector's dilemma that any one-directional parthood relation either makes God the whole of which attributes are parts or else ceases to be parthood in the framework's intended sense, and it would demonstrate that the only viable repair is to adopt mutual parthood between God and his attributes. The strongest reply to anticipate is that mutual parthood preserves the letter of the symmetry formulation by eliminating proper-parthood loops, while restricting the model to God's necessary attributes avoids overgeneralization. What the paper would need to show is that this mutual-parthood repair is not merely a technical fix but a philosophically coherent account of how God relates to his attributes: it must establish that mutual parthood does not collapse God and his attributes into indistinguishable mereological fusions, and it must resolve the necessity worry by explaining how symmetric parthood can hold without making God's attributes modally on a par with God himself.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.0,
+   "scores": {
+    "coherence": 2,
+    "robustness": 1,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "Not viable as framed: the proposal mistakes the symmetry formulation for a view about non-symmetric parts and then offers that formulation back as its own repair. A real paper would need to attack the rejection of antisymmetry or the parthood model of instantiation directly."
+  },
+  "revision": {
+   "research_question": "Can instantiation, restricted to God's necessary attributes, be modeled by a parthood relation that is non-antisymmetric, non-classical in its composition principles, and therefore satisfies the symmetry formulation of divine simplicity without collapsing God into his attributes?",
+   "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is not secured by the bare claim that instantiation is parthood, but only by a restricted and specified parthood relation. The paper drops the earlier claim that non-symmetric parthood contradicts the doctrine and instead treats mutual parthood between God and his necessary attributes as the content of the symmetry formulation itself. Its contestable target is premise c004 and its implicit step arg1.mp. The paper will argue in two parts. First, it will show that the transitivity and fusion-closure principles of standard mereology cannot hold for instantiation, because instantiation is not closed under fusion, so the model must give up unrestricted composition. Second, it will argue that the restriction to necessary attributes is principled rather than ad hoc: the only parthood relation that can carry the symmetry formulation is one whose composition principles are limited to the necessary attributes of a single bearer. To make this claim precise, the paper will state the necessity worry as follows. If each necessary attribute of God is a part of God and God is a part of that attribute, then the mutual parthood holds necessarily, which threatens to make the attributes modally on a par with God. The paper will define a collapse criterion, namely that God and an attribute are collapsed when every mereological and modal predicate true of one is true of the other, and will argue that mutual parthood without antisymmetry or extensionality does not meet this criterion because the relevant parthood is not extensional. The paper will also argue that denying antisymmetry for God is an extra commitment that must be justified independently of the doctrine, and it will assess whether such denial can be motivated without circularity. The paper does not claim that instantiation is parthood in general, and it does not defend the symmetry formulation against non-symmetric formulations on grounds of mere consistency.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+     "coherence": 2,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "Not yet a paper: the key move (non-extensionality blocks collapse) fails against the paper's own criterion, and the restricted relation is too underspecified to tell whether it is still parthood, so a first competent reader would reject it."
+   }
+  },
+  "quality": 0.45,
+  "score": 0.216,
+  "tier": 2
+ },
+ {
+  "id": "brief-W4405407480.arg1.o713b8b",
+  "run_id": "run-oa-W4405407480",
+  "research_question": "Can the doctrine of divine simplicity consistently maintain that the proposition 'God freely chooses to create the actual world' has God alone as its minimal truthmaker while grounding the contingency of creation in extrinsic content rather than in a distinct contingent truthmaking component?",
+  "outcome": "revision_required",
+  "novelty": 0.55,
+  "records_searched": 3282,
+  "survival": 0.8,
+  "paper_title": "Divine Simplicity and the Theory of Action",
+  "challenged_premise": {
+   "id": "W4405407480.c014",
+   "text": "The truth of the proposition ‘God freely chooses to create the actual world’ depends on the conjunction of a necessary fact about God and a contingent fact about the world."
+  },
+  "paper_direction": "A paper here would argue that the original argument for divine simplicity and the theory of action contains a deep tension between its truthmaker principle (c012) and its account of God's free choice (c014): if c012 is read as applying to the proposition that God freely chooses to create the actual world, then c014's claim that this proposition requires a distinct contingent world-fact as a truthmaking component violates that principle, and the standard defensive restriction of c012 to non-relational truths either renders the principle vacuous or assumes the very compatibility of extrinsic relations with simplicity that the modal collapse problem puts in question. The case would proceed by showing that the only coherent repair is to reject c014's conjunctive truthmaker and hold that God alone truthmakes the choice-proposition, with the world figuring as extrinsic content rather than as a distinct truthmaker, and that c013 and c015 must be correspondingly restated in terms of extrinsic content. The strongest reply to anticipate is that the creation-proposition is irreducibly relational, so c012 never governs it, or that a restriction to non-relational truths is independently motivated. To succeed, the paper would need to show that extrinsic content can do the modal work originally assigned to extrinsic truthmakers—specifically, that grounding contingency in content rather than in a co-truthmaker does not simply relocate the modal collapse problem—and it would need to vindicate the content/truthmaker distinction against the charge that it is merely terminological.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.0,
+   "scores": {
+    "coherence": 2,
+    "robustness": 1,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "As framed, this would be dismissed: the alleged inconsistency rests on a misreading of 'truths only about God', and the proposed repair reintroduces the modal collapse it is meant to avoid, so the student needs a genuinely new account of contingent content before there is a paper."
+  },
+  "revision": {
+   "research_question": "Can the doctrine of divine simplicity consistently hold that God's free choice to create the actual world is contingent, given that the proposition 'God freely chooses to create the actual world' is not a truth only about God in the sense relevant to the truthmaker principle, and given that its contingency is grounded in a contingent world-fact that is a truthmaking component of the proposition?",
+   "paper_direction": "A paper here would argue that the charge of incoherence against the conjunctive truthmaker account of God's free choice fails, because the truthmaker principle (c012) governs only truths whose truth-conditions involve God alone, and the proposition 'God freely chooses to create the actual world' does not meet that condition. The paper would give an independent, non-grammatical criterion of aboutness: a proposition is only about God just in case its truth-conditions, not merely its grammatical form, mention no object distinct from God. The creation-proposition fails this test, since 'the actual world' picks out a creature, so c012 never applies to it and c014's split truthmaker is consistent with the principle. The paper would then turn to the real remaining question, which the referee's objection exposes but does not establish as a contradiction: whether a proposition with a necessary truthmaker component (God's nature) and a contingent co-truthmaker (the world-fact) can be contingent without collapsing into necessity. The argument here is that it can, because necessitation runs from the full truthmaker, and the necessary component alone does not necessitate the proposition; contingency is located in the world-fact, which is extrinsic to God. The paper therefore drops the proposed repair that relocates the world into non-truthmaking 'content', since that repair reinstates c014 and gains nothing modally. The scope of the paper is narrowed accordingly: it defends the conjunctive truthmaker against the incoherence charge and states the conditions under which the extrinsic-relation account must still be tested against modal collapse, without claiming to resolve that problem.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+     "coherence": 2,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 3
+    },
+    "summary": "This is a tidy but largely redundant defence of the standard truthmaker reading of simplicity; it answers a weak objection and avoids the modal-collapse question that would make it worth publishing, so it is not yet a paper."
+   }
+  },
+  "quality": 0.45,
+  "score": 0.198,
+  "tier": 2
+ },
+ {
+  "id": "brief-W3115675310.arg1.oae023a",
+  "run_id": "run-oa-W3115675310",
+  "research_question": "Can the multiplicity of divine attributes be established as ontologically real rather than merely conceptual or relational, and would such a multiplicity constitute a successful objection to divine simplicity?",
+  "outcome": "revision_required",
+  "novelty": 0.45,
+  "records_searched": 3292,
+  "survival": 0.8,
+  "paper_title": "Plantinga and Ash‘arites on Divine Simplicity",
+  "challenged_premise": {
+   "id": "W3115675310.c005",
+   "text": "The claim that all attributes are identical is hard to accept because divine attributes like omnipotence, omniscience, and omnibenevolence are multiple."
+  },
+  "paper_direction": "A paper here would argue that the common objection from attribute multiplicity against divine simplicity rests on an equivocation between conceptual plurality and ontological plurality. It would develop the Gauge G analogy to show that one simple state can ground many distinct descriptions, and it would examine whether defenders can supply a non-question-begging criterion for ontological multiplicity that does not already assume the falsity of simplicity. The strongest reply to anticipate is that divine attributes have formally distinct intentional objects and causal profiles, so their difference exceeds mere conceptual variation; the paper would need to show either that such formal distinctness is still compatible with a single divine act or that the defender's move to ontological multiplicity presupposes rather than establishes the incoherence of simplicity.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.5,
+   "scores": {
+    "coherence": 3,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "This restates the classic 'distinct in concept, one in reality' reply without confronting Plantinga's modal argument for property distinctness, and its central analogy undercuts itself; it is not yet a publishable contribution."
+  },
+  "revision": {
+   "research_question": "Does the modal discernibility of omniscience and omnipotence establish that divine attributes are ontologically distinct properties? If so, can a defender of divine simplicity block that inference by an account of predication on which an attribute's modal profile reflects the relations of one unchanging act to possible creatures and outcomes, rather than differences in what the act is?",
+   "paper_direction": "A paper here would argue that the inference from attribute multiplicity to ontological multiplicity, as stated in c005, fails when it proceeds from plural attribute terms, but that a stronger argument from modal discernibility remains and can be answered only by an account of predication that separates intrinsic from relational modal profile. The paper will (1) concede that the Gauge analogy, as first formulated, does not work, because its components are modally separable states of one mechanism rather than one state under several descriptions; (2) replace it with a dispositional case in which one categorical base grounds counterfactual dispositions whose manifestations differ across possible inputs, so that modal divergence is carried by relations to inputs and not by any difference in the base; (3) apply this to the divine case by arguing that omnipotence, omniscience and omnibenevolence are specified by the range of outcomes and creaturely relations under which one unchanging act is manifested; and (4) state a criterion for when modal difference signals intrinsic difference: a difference counts as intrinsic only if it holds across variation in the relata, and it is shown that the discernibility argument needs the further premise that possible instances are fixed by the property alone. The paper then argues that the defender can reject that premise on grounds independent of the simplicity thesis, so the reply is not question-begging. The thesis is narrowed: it claims that simplicity survives the modal discernibility argument only if the divine attributes are relational profiles of a single act, and it does not claim that the plurality of attribute terms by itself shows that the attributes are not distinct.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.75,
+    "scores": {
+     "coherence": 3,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 4
+    },
+    "summary": "This is a clearly organized but largely familiar defense of simplicity against Plantinga that founders on attributes whose objects are not creaturely, so it is not publishable until it confronts that problem and the existing Stump–Kretzmann, Mann and Brower literature."
+   }
+  },
+  "quality": 0.55,
+  "score": 0.198,
+  "tier": 1
+ },
+ {
+  "id": "brief-W3115675310.arg1.o3627bf",
+  "run_id": "run-oa-W3115675310",
+  "research_question": "Can a trope-theoretic account of the divine essence block the inference from divine simplicity to God's abstractness, and does it leave a residual problem about whether a single concrete property-particular can be a personal agent?",
+  "outcome": "revision_required",
+  "novelty": 0.4,
+  "records_searched": 3289,
+  "survival": 0.8,
+  "paper_title": "Plantinga and Ash‘arites on Divine Simplicity",
+  "challenged_premise": {
+   "id": "W3115675310.c006",
+   "text": "Divine simplicity also implies that God is not a personal creator but an abstract object, since properties are abstract objects."
+  },
+  "paper_direction": "A paper here would argue that trope theory undermines the Plantinga-style inference from divine simplicity to God's abstractness by showing that the premise 'properties are abstract objects' encodes a contestable Platonic assumption rather than a necessary truth. The case would develop a trope-theoretic model of the divine essence as a concrete, particularized property that remains causally active, thereby blocking the step from 'God is identical to a property' to 'God is an abstract object.' The strongest reply to anticipate is that even on trope theory, identifying God with a single property—whether abstract universal or concrete trope—makes God a property rather than a person, so the personal-creator worry persists in a new form. To succeed, the paper would need to show either that a single trope can possess the complexity required for personal agency, knowledge, and will, or that the residual worry is no more damaging to divine simplicity than to alternative metaphysical accounts of God.",
+  "assessment": {
+   "grade": "not yet defensible",
+   "overall": 2.75,
+   "scores": {
+    "coherence": 4,
+    "robustness": 2,
+    "significance": 2,
+    "specificity": 3
+   },
+   "summary": "This is a correct but familiar point that Mann already made against Plantinga; without a worked-out account of how a bearerless trope can be a personal agent, it would not survive a referee familiar with the property-instance literature."
+  },
+  "revision": {
+   "research_question": "Once premise c006 is restated with its hidden Platonic assumption made explicit, does the inference from divine simplicity to God's non-personal abstractness survive? If a trope-theoretic divine essence blocks that inference, does the residual question of whether a bearerless particular can be a knowing and willing subject count against simplicity more than against rival non-simple accounts of God?",
+   "paper_direction": "A paper here would argue that premise c006 is invalid as stated: the step from 'God is identical to a property' to 'God is an abstract object' needs the Platonic premise that all properties are abstract, and a trope-theoretic reading of the divine essence blocks that step. The paper then narrows its claim. It does not argue that a bearerless trope is thereby a personal agent. It argues that once the abstractness charge is removed, the personhood objection becomes a parity question: it bears on divine simplicity only if simplicity supplies no resource for subjecthood that a non-simple theism lacks. The paper states what a subject of knowledge and will would have to be on the trope view, and tests whether non-simple theism, where God is a bearer of many properties, secures a subject by another route. If it does not, the personhood worry is shared by both views. If it does, the paper identifies that as a genuine cost of simplicity rather than dissolving it.",
+   "assessment": {
+    "grade": "not yet defensible",
+    "overall": 3.0,
+    "scores": {
+     "coherence": 4,
+     "robustness": 2,
+     "significance": 2,
+     "specificity": 4
+    },
+    "summary": "The paper is clearly organised but mostly re-treads Mann's reply, and its new parity test looks likely to confirm the very cost it hopes to neutralise, so it needs a substantive account of a self-subsisting trope as subject before it is worth writing."
+   }
+  },
+  "quality": 0.6,
+  "score": 0.192,
+  "tier": 2
+ }
+]

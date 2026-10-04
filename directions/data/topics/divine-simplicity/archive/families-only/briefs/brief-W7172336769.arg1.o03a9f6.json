@@ -1,0 +1,196 @@
+{
+  "id": "brief-W7172336769.arg1.o03a9f6",
+  "objection_id": "W7172336769.arg1.o03a9f6",
+  "research_question": "Can the Thomistic doctrine of analogy supply practically applicable criteria for discriminating correct from incorrect divine predications without presupposing a prior grasp of the divine nature, or is it limited to negative constraints that leave the positive content of theological language undetermined?",
+  "argument": {
+    "id": "W7172336769.arg1",
+    "title": "Analogy grounds determinate theological language",
+    "paper_id": "oa:W7172336769",
+    "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+    "premises": [
+      {
+        "id": "W7172336769.c003",
+        "text": "The author employs modern analytic philosophy, specifically selected Fregean distinctions, to show how the criticisms of divine simplicity can be defused.",
+        "quote": "In this paper, I employ the resources of modern analytic philosophy – specifically, selected Fregean distinctions – to demonstrate how these critiques can be defused."
+      },
+      {
+        "id": "W7172336769.c009",
+        "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy.",
+        "quote": "I argue that in order to address these underlying concerns of the critics of simplicity, Fregean diagnostics must be located in the broader semantic‑metaphysical framework provided by the doctrine of analogy."
+      },
+      {
+        "id": "W7172336769.c010",
+        "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates.",
+        "quote": "It is this framework that introduces a crucial further distinction that Fregean diagnostics do not give us – namely, the distinction between res significata and modus significandi – and thereby provides the resources needed to ground the meaning of theological predicates."
+      },
+      {
+        "id": "W7172336769.c025",
+        "text": "Analogical semantics supplies principled constraints on admissible divine predications, allowing ‘God is good’ while excluding ‘God is evil’ or ‘God is a chair’.",
+        "quote": "Analogical semantics also supplies principled constraints on admissible divine predications that are grounded in participation and eminence (i.e., it explains why ‘God is good’ is eligible for intrinsic predication while ‘God is evil’ or ‘God is a chair’ is not)."
+      },
+      {
+        "id": "W7172336769.c042",
+        "text": "The Thomistic doctrine of analogy can provide principled constraints and sufficiently determinate content for divine predicates, thereby answering residual worries about meaning.",
+        "quote": "Our aim in this section is not to rehearse a generic version of the Thomistic doctrine of analogy but to demonstrate how this doctrine can answer the residual worries about meaning from Section 3 by providing principled constraints and sufficiently determinate content for divine predicates."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7172336769.arg1.mp",
+      "text": "If the Thomistic doctrine of analogy supplies sufficiently determinate content and principled constraints for divine predicates, then theological language is determinate enough for meaning and practice while semantic openness is left intact, so the determinacy it supplies is what answers the worries about meaning."
+    },
+    "conclusion": {
+      "id": "W7172336769.c005",
+      "text": "The Thomistic doctrine of analogy does not eliminate semantic openness but makes theological language sufficiently determinate for meaning and practice, grounding meaningful God‑talk in metaphysics and religious practice."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7172336769.c009",
+    "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy."
+  },
+  "objection": "Consider Ruth, a seminary teacher who must grade two essays. Essay A says 'God is wise' and Essay B says 'God is wise in the way a clever chess player is wise.' Ruth applies the framework of res significata and modus significandi: she asks whether the perfection signified (wisdom) is ascribed primarily to God, with creatures possessing it only derivatively. Her rubric instructs her to reward A and penalize B. But when a student, Tomas, asks what 'primarily' means and how the ratio of proportionality between God and creatures is fixed, Ruth can only point to the doctrine's own vocabulary. Her colleague Nadia, a Fregean, asks which sense of 'wise' the rubric fixes, and gets no answer that distinguishes the two essays by truth-conditions. Both teachers agree on grades yet cannot say what each grade tracks. The framework generates verdicts in practice while the semantic content that would ground them remains unspecified, so the claim that analogy is the place where Fregean diagnostics are located does not follow: the analogical framework is invoked to license judgments it does not itself determine.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Distinguishes the determinacy of admissibility from the determinacy of truth-conditional sense, arguing that the res significata/modus significandi distinction supplies a principled asymmetry that constrains which predications are permissible even if it does not yield a Fregean sense.",
+      "why_it_failed": "It conceded that the argument overstates determinacy because the metaphysical grounding fixes reference only if the participation relation is itself specified, and the argument does not specify it in a way that yields truth-conditions distinguishing the predications, so the framework licenses practice without supplying the Fregean-style content the objection demands."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Relocates determinacy from the semantic vocabulary to the metaphysics of participation, claiming that intrinsic perfection predication states what God is in Godself and that Essay B falsely imposes a creaturely mode, with the modus significandi determined by this metaphysics supplying the requisite sense.",
+      "why_it_failed": "It conceded that ontological determination is not operational determination; the positive sense of the predicate remains specified only by negation and metaphysical participation rather than by a Fregean sense that a practitioner can independently articulate, so the argument conflates metaphysical truth-making with practical criterion-giving."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W3172222976",
+      "paper_id": "oa:W3172222976",
+      "title": "Analogical Predication and Divine Simplicity",
+      "authors": [
+        "Dolf te Velde"
+      ],
+      "year": 2021,
+      "url": "https://doi.org/10.1177/10638512211017525",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "this article suggests supplementing Duby’s broadly Thomistic explanation with key elements from the Scotist theory of univocal predication."
+    },
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?",
+      "authors": [
+        "Alan Philip Darley"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1111/heyj.12321",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "whether analogy is primarily a grammatical or a metaphysical doctrine."
+    },
+    {
+      "record_id": "abs:oa:W3170792374",
+      "paper_id": "oa:W3170792374",
+      "title": "Essays on Discourse by and about the Divine",
+      "authors": [
+        "Stephanie Nicole Nordby"
+      ],
+      "year": 2016,
+      "url": "http://hdl.handle.net/11244/47124",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "contemporary philosophy of language is a surprisingly good bedfellow for religious language."
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W3172222976",
+      "paper_id": "oa:W3172222976",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "this article suggests supplementing Duby’s broadly Thomistic explanation with key elements from the Scotist theory of univocal predication.",
+      "title": "Analogical Predication and Divine Simplicity"
+    },
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "whether analogy is primarily a grammatical or a metaphysical doctrine.",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?"
+    },
+    {
+      "record_id": "abs:oa:W3170792374",
+      "paper_id": "oa:W3170792374",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "contemporary philosophy of language is a surprisingly good bedfellow for religious language.",
+      "title": "Essays on Discourse by and about the Divine"
+    }
+  ],
+  "open_questions": [
+    "Can the metaphysics of participation be specified in a non-circular manner that yields truth-conditions for analogical predications without presupposing the very distinctions they are meant to ground?",
+    "Does the res significata/modus significandi distinction provide more than a negative formal rule, and if not, can a purely negative criterion suffice for the determinacy required by theological practice?",
+    "Is the gap between metaphysical truth-making and operational criterion-giving a general feature of analogical theories of religious language or specific to the Thomistic-Fregean synthesis?",
+    "If the positive ratio of proportionality must remain semantically open, what distinguishes analogical predication from a sophisticated agnosticism about the divine nature?"
+  ],
+  "paper_direction": "A paper here would argue that the Thomistic doctrine of analogy, even when grounded in a metaphysics of participation, fails to supply the operational criteria needed to distinguish correct from incorrect divine predications and is therefore limited to negative constraints that leave the positive content of theological language undetermined. The case would centre on the gap between metaphysical truth-making and practical criterion-giving exposed by the Ruth and Nadia thought experiment, showing that the res significata/modus significandi distinction yields only a formal rule to exclude creaturely modes without fixing the positive sense of analogical predicates. The strongest reply to anticipate is that the semantic and metaphysical are inseparable, so the metaphysics of participation fixes truth-conditions by identifying intrinsic perfection predication with God’s simple essence. The paper would need to show that this reply conflates ontological determination with operational determination, and that unless the ratio of proportionality can be specified in a way accessible to a competent practitioner who does not already possess the correct theological answer, the doctrine cannot deliver the determinate content it promises while retaining semantic openness.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent but misaimed. It argues that analogy fails to determine content, which bears on c042/c005, not on c009's claim that Fregean tools must be embedded in analogy, and its 'does not follow' inference is a non sequitur against a necessity premise.",
+      "robustness": "The obvious reply is that the argument concedes semantic openness and that Thomism denies operational access to the divine ratio by design. Neither the direction nor the transcript answers this, and the defenders' concessions concern Fregean-style content that the argument never promised.",
+      "significance": "Even if successful, the paper would rehearse a well-known tension between equivocity and agnosticism in analogy theory (Burrell vs. McInerny, Alston, Ross) without a new standard or result, so it is at most a minor refinement.",
+      "specificity": "There is a definite thesis, a case and an anticipated reply, but the central notion of 'operational determinacy accessible to a competent practitioner' is undefined, so it is unclear what would count as success."
+    },
+    "strongest_objection": "The paper attacks a stronger claim than the argument makes. The challenged premise c009 is a necessity claim: Fregean diagnostics alone cannot meet the critics' concerns and need the analogical framework. The objection instead attacks the sufficiency of analogy to supply operational, truth-conditional content. Worse, the conclusion (c005) already concedes that semantic openness remains and claims only sufficient determinacy for meaning and practice. Showing that analogy yields mainly negative constraints and leaves positive content undetermined therefore restates the Thomistic position: no quidditative knowledge of God, determinacy via causality, remotion and eminence. The demand for criteria usable by a practitioner 'without prior grasp of the divine nature' is a standard Thomism explicitly rejects as inappropriate, so it begs the question. The Ruth case even backfires: Essay B explicitly predicates a creaturely mode, which the modus significandi rule excludes, and the two essays plainly differ in truth-conditions.",
+    "reply_available": false,
+    "what_it_needs": "The paper must retarget from c009 to c042/c005. It must then give a non-question-begging account of what degree of 'sufficient determinacy' theological practice requires, and show that the remotion-plus-eminence account falls short of that standard rather than of a Fregean ideal the Thomist disowns. It must also engage the existing Burrell/McInerny/Ross/Alston literature on precisely this gap.",
+    "summary": "Reject in current form: the paper misreads a necessity premise as a sufficiency claim and faults Thomistic analogy for lacking a determinacy that the argument explicitly disclaims, so it needs a fair success criterion and a correct target before it is a paper.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:29.362239+00:00"
+  },
+  "revision": {
+    "research_question": "Given that the Thomistic doctrine of analogy is committed to the claim that God is not known quidditatively, what standard of determinacy must theological predication meet for theological practice to be meaningful, and does the doctrine's account of predication (remotion, causality, eminence, and the res significata/modus significandi distinction) meet that standard?",
+    "paper_direction": "A paper here would argue that the Thomistic doctrine of analogy, taken on its own terms, supplies enough determinacy to ground the discrimination of admissible from inadmissible divine predications, but that this determinacy is limited in a specific and identifiable way. The paper would not argue that analogy fails because it does not yield operational criteria usable without a prior grasp of the divine nature, since Thomism rejects that demand by design. The thesis is narrower: the sufficiency claim at c042 and c005 depends on a standard of determinacy that the doctrine can meet only partly. The paper would first state a non-question-begging standard drawn from the doctrine itself. Practical determinacy is met when (i) the perfection signified by a predicate is fixed by a causal ancestry that competent practitioners already share through the confessional and liturgical grammar, (ii) the predicate yields a determinate exclusion of creaturely modes, and (iii) the predicate supports a determinate positive inference about what God wills, does, or is not, so that two practitioners who accept the same grammar will sort the same predications into the same categories. Against this standard the paper would examine the Ruth and Nadia case as a test of the remotion-plus-eminence account, not as a refutation of the Fregean premise. Essay B is correctly excluded by the modus significandi rule, and the paper would grant that. The test is whether the account can also sort predications that share causal ancestry but differ in creaturely paradigm, such as 'God is just' and 'God is fair', or 'God is wise' and 'God is shrewd'. The paper would argue that remotion and eminence settle the direction of the predicate but leave the choice among causally grounded candidates to a judgement that the doctrine does not specify. That gap, not an absence of content, is where the sufficiency claim is weakest. The paper would engage the Burrell, McInerny, Alston and Ross literature on this exact gap, separating the question of whether analogy is equivocal from the question of whether it is agnostic, and it would show where the sufficiency claim needs either a further criterion of proportional ratio or a restriction in its scope. The contribution is a diagnosis of where the determinacy claim stops, measured by a standard internal to the doctrine.",
+    "reply_to_strongest_objection": "The referee is right that the original paper attacked a claim the argument does not make, and that the demand for criteria usable without a prior grasp of the divine nature begs the question against Thomism. The revision retargets the paper to c042 and c005, the claims about sufficient determinacy, and drops the charge that c009 fails. It replies to the 'semantic openness' concession by making the thesis a claim about the degree of determinacy, not about its presence. The standard is set by the doctrine's own commitments: determinacy of the perfection signified, determinacy of creaturely-mode exclusion, and determinacy of positive inference shared by a community of practice. The Ruth case is retained only as a test that remotion and eminence pass for exclusion and may fail for choice among causally grounded predicates. The paper answers the referee's concern about operational determinacy by specifying it, not by assuming it.",
+    "what_changed": "The revision retargets the paper from the necessity premise c009 to the sufficiency and determinacy claims at c042 and c005, replaces the undefined 'operational determinacy' standard with one internal to the doctrine, and narrows the thesis to where remotion and eminence stop supplying determinate content.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:52:20.320729+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 3.0,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 3,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The direction is internally consistent, but it abandons the challenged premise c009 for c042/c005, so the Ruth case no longer bears on the premise under trial and survives only as an illustration.",
+        "robustness": "The decisive Thomistic reply, the pure/mixed perfection distinction plus non-synonymy under simplicity, is neither anticipated nor answered, and the internality of standard (iii) is open to the charge that it imports a non-Thomistic demand.",
+        "significance": "If the paper located a genuine residual indeterminacy among pure-perfection predicates, it would be a useful refinement of the sufficiency claim, but the agnosticism-versus-equivocity terrain is heavily worked (Ross, Burrell, Alston), which limits its novelty.",
+        "specificity": "It has a definite narrowed thesis, an explicit three-part standard, named test cases and a literature to engage, though the decisive case is underdeveloped."
+      },
+      "strongest_objection": "The proposed test cases dissolve within the doctrine it claims to measure. Aquinas's distinction between pure perfections (properly predicated) and mixed perfections (whose res significata itself includes a creaturely mode, so they are predicated only metaphorically; ST I q.13 a.3) already sorts 'wise' from 'shrewd' and 'just' from 'fair'. And q.13 a.4 holds that several true predicates of a simple God are non-synonymous, each drawing its ratio from a different creaturely concept. So there is no 'choice among causally grounded candidates' left for unspecified judgement: either both predicates are true and non-synonymous, or one names a mixed perfection and is excluded or downgraded to metaphor. The alleged gap is the place where the doctrine is most explicit, not where it is silent.",
+      "reply_available": false,
+      "what_it_needs": "The paper must engage the pure/mixed perfection distinction and q.13 a.4 directly. It then needs a pair of predicates that both name pure perfections yet receive divergent verdicts from competent practitioners, so the gap is shown rather than asserted. It must also justify condition (iii), positive inference, as internal to a doctrine that denies quidditative knowledge, rather than smuggled in from outside.",
+      "summary": "A well-organized and appropriately chastened proposal, but its central test cases are already handled by Aquinas's pure/mixed perfection distinction, so it needs a better case before it is a paper.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:52:38.236095+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

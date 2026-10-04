@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-10-04T11:22:36.108118+00:00",
+  "targets": [
+    {
+      "target": "oa-W7212186029",
+      "claims": 61,
+      "arguments": 2,
+      "premises": [
+        5,
+        4
+      ],
+      "valid": [
+        false,
+        true
+      ],
+      "missing_premise": [
+        true,
+        false
+      ]
+    },
+    {
+      "target": "oa-W7172336769",
+      "claims": 84,
+      "arguments": 2,
+      "premises": [
+        5,
+        3
+      ],
+      "valid": [
+        false,
+        false
+      ],
+      "missing_premise": [
+        true,
+        true
+      ]
+    },
+    {
+      "target": "oa-W4229080938",
+      "arguments": 2,
+      "skipped": "already mapped"
+    },
+    {
+      "target": "oa-W3115675310",
+      "claims": 63,
+      "arguments": 2,
+      "premises": [
+        4,
+        3
+      ],
+      "valid": [
+        false,
+        true
+      ],
+      "missing_premise": [
+        true,
+        false
+      ]
+    },
+    {
+      "target": "oa-W4405407480",
+      "claims": 63,
+      "arguments": 1,
+      "premises": [
+        5
+      ],
+      "valid": [
+        false
+      ],
+      "missing_premise": [
+        true
+      ]
+    }
+  ],
+  "fulltext_claims": {
+    "proposed": 299,
+    "kept": 271,
+    "drop_rate": 0.094
+  },
+  "abstract_claims": {
+    "proposed": 140,
+    "kept": 136,
+    "drop_rate": 0.029
+  },
+  "dropped_examples": [
+    {
+      "paper_id": "oa:W7172336769",
+      "quote": "While these Fregean distinctions help to dissolve initial logical difficulties, they do not by themselves explain how theological predicates can have truth‑conditions and sufficiently determinate cont",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W7172336769",
+      "quote": "I therefore situate the relevant Fregean diagnostics within the broader semantic‑metaphysical framework provided by the doctrine of analogy.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W7172336769",
+      "quote": "Firstly, it follows that God is identical with God’s essence.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W7172336769",
+      "quote": "the critic might say, in the barn-case, ‘wide’ and ‘red’ are indeed distinct attributes of the barn, because the barn is not an undivided, simple entity. Hence, there is nothing objectionable ... but ",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W7212186029",
+      "quote": "Alternatively, if God’s willingness to create is taken to be an aspect of his intrinsic (and hence unchanging) nature, such a possible world can still be taken to exist if God’s willingness to create ",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "Sa‘d al‑Dīn al‑Taftāzānī holds that attributes are not independent beings but can exist only as dependent upon something else.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "Thus, according to Augustine, God’s substance is identical with his attributes.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "Divine attributes are identical with God’s essence. Divine attributes are dependent beings.",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "When God’s essence concerns the things known (ma‘lumāt), it is called “knowledge”. When it concerns the things to be made or created (maqdurāt), it is called “power”. So, this fact does not imply pl",
+      "reason": "quote > 2 sentences"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "By eliminating the difference between the predicate of “omnipotence” and the definite description of “the omnipotent being” one already assumes divine simplicity. Thus, it is futile to appeal to Frege",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "Yet, if I say “this stone is neither black nor white”, this statement is not contradictory because the predicates of being black and being white are not mutually exclusive. Likewise, according to the ",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W3115675310",
+      "quote": "Yet, I argued, this position is inconsistent with the doctrine of divine simplicity. Divine simplicity ... identifies divine attributes with God. To be able to make that identification the doctrine al",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W4405407480",
+      "quote": "If the precise action chosen by agents is not necessarily fully determined in their internal act of volition but depends on its concrete performance in order to attain full individuality, how can agen",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W4405407480",
+      "quote": "The other possible position is assuming that (ii) also concerns a general consideration of the creatures God could make ... and accordingly concluding that God’s knowledge of contingent particulars is",
+      "reason": "quote not found"
+    },
+    {
+      "paper_id": "oa:W2025325897",
+      "quote": "John Milbank's and Catherine Pickstock's image of God as country bumpkin ... argue that human knowledge of particulars comes from participation in the mind of God.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2907094138",
+      "quote": "I will argue that Aquinas can be read to affirm in an implicit way that beauty is a transcendental.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2907094138",
+      "quote": "First, all beauty comes from God insofar as God is the cause of all that exists.",
+      "reason": "abstract quote"
+    },
+    {
+      "paper_id": "oa:W2980283047",
+      "quote": "Levering instead aims to treat creation theologically, in a way that is ultimately rooted in Scripture and tradition.",
+      "reason": "abstract quote"
+    }
+  ],
+  "claims_indexed": 2445,
+  "abstracts_indexed": 837,
+  "embedder": "bge-small-en-v1.5 (local)",
+  "llm": {
+    "calls": 63,
+    "cache_hits": 0,
+    "json_failures": 0,
+    "errors": 0
+  },
+  "budget": {
+    "spent_usd": 11.1137,
+    "limit_usd": 20.0,
+    "cli_calls": 1899,
+    "cli_limit": 4000,
+    "notional_cli_usd": 28.9595
+  }
+}

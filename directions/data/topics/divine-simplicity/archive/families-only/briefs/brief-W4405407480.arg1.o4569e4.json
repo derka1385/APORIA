@@ -1,0 +1,208 @@
+{
+  "id": "brief-W4405407480.arg1.o4569e4",
+  "objection_id": "W4405407480.arg1.o4569e4",
+  "research_question": "Can a contingent, world-directed content be an intrinsic feature of a volitional property in a simple being, or must the contingency of its object introduce an extrinsic truthmaker that compromises divine simplicity?",
+  "argument": {
+    "id": "W4405407480.arg1",
+    "title": "Extrinsic volition and knowledge solve modal collapse",
+    "paper_id": "oa:W4405407480",
+    "paper_title": "Divine Simplicity and the Theory of Action",
+    "premises": [
+      {
+        "id": "W4405407480.c008",
+        "text": "The modal collapse argument is probably the most difficult objection to the doctrine of divine simplicity.",
+        "quote": "Among objections to the doctrine of divine simplicity (DDS) frequently discussed in recent literature, the so called “modal collapse argument” is probably the more difficult one."
+      },
+      {
+        "id": "W4405407480.c012",
+        "text": "Divine simplicity requires that all non‑tautological truths only about God have only God himself as their minimal truthmaker.",
+        "quote": "divine simplicity requires that all non-tautological truths that are only about God, have only God himself as their minimal truthmaker (Pruss 2008, 152–54)."
+      },
+      {
+        "id": "W4405407480.c013",
+        "text": "Any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, so the property is at least partially extrinsic.",
+        "quote": "any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, and hence the property is at least in part extrinsic"
+      },
+      {
+        "id": "W4405407480.c014",
+        "text": "The truth of the proposition ‘God freely chooses to create the actual world’ depends on the conjunction of a necessary fact about God and a contingent fact about the world.",
+        "quote": "(4) Partial extrinsicness of divine volition of the contingent. What makes true the proposition “God freely chooses to create the actual world” is the conjunction of a necessary fact about God and a contingent fact about the world."
+      },
+      {
+        "id": "W4405407480.c015",
+        "text": "God’s relation to the world is partially based on facts extrinsic to God, not on contingent intrinsic facts.",
+        "quote": "Partial extrinsicness of God's relation to the world. The relations between God and the world are at least partially based on facts that are extrinsic to God, and are not based on contingent facts intrinsic to God."
+      }
+    ],
+    "missing_premise": {
+      "id": "W4405407480.arg1.mp",
+      "text": "If God's relation to the world is partially based on facts extrinsic to God, then the accidental properties at issue, volition and knowledge, must be extrinsic."
+    },
+    "conclusion": {
+      "id": "W4405407480.c009",
+      "text": "A satisfactory solution to the modal collapse argument requires a theory of volition and knowledge where properties (a) and (b) are extrinsic, thus denying premise (1)(ii)."
+    },
+    "skeleton": "H; A -> B; C -> D; F; G |- E",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W4405407480.c013",
+    "text": "Any correct attribution to God of an accidental property has as its truthmaker God and something contingent besides God, so the property is at least partially extrinsic."
+  },
+  "objection": "Consider a person, Leo, who decides to drink water. The truth of 'Leo decides to drink water' is made true by Leo's internal volition. This volition is a property of Leo. The truthmaker is not Leo plus an external, contingent fact; the truthmaker is simply Leo, as a person possessing that specific mental state. Similarly, God's volition is a real, distinct attribute of His personhood. The contingency resides within the property God possesses, not in a fact that exists 'besides' Him. Therefore, an accidental property is not an extrinsic addition but an intrinsic part of God's person.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A distinguished Leo's case from God's by arguing that Leo's volition has its object fixed by Leo's act alone, whereas God's volition is about a particular world whose contingent character must be supplied from outside God to avoid modal collapse, and appealed to the premise that the truth of 'God freely chooses to create the actual world' depends on a contingent fact about the world.",
+      "why_it_failed": "The objector showed that this bifurcation of act and content presupposes the extrinsicality it aims to prove by assuming that contingent object-dependence must be world-supplied, and Defender A conceded inability to fully rebut this, acknowledging that the cited literature does not settle whether world-relative content can be intrinsic."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B argued that divine simplicity denies God is a substratum distinct from His act of will, so if the variation in choice were located entirely within an intrinsic property identical to God, either God would be contingent or modal collapse would follow; therefore the contingency must be supplied by the world.",
+      "why_it_failed": "The objector replied that this simply assumes the necessity of God's essence dictates the modality of His volitional content without demonstrating why an act identical to God cannot possess contingent content, and Defender B produced no valid closing reply."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W4206263991",
+      "paper_id": "oa:W4206263991",
+      "title": "Truthmaking, resemblance, and divine simplicity",
+      "authors": [
+        "Mahmoud Morvarid"
+      ],
+      "year": 2021,
+      "url": "https://doi.org/10.1017/s0034412521000123",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "God's F-ness should be interpreted, not as a property God possesses, but as the truthmaker for 'God is F', which is God himself."
+    },
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing",
+      "authors": [
+        "W. Matthews Grant",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2012,
+      "url": "https://doi.org/10.5840/faithphil201229328",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God."
+    },
+    {
+      "record_id": "W4413414430.a2",
+      "paper_id": "oa:W4413414430",
+      "title": "Triseity",
+      "authors": [
+        "Chad A. McIntosh",
+        "Evangelical Philosophical Society"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.5840/pc20252719",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God exists a se and thus has His explanation in Himself."
+    },
+    {
+      "record_id": "W4229080938.c004",
+      "paper_id": "oa:W4229080938",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+      "authors": [
+        "Jon McGinnis"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.1017/s0034412522000130",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W4206263991",
+      "paper_id": "oa:W4206263991",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "God's F-ness should be interpreted, not as a property God possesses, but as the truthmaker for 'God is F', which is God himself.",
+      "title": "Truthmaking, resemblance, and divine simplicity"
+    },
+    {
+      "record_id": "abs:oa:W1967680842",
+      "paper_id": "oa:W1967680842",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "God's contingent knowledge, which varies across worlds, does not involve any intrinsic variation in God.",
+      "title": "Divine Simplicity, Contingent Truths, and Extrinsic Models of Divine Knowing"
+    },
+    {
+      "record_id": "W4413414430.a2",
+      "paper_id": "oa:W4413414430",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "God exists a se and thus has His explanation in Himself.",
+      "title": "Triseity"
+    }
+  ],
+  "open_questions": [
+    "Can a contingent, world-directed content be an intrinsic feature of a volitional property in a simple being without introducing an extrinsic truthmaker?",
+    "Does the necessity of the divine essence entail the necessity of every intrinsic feature of that essence, or can an act identical to God possess contingent determinations without rendering God contingent?",
+    "How should the minimal truthmaker for 'God freely chooses to create the actual world' be construed if the contingency of the chosen world is located within God's will rather than in the world itself?"
+  ],
+  "paper_direction": "A paper here would argue that the modal-collapse objection to divine simplicity can be blocked by developing an intrinsic theory of divine volition on which the contingent, world-directed content of God's will is a feature of the volitional property itself rather than an extrinsic addition, so that the minimal truthmaker for 'God freely chooses to create the actual world' remains God alone. The case would proceed by defending the Leo analogy against the charge that world-directedness entails extrinsicality, showing that a simple act-identical-to-God can have contingent content without making God contingent, and distinguishing the modality of the divine essence from the modality of its intrinsic contingent determinations. The strongest reply to anticipate is that if the content is intrinsic and God is necessary, then the content is necessary and modal collapse follows; the paper would need to show that this assumes an illicit inference from the necessity of the subject to the necessity of every intrinsic feature, or that the contingency of the content is grounded in the intrinsic property without requiring an external truthmaker, thereby preserving both divine simplicity and the contingency of creation.",
+  "outcome": "standing",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.5,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 3,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection targets c013, but it does so by treating accidental volition as an intrinsic distinct property, which simply denies the simplicity constraint the premise is stated under rather than showing c013 false given that constraint; the Leo case also misdescribes its own truthmaker as 'simply Leo'.",
+      "robustness": "Both defenders gestured at the decisive reply (simplicity plus necessitation plus necessary existence yields collapse), and the 'illicit inference' rejoinder in the plan fails because for a simple being the feature is the subject, so the direction has no viable answer as stated.",
+      "significance": "A successful account of intrinsic contingent divine volition compatible with strict simplicity would be a real contribution, but it would join an existing family of non-extrinsic responses rather than reshape the debate.",
+      "specificity": "There is a definite thesis and a named counter-reply, but the case rests on an analogy that does not transfer. The plan never says which of truthmaker necessitation, the necessity of identity, or the strength of the simplicity thesis it will deny, so what must be shown is underdetermined."
+    },
+    "strongest_objection": "The Leo analogy equivocates on the truthmaker. 'Leo decides' is made true not by Leo simpliciter but by Leo-in-a-volitional-state, a trope or state of affairs distinct from Leo that could have been absent while Leo existed. That is exactly the composition that simplicity (c012) forbids for God. Within the simplicity framework the paper must then face a dilemma. If God alone is the minimal truthmaker, truthmaker necessitation plus God's necessary existence makes 'God chooses W' necessary, which is modal collapse. If it is not God alone, then either some contingent intrinsic determination distinct from God is admitted, abandoning simplicity, or the contingent factor is extrinsic, which concedes c013. The proposed escape, that it is 'illicit' to infer the necessity of an intrinsic feature from the necessity of the subject, fails for a simple being, since there the feature is identical to the subject and the inference is just the necessity of identity.",
+    "reply_available": false,
+    "what_it_needs": "It must specify which principle it rejects. One option is truthmaker necessitation for divine truths, defended against the charge that bare-God truthmaking without necessitation is ad hoc. The other is the claim that an act identical to God has a single, world-invariant intrinsic nature, for instance via a worked-out account on which the same simple act is intrinsically 'differently determined' across worlds without numerically distinct determinations. It must also engage the existing extrinsic-model and non-necessitarian literature (Brower, Grant, Tomaszewski, Pruss, Mullins, Schmid) rather than resting on an analogy with a composite human agent.",
+    "summary": "As framed this would be dismissed quickly, because the Leo analogy relies on the very composition simplicity denies; there is a paper only if it is rebuilt around an explicit rejection of truthmaker necessitation or a precise account of contingent determination in a simple act.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:15.437858+00:00"
+  },
+  "revision": {
+    "research_question": "Given divine simplicity, can a divine truth about God's contingent free choice be made true by God alone without being necessitated by its truthmaker, so that the contingency of creation is located in the truth rather than in any intrinsic or extrinsic determination of God?",
+    "paper_direction": "A paper here would argue that the modal-collapse objection to divine simplicity is blocked only by rejecting truthmaker necessitation for divine contingent truths, not by an intrinsic theory of volition. The Leo analogy is abandoned: 'Leo decides' is made true by Leo-in-a-volitional-state, a state distinct from Leo that could have been absent while Leo existed, so it is a composite truthmaker and cannot model a simple being. The paper also rejects the reply that inferring the necessity of an intrinsic feature from the necessity of its subject is illicit, since for a simple being the feature is the subject. The paper then argues that the best remaining option keeps the minimal-truthmaker thesis (c012) for God. 'God freely chooses to create the actual world' has God alone as its minimal truthmaker, but that truthmaker does not necessitate the proposition, because its truth also depends on the contingent relation of God's free choice to a contingent relatum. The contingency is thus located in the truth-conditions and the modal profile of the relation, not in any intrinsic determination of God. The paper defends this non-necessitation claim against the charge that bare-God truthmaking without necessitation is ad hoc, showing that it follows from a principled account of how a necessary being can ground contingent truths about its relations. It engages the existing extrinsic-model and non-necessitarian literature, namely the work associated with Brower, Grant, Tomaszewski, Pruss, Mullins and Schmid, and it positions the non-necessitarian option against those accounts. It does not claim to provide a new intrinsic account of contingent divine volition, and it does not claim to show that the simplicity thesis is weaker than its defenders take it to be.",
+    "reply_to_strongest_objection": "The referee argues that the Leo analogy equivocates on the truthmaker, that God-alone truthmaking plus necessitation yields collapse, and that the illicit-inference rejoinder fails for a simple being. The paper accepts the first and third points. It drops the Leo analogy and the intrinsic-volition thesis, so the paper no longer requires an intrinsic contingent determination distinct from God. It answers the dilemma by denying its first horn: truthmaker necessitation fails for divine contingent truths. God alone is the minimal truthmaker for 'God chooses W', which preserves c012, but God's existence does not necessitate the truth, because that truth depends on the contingent relatum W. The paper defends this against the ad hoc charge by showing that non-necessitation follows from the relational structure of free choice. Because the contingent factor is not an extrinsic truthmaker either, the second horn is avoided without conceding c013 in its intrinsic form.",
+    "what_changed": "The revision drops the intrinsic-volition and Leo-analogy thesis, which the referee showed is decisive against the original claim, and narrows the paper to defending the rejection of truthmaker necessitation for divine contingent truths as the one principle that preserves both simplicity and the contingency of creation.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:51:47.477870+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The direction has drifted from the objection that stood: it drops the intrinsic-volition thesis that was the actual challenge to c013. Its central claim also makes the truth depend on a contingent relatum while denying that the relatum is any part of the truthmaker, which looks inconsistent or at best merely verbal.",
+        "robustness": "The obvious dilemma is that dependence on W either makes W a partial truthmaker, which concedes c013, or leaves the contingency ungrounded, which is brute and ad hoc. The plan only promises that non-necessitation 'follows from the relational structure of free choice' and never says how, and nothing in the transcript supplies an answer.",
+        "significance": "Even if it succeeded, the result would largely relocate a known move, non-necessitarian or brute-contingency replies to modal collapse, within truthmaker vocabulary, so it would be at most a modest refinement.",
+        "specificity": "There is a definite thesis and a list of interlocutors, but the decisive step (the principled account of non-necessitating truthmaking) is left as a promissory note, and the open questions concern the intrinsic-volition route the paper explicitly abandons."
+      },
+      "strongest_objection": "The proposal is unstable. It says God alone is the minimal truthmaker for 'God chooses W', yet the truth 'depends on the contingent relatum W'. If W's existence partly settles whether the proposition is true, then W is part of what makes it true, and that is exactly c013's extrinsic model under a new label. If W is not part of what makes it true, then nothing in reality accounts for the difference between worlds where the proposition holds and worlds where it fails, and that is brute non-necessitation. Brute non-necessitation abandons the explanatory point of truthmaking (Lewis/Armstrong: truth supervenes on being) and is the familiar 'unexplained contingency' option already worked out by Pruss and by Schmid. So the paper either concedes the challenged premise or restates existing non-necessitarian proposals.",
+      "reply_available": false,
+      "what_it_needs": "It must give a principled account of truthmaking without necessitation. That account has to explain why dependence on W is not partial truthmaking by W, and why truth-supervenes-on-being is not violated, rather than simply asserting that the contingency sits 'in the truth-conditions'. It must also show how this differs from the extrinsic models of Grant and Brower and from the non-necessitarian proposals of Pruss, Tomaszewski and Schmid.",
+      "summary": "As planned this would not survive a competent referee: the core move either collapses back into the extrinsic model it claims to avoid or into a brute non-necessitation already in the literature, and the student needs to settle which before writing anything.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:52:03.760494+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

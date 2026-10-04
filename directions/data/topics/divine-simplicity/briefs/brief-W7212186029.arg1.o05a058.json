@@ -1,0 +1,218 @@
+{
+  "id": "brief-W7212186029.arg1.o05a058",
+  "objection_id": "W7212186029.arg1.o05a058",
+  "research_question": "Can the symmetric parthood formulation of divine simplicity be grounded in a metaphysically respectable account of the God-attribute relation, or does it remain a merely formal stipulation?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Symmetry formulation viable distinct DDS",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c001",
+        "text": "The doctrine of divine simplicity says that God lacks proper parts, but it is also often formulated as identifying God with all his parts.",
+        "quote": "Taken at face value, the doctrine of divine simplicity (DDS) says that God lacks proper parts, but the doctrine is also often formulated as a thesis identifying God with all his parts."
+      },
+      {
+        "id": "W7212186029.c002",
+        "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts.",
+        "quote": "The two formulations are not generally equivalent – on some plausible mereological theories, something can lack proper parts by being a part of all its (possibly distinct) parts."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is defined as non‑symmetric parthood, then the mereological formulation yields the symmetry formulation of the doctrine of divine simplicity.",
+        "quote": "If proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c009",
+        "text": "When antisymmetry is not assumed, the symmetry formulation of divine simplicity is strictly weaker than the identity formulation: lacking distinct parts entails lacking non‑symmetric parts, but not the reverse.",
+        "quote": "Accordingly, DDS under the symmetric formulation is strictly weaker than under the identity formulation: if God lacks distinct parts, he also lacks non-symmetric parts, but not vice versa."
+      },
+      {
+        "id": "W7212186029.c004",
+        "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood.",
+        "quote": "The symmetry formulation is viable as a thesis about God’s relation to his attributes, because instantiation can plausibly be modelled as parthood."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Instantiation can plausibly be modeled as parthood, so the viability premise's antecedent holds."
+    },
+    "conclusion": {
+      "id": "W7212186029.c010",
+      "text": "Thus, within the formal mereological framework, the symmetry formulation provides a viable and distinct way of understanding the doctrine of divine simplicity."
+    },
+    "skeleton": "A & B; C -> ~(A <-> B); D -> (A -> E); ~F -> ((B -> E) & ~(E -> B)); G -> H |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.arg1.r1",
+    "text": "Instantiation, modeled as parthood, holds symmetrically between God and each of his attributes, so that God is part of each attribute as well as each attribute part of God."
+  },
+  "objection": "Consider a fire that instantiates heat. On a mereological model of instantiation, heat is an aspectual part of the fire: it cannot exist apart from it and is a constituent of its state. Yet the fire is not part of the heat; the heat is an effect and dependent feature that does not encompass its source. If God and his attributes are modeled on this schema—God as the fire, his goodness as the warmth—then parthood tracks instantiation downward only. The attribute is part of God, but God is not part of the attribute. The supposed symmetry vanishes.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A distinguished the symmetric model of instantiation from the asymmetric fire-heat model, arguing that the conclusion requires only formal viability and that the symmetry is a feature of the chosen model rather than a metaphysical discovery.",
+      "why_it_failed": "The objector pressed that viability requires metaphysical illumination, not mere formal consistency, and Defender A conceded that the symmetric model is a stipulated choice lacking intuitive support, reducing the argument to a narrowed formal claim."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B rejected the fire-heat analogy as a case of causal, aspectual parthood and proposed that the God-attribute relation is a non-causal, intrinsic grounding relation that yields symmetric mutual parthood.",
+      "why_it_failed": "The exchange did not test whether grounding relations can plausibly be symmetric rather than asymmetric, leaving it open whether this reply supplies the metaphysical motivation the objector demanded or simply relabels the same stipulation."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7162684616.a2",
+      "paper_id": "oa:W7162684616",
+      "title": "God as Intrinsic Formal Cause: A Platonic Response to Aseity-Based Objections",
+      "authors": [
+        "Samuel Walker Bennett"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1515/opphil-2025-0125",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God is the formal cause of the perfection of goodness, making Him a metaphysical part of creatures."
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition",
+      "authors": [
+        "L. J. Anderson"
+      ],
+      "year": 2026,
+      "url": "https://philpapers.org/rec/ANDUOP",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God possesses no intrinsic constituents at all."
+    },
+    {
+      "record_id": "W4229080938.c030",
+      "paper_id": "oa:W4229080938",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity",
+      "authors": [
+        "Jon McGinnis"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.1017/s0034412522000130",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "The relation between the divine self and its attributes is a grounding relation, not a causal relation."
+    },
+    {
+      "record_id": "W1563585053.a1",
+      "paper_id": "oa:W1563585053",
+      "title": "Leibniz on monadic action & divine concurrence",
+      "authors": [
+        "T. Allan Hillman"
+      ],
+      "year": 2008,
+      "url": "https://docs.lib.purdue.edu/dissertations/AAI3344012",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W4235072123.a1",
+      "paper_id": "oa:W4235072123",
+      "title": "Divine Simplicity",
+      "authors": [
+        "Brian Leftow",
+        "The Society of Christian Philosophers"
+      ],
+      "year": 2006,
+      "url": "https://doi.org/10.5840/faithphil200623433",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "W7162684616.a2",
+      "paper_id": "oa:W7162684616",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God is the formal cause of the perfection of goodness, making Him a metaphysical part of creatures.",
+      "title": "God as Intrinsic Formal Cause: A Platonic Response to Aseity-Based Objections"
+    },
+    {
+      "record_id": "abs:oa:W7214508838",
+      "paper_id": "oa:W7214508838",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "God possesses no intrinsic constituents at all.",
+      "title": "Unassembled or Partless? The Meaning of Divine Simplicity in the Christian Tradition"
+    },
+    {
+      "record_id": "W4229080938.c030",
+      "paper_id": "oa:W4229080938",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "The relation between the divine self and its attributes is a grounding relation, not a causal relation.",
+      "title": "Simple is as simple does: Plantinga and Ghazālī on divine simplicity"
+    }
+  ],
+  "open_questions": [
+    "Can a symmetric grounding relation between God and his attributes be given independent metaphysical motivation, or does it remain a formal artifact tailored to block proper parthood?",
+    "Does the retreat to formal consistency alone undermine the philosophical significance of the symmetry formulation as an interpretation of divine simplicity?",
+    "If instantiation is modeled as mutual parthood, what prevents the model from collapsing into an identity formulation or into an asymmetric dependence relation?"
+  ],
+  "paper_direction": "A paper here would argue that the symmetric parthood formulation of divine simplicity survives the fire-heat objection only as a claim of formal consistency, and that its status as a philosophically viable doctrine depends on whether an independent metaphysical account of the God-attribute relation can be provided. The case would trace how the objection exposes the original premise as an undefended stipulation, and would evaluate whether non-causal grounding or intrinsic nature claims can supply the needed symmetry without collapsing into asymmetric dependence. The strongest reply to anticipate is that formal viability is all the conclusion claims, so no further metaphysical motivation is required. The paper would need to show either that this retreat leaves the symmetry formulation too thin to count as an interpretation of divine simplicity, or that a substantive metaphysics of mutual parthood for divine attributes can be developed and defended against standard asymmetric models of instantiation.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 2
+    },
+    "reasons": {
+      "coherence": "The objection is internally consistent, but it is aimed at instantiation in general rather than at the specifically divine symmetry claim, and it conflates causal dependence with instantiation. It also attacks a lab-reconstructed premise that is arguably stronger than what c004 and c010 assert.",
+      "robustness": "A competent referee would dismiss the fire-heat case as irrelevant to a doctrine defined by God's dissimilarity to creatures. The direction's only anticipated reply, that formal viability is all that is claimed, is acknowledged but left unanswered, with no criterion for when a model is 'too thin.'",
+      "significance": "Even if it succeeded, the paper would mostly restate the original formal paper's own modest scope (that symmetry is a formal option needing metaphysical backing), so it would be a minor clarification rather than a shift in how the argument is discussed.",
+      "specificity": "The thesis is disjunctive ('either too thin, or a substantive metaphysics can be developed'), and the only case is the defective fire-heat analogy. There is no named candidate account of symmetric grounding and no plan for adjudicating between the horns."
+    },
+    "strongest_objection": "The fire-heat case is a creaturely composite, and the doctrine of simplicity exists precisely to deny that God relates to his attributes the way creatures relate to theirs. So showing that instantiation-as-parthood is asymmetric in a fire says nothing about the divine case, and the objection either begs the question against the doctrine or targets a generic thesis about instantiation that the argument never asserts. Worse, the objection runs instantiation together with causal dependence (heat as an 'effect' of the fire). And the original conclusion (c010) claims only formal viability and distinctness, so the demand for 'metaphysical illumination' moves the goalposts rather than refuting the premise.",
+    "reply_available": false,
+    "what_it_needs": "The paper must drop the creaturely fire-heat analogy and argue directly about the divine case. That means engaging the existing literature on symmetric or non-well-founded dependence (e.g. Barnes on symmetric dependence, Thompson on metaphysical interdependence) and on accounts of simplicity (Brower's truthmaker account, Bergmann/Brower, Pruss). It must then commit to one horn: either show that such a relation can non-arbitrarily ground mutual parthood between God and his attributes, or give a principled criterion on which a merely formally consistent model fails to count as an interpretation of simplicity.",
+    "summary": "As framed, the paper would not get past a first reader: its central counterexample is a creaturely case that simplicity theorists already reject as a model for God. A real paper might exist in asking whether symmetric dependence can motivate mutual parthood, but this direction has not yet found it.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:17:40.758091+00:00"
+  },
+  "revision": {
+    "research_question": "Can the symmetry formulation of divine simplicity be given a specified, non-causal parthood relation in which God and his attributes are mutual parts without collapsing into identity, and does the lab's premise that instantiation can be modeled as parthood license that symmetry, or must the symmetry be argued for separately?",
+    "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is formally distinct from the identity formulation only under a non-antisymmetric parthood relation, and that the premise linking instantiation-as-parthood to symmetry is not supplied by the modeling claim alone. The paper drops the fire-heat analogy entirely, since it concerns creaturely composites and causal dependence and so does not bear on the divine case. It argues directly about that case in three steps. First, it shows the inference is a gap: the stated premise says only that instantiation can be modeled as parthood, while the challenged premise requires that the relation hold symmetrically between God and each attribute. Second, it sets out a criterion for when the symmetry formulation counts as an interpretation of simplicity rather than a formal option: the mutual parthood must be specified by a relation that is non-antisymmetric, is not grounded in causal or asymmetric dependence, and is motivated by the doctrine's claim that God is not a composite of distinct constituents. Third, it argues that the criterion is not met by the parthood model as stated, because nothing in the model fixes a symmetric relation rather than the asymmetric one that ordinary instantiation displays. The paper therefore commits to one horn: it does not claim that a substantive metaphysics of mutual parthood has been supplied. Its positive result is narrower: the symmetry formulation is consistent and distinct from the identity formulation, and it becomes an interpretation of simplicity only if a non-causal, non-antisymmetric grounding for the divine case is specified. The paper states that specification as an open requirement and does not claim to have met it.",
+    "reply_to_strongest_objection": "The referee is right that the fire-heat case is creaturely and causal, so it cannot refute a divine symmetry claim, and the paper concedes this and removes the case. The paper answers the substantive point differently. The objection is that the original conclusion claims only formal viability, so demanding metaphysical illumination shifts the goalposts. The paper accepts that formal viability is what the conclusion claims, and it states a criterion (non-antisymmetric, non-causal, non-arbitrary mutual parthood) that separates a formal model from an interpretation of simplicity. The reply to the 'too thin' worry is that the line is drawn by this criterion, not by a judgement of richness. The paper then shows that the lab premise supports only asymmetric-compatible modeling, so the symmetry in the challenged premise is an unsupported addition. This is an argument about the premise, not an appeal to the creaturely case.",
+    "what_changed": "The revision drops the creaturely fire-heat analogy, identifies the unsupported step from instantiation-as-parthood to divine symmetry, and narrows the thesis to formal distinctness under a stated non-antisymmetric, non-causal criterion for interpretive viability.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:19:20.149171+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The paper is internally consistent, but it is aimed at a stronger claim than the argument states: it treats symmetry as something the modeling premise must license, when the formulation simply posits it. Its account of 'the objection' also conflates the objector's demand with Defender A's goalpost complaint.",
+        "robustness": "A referee would answer at once that symmetry is the doctrine, not an inference from instantiation. The paper's only defence is a criterion ('non-arbitrary', 'motivated by the doctrine') that is too loose to settle anything and is never applied to a candidate relation.",
+        "significance": "If it succeeded, it would confirm a distinction the source already draws, between formal viability and substantive metaphysics. It explicitly declines the substantive question, so its effect on the debate is minor.",
+        "specificity": "It has a definite thesis and a three-step plan, but the central criterion is vague. The plan contains no case: no candidate symmetric relation is tested and no collapse result is proved."
+      },
+      "strongest_objection": "The 'gap' the paper exposes is not in the argument. In the source argument, symmetry is not inferred from the modeling premise. It is the content of the doctrine under its symmetry formulation (c008): God has no non-symmetric parts. The modeling premise only needs to show that attributes can be treated as parts, so that the doctrine has something to say about them. Viability then requires only that a non-antisymmetric mereology admits the symmetric case, which c002 and c009 already establish. So the paper attacks a lab-reconstructed premise (r1) that the original authors need not hold. Its 'positive result' (consistent and distinct from identity) simply restates c009–c010. And its complaint that 'ordinary instantiation is asymmetric' begs the question against a doctrine whose whole point is that the divine case is not ordinary.",
+      "reply_available": false,
+      "what_it_needs": "It must show that the original argument actually relies on deriving symmetry from instantiation-as-parthood, rather than positing it as the doctrine. Alternatively, it should drop the gap charge and do the real work. That means either supplying or refuting a principled non-antisymmetric parthood relation, such as the symmetric grounding Defender B gestured at, for which the divine God–attribute case is a model, and showing what prevents collapse into the identity formulation.",
+      "summary": "As framed, this mostly restates the source's own formal-viability claim while charging it with a gap it does not have; the real paper lies in the question it leaves open, namely whether any principled symmetric parthood or grounding relation fits the divine case without collapsing into identity.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:19:40.742929+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

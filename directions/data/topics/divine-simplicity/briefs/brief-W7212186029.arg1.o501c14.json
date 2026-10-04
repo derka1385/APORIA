@@ -1,0 +1,208 @@
+{
+  "id": "brief-W7212186029.arg1.o501c14",
+  "objection_id": "W7212186029.arg1.o501c14",
+  "research_question": "Can a mereological model of divine simplicity that treats God and his attributes as mutual parts avoid collapsing God into his attributes while respecting the symmetry formulation?",
+  "argument": {
+    "id": "W7212186029.arg1",
+    "title": "Symmetry formulation viable distinct DDS",
+    "paper_id": "oa:W7212186029",
+    "paper_title": "Divine simplicity as symmetric parthood",
+    "premises": [
+      {
+        "id": "W7212186029.c001",
+        "text": "The doctrine of divine simplicity says that God lacks proper parts, but it is also often formulated as identifying God with all his parts.",
+        "quote": "Taken at face value, the doctrine of divine simplicity (DDS) says that God lacks proper parts, but the doctrine is also often formulated as a thesis identifying God with all his parts."
+      },
+      {
+        "id": "W7212186029.c002",
+        "text": "The two formulations are not generally equivalent because, on some plausible mereological theories, something can lack proper parts by being a part of all its parts.",
+        "quote": "The two formulations are not generally equivalent – on some plausible mereological theories, something can lack proper parts by being a part of all its (possibly distinct) parts."
+      },
+      {
+        "id": "W7212186029.c008",
+        "text": "If proper parthood is defined as non‑symmetric parthood, then the mereological formulation yields the symmetry formulation of the doctrine of divine simplicity.",
+        "quote": "If proper parthood is defined as non-symmetric parthood, then explicating proper parthood in the mereological formulation yields the symmetry formulation of DDS."
+      },
+      {
+        "id": "W7212186029.c009",
+        "text": "When antisymmetry is not assumed, the symmetry formulation of divine simplicity is strictly weaker than the identity formulation: lacking distinct parts entails lacking non‑symmetric parts, but not the reverse.",
+        "quote": "Accordingly, DDS under the symmetric formulation is strictly weaker than under the identity formulation: if God lacks distinct parts, he also lacks non-symmetric parts, but not vice versa."
+      },
+      {
+        "id": "W7212186029.c004",
+        "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood.",
+        "quote": "The symmetry formulation is viable as a thesis about God’s relation to his attributes, because instantiation can plausibly be modelled as parthood."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7212186029.arg1.mp",
+      "text": "Instantiation can plausibly be modeled as parthood, so the viability premise's antecedent holds."
+    },
+    "conclusion": {
+      "id": "W7212186029.c010",
+      "text": "Thus, within the formal mereological framework, the symmetry formulation provides a viable and distinct way of understanding the doctrine of divine simplicity."
+    },
+    "skeleton": "A & B; C -> ~(A <-> B); D -> (A -> E); ~F -> ((B -> E) & ~(E -> B)); G -> H |- H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7212186029.c004",
+    "text": "The symmetry formulation is viable as a thesis about God’s relation to his attributes because instantiation can plausibly be modeled as parthood."
+  },
+  "objection": "Take a case where instantiation is modeled as parthood and see what breaks. Let a red sphere s instantiate redness r and roundness o. Model instantiation as parthood: r and o are parts of s. Now consider a bare particular b that instantiates nothing. Under the model, b has no parts. Consider a second sphere t that is red and round, and let s and t share both properties. Parthood as a relation among concrete things is transitive and, in standard mereologies, supports fusion: the fusion of r and o would be a part of s, and so would any fusion of attributes. But instantiation is not closed under fusion: a fusion of redness and roundness does not instantiate 'being red-and-round' as a single attribute that s bears in the same way. Worse, if s is a part of its own attribute-fusion, the model forces s to have itself as a proper part in a loop whenever an attribute is predicated of the attribute's bearer, violating the asymmetry that the symmetry formulation was meant to preserve. The modeling therefore cannot be both transitive and asymmetric, so the viability premise's antecedent fails in exactly the mereological framework the conclusion relies on.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A proposed that God and each attribute stand in mutual (symmetric) parthood, so that neither is a proper part and God therefore lacks non-symmetric parts.",
+      "why_it_failed": "This escaped the objector's dilemma only by introducing a new premise not found in the original argument, and it incurs the cost of collapsing the distinction between God and his attributes at the level of parts while leaving the necessity worry unresolved."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B replied that the viability claim concerns only God's necessary attributes and that the argument does not endorse unrestricted fusion or symmetric parthood for ordinary objects.",
+      "why_it_failed": "This failed because restricting the scope to necessary attributes does not block the core problem: if properties are non-symmetric parts of their bearers, God's attributes remain non-symmetric parts of God, contradicting the symmetry formulation unless one adopts mutual parthood."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2571599220",
+      "paper_id": "oa:W2571599220",
+      "title": "Properties as Parts of Ordinary Objects",
+      "authors": [
+        "Eric T. Olson"
+      ],
+      "year": 2017,
+      "url": "https://doi.org/10.1093/acprof:oso/9780198715702.003.0004",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The so-called constituent ontology says that the properties of a concrete particular are constituents of it: parts, or something like parts."
+    },
+    {
+      "record_id": "W7214679862.c012",
+      "paper_id": "oa:W7214679862",
+      "title": "Metaphysical symmetry and the modal ontological argument",
+      "authors": [
+        "Kenneth L. Pearce",
+        "Ted Poston"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/s0034412526101905",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "Symmetry Thesis: the main metaphysical motivations for (P1) equally support (P1*)."
+    },
+    {
+      "record_id": "W2594652691.a1",
+      "paper_id": "oa:W2594652691",
+      "title": "Particulars and the Problem of Individuation",
+      "authors": [
+        "Timothy H. Pickavance",
+        "Robert Charles Koons"
+      ],
+      "year": 2017,
+      "url": "https://doi.org/10.1002/9781119116257.ch9",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "According to constituent ontology, properties are literally parts of the substances they characterize."
+    },
+    {
+      "record_id": "W2571599220.a1",
+      "paper_id": "oa:W2571599220",
+      "title": "Properties as Parts of Ordinary Objects",
+      "authors": [
+        "Eric T. Olson"
+      ],
+      "year": 2017,
+      "url": "https://doi.org/10.1093/acprof:oso/9780198715702.003.0004",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.6,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2571599220",
+      "paper_id": "oa:W2571599220",
+      "verdict": "related",
+      "similarity": 0.4,
+      "quote": "The so-called constituent ontology says that the properties of a concrete particular are constituents of it: parts, or something like parts.",
+      "title": "Properties as Parts of Ordinary Objects"
+    },
+    {
+      "record_id": "W7214679862.c012",
+      "paper_id": "oa:W7214679862",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "Symmetry Thesis: the main metaphysical motivations for (P1) equally support (P1*).",
+      "title": "Metaphysical symmetry and the modal ontological argument"
+    },
+    {
+      "record_id": "W2594652691.a1",
+      "paper_id": "oa:W2594652691",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "According to constituent ontology, properties are literally parts of the substances they characterize.",
+      "title": "Particulars and the Problem of Individuation"
+    }
+  ],
+  "open_questions": [
+    "Does mutual parthood between God and his attributes collapse the metaphysical distinction between God and each attribute, and is this collapse compatible with classical theism?",
+    "Can the necessity worry—that necessary properties entail necessary parthood facts—be resolved without making God's attributes exist in all possible worlds exactly as God does?",
+    "Is there an alternative mereology of instantiation that treats properties as parts of bearers without forcing either non-symmetric parthood or mutual parthood?"
+  ],
+  "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity cannot be vindicated by modeling instantiation as standard non-symmetric parthood, because constituent ontology makes God's attributes non-symmetric parts of God, directly contradicting the thesis that God lacks such parts. The case would trace the objector's dilemma that any one-directional parthood relation either makes God the whole of which attributes are parts or else ceases to be parthood in the framework's intended sense, and it would demonstrate that the only viable repair is to adopt mutual parthood between God and his attributes. The strongest reply to anticipate is that mutual parthood preserves the letter of the symmetry formulation by eliminating proper-parthood loops, while restricting the model to God's necessary attributes avoids overgeneralization. What the paper would need to show is that this mutual-parthood repair is not merely a technical fix but a philosophically coherent account of how God relates to his attributes: it must establish that mutual parthood does not collapse God and his attributes into indistinguishable mereological fusions, and it must resolve the necessity worry by explaining how symmetric parthood can hold without making God's attributes modally on a par with God himself.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.0,
+    "scores": {
+      "coherence": 2,
+      "robustness": 1,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection mixes in irrelevant cases (a bare particular, a second sphere), conflates fusion with instantiation, and wrongly attributes an asymmetry commitment to the symmetry formulation, so it does not bear on c004 as stated.",
+      "robustness": "A first competent reader would point out that mutual parthood without identity is exactly what c009 and the symmetry formulation assert, so the paper's central 'repair' and its collapse worry are already answered by the framework it criticizes.",
+      "significance": "Even if successful, the paper would mostly restate the target argument's own commitments, and the genuinely open issues (the cost of rejecting antisymmetry, whether instantiation is parthood) are only gestured at in the open questions.",
+      "specificity": "There is a stated thesis and a list of things to show, but the plan rests on a misreading, and the 'necessity worry' and the collapse criterion are never defined well enough to be argued for."
+    },
+    "strongest_objection": "The paper attacks a position the argument never holds. The symmetry formulation already says that every part of God is a part God is in turn part of, i.e. God and his attributes are mutual parts. So the paper's 'only viable repair' is simply the original thesis, and its main contention (that non-symmetric parthood contradicts the doctrine) is conceded by the argument itself (c008, c009). The objection's charge that the model 'violates the asymmetry the symmetry formulation was meant to preserve' gets the view backwards, since that formulation exists precisely to drop antisymmetry. The collapse worry is already answered formally: once antisymmetry fails, mutual parthood does not entail identity.",
+    "reply_available": false,
+    "what_it_needs": "The paper should drop the strawman and target what is actually contestable. It should argue either that denying antisymmetry (or extensionality) is unprincipled or ad hoc when restricted to God, or that modeling instantiation as parthood fails for reasons specific to the divine case, engaging the existing non-antisymmetric mereology literature (e.g. Cotnoir). It must also state and motivate the 'necessity worry' rather than merely invoke it.",
+    "summary": "Not viable as framed: the proposal mistakes the symmetry formulation for a view about non-symmetric parts and then offers that formulation back as its own repair. A real paper would need to attack the rejection of antisymmetry or the parthood model of instantiation directly.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:17:32.568224+00:00"
+  },
+  "revision": {
+    "research_question": "Can instantiation, restricted to God's necessary attributes, be modeled by a parthood relation that is non-antisymmetric, non-classical in its composition principles, and therefore satisfies the symmetry formulation of divine simplicity without collapsing God into his attributes?",
+    "paper_direction": "A paper here would argue that the symmetry formulation of divine simplicity is not secured by the bare claim that instantiation is parthood, but only by a restricted and specified parthood relation. The paper drops the earlier claim that non-symmetric parthood contradicts the doctrine and instead treats mutual parthood between God and his necessary attributes as the content of the symmetry formulation itself. Its contestable target is premise c004 and its implicit step arg1.mp. The paper will argue in two parts. First, it will show that the transitivity and fusion-closure principles of standard mereology cannot hold for instantiation, because instantiation is not closed under fusion, so the model must give up unrestricted composition. Second, it will argue that the restriction to necessary attributes is principled rather than ad hoc: the only parthood relation that can carry the symmetry formulation is one whose composition principles are limited to the necessary attributes of a single bearer. To make this claim precise, the paper will state the necessity worry as follows. If each necessary attribute of God is a part of God and God is a part of that attribute, then the mutual parthood holds necessarily, which threatens to make the attributes modally on a par with God. The paper will define a collapse criterion, namely that God and an attribute are collapsed when every mereological and modal predicate true of one is true of the other, and will argue that mutual parthood without antisymmetry or extensionality does not meet this criterion because the relevant parthood is not extensional. The paper will also argue that denying antisymmetry for God is an extra commitment that must be justified independently of the doctrine, and it will assess whether such denial can be motivated without circularity. The paper does not claim that instantiation is parthood in general, and it does not defend the symmetry formulation against non-symmetric formulations on grounds of mere consistency.",
+    "reply_to_strongest_objection": "The referee is right that the symmetry formulation already asserts mutual parthood, so the earlier paper attacked a strawman, and the loop objection rests on a misreading of the asymmetry the formulation was meant to preserve. The revised paper accepts this and drops both claims. It answers the referee's real challenge by separating two questions the objection ran together: whether instantiation is closed under fusion, and whether it is parthood at all. The paper grants that the bare-particular and second-sphere cases are irrelevant to God, and it addresses the fusion point directly by restricting the parthood relation to necessary attributes of a single bearer, so no unrestricted fusion is assumed. The collapse worry is answered by the non-extensionality of the relation, and the necessity worry is stated as a defined modal criterion that the paper then argues against. The open issue becomes the cost of denying antisymmetry for God, which the paper treats as the substantive question.",
+    "what_changed": "The paper drops its strawman claim that non-symmetric parthood contradicts divine simplicity, narrows the thesis to a restricted mutual-parthood model of instantiation for necessary attributes, and makes the contestable premise c004 and the necessity worry explicit and defended.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:19:43.699966+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.25,
+      "scores": {
+        "coherence": 2,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "The direction rests on an objection that misdescribes the symmetry formulation, which the revision itself concedes, and it pulls against itself by abandoning transitivity in Part One while relying on a framework whose results (c008, c009) presuppose it.",
+        "robustness": "Non-extensionality is offered as the answer to collapse, but under transitive mutual parthood the defined criterion is met by transitivity alone, so the central defence fails to the first formal check and the transcript offers no alternative.",
+        "significance": "Even if it succeeded, the paper would largely restate the original argument's own non-antisymmetric framework under ad hoc composition restrictions, which is at most a minor refinement of how c004 is stated.",
+        "specificity": "There is a definite target (c004/arg1.mp), a two-part plan and a stated collapse criterion, but the parthood relation itself is never axiomatised, so it is not settled what must be proved."
+      },
+      "strongest_objection": "Mutual parthood plus transitivity makes God and each necessary attribute share every part and every whole, so they satisfy the paper's own collapse criterion whether or not parthood is extensional; and if transitivity is dropped, as Part One proposes, the relation is no longer recognisably parthood. On that horn the symmetry formulation (c008/c009), which is built on a reflexive, transitive, non-antisymmetric parthood, loses its formal basis.",
+      "reply_available": false,
+      "what_it_needs": "The paper must say exactly which parthood axioms survive the restriction, and show that this relation both delivers the symmetry formulation and blocks mereological and modal indiscernibility between God and his attributes. It must also justify restricting composition to the necessary attributes of a single bearer on independent grounds, not merely because that restriction yields the doctrine.",
+      "summary": "Not yet a paper: the key move (non-extensionality blocks collapse) fails against the paper's own criterion, and the restricted relation is too underspecified to tell whether it is still parthood, so a first competent reader would reject it.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:20:03.010433+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

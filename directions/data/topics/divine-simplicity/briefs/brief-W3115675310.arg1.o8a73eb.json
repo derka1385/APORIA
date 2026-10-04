@@ -1,0 +1,213 @@
+{
+  "id": "brief-W3115675310.arg1.o8a73eb",
+  "objection_id": "W3115675310.arg1.o8a73eb",
+  "research_question": "Does the Fregean sense–reference distinction suffice to discharge the explanatory burden posed by the distinct satisfaction conditions and explanatory roles of divine attributes under divine simplicity, or must the doctrine incorporate a substantive semantic theory of divine predication?",
+  "argument": {
+    "id": "W3115675310.arg1",
+    "title": "Reductio against divine simplicity",
+    "paper_id": "oa:W3115675310",
+    "paper_title": "Plantinga and Ash‘arites on Divine Simplicity",
+    "premises": [
+      {
+        "id": "W3115675310.c003",
+        "text": "If divine simplicity is true, then every divine attribute is identical to the divine essence, making all attributes identical with each other.",
+        "quote": "First, if divine simplicity is accepted, then all the divine attributes would be identical with divine essence, and thus divine attributes would be identical to each other."
+      },
+      {
+        "id": "W3115675310.c004",
+        "text": "Consequently, there would be only one divine attribute if all attributes are identical.",
+        "quote": "That is to say, there would be only one attribute if they are identical."
+      },
+      {
+        "id": "W3115675310.c005",
+        "text": "The claim that all attributes are identical is hard to accept because divine attributes like omnipotence, omniscience, and omnibenevolence are multiple.",
+        "quote": "However, this result is not easy to accept given the multiplicity of divine attributes such as omnipotence, omniscience, and omnibenevolence."
+      },
+      {
+        "id": "W3115675310.c006",
+        "text": "Divine simplicity also implies that God is not a personal creator but an abstract object, since properties are abstract objects.",
+        "quote": "Second, via similar reasoning, it can be shown that God is not a personal being who created the universe but an abstract object since properties are abstract objects."
+      }
+    ],
+    "missing_premise": {
+      "id": "W3115675310.arg1.mp",
+      "text": "If divine simplicity is false, it must be rejected."
+    },
+    "conclusion": {
+      "id": "W3115675310.c007",
+      "text": "If these absurd consequences are unacceptable, the doctrine of divine simplicity must be rejected."
+    },
+    "skeleton": "A -> (B & C); C -> D; ~C; A -> (~E & F) |- G -> H",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W3115675310.arg1.r1",
+    "text": "Multiplicity of divine attributes must be ontologically real (differences in being, not only in sense or description), since only real multiplicity makes the attributes' non-identity a datum that simplicity must deny."
+  },
+  "objection": "Consider a community of theologians who independently derive two characterizations of God: one through reflection on divine power (omnipotence), another through reflection on divine knowledge (omniscience). These are genuinely distinct conceptual achievements, reached through different epistemic routes, with different explanatory roles. The theologians can distinguish the concepts, apply them separately, and even wonder whether a single being could satisfy both. Now suppose divine simplicity is true and the attributes are ontologically identical. The conceptual multiplicity remains a real datum: the two concepts are not interchangeable, and the fact that both apply to the same being is non-trivial and demands explanation. Yet this multiplicity is not ontological—there is no difference in being between the attributes. The distinctness lies in sense and cognitive role, not in reality. The premise claims only ontological multiplicity yields a datum simplicity must address, but here conceptual multiplicity itself constitutes a datum requiring account, even with no ontological difference.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Defender A appealed to the Fregean sense–reference distinction to argue that conceptual multiplicity is merely a difference in sense that simplicity can absorb, leaving the ontological restriction in the challenged premise intact because only non-identity in being collides with simplicity.",
+      "why_it_failed": "The objector noted that omnipotence and omniscience predicate different things rather than merely presenting one property differently, so the Fregean model presupposes what the simplicity theorist needs to prove; Defender A conceded that the argument as stated does not cover the stronger charge and that an explicit semantic premise would be required to block it."
+    },
+    {
+      "defender": "Defender B",
+      "response": "Defender B argued that divine simplicity is an ontological thesis that can swallow conceptual multiplicity whole by treating distinct attributes as different senses of one simple referent, so only ontological multiplicity generates a genuine conflict with simplicity.",
+      "why_it_failed": "The objector pressed that distinct explanatory roles cannot be discharged by sense–reference alone, and Defender B conceded that the ontological restriction was too narrow, acknowledging that irreducibly distinct satisfaction conditions and explanatory roles constitute a datum that simplicity must accommodate beyond mere nominal difference."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "W7172336769.c036",
+      "paper_id": "oa:W7172336769",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+      "authors": [
+        "Maikki Aakko"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1017/nbf.2026.10161",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "so multiple attributes are merely different senses of the same object, compatible with divine simplicity."
+    },
+    {
+      "record_id": "abs:oa:W7164743942",
+      "paper_id": "oa:W7164743942",
+      "title": "Divine Simplicity: A New Assessment",
+      "authors": [
+        "Seyyed Jaaber Mousavirad"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.22091/jptr.2026.13037.3307",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "the discussion highlights that analytical plurality–comprising existence and quiddity–can still exist."
+    },
+    {
+      "record_id": "W2972751537.a1",
+      "paper_id": "oa:W2972751537",
+      "title": "The Divine Simplicity in al-Fārābī",
+      "authors": [
+        "Abdussamet Özkan"
+      ],
+      "year": 2016,
+      "url": "http://dergipark.gov.tr/mizan/issue/32685/364237",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "Al‑Fārābī holds that God’s essence is free from any ontological and semantic distinction or multiplicity."
+    },
+    {
+      "record_id": "W7119078330.a1",
+      "paper_id": "oa:W7119078330",
+      "title": "DIALEKTIKA SIFAT DAN MAHIYAH TUHAN: Analisis Tahafut At-Tahafut Karya Ibnu Rusyd",
+      "authors": [
+        "Afandi Nur Aziz Thohari"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.19109/el-fikr.v6i2.33425",
+      "verdict": "cited_in_trial"
+    },
+    {
+      "record_id": "W7107962549.a1",
+      "paper_id": "oa:W7107962549",
+      "title": "Divine Simplicity and the Limits of Metaphysical Explanation: A Medieval Critique",
+      "authors": [
+        "Revista, Zen",
+        "PHILOSOPHY, 10"
+      ],
+      "year": 2025,
+      "url": "https://doi.org/10.5281/zenodo.17758512",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.5,
+  "records_searched": 3282,
+  "nearest": [
+    {
+      "record_id": "W7172336769.c036",
+      "paper_id": "oa:W7172336769",
+      "verdict": "related",
+      "similarity": 0.5,
+      "quote": "so multiple attributes are merely different senses of the same object, compatible with divine simplicity.",
+      "title": "Divine Simplicity and Analogy: Clarifying Some Conundrums"
+    },
+    {
+      "record_id": "abs:oa:W7164743942",
+      "paper_id": "oa:W7164743942",
+      "verdict": "related",
+      "similarity": 0.45,
+      "quote": "the discussion highlights that analytical plurality–comprising existence and quiddity–can still exist.",
+      "title": "Divine Simplicity: A New Assessment"
+    },
+    {
+      "record_id": "W2972751537.a1",
+      "paper_id": "oa:W2972751537",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "Al‑Fārābī holds that God’s essence is free from any ontological and semantic distinction or multiplicity.",
+      "title": "The Divine Simplicity in al-Fārābī"
+    }
+  ],
+  "open_questions": [
+    "Can a semantics of divine predication be developed that explains how one simple reality satisfies the heterogeneous conditions associated with distinct divine attributes without tacitly reintroducing ontological complexity?",
+    "Is the Fregean sense–reference distinction applicable to divine attributes when those attributes carry irreducibly distinct explanatory commitments rather than functioning as mere alternative modes of presentation?",
+    "Does admitting conceptual multiplicity with distinct satisfaction conditions as a datum that simplicity must accommodate undermine the ontological purity of divine simplicity, or can the two be cleanly separated?"
+  ],
+  "paper_direction": "A paper here would argue that the reductio against divine simplicity from the multiplicity of divine attributes requires a premise establishing that the distinct satisfaction conditions and explanatory roles of attributes such as omnipotence and omniscience cannot be discharged by the Fregean sense–reference distinction alone. The case would proceed by showing that treating conceptual multiplicity as a mere difference in sense presupposes rather than proves that one simple reality can satisfy heterogeneous conditions, and that the objector’s scenario of theologians deriving attributes through independent epistemic routes generates a genuine datum—distinct explanatory commitments—that simplicity must accommodate. The strongest reply to anticipate is the Fregean maneuver itself, namely that conceptual difference never entails ontological difference and that sense–reference successfully explains co-reference without ontological cost. To succeed, the paper would need to show either that the sense–reference model cannot be extended to predicates with distinct satisfaction conditions without tacitly reintroducing complexity, or that the defender of simplicity must offer a positive semantic theory of divine predication that independently justifies why heterogeneous explanatory roles do not entail distinct properties in the divine essence.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection shows that conceptual multiplicity needs explaining, but the premise says only ontological multiplicity is something simplicity must deny, so the objection misses the premise as stated and largely agrees with it.",
+      "robustness": "A competent referee would reply that simplicity theorists already accept conceptual multiplicity and have developed truthmaker and analogy accounts of divine predication, and nothing in the direction or transcript engages these.",
+      "significance": "Even if it succeeded, demanding a positive semantics of divine predication restates the long-recognized post-Plantinga dialectic rather than shifting it.",
+      "specificity": "It has a recognizable thesis and names the reply to anticipate, but its case is a thin thought experiment, and it has no plan for which semantic theories to test or how the 'tacit complexity' charge would be established."
+    },
+    "strongest_objection": "The objection and paper equivocate between a datum that needs explaining and a datum that simplicity must deny. The challenged premise concerns only the latter, and conceptual multiplicity of senses is exactly what simplicity theorists (Aquinas, Stump–Kretzmann, the Ash'arite and Farabian traditions) affirm, so it is no counterexample. The paper's real question, how one simple reality satisfies heterogeneous predicates, is already the central debate after Plantinga. Brower's and Bergmann–Brower's truthmaker account answers it explicitly without Fregean senses of properties, and Plantinga's own Venus-style rejoinder to Mann already argues that property terms do not work like Fregean names.",
+    "reply_available": false,
+    "what_it_needs": "The paper must restate the target as a claim about truthmakers or grounds for distinct predications, not about 'data simplicity must deny.' It must then argue against the strongest existing positive accounts (Brower's truthmaker view, Thomistic analogy, Ash'arite sifat that are 'neither identical nor other') rather than against a bare Fregean maneuver that no serious defender relies on alone.",
+    "summary": "As framed, this misreads the premise and reinvents a well-trodden debate; it could only become a paper by directly confronting the truthmaker and analogy accounts of divine predication.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T12:16:43.843322+00:00"
+  },
+  "revision": {
+    "research_question": "Given divine simplicity, what must ground the truth of distinct predications such as 'God is omnipotent' and 'God is omniscient' when they are not grounded in ontologically distinct properties, and do the existing positive accounts (Brower's truthmaker view, Thomistic analogy, and the Ash'arite claim that attributes are neither identical with nor other than the essence) supply that ground?",
+    "paper_direction": "A paper here would argue that the reductio of divine simplicity from the multiplicity of divine attributes should be restated as a demand on truthmakers or grounds for distinct predications, not as a demand that simplicity deny conceptual or explanatory data. The premise that ontological multiplicity must be real is retained only in the form the referee accepts: simplicity must deny ontological difference among the attributes. What the objector's scenario shows is that distinct true predications require something in the divine reality to make them true. The paper would test three positive accounts against that demand: Brower's truthmaker account, the Thomistic doctrine of analogical predication, and the Ash'arite sifat formula. For each account it would ask whether the truthmaker for 'God is omnipotent' and the truthmaker for 'God is omniscient' can be distinct items in the divine reality without reintroducing ontological composition, and whether the account can state that difference without appeal to a distinct property. The Fregean sense-reference distinction is no longer the target. It figures only as a secondary consideration, showing why conceptual multiplicity alone does not settle the truthmaker question. The paper would conclude by identifying which account, if any, meets the grounding demand without tacit complexity, and what that verdict implies for the reductio.",
+    "reply_to_strongest_objection": "The paper accepts the referee's point that conceptual multiplicity is affirmed by simplicity theorists and is not a counterexample to the premise as stated. It drops the claim that conceptual multiplicity is a datum simplicity must deny. It separates two demands: a datum simplicity must deny (ontological difference among attributes) and a datum simplicity must explain (what makes distinct predications true of one reality). The paper's thesis concerns only the second. It moves the target from the bare Fregean maneuver to the truthmaker and analogy accounts that serious defenders actually use, and it tests those accounts against the grounding demand. This engages the post-Plantinga dialectic directly rather than restating it.",
+    "what_changed": "The revision narrows the thesis from a claim that the Fregean sense-reference distinction is insufficient to a claim about the grounding of distinct predications, tested against the truthmaker, analogy, and sifat accounts that defenders of simplicity actually offer.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T12:18:00.216137+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.75,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 4
+      },
+      "reasons": {
+        "coherence": "The original objection misses the premise, because conceptual multiplicity is a datum simplicity must explain, not deny. The direction concedes this and re-aims coherently, but now at a different claim (a grounding demand) rather than at the challenged premise or the reductio as stated.",
+        "robustness": "The decisive test (can the truthmakers be distinct without composition?) presupposes the very principle Brower's account rejects, and neither the direction nor the transcript argues for that principle.",
+        "significance": "The truthmaker restatement of the multiplicity objection is already the post-Plantinga standard, so the paper would mainly be a comparative assessment, with modest novelty in bringing the Ash'arite sifat formula into the analytic framework.",
+        "specificity": "It has a definite reframing, three named accounts and a stated test, but the criterion for 'tacit complexity' and for when truthmakers count as distinct is left undefined, and that criterion is what the verdict depends on."
+      },
+      "strongest_objection": "The grounding demand is not new and, as framed, begs the question against its main target. Brower (2008) and Bergmann & Brower already recast Plantinga's reductio as a truthmaker question, and Brower's central move is that one simple truthmaker (God) can make true many distinct predications, just as Socrates alone may make true both 'Socrates exists' and 'Socrates is human'. So testing whether the truthmakers for 'God is omnipotent' and 'God is omniscient' can be 'distinct items in the divine reality' assumes that distinct predications need distinct truthmakers, which is exactly what simplicity theorists deny. Pruss, Mullins and Schmitt have already pressed the non-question-begging version of the worry.",
+      "reply_available": false,
+      "what_it_needs": "It must give an independent argument that the heterogeneous satisfaction conditions of divine predicates require differentiated truthmakers, rather than assuming truthmaker multiplicity tracks predicate multiplicity. It must also locate a contribution beyond Brower, Pruss and Mullins, most plausibly by showing how the Ash'arite 'neither identical nor other' formula fares on a precisely stated grounding criterion.",
+      "summary": "A competent and writable comparative paper, but its central test begs the question against Brower and its main reframing is already in the literature, so it needs an argued criterion for differentiated grounding before it amounts to more than a survey.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T12:18:17.817864+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}

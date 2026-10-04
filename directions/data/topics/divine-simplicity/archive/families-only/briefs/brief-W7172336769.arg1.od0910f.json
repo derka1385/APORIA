@@ -1,0 +1,207 @@
+{
+  "id": "brief-W7172336769.arg1.od0910f",
+  "objection_id": "W7172336769.arg1.od0910f",
+  "research_question": "Does the Thomistic via negativa combined with the doctrine of eminence supply sufficiently determinate positive content for analogical divine predicates, or does the res significata remain a merely negatively defined placeholder that cannot ground meaningful theological practice?",
+  "argument": {
+    "id": "W7172336769.arg1",
+    "title": "Analogy grounds determinate theological language",
+    "paper_id": "oa:W7172336769",
+    "paper_title": "Divine Simplicity and Analogy: Clarifying Some Conundrums",
+    "premises": [
+      {
+        "id": "W7172336769.c003",
+        "text": "The author employs modern analytic philosophy, specifically selected Fregean distinctions, to show how the criticisms of divine simplicity can be defused.",
+        "quote": "In this paper, I employ the resources of modern analytic philosophy – specifically, selected Fregean distinctions – to demonstrate how these critiques can be defused."
+      },
+      {
+        "id": "W7172336769.c009",
+        "text": "To address the critics’ underlying concerns, Fregean diagnostics must be located within the broader semantic‑metaphysical framework of the doctrine of analogy.",
+        "quote": "I argue that in order to address these underlying concerns of the critics of simplicity, Fregean diagnostics must be located in the broader semantic‑metaphysical framework provided by the doctrine of analogy."
+      },
+      {
+        "id": "W7172336769.c010",
+        "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates.",
+        "quote": "It is this framework that introduces a crucial further distinction that Fregean diagnostics do not give us – namely, the distinction between res significata and modus significandi – and thereby provides the resources needed to ground the meaning of theological predicates."
+      },
+      {
+        "id": "W7172336769.c025",
+        "text": "Analogical semantics supplies principled constraints on admissible divine predications, allowing ‘God is good’ while excluding ‘God is evil’ or ‘God is a chair’.",
+        "quote": "Analogical semantics also supplies principled constraints on admissible divine predications that are grounded in participation and eminence (i.e., it explains why ‘God is good’ is eligible for intrinsic predication while ‘God is evil’ or ‘God is a chair’ is not)."
+      },
+      {
+        "id": "W7172336769.c042",
+        "text": "The Thomistic doctrine of analogy can provide principled constraints and sufficiently determinate content for divine predicates, thereby answering residual worries about meaning.",
+        "quote": "Our aim in this section is not to rehearse a generic version of the Thomistic doctrine of analogy but to demonstrate how this doctrine can answer the residual worries about meaning from Section 3 by providing principled constraints and sufficiently determinate content for divine predicates."
+      }
+    ],
+    "missing_premise": {
+      "id": "W7172336769.arg1.mp",
+      "text": "If the Thomistic doctrine of analogy supplies sufficiently determinate content and principled constraints for divine predicates, then theological language is determinate enough for meaning and practice while semantic openness is left intact, so the determinacy it supplies is what answers the worries about meaning."
+    },
+    "conclusion": {
+      "id": "W7172336769.c005",
+      "text": "The Thomistic doctrine of analogy does not eliminate semantic openness but makes theological language sufficiently determinate for meaning and practice, grounding meaningful God‑talk in metaphysics and religious practice."
+    },
+    "skeleton": "A; B; C; D; E |- F",
+    "valid": false
+  },
+  "challenged_premise": {
+    "id": "W7172336769.c010",
+    "text": "The analogical framework introduces a further distinction between res significata and modus significandi, providing the resources needed to ground the meaning of theological predicates."
+  },
+  "objection": "A parish priest, Father Maren, must preach on 'God is one.' He applies the res/modus distinction: the modus significandi ('X is one') is identical in 'God is one' and 'a rowing team is one'; the res significata differs (divine oneness vs. team unity). He now asks what divine oneness consists in—simplicity, absence of composition, unity of attributes? The distinction tells him only that the res differs from team unity. It labels a gap. It offers no criterion for filling the res significata slot with determinate content. Maren cannot move from 'God is one, differently from a team is one' to any positive account of what divine oneness is. The modus is fixed; the res remains a placeholder the framework itself cannot populate. Without a fill, no predicate is grounded; only its indeterminacy is named. The distinction sorts predicates into 'divine' and 'human' slots but supplies nothing that makes the divine slot meaningful rather than merely labeled.",
+  "strongest_responses": [
+    {
+      "defender": "Defender A",
+      "response": "Aquinas fills the res significata not by definition but by denial-and-eminence moves and the via negativa, allowing Father Maren to assert that God is not divided into parts, not a composite, and is the source of creaturely unity, and proposed a revised premise that the framework supplies determinate positive content sufficient for practice though not a complete specification.",
+      "why_it_failed": "The objector showed that exclusion and eminence merely narrow the placeholder without specifying whether divine oneness is simplicity, absence of composition, or unity of attributes, and Defender A conceded that the argument establishes only partial content, leaving unresolved whether that weaker standard satisfies the original claim about meaningful practice."
+    },
+    {
+      "defender": "Defender B",
+      "response": "The res/modus distinction is a necessary formal tool within the broader analogical framework, and the determinate content of the res significata is supplied by the doctrine of analogy as a whole together with the fixed referent of 'God', giving Father Maren genuinely constrained, semantically open content.",
+      "why_it_failed": "This relocated the determinacy work to the broader metaphysical context, but the objector's underlying gap persisted because the framework still appears to specify the res significata primarily through negation and relational attribution, leaving open whether the divine slot is positively filled or merely a negatively constrained placeholder."
+    }
+  ],
+  "closest_literature": [
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?",
+      "authors": [
+        "Alan Philip Darley"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1111/heyj.12321",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "One fundamental question raised by Aquinas' treatment of analogy I address in this paper is whether analogy is primarily a grammatical or a metaphysical doctrine."
+    },
+    {
+      "record_id": "W4206101892.a2",
+      "paper_id": "oa:W4206101892",
+      "title": "Triplex Via and the ‘Gap Problem’ with Cosmological Arguments",
+      "authors": [
+        "Clemente Huneeus Alliende"
+      ],
+      "year": 2022,
+      "url": "https://doi.org/10.1111/nbfr.12727",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Fixing the referent for the word ‘God’ allows the philosopher to provide an intelligible account of divinity."
+    },
+    {
+      "record_id": "abs:oa:W7168046224",
+      "paper_id": "oa:W7168046224",
+      "title": "Unity in Divine Complexity",
+      "authors": [
+        "Ramon Harvey"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.14428/thl.v10i1.85363",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": ""
+    },
+    {
+      "record_id": "W4399543962.a1",
+      "paper_id": "oa:W4399543962",
+      "title": "Dominus Deus Noster Deus Unus Est : Aquinas on Divine Unity",
+      "authors": [
+        "Rowan Williams"
+      ],
+      "year": 2024,
+      "url": "https://doi.org/10.1353/nov.2024.a929372",
+      "verdict": "cited_in_trial"
+    }
+  ],
+  "novelty": 0.65,
+  "records_searched": 3292,
+  "nearest": [
+    {
+      "record_id": "abs:oa:W2334031757",
+      "paper_id": "oa:W2334031757",
+      "verdict": "related",
+      "similarity": 0.35,
+      "quote": "One fundamental question raised by Aquinas' treatment of analogy I address in this paper is whether analogy is primarily a grammatical or a metaphysical doctrine.",
+      "title": "Predication or Participation? What is the Nature of Aquinas’ Doctrine of Analogy?"
+    },
+    {
+      "record_id": "W4206101892.a2",
+      "paper_id": "oa:W4206101892",
+      "verdict": "related",
+      "similarity": 0.3,
+      "quote": "Fixing the referent for the word ‘God’ allows the philosopher to provide an intelligible account of divinity.",
+      "title": "Triplex Via and the ‘Gap Problem’ with Cosmological Arguments"
+    },
+    {
+      "record_id": "abs:oa:W7168046224",
+      "paper_id": "oa:W7168046224",
+      "verdict": "different",
+      "similarity": 0.2,
+      "quote": "",
+      "title": "Unity in Divine Complexity"
+    }
+  ],
+  "open_questions": [
+    "Does the via negativa combined with the doctrine of eminence yield genuinely positive content for the res significata, or does it merely produce a narrower, negatively defined placeholder?",
+    "Is the standard of 'sufficiently determinate for meaning and practice' satisfied by partial, negatively constrained content, or does it require a more robust positive specification that the analogical framework cannot provide?",
+    "Can the fixed referent of 'God' supply determinate content to the res significata independently of a complete theory of analogy, or does it presuppose the very determinacy that is in question?",
+    "What additional semantic or metaphysical machinery is required to bridge the gap between exclusionary negation and positive predication in analogical God-talk?"
+  ],
+  "paper_direction": "A paper here would argue that the Thomistic doctrine of analogy cannot discharge the determinacy requirement for meaningful theological predication if the res significata is populated solely by the via negativa and eminence, because exclusion and relative attribution produce only a negatively constrained placeholder rather than positive content adequate for a speaker to know what is being affirmed. The case would develop the 'Maren' scenario to show that sorting predicates into divine and creaturely slots does not by itself yield determinate meaning, and would scrutinize whether the broader analogical framework—including the fixed referent of 'God' and principled constraints on predication—can supply the missing positive content. The strongest reply to anticipate is that Aquinas's own practice treats negation and eminence as yielding sufficient partial content for preaching and worship, and that meaning does not require complete specification. To succeed, the paper would need to show that this reply equivocates between two standards of determinacy: excluding candidate contents versus providing a positively specifiable account of the divine attribute, and to establish that the weaker standard is insufficient for the argument's conclusion that theological language is determinate enough for meaning and practice.",
+  "outcome": "revision_required",
+  "assessment": {
+    "grade": "not yet defensible",
+    "overall": 2.25,
+    "scores": {
+      "coherence": 2,
+      "robustness": 2,
+      "significance": 2,
+      "specificity": 3
+    },
+    "reasons": {
+      "coherence": "The objection swaps the roles of res significata and modus significandi, so it bears on a misreading of c010 rather than on the premise as stated; its later shift to 'determinacy for practice' also aims at c042/c005 rather than c010.",
+      "robustness": "Correcting the res/modus assignment dissolves the core case, and neither the direction nor the defenders (who also missed the inversion) offer a version that survives the correction or the 'that-it-is versus what-it-is' reply.",
+      "significance": "Even if repaired, the thesis that negation plus eminence yields only a constrained placeholder is a well-worn apophaticism-versus-determinacy point (Alston, Ross, Rocca, Turner, Hughes), so success would add at most a minor refinement.",
+      "specificity": "There is a definite thesis, a case and a named equivocation to expose, but the plan does not specify the positive determinacy standard, how it would be argued for, or how the strong-versus-weak standard bears on c010 in particular."
+    },
+    "strongest_objection": "The Maren case inverts the res/modus distinction it attacks. For Aquinas (ST I.13.3, 13.6), the res significata is the perfection itself (goodness, oneness): it is known from creatures, positively affirmed, and belongs to God per prius. The modus significandi is the creaturely, concrete or composite way of signifying, and it is what gets denied. So the objection's claim that the modus is 'identical' while the res is a 'placeholder' targets a doctrine Aquinas does not hold. Its demand for a positive account of what divine oneness consists in is also a demand for quidditative knowledge (quid est), which Aquinas explicitly disclaims and never claims the distinction provides. 'One' is the worst example the paper could pick: Aquinas defines it as undivided being (ST I.11.1), so negation is the content, not a gap in it.",
+    "reply_available": false,
+    "what_it_needs": "The paper must first state the res/modus distinction correctly and then locate a genuine determinacy gap in the actual view: for example, whether the res abstracted from creaturely instances retains any determinate content once every creaturely mode is removed, as pressed against Rocca, Burrell and Turner. It must also say precisely which standard of determinacy 'meaning and practice' requires, without simply demanding quidditative knowledge.",
+    "summary": "As written this would be rejected by the first Thomist reader because it gets the res/modus distinction backwards; there may be a paper on whether abstracted perfection-terms retain determinate content, but it would have to be rebuilt from the correct doctrine and engage the existing apophatic-analogy literature.",
+    "model": "anthropic:opus",
+    "assessed_at": "2026-10-04T11:50:34.837289+00:00"
+  },
+  "revision": {
+    "research_question": "On the correct assignment of res significata (the perfection, positively affirmed per prius) and modus significandi (the creaturely, composite mode, denied of God), does the res abstracted from every creaturely mode retain determinate content? If so, what standard of determinacy does meaning and practice require short of quidditative knowledge?",
+    "paper_direction": "A paper here would argue that the res/modus distinction, correctly assigned, does not by itself settle whether the res has determinate content. The res is the perfection itself, known from creatures and affirmed of God per prius, so the distinction does not leave it as a placeholder. The live question is whether that perfection, once every creaturely mode is removed, still discriminates one candidate content from another. The paper narrows its thesis to this residue. It argues that meaning requires a discriminating standard: a predicate must fix which perfection is affirmed and which contrary it excludes, so that a speaker can grasp what is affirmed without grasping what it is (the that-it-is versus what-it-is distinction). It tests this standard on 'God is good', where the contrary is creaturely evil and the perfection is determinate through its contrary, and on 'God is one', where, following ST I.11.1, negation is the content. The paper claims the second case is where the gap bites: exclusion fixes the content of 'one' only if the excluded contrary (division) is itself determinate. The paper argues that the analogical framework, with its fixed referent and principled constraints on predication, supplies enough to make the contrary determinate in the first case and in the second only partly, and it leaves the residual indeterminacy of the second case explicit rather than resolved.",
+    "reply_to_strongest_objection": "The paper accepts the referee's correction. The res is the perfection and the modus is the creaturely mode, so the Maren framing is dropped. The paper keeps the referee's demand that the gap be located in the actual view, and it locates it in the abstracted res: whether the perfection retains determinate content once creaturely modes are removed. It answers the quid est charge by distinguishing knowing that a perfection is affirmed, and which contrary it excludes, from knowing what it is. The first is the standard meaning and practice require, and the paper argues it is met for 'good' through its contrary and only partly for 'one', where the claim is limited to exclusion of division. This also meets the significance concern: the claim is not general apophaticism versus determinacy but a specific test of whether the res/modus distinction discriminates between predicates.",
+    "what_changed": "The revision corrects the res/modus assignment, drops the Maren 'placeholder' framing, and narrows the thesis to whether the abstracted res retains determinate content under an explicit discriminating standard of determinacy, tested on 'good' and 'one'.",
+    "narrowed": true,
+    "model": "anthropic:sonnet",
+    "revised_at": "2026-10-04T11:52:26.935080+00:00",
+    "assessment": {
+      "grade": "not yet defensible",
+      "overall": 2.5,
+      "scores": {
+        "coherence": 3,
+        "robustness": 2,
+        "significance": 2,
+        "specificity": 3
+      },
+      "reasons": {
+        "coherence": "Dropping the misassigned Maren framing makes the direction internally consistent and aimed at c010. However, its contrary-based standard of meaning sits awkwardly with the Thomistic positive-predication view that c010 presupposes, so the aim is loose.",
+        "robustness": "Neither the direction nor the transcript anticipates the reply that 'one' is merely negative by Aquinas's own design and that good is not determined by its privation, and both points undercut the paper's central contrast.",
+        "significance": "Even if it succeeded, the result (good is determinate, one only partly so, under a standard Thomists reject) would be a minor and largely expected refinement, not a change in how the analogy defense is discussed.",
+        "specificity": "There is a definite question, a stated standard, two test cases and a textual anchor. But the conclusion is hedged ('only partly') and the standard is asserted rather than motivated, so the plan stops short of what must actually be shown."
+      },
+      "strongest_objection": "The proposed test cases misfire against Aquinas's own view. 'One' is the transcendental unum, which by ST I.11.1 adds to being only the negation of division. Its content is therefore being plus a fully determinate negation (being undivided in itself). Finding 'God is one' only 'partly' determinate is either no news or a misreading. Making 'good' determinate 'through its contrary' inverts Aquinas's order of explanation: evil is a privation of good, so good is prior. That order is also why ST I.13.2 rejects Maimonides' purely negative or causal reading of perfection terms. The paper's discriminating-contrary standard is thus an apophatic standard that Thomists explicitly refuse. And the 'candidates' it says must be discriminated (simplicity, absence of composition, unity of attributes) coincide under divine simplicity, so there is no indeterminacy to resolve.",
+      "reply_available": false,
+      "what_it_needs": "It must replace the contrary-exclusion standard with one that engages Aquinas's claim that perfection terms signify the divine substance positively, though imperfectly (ST I.13.2–5). It must then show, for a pure perfection such as 'wise' or 'good' rather than the transcendental 'one', that the res abstracted from every creaturely mode fails to discriminate between rival contents, engaging the actual analogy literature (e.g., Burrell, Te Velde, Rocca, Ross).",
+      "summary": "The corrected framing is an improvement, but the chosen standard and test cases misread Aquinas on transcendental unity and privation, so the paper as planned would be dismissed by a competent Thomist reader unless it is rebuilt around positive perfection terms.",
+      "model": "anthropic:opus",
+      "assessed_at": "2026-10-04T11:52:46.835646+00:00"
+    }
+  },
+  "disclaimer": "Further human review required."
+}
