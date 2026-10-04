@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APORIA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="nebula"></canvas>
+
+<section id="landing">
+  <p class="eyebrow">APORIA · cognitive differentiation laboratory</p>
+  <h1>What should we investigate?</h1>
+  <form id="ask">
+    <textarea id="question" rows="2" spellcheck="false">Is personal identity dependent on psychological continuity?</textarea>
+    <div class="controls">
+      <label>Condition
+        <select id="condition">
+          <option value="architecture" selected>Cognitive architecture</option>
+          <option value="prompt">Prompt persona</option>
+          <option value="model">Model variants</option>
+          <option value="base">Base (identical)</option>
+        </select>
+      </label>
+      <label>Δ <output id="dval">0.6</output>
+        <input id="delta" type="range" min="0" max="1" step="0.1" value="0.6">
+      </label>
+      <label class="check"><input id="sweep" type="checkbox"> Sweep Δ 0 · .3 · .6 · 1</label>
+      <label class="check" title="half the step budget: less heat, rougher results"><input id="quick" type="checkbox" checked> Quick</label>
+      <label>Memory
+        <select id="memory">
+          <option value="readwrite" selected>read + write</option>
+          <option value="read">read only</option>
+          <option value="off">off (independent run)</option>
+        </select>
+      </label>
+    </div>
+    <button type="submit">START RESEARCH</button>
+  </form>
+  <p class="note"><span id="modelnote"></span> · <a href="#" id="past">experiment log</a></p>
+</section>
+
+<section id="lab" hidden>
+  <header class="bar">
+    <div>
+      <p class="eyebrow" id="runinfo"></p>
+      <h2 id="qtitle"></h2>
+    </div>
+    <button id="again" class="ghost">New question</button>
+  </header>
+  <div class="stage" id="stage">
+    <div id="labels"></div>
+    <div id="legend"></div>
+  </div>
+  <div id="verdict" class="verdict" hidden></div>
+  <div id="agents" class="agents"></div>
+  <section class="panel" id="metrics" hidden>
+    <h3>Δ measurements</h3>
+    <div id="mgrid" class="mgrid"></div>
+    <div id="pairs"></div>
+    <div id="sweepchart"></div>
+  </section>
+  <section class="panel" id="history">
+    <h3>Experiment log</h3>
+    <p class="hint">Every finished run, so conditions can be compared at the same Δ.</p>
+    <div id="runs"></div>
+  </section>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

@@ -46,11 +46,22 @@ def _post(path: str, body: dict, timeout=180) -> dict:
         return json.loads(r.read())
 
 
+def alive(timeout=5) -> bool:
+    """Does the LLM endpoint answer? A batch must not record runs against a dead endpoint (or a dropped tunnel)."""
+    try:
+        urllib.request.urlopen(OLLAMA + "/api/tags", timeout=timeout).close()
+        return True
+    except OSError:
+        return False
+
+
 def llm_json(system: str, user: str, policy: dict, model: str, seed: int) -> dict:
     body = {"model": model, "stream": False, "format": "json", "keep_alive": "2m",
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "options": {"temperature": policy["llm_temp"], "top_p": policy["top_p"], "seed": seed,
                         "num_predict": 500, "num_ctx": 4096}}
+    if model.startswith("qwen3"):
+        body["think"] = False  # hybrid thinking models: answer directly, the architecture does the deliberation
     for attempt in range(4):
         try:
             out = json.loads(_post("/api/chat", body)["message"]["content"])

@@ -66,6 +66,12 @@ def _unique(per_agent: dict[str, list[str]]) -> dict[str, list[str]]:
     return out
 
 
+def failed(agents: dict[str, dict]) -> list[str]:
+    """Reasoners that did not actually reason: most LLM calls came back empty, or the run died on an error."""
+    return [a for a, s in agents.items()
+            if s.get("failed_calls", 0) > max(1, len(s["history"]) // 2) or (s.get("conclusion") or {}).get("error")]
+
+
 def process(s: dict) -> dict:
     """Per-reasoner research-process measures."""
     hyps = [n for n in s["nodes"] if n["type"] == "hypothesis"]

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "task_name": "aporia-synthesizer-memory",
+  "description": "APORIA MEMORY operation, as run by the synthesizer profile. Given a philosophical claim and a retrieved literature entry, extract the evidence or established position it provides and whether it supports or undermines the claim.",
+  "input_format": "A philosophical question and the claim under examination, plus one retrieved literature entry.",
+  "output_format": "One JSON object: {\"evidence\": [{\"text\": str, \"source\": source id, \"supports\": true|false}]}",
+  "seed_examples": [
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity as psychological continuity ensures the continuity of experiences, memories, and self-perception that define an individual.\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke's memory theory suggests that a person's identity is constituted by the continuity of consciousness (memory). This supports the hypothesis by emphasizing the role of psychological continuity in maintaining personal identity.\", \"source\": \"locke-memory\", \"supports\": true}, {\"text\": \"Locke's memory theory states that a person is the same as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity as psychological continuity ensures the continuity of experiences, memories, and self-perception that define an individual.\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit's Relation R theory suggests that the continuity of consciousness and memory are important for personal survival, but not for personal identity itself. This could undermine the hypothesis by suggesting that psychological continuity is not the only necessary condition.\", \"source\": \"parfit-relation-r\", \"supports\": false}, {\"text\": \"Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.\", \"source\": \"parfit-relation-r\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity as psychological continuity ensures the continuity of experiences, memories, and self-perception that define an individual.\nLiterature <schechtman-narrative> Schechtman: narrative self-constitution: A person is constituted by an autobiographical narrative they understand and live by; identity in the sense relevant to ethics is characterization, not reidentification.",
+      "output": "{\"evidence\": [{\"text\": \"Schechtman's narrative self-constitution theory suggests that identity is constituted by an autobiographical narrative, which could mean that personal identity can exist independently of psychological continuity. This could also undermine the hypothesis.\", \"source\": \"schechtman-narrative\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Another objection could be that psychological continuity is not the only necessary condition. A consistent self could be maintained through physical continuity, such as a person who has a consistent identity despite having a different psychological state or memories due to a brain transplant or through the use of advanced technologies that preserve physical continuity but not psychological continu\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"John Locke's memory theory of personal identity states that a person is the same person as far back as consciousness (memory) extends. Therefore, psychological continuity, as exemplified by memory, is crucial for personal identity. However, Locke's theory does not claim that psychological continuity is the sole necessary condition for personal identity. Other conditions such as physical continuity\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Another objection could be that psychological continuity is not the only necessary condition. A consistent self could be maintained through physical continuity, such as a person who has a consistent identity despite having a different psychological state or memories due to a brain transplant or through the use of advanced technologies that preserve physical continuity but not psychological continu\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"David Hare Parfit's concept of Relation R and what matters supports the idea that psychological continuity is not the only necessary condition for personal identity. According to Parfit, what matters in survival is psychological connectedness and continuity (Relation R), but identity itself is not what matters, and can be indeterminate. This suggests that physical continuity might play a role in m\", \"source\": \"parfit-relation-r\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Another objection could be that psychological continuity is not the only necessary condition. A consistent self could be maintained through physical continuity, such as a person who has a consistent identity despite having a different psychological state or memories due to a brain transplant or through the use of advanced technologies that preserve physical continuity but not psychological continu\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Thomas Aquinas Butler's circularity objection implies that memory presupposes personal identity, thus cannot constitute it. This suggests that even if there is no psychological continuity, a consistent self could be maintained through physical continuity. This supports the idea that physical continuity can also be a necessary condition for personal identity.\", \"source\": \"butler-circularity\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, but other conditions such as physical continuity also play a role in maintaining personal identity.\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, but other conditions such as physical continuity also play a role in maintaining personal identity.\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.\", \"source\": \"parfit-relation-r\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, but other conditions such as physical continuity also play a role in maintaining personal identity.\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.\", \"source\": \"butler-circularity\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity as psychological continuity ensures the continuity of experiences, memories, and self-perception that define an individual.\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Butler's circularity objection states that memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.\", \"source\": \"butler-circularity\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity.\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity.\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.\", \"source\": \"parfit-relation-r\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity.\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.\", \"source\": \"butler-circularity\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity but requires additional conditions to prevent identity confusion in cases of complete psychological replacement.\nLiterature <lewis-stages> Lewis: perdurance and person stages: Persons are four-dimensional aggregates of stages; in fission two persons shared stages all along, so there was no identity failure.",
+      "output": "{\"evidence\": [{\"text\": \"Lewis: perdurance and person stages: Persons are four-dimensional aggregates of stages; in fission two persons shared stages all along, so there was no identity failure.\", \"source\": \"lewis-stages\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Adequate theories of identity must incorporate a non-reductionist element, such as a perdurantist or substance-based ontology, to explain why one psychological stream is 'mine' rather than another's (as discussed in Locke's Essay Concerning Human Understanding).\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke's memory theory posits that personal identity is grounded in the continuity of consciousness through memory, which allows for the distinction between 'mine' and 'another's' psychological stream. This directly supports the need for a non-reductionist element in identity theory, as it requires an irreducible 'I' that persists through memory, rather than mere causal chains of mental states.\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Adequate theories of identity must incorporate a non-reductionist element, such as a perdurantist or substance-based ontology, to explain why one psychological stream is 'mine' rather than another's (as discussed in Locke's Essay Concerning Human Understanding).\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit's relation R argues that psychological continuity (connectedness and continuity) is what matters for survival, but identity itself is not what matters and can be indeterminate. This undermines the focus by suggesting that psychological continuity alone (without metaphysical foundation) suffices for what matters in survival, contradicting the need for a non-reductionist element.\", \"source\": \"parfit-relation-r\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Adequate theories of identity must incorporate a non-reductionist element, such as a perdurantist or substance-based ontology, to explain why one psychological stream is 'mine' rather than another's (as discussed in Locke's Essay Concerning Human Understanding).\nLiterature <hume-bundle> Hume: bundle theory: Introspection finds only perceptions, never a self; the self is a bundle of perceptions and our idea of its identity is a fiction produced by resemblance and causation.",
+      "output": "{\"evidence\": [{\"text\": \"Hume's bundle theory denies the existence of a persistent self, arguing that the self is merely a bundle of perceptions with no underlying substance. This undermines the focus by suggesting that psychological continuity is the only relevant factor, as there is no irreducible 'I' to require a metaphysical foundation.\", \"source\": \"hume-bundle\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical substrate or a metaphysical foundation.\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.\", \"source\": \"locke-memory\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical substrate or a metaphysical foundation.\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.\", \"source\": \"parfit-relation-r\", \"supports\": false}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical substrate or a metaphysical foundation.\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.\", \"source\": \"butler-circularity\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness, memory, and mental states across time constitutes the core of what makes a person the same individual.\nLiterature <locke-memory> Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+      "output": "{\"evidence\": [{\"text\": \"Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.\", \"source\": \"locke-memory\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness, memory, and mental states across time constitutes the core of what makes a person the same individual.\nLiterature <parfit-relation-r> Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+      "output": "{\"evidence\": [{\"text\": \"Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.\", \"source\": \"parfit-relation-r\", \"supports\": true}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness, memory, and mental states across time constitutes the core of what makes a person the same individual.\nLiterature <butler-circularity> Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+      "output": "{\"evidence\": [{\"text\": \"Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.\", \"source\": \"butler-circularity\", \"supports\": false}]}"
+    }
+  ],
+  "eval_criteria": "Valid JSON in the schema. Evidence is faithful to the entry, cites its id, and the supports flag matches the entry's bearing on the claim.",
+  "target": {
+    "max_size_gb": 7,
+    "min_tok_s": 40,
+    "laptop_ram_gb": 16
+  }
+}

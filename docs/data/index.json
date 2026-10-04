@@ -1,0 +1,1843 @@
+{
+ "featured": "20261004-114538-architecture-1.0",
+ "runs": [
+  {
+   "id": "20261004-034623-architecture-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 21,
+   "quick": null,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.153,
+    "branch_diversity": 0.371,
+    "disagreement_rate": 0.8,
+    "path_similarity": 0.415,
+    "conclusion_similarity": 0.944,
+    "unique_assumptions": 2,
+    "unique_objections": 2,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.213,
+     "gain_per_step": 0.078,
+     "tool_calls": 2,
+     "recalls": 0,
+     "compute": {
+      "counterfactual": 0.304,
+      "intuit": 0.197,
+      "reason": 0.174,
+      "introspect": 0.142,
+      "adjudicate": 0.14,
+      "conclude": 0.043
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.278,
+     "gain_per_step": 0.127,
+     "tool_calls": 4,
+     "recalls": 0,
+     "compute": {
+      "reason": 0.303,
+      "formalize": 0.203,
+      "conclude": 0.198,
+      "introspect": 0.149,
+      "adjudicate": 0.146
+     },
+     "steps": 8
+    },
+    "skeptic": {
+     "hypotheses": 5,
+     "rejected_hypotheses": 4,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 2,
+     "novelty": 0.175,
+     "gain_per_step": 0.175,
+     "tool_calls": 3,
+     "recalls": 0,
+     "compute": {
+      "counterfactual": 0.281,
+      "revise": 0.223,
+      "adjudicate": 0.219,
+      "reason": 0.13,
+      "introspect": 0.09,
+      "formalize": 0.035,
+      "conclude": 0.022
+     },
+     "steps": 17
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.171,
+     "gain_per_step": 0.089,
+     "tool_calls": 2,
+     "recalls": 0,
+     "compute": {
+      "reason": 0.398,
+      "adjudicate": 0.222,
+      "counterfactual": 0.219,
+      "introspect": 0.102,
+      "conclude": 0.058
+     },
+     "steps": 14
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.333,
+     "defeats": 0,
+     "novelty": 0.184,
+     "gain_per_step": 0.095,
+     "tool_calls": 1,
+     "recalls": 0,
+     "compute": {
+      "reason": 0.303,
+      "introspect": 0.243,
+      "counterfactual": 0.171,
+      "conclude": 0.136,
+      "adjudicate": 0.079,
+      "formalize": 0.067
+     },
+     "steps": 11
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "no",
+     "credence": 0.75,
+     "position": "Personal identity is not solely dependent on psychological continuity as changes in subjective experiences, memories, and consciousness without corresponding changes in psychological states can still maintain a consistent sense of self."
+    },
+    "formalist": {
+     "stance": "yes",
+     "credence": 0.95,
+     "position": "Personal identity is dependent on psychological continuity, as psychological continuity is a necessary condition for maintaining a coherent self over time, which is a fundamental aspect of personal identity."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "Personal identity is dependent on psychological continuity, but psychological continuity is not the only factor in determining personal identity."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is challenged by the possibility of a stable self existing without psychological continuity."
+    },
+    "minimalist": {
+     "stance": "yes",
+     "credence": 0.95,
+     "position": "Personal identity is dependent on psychological continuity because psychological continuity ensures the coherence and continuity of mental states and capacities that define a person over time."
+    }
+   }
+  },
+  {
+   "id": "20261004-035110-architecture-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1000,
+   "quick": null,
+   "failed": [
+    "explorer",
+    "formalist",
+    "skeptic",
+    "synthesizer",
+    "minimalist"
+   ],
+   "metrics": {
+    "semantic_diversity": 0.135,
+    "branch_diversity": 0.6,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.324,
+    "conclusion_similarity": 0.975,
+    "unique_assumptions": 2,
+    "unique_objections": 2,
+    "unique_hypotheses": 0,
+    "most_divergent": "formalist|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 0,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 1,
+     "novelty": 0.127,
+     "gain_per_step": 0.204,
+     "tool_calls": 2,
+     "recalls": 6,
+     "compute": {
+      "reason": 0.329,
+      "adjudicate": 0.285,
+      "introspect": 0.199,
+      "doubt": 0.11,
+      "counterfactual": 0.078
+     },
+     "steps": 6
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 0,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.084,
+     "gain_per_step": 0.113,
+     "tool_calls": 3,
+     "recalls": 6,
+     "compute": {
+      "reason": 0.621,
+      "formalize": 0.217,
+      "adjudicate": 0.162
+     },
+     "steps": 5
+    },
+    "skeptic": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 0,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 2,
+     "novelty": 0.048,
+     "gain_per_step": 0.155,
+     "tool_calls": 2,
+     "recalls": 8,
+     "compute": {
+      "doubt": 0.461,
+      "adjudicate": 0.359,
+      "revise": 0.179
+     },
+     "steps": 5
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 0,
+     "experiments": 4,
+     "resolution_rate": 0.5,
+     "defeats": 1,
+     "novelty": 0.077,
+     "gain_per_step": 0.238,
+     "tool_calls": 6,
+     "recalls": 16,
+     "compute": {
+      "memory": 0.54,
+      "adjudicate": 0.318,
+      "counterfactual": 0.143
+     },
+     "steps": 5
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 0,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.221,
+     "gain_per_step": 0.098,
+     "tool_calls": 1,
+     "recalls": 0,
+     "compute": {
+      "introspect": 0.563,
+      "adjudicate": 0.163,
+      "formalize": 0.143,
+      "inquire": 0.131
+     },
+     "steps": 5
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.5,
+     "position": "Personal identity is dependent on psychological continuity because psychological continuity is the process through which one experiences and perceives themselves, and it is the foundation for a coherent self-concept over time."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.5,
+     "position": "Personal identity is dependent on psychological continuity because psychological continuity ensures the preservation of a coherent self over time."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.5,
+     "position": "Personal identity is dependent on psychological continuity, but it is not the only necessary condition for maintaining a consistent self over time."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.5,
+     "position": "Personal identity is dependent on psychological continuity as psychological continuity ensures the continuity of experiences, memories, and self-perception that define an individual."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.5,
+     "position": "Personal identity is dependent on psychological continuity because psychological continuity is necessary for maintaining a consistent self over time."
+    }
+   }
+  },
+  {
+   "id": "20261004-040020-architecture-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1000,
+   "quick": null,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.126,
+    "branch_diversity": 0.557,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.313,
+    "conclusion_similarity": 0.713,
+    "unique_assumptions": 1,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "synthesizer|minimalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 3,
+     "rejected_hypotheses": 2,
+     "surviving_hypotheses": 1,
+     "experiments": 9,
+     "resolution_rate": 0.444,
+     "defeats": 2,
+     "novelty": 0.091,
+     "gain_per_step": 0.17,
+     "tool_calls": 4,
+     "recalls": 7,
+     "compute": {
+      "adjudicate": 0.321,
+      "counterfactual": 0.196,
+      "doubt": 0.113,
+      "memory": 0.099,
+      "revise": 0.086,
+      "inquire": 0.059,
+      "reason": 0.056,
+      "introspect": 0.039,
+      "conclude": 0.032
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.067,
+     "gain_per_step": 0.093,
+     "tool_calls": 3,
+     "recalls": 5,
+     "compute": {
+      "reason": 0.601,
+      "formalize": 0.153,
+      "adjudicate": 0.103,
+      "counterfactual": 0.094,
+      "conclude": 0.049
+     },
+     "steps": 12
+    },
+    "skeptic": {
+     "hypotheses": 4,
+     "rejected_hypotheses": 3,
+     "surviving_hypotheses": 1,
+     "experiments": 12,
+     "resolution_rate": 0.25,
+     "defeats": 2,
+     "novelty": 0.057,
+     "gain_per_step": 0.235,
+     "tool_calls": 2,
+     "recalls": 6,
+     "compute": {
+      "doubt": 0.457,
+      "adjudicate": 0.203,
+      "revise": 0.154,
+      "introspect": 0.136,
+      "conclude": 0.05
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 3,
+     "rejected_hypotheses": 2,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.667,
+     "defeats": 3,
+     "novelty": 0.065,
+     "gain_per_step": 0.175,
+     "tool_calls": 10,
+     "recalls": 12,
+     "compute": {
+      "memory": 0.346,
+      "adjudicate": 0.306,
+      "introspect": 0.137,
+      "revise": 0.121,
+      "counterfactual": 0.046,
+      "conclude": 0.044
+     },
+     "steps": 14
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.219,
+     "gain_per_step": 0.095,
+     "tool_calls": 1,
+     "recalls": 0,
+     "compute": {
+      "introspect": 0.33,
+      "inquire": 0.156,
+      "adjudicate": 0.139,
+      "formalize": 0.12,
+      "intuit": 0.11,
+      "conclude": 0.098,
+      "counterfactual": 0.047
+     },
+     "steps": 9
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "One or two sentences: Personal identity is dependent on psychological continuity but also requires other factors such as social relationships and memories to fully account for a coherent sense of self."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "Personal identity is dependent on psychological continuity because psychological continuity ensures the preservation of a coherent self over time, but the hypothesis does not account for scenarios where psychological discontinuity can still result in a coherent self."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "My final position is that personal identity is dependent on psychological continuity, but it is not solely dependent on it as it can be maintained through strong social bonds and physical characteristics in certain cases."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "one or two sentences"
+    },
+    "minimalist": {
+     "stance": "yes",
+     "credence": 0.95,
+     "position": "Personal identity is indeed dependent on psychological continuity, as psychological continuity is essential for maintaining a consistent self over time."
+    }
+   }
+  },
+  {
+   "id": "20261004-104446-architecture-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1000,
+   "quick": true,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.149,
+    "branch_diversity": 0.63,
+    "disagreement_rate": 0.6,
+    "path_similarity": 0.316,
+    "conclusion_similarity": 0.948,
+    "unique_assumptions": 1,
+    "unique_objections": 5,
+    "unique_hypotheses": 0,
+    "most_divergent": "formalist|skeptic"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.25,
+     "defeats": 0,
+     "novelty": 0.166,
+     "gain_per_step": 0.121,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.44,
+      "conclude": 0.143,
+      "counterfactual": 0.133,
+      "doubt": 0.126,
+      "adjudicate": 0.082,
+      "introspect": 0.076
+     },
+     "steps": 8
+    },
+    "formalist": {
+     "hypotheses": 3,
+     "rejected_hypotheses": 2,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 0.0,
+     "defeats": 0,
+     "novelty": 0.207,
+     "gain_per_step": 0.116,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.483,
+      "conclude": 0.221,
+      "revise": 0.16,
+      "formalize": 0.136
+     },
+     "steps": 7
+    },
+    "skeptic": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 9,
+     "resolution_rate": 0.333,
+     "defeats": 1,
+     "novelty": 0.148,
+     "gain_per_step": 0.217,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "doubt": 0.347,
+      "adjudicate": 0.315,
+      "counterfactual": 0.138,
+      "conclude": 0.103,
+      "introspect": 0.061,
+      "revise": 0.036
+     },
+     "steps": 9
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.26,
+     "gain_per_step": 0.164,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.388,
+      "memory": 0.172,
+      "intuit": 0.172,
+      "conclude": 0.152,
+      "counterfactual": 0.117
+     },
+     "steps": 7
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.221,
+     "gain_per_step": 0.082,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.339,
+      "conclude": 0.212,
+      "adjudicate": 0.177,
+      "inquire": 0.137,
+      "formalize": 0.134
+     },
+     "steps": 6
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the idea that continuity in mental states is crucial for a stable self-concept over time, but it also acknowledges that psychological continuity is not the sole determinant of personal identity."
+    },
+    "formalist": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the idea that psychological continuity is essential for maintaining a coherent self over time, which is necessary for personal identity to persist."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity but also influenced by social and cultural factors is supported by the provided evidence and examples."
+    },
+    "synthesizer": {
+     "stance": "yes",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by existing premises and evidence, though it acknowledges the need for further exploration of alternative explanations."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the premises provided, but the question of whether psychological continuity is the sole factor necessary for maintaining a consistent self over time remains open."
+    }
+   }
+  },
+  {
+   "id": "20261004-104727-base-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "base",
+   "delta": 1.0,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1001,
+   "quick": true,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.136,
+    "branch_diversity": 0.467,
+    "disagreement_rate": 0.6,
+    "path_similarity": 0.562,
+    "conclusion_similarity": 0.937,
+    "unique_assumptions": 0,
+    "unique_objections": 0,
+    "unique_hypotheses": 0,
+    "most_divergent": "skeptic|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.247,
+     "gain_per_step": 0.109,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.269,
+      "conclude": 0.182,
+      "counterfactual": 0.136,
+      "adjudicate": 0.119,
+      "introspect": 0.11,
+      "formalize": 0.095,
+      "reason": 0.089
+     },
+     "steps": 7
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.226,
+     "gain_per_step": 0.141,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.315,
+      "introspect": 0.204,
+      "memory": 0.203,
+      "conclude": 0.168,
+      "counterfactual": 0.111
+     },
+     "steps": 7
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.25,
+     "defeats": 1,
+     "novelty": 0.204,
+     "gain_per_step": 0.137,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "doubt": 0.262,
+      "memory": 0.17,
+      "counterfactual": 0.141,
+      "conclude": 0.132,
+      "introspect": 0.121,
+      "adjudicate": 0.104,
+      "reason": 0.07
+     },
+     "steps": 7
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.19,
+     "gain_per_step": 0.093,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.239,
+      "inquire": 0.198,
+      "conclude": 0.162,
+      "introspect": 0.154,
+      "counterfactual": 0.138,
+      "adjudicate": 0.109
+     },
+     "steps": 7
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.208,
+     "gain_per_step": 0.089,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "counterfactual": 0.322,
+      "adjudicate": 0.296,
+      "introspect": 0.227,
+      "conclude": 0.155
+     },
+     "steps": 7
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the idea that psychological continuity ensures the continuity of thoughts, memories, and consciousness, which are essential for a coherent sense of self."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity holds up, though it is not the only factor contributing to personal identity."
+    },
+    "skeptic": {
+     "stance": "yes",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by evidence from philosophers such as Butler, Parfit, and Locke, but is challenged by the idea that personal identity could also be influenced by social and cultural factors."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the current evidence and reasoning, but it is not definitive due to potential counterarguments."
+    },
+    "minimalist": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is upheld as it provides a coherent explanation for the persistence of an individual's memories, thoughts, and personality over time."
+    }
+   }
+  },
+  {
+   "id": "20261004-114538-architecture-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.157,
+    "branch_diversity": 0.62,
+    "disagreement_rate": 0.3,
+    "path_similarity": 0.278,
+    "conclusion_similarity": 0.919,
+    "unique_assumptions": 4,
+    "unique_objections": 4,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|formalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.17,
+     "gain_per_step": 0.152,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.48,
+      "counterfactual": 0.129,
+      "introspect": 0.114,
+      "adjudicate": 0.1,
+      "intuit": 0.074,
+      "memory": 0.069,
+      "doubt": 0.02,
+      "conclude": 0.014
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 6,
+     "rejected_hypotheses": 5,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 0.0,
+     "defeats": 0,
+     "novelty": 0.164,
+     "gain_per_step": 0.177,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.394,
+      "formalize": 0.189,
+      "revise": 0.175,
+      "introspect": 0.167,
+      "conclude": 0.075
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 4,
+     "rejected_hypotheses": 3,
+     "surviving_hypotheses": 1,
+     "experiments": 16,
+     "resolution_rate": 0.188,
+     "defeats": 1,
+     "novelty": 0.145,
+     "gain_per_step": 0.262,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "doubt": 0.507,
+      "introspect": 0.241,
+      "adjudicate": 0.101,
+      "revise": 0.096,
+      "conclude": 0.054
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.5,
+     "defeats": 1,
+     "novelty": 0.181,
+     "gain_per_step": 0.183,
+     "tool_calls": 3,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.316,
+      "memory": 0.284,
+      "adjudicate": 0.079,
+      "intuit": 0.068,
+      "imagine": 0.066,
+      "counterfactual": 0.054,
+      "conclude": 0.044,
+      "reason": 0.043,
+      "doubt": 0.031,
+      "revise": 0.016
+     },
+     "steps": 16
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.169,
+     "gain_per_step": 0.143,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.368,
+      "adjudicate": 0.2,
+      "counterfactual": 0.125,
+      "reason": 0.106,
+      "conclude": 0.085,
+      "formalize": 0.082,
+      "inquire": 0.034
+     },
+     "steps": 11
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.33,
+     "position": "Personal identity requires more than psychological continuity; it necessitates a unified self-consciousness that persists through changes in mental states."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is not solely dependent on psychological continuity but requires a continuous physical substrate to ground that continuity."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.45,
+     "position": "Personal identity is not solely dependent on psychological continuity but requires a minimal degree of it alongside physical and social continuity, as evidenced by cases like H.M. and Phineas Gage where identity persists despite disruptions in psychological continuity when physical and social continuity are maintained."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity but requires additional conditions to prevent identity confusion, such as physical continuity or a unique causal chain."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity, but this dependence is not absolute and allows for certain disruptions without complete loss of identity."
+    }
+   }
+  },
+  {
+   "id": "20261004-114625-base-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "base",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1001,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.161,
+    "branch_diversity": 0.45,
+    "disagreement_rate": 0.2,
+    "path_similarity": 0.455,
+    "conclusion_similarity": 0.929,
+    "unique_assumptions": 5,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "skeptic|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.225,
+     "gain_per_step": 0.163,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.359,
+      "conclude": 0.211,
+      "reason": 0.152,
+      "memory": 0.152,
+      "formalize": 0.126
+     },
+     "steps": 7
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 7,
+     "resolution_rate": 0.857,
+     "defeats": 1,
+     "novelty": 0.177,
+     "gain_per_step": 0.18,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.311,
+      "counterfactual": 0.192,
+      "doubt": 0.168,
+      "imagine": 0.098,
+      "formalize": 0.088,
+      "introspect": 0.069,
+      "reason": 0.049,
+      "conclude": 0.026
+     },
+     "steps": 15
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.199,
+     "gain_per_step": 0.176,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.441,
+      "introspect": 0.138,
+      "conclude": 0.12,
+      "doubt": 0.092,
+      "memory": 0.091,
+      "counterfactual": 0.063,
+      "reason": 0.056
+     },
+     "steps": 12
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 0,
+     "novelty": 0.158,
+     "gain_per_step": 0.115,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.261,
+      "inquire": 0.18,
+      "counterfactual": 0.173,
+      "adjudicate": 0.166,
+      "introspect": 0.079,
+      "conclude": 0.077,
+      "formalize": 0.065
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.18,
+     "gain_per_step": 0.123,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.261,
+      "counterfactual": 0.191,
+      "conclude": 0.107,
+      "reason": 0.103,
+      "inquire": 0.096,
+      "intuit": 0.083,
+      "introspect": 0.08,
+      "formalize": 0.079
+     },
+     "steps": 13
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity, but this dependence is qualified by the need for non-circular continuity and the recognition that it is a necessary but not sufficient condition for identity."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.44,
+     "position": "Personal identity is not solely dependent on psychological continuity, as it requires a continuous physical body or a metaphysical substratum."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical body and a consistent narrative self."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.35,
+     "position": "Personal identity is not entirely dependent on psychological continuity due to the necessity of authentic psychological states, as demonstrated by the Memory Implant Scenario and the distinction between psychological continuity and mere memory continuity."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.45,
+     "position": "Personal identity is not solely dependent on psychological continuity due to the incoherence of the 'self' as a continuous entity in certain counterfactual scenarios."
+    }
+   }
+  },
+  {
+   "id": "20261004-114712-prompt-1.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "prompt",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1002,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.171,
+    "branch_diversity": 0.447,
+    "disagreement_rate": 0.1,
+    "path_similarity": 0.327,
+    "conclusion_similarity": 0.894,
+    "unique_assumptions": 7,
+    "unique_objections": 0,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|skeptic"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 2,
+     "surviving_hypotheses": 0,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 1,
+     "novelty": 0.182,
+     "gain_per_step": 0.176,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "counterfactual": 0.222,
+      "reason": 0.184,
+      "introspect": 0.172,
+      "adjudicate": 0.135,
+      "imagine": 0.089,
+      "formalize": 0.086,
+      "doubt": 0.049,
+      "conclude": 0.036,
+      "revise": 0.026
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.188,
+     "gain_per_step": 0.182,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.312,
+      "introspect": 0.191,
+      "imagine": 0.146,
+      "conclude": 0.124,
+      "formalize": 0.087,
+      "memory": 0.073,
+      "counterfactual": 0.067
+     },
+     "steps": 11
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 0,
+     "novelty": 0.171,
+     "gain_per_step": 0.115,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.251,
+      "inquire": 0.195,
+      "adjudicate": 0.173,
+      "conclude": 0.119,
+      "counterfactual": 0.111,
+      "introspect": 0.081,
+      "formalize": 0.07
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.202,
+     "gain_per_step": 0.134,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.295,
+      "counterfactual": 0.226,
+      "intuit": 0.116,
+      "memory": 0.107,
+      "introspect": 0.068,
+      "conclude": 0.064,
+      "formalize": 0.064,
+      "reason": 0.061
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 2,
+     "novelty": 0.174,
+     "gain_per_step": 0.148,
+     "tool_calls": 4,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "memory": 0.245,
+      "introspect": 0.143,
+      "adjudicate": 0.115,
+      "doubt": 0.111,
+      "inquire": 0.108,
+      "conclude": 0.089,
+      "imagine": 0.083,
+      "intuit": 0.076,
+      "revise": 0.029
+     },
+     "steps": 15
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.45,
+     "position": "Personal identity is not solely dependent on psychological continuity, as a metaphysical substrate is required to account for the persistence of identity through discontinuities in psychological states, while also allowing for the possibility of identity loss in cases like severe memory loss or personality change."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity requires more than psychological continuity, necessitating a metaphysical or biological substrate for persistent identity across time."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.85,
+     "position": "Personal identity is not dependent on psychological continuity, as demonstrated by cases where identity persists despite complete psychological discontinuity, such as in total amnesia or brain replacement scenarios where the continuity of narrative or bodily persistence overrides psychological factors."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.66,
+     "position": "Personal identity requires a metaphysical foundation beyond psychological continuity, as the 'I' of first-person experience cannot be reduced to causal chains of mental states, and branching scenarios reveal that psychological continuity alone fails to resolve the 'mine/not mine' distinction."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity with a non-derivative, non-circular basis for memory and self-awareness, but psychological continuity alone is insufficient as demonstrated by the Duplication Paradox."
+    }
+   }
+  },
+  {
+   "id": "20261004-125858-architecture-0.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.156,
+    "branch_diversity": 0.439,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.421,
+    "conclusion_similarity": 0.935,
+    "unique_assumptions": 8,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "skeptic|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.22,
+     "gain_per_step": 0.148,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "counterfactual": 0.318,
+      "adjudicate": 0.29,
+      "introspect": 0.132,
+      "conclude": 0.115,
+      "reason": 0.1,
+      "formalize": 0.046
+     },
+     "steps": 9
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.2,
+     "gain_per_step": 0.17,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.395,
+      "memory": 0.186,
+      "reason": 0.164,
+      "conclude": 0.14,
+      "formalize": 0.115
+     },
+     "steps": 7
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 0,
+     "novelty": 0.192,
+     "gain_per_step": 0.151,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.253,
+      "counterfactual": 0.178,
+      "reason": 0.13,
+      "conclude": 0.104,
+      "formalize": 0.087,
+      "doubt": 0.086,
+      "intuit": 0.082,
+      "introspect": 0.081
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 0,
+     "novelty": 0.204,
+     "gain_per_step": 0.179,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.252,
+      "introspect": 0.182,
+      "conclude": 0.092,
+      "memory": 0.092,
+      "imagine": 0.089,
+      "reason": 0.089,
+      "doubt": 0.071,
+      "inquire": 0.067,
+      "counterfactual": 0.066
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 0,
+     "novelty": 0.17,
+     "gain_per_step": 0.115,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "counterfactual": 0.22,
+      "imagine": 0.186,
+      "inquire": 0.18,
+      "adjudicate": 0.176,
+      "introspect": 0.101,
+      "conclude": 0.072,
+      "formalize": 0.064
+     },
+     "steps": 13
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.79,
+     "position": "Personal identity is not solely dependent on psychological continuity, as it requires a persistent biological substrate or a metaphysical self beyond mere psychological states."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity as a necessary condition, but not sufficient on its own."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.35,
+     "position": "Personal identity is not solely dependent on psychological continuity, as evidenced by cases where psychological discontinuities persist without identity disruption, and the hypothesis fails to account for the role of narrative structure or stable core elements in maintaining identity."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is not solely dependent on psychological continuity, as it requires a continuous physical substrate or a metaphysical foundation to anchor identity across disruptions in psychological continuity."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity, though this dependence is qualified by the necessity of experiential continuity rather than mere physical replication."
+    }
+   }
+  },
+  {
+   "id": "20261004-125945-architecture-0.0",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1001,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.138,
+    "branch_diversity": 0.435,
+    "disagreement_rate": 0.7,
+    "path_similarity": 0.467,
+    "conclusion_similarity": 0.907,
+    "unique_assumptions": 1,
+    "unique_objections": 0,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|minimalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.225,
+     "gain_per_step": 0.17,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.389,
+      "conclude": 0.231,
+      "reason": 0.18,
+      "memory": 0.102,
+      "formalize": 0.098
+     },
+     "steps": 7
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.206,
+     "gain_per_step": 0.164,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.337,
+      "reason": 0.191,
+      "introspect": 0.139,
+      "memory": 0.118,
+      "conclude": 0.116,
+      "counterfactual": 0.098
+     },
+     "steps": 9
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.205,
+     "gain_per_step": 0.178,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.338,
+      "introspect": 0.2,
+      "doubt": 0.093,
+      "conclude": 0.089,
+      "formalize": 0.08,
+      "memory": 0.068,
+      "reason": 0.067,
+      "counterfactual": 0.064
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.173,
+     "gain_per_step": 0.129,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.19,
+      "adjudicate": 0.182,
+      "formalize": 0.126,
+      "inquire": 0.114,
+      "imagine": 0.107,
+      "introspect": 0.09,
+      "doubt": 0.077,
+      "counterfactual": 0.077,
+      "conclude": 0.038
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.177,
+     "gain_per_step": 0.12,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.27,
+      "counterfactual": 0.242,
+      "introspect": 0.096,
+      "conclude": 0.096,
+      "imagine": 0.094,
+      "inquire": 0.079,
+      "formalize": 0.069,
+      "reason": 0.054
+     },
+     "steps": 13
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "Personal identity is dependent on psychological continuity, though this dependence requires careful formulation to avoid circularity and address Parfit's insights."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.3,
+     "position": "Personal identity is not solely dependent on psychological continuity, as demonstrated by cases where psychological continuity exists without the subjective experience of persistence, and where non-psychological factors may play a role."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "Personal identity is dependent on psychological continuity, but this dependency is qualified by the distinction between metaphysical and practical identity."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is not solely dependent on psychological continuity, as it also requires bodily continuity and a certain kind of causal connection to the past."
+    },
+    "minimalist": {
+     "stance": "no",
+     "credence": 0.25,
+     "position": "Personal identity is not dependent on psychological continuity, as demonstrated by the counterexample of daily memory erasure where biological continuity preserves identity despite the absence of psychological continuity."
+    }
+   }
+  },
+  {
+   "id": "20261004-130040-architecture-0.2",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.25,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.129,
+    "branch_diversity": 0.454,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.407,
+    "conclusion_similarity": 0.938,
+    "unique_assumptions": 1,
+    "unique_objections": 0,
+    "unique_hypotheses": 0,
+    "most_divergent": "skeptic|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 0,
+     "novelty": 0.179,
+     "gain_per_step": 0.146,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.307,
+      "counterfactual": 0.149,
+      "imagine": 0.139,
+      "introspect": 0.121,
+      "inquire": 0.105,
+      "memory": 0.087,
+      "formalize": 0.051,
+      "conclude": 0.041
+     },
+     "steps": 13
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.241,
+     "gain_per_step": 0.138,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.351,
+      "counterfactual": 0.268,
+      "conclude": 0.108,
+      "memory": 0.093,
+      "reason": 0.09,
+      "formalize": 0.09
+     },
+     "steps": 9
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.18,
+     "gain_per_step": 0.151,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.27,
+      "introspect": 0.165,
+      "reason": 0.137,
+      "intuit": 0.115,
+      "formalize": 0.094,
+      "doubt": 0.094,
+      "counterfactual": 0.07,
+      "conclude": 0.057
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.183,
+     "gain_per_step": 0.165,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.332,
+      "introspect": 0.178,
+      "counterfactual": 0.174,
+      "memory": 0.106,
+      "doubt": 0.08,
+      "reason": 0.068,
+      "conclude": 0.062
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 0,
+     "novelty": 0.168,
+     "gain_per_step": 0.111,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.283,
+      "adjudicate": 0.183,
+      "counterfactual": 0.161,
+      "inquire": 0.129,
+      "formalize": 0.114,
+      "introspect": 0.067,
+      "conclude": 0.063
+     },
+     "steps": 13
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity, but this relationship is nuanced by considerations of what constitutes 'continuity' and the distinction between identity and survival."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.72,
+     "position": "Personal identity is dependent on psychological continuity, but this dependency is not constitutive; it provides necessary conditions for identity persistence rather than defining identity itself."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.45,
+     "position": "Personal identity is not entirely dependent on psychological continuity, as demonstrated by cases where identity persists despite disruptions in psychological continuity through physical and social recognition."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.65,
+     "position": "Personal identity is dependent on psychological continuity, but this dependency is qualified by the need for additional factors in certain scenarios such as fission. Psychological continuity is necessary for personal identity, but it may not be sufficient on its own, especially when multiple psychological continuities arise from a single source."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "Personal identity is dependent on psychological continuity, though this dependency is nuanced and subject to certain philosophical challenges."
+    }
+   }
+  }
+ ]
+}

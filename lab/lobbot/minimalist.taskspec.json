@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "task_name": "aporia-minimalist-introspect",
+  "description": "APORIA INTROSPECT operation, as run by the minimalist profile. List the hidden assumptions a philosophical claim depends on, rated by how load-bearing and how plausible each is.",
+  "input_format": "A philosophical question and the claim under examination.",
+  "output_format": "One JSON object: {\"assumptions\": [{\"text\": str, \"load\": 0-1, \"plausibility\": 0-1}]}",
+  "seed_examples": [
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+      "output": "{\"assumptions\": [{\"text\": \"Psychological continuity is the only necessary condition for maintaining a coherent self over time.\", \"load\": 1.0, \"plausibility\": 0.3}, {\"text\": \"A coherent self is the only thing that constitutes personal identity.\", \"load\": 0.9, \"plausibility\": 0.32}, {\"text\": \"Personal identity is the only thing that requires psychological continuity.\", \"load\": 0.5, \"plausibility\": 0.5}, {\"text\": \"Psychological continuity is sufficient for maintaining a coherent self.\", \"load\": 0.5, \"plausibility\": 0.5}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity because psychological continuity is necessary for maintaining a consistent self over time.",
+      "output": "{\"assumptions\": [{\"text\": \"Psychological continuity is the only factor necessary for maintaining a consistent self over time.\", \"load\": 1.0, \"plausibility\": 0.7}, {\"text\": \"Psychological continuity is the only factor necessary for maintaining a consistent self over time.\", \"load\": 1.0, \"plausibility\": 0.7}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity because without psychological continuity, an individual's memories, thoughts, and personality would be fragmented and non-existent.",
+      "output": "{\"assumptions\": [{\"text\": \"Personal identity can be preserved without psychological continuity.\", \"load\": 1.0, \"plausibility\": 0.18}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness and memory forms the core of what makes a person the same over time.",
+      "output": "{\"assumptions\": [{\"text\": \"The persistence of consciousness and memory is the only factor that matters for personal identity\", \"load\": 1.0, \"plausibility\": 0.6}, {\"text\": \"Psychological continuity is sufficient for personal identity\", \"load\": 0.7, \"plausibility\": 0.7}, {\"text\": \"There are no non-psychological factors that could contribute to personal identity\", \"load\": 0.6, \"plausibility\": 0.5}, {\"text\": \"Personal identity is solely determined by psychological states and not by physical or biological continuity.\", \"load\": 0.8, \"plausibility\": 0.7}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness and memory is necessary for a person to be considered the same individual over time.",
+      "output": "{\"assumptions\": [{\"text\": \"Consciousness and memory are the only components of personal identity that matter over time.\", \"load\": 0.8, \"plausibility\": 0.6}, {\"text\": \"Psychological continuity is sufficient for personal identity, not just necessary.\", \"load\": 1.0, \"plausibility\": 0.7}, {\"text\": \"The concept of a 'self' as a continuous entity is coherent and meaningful.\", \"load\": 0.7, \"plausibility\": 0.58}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity.",
+      "output": "{\"assumptions\": [{\"text\": \"Psychological states are the only relevant factor for personal identity.\", \"load\": 0.8, \"plausibility\": 0.6}, {\"text\": \"There can be no non-psychological factors (e.g., bodily continuity, social role) that contribute to personal identity.\", \"load\": 0.7, \"plausibility\": 0.5}, {\"text\": \"The concept of identity is singular and exclusive (i.e., there cannot be two distinct individuals with identical psychological continuity).\", \"load\": 0.9, \"plausibility\": 0.3}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity with the addition of a non-derivative, non-circular basis for memory and self-awareness.",
+      "output": "{\"assumptions\": [{\"text\": \"Psychological continuity is the sole criterion for personal identity when combined with a non-derivative basis for memory and self-awareness.\", \"load\": 0.8, \"plausibility\": 0.7}, {\"text\": \"A non-derivative basis for memory and self-awareness is possible without circularity.\", \"load\": 0.9, \"plausibility\": 0.6}, {\"text\": \"The Duplication Paradox does not invalidate psychological continuity as a necessary condition for personal identity, only a sufficient one.\", \"load\": 0.7, \"plausibility\": 0.8}]}"
+    },
+    {
+      "input": "Question: Is personal identity dependent on psychological continuity?\nClaim: Personal identity is dependent on psychological continuity, as the persistence of consciousness and memory provides the necessary conditions for a continuous self over time.",
+      "output": "{\"assumptions\": [{\"text\": \"The only way for an individual to maintain a continuous self is through psychological continuity.\", \"load\": 1.0, \"plausibility\": 0.6}, {\"text\": \"Psychological continuity is the sole criterion for determining personal identity across time.\", \"load\": 0.8, \"plausibility\": 0.5}, {\"text\": \"The experience of a unified self is sufficient to establish personal identity.\", \"load\": 0.7, \"plausibility\": 0.48}]}"
+    }
+  ],
+  "eval_criteria": "Valid JSON in the schema. Each assumption is genuinely presupposed by the claim, not stated in it, and the load rating reflects how much the claim would suffer without it.",
+  "target": {
+    "max_size_gb": 7,
+    "min_tok_s": 40,
+    "laptop_ram_gb": 16
+  }
+}

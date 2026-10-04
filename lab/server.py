@@ -66,6 +66,9 @@ def model_plan(condition: str, delta: float) -> list[str]:
     if condition != "model" or delta < 0.15:
         return [engine.MODEL] * len(PROFILES)
     env = [m for m in os.environ.get("APORIA_MODELS", "").split(",") if m]
+    named = dict(m.split("=", 1) for m in env if "=" in m)  # profile=model, e.g. skeptic=lobbot-skeptic (lobbot_specs.py)
+    if named:
+        return [named.get(p, engine.MODEL) for p in PROFILES]
     variants = env or sorted(chat_models(), key=lambda m: m != engine.MODEL) or [engine.MODEL]
     return [variants[i % len(variants)] for i in range(len(PROFILES))]
 
@@ -125,6 +128,8 @@ def run_experiment(job: Job, question: str, condition: str, delta: float, seed: 
                 if r.s.conclusion is not None:
                     live.remove(r)
     agents = {n: r.s.snapshot() for n, r in reasoners.items()}
+    # a reasoner whose LLM calls mostly came back empty did not reason: the run is kept but flagged, never analysed
+    cfg["failed"] = metrics.failed(agents)
     m = metrics.compute(agents)
     job.emit({"type": "metrics", "metrics": m, **cfg})
     rid = time.strftime("%Y%m%d-%H%M%S") + f"-{condition}-{delta:.1f}"
