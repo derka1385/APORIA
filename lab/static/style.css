@@ -142,3 +142,7 @@ th { color: var(--dim); font-weight: 400; letter-spacing: .06em; }
 .exps .x.answered em { color: var(--revise); }
 .alloc { display: inline-flex; height: 8px; vertical-align: middle; }
 .alloc i { display: block; height: 100%; }
+.runrow { cursor: pointer; }
+.runrow:hover td { color: var(--ink); background: rgba(233,230,223,.03); }
+.note a { color: var(--dim); }
+.note a:hover { color: var(--ink); }

@@ -29,10 +29,18 @@
         <input id="delta" type="range" min="0" max="1" step="0.1" value="0.6">
       </label>
       <label class="check"><input id="sweep" type="checkbox"> Sweep Δ 0 · .3 · .6 · 1</label>
+      <label class="check" title="half the step budget: less heat, rougher results"><input id="quick" type="checkbox" checked> Quick</label>
+      <label>Memory
+        <select id="memory">
+          <option value="readwrite" selected>read + write</option>
+          <option value="read">read only</option>
+          <option value="off">off (independent run)</option>
+        </select>
+      </label>
     </div>
     <button type="submit">START RESEARCH</button>
   </form>
-  <p class="note" id="modelnote"></p>
+  <p class="note"><span id="modelnote"></span> · <a href="#" id="past">experiment log</a></p>
 </section>
 
 <section id="lab" hidden>

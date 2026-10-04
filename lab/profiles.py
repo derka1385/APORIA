@@ -34,6 +34,7 @@ BASE = {
     "max_assumptions": 8,    # assumption nodes kept; extra ones are cut (least load-bearing first)
     "reject_below": 0.3,     # a hypothesis is rejected when its confidence drops under this
     "tools": ALL_TOOLS,
+    "ltm_scope": ["own"],    # long-term memory of this profile's own past runs, or ["shared"] across profiles
 }
 
 TARGETS = {
@@ -60,7 +61,7 @@ TARGETS = {
     "synthesizer": {
         "weights": {"memory": 2.0, "revise": 1.6, "intuit": 1.2, "inquire": 1.4, "doubt": 0.7, "formalize": 0.4},
         "lit_k": 6, "lit_spread": 0.8, "ltm_k": 8, "context": 30, "llm_temp": 0.75, "budget": 13,
-        "learning_rate": 0.7, "explore": 0.5,
+        "learning_rate": 0.7, "explore": 0.5, "ltm_scope": ["shared"],
         "tools": ["literature_search", "memory_search", "similarity", "graph_query"],
     },
     "minimalist": {

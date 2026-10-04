@@ -51,10 +51,11 @@ def write(items: list[dict]):
         _cache = None
 
 
-def search(vec: list[float], cos, k=5, kinds=None, min_sim=0.0, exclude_run=None) -> list[dict]:
+def search(vec: list[float], cos, k=5, kinds=None, min_sim=0.0, exclude_run=None, profile=None) -> list[dict]:
     """Nearest items by cosine; ponytail: linear scan, fine to ~50k items, add an ANN index past that."""
     scored = [(cos(vec, r["vec"]), r) for r in rows()
-              if (kinds is None or r["kind"] in kinds) and r["run"] != exclude_run]
+              if (kinds is None or r["kind"] in kinds) and r["run"] != exclude_run
+              and (profile is None or r["profile"] == profile)]
     scored = [(s, r) for s, r in scored if s >= min_sim]
     scored.sort(key=lambda x: -x[0])
     return [{**{k2: v for k2, v in r.items() if k2 != "vec"}, "sim": round(s, 3)} for s, r in scored[:k]]

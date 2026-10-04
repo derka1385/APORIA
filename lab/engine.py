@@ -20,6 +20,7 @@ import os
 import random
 import re
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -29,8 +30,10 @@ import tools
 OLLAMA = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434")
 MODEL = os.environ.get("APORIA_MODEL", "qwen2.5:3b")
 EMBED_MODEL = os.environ.get("APORIA_EMBED", "nomic-embed-text")
+COOLDOWN = float(os.environ.get("APORIA_COOLDOWN", "0.5"))  # seconds of rest after each LLM call (thermal headroom)
 LITERATURE = json.loads((Path(__file__).parent / "literature.json").read_text())
 
+LLM_FAILURES: list[float] = []
 ATTACK = {"objection", "counterexample", "counterfactual", "contradiction"}
 SAME_IDEA = 0.88  # cosine above which two texts count as the same idea (nomic-embed-text)
 
@@ -44,18 +47,22 @@ def _post(path: str, body: dict, timeout=180) -> dict:
 
 
 def llm_json(system: str, user: str, policy: dict, model: str, seed: int) -> dict:
-    body = {"model": model, "stream": False, "format": "json",
+    body = {"model": model, "stream": False, "format": "json", "keep_alive": "2m",
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "options": {"temperature": policy["llm_temp"], "top_p": policy["top_p"], "seed": seed,
                         "num_predict": 500, "num_ctx": 4096}}
-    for attempt in range(2):
+    for attempt in range(4):
         try:
             out = json.loads(_post("/api/chat", body)["message"]["content"])
+            time.sleep(COOLDOWN)
             if isinstance(out, dict):
                 return out
         except (json.JSONDecodeError, KeyError):
             body["options"]["seed"] = seed + 1000 + attempt
-    return {}
+        except OSError:  # Ollama busy, reloading or briefly down (urllib errors are OSErrors): back off
+            time.sleep(2 ** (attempt + 1))
+    LLM_FAILURES.append(time.time())
+    return {}  # every op treats an empty answer as "nothing found", so a failed call costs one step, not the run
 
 
 _embed_cache: dict[str, list[float]] = {}
@@ -66,12 +73,18 @@ def embed(texts: list[str]) -> list[list[float]]:
     """Ollama embeddings, cached; falls back to hashed bag-of-words if the model is missing."""
     global _embed_ok
     todo = [t for t in dict.fromkeys(texts) if t not in _embed_cache]
-    if todo and _embed_ok:
+    for attempt in range(4):
+        if not (todo and _embed_ok):
+            break
         try:
-            vecs = _post("/api/embed", {"model": EMBED_MODEL, "input": todo})["embeddings"]
-            _embed_cache.update(zip(todo, vecs))
-        except Exception:
-            _embed_ok = False  # ponytail: silent switch to bag-of-words for the whole process
+            _embed_cache.update(zip(todo, _post("/api/embed", {"model": EMBED_MODEL, "input": todo})["embeddings"]))
+            todo = []
+        except urllib.error.HTTPError as ex:
+            if ex.code == 404:  # embedding model not installed: bag-of-words for the whole process
+                _embed_ok = False
+            time.sleep(2 ** (attempt + 1))
+        except OSError:
+            time.sleep(2 ** (attempt + 1))
     for t in todo:
         _embed_cache.setdefault(t, _bow(t))
     return [_embed_cache[t] for t in texts]
@@ -115,8 +128,8 @@ def literature_search(query: str, k: int, spread: float = 0.0, rng: random.Rando
     return ranked[: k - n_far] + far
 
 
-def ltm_search(query: str, k: int, kinds=None, min_sim=0.6) -> list[dict]:
-    return ltm.search(embed([query])[0], cos, k, kinds, min_sim)
+def ltm_search(query: str, k: int, kinds=None, min_sim=0.6, profile=None) -> list[dict]:
+    return ltm.search(embed([query])[0], cos, k, kinds, min_sim, profile=profile)
 
 
 def similarity(a: str, b: str) -> float:
@@ -168,6 +181,7 @@ class State:
         self.values: dict[str, float] = {}   # learned information value per op
         self.tool_log: list[dict] = []
         self.recalls: list[dict] = []
+        self.failed_calls = 0  # LLM calls that returned nothing usable (Ollama down, bad JSON twice)
 
     def add(self, kind: str, text: str, parent: str | None, rel: str | None = None, conf=0.5, **extra) -> str | None:
         text = (text or "").strip()
@@ -193,6 +207,7 @@ class State:
                 "uncertainty": self.uncertainty, "novelty": self.novelty, "surprise": self.surprise,
                 "history": self.history, "series": self.series, "step": self.step, "conclusion": self.conclusion,
                 "signals": self.signals, "values": self.values, "tool_log": self.tool_log, "recalls": self.recalls,
+                "failed_calls": self.failed_calls,
                 "curiosity": max([n["curiosity"] for n in self.live()] or [0]),
                 # kept for the v1 UI: experiments still open are the unresolved conflicts
                 "conflicts": [{"objection": e["node"], "target": e["target"],
@@ -206,8 +221,10 @@ SYSTEM = ("You are one module inside an explicit reasoning architecture working 
 
 
 class Reasoner:
-    def __init__(self, name: str, question: str, policy: dict, model: str, seed: int, emit=lambda e: None):
+    def __init__(self, name: str, question: str, policy: dict, model: str, seed: int, emit=lambda e: None,
+                 memory: str = "readwrite"):
         self.name, self.policy, self.model, self.seed = name, policy, model, seed
+        self.memory = memory  # off | read | readwrite: long-term memory for this run
         self.s = State(question)
         self.rng = random.Random(seed)
         self.budget = policy["budget"]
@@ -244,7 +261,7 @@ class Reasoner:
             return None
         self.vec[nid] = v
         others = [self.vec[i] for i in self.vec if i != nid]
-        mem = [r["sim"] for r in ltm.search(v, cos, 1, min_sim=0)] if self.policy["ltm_k"] else []
+        mem = [r["sim"] for r in ltm.search(v, cos, 1, min_sim=0)] if self.policy["ltm_k"] and self.memory != "off" else []
         s.nodes[nid]["novelty"] = round(1 - max([cos(v, o) for o in others] + mem + [0]), 3)
         return nid
 
@@ -286,7 +303,14 @@ class Reasoner:
         return ok, out
 
     def can(self, name: str) -> bool:
+        if name == "memory_search" and self.memory == "off":
+            return False
         return name in self.policy["tools"]
+
+    def recall(self, query: str, k: int, kinds, min_sim: float):
+        """Long-term memory through the tool layer, scoped by policy (own past runs, or everyone's)."""
+        own = self.policy.get("ltm_scope") != ["shared"]
+        return self.use("memory_search", query, k, kinds, min_sim, self.name if own else None)
 
     # ------------------------------------------------ metacognition (structured state, no LLM)
     def assess(self, nid: str) -> dict:
@@ -457,28 +481,32 @@ class Reasoner:
 
     # ------------------------------------------------ run loop
     def run(self):
-        s = self.s
         self.op_start()
-        while s.conclusion is None:
-            self.curiosity()
-            op, probs, hint = self.choose()
-            focus = self.pick_focus(op, hint)
-            why = [g["signal"] for g in s.signals if g["op"] == op]
-            self.emit({"type": "op", "agent": self.name, "op": op, "focus": focus, "probs": probs, "why": why})
-            self.cog("attention", node=focus, op=op, concentration=probs.get(op, 0))
-            before = (s.confidence, s.uncertainty, len(s.nodes), sum(e["status"] != "pending" for e in s.experiments))
-            t0 = time.time()
-            getattr(self, "op_" + op)(focus)
-            gain = self.learn(op, focus, before)
-            s.step += 1
-            s.surprise *= 0.75  # surprise is transient
-            if s.surprise > 0.45 and self.budget < self.policy["budget"] + 3 * self.policy["surprise_bonus"]:
-                self.budget += self.policy["surprise_bonus"]  # a surprising branch earns more compute
-                self.cog("compute", budget=self.budget)
-            s.history.append({"step": s.step, "op": op, "focus": focus, "probs": probs, "why": why,
-                              "gain": gain, "ms": round((time.time() - t0) * 1000),
-                              "d_conf": round(s.confidence - before[0], 3), "d_unc": round(s.uncertainty - before[1], 3)})
-            self.tick()
+        while self.s.conclusion is None:
+            self.step()
+
+    def step(self):
+        """One controller cycle. Servers interleave reasoners step by step, so only one LLM call runs at a time."""
+        s = self.s
+        self.curiosity()
+        op, probs, hint = self.choose()
+        focus = self.pick_focus(op, hint)
+        why = [g["signal"] for g in s.signals if g["op"] == op]
+        self.emit({"type": "op", "agent": self.name, "op": op, "focus": focus, "probs": probs, "why": why})
+        self.cog("attention", node=focus, op=op, concentration=probs.get(op, 0))
+        before = (s.confidence, s.uncertainty, len(s.nodes), sum(e["status"] != "pending" for e in s.experiments))
+        t0 = time.time()
+        getattr(self, "op_" + op)(focus)
+        gain = self.learn(op, focus, before)
+        s.step += 1
+        s.surprise *= 0.75  # surprise is transient
+        if s.surprise > 0.45 and self.budget < self.policy["budget"] + 3 * self.policy["surprise_bonus"]:
+            self.budget += self.policy["surprise_bonus"]  # a surprising branch earns more compute
+            self.cog("compute", budget=self.budget)
+        s.history.append({"step": s.step, "op": op, "focus": focus, "probs": probs, "why": why,
+                          "gain": gain, "ms": round((time.time() - t0) * 1000),
+                          "d_conf": round(s.confidence - before[0], 3), "d_unc": round(s.uncertainty - before[1], 3)})
+        self.tick()
 
     def learn(self, op: str, focus: str | None, before) -> float:
         """Information gain of this step -> op value (routing) and branch yield (attention)."""
@@ -516,8 +544,10 @@ class Reasoner:
 
     def ask(self, instruction: str, focus: str | None) -> dict:
         system = SYSTEM + (" " + self.policy["persona"] if self.policy["persona"] else "")
-        return llm_json(system, self.context(focus) + "\n\n" + instruction, self.policy, self.model,
-                        self.seed * 1000 + self.s.step)
+        out = llm_json(system, self.context(focus) + "\n\n" + instruction, self.policy, self.model,
+                       self.seed * 1000 + self.s.step)
+        self.s.failed_calls += not out
+        return out
 
     def text(self, nid):
         return self.s.nodes[nid]["text"] if nid in self.s.nodes else ""
@@ -542,11 +572,11 @@ class Reasoner:
         s, p = self.s, self.policy
         if not (p["ltm_k"] and self.can("memory_search")):
             return
-        ok, past_q = self.use("memory_search", s.question, 3, ["question"], 0.85)
+        ok, past_q = self.recall(s.question, 3, ["question"], 0.85)
         for q in (past_q if ok else []):
             s.recalls.append({"kind": "question", "text": q["text"], "outcome": q["outcome"], "sim": q["sim"]})
             self.cog("recall", node=s.root, memory_kind="question", outcome=q["outcome"], sim=q["sim"])
-        ok, past_h = self.use("memory_search", s.hypothesis, p["ltm_k"], ["hypothesis"], 0.8)
+        ok, past_h = self.recall(s.hypothesis, p["ltm_k"], ["hypothesis"], 0.8)
         for h in (past_h if ok else []):
             shift = {"rejected": -0.12, "survived": 0.08}.get(h["outcome"], 0) * h["sim"]
             if shift:
@@ -563,8 +593,8 @@ class Reasoner:
             lit = lit if ok else []
         # long-term memory: objections that defeated similar claims before come back as live challenges
         if p["ltm_k"] and self.can("memory_search"):
-            ok, past = self.use("memory_search", self.text(focus) or query, p["ltm_k"],
-                                ["objection", "counterexample", "counterfactual", "unresolved"], 0.7)
+            ok, past = self.recall(self.text(focus) or query, p["ltm_k"],
+                                   ["objection", "counterexample", "counterfactual", "unresolved"], 0.7)
             for m in (past if ok else []):
                 if m["kind"] == "unresolved":
                     nid = self.new("question", m["text"], focus, "refines", source="memory")
@@ -822,12 +852,13 @@ class Reasoner:
 
     def op_conclude(self, _focus):
         s = self.s
-        out = self.ask('Operation CONCLUDE. State your final position on the question. JSON: {"position": "one or two sentences", '
+        out = self.ask('Operation CONCLUDE. State your final position on the question. JSON: {"position": str, '
                        '"stance": "yes"|"no"|"qualified", "credence_yes": probability 0-1 that the answer to the '
                        'question is yes, "key_reasons": [str], "strongest_open_objection": str, '
-                       '"open_questions": [str]}', s.root)
+                       '"open_questions": [str]}. The position is one or two full sentences.', s.root)
+        pos = re.sub(r"(?i)^one or two (full )?sentences:?\s*", "", str(out.get("position") or "").strip())
         s.conclusion = {
-            "position": str(out.get("position") or s.hypothesis),
+            "position": pos if len(pos) >= 25 else s.hypothesis,  # small models sometimes echo the schema
             "stance": str(out.get("stance") or "qualified").lower(),
             "credence": num(out.get("credence_yes")),
             "key_reasons": [str(x) for x in (out.get("key_reasons") or [])][:4],

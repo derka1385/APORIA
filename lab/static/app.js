@@ -432,8 +432,23 @@ async function loadRuns() {
   if (!rows.length) { $("#runs").innerHTML = '<p class="hint">No finished runs yet.</p>'; return; }
   const k = Object.keys(MLABEL);
   $("#runs").innerHTML = `<div class="tablewrap"><table><tr><th>run</th><th>condition</th><th>Δ</th>${k.map((x) => `<th>${MLABEL[x][0]}</th>`).join("")}<th>question</th></tr>` +
-    rows.reverse().map((r) => `<tr><td>${r.id.slice(0, 15)}</td><td>${r.condition}</td><td>${r.delta}</td>${k.map((x) => `<td>${r.metrics[x]}</td>`).join("")}<td>${esc(r.question.slice(0, 60))}</td></tr>`).join("") + "</table></div>";
+    rows.reverse().map((r) => `<tr class="runrow" data-id="${r.id}" title="open this run"><td>${r.id.slice(0, 15)}</td><td>${r.condition}</td><td>${r.delta}</td>${k.map((x) => `<td>${r.metrics[x]}</td>`).join("")}<td>${esc(r.question.slice(0, 60))}</td></tr>`).join("") + "</table></div>";
 }
+
+// Re-open a finished run from the log: same events, replayed from its saved snapshots.
+document.addEventListener("click", async (e) => {
+  const row = e.target.closest(".runrow");
+  if (!row) return;
+  const r = await (await fetch("/api/runs/" + row.dataset.id)).json();
+  const names = Object.keys(r.agents);
+  sweep = []; lastMetrics = null;
+  onEvent({ type: "run_start", ...r, profiles: names, runs: 1, run: 0,
+    policies: Object.fromEntries(names.map((n) => [n, { budget: r.agents[n].step, learning_rate: 0.4 }])) });
+  names.forEach((n) => onEvent({ type: "state", agent: n, state: r.agents[n], budget: r.agents[n].step }));
+  onEvent({ type: "metrics", metrics: r.metrics, delta: r.delta });
+  $("#runinfo").textContent = $("#runinfo").textContent.replace(" · reasoning…", " · saved run " + r.id);
+  scrollTo({ top: 0, behavior: "smooth" });
+});
 
 // ------------------------------------------------------------------ landing
 $("#delta").oninput = (e) => ($("#dval").textContent = (+e.target.value).toFixed(1));
@@ -447,7 +462,7 @@ $("#question").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.
 
 $("#ask").onsubmit = async (e) => {
   e.preventDefault();
-  const body = { question: $("#question").value, condition: $("#condition").value, delta: +$("#delta").value };
+  const body = { question: $("#question").value, condition: $("#condition").value, delta: +$("#delta").value, quick: $("#quick").checked, memory: $("#memory").value };
   if ($("#sweep").checked) body.deltas = [0, 0.3, 0.6, 1];
   const { id } = await (await fetch("/api/run", { method: "POST", body: JSON.stringify(body) })).json();
   $("#landing").classList.add("leaving");
@@ -466,4 +481,9 @@ function attach(id) {
 }
 const hashJob = location.hash.match(/job=(\w+)/);
 if (hashJob) attach(hashJob[1]);
+$("#past").onclick = (e) => {
+  e.preventDefault(); mode = "lab"; profiles = [];
+  $("#landing").hidden = true; $("#lab").hidden = false; $("#metrics").hidden = true;
+  $("#runinfo").textContent = "experiment log · pick a run"; loadRuns();
+};
 $("#again").onclick = () => { location.hash = ""; location.reload(); };

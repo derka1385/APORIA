@@ -28,6 +28,7 @@ RUNS = ROOT / "runs"
 RUNS.mkdir(exist_ok=True)
 PORT = int(os.environ.get("APORIA_PORT", 8740))
 PROFILES = list(TARGETS)
+PARALLEL = int(os.environ.get("APORIA_PARALLEL", 1))  # >1 runs reasoners in threads (hot laptop, faster)
 
 
 class Job:
@@ -69,16 +70,34 @@ def model_plan(condition: str, delta: float) -> list[str]:
     return [variants[i % len(variants)] for i in range(len(PROFILES))]
 
 
-def run_experiment(job: Job, question: str, condition: str, delta: float, seed: int, tag: dict) -> dict:
+def pol(name: str, delta: float, condition: str, quick: bool) -> dict:
+    p = policy(name, delta, condition)
+    if quick:  # half the steps: same policies, less heat
+        p["budget"], p["min_steps"] = max(4, p["budget"] // 2), max(3, p["min_steps"] // 2)
+    return p
+
+
+def run_experiment(job: Job, question: str, condition: str, delta: float, seed: int, tag: dict, quick=False,
+                   memory="readwrite") -> dict:
     models = model_plan(condition, delta)
-    cfg = {"question": question, "condition": condition, "delta": delta, "seed": seed, "models": models, **tag}
+    cfg = {"question": question, "condition": condition, "delta": delta, "seed": seed, "models": models,
+           "quick": quick, "memory": memory, **tag}
     job.emit({"type": "run_start", **cfg, "profiles": PROFILES,
-              "policies": {p: policy(p, delta, condition) for p in PROFILES}})
+              "policies": {p: pol(p, delta, condition, quick) for p in PROFILES}, "quick": quick})
+
+    def guarded(r, fn):
+        try:
+            fn()
+        except Exception as ex:  # one reasoner failing must not kill the experiment
+            traceback.print_exc()
+            job.emit({"type": "error", "agent": r.name, "msg": str(ex), **tag})
+            r.s.conclusion = r.s.conclusion or {"position": r.s.hypothesis, "stance": "qualified", "credence": 0.5,
+                                                "key_reasons": [], "open_objection": "", "error": str(ex)}
 
     def go(i_name):
         i, name = i_name
-        r = engine.Reasoner(name, question, policy(name, delta, condition), models[i], seed + i,
-                            emit=lambda e: job.emit({**e, **tag}))
+        r = engine.Reasoner(name, question, pol(name, delta, condition, quick), models[i], seed + i,
+                            emit=lambda e: job.emit({**e, **tag}), memory=memory)
         try:
             r.run()
         except Exception as ex:  # one reasoner failing must not kill the experiment
@@ -88,13 +107,28 @@ def run_experiment(job: Job, question: str, condition: str, delta: float, seed: 
                                                 "key_reasons": [], "open_objection": "", "error": str(ex)}
         return name, r
 
-    with ThreadPoolExecutor(len(PROFILES)) as ex:
-        reasoners = dict(ex.map(go, enumerate(PROFILES)))
+    if PARALLEL > 1:
+        with ThreadPoolExecutor(PARALLEL) as ex:
+            reasoners = dict(ex.map(go, enumerate(PROFILES)))
+    else:  # default: round-robin, one step per reasoner per turn, one LLM call at a time
+        reasoners = {}
+        for i, name in enumerate(PROFILES):
+            reasoners[name] = engine.Reasoner(name, question, pol(name, delta, condition, quick), models[i], seed + i,
+                                              emit=lambda e: job.emit({**e, **tag}), memory=memory)
+        live = list(reasoners.values())
+        for r in live:
+            guarded(r, r.op_start)
+        while live:
+            for r in list(live):
+                if r.s.conclusion is None:
+                    guarded(r, r.step)
+                if r.s.conclusion is not None:
+                    live.remove(r)
     agents = {n: r.s.snapshot() for n, r in reasoners.items()}
     m = metrics.compute(agents)
     job.emit({"type": "metrics", "metrics": m, **cfg})
     rid = time.strftime("%Y%m%d-%H%M%S") + f"-{condition}-{delta:.1f}"
-    for r in reasoners.values():  # what this session learned outlives it
+    for r in reasoners.values() if memory == "readwrite" else []:  # what this session learned outlives it
         try:
             ltm.write(r.memories(rid))
         except Exception:
@@ -116,7 +150,8 @@ def start(body: dict) -> str:
     def worker():
         try:
             for k, d in enumerate(deltas):
-                run_experiment(job, q, cond, d, seed, {"run": k, "runs": len(deltas)})
+                run_experiment(job, q, cond, d, seed, {"run": k, "runs": len(deltas)}, bool(body.get("quick")),
+                               body.get("memory") if body.get("memory") in ("off", "read") else "readwrite")
         except Exception as ex:
             traceback.print_exc()
             job.emit({"type": "error", "msg": str(ex)})

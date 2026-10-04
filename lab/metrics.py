@@ -87,6 +87,7 @@ def process(s: dict) -> dict:
         "gain_per_step": round(_mean(h.get("gain", 0) for h in steps), 3),
         "tool_calls": len(s.get("tool_log", [])),
         "recalls": len(s.get("recalls", [])),
+        "failed_calls": s.get("failed_calls", 0),
         "compute": {k: round(v, 3) for k, v in sorted(alloc.items(), key=lambda kv: -kv[1])},
         "steps": len(steps),
     }

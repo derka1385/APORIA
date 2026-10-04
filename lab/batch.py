@@ -1,7 +1,11 @@
 """Run a batch of experiments headless and regenerate the experiment log.
 
     python3 batch.py                 # default plan below
+    python3 batch.py --full          # full step budgets (default is quick: half the steps)
+    python3 batch.py --memory        # let runs read and write long-term memory (default off: runs stay independent)
     python3 batch.py --report        # only rewrite EXPERIMENTS.md from runs/
+
+Reasoners run one LLM call at a time with a cooldown (APORIA_COOLDOWN); expect a few minutes per run.
 """
 
 from __future__ import annotations
@@ -45,9 +49,13 @@ def report():
             top = ", ".join(f"{k} {v:.0%}" for k, v in list(p["compute"].items())[:3])
             lines.append(f"| {r['id']} | {a} | {p['steps']} | {p['hypotheses']} | {p['rejected_hypotheses']} | {p['experiments']} | "
                          f"{p['defeats']} | {p['resolution_rate']} | {p['gain_per_step']} | {p['tool_calls']} | {p['recalls']} | {top} |")
-    failures = [(r["id"], a, s["conclusion"].get("error")) for r in runs for a, s in r["agents"].items() if s["conclusion"].get("error")]
-    lines += ["", "## Failures", ""] + ([f"- {i} {a}: {e}" for i, a, e in failures] or ["None recorded."])
-    (ROOT / "EXPERIMENTS.md").write_text("\n".join(lines) + "\n")
+    failures = [(r["id"], a, s["conclusion"].get("error") or f"{s.get('failed_calls')} LLM calls returned nothing")
+                for r in runs for a, s in r["agents"].items()
+                if s["conclusion"].get("error") or s.get("failed_calls") or len(s["history"]) <= 1]
+    lines += ["", "## Failures (automatic)", ""] + ([f"- {i} {a}: {e}" for i, a, e in failures] or ["None recorded."])
+    old = (ROOT / "EXPERIMENTS.md").read_text() if (ROOT / "EXPERIMENTS.md").exists() else ""
+    notes = old[old.index("## Notes"):] if "## Notes" in old else "## Notes\n\nHand-written findings go here; regeneration keeps this section.\n"
+    (ROOT / "EXPERIMENTS.md").write_text("\n".join(lines) + "\n\n" + notes)
 
 
 if __name__ == "__main__":
@@ -57,7 +65,8 @@ if __name__ == "__main__":
             t = time.time()
             print(f"[{k + 1}/{len(PLAN)}] {cond} Δ={d} {q}", flush=True)
             try:
-                m = server.run_experiment(server.Job(), q, cond, d, 1000 + k, {"run": 0, "runs": 1})
+                m = server.run_experiment(server.Job(), q, cond, d, 1000 + k, {"run": 0, "runs": 1}, "--full" not in sys.argv,
+                                         "readwrite" if "--memory" in sys.argv else "off")
                 print("   ", {x: m[x] for x in KEYS}, f"{time.time() - t:.0f}s", flush=True)
             except Exception:
                 traceback.print_exc()
