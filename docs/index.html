@@ -29,7 +29,7 @@ header.top .wrap { display: flex; align-items: center; gap: 24px; height: 56px; 
 nav { display: flex; gap: 20px; margin-left: auto; font: 13px var(--mono); color: var(--dim); }
 nav a { text-decoration: none; }
 nav a:hover { color: var(--ink); }
-.eyebrow { font: 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 0 0 16px; }
+.eyebrow { font: 13px/1.4 var(--mono); letter-spacing: .02em; color: var(--faint); margin: 0 0 16px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 300; letter-spacing: -.01em; margin: 0; }
 h1 { font-size: clamp(40px, 5.2vw, 64px); line-height: 1.02; max-width: 15ch; }
 h1 em, h2 em { font-style: italic; color: var(--iris); }
@@ -57,7 +57,7 @@ section:first-of-type { border-top: 0; }
 /* fingerprints: compute allocation per reasoner */
 .prints { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
 .print { border: 1px solid var(--rule); border-radius: 6px; padding: 20px; background: var(--surface); }
-.print h4 { margin: 0 0 4px; font: 500 13px var(--mono); letter-spacing: .04em; }
+.print .ptitle { margin: 0 0 4px; font: 500 13px var(--mono); letter-spacing: .04em; }
 .print .sub { font: 12px var(--mono); color: var(--faint); margin-bottom: 16px; }
 .row { display: grid; grid-template-columns: 92px 1fr 44px; align-items: center; gap: 10px; margin: 8px 0; font: 12px var(--mono); color: var(--dim); }
 .bar { display: flex; height: 14px; border-radius: 2px; overflow: hidden; background: #0d0f11; }
@@ -88,7 +88,7 @@ tr.failed td { color: var(--faint); text-decoration: line-through; }
 .loop { font: 13px/1.7 var(--mono); color: var(--dim); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; overflow-x: auto; white-space: pre; }
 .cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 32px; }
 .card { border: 1px solid var(--rule); border-radius: 6px; padding: 16px; }
-.card h4 { margin: 0 0 6px; font: 500 14px var(--mono); }
+.card h3 { margin: 0 0 6px; font: 500 14px var(--mono); }
 .card p { font-size: 14px; color: var(--dim); margin: 0; }
 .ops { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .ops span { font: 12px var(--mono); padding: 4px 10px; border-radius: 3px; border: 1px solid var(--rule); }
@@ -184,11 +184,11 @@ learning:   information gain → op value, branch yield</div>
     </div>
   </div>
   <div class="cards">
-    <div class="card"><h4 style="color:var(--imagine)">Explorer</h4><p>Imagination, intuition, counterfactuals, inquiry. High exploration and sampling temperature. No formal tools.</p></div>
-    <div class="card"><h4 style="color:var(--formalize)">Formalist</h4><p>Verification and formalization with every tool. Strict acceptance, near-greedy attention.</p></div>
-    <div class="card"><h4 style="color:var(--doubt)">Skeptic</h4><p>Doubt and adjudication. Four objections per doubt, 1.8× damage. Memory of past objections, no literature.</p></div>
-    <div class="card"><h4 style="color:var(--memory)">Synthesizer</h4><p>Deliberately distant literature, wide context, fast learning, shared memory.</p></div>
-    <div class="card"><h4 style="color:var(--introspect)">Minimalist</h4><p>Introspection and formalization from at most two assumptions. Narrow context, no literature.</p></div>
+    <div class="card"><h3 style="color:var(--imagine)">Explorer</h3><p>Imagination, intuition, counterfactuals, inquiry. High exploration and sampling temperature. No formal tools.</p></div>
+    <div class="card"><h3 style="color:var(--formalize)">Formalist</h3><p>Verification and formalization with every tool. Strict acceptance, near-greedy attention.</p></div>
+    <div class="card"><h3 style="color:var(--doubt)">Skeptic</h3><p>Doubt and adjudication. Four objections per doubt, 1.8× damage. Memory of past objections, no literature.</p></div>
+    <div class="card"><h3 style="color:var(--memory)">Synthesizer</h3><p>Deliberately distant literature, wide context, fast learning, shared memory.</p></div>
+    <div class="card"><h3 style="color:var(--introspect)">Minimalist</h3><p>Introspection and formalization from at most two assumptions. Narrow context, no literature.</p></div>
   </div>
 </div></section>
 
@@ -246,7 +246,7 @@ function print(r, title) {
     const segs = Object.entries(p.compute).map(([op, v]) => `<i title="${op} ${(v * 100).toFixed(0)}%" style="width:${v * 100}%;background:${COLOR[op] || "#666"}"></i>`).join("");
     return `<div class="row"><span>${a}</span><span class="bar">${segs}</span><span>${p.steps} st</span></div>`;
   }).join("");
-  return `<div class="print"><h4>${title}</h4><div class="sub">${esc(model(r))} · Δ ${r.delta} · path similarity ${r.metrics.path_similarity}</div>${rows}</div>`;
+  return `<div class="print"><p class="ptitle">${title}</p><div class="sub">${esc(model(r))} · Δ ${r.delta} · path similarity ${r.metrics.path_similarity}</div>${rows}</div>`;
 }
 
 function table(runs) {
