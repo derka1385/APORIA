@@ -33,6 +33,27 @@ def move_divergence_page() -> None:
     dst.write_text(html)
 
 
+SHELL = '<script src="../shell.js" data-active="{active}"{extra}></script>'
+
+
+def apply_shell() -> None:
+    """One header on every page: the static pages load docs/shell.js (the same header the finder renders).
+    Idempotent; also patches APORIA's lab source so its export (lab/export_site.py) keeps the header."""
+    div = DOCS / "divergence" / "index.html"
+    html = re.sub(r'<header class="top">.*?</header>\s*', "", div.read_text(), count=1, flags=re.S)
+    ids = re.findall(r'<section id="([^"]+)"', html)
+    names = {"question": "Question", "results": "Results", "method": "Method", "lobbot": "Compression",
+             "limits": "Limits", "across": "Across questions", "questions": "Across questions"}
+    secs = ",".join(f"{i}:{names.get(i, i.replace('-', ' ').capitalize())}" for i in ids)
+    tag = SHELL.format(active="divergence", extra=f' data-sections="{secs}"')
+    if "shell.js" not in html:
+        html = html.replace("<body>", "<body>\n" + tag, 1)
+    div.write_text(html)
+    for page in (DOCS / "lab" / "index.html", ROOT / "lab" / "static" / "index.html"):
+        if page.exists() and "shell.js" not in (h := page.read_text()):
+            page.write_text(h.replace("<body>", "<body>\n" + SHELL.format(active="reasoners", extra=""), 1))
+
+
 def build_finder() -> None:
     env = {**os.environ, "VITE_BASE": "/APORIA/docs/", "VITE_DATA_DIR": "directions-data"}
     subprocess.run(["npm", "run", "-s", "build"], cwd=WEB, env=env, check=True)
@@ -51,5 +72,6 @@ def build_finder() -> None:
 
 if __name__ == "__main__":
     move_divergence_page()
+    apply_shell()
     build_finder()
     print("docs/: finder at /, APORIA divergence at /divergence/, reasoner replay at /lab/, engine at /engine/")
