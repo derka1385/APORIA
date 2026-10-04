@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-D3jfb0Ew.js";import{f as t,l as n,p as r}from"./index-B96vSxFY.js";import{c as i,t as a}from"./format-Boj_XZB6.js";import{n as o,t as s}from"./text-ByAZeBqU.js";var c=e(),l={defender_a:`#F4F1E9`,defender_b:`#B4BBC2`,attacker:`#4A525B`,referee:`#353B42`};function u({turn:e,local:u,fresh:d=!1}){let f=e.phase===`label`?e.content.split(`:`,1)[0].trim():null,p=f&&t(f)?r(f):l[e.speaker]??`#808A94`,m=e.revised_premise&&e.content.includes(`
+import{t as e}from"./jsx-runtime-D3jfb0Ew.js";import{f as t,l as n,p as r}from"./index-B98igWHk.js";import{c as i,t as a}from"./format-Boj_XZB6.js";import{n as o,t as s}from"./text-CNJSyzSI.js";var c=e(),l={defender_a:`#F4F1E9`,defender_b:`#B4BBC2`,attacker:`#4A525B`,referee:`#353B42`};function u({turn:e,local:u,fresh:d=!1}){let f=e.phase===`label`?e.content.split(`:`,1)[0].trim():null,p=f&&t(f)?r(f):l[e.speaker]??`#808A94`,m=e.revised_premise&&e.content.includes(`
 
 Revised premise:`)?e.content.slice(0,e.content.lastIndexOf(`
 

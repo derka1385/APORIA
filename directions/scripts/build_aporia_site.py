@@ -3,7 +3,7 @@ measurements move to docs/divergence/, its reasoner replay (docs/lab/) and parti
 
     python3 directions/scripts/build_aporia_site.py      # from the APORIA repo root
 
-The finder (directions/web) is built with base /APORIA/ and reads its exported data from docs/directions-data/,
+The finder (directions/web) is built with base /APORIA/docs/ (Pages serves the repo root) and reads its exported data from docs/directions-data/,
 so it never collides with APORIA's own docs/data/ (run replays the particle engine and the lab read).
 """
 from __future__ import annotations
@@ -34,11 +34,14 @@ def move_divergence_page() -> None:
 
 
 def build_finder() -> None:
-    env = {**os.environ, "VITE_BASE": "/APORIA/", "VITE_DATA_DIR": "directions-data"}
+    env = {**os.environ, "VITE_BASE": "/APORIA/docs/", "VITE_DATA_DIR": "directions-data"}
     subprocess.run(["npm", "run", "-s", "build"], cwd=WEB, env=env, check=True)
     dist = WEB / "dist"
     for name in ("index.html", "404.html"):
         shutil.copyfile(dist / name, DOCS / name)
+    # Pages serves this repo from its root, so only a root 404.html catches deep links like /APORIA/docs/brief/<id>;
+    # it is the finder itself (absolute asset paths), whose router then shows the page or its own not-found view.
+    shutil.copyfile(dist / "404.html", ROOT / "404.html")
     for d in ("assets", "directions-data"):
         if (DOCS / d).exists():
             shutil.rmtree(DOCS / d)

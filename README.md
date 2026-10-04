@@ -3,7 +3,7 @@
 **An experimental AI research lab that treats *how an agent thinks* as the experimental variable.**
 
 > **One research-directions finder.** APORIA now runs its cognitive engine *and* a full dialectical lab as one loop,
-> for philosophy students who need to know what to write next. **Live:** https://derka1385.github.io/APORIA/
+> for philosophy students who need to know what to write next. **Live:** https://derka1385.github.io/APORIA/docs/
 >
 > 1. **Research:** OpenAlex corpus, open-access full texts; a paper's argument is rebuilt as numbered premises with
 >    verbatim quotes, and a truth table finds its hidden premise.
