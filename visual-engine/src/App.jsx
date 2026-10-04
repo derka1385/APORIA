@@ -87,7 +87,7 @@ export default function App() {
 
   return (
     <>
-      <Canvas camera={{ position: [0, 0, 6.2], fov: 42 }} dpr={[1, 1.5]} gl={{ antialias: false }}>
+      <Canvas camera={{ position: [0, 0, 6.2], fov: 42 }} dpr={[1, 1.25]} gl={{ antialias: false }}>
         <color attach="background" args={['#030407']} />
         <Engine state={state} delta={delta} live={live} />
         <EffectComposer multisampling={0}>

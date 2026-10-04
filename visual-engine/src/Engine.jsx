@@ -8,7 +8,7 @@ const UNIFORM = { idle: 'uIdle', explore: 'uExplore', focus: 'uFocus', conflict:
 // how fast the internal flow field advances in each state
 const SPEED = { idle: 0.25, explore: 0.75, focus: 0.45, conflict: 0.6, insight: 0.2, collapse: 0.5 }
 
-const COUNT = 180_000
+const COUNT = 100_000 // sized for laptop thermals; raise on a desktop GPU
 
 export default function Engine({ state, delta, live }) {
   const pointer = useThree((s) => s.pointer)
@@ -33,7 +33,7 @@ export default function Engine({ state, delta, live }) {
 
   const material = useMemo(() => {
     const uniforms = {
-      uTime: { value: 0 }, uFlow: { value: 0 }, uSize: { value: 2.2 },
+      uTime: { value: 0 }, uFlow: { value: 0 }, uSize: { value: 2.6 },
       uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
       uDelta: { value: 0 }, uCollapseAngle: { value: 0 },
       uUncertainty: { value: 0 }, uTint: { value: new THREE.Color() }, uTintAmt: { value: 0 },

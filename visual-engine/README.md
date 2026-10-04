@@ -28,7 +28,7 @@ The same controls sit in the bottom-left panel, with a slider for Δ. Typing a q
 
 ## How the object is built
 
-**Hidden topology.** 180,000 points each get a fixed `(u, v)` coordinate and four random seeds. The vertex shader maps `(u, v)` onto a twisted elliptical torus: a closed spine (a circle with a saddle fold) carrying an elliptical cross-section that twists 1.5 turns around the loop. The result is a folded band rather than a sphere. A quarter of the points fill the interior so the body reads as volume, and 4.5% become a sparse halo of dust around it. Nothing is stored on the CPU; the whole shape is recomputed per frame on the GPU.
+**Hidden topology.** 100,000 points each get a fixed `(u, v)` coordinate and four random seeds. The vertex shader maps `(u, v)` onto a twisted elliptical torus: a closed spine (a circle with a saddle fold) carrying an elliptical cross-section that twists 1.5 turns around the loop. The result is a folded band rather than a sphere. A quarter of the points fill the interior so the body reads as volume, and 4.5% become a sparse halo of dust around it. Nothing is stored on the CPU; the whole shape is recomputed per frame on the GPU.
 
 **Deformation.** Layered 3D simplex noise displaces every point. Separately, a flow phase (`uFlow`) advances at a speed set by the current state, so the internal motion is calm at rest and faster while exploring.
 
