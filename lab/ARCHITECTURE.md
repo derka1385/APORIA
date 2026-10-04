@@ -16,6 +16,8 @@ Research questions:
   `nomic-embed-text`, with a bag-of-words fallback. Model-condition variants:
   `qwen2.5:3b-instruct-q8_0`, `qwen2.5:3b-instruct-q2_K`, `qwen2.5:1.5b`, `llama3.2:3b`.
 - No API keys. Everything runs on localhost.
+- Since 2026-10-04 11:43 the main runs use `qwen3:30b` (thinking off) on an evroc GPU VM through an SSH tunnel
+  (`OLLAMA_HOST=http://127.0.0.1:11500`), five reasoners in parallel; nomic-embed-text runs on the same VM.
 
 ## LobBot, what it actually does
 

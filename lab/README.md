@@ -18,5 +18,10 @@ Needs Ollama and Python 3.10+. No pip dependencies.
 - `metrics.py`: Δ measurements (`python3 metrics.py` self-checks)
 - `server.py`: local API + SSE stream; finished runs land in `runs/`
 
-Environment: `APORIA_MODEL` (default `qwen2.5:3b`), `APORIA_MODELS`
-(comma-separated variants for the model condition), `APORIA_PORT` (8740).
+Environment: `APORIA_MODEL` (default `qwen2.5:3b`), `APORIA_MODELS` (comma-separated variants for the model
+condition, or `profile=model` pairs), `OLLAMA_HOST` (e.g. a tunnel to the evroc VM), `APORIA_PARALLEL`
+(reasoners in threads), `APORIA_PORT` (8740).
+
+- `batch.py`: experiment plans (`--sweep` for Δ), resumable; stops when the endpoint is down
+- `export_site.py`: recorded runs → `../docs/` (static site) and the README results block
+- `lobbot_specs.py`: LobBot TaskSpecs per profile from recorded traces → `lobbot/`
