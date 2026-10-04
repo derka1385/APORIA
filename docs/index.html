@@ -152,6 +152,9 @@ footer { border-top: 1px solid var(--rule); padding: 40px 0 64px; font: 13px var
   <h3 style="margin-top:56px">Δ sweep</h3>
   <p class="dim">Same question, architecture condition, Δ from 0 (identical policies, only seeds differ) to 1.</p>
   <div id="sweep"></div>
+  <h3 style="margin-top:56px">Across questions</h3>
+  <p class="dim">The same comparison, Δ 0 against Δ 1, on every question recorded at both ends.</p>
+  <div id="across"></div>
   <h3 style="margin-top:56px">Every recorded run</h3>
   <p class="dim">Open any run to replay its five argument graphs step by step. Failed runs are listed and never analysed.</p>
   <div id="allruns"></div>
@@ -209,7 +212,7 @@ learning:   information gain → op value, branch yield</div>
   <p class="eyebrow">Limits · read before trusting a number</p>
   <h2>What this does <em>not</em> show yet.</h2>
   <ol class="steps" style="margin-top:32px">
-    <li><b>Small n.</b> Each condition has one or two runs of five reasoners on one question. Differences are suggestive, not significant.</li>
+    <li><b>Small n.</b> One or two runs of five reasoners per condition. The full Δ sweep covers one question; the Δ 0 / Δ 1 comparison covers four. Differences are consistent in direction, not tested for significance.</li>
     <li><b>Conclusions converge.</b> Conclusion similarity stays near 0.9 in every condition. Different processes have not yet produced different answers.</li>
     <li><b>Model judgements.</b> Verdicts (valid, survives, damage) come from the same LLM. The truth-table check is real, but it only checks the model's own formalization.</li>
     <li><b>Small embedding model.</b> Similarity uses nomic-embed-text. Absolute values are rough, so compare conditions against the base noise floor.</li>
@@ -306,7 +309,8 @@ fetch("data/index.json").then((r) => r.json()).then((D) => {
       [`${m(B, "conclusion_similarity").toFixed(2)} → ${m(A, "conclusion_similarity").toFixed(2)}`, "conclusion similarity: the answers still converge"],
     ];
     $("#kpis").innerHTML = k.map(([v, l]) => `<div class="kpi"><div class="v">${v}</div><div class="k">${l}</div></div>`).join("");
-    $("#kpinote").textContent = `${g}, one question, five reasoners per run, n = ${B.length} and ${A.length} run(s). ` +
+    const nq = new Set(A.concat(B).map((r) => r.question)).size;
+    $("#kpinote").textContent = `${g}, pooled over ${nq} question${nq > 1 ? "s" : ""}, five reasoners per run, n = ${B.length} and ${A.length} run(s). ` +
       `Δ 0 runs the identical base policy in all five reasoners; only seeds differ. Small n: a direction, not a significance test.`;
   }
   // one comparison table per model and budget that has more than one condition at Δ 1
@@ -318,6 +322,13 @@ fetch("data/index.json").then((r) => r.json()).then((D) => {
   const sw = ok.filter((r) => group(r) === g && r.condition === "architecture");
   $("#sweep").innerHTML = new Set(sw.map((r) => r.delta)).size >= 3 ? sweepChart(sw)
     : `<div class="pending">Pending. The Δ sweep (0, 0.25, 0.5, 0.75, 1, two seeds each) runs on the evroc VM with <span class="mono">python3 lab/batch.py --sweep --full</span>. Recorded Δ values so far on ${esc(g)}: ${[...new Set(sw.map((r) => r.delta))].join(", ") || "none"}.</div>`;
+  const arch = ok.filter((r) => group(r) === g && r.condition === "architecture");
+  const qs = [...new Set(arch.map((r) => r.question))].filter((q) => [0, 1].every((d) => arch.some((r) => r.question === q && r.delta === d)));
+  const mq = (q, d, k) => mean(arch.filter((r) => r.question === q && r.delta === d).map((r) => r.metrics[k]));
+  const cell = (q, k) => `${f2(mq(q, 0, k))} → ${f2(mq(q, 1, k))}`;
+  $("#across").innerHTML = `<div class="tablewrap"><table><tr><th>question (${esc(g)})</th><th>path similarity ↓</th><th>branch diversity ↑</th><th>unique objections ↑</th><th>conclusion similarity</th></tr>` +
+    qs.map((q) => `<tr><td>${esc(q)}</td><td>${cell(q, "path_similarity")}</td><td>${cell(q, "branch_diversity")}</td><td>${cell(q, "unique_objections")}</td><td>${cell(q, "conclusion_similarity")}</td></tr>`).join("") +
+    `</table></div>`;
   $("#allruns").innerHTML = runsTable(D.runs);
 });
 </script>

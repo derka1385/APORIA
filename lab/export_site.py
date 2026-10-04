@@ -74,6 +74,16 @@ def readme_results(ok: list[dict], best: dict):
           "that means more divergence.", "", "**Conditions at Δ 1**", ""] + rows("condition", conds)
     if len(deltas) >= 3:
         md += ["", "**Δ sweep, architecture condition**", ""] + rows("Δ", sweep)
+    arch = [r for r in same if r["condition"] == "architecture"]
+    qs = [q for q in dict.fromkeys(r["question"] for r in arch) if all(any(r["question"] == q and r["delta"] == d for r in arch) for d in (0, 1))]
+    if len(qs) > 1:
+        m = lambda q, d, k: sum(r["metrics"][k] for r in arch if r["question"] == q and r["delta"] == d) / sum(
+            1 for r in arch if r["question"] == q and r["delta"] == d)
+        md += ["", "**Across questions, architecture Δ 0 → Δ 1**", "",
+               "| question | path similarity ↓ | branch diversity ↑ | unique objections ↑ | conclusion similarity |", "|---|---|---|---|---|"]
+        md += [f"| {q} | " + " | ".join(f"{m(q, 0, k):.3g} → {m(q, 1, k):.3g}" for k in
+                                         ("path_similarity", "branch_diversity", "unique_objections", "conclusion_similarity")) + " |"
+               for q in qs]
     readme = LAB.parent / "README.md"
     text = readme.read_text()
     a, b = text.index("<!-- RESULTS -->") + len("<!-- RESULTS -->"), text.index("<!-- /RESULTS -->")

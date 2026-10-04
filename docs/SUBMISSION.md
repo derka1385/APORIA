@@ -34,15 +34,17 @@ Conclusions still converge, and the lab reports that too.
 - Δ sweep, two paired seeds per level: from Δ 0 to Δ 1 path similarity falls 0.44 → 0.30, branch diversity rises
   0.44 → 0.56 and unique objections per run rise 0.5 → 2.5. The change appears from Δ 0.75; Δ 0.25 and 0.5 stay at
   the noise floor.
+- The Δ 0 → Δ 1 shift replicates on four questions (personal identity, machine understanding, free will, scientific
+  realism): path similarity falls on 4 of 4, branch diversity rises on 4 of 4, unique objections rise on 3 of 4.
 - At Δ 1: path similarity 0.30 with policy vectors, 0.33 with persona prompts, 0.46 with identical policies.
 - Different model families (the `model` condition) give the most unique objections (5) and the highest semantic
   diversity (0.18) but the lowest branch diversity (0.36). Models change the content; policies change the process.
 - Conclusion similarity stays between 0.89 and 0.94 in every condition: different processes, so far, the same answer.
 
 ## Honest limits
-Small n (one or two runs per condition, one question); the verdicts inside the loop are the same LLM's judgements;
-similarity uses a small embedding model; the model-variant condition failed once when the VM tunnel dropped, and that
-run is shown as failed and excluded. No compression result yet.
+Small n (one or two runs per condition; the full sweep on one question, Δ 0 / Δ 1 on four); the verdicts inside the loop are the same LLM's judgements;
+similarity uses a small embedding model; a dropped VM tunnel once produced empty runs; runs whose reasoners mostly
+got no answer are flagged and never analysed, and the batch now stops when the endpoint is down. No compression result yet.
 
 ## Built with
 Python standard library (engine, server, metrics), Ollama, Qwen3-30B on an evroc GPU VM, Qwen2.5-3B locally,

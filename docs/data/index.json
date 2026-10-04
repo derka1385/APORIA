@@ -3394,6 +3394,1545 @@
      "position": "Personal identity is not solely dependent on psychological continuity, as it requires a continuous physical substrate or a metaphysical principle to ensure persistence through time."
     }
    }
+  },
+  {
+   "id": "20261004-132110-architecture-0.5",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.5,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1001,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.126,
+    "branch_diversity": 0.531,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.388,
+    "conclusion_similarity": 0.943,
+    "unique_assumptions": 1,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|formalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.833,
+     "defeats": 1,
+     "novelty": 0.174,
+     "gain_per_step": 0.143,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.35,
+      "counterfactual": 0.211,
+      "memory": 0.106,
+      "conclude": 0.084,
+      "introspect": 0.078,
+      "doubt": 0.068,
+      "reason": 0.057,
+      "inquire": 0.046
+     },
+     "steps": 14
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.251,
+     "gain_per_step": 0.124,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.257,
+      "adjudicate": 0.212,
+      "formalize": 0.167,
+      "conclude": 0.153,
+      "reason": 0.107,
+      "counterfactual": 0.104
+     },
+     "steps": 8
+    },
+    "skeptic": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 7,
+     "resolution_rate": 0.714,
+     "defeats": 1,
+     "novelty": 0.153,
+     "gain_per_step": 0.172,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "doubt": 0.368,
+      "adjudicate": 0.325,
+      "introspect": 0.121,
+      "conclude": 0.08,
+      "counterfactual": 0.077,
+      "revise": 0.028
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 7,
+     "resolution_rate": 0.714,
+     "defeats": 2,
+     "novelty": 0.175,
+     "gain_per_step": 0.178,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.337,
+      "memory": 0.198,
+      "reason": 0.12,
+      "imagine": 0.106,
+      "conclude": 0.1,
+      "doubt": 0.083,
+      "counterfactual": 0.055
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.172,
+     "gain_per_step": 0.14,
+     "tool_calls": 3,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.27,
+      "formalize": 0.224,
+      "counterfactual": 0.132,
+      "intuit": 0.098,
+      "imagine": 0.089,
+      "conclude": 0.077,
+      "reason": 0.066,
+      "introspect": 0.044
+     },
+     "steps": 14
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "yes, personal identity is dependent on psychological continuity as it ensures the same mind or consciousness is present across different life stages."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity holds up to scrutiny, but it is not absolute and should be considered alongside other forms of continuity."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity, but also involves physical continuity as both are essential for a coherent sense of self, is supported by the current argument, but it is qualified due to potential challenges."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the majority of evidence and thought experiments, but it is not without challenges. The hypothesis remains strong despite potential objections and alternative hypotheses."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is challenged by alternative scenarios where personal identity can be independent of psychological continuity."
+    }
+   }
+  },
+  {
+   "id": "20261004-132727-architecture-0.8",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.75,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.141,
+    "branch_diversity": 0.545,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.321,
+    "conclusion_similarity": 0.916,
+    "unique_assumptions": 3,
+    "unique_objections": 0,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|formalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.169,
+     "gain_per_step": 0.115,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.558,
+      "counterfactual": 0.117,
+      "adjudicate": 0.08,
+      "reason": 0.074,
+      "introspect": 0.066,
+      "memory": 0.053,
+      "conclude": 0.052
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.224,
+     "gain_per_step": 0.098,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.494,
+      "introspect": 0.147,
+      "counterfactual": 0.116,
+      "conclude": 0.096,
+      "formalize": 0.074,
+      "adjudicate": 0.073
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 8,
+     "resolution_rate": 0.875,
+     "defeats": 2,
+     "novelty": 0.143,
+     "gain_per_step": 0.194,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.415,
+      "doubt": 0.245,
+      "counterfactual": 0.128,
+      "conclude": 0.102,
+      "introspect": 0.085,
+      "revise": 0.024
+     },
+     "steps": 15
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.18,
+     "gain_per_step": 0.146,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.377,
+      "introspect": 0.138,
+      "counterfactual": 0.124,
+      "conclude": 0.092,
+      "memory": 0.087,
+      "doubt": 0.069,
+      "inquire": 0.065,
+      "reason": 0.047
+     },
+     "steps": 14
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 1,
+     "novelty": 0.169,
+     "gain_per_step": 0.137,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "counterfactual": 0.29,
+      "adjudicate": 0.265,
+      "conclude": 0.117,
+      "inquire": 0.111,
+      "introspect": 0.074,
+      "reason": 0.074,
+      "formalize": 0.069
+     },
+     "steps": 13
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "qualified",
+     "credence": 0.75,
+     "position": "The hypothesis suggests personal identity is dependent on psychological continuity, but it is not the only stable feature, as evidenced by thought experiments and philosophical theories like those of Parfit and John Locke."
+    },
+    "formalist": {
+     "stance": "qualified yes",
+     "credence": 0.75,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the premises provided, though it leaves room for counterfactual scenarios."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "Personal identity is dependent on psychological continuity, but is also influenced by social and cultural factors, as suggested by the hypothesis and supported by the current argument graph."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by evidence and reasoning, but it is not a definitive claim as other mechanisms can play a role in maintaining personal identity."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.6,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is challenged by the existence of scenarios where a person can maintain a consistent self over time without psychological continuity but with physical continuity."
+    }
+   }
+  },
+  {
+   "id": "20261004-133057-architecture-1.0",
+   "question": "Can a machine that only manipulates symbols genuinely understand anything?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.217,
+    "branch_diversity": 0.511,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.37,
+    "conclusion_similarity": 0.957,
+    "unique_assumptions": 5,
+    "unique_objections": 8,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|formalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.209,
+     "gain_per_step": 0.118,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 1,
+     "compute": {
+      "imagine": 0.587,
+      "reason": 0.091,
+      "counterfactual": 0.086,
+      "intuit": 0.082,
+      "introspect": 0.062,
+      "adjudicate": 0.048,
+      "doubt": 0.024,
+      "conclude": 0.019
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.25,
+     "gain_per_step": 0.13,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.557,
+      "introspect": 0.126,
+      "counterfactual": 0.094,
+      "conclude": 0.082,
+      "formalize": 0.051,
+      "revise": 0.049,
+      "adjudicate": 0.04
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.237,
+     "gain_per_step": 0.192,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.372,
+      "imagine": 0.185,
+      "doubt": 0.163,
+      "counterfactual": 0.086,
+      "formalize": 0.084,
+      "introspect": 0.07,
+      "conclude": 0.04
+     },
+     "steps": 11
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.28,
+     "gain_per_step": 0.175,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "intuit": 0.282,
+      "adjudicate": 0.242,
+      "memory": 0.143,
+      "conclude": 0.14,
+      "introspect": 0.126,
+      "counterfactual": 0.067
+     },
+     "steps": 8
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.23,
+     "gain_per_step": 0.139,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.311,
+      "formalize": 0.162,
+      "adjudicate": 0.137,
+      "conclude": 0.121,
+      "reason": 0.097,
+      "counterfactual": 0.086,
+      "inquire": 0.085
+     },
+     "steps": 11
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "no",
+     "credence": 0.0,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything."
+    },
+    "formalist": {
+     "stance": "no",
+     "credence": 0.0,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding necessitates semantic content and embodied experience that transcend purely syntactic operations."
+    },
+    "skeptic": {
+     "stance": "no",
+     "credence": 0.05,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content and embodied experience beyond syntactic operations."
+    },
+    "synthesizer": {
+     "stance": "no",
+     "credence": 0.1,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content, embodied experience, and subjective qualia that cannot be achieved through syntactic manipulation alone."
+    },
+    "minimalist": {
+     "stance": "no",
+     "credence": 0.0,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content and embodied experience, which are absent in purely syntactic symbol manipulation."
+    }
+   }
+  },
+  {
+   "id": "20261004-133137-architecture-0.0",
+   "question": "Can a machine that only manipulates symbols genuinely understand anything?",
+   "condition": "architecture",
+   "delta": 0.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.175,
+    "branch_diversity": 0.466,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.486,
+    "conclusion_similarity": 0.948,
+    "unique_assumptions": 6,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "skeptic|minimalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.27,
+     "gain_per_step": 0.154,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.331,
+      "intuit": 0.146,
+      "introspect": 0.129,
+      "conclude": 0.112,
+      "formalize": 0.077,
+      "reason": 0.074,
+      "doubt": 0.074,
+      "counterfactual": 0.056
+     },
+     "steps": 11
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.307,
+     "gain_per_step": 0.17,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.395,
+      "conclude": 0.222,
+      "memory": 0.187,
+      "reason": 0.102,
+      "formalize": 0.093
+     },
+     "steps": 7
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.271,
+     "gain_per_step": 0.174,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.323,
+      "counterfactual": 0.174,
+      "imagine": 0.153,
+      "introspect": 0.149,
+      "memory": 0.114,
+      "conclude": 0.087
+     },
+     "steps": 8
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 0,
+     "novelty": 0.223,
+     "gain_per_step": 0.177,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.265,
+      "introspect": 0.215,
+      "doubt": 0.12,
+      "counterfactual": 0.104,
+      "imagine": 0.102,
+      "memory": 0.067,
+      "reason": 0.064,
+      "inquire": 0.031,
+      "conclude": 0.031
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.213,
+     "gain_per_step": 0.152,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.352,
+      "doubt": 0.143,
+      "inquire": 0.126,
+      "introspect": 0.123,
+      "counterfactual": 0.107,
+      "formalize": 0.085,
+      "conclude": 0.064
+     },
+     "steps": 11
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "no",
+     "credence": 0.21,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content, intentionality, and experiential grounding that syntactic manipulation alone cannot provide."
+    },
+    "formalist": {
+     "stance": "no",
+     "credence": 0.15,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything because understanding requires semantic content and embodied experience beyond syntactic operations."
+    },
+    "skeptic": {
+     "stance": "no",
+     "credence": 0.05,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything, as understanding requires semantic content and embodied experience beyond syntactic manipulation."
+    },
+    "synthesizer": {
+     "stance": "no",
+     "credence": 0.0,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything."
+    },
+    "minimalist": {
+     "stance": "no",
+     "credence": 0.15,
+     "position": "A machine that only manipulates symbols cannot genuinely understand anything."
+    }
+   }
+  },
+  {
+   "id": "20261004-133203-architecture-0.8",
+   "question": "Is personal identity dependent on psychological continuity?",
+   "condition": "architecture",
+   "delta": 0.75,
+   "models": [
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b",
+    "qwen2.5:3b"
+   ],
+   "seed": 1001,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.154,
+    "branch_diversity": 0.52,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.364,
+    "conclusion_similarity": 0.95,
+    "unique_assumptions": 7,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "synthesizer|minimalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 7,
+     "resolution_rate": 0.714,
+     "defeats": 0,
+     "novelty": 0.173,
+     "gain_per_step": 0.142,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.32,
+      "counterfactual": 0.148,
+      "memory": 0.123,
+      "doubt": 0.117,
+      "introspect": 0.097,
+      "inquire": 0.095,
+      "conclude": 0.063,
+      "reason": 0.038
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 2,
+     "rejected_hypotheses": 1,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.209,
+     "gain_per_step": 0.103,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.392,
+      "introspect": 0.193,
+      "adjudicate": 0.103,
+      "formalize": 0.089,
+      "counterfactual": 0.089,
+      "conclude": 0.088,
+      "revise": 0.046
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 3,
+     "rejected_hypotheses": 3,
+     "surviving_hypotheses": 0,
+     "experiments": 9,
+     "resolution_rate": 0.667,
+     "defeats": 2,
+     "novelty": 0.152,
+     "gain_per_step": 0.223,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.382,
+      "doubt": 0.282,
+      "counterfactual": 0.119,
+      "introspect": 0.099,
+      "conclude": 0.062,
+      "revise": 0.056
+     },
+     "steps": 15
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.278,
+     "gain_per_step": 0.161,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.345,
+      "memory": 0.272,
+      "intuit": 0.158,
+      "conclude": 0.136,
+      "counterfactual": 0.09
+     },
+     "steps": 7
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.175,
+     "gain_per_step": 0.132,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.312,
+      "formalize": 0.191,
+      "counterfactual": 0.155,
+      "conclude": 0.141,
+      "introspect": 0.11,
+      "inquire": 0.091
+     },
+     "steps": 9
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity holds true, as psychological continuity is a fundamental aspect of maintaining consistent personal identity over time."
+    },
+    "formalist": {
+     "stance": "yes",
+     "credence": 0.8,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the need for a coherent self over time, which psychological continuity ensures, and is influenced by other factors like memories and experiences."
+    },
+    "skeptic": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is supported by the current evidence and arguments."
+    },
+    "synthesizer": {
+     "stance": "yes",
+     "credence": 0.9,
+     "position": "Yes, personal identity is dependent on psychological continuity because psychological continuity is necessary for maintaining a consistent self over time, as evidenced by Locke's memory theory."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.7,
+     "position": "The hypothesis that personal identity is dependent on psychological continuity is not fully supported by the available premises and premises, as it assumes psychological continuity as the sole factor without considering other potential contributors to personal identity."
+    }
+   }
+  },
+  {
+   "id": "20261004-133247-architecture-1.0",
+   "question": "Is moral responsibility compatible with determinism?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.171,
+    "branch_diversity": 0.555,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.309,
+    "conclusion_similarity": 0.951,
+    "unique_assumptions": 5,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "formalist|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.5,
+     "defeats": 0,
+     "novelty": 0.194,
+     "gain_per_step": 0.158,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.526,
+      "adjudicate": 0.122,
+      "memory": 0.107,
+      "intuit": 0.093,
+      "introspect": 0.069,
+      "counterfactual": 0.034,
+      "doubt": 0.027,
+      "conclude": 0.022
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 1,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.271,
+     "gain_per_step": 0.139,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.582,
+      "conclude": 0.1,
+      "introspect": 0.099,
+      "counterfactual": 0.086,
+      "adjudicate": 0.084,
+      "formalize": 0.049
+     },
+     "steps": 12
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.192,
+     "gain_per_step": 0.201,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.473,
+      "doubt": 0.15,
+      "formalize": 0.124,
+      "conclude": 0.109,
+      "counterfactual": 0.08,
+      "introspect": 0.064
+     },
+     "steps": 11
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.195,
+     "gain_per_step": 0.155,
+     "tool_calls": 4,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.31,
+      "memory": 0.209,
+      "adjudicate": 0.135,
+      "introspect": 0.129,
+      "intuit": 0.096,
+      "counterfactual": 0.071,
+      "conclude": 0.049
+     },
+     "steps": 14
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.191,
+     "gain_per_step": 0.139,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.305,
+      "conclude": 0.182,
+      "adjudicate": 0.154,
+      "formalize": 0.144,
+      "counterfactual": 0.086,
+      "reason": 0.069,
+      "inquire": 0.059
+     },
+     "steps": 11
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "yes",
+     "credence": 0.75,
+     "position": "Moral responsibility is compatible with determinism."
+    },
+    "formalist": {
+     "stance": "yes",
+     "credence": 0.83,
+     "position": "Moral responsibility is compatible with determinism."
+    },
+    "skeptic": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism."
+    },
+    "synthesizer": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism because it depends on psychological states and reactive attitudes rather than on the absence of causal determinism. The consequence argument mistakenly conflates 'up to us' with causal undeterminedness, but moral responsibility requires only that actions be causally explained by reasons and character, not that they be causally undetermined."
+    },
+    "minimalist": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism, as the capacity for rational deliberation and choice, which is sufficient for moral responsibility, remains intact under a deterministic framework."
+    }
+   }
+  },
+  {
+   "id": "20261004-133337-architecture-0.0",
+   "question": "Is moral responsibility compatible with determinism?",
+   "condition": "architecture",
+   "delta": 0.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.163,
+    "branch_diversity": 0.452,
+    "disagreement_rate": 0.0,
+    "path_similarity": 0.426,
+    "conclusion_similarity": 0.934,
+    "unique_assumptions": 4,
+    "unique_objections": 2,
+    "unique_hypotheses": 0,
+    "most_divergent": "explorer|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.212,
+     "gain_per_step": 0.155,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.324,
+      "counterfactual": 0.13,
+      "doubt": 0.111,
+      "introspect": 0.109,
+      "conclude": 0.091,
+      "formalize": 0.087,
+      "intuit": 0.075,
+      "reason": 0.073
+     },
+     "steps": 11
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.273,
+     "gain_per_step": 0.17,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.448,
+      "conclude": 0.197,
+      "memory": 0.142,
+      "reason": 0.115,
+      "formalize": 0.097
+     },
+     "steps": 7
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 0,
+     "novelty": 0.218,
+     "gain_per_step": 0.162,
+     "tool_calls": 0,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.309,
+      "adjudicate": 0.224,
+      "counterfactual": 0.154,
+      "doubt": 0.084,
+      "introspect": 0.083,
+      "conclude": 0.075,
+      "intuit": 0.071
+     },
+     "steps": 13
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 0.8,
+     "defeats": 1,
+     "novelty": 0.228,
+     "gain_per_step": 0.159,
+     "tool_calls": 3,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.209,
+      "introspect": 0.178,
+      "formalize": 0.138,
+      "imagine": 0.129,
+      "reason": 0.105,
+      "memory": 0.098,
+      "conclude": 0.072,
+      "counterfactual": 0.071
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.234,
+     "gain_per_step": 0.124,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.25,
+      "counterfactual": 0.163,
+      "inquire": 0.157,
+      "introspect": 0.139,
+      "formalize": 0.136,
+      "conclude": 0.088,
+      "reason": 0.067
+     },
+     "steps": 9
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism because the capacity for rational choice, which is causally determined by an agent's reasons and deliberation, suffices for responsibility without requiring metaphysical alternative possibilities."
+    },
+    "formalist": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism."
+    },
+    "skeptic": {
+     "stance": "yes",
+     "credence": 0.75,
+     "position": "Moral responsibility is compatible with determinism when we understand it as requiring causal connections to an agent's character and reasons, not uncaused actions or alternative possibilities."
+    },
+    "synthesizer": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism. This is supported by Strawson's reactive attitudes and the consistency of moral practices within a deterministic framework."
+    },
+    "minimalist": {
+     "stance": "yes",
+     "credence": 0.85,
+     "position": "Moral responsibility is compatible with determinism."
+    }
+   }
+  },
+  {
+   "id": "20261004-133442-architecture-1.0",
+   "question": "Does the predictive success of a scientific theory show that it is true?",
+   "condition": "architecture",
+   "delta": 1.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.168,
+    "branch_diversity": 0.546,
+    "disagreement_rate": 0.6,
+    "path_similarity": 0.318,
+    "conclusion_similarity": 0.919,
+    "unique_assumptions": 3,
+    "unique_objections": 5,
+    "unique_hypotheses": 0,
+    "most_divergent": "formalist|synthesizer"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 6,
+     "resolution_rate": 0.667,
+     "defeats": 0,
+     "novelty": 0.194,
+     "gain_per_step": 0.157,
+     "tool_calls": 2,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "imagine": 0.533,
+      "adjudicate": 0.145,
+      "memory": 0.14,
+      "intuit": 0.076,
+      "introspect": 0.053,
+      "conclude": 0.026,
+      "counterfactual": 0.026
+     },
+     "steps": 15
+    },
+    "formalist": {
+     "hypotheses": 3,
+     "rejected_hypotheses": 2,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 0.0,
+     "defeats": 0,
+     "novelty": 0.189,
+     "gain_per_step": 0.171,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "reason": 0.529,
+      "introspect": 0.177,
+      "conclude": 0.107,
+      "counterfactual": 0.077,
+      "revise": 0.07,
+      "formalize": 0.041
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 5,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.217,
+     "gain_per_step": 0.192,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.361,
+      "doubt": 0.16,
+      "imagine": 0.16,
+      "introspect": 0.104,
+      "counterfactual": 0.08,
+      "conclude": 0.079,
+      "formalize": 0.056
+     },
+     "steps": 11
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 7,
+     "resolution_rate": 0.571,
+     "defeats": 1,
+     "novelty": 0.202,
+     "gain_per_step": 0.152,
+     "tool_calls": 4,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.263,
+      "memory": 0.253,
+      "doubt": 0.185,
+      "imagine": 0.101,
+      "counterfactual": 0.088,
+      "introspect": 0.068,
+      "conclude": 0.043
+     },
+     "steps": 14
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.206,
+     "gain_per_step": 0.144,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.282,
+      "adjudicate": 0.236,
+      "inquire": 0.128,
+      "reason": 0.101,
+      "counterfactual": 0.086,
+      "conclude": 0.085,
+      "formalize": 0.082
+     },
+     "steps": 9
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "no",
+     "credence": 0.0,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as theories can be empirically successful without accurately representing underlying reality."
+    },
+    "formalist": {
+     "stance": "qualified",
+     "credence": 0.3,
+     "position": "The predictive success of a scientific theory is evidence for its truth but does not guarantee it, as it may arise from factors like model selection bias or overfitting rather than capturing underlying reality."
+    },
+    "skeptic": {
+     "stance": "qualified",
+     "credence": 0.1,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as it may be a result of model approximation or empirical adequacy without ontological truth."
+    },
+    "synthesizer": {
+     "stance": "no",
+     "credence": 0.12,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as evidenced by historical examples where empirically successful theories were later found to be ontologically false or incomplete."
+    },
+    "minimalist": {
+     "stance": "qualified",
+     "credence": 0.21,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as historical examples demonstrate that false theories can produce accurate predictions through mechanisms like model fitting or coincidental accuracy."
+    }
+   }
+  },
+  {
+   "id": "20261004-133535-architecture-0.0",
+   "question": "Does the predictive success of a scientific theory show that it is true?",
+   "condition": "architecture",
+   "delta": 0.0,
+   "models": [
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b",
+    "qwen3:30b"
+   ],
+   "seed": 1000,
+   "quick": false,
+   "failed": [],
+   "metrics": {
+    "semantic_diversity": 0.141,
+    "branch_diversity": 0.349,
+    "disagreement_rate": 0.4,
+    "path_similarity": 0.393,
+    "conclusion_similarity": 0.937,
+    "unique_assumptions": 1,
+    "unique_objections": 1,
+    "unique_hypotheses": 0,
+    "most_divergent": "synthesizer|minimalist"
+   },
+   "per_agent": {
+    "explorer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.228,
+     "gain_per_step": 0.154,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.423,
+      "doubt": 0.111,
+      "introspect": 0.104,
+      "intuit": 0.09,
+      "counterfactual": 0.088,
+      "reason": 0.064,
+      "formalize": 0.061,
+      "conclude": 0.058
+     },
+     "steps": 11
+    },
+    "formalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 4,
+     "resolution_rate": 0.75,
+     "defeats": 1,
+     "novelty": 0.203,
+     "gain_per_step": 0.143,
+     "tool_calls": 3,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "introspect": 0.207,
+      "memory": 0.195,
+      "adjudicate": 0.191,
+      "imagine": 0.127,
+      "intuit": 0.093,
+      "doubt": 0.062,
+      "conclude": 0.047,
+      "counterfactual": 0.046,
+      "formalize": 0.032
+     },
+     "steps": 13
+    },
+    "skeptic": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 1,
+     "novelty": 0.218,
+     "gain_per_step": 0.166,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.223,
+      "conclude": 0.158,
+      "imagine": 0.117,
+      "counterfactual": 0.117,
+      "memory": 0.117,
+      "doubt": 0.114,
+      "reason": 0.1,
+      "introspect": 0.054
+     },
+     "steps": 10
+    },
+    "synthesizer": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 3,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.197,
+     "gain_per_step": 0.168,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.239,
+      "introspect": 0.226,
+      "imagine": 0.121,
+      "intuit": 0.101,
+      "memory": 0.089,
+      "counterfactual": 0.075,
+      "doubt": 0.069,
+      "reason": 0.043,
+      "conclude": 0.038
+     },
+     "steps": 13
+    },
+    "minimalist": {
+     "hypotheses": 1,
+     "rejected_hypotheses": 0,
+     "surviving_hypotheses": 1,
+     "experiments": 2,
+     "resolution_rate": 1.0,
+     "defeats": 0,
+     "novelty": 0.211,
+     "gain_per_step": 0.13,
+     "tool_calls": 1,
+     "recalls": 0,
+     "failed_calls": 0,
+     "compute": {
+      "adjudicate": 0.261,
+      "inquire": 0.154,
+      "reason": 0.147,
+      "counterfactual": 0.134,
+      "conclude": 0.124,
+      "formalize": 0.098,
+      "introspect": 0.082
+     },
+     "steps": 9
+    }
+   },
+   "stances": {
+    "explorer": {
+     "stance": "no",
+     "credence": 0.21,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true."
+    },
+    "formalist": {
+     "stance": "no",
+     "credence": 0.15,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as historical and philosophical evidence demonstrates that empirically successful theories can be false or incomplete."
+    },
+    "skeptic": {
+     "stance": "no",
+     "credence": 0.15,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as demonstrated by historical counterexamples like phlogiston theory and theoretical scenarios where false ontologies can yield accurate predictions."
+    },
+    "synthesizer": {
+     "stance": "qualified",
+     "credence": 0.21,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true, as historical and philosophical evidence demonstrates that theories can be empirically successful while being ontologically false or incomplete, and truth requires more than mere predictive adequacy."
+    },
+    "minimalist": {
+     "stance": "no",
+     "credence": 0.25,
+     "position": "The predictive success of a scientific theory does not necessarily show that it is true."
+    }
+   }
   }
  ]
 }
