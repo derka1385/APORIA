@@ -12,17 +12,14 @@ const FUNC_COLOR = {
 // impulse half-lives in seconds
 const HALF = { focus: 2, insight: 3, collapse: 2.5, conflict: 3, explore: 3 }
 
-export function connectLive(onInfo) {
+// replay: URL of a recorded run (lab/runs/*.json); events are rebuilt from its trace and fed to the same handler
+export function connectLive(onInfo, replay) {
   const levels = {} // agent -> latest levels
   const imp = { focus: 0, insight: 0, collapse: 0, conflict: 0, explore: 0 }
   const live = { delta: 0, tint: new THREE.Color('#a9c8ff'), tintAmt: 0, uncertainty: 0, connected: false }
   const bump = (k, v) => { imp[k] = Math.min(1, Math.max(imp[k], v)) }
 
-  const es = new EventSource(`${LAB}/api/live`)
-  es.onopen = () => { live.connected = true; onInfo({ connected: true }) }
-  es.onerror = () => { live.connected = false; onInfo({ connected: false }) }
-  es.onmessage = (m) => {
-    const e = JSON.parse(m.data)
+  const handle = (e) => {
     if (e.type === 'run_start') {
       live.delta = e.delta
       for (const k in levels) delete levels[k]
@@ -41,6 +38,25 @@ export function connectLive(onInfo) {
       else if (e.kind === 'contradiction') bump('conflict', 0.7)
       else if (e.kind === 'curiosity') bump('explore', Math.min(1, 0.4 + 0.5 * e.value))
     }
+  }
+  let es = null, timer = null
+  if (replay) {
+    live.connected = true
+    fetch(replay).then((r) => r.json()).then((run) => {
+      const ticks = replayTicks(run)
+      const play = (i) => {
+        if (i >= ticks.length) { timer = setTimeout(() => play(0), 4000); return } // loop after a pause
+        ticks[i].forEach(handle)
+        timer = setTimeout(() => play(i + 1), 650)
+      }
+      onInfo({ connected: true, replay: run.id })
+      play(0)
+    }).catch(() => onInfo({ connected: false }))
+  } else {
+    es = new EventSource(`${LAB}/api/live`)
+    es.onopen = () => { live.connected = true; onInfo({ connected: true }) }
+    es.onerror = () => { live.connected = false; onInfo({ connected: false }) }
+    es.onmessage = (m) => handle(JSON.parse(m.data))
   }
 
   // called every frame by the engine: decays impulses, returns state weights
@@ -63,6 +79,36 @@ export function connectLive(onInfo) {
     w.idle = Math.max(0, 1 - sum)
     return w
   }
-  live.close = () => es.close()
+  live.close = () => { es?.close(); clearTimeout(timer) }
   return live
+}
+
+// One tick per reasoning step, all five reasoners together. Saved runs keep each step's operation, focus,
+// probabilities and levels, and when each node and experiment was made (a node made during step k carries
+// step k-1); when a node was rejected is not saved, so rejection follows a revision of the hypothesis.
+function replayTicks(run) {
+  const names = Object.keys(run.agents)
+  const last = Math.max(...names.map((n) => run.agents[n].history.length - 1))
+  const ticks = [[{ type: 'run_start', delta: run.delta, question: run.question }]]
+  for (let s = 1; s <= last; s++) {
+    const tick = []
+    for (const agent of names) {
+      const st = run.agents[agent], h = st.history[s]
+      if (!h) continue
+      const made = st.nodes.filter((n) => n.step === s - 1 && s > 1)
+      const lv = st.series[s] || st.series[st.series.length - 1]
+      const open = st.experiments.filter((x) => x.step < s && x.step >= s - 3).length
+      const cog = (kind, extra) => tick.push({ type: 'cog', agent, step: s, kind, ...extra })
+      tick.push({ type: 'op', agent, op: h.op, focus: h.focus, why: h.why })
+      cog('attention', { node: h.focus, op: h.op, concentration: h.probs?.[h.op] ?? 0.3 })
+      cog('levels', { ...lv, curiosity: Math.max(0, ...made.map((n) => n.novelty || 0)), contradiction: Math.min(1, open / 3) })
+      for (const x of st.experiments.filter((x) => x.step === s - 1)) cog('contradiction', { node: x.node, target: x.target, via: x.kind })
+      if (h.op === 'revise' && made.some((n) => n.type === 'hypothesis')) cog('rejection', { node: h.focus, node_type: 'hypothesis', why: 'revised' })
+      if (made.some((n) => n.formal && n.type === 'evidence') || h.op === 'conclude') cog('insight', { node: h.focus, reason: h.op === 'conclude' ? 'stable_conclusion' : 'formally_valid' })
+      if (['imagine', 'intuit', 'counterfactual', 'inquire'].includes(h.op)) cog('curiosity', { node: h.focus, value: Math.max(0.3, ...made.map((n) => n.novelty || 0)) })
+    }
+    ticks.push(tick)
+  }
+  ticks.push([{ type: 'done' }])
+  return ticks
 }

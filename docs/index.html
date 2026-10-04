@@ -31,7 +31,7 @@ nav a { text-decoration: none; }
 nav a:hover { color: var(--ink); }
 .eyebrow { font: 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 0 0 16px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 300; letter-spacing: -.01em; margin: 0; }
-h1 { font-size: clamp(40px, 6.4vw, 78px); line-height: 1.02; max-width: 15ch; }
+h1 { font-size: clamp(40px, 5.2vw, 64px); line-height: 1.02; max-width: 15ch; }
 h1 em, h2 em { font-style: italic; color: var(--iris); }
 h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; max-width: 22ch; }
 h3 { font-size: 24px; line-height: 1.25; margin-bottom: 8px; }
@@ -41,6 +41,10 @@ section { padding: 96px 0; border-top: 1px solid var(--rule); }
 section:first-of-type { border-top: 0; }
 .hero { padding: 96px 0 72px; }
 .hero .lead { margin-top: 28px; }
+.herogrid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.object { margin: 0; }
+.object iframe { width: 100%; aspect-ratio: 1 / 1; border: 1px solid var(--rule); border-radius: 6px; background: #030407; display: block; }
+.object figcaption { font: 12px/1.6 var(--mono); color: var(--faint); margin-top: 10px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 1px solid var(--rule); border-radius: 4px; text-decoration: none; font: 14px var(--mono); }
 .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -92,7 +96,7 @@ ol.steps { padding-left: 20px; max-width: 70ch; } ol.steps li { margin-bottom: 1
 footer { border-top: 1px solid var(--rule); padding: 40px 0 64px; font: 13px var(--mono); color: var(--faint); }
 
 @media (max-width: 860px) {
-  .grid2, .prints { grid-template-columns: 1fr; gap: 24px; }
+  .grid2, .prints, .herogrid { grid-template-columns: 1fr; gap: 24px; }
   .cards { grid-template-columns: 1fr 1fr; }
   .kpis { grid-template-columns: 1fr 1fr; }
   nav { display: none; }
@@ -109,10 +113,17 @@ footer { border-top: 1px solid var(--rule); padding: 40px 0 64px; font: 13px var
 
 <main>
 <section class="hero"><div class="wrap">
+  <div class="herogrid"><div>
   <p class="eyebrow">Experimental research lab · Hack-Nation Challenge 3 · Agentic scientific discovery</p>
   <h1>Same model. Same question. <em>Five ways of thinking.</em></h1>
   <p class="lead">Agent swarms built on one LLM tend to reason alike. APORIA externalizes the cognitive functions around the model: metacognition, curiosity, counterfactual tests, adversarial experiments, memory and formal tools. It then turns one parameter, <b>Δ</b>, to differentiate how five reasoners use those functions, and measures how differently they actually reasoned.</p>
   <div class="cta"><a class="btn primary" id="replaylink" href="lab/">Replay a recorded run →</a><a class="btn" href="#results">See the measurements</a><a class="btn" href="https://github.com/derka1385/APORIA">Code</a></div>
+  </div>
+  <figure class="object">
+    <iframe id="object" title="Particle object replaying a recorded run" loading="lazy"></iframe>
+    <figcaption id="objectcap">The reasoning object, driven by a recorded run. Colour is the function running; two poles are open contradictions; a dissolving region is a revised hypothesis; crystallisation is a conclusion. Rebuilt from the saved trace.</figcaption>
+  </figure>
+  </div>
 
   <div class="prints" id="prints"></div>
   <div class="legend" id="legend"></div>
@@ -274,6 +285,7 @@ fetch("data/index.json").then((r) => r.json()).then((D) => {
   const ok = D.runs.filter((r) => !r.failed.length);
   const featured = D.runs.find((r) => r.id === D.featured);
   $("#replaylink").href = "lab/?run=" + D.featured;
+  $("#object").src = `engine/?embed&replay=../data/runs/${D.featured}.json`;
   // fingerprints: the featured architecture run beside the base run on the same model and budget
   const base = ok.filter((r) => r.condition === "base" && group(r) === group(featured)).pop();
   $("#prints").innerHTML = (base ? print(base, "Base: five copies of one policy") : "") + print(featured, "Architecture: five cognitive policies");

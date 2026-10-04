@@ -68,14 +68,22 @@ if __name__ == "__main__":
         import server
         import engine
         plan = SWEEP if "--sweep" in sys.argv else PLAN
+        from metrics import failed
+        done = set()
+        for f in (ROOT / "runs").glob("*.json"):
+            r = json.loads(f.read_text())
+            if not (r.get("failed") or failed(r["agents"])):
+                done.add((r["question"], r["condition"], r["delta"], r.get("seed"), bool(r.get("quick"))))
         for k, (q, cond, d) in enumerate(plan):
             if not engine.alive():  # a dropped tunnel would otherwise record empty runs for the rest of the plan
                 print(f"LLM endpoint {engine.OLLAMA} unreachable: stopping before run {k + 1}", flush=True)
                 break
             t = time.time()
+            seed = 1000 + (k % 2 if "--sweep" in sys.argv else k)  # the sweep pairs seeds across Δ levels
+            if (q, cond, d, seed, "--full" not in sys.argv) in done:  # a valid run already exists: resume, don't redo
+                continue
             print(f"[{k + 1}/{len(plan)}] {cond} Δ={d} {q}", flush=True)
             try:
-                seed = 1000 + (k % 2 if "--sweep" in sys.argv else k)  # the sweep pairs seeds across Δ levels
                 m = server.run_experiment(server.Job(), q, cond, d, seed, {"run": 0, "runs": 1}, "--full" not in sys.argv,
                                          "readwrite" if "--memory" in sys.argv else "off")
                 print("   ", {x: m[x] for x in KEYS}, f"{time.time() - t:.0f}s", flush=True)

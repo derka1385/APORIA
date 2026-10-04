@@ -20,6 +20,10 @@ const CAPTION = {
 const CYCLE = [['idle', 5], ['explore', 6], ['conflict', 6], ['focus', 5], ['insight', 5], ['collapse', 4], ['explore', 5], ['insight', 6]]
 const RUN = [['explore', 5], ['conflict', 5], ['collapse', 3.5], ['explore', 4], ['focus', 4], ['insight', 7], ['idle', 0]]
 
+// ?replay=<run json> plays a recorded run through the live mapping; &embed hides the controls (site hero)
+const params = new URLSearchParams(location.search)
+const REPLAY = params.get('replay'), EMBED = params.has('embed')
+
 export default function App() {
   const [state, setState] = useState('idle')
   const [delta, setDelta] = useState(0.3)
@@ -83,6 +87,7 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey)
   })
   useEffect(() => () => clearTimeout(timer.current), [])
+  useEffect(() => { if (REPLAY) setLive(connectLive((i) => setInfo((p) => ({ ...p, ...i })), REPLAY)) }, [])
   useEffect(() => () => live?.close(), [live])
 
   return (
@@ -96,15 +101,16 @@ export default function App() {
         </EffectComposer>
       </Canvas>
 
+      {!EMBED && (
       <header className="brand">
         <span>APORIA</span>
         <span className="dim">cognitive engine · visual prototype</span>
-      </header>
+      </header>)}
 
       <div className="readout">
         {live ? (
           <>
-            <div className="mono dim">{info.connected === false ? 'lab offline · :8740' : 'live'}</div>
+            <div className="mono dim">{info.replay ? 'recorded run · replay' : info.connected === false ? 'lab offline · :8740' : 'live'}</div>
             <div className="state">{info.op || 'listening'}</div>
             <div className="caption">{info.agent || (info.done ? 'run complete' : 'waiting for a run')}</div>
             <div className="mono dim">Δ {(info.delta ?? 0).toFixed(2)}</div>
@@ -119,6 +125,7 @@ export default function App() {
         )}
       </div>
 
+      {!EMBED && (
       <main className="hero">
         {active ? (
           <p className="question">“{active}”</p>
@@ -135,8 +142,9 @@ export default function App() {
             </div>
           </form>
         )}
-      </main>
+      </main>)}
 
+      {!EMBED && (
       <aside className="panel">
         {STATES.map((s, i) => (
           <button key={s} className={!live && s === state ? 'on' : ''} onClick={() => pick(s)}>
@@ -154,7 +162,7 @@ export default function App() {
           <input type="range" min="0" max="1" step="0.01" value={delta} onChange={(e) => setDelta(+e.target.value)} />
           <span className="mono dim scale"><i>unified</i><i>divergent</i></span>
         </label>
-      </aside>
+      </aside>)}
     </>
   )
 }
