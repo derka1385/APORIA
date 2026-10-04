@@ -1,0 +1,52 @@
+:root {
+  --fg: #d8deea;
+  --dim: rgba(216, 222, 234, 0.42);
+  --line: rgba(216, 222, 234, 0.12);
+  --accent: #8fd3ff;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; background: #030407; overflow: hidden; }
+body { color: var(--fg); font: 300 13px/1.4 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+canvas { position: fixed !important; inset: 0; }
+.mono { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+.dim { color: var(--dim); }
+
+.brand { position: fixed; top: 28px; left: 32px; display: flex; gap: 16px; align-items: baseline;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.32em; }
+.brand .dim { letter-spacing: 0.12em; font-size: 10px; }
+
+.readout { position: fixed; top: 28px; right: 32px; text-align: right; display: grid; gap: 4px; }
+.readout .state { font: 300 italic 26px/1 Newsreader, serif; }
+.readout .caption { color: var(--dim); font-size: 12px; margin-bottom: 6px; }
+
+.hero { position: fixed; left: 50%; bottom: 9vh; transform: translateX(-50%); width: min(620px, calc(100vw - 32px)); text-align: center; }
+.hero h1 { font: 300 30px/1.2 Newsreader, serif; margin: 0 0 18px; letter-spacing: -0.01em; }
+.question { font: 300 italic 22px/1.35 Newsreader, serif; color: var(--fg); opacity: 0.85; animation: fade 1.2s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } }
+.ask { display: flex; border-bottom: 1px solid var(--line); transition: border-color .3s; }
+.ask:focus-within { border-color: rgba(143, 211, 255, 0.5); }
+.ask input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--fg); font: inherit; font-size: 14px; padding: 12px 4px; }
+.ask input::placeholder { color: rgba(216, 222, 234, 0.25); }
+.ask button { background: none; border: 0; color: var(--accent); font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; cursor: pointer; padding: 0 4px 0 16px; white-space: nowrap; }
+.ask button:hover { color: #fff; }
+
+.panel { position: fixed; left: 32px; bottom: 32px; display: grid; gap: 2px; width: 196px; }
+.panel button { display: flex; gap: 12px; align-items: baseline; text-align: left; background: none; border: 0; color: var(--dim);
+  font: inherit; padding: 5px 0; cursor: pointer; transition: color .25s; }
+.panel button:hover, .panel button.on { color: var(--fg); }
+.panel button.on .mono { color: var(--accent); }
+.delta { display: grid; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--fg); }
+.delta b { font-weight: 400; color: var(--accent); }
+.delta .scale { display: flex; justify-content: space-between; font-style: normal; }
+.delta .scale i { font-style: normal; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 1px; background: var(--line); outline: 0; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); cursor: pointer; }
+input[type=range]::-moz-range-thumb { width: 9px; height: 9px; border: 0; border-radius: 50%; background: var(--accent); }
+
+@media (max-width: 760px) {
+  .panel { left: 16px; bottom: auto; top: 70px; width: 150px; font-size: 12px; }
+  .brand { left: 16px; } .readout { right: 16px; }
+  .hero { bottom: 5vh; }
+}
