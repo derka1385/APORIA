@@ -15,7 +15,8 @@
   <p class="eyebrow">APORIA · cognitive differentiation laboratory</p>
   <h1>What should we investigate?</h1>
   <form id="ask">
-    <textarea id="question" rows="2" spellcheck="false">Is personal identity dependent on psychological continuity?</textarea>
+    <div id="cases" class="cases" aria-label="Recorded cases"></div>
+    <textarea id="question" rows="2" spellcheck="false" aria-label="Question">Is personal identity dependent on psychological continuity?</textarea>
     <div class="controls">
       <label>Condition
         <select id="condition">
@@ -25,12 +26,13 @@
           <option value="base">Base (identical)</option>
         </select>
       </label>
-      <label>Δ <output id="dval">0.6</output>
+      <label title="Δ 0: five identical policies. Δ 1: five distinct cognitive policies.">Δ <output id="dval">0.6</output>
         <input id="delta" type="range" min="0" max="1" step="0.1" value="0.6">
+        <span id="recorded" class="recorded"></span>
       </label>
-      <label class="check"><input id="sweep" type="checkbox"> Sweep Δ 0 · .3 · .6 · 1</label>
-      <label class="check" title="half the step budget: less heat, rougher results"><input id="quick" type="checkbox" checked> Quick</label>
-      <label>Memory
+      <label class="check live-only"><input id="sweep" type="checkbox"> Sweep Δ 0 · .3 · .6 · 1</label>
+      <label class="check live-only" title="half the step budget: less heat, rougher results"><input id="quick" type="checkbox" checked> Quick</label>
+      <label class="live-only">Memory
         <select id="memory">
           <option value="readwrite" selected>read + write</option>
           <option value="read">read only</option>
@@ -39,6 +41,7 @@
       </label>
     </div>
     <button type="submit">START RESEARCH</button>
+    <p id="launchmsg" class="msg" role="status"></p>
   </form>
   <p class="note"><span id="modelnote"></span> · <a href="#" id="past">experiment log</a></p>
 </section>
@@ -49,7 +52,7 @@
       <p class="eyebrow" id="runinfo"></p>
       <h2 id="qtitle"></h2>
     </div>
-    <button id="again" class="ghost">New question</button>
+    <div class="acts"><button id="replaybtn" class="ghost" hidden>Replay</button><button id="again" class="ghost">New question</button></div>
   </header>
   <div class="stage" id="stage">
     <div id="labels"></div>

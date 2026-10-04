@@ -24,6 +24,9 @@ let profiles = [];
 let agents = {};      // name -> { idx, state, op, focus, layout, cum, model, budget, error }
 let mode = "landing";
 let STATIC = false;   // no lab server (e.g. GitHub Pages): replay recorded runs from ../data/
+let RUNS = [];        // static: recorded runs that did not fail (data/index.json rows)
+let replayNote = "";  // static: how the replayed run relates to what was asked (closest Δ)
+const norm = (s) => String(s).trim().toLowerCase();
 let sweep = [];       // metrics per Δ in the current job
 let lastMetrics = null;
 let links = [];       // transient association / compute visuals
@@ -460,7 +463,7 @@ function replay(r) {
   sweep = []; lastMetrics = null;
   onEvent({ type: "run_start", ...r, profiles: names, runs: 1, run: 0,
     policies: Object.fromEntries(names.map((n) => [n, { budget: r.agents[n].step, learning_rate: 0.4 }])) });
-  const label = (r.failed?.length ? " · failed run (LLM unreachable)" : "") + " · replay of saved run " + r.id;
+  const label = (r.failed?.length ? " · failed run (LLM unreachable)" : "") + " · replay of recorded run " + r.id + replayNote;
   const at = (st, s) => {
     if (s >= st.step) return st;
     // a node made during step k carries step k-1 (the counter moves after the operation); start made step-0 claims
@@ -482,7 +485,7 @@ function replay(r) {
       onEvent({ type: "state", agent: n, state: at(st, s), budget: st.step });
     }
     $("#runinfo").textContent = $("#runinfo").textContent.replace(/ · (reasoning…|replay|failed run).*$/, "") + label + (s < last ? ` · step ${s}/${last}` : "");
-    if (s < last) replayTimer = setTimeout(() => tick(s + 1), 420);
+    if (s < last) replayTimer = setTimeout(() => tick(s + 1), 600);
     else onEvent({ type: "metrics", metrics: r.metrics, delta: r.delta });
   };
   tick(0);
@@ -495,21 +498,73 @@ fetch("/api/models").then((r) => r.json()).then((m) => {
   $("#modelnote").textContent = m.available.length
     ? `local model ${m.default} · ${m.available.length} variant${m.available.length > 1 ? "s" : ""} available for the model condition`
     : "Ollama is not reachable. Start it, then reload.";
+  fetch("/api/runs").then((r) => r.json()).then((rows) => showCases(rows.map((r) => r.question)));
 }).catch(enterStatic);
 
 async function enterStatic() {
   STATIC = true;
   document.body.classList.add("static");
-  $("#again").textContent = "Replay";
-  $("#again").onclick = () => replaying && replay(replaying);
-  $("#past").click();
   const data = await (await fetch("../data/index.json")).json();
-  openRun(new URLSearchParams(location.search).get("run") || data.featured);
+  RUNS = data.runs.filter((r) => !r.failed?.length);
+  showCases(RUNS.map((r) => r.question));
+  $("#delta").step = "0.25"; $("#delta").value = "1"; $("#dval").textContent = "1.0";
+  $("#modelnote").textContent = "demo · replays recorded runs (Qwen3-30B on an evroc VM, Qwen2.5-3B locally)";
+  $("#again").textContent = "New analysis";
+  $("#again").onclick = () => { location.href = location.pathname; };
+  $("#replaybtn").hidden = false;
+  $("#replaybtn").onclick = () => replaying && replay(replaying);
+  recordedHint();
+  const want = new URLSearchParams(location.search).get("run");
+  if (want) { $("#past").click(); openRun(want); }
+}
+
+// ------------------------------------------------------------------ launcher: cases, recorded Δ, static launch
+function showCases(questions) {
+  const n = {};
+  for (const q of questions) n[q] = (n[q] || 0) + 1;
+  $("#cases").innerHTML = Object.keys(n).sort((a, b) => n[b] - n[a])
+    .map((q) => `<button type="button" class="case">${esc(q)}</button>`).join("");
+  markCase();
+}
+function markCase() {
+  const q = norm($("#question").value);
+  document.querySelectorAll(".case").forEach((b) => b.classList.toggle("on", norm(b.textContent) === q));
+}
+function recordedHint() {
+  if (!STATIC) return;
+  const q = norm($("#question").value), c = $("#condition").value;
+  const ds = [...new Set(RUNS.filter((r) => norm(r.question) === q && r.condition === c).map((r) => r.delta))].sort((a, b) => a - b);
+  $("#recorded").textContent = ds.length ? "recorded: " + ds.join(" · ") : "";
+}
+document.addEventListener("click", (e) => {
+  const c = e.target.closest(".case");
+  if (!c) return;
+  $("#question").value = c.textContent;
+  $("#launchmsg").textContent = "";
+  markCase(); recordedHint();
+});
+$("#question").addEventListener("input", () => { markCase(); recordedHint(); });
+$("#condition").addEventListener("change", recordedHint);
+
+// Static demo: replay the recorded run that matches the question and condition, at the closest recorded Δ.
+function launchRecorded() {
+  const q = norm($("#question").value), c = $("#condition").value, d = +$("#delta").value;
+  const msg = (t) => ($("#launchmsg").textContent = t);
+  const same = RUNS.filter((r) => norm(r.question) === q);
+  if (!same.length) return msg("Not a recorded case. Pick one of the cases above: this demo replays real runs. A new question needs the lab server (bash lab/run.sh) and a model.");
+  const pool = same.filter((r) => r.condition === c);
+  if (!pool.length) return msg(`No recorded ${c} run for this case. Recorded here: ${[...new Set(same.map((r) => `${r.condition} Δ ${r.delta}`))].join(", ")}.`);
+  const rank = (r) => /30b/.test((r.models || [""])[0]) * 2 + !r.quick;  // the larger model and the full budget first
+  const best = pool.slice().sort((a, b) => Math.abs(a.delta - d) - Math.abs(b.delta - d) || rank(b) - rank(a) || (a.id < b.id) - (a.id > b.id))[0];
+  replayNote = best.delta === d ? "" : ` · closest recorded Δ to ${d}`;
+  $("#landing").classList.add("leaving");
+  setTimeout(() => { $("#past").click(); openRun(best.id); }, 700);
 }
 $("#question").addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("#ask").requestSubmit(); } });
 
 $("#ask").onsubmit = async (e) => {
   e.preventDefault();
+  if (STATIC) return launchRecorded();
   const body = { question: $("#question").value, condition: $("#condition").value, delta: +$("#delta").value, quick: $("#quick").checked, memory: $("#memory").value };
   if ($("#sweep").checked) body.deltas = [0, 0.3, 0.6, 1];
   const { id } = await (await fetch("/api/run", { method: "POST", body: JSON.stringify(body) })).json();

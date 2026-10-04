@@ -147,4 +147,10 @@ th { color: var(--dim); font-weight: 400; letter-spacing: .06em; }
 .note a { color: var(--dim); }
 .note a:hover { color: var(--ink); }
 .runrow.failed td { opacity: .45; text-decoration: line-through; text-decoration-color: rgba(233,230,223,.25); }
-.static #landing { display: none; }
+.static .live-only { display: none; }
+.cases { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.case { background: transparent; border: 1px solid var(--faint); border-radius: 2px; padding: 7px 12px; font: 12px/1.35 var(--mono); color: var(--dim); cursor: pointer; text-align: left; max-width: 100%; }
+.case:hover, .case.on { color: var(--ink); border-color: var(--ink); }
+.recorded { color: var(--dim); white-space: nowrap; }
+.acts { display: flex; gap: 8px; flex-shrink: 0; }
+.msg { font: 12px/1.5 var(--mono); color: var(--memory); min-height: 1.5em; margin: 14px 0 0; }

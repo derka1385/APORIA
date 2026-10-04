@@ -4,6 +4,7 @@
     python3 batch.py --full          # full step budgets (default is quick: half the steps)
     python3 batch.py --memory        # let runs read and write long-term memory (default off: runs stay independent)
     python3 batch.py --sweep         # Δ sweep instead: architecture, Δ 0 / .25 / .5 / .75 / 1, two seeds each
+    python3 batch.py --cases         # the other questions at Δ 1 and Δ 0 (cases for the site's launcher)
     python3 batch.py --report        # only rewrite EXPERIMENTS.md from runs/
 
 Reasoners run one LLM call at a time with a cooldown (APORIA_COOLDOWN); expect a few minutes per run.
@@ -22,6 +23,7 @@ QUESTIONS = [
     "Is personal identity dependent on psychological continuity?",
     "Can a machine that only manipulates symbols genuinely understand anything?",
     "Is moral responsibility compatible with determinism?",
+    "Does the predictive success of a scientific theory show that it is true?",
 ]
 PLAN = (  # same question across conditions first, then Δ, then other questions
     [(QUESTIONS[0], c, 1.0) for c in ("architecture", "base", "prompt", "model")]
@@ -29,6 +31,7 @@ PLAN = (  # same question across conditions first, then Δ, then other questions
     + [(q, "architecture", 1.0) for q in QUESTIONS[1:]]
 )
 SWEEP = [(QUESTIONS[0], "architecture", d) for d in (0.0, 0.25, 0.5, 0.75, 1.0) for _ in range(2)]
+CASES = [(q, "architecture", d) for q in QUESTIONS[1:] for d in (1.0, 0.0)]  # demo cases: each question at both ends of Δ
 KEYS = ["semantic_diversity", "branch_diversity", "disagreement_rate", "path_similarity", "conclusion_similarity",
         "unique_hypotheses", "unique_assumptions", "unique_objections"]
 
@@ -67,7 +70,7 @@ if __name__ == "__main__":
     if "--report" not in sys.argv:
         import server
         import engine
-        plan = SWEEP if "--sweep" in sys.argv else PLAN
+        plan = SWEEP if "--sweep" in sys.argv else CASES if "--cases" in sys.argv else PLAN
         from metrics import failed
         done = set()
         for f in (ROOT / "runs").glob("*.json"):
@@ -79,7 +82,7 @@ if __name__ == "__main__":
                 print(f"LLM endpoint {engine.OLLAMA} unreachable: stopping before run {k + 1}", flush=True)
                 break
             t = time.time()
-            seed = 1000 + (k % 2 if "--sweep" in sys.argv else k)  # the sweep pairs seeds across Δ levels
+            seed = 1000 + (k % 2 if "--sweep" in sys.argv else 0 if "--cases" in sys.argv else k)  # paired seeds
             if (q, cond, d, seed, "--full" not in sys.argv, server.model_plan(cond, d)[0]) in done:  # valid run exists: resume
                 continue
             print(f"[{k + 1}/{len(plan)}] {cond} Δ={d} {q}", flush=True)
