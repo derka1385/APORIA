@@ -169,6 +169,9 @@ Times are Europe/Stockholm targets. Gates are hard: if one is missed, cut scope 
 - [x] P8.8 Reviewer's bug report: unavailable novelty → not assessed (never 1.0); trials need both
   defender labels; export screens legacy records; 18 regression tests + 3 replay tests.
 - [x] P8.9 Novelty calibration note per topic; demo video re-recorded (76 s); submission draft per topic.
+- [x] P8.11 Stricter judging (Claude Sonnet novelty checks, Kimi briefs); decision theory v2; divine simplicity.
+- [x] P8.12 Merged into derka1385/APORIA as one research-directions finder: cognitive profiles as generators,
+  Director in-session learning, bridge, one site and header in APORIA's design (https://derka1385.github.io/APORIA/docs/).
 - [ ] P8.10 Human: record the video (docs/DEMO.md) and submit (docs/SUBMISSION.md) before 15:00.
 
 ## Polish forever (when everything above is ticked; never stop)

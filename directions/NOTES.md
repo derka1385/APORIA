@@ -1,5 +1,29 @@
 # NOTES — newest entry first
 
+## 2026-10-04 14:30 — Merged into APORIA as one research-directions finder (Claude, human's request)
+- Human: combine Crux Lab with derka1385/APORIA (teammate's repo, human is a collaborator) "in the most synergistic
+  way", APORIA's brand and front end, one project, not a section. Live: https://derka1385.github.io/APORIA/docs/
+  (Pages serves the repo root; the site is docs/).
+- Fusion in the engine (this repo, 5db7bbc; copied to APORIA directions/): APORIA's cognitive profiles generate
+  the objections (crux_lab/lab/cognition.py; operation weights pick the move, context/explore/llm_temp used, Δ
+  interpolates, Δ 0 = noise floor); Director curiosity term = learned value per profile (mean realized S x N);
+  run JSON 'cognition' = per-profile results + APORIA divergence metrics. COGNITION=off restores the old wave.
+- Bridge (crux_lab/lab/bridge.py): APORIA's 129 run objections on personal identity vs a new personal-identity
+  corpus (abstract-level, 6 OpenAlex requests), Claude Sonnet rerank, no restatement: mean novelty 0.38, 13% above
+  0.5; formalist 27% novel, synthesizer and minimalist 0%; Δ 0 0% (n=5) vs Δ 1 12% (n=49). Divergence != new.
+- Divine simplicity: families-only baseline (archived data/topics/divine-simplicity/archive/families-only) vs fused
+  re-run on the same 5 papers: outcomes 22/7/1 standing vs 21/9; novelty median 0.50 vs 0.50; quality 2.67 vs 2.63.
+  Per profile (fused): explorer 17 objections, 8/9 trials surviving, 7 briefs (the Director learned to favour it);
+  synthesizer 0/3. Recent-paper bug fixed (a record dated after fresh_from is fresh whichever search found it).
+- APORIA site: finder = docs/index.html (re-skinned: APORIA palette/fonts/mark; outcome colours from its operation
+  palette; particle object in the hero); APORIA's landing moved to docs/divergence/ (teammate's newest version
+  kept through a rebase conflict); one shared header via docs/shell.js on divergence/ and lab/ (also patched in
+  lab/static so their export keeps it); finder data in docs/directions-data/; finder run replays renamed /runs
+  (APORIA owns lab/); root 404.html for deep links. Build: python3 directions/scripts/build_aporia_site.py.
+- Auto mode's classifier blocked the cross-repo copy and pushes ("data exfiltration") until the human left auto
+  mode; nothing was worked around. This repo's own web/src/pages/Landing.tsx hero rewrite stays uncommitted (the
+  APORIA copy carries the corrected wording); this repo's site keeps its own branding.
+
 ## 2026-10-04 13:25 — Decision theory v2 (stricter judging) exported (Claude)
 - Same 72 objections (generators replayed from cache), new prior-art checks (Claude Sonnet), new trials and
   briefs (Kimi-K2.6), Assessor (Claude Opus) + revision round. v1 archived in data/topics/decision-theory/archive.
