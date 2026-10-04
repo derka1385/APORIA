@@ -1,0 +1,2282 @@
+{
+ "id": "20261004-033014-architecture-1.0",
+ "question": "Is personal identity dependent on psychological continuity?",
+ "condition": "architecture",
+ "delta": 1.0,
+ "seed": 7,
+ "models": [
+  "qwen2.5:3b",
+  "qwen2.5:3b",
+  "qwen2.5:3b",
+  "qwen2.5:3b",
+  "qwen2.5:3b"
+ ],
+ "run": 0,
+ "runs": 1,
+ "agents": {
+  "explorer": {
+   "hypothesis": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining personal identity over time.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining personal identity over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.0,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Personal identity refers to the persistence of a coherent self over time.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Psychological continuity involves the continuity of a person's mental states and experiences.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "alternative",
+     "text": "Imagine a person who has had multiple personality disorder and maintains different identities under various personas. What if psychological continuity could not be established between these identities? \u2192 This thought experiment would challenge the hypothesis by suggesting that psychological continuity is not the only factor in maintaining personal identity.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "alternative",
+     "text": "Consider a person who has no access to their own memories and experiences but lives a fully coherent life based on actions and environment. Would they still have a unified personal identity? \u2192 This thought experiment would suggest that psychological continuity is not a sufficient condition for personal identity, as identity could still persist without it.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n5",
+     "type": "alternative",
+     "text": "Imagine a person who has their mind split into two parts, each living different lives in different bodies. How does psychological continuity apply to this scenario? \u2192 This thought experiment would further undermine the hypothesis by pointing out that psychological continuity cannot explain the persistence of a single unified identity.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n6",
+     "type": "alternative",
+     "text": "Consider a person who has their memories and experiences erased completely in an accident. Could they maintain a consistent personal identity without psychological continuity? \u2192 This thought experiment would challenge the hypothesis by showing that psychological continuity is not a necessary condition for personal identity, as other forms of continuity could exist.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n7",
+     "type": "assumption",
+     "text": "node n0 silently needs additional premises to be fully supported.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.48000000000000004,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.6
+    },
+    {
+     "id": "n8",
+     "type": "evidence",
+     "text": "Parfit emphasizes the importance of psychological continuity and connectedness in relation R for survival purposes, suggesting that psychological continuity is a necessary condition for personal identity.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "<parfit-relation-r>"
+    },
+    {
+     "id": "n9",
+     "type": "evidence",
+     "text": "Locke suggests that memory (psychological continuity) is a critical component in the identity of a person, indicating that psychological continuity is essential for personal identity over time.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "<locke-memory>"
+    },
+    {
+     "id": "n10",
+     "type": "evidence",
+     "text": "Searle\u2019s Chinese Room argument highlights the limitations of syntax in understanding (psychological continuity), indicating that psychological continuity alone is not sufficient for understanding personal identity.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "source": "<searle-chinese-room>"
+    },
+    {
+     "id": "n11",
+     "type": "assumption",
+     "text": "node n0",
+     "parent": "n7",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.2,
+     "surprise": 0.0,
+     "step": 5,
+     "load": 0.6
+    },
+    {
+     "id": "n12",
+     "type": "assumption",
+     "text": "Psychological continuity is a sufficient condition for maintaining personal identity over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.4,
+     "surprise": 0.0,
+     "step": 6,
+     "load": 0.75
+    },
+    {
+     "id": "n13",
+     "type": "assumption",
+     "text": "Personal identity is not dependent on any other condition besides psychological continuity for its maintenance over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.6,
+     "surprise": 0.0,
+     "step": 6,
+     "load": 0.85
+    },
+    {
+     "id": "n14",
+     "type": "evidence",
+     "text": "Locke: According to John Locke, a person is the same person as far back as consciousness (memory) extends. This supports the idea that psychological continuity is crucial for personal identity as it indicates personal identity is tied to memory and thus psychological continuity.",
+     "parent": "n12",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.9,
+     "surprise": 0.0,
+     "step": 7,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n15",
+     "type": "evidence",
+     "text": "Parfit's Relation R theory suggests that psychological connectedness and continuity with any cause is what matters in survival, implying that personal identity itself can be indeterminate. This undermines the focus by questioning the necessity of psychological continuity for personal identity.",
+     "parent": "n12",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.9,
+     "surprise": 0.0,
+     "step": 7,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n16",
+     "type": "evidence",
+     "text": "Thomas Nagel's work on personal identity through experience machine experiment points out that mere psychological continuity may not be enough to constitute personal identity if we value more than experiences. This again undermines the focus by suggesting that other conditions must also play a role.",
+     "parent": "n12",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 7,
+     "source": "nozick-experience-machine"
+    },
+    {
+     "id": "n17",
+     "type": "alternative",
+     "text": "Hunch: Given the evidence and philosophical theories, node n14 and n15 appear to be the deepest insights, thus promising to explore next.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n18",
+     "type": "alternative",
+     "text": "Examine the effect of non-conscious states on personal identity: Consider a scenario where a person experiences a coma and then comes back to consciousness. Analyze if the psychological continuity over the period of unconsciousness is enough to maintain personal identity or if other factors must also be considered. \u2192 This thought experiment could challenge the hypothesis that psychological continu",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n19",
+     "type": "alternative",
+     "text": "Investigate the continuity of personal identity in the case of non-local communication: Imagine two people who are always communicating with each other in real-time, but are separated geographically. Evaluate if their psychological continuity over vast distances can maintain personal identity over time. \u2192 This thought experiment could suggest that psychological continuity alone is not enough for p",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n20",
+     "type": "alternative",
+     "text": "Explore the impact of psychological continuity on personality traits: Conduct a thought experiment where individuals with identical memories and experiences can choose to adopt different personalities. Determine if psychological continuity alone can account for personal identity differences. \u2192 This experiment might reveal that personal identity is influenced by more than just psychological continu",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n21",
+     "type": "alternative",
+     "text": "Consider the possibility of multiple psychological identities coexisting within a single body: Imagine a scenario where a person can have multiple overlapping personalities each with its own memories and experiences. Evaluate if psychological continuity alone can distinguish and maintain distinct personal identities. \u2192 This thought experiment could indicate that psychological continuity is insuffi",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n22",
+     "type": "premise",
+     "text": "Reply: Searle's Chinese Room argument critiques the sufficiency of syntax for understanding, but does not directly address the continuity of psychological states and their role in personal identity. The argument suggests that understanding is more than just syntax, but does not invalidate the role of psychological continuity in sustaining personal identity. Further premises about the nature of con",
+     "parent": "n7",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 10
+    },
+    {
+     "id": "n23",
+     "type": "evidence",
+     "text": "Locke's memory theory of personal identity asserts that a person is the same as far back as their consciousness or memory extends. This supports the idea that psychological continuity is crucial for personal identity, as it links personal identity to memory.",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n24",
+     "type": "evidence",
+     "text": "Parfit's Relation R theory suggests that psychological connectedness and continuity are what matters for survival, which implies that personal identity itself can be indeterminate if other aspects are also significant. This undermines the focus by questioning the necessity of psychological continuity for personal identity.",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n25",
+     "type": "evidence",
+     "text": "Thomas Nagel's work on the experience machine experiment highlights that psychological continuity might not be enough to constitute personal identity if there are value factors beyond mere experiences. This thought experiment suggests that other factors could also play a role in determining personal identity.",
+     "parent": "n17",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "frankfurt-cases"
+    }
+   ],
+   "conflicts": [
+    {
+     "objection": "n10",
+     "target": "n7",
+     "status": "resolved"
+    },
+    {
+     "objection": "n15",
+     "target": "n12",
+     "status": "open"
+    },
+    {
+     "objection": "n16",
+     "target": "n12",
+     "status": "open"
+    },
+    {
+     "objection": "n24",
+     "target": "n17",
+     "status": "open"
+    },
+    {
+     "objection": "n25",
+     "target": "n17",
+     "status": "open"
+    }
+   ],
+   "confidence": 0.0,
+   "uncertainty": 0.41800000000000004,
+   "novelty": 0.5400849999999999,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "imagine",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.087,
+      "reason": 0.108,
+      "imagine": 0.177,
+      "intuit": 0.194,
+      "introspect": 0.159,
+      "doubt": 0.116,
+      "adjudicate": 0.054,
+      "revise": 0.054,
+      "conclude": 0.054
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 2,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.074,
+      "reason": 0.089,
+      "imagine": 0.113,
+      "intuit": 0.345,
+      "introspect": 0.151,
+      "doubt": 0.095,
+      "adjudicate": 0.044,
+      "revise": 0.044,
+      "conclude": 0.044
+     },
+     "d_conf": -0.9,
+     "d_unc": 0.1
+    },
+    {
+     "step": 3,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.263,
+      "reason": 0.072,
+      "imagine": 0.086,
+      "intuit": 0.122,
+      "introspect": 0.069,
+      "doubt": 0.034,
+      "adjudicate": 0.034,
+      "revise": 0.287,
+      "conclude": 0.034
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "memory",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.263,
+      "reason": 0.072,
+      "imagine": 0.086,
+      "intuit": 0.122,
+      "introspect": 0.069,
+      "doubt": 0.034,
+      "adjudicate": 0.034,
+      "revise": 0.287,
+      "conclude": 0.034
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.15
+    },
+    {
+     "step": 5,
+     "op": "memory",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.124,
+      "reason": 0.073,
+      "imagine": 0.14,
+      "intuit": 0.135,
+      "introspect": 0.062,
+      "doubt": 0.037,
+      "adjudicate": 0.074,
+      "revise": 0.318,
+      "conclude": 0.037
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "reason",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.05,
+      "reason": 0.076,
+      "imagine": 0.19,
+      "intuit": 0.141,
+      "introspect": 0.055,
+      "doubt": 0.039,
+      "adjudicate": 0.077,
+      "revise": 0.332,
+      "conclude": 0.039
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 7,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.086,
+      "reason": 0.078,
+      "imagine": 0.182,
+      "intuit": 0.135,
+      "introspect": 0.053,
+      "doubt": 0.037,
+      "adjudicate": 0.074,
+      "revise": 0.318,
+      "conclude": 0.037
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.128
+    },
+    {
+     "step": 8,
+     "op": "memory",
+     "focus": "n12",
+     "probs": {
+      "memory": 0.075,
+      "reason": 0.083,
+      "imagine": 0.197,
+      "intuit": 0.133,
+      "introspect": 0.05,
+      "doubt": 0.037,
+      "adjudicate": 0.073,
+      "revise": 0.314,
+      "conclude": 0.037
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.15
+    },
+    {
+     "step": 9,
+     "op": "intuit",
+     "focus": "n12",
+     "probs": {
+      "memory": 0.056,
+      "reason": 0.07,
+      "imagine": 0.214,
+      "intuit": 0.124,
+      "introspect": 0.042,
+      "doubt": 0.034,
+      "adjudicate": 0.135,
+      "revise": 0.291,
+      "conclude": 0.034
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "imagine",
+     "focus": "n17",
+     "probs": {
+      "memory": 0.055,
+      "reason": 0.069,
+      "imagine": 0.281,
+      "intuit": 0.072,
+      "introspect": 0.041,
+      "doubt": 0.033,
+      "adjudicate": 0.131,
+      "revise": 0.284,
+      "conclude": 0.033
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 11,
+     "op": "adjudicate",
+     "focus": "n10",
+     "probs": {
+      "memory": 0.133,
+      "reason": 0.073,
+      "imagine": 0.146,
+      "intuit": 0.076,
+      "introspect": 0.061,
+      "doubt": 0.035,
+      "adjudicate": 0.139,
+      "revise": 0.301,
+      "conclude": 0.035
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 12,
+     "op": "memory",
+     "focus": "n17",
+     "probs": {
+      "memory": 0.133,
+      "reason": 0.07,
+      "imagine": 0.144,
+      "intuit": 0.077,
+      "introspect": 0.062,
+      "doubt": 0.036,
+      "adjudicate": 0.14,
+      "revise": 0.303,
+      "conclude": 0.036
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.15
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.9,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.9,
+     "uncertainty": 0.6,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.7,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.7,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.55,
+     "novelty": 0.7,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.55,
+     "novelty": 0.49,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.65,
+     "novelty": 0.49,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.778,
+     "novelty": 0.416,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.628,
+     "novelty": 0.292,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.628,
+     "novelty": 0.292,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.628,
+     "novelty": 0.772,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.568,
+     "novelty": 0.772,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.418,
+     "novelty": 0.54,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.0,
+     "uncertainty": 0.418,
+     "novelty": 0.54,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "no",
+    "stance": "no",
+    "credence": 0.8,
+    "key_reasons": [
+     "n15",
+     "n16",
+     "n17",
+     "n18"
+    ],
+    "open_objection": "The possibility of multiple overlapping personalities each with its own memories and experiences, as explored in the thought experiment, could indicate that psychological continuity alone is not enough for maintaining distinct personal identities."
+   },
+   "curiosity": 0.9
+  },
+  "formalist": {
+   "hypothesis": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.9500000000000002,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity refers to the persistence of a person's psychological states and properties over time.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.8,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "A coherent self over time requires that a person's psychological states and properties remain consistent or similar enough to be recognized as the same person.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "Psychological continuity is sufficient for maintaining a coherent self over time.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.85,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.7
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "There are no other necessary conditions for personal identity besides psychological continuity.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.9,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.6
+    }
+   ],
+   "conflicts": [],
+   "confidence": 0.9500000000000002,
+   "uncertainty": 0.3440000000000001,
+   "novelty": 0.68,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "reason",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.0,
+      "reason": 0.999,
+      "imagine": 0.0,
+      "intuit": 0.0,
+      "introspect": 0.001,
+      "doubt": 0.0,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "d_conf": 0.05,
+     "d_unc": -0.12
+    },
+    {
+     "step": 2,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.0,
+      "reason": 0.944,
+      "imagine": 0.0,
+      "intuit": 0.0,
+      "introspect": 0.037,
+      "doubt": 0.018,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.104
+    },
+    {
+     "step": 3,
+     "op": "reason",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.0,
+      "reason": 0.997,
+      "imagine": 0.0,
+      "intuit": 0.0,
+      "introspect": 0.0,
+      "doubt": 0.002,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "d_conf": 0.05,
+     "d_unc": -0.12
+    },
+    {
+     "step": 4,
+     "op": "reason",
+     "focus": "n4",
+     "probs": {
+      "memory": 0.0,
+      "reason": 0.951,
+      "imagine": 0.0,
+      "intuit": 0.0,
+      "introspect": 0.002,
+      "doubt": 0.046,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "d_conf": 0.05,
+     "d_unc": -0.12
+    },
+    {
+     "step": 5,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.0,
+      "reason": 0.0,
+      "imagine": 0.0,
+      "intuit": 0.0,
+      "introspect": 0.001,
+      "doubt": 0.025,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.973
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.85,
+     "uncertainty": 0.48,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.85,
+     "uncertainty": 0.584,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.9,
+     "uncertainty": 0.464,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.95,
+     "uncertainty": 0.344,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.95,
+     "uncertainty": 0.344,
+     "novelty": 0.68,
+     "surprise": 0.0
+    }
+   ],
+   "step": 5,
+   "conclusion": {
+    "position": "qualified",
+    "stance": "yes",
+    "credence": 0.9,
+    "key_reasons": [
+     "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+     "Psychological continuity refers to the persistence of a person's psychological states and properties over time.",
+     "There are no other necessary conditions for personal identity besides psychological continuity."
+    ],
+    "open_objection": "The hypothesis does not account for the potential role of physical continuity in personal identity, which could be a significant factor in some philosophical perspectives."
+   },
+   "curiosity": 0.5
+  },
+  "skeptic": {
+   "hypothesis": "Personal identity is dependent on psychological continuity, but it also requires additional factors such as physical body and social relationships for a coherent sense of self over time.",
+   "root": "n7",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity because psychological continuity is necessary for maintaining a coherent sense of self over time.",
+     "parent": null,
+     "status": "rejected",
+     "conf": 0.136,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Personal identity requires a consistent set of experiences and states of consciousness.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Psychological continuity ensures that these experiences and states are not disrupted or lost over time.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "objection",
+     "text": "One could argue that personal identity is not solely dependent on psychological continuity. The concept of a soul or an immaterial essence might be sufficient for maintaining a coherent sense of self over time, independent of psychological experiences.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.7,
+     "curiosity": 0.7,
+     "surprise": 0.28800000000000003,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "objection",
+     "text": "A person's physical body and its interactions with the environment (social relationships, bodily sensations, etc.) could also be crucial for a coherent sense of self, which is not directly related to psychological continuity.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.6,
+     "curiosity": 0.8,
+     "surprise": 0.536,
+     "step": 0
+    },
+    {
+     "id": "n5",
+     "type": "objection",
+     "text": "The concept of psychological continuity itself might be flawed. Psychological states can be highly variable and fragmented, and continuity might not be a necessary condition for a coherent sense of self.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.55,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n6",
+     "type": "counterexample",
+     "text": "Consider a person who experiences severe amnesia, where they lose all memories of their past experiences. If their psychological states and experiences are not continuous, their sense of self might not be disrupted, challenging the hypothesis.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.6,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n7",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity, but it also requires additional factors such as physical body and social relationships for a coherent sense of self over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.31799999999999995,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n8",
+     "type": "evidence",
+     "text": "Locke's memory theory of personal identity suggests that a person is the same as far back as their consciousness (memory) extends. This implies that psychological continuity is crucial for maintaining a coherent sense of self over time, as memory is a psychological phenomenon.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 4,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n9",
+     "type": "evidence",
+     "text": "Parfit's 'Relation R' theory emphasizes that what matters in survival is psychological connectedness and continuity, not the identity itself. This supports the idea that psychological continuity is essential for personal identity.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 4,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n10",
+     "type": "evidence",
+     "text": "Butler's circularity objection points out that memory presupposes personal identity, suggesting that psychological continuity is a necessary condition for memory and therefore for personal identity.",
+     "parent": "n7",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 4,
+     "source": "butler-circularity"
+    },
+    {
+     "id": "n11",
+     "type": "objection",
+     "text": "Locke's memory theory of personal identity suggests that a person is the same as far back as their consciousness (memory) extends, which implies that psychological continuity is crucial for maintaining a coherent sense of self over time. However, this does not necessarily mean that psychological continuity is the only factor.",
+     "parent": "n7",
+     "status": "supported",
+     "conf": 0.7,
+     "curiosity": 0.8,
+     "surprise": 0.8,
+     "step": 5
+    },
+    {
+     "id": "n12",
+     "type": "objection",
+     "text": "Parfit's 'Relation R' theory emphasizes that what matters in survival is psychological connectedness and continuity, not the identity itself. This supports the idea that psychological continuity is essential for personal identity, but does not rule out the possibility of other factors being equally or more important.",
+     "parent": "n7",
+     "status": "supported",
+     "conf": 0.7,
+     "curiosity": 0.8,
+     "surprise": 0.061200000000000004,
+     "step": 5
+    },
+    {
+     "id": "n13",
+     "type": "alternative",
+     "text": "Hunch: The most promising nodes to explore next are those related to the 'Relation R' theory by Parfit (n12) and the additional factors (n4), as they touch on the complexity of personal identity and suggest that psychological continuity may not be the sole determinant of personal identity.",
+     "parent": "n7",
+     "status": "supported",
+     "conf": 1.0,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 10
+    }
+   ],
+   "conflicts": [
+    {
+     "objection": "n3",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n4",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n5",
+     "target": "n0",
+     "status": "moot"
+    },
+    {
+     "objection": "n6",
+     "target": "n0",
+     "status": "moot"
+    },
+    {
+     "objection": "n11",
+     "target": "n7",
+     "status": "resolved"
+    },
+    {
+     "objection": "n12",
+     "target": "n7",
+     "status": "resolved"
+    }
+   ],
+   "confidence": 0.31799999999999995,
+   "uncertainty": 0.7110000000000001,
+   "novelty": 0.7,
+   "surprise": 0.05737220878601075,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.039,
+      "imagine": 0.008,
+      "intuit": 0.008,
+      "introspect": 0.029,
+      "doubt": 0.895,
+      "adjudicate": 0.004,
+      "revise": 0.004,
+      "conclude": 0.004
+     },
+     "d_conf": -0.12,
+     "d_unc": 0.0
+    },
+    {
+     "step": 2,
+     "op": "adjudicate",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.007,
+      "reason": 0.02,
+      "imagine": 0.004,
+      "intuit": 0.006,
+      "introspect": 0.013,
+      "doubt": 0.014,
+      "adjudicate": 0.931,
+      "revise": 0.002,
+      "conclude": 0.002
+     },
+     "d_conf": -0.144,
+     "d_unc": 0.054
+    },
+    {
+     "step": 3,
+     "op": "adjudicate",
+     "focus": "n4",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.019,
+      "imagine": 0.004,
+      "intuit": 0.006,
+      "introspect": 0.011,
+      "doubt": 0.009,
+      "adjudicate": 0.934,
+      "revise": 0.004,
+      "conclude": 0.002
+     },
+     "d_conf": -0.4,
+     "d_unc": 0.15
+    },
+    {
+     "step": 4,
+     "op": "revise",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.02,
+      "reason": 0.008,
+      "imagine": 0.003,
+      "intuit": 0.003,
+      "introspect": 0.006,
+      "doubt": 0.002,
+      "adjudicate": 0.01,
+      "revise": 0.948,
+      "conclude": 0.002
+     },
+     "d_conf": 0.664,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "memory",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.091,
+      "reason": 0.211,
+      "imagine": 0.053,
+      "intuit": 0.059,
+      "introspect": 0.301,
+      "doubt": 0.18,
+      "adjudicate": 0.029,
+      "revise": 0.047,
+      "conclude": 0.029
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.15
+    },
+    {
+     "step": 6,
+     "op": "doubt",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.024,
+      "reason": 0.126,
+      "imagine": 0.037,
+      "intuit": 0.033,
+      "introspect": 0.108,
+      "doubt": 0.618,
+      "adjudicate": 0.016,
+      "revise": 0.023,
+      "conclude": 0.016
+     },
+     "d_conf": -0.06,
+     "d_unc": 0.0
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n11",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.017,
+      "imagine": 0.004,
+      "intuit": 0.006,
+      "introspect": 0.012,
+      "doubt": 0.025,
+      "adjudicate": 0.928,
+      "revise": 0.003,
+      "conclude": 0.002
+     },
+     "d_conf": -0.4,
+     "d_unc": 0.15
+    },
+    {
+     "step": 8,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.006,
+      "reason": 0.008,
+      "imagine": 0.004,
+      "intuit": 0.003,
+      "introspect": 0.006,
+      "doubt": 0.002,
+      "adjudicate": 0.033,
+      "revise": 0.938,
+      "conclude": 0.002
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 9,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.008,
+      "reason": 0.01,
+      "imagine": 0.005,
+      "intuit": 0.004,
+      "introspect": 0.008,
+      "doubt": 0.002,
+      "adjudicate": 0.045,
+      "revise": 0.916,
+      "conclude": 0.002
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n12",
+     "probs": {
+      "memory": 0.08,
+      "reason": 0.107,
+      "imagine": 0.049,
+      "intuit": 0.044,
+      "introspect": 0.086,
+      "doubt": 0.021,
+      "adjudicate": 0.468,
+      "revise": 0.124,
+      "conclude": 0.021
+     },
+     "d_conf": -0.072,
+     "d_unc": 0.027
+    },
+    {
+     "step": 11,
+     "op": "intuit",
+     "focus": "n11",
+     "probs": {
+      "memory": 0.02,
+      "reason": 0.014,
+      "imagine": 0.006,
+      "intuit": 0.005,
+      "introspect": 0.01,
+      "doubt": 0.003,
+      "adjudicate": 0.003,
+      "revise": 0.937,
+      "conclude": 0.003
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 12,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.024,
+      "reason": 0.02,
+      "imagine": 0.01,
+      "intuit": 0.003,
+      "introspect": 0.011,
+      "doubt": 0.004,
+      "adjudicate": 0.003,
+      "revise": 0.921,
+      "conclude": 0.003
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 13,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.027,
+      "reason": 0.023,
+      "imagine": 0.011,
+      "intuit": 0.004,
+      "introspect": 0.013,
+      "doubt": 0.005,
+      "adjudicate": 0.004,
+      "revise": 0.91,
+      "conclude": 0.004
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 14,
+     "op": "reason",
+     "focus": "n13",
+     "probs": {
+      "memory": 0.249,
+      "reason": 0.215,
+      "imagine": 0.105,
+      "intuit": 0.032,
+      "introspect": 0.12,
+      "doubt": 0.047,
+      "adjudicate": 0.032,
+      "revise": 0.167,
+      "conclude": 0.032
+     },
+     "d_conf": 0.05,
+     "d_unc": -0.12
+    },
+    {
+     "step": 15,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.029,
+      "reason": 0.017,
+      "imagine": 0.014,
+      "intuit": 0.004,
+      "introspect": 0.016,
+      "doubt": 0.006,
+      "adjudicate": 0.004,
+      "revise": 0.905,
+      "conclude": 0.004
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 16,
+     "op": "revise",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.03,
+      "reason": 0.018,
+      "imagine": 0.014,
+      "intuit": 0.009,
+      "introspect": 0.017,
+      "doubt": 0.007,
+      "adjudicate": 0.004,
+      "revise": 0.895,
+      "conclude": 0.004
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 17,
+     "op": "conclude",
+     "focus": "n7",
+     "probs": {},
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.68,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.536,
+     "uncertainty": 0.654,
+     "novelty": 0.8,
+     "surprise": 0.351
+    },
+    {
+     "confidence": 0.136,
+     "uncertainty": 0.804,
+     "novelty": 0.8,
+     "surprise": 0.75
+    },
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.804,
+     "novelty": 1.0,
+     "surprise": 0.281
+    },
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.654,
+     "novelty": 0.7,
+     "surprise": 0.211
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.654,
+     "novelty": 0.7,
+     "surprise": 0.158
+    },
+    {
+     "confidence": 0.34,
+     "uncertainty": 0.804,
+     "novelty": 0.7,
+     "surprise": 0.75
+    },
+    {
+     "confidence": 0.34,
+     "uncertainty": 0.804,
+     "novelty": 0.7,
+     "surprise": 0.562
+    },
+    {
+     "confidence": 0.34,
+     "uncertainty": 0.804,
+     "novelty": 0.7,
+     "surprise": 0.422
+    },
+    {
+     "confidence": 0.268,
+     "uncertainty": 0.831,
+     "novelty": 0.7,
+     "surprise": 0.43
+    },
+    {
+     "confidence": 0.268,
+     "uncertainty": 0.831,
+     "novelty": 0.7,
+     "surprise": 0.322
+    },
+    {
+     "confidence": 0.268,
+     "uncertainty": 0.831,
+     "novelty": 0.7,
+     "surprise": 0.242
+    },
+    {
+     "confidence": 0.268,
+     "uncertainty": 0.831,
+     "novelty": 0.7,
+     "surprise": 0.181
+    },
+    {
+     "confidence": 0.318,
+     "uncertainty": 0.711,
+     "novelty": 0.7,
+     "surprise": 0.136
+    },
+    {
+     "confidence": 0.318,
+     "uncertainty": 0.711,
+     "novelty": 0.7,
+     "surprise": 0.102
+    },
+    {
+     "confidence": 0.318,
+     "uncertainty": 0.711,
+     "novelty": 0.7,
+     "surprise": 0.076
+    },
+    {
+     "confidence": 0.318,
+     "uncertainty": 0.711,
+     "novelty": 0.7,
+     "surprise": 0.057
+    }
+   ],
+   "step": 17,
+   "conclusion": {
+    "position": "qualified",
+    "stance": "yes",
+    "credence": 0.8,
+    "key_reasons": [
+     "The hypothesis suggests that psychological continuity is crucial for a coherent sense of self over time, but it also requires additional factors such as physical body and social relationships.",
+     "The Relation R theory by Parfit supports the idea that psychological continuity is essential for personal identity, but does not rule out the possibility of other factors being equally or more important.",
+     "Locke's memory theory of personal identity implies that psychological continuity is crucial for maintaining a coherent sense of self, but this does not necessarily mean it is the only factor."
+    ],
+    "open_objection": "The concept of a soul or an immaterial essence might be sufficient for maintaining a coherent sense of self over time, independent of psychological experiences."
+   },
+   "curiosity": 0.8
+  },
+  "synthesizer": {
+   "hypothesis": "Personal identity is dependent on psychological continuity because one's sense of self is primarily formed through psychological experiences and memories.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity because one's sense of self is primarily formed through psychological experiences and memories.",
+     "parent": null,
+     "status": "stable",
+     "conf": 1.0,
+     "curiosity": 0.9,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Personal identity refers to the nature of the self and the continuity of a single, unified self over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.2,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Psychological continuity is the uninterrupted pattern of psychological states, such as memories, beliefs, and feelings.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.7,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "One's sense of self is often based on and influenced by psychological experiences and memories.",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 1.0,
+     "curiosity": 0.9,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "alternative",
+     "text": "Hunch: Given the hypothesis focuses on the relationship between personal identity and psychological continuity, exploring the nodes related to psychological continuity and the role of psychological experiences in shaping personal identity seems most promising for deepening the understanding.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "The sense of self is the only or primary aspect of personal identity that is influenced by psychological continuity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.8
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "Psychological continuity is sufficient for the maintenance of personal identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.7
+    },
+    {
+     "id": "n7",
+     "type": "assumption",
+     "text": "The sense of self is not influenced by any other factors besides psychological continuity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "load": 0.6
+    }
+   ],
+   "conflicts": [],
+   "confidence": 1.0,
+   "uncertainty": 0.5280000000000001,
+   "novelty": 0.68,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "intuit",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.184,
+      "reason": 0.245,
+      "imagine": 0.07,
+      "intuit": 0.131,
+      "introspect": 0.184,
+      "doubt": 0.116,
+      "adjudicate": 0.024,
+      "revise": 0.024,
+      "conclude": 0.024
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 2,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.2,
+      "reason": 0.266,
+      "imagine": 0.106,
+      "intuit": 0.026,
+      "introspect": 0.2,
+      "doubt": 0.126,
+      "adjudicate": 0.026,
+      "revise": 0.026,
+      "conclude": 0.026
+     },
+     "d_conf": 0.2,
+     "d_unc": -0.12
+    },
+    {
+     "step": 3,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.089,
+      "reason": 0.186,
+      "imagine": 0.119,
+      "intuit": 0.029,
+      "introspect": 0.281,
+      "doubt": 0.211,
+      "adjudicate": 0.029,
+      "revise": 0.029,
+      "conclude": 0.029
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.168
+    },
+    {
+     "step": 4,
+     "op": "reason",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.095,
+      "reason": 0.3,
+      "imagine": 0.127,
+      "intuit": 0.084,
+      "introspect": 0.08,
+      "doubt": 0.223,
+      "adjudicate": 0.03,
+      "revise": 0.03,
+      "conclude": 0.03
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 5,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.031,
+      "reason": 0.067,
+      "imagine": 0.041,
+      "intuit": 0.028,
+      "introspect": 0.026,
+      "doubt": 0.073,
+      "adjudicate": 0.01,
+      "revise": 0.01,
+      "conclude": 0.715
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 1.0,
+     "uncertainty": 0.48,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 1.0,
+     "uncertainty": 0.648,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 1.0,
+     "uncertainty": 0.528,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 1.0,
+     "uncertainty": 0.528,
+     "novelty": 0.68,
+     "surprise": 0.0
+    }
+   ],
+   "step": 5,
+   "conclusion": {
+    "position": "yes",
+    "stance": "yes",
+    "credence": 1.0,
+    "key_reasons": [
+     "Personal identity is dependent on psychological continuity because one's sense of self is primarily formed through psychological experiences and memories.",
+     "Psychological continuity is the uninterrupted pattern of psychological states, such as memories, beliefs, and feelings.",
+     "One's sense of self is often based on and influenced by psychological experiences and memories."
+    ],
+    "open_objection": "The sense of self is not the only or primary aspect of personal identity that is influenced by psychological continuity."
+   },
+   "curiosity": 0.9
+  },
+  "minimalist": {
+   "hypothesis": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "claim",
+     "text": "Personal identity is dependent on psychological continuity because psychological continuity is a necessary condition for maintaining a coherent self over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.8,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity refers to the consistent patterns of thoughts, memories, and experiences that define a person.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.7,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Without psychological continuity, a person's identity would be fragmented and unstable.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Therefore, psychological continuity is a fundamental aspect of personal identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.9,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Psychological continuity is the only necessary condition for personal identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.75
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "A coherent self over time is equivalent to a coherent psychological profile.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.4,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.6
+    },
+    {
+     "id": "n6",
+     "type": "thought_experiment",
+     "text": "Imagine a scenario where a person experiences a complete and irreversible memory loss, yet retains all other aspects of their personality and physical abilities. Would this person still be considered to have the same personal identity as before the memory loss? \u2192 If the answer is yes, then psychological continuity may not be the only necessary condition for personal identity, challenging the hypot",
+     "parent": "n1",
+     "status": "open",
+     "conf": 0.48000000000000004,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n7",
+     "type": "objection",
+     "text": "Consider a scenario where a person experiences a complete and irreversible memory loss, yet their personality and physical abilities remain intact. If the person's identity is not dependent on psychological continuity, then the person's identity would remain the same. However, if the person's identity changes after the memory loss, it challenges the hypothesis that psychological continuity is a ne",
+     "parent": "n6",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 2
+    },
+    {
+     "id": "n8",
+     "type": "counterexample",
+     "text": "Imagine a scenario where a person's physical body is replaced with a clone, but their memories and personality are transferred to the clone. If the person's identity is not dependent on psychological continuity, then the original person and the clone would have the same identity. However, the original person's identity would be considered different from the clone's, as they have distinct memories ",
+     "parent": "n6",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 2
+    },
+    {
+     "id": "n9",
+     "type": "premise",
+     "text": "Reply: The objection does not survive the best available reply because the scenario described in [n6] does not necessarily challenge the necessity of psychological continuity for personal identity. The scenario only questions the sufficiency of psychological continuity, not its necessity. If the person's identity remains the same after the memory loss, it does not contradict the idea that psycholo",
+     "parent": "n6",
+     "status": "supported",
+     "conf": 1.0,
+     "curiosity": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n10",
+     "type": "alternative",
+     "text": "Hunch: The most promising nodes to explore next are n3 and n2, as they directly support the core hypothesis and provide strong foundational support for the idea that psychological continuity is a necessary condition for personal identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.8,
+     "surprise": 0.0,
+     "step": 7
+    }
+   ],
+   "conflicts": [
+    {
+     "objection": "n7",
+     "target": "n6",
+     "status": "resolved"
+    },
+    {
+     "objection": "n8",
+     "target": "n6",
+     "status": "open"
+    }
+   ],
+   "confidence": 0.74,
+   "uncertainty": 0.5279999999999999,
+   "novelty": 0.5780000000000001,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.015,
+      "reason": 0.21,
+      "imagine": 0.015,
+      "intuit": 0.02,
+      "introspect": 0.611,
+      "doubt": 0.098,
+      "adjudicate": 0.01,
+      "revise": 0.01,
+      "conclude": 0.01
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.108
+    },
+    {
+     "step": 2,
+     "op": "imagine",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.028,
+      "reason": 0.527,
+      "imagine": 0.031,
+      "intuit": 0.039,
+      "introspect": 0.132,
+      "doubt": 0.186,
+      "adjudicate": 0.019,
+      "revise": 0.019,
+      "conclude": 0.019
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "doubt",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.027,
+      "reason": 0.491,
+      "imagine": 0.027,
+      "intuit": 0.055,
+      "introspect": 0.173,
+      "doubt": 0.173,
+      "adjudicate": 0.018,
+      "revise": 0.018,
+      "conclude": 0.018
+     },
+     "d_conf": -0.06,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.019,
+      "reason": 0.34,
+      "imagine": 0.019,
+      "intuit": 0.038,
+      "introspect": 0.12,
+      "doubt": 0.063,
+      "adjudicate": 0.376,
+      "revise": 0.012,
+      "conclude": 0.012
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.019,
+      "reason": 0.352,
+      "imagine": 0.021,
+      "intuit": 0.04,
+      "introspect": 0.088,
+      "doubt": 0.065,
+      "adjudicate": 0.39,
+      "revise": 0.013,
+      "conclude": 0.013
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.02,
+      "reason": 0.377,
+      "imagine": 0.023,
+      "intuit": 0.042,
+      "introspect": 0.022,
+      "doubt": 0.07,
+      "adjudicate": 0.418,
+      "revise": 0.014,
+      "conclude": 0.014
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "reason",
+     "focus": "n9",
+     "probs": {
+      "memory": 0.03,
+      "reason": 0.481,
+      "imagine": 0.035,
+      "intuit": 0.063,
+      "introspect": 0.105,
+      "doubt": 0.132,
+      "adjudicate": 0.112,
+      "revise": 0.02,
+      "conclude": 0.02
+     },
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 8,
+     "op": "intuit",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.037,
+      "reason": 0.366,
+      "imagine": 0.042,
+      "intuit": 0.078,
+      "introspect": 0.129,
+      "doubt": 0.162,
+      "adjudicate": 0.137,
+      "revise": 0.025,
+      "conclude": 0.025
+     },
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 9,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.708,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.8,
+     "uncertainty": 0.708,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.708,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.708,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.708,
+     "novelty": 0.578,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.648,
+     "novelty": 0.578,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.528,
+     "novelty": 0.578,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.528,
+     "novelty": 0.578,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.528,
+     "novelty": 0.578,
+     "surprise": 0.0
+    }
+   ],
+   "step": 9,
+   "conclusion": {
+    "position": "qualified",
+    "stance": "yes",
+    "credence": 0.85,
+    "key_reasons": [
+     "Psychological continuity is a fundamental aspect of personal identity.",
+     "Without psychological continuity, a person's identity would be fragmented and unstable.",
+     "However, the thought experiment suggests that psychological continuity may not be the only necessary condition for personal identity."
+    ],
+    "open_objection": "The thought experiment implies that psychological continuity may not be the only necessary condition for personal identity, suggesting that other factors might also contribute to personal identity."
+   },
+   "curiosity": 0.9
+  }
+ },
+ "metrics": {
+  "semantic_diversity": 0.042,
+  "branch_diversity": 0.58,
+  "disagreement_rate": 0.4,
+  "path_similarity": 0.327,
+  "conclusion_similarity": 0.65,
+  "unique_assumptions": 2,
+  "unique_objections": 3,
+  "unique": {
+   "explorer": {
+    "assumptions": [
+     "node n0 silently needs additional premises to be fully supported.",
+     "node n0"
+    ],
+    "objections": []
+   },
+   "formalist": {
+    "assumptions": [],
+    "objections": []
+   },
+   "skeptic": {
+    "assumptions": [],
+    "objections": [
+     "A person's physical body and its interactions with the environment (social relationships, bodily sensations, etc.) could also be crucial for a coherent sense of self, which is not directly related to psychological continuity.",
+     "Parfit's 'Relation R' theory emphasizes that what matters in survival is psychological connectedness and continuity, not the identity itself. This supports the idea that psychological continuity is essential for personal identity, but does not rule out the possibility of other factors being equally or more important."
+    ]
+   },
+   "synthesizer": {
+    "assumptions": [],
+    "objections": []
+   },
+   "minimalist": {
+    "assumptions": [],
+    "objections": [
+     "Imagine a scenario where a person's physical body is replaced with a clone, but their memories and personality are transferred to the clone. If the person's identity is not dependent on psychological continuity, then the original person and the clone would have the same identity. However, the original person's identity would be considered different from the clone's, as they have distinct memories "
+    ]
+   }
+  },
+  "pairs": {
+   "explorer|formalist": {
+    "semantic": 0.062,
+    "path_sim": 0.286,
+    "concl_sim": 0.416,
+    "branch": 0.7,
+    "disagree": true
+   },
+   "explorer|skeptic": {
+    "semantic": 0.021,
+    "path_sim": 0.278,
+    "concl_sim": 0.416,
+    "branch": 0.631,
+    "disagree": true
+   },
+   "explorer|synthesizer": {
+    "semantic": 0.049,
+    "path_sim": 0.286,
+    "concl_sim": 0.668,
+    "branch": 0.562,
+    "disagree": true
+   },
+   "explorer|minimalist": {
+    "semantic": 0.026,
+    "path_sim": 0.286,
+    "concl_sim": 0.416,
+    "branch": 0.651,
+    "disagree": true
+   },
+   "formalist|skeptic": {
+    "semantic": 0.05,
+    "path_sim": 0.167,
+    "concl_sim": 1.0,
+    "branch": 0.779,
+    "disagree": false
+   },
+   "formalist|synthesizer": {
+    "semantic": 0.054,
+    "path_sim": 0.667,
+    "concl_sim": 0.527,
+    "branch": 0.263,
+    "disagree": false
+   },
+   "formalist|minimalist": {
+    "semantic": 0.042,
+    "path_sim": 0.4,
+    "concl_sim": 1.0,
+    "branch": 0.477,
+    "disagree": false
+   },
+   "skeptic|synthesizer": {
+    "semantic": 0.038,
+    "path_sim": 0.222,
+    "concl_sim": 0.527,
+    "branch": 0.744,
+    "disagree": false
+   },
+   "skeptic|minimalist": {
+    "semantic": 0.029,
+    "path_sim": 0.278,
+    "concl_sim": 1.0,
+    "branch": 0.588,
+    "disagree": false
+   },
+   "synthesizer|minimalist": {
+    "semantic": 0.047,
+    "path_sim": 0.4,
+    "concl_sim": 0.527,
+    "branch": 0.406,
+    "disagree": false
+   }
+  },
+  "most_divergent": "explorer|formalist"
+ }
+}

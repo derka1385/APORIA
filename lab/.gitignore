@@ -1,5 +1,3 @@
-runs/
 __pycache__/
-*.db
 .DS_Store
-remote.env
+runs/failed/

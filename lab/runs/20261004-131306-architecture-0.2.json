@@ -1,0 +1,4371 @@
+{
+ "id": "20261004-131306-architecture-0.2",
+ "question": "Is personal identity dependent on psychological continuity?",
+ "condition": "architecture",
+ "delta": 0.25,
+ "seed": 1001,
+ "models": [
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b",
+  "qwen3:30b"
+ ],
+ "quick": false,
+ "memory": "off",
+ "run": 0,
+ "runs": 1,
+ "failed": [],
+ "agents": {
+  "explorer": {
+   "hypothesis": "Personal identity is dependent on psychological continuity, as it provides the necessary conditions for the persistence of the self over time.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Personal identity is dependent on psychological continuity, as it provides the necessary conditions for the persistence of the self over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7399999999999999,
+     "curiosity": 0.519,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity involves the preservation of memories, beliefs, and desires across time, which are essential for a person to be considered the same individual.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.523,
+     "novelty": 0.136,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Without psychological continuity, there would be no basis for attributing the same psychological states to an individual at different times, making the concept of personal identity incoherent.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.441,
+     "novelty": 0.103,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Personal identity is dependent on psychological continuity is false, Psychological continuity provides the necessary conditions for the persistence of the self over time is true, Psychological continuity involves the preservation of memories, beliefs, and desires across time is true, Without psychological continuity, the",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.269,
+     "novelty": 0.12,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formal": true
+    },
+    {
+     "id": "n4",
+     "type": "evidence",
+     "text": "Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.292,
+     "novelty": 0.215,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n5",
+     "type": "evidence",
+     "text": "Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.295,
+     "novelty": 0.228,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n6",
+     "type": "evidence",
+     "text": "Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.294,
+     "novelty": 0.227,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "source": "butler-circularity"
+    },
+    {
+     "id": "n7",
+     "type": "response",
+     "text": "The objection conflates 'dependent on' with 'provides necessary conditions'. The hypothesis claims dependency (n0), while the premise states psychological continuity provides necessary conditions (n1). Necessity does not imply sufficiency; thus, the premises do entail the conclusion that identity depends on continuity, even if continuity alone is not sufficient. The counter-assignment misrepresent",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.372,
+     "novelty": 0.163,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2
+    },
+    {
+     "id": "n8",
+     "type": "response",
+     "text": "The objection misinterprets Parfit's position. Parfit argues that psychological continuity (Relation R) is what matters for survival, not that personal identity itself is indeterminate in a way that negates its dependence on continuity. His view is that continuity is necessary for survival, but identity is not what matters\u2014this does not undermine the hypothesis that identity depends on continuity.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.6,
+     "curiosity": 0.353,
+     "novelty": 0.104,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n9",
+     "type": "assumption",
+     "text": "Parfit's position explicitly denies that personal identity depends on psychological continuity (it is not what matters for survival), and the hypothesis claims dependency on continuity.",
+     "parent": "n8",
+     "status": "open",
+     "conf": 0.45,
+     "curiosity": 0.186,
+     "novelty": 0.077,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4,
+     "load": 0.6
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The circularity objection misattributes a causal claim to the memory theory. Locke's memory theory (n4) does not claim memory *causes* identity but rather that memory *constitutes* the continuity of the self. Genuine remembering does presuppose a prior self, but this does not render the theory circular in a way that invalidates it; rather, it reflects the nature of selfhood as inherently temporal.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.36,
+     "novelty": 0.125,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n11",
+     "type": "question",
+     "text": "Does psychological continuity require a prior self to be meaningful, or can it exist independently of any pre-existing identity?",
+     "parent": "n1",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.251,
+     "novelty": 0.108,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 6
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n9",
+     "dst": "n8",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n11",
+     "dst": "n1",
+     "rel": "refines"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "formal",
+     "node": "n3",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 0
+    },
+    {
+     "id": "x1",
+     "kind": "evidence",
+     "node": "n5",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    },
+    {
+     "id": "x2",
+     "kind": "evidence",
+     "node": "n6",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 1
+    }
+   ],
+   "confidence": 0.7399999999999999,
+   "uncertainty": 0.5,
+   "novelty": 0.6000000000000001,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.206,
+      "reason": 0.101,
+      "imagine": 0.081,
+      "intuit": 0.0,
+      "introspect": 0.285,
+      "doubt": 0.045,
+      "counterfactual": 0.043,
+      "formalize": 0.109,
+      "inquire": 0.13,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2735,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 2,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.144,
+      "reason": 0.077,
+      "imagine": 0.106,
+      "intuit": 0.0,
+      "introspect": 0.2,
+      "doubt": 0.032,
+      "counterfactual": 0.03,
+      "formalize": 0.028,
+      "inquire": 0.096,
+      "adjudicate": 0.288,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 5112,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 3,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.012,
+      "reason": 0.028,
+      "imagine": 0.067,
+      "intuit": 0.018,
+      "introspect": 0.069,
+      "doubt": 0.013,
+      "counterfactual": 0.058,
+      "formalize": 0.011,
+      "inquire": 0.013,
+      "adjudicate": 0.711,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 1574,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 4,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.022,
+      "imagine": 0.031,
+      "intuit": 0.016,
+      "introspect": 0.058,
+      "doubt": 0.011,
+      "counterfactual": 0.051,
+      "formalize": 0.009,
+      "inquire": 0.01,
+      "adjudicate": 0.782,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2619,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 5,
+     "op": "reason",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.041,
+      "reason": 0.09,
+      "imagine": 0.087,
+      "intuit": 0.1,
+      "introspect": 0.246,
+      "doubt": 0.05,
+      "counterfactual": 0.226,
+      "formalize": 0.04,
+      "inquire": 0.043,
+      "adjudicate": 0.077,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 3012,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.028,
+      "reason": 0.065,
+      "imagine": 0.058,
+      "intuit": 0.068,
+      "introspect": 0.168,
+      "doubt": 0.034,
+      "counterfactual": 0.154,
+      "formalize": 0.027,
+      "inquire": 0.031,
+      "adjudicate": 0.366,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3282,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "inquire",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.018,
+      "reason": 0.042,
+      "imagine": 0.029,
+      "intuit": 0.046,
+      "introspect": 0.114,
+      "doubt": 0.024,
+      "counterfactual": 0.109,
+      "formalize": 0.018,
+      "inquire": 0.02,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.58
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 3142,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 8,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.017,
+      "reason": 0.039,
+      "imagine": 0.028,
+      "intuit": 0.044,
+      "introspect": 0.108,
+      "doubt": 0.023,
+      "counterfactual": 0.103,
+      "formalize": 0.017,
+      "inquire": 0.064,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.556
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 2697,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.7,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.58,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.52,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.46,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.56,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.5,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.5,
+     "novelty": 0.6,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.5,
+     "novelty": 0.6,
+     "surprise": 0.0
+    }
+   ],
+   "step": 8,
+   "conclusion": {
+    "position": "Personal identity is dependent on psychological continuity, though the relationship is not strictly sufficient for identity.",
+    "stance": "qualified",
+    "credence": 0.65,
+    "key_reasons": [
+     "Psychological continuity provides the necessary conditions for personal identity by preserving memories, beliefs, and desires over time.",
+     "Locke's memory theory demonstrates that identity is constituted by the continuity of conscious experience, not by bodily or substance identity.",
+     "The hypothesis correctly identifies dependency without claiming sufficiency, addressing concerns about circularity and necessity."
+    ],
+    "open_objection": "Parfit's denial that psychological continuity is what matters for survival challenges the practical significance of the dependency, suggesting that even if continuity is necessary, it may not be the primary factor in personal identity.",
+    "open_questions": [
+     "Does psychological continuity require a pre-existing self to be meaningful, or can it exist independently of any prior identity?",
+     "How does psychological continuity interact with bodily continuity and other factors in cases of brain damage or memory loss?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "assumptions unexamined",
+     "op": "introspect",
+     "node": "n0",
+     "strength": 0.7
+    },
+    {
+     "signal": "never tested counterfactually",
+     "op": "counterfactual",
+     "node": "n0",
+     "strength": 0.6
+    },
+    {
+     "signal": "open question",
+     "op": "inquire",
+     "node": "n11",
+     "strength": 0.5
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.135,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.15,
+    "doubt": 0.15,
+    "counterfactual": 0.15,
+    "formalize": 0.135,
+    "inquire": 0.12,
+    "adjudicate": 0.2223,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 0,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"P\": false, \"Q\": true, \"R\": true, \"S\": false, \"T\": true}, \"atoms\": [\"P\", \"Q\", \"R\", \"S\", \"T\"], \"engine\": \"p"
+    },
+    {
+     "step": 1,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"locke-memory\", \"title\": \"Locke: memory theory of personal identity\", \"text\": \"A person is the same person as far back as consciousness (memory) extends"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.523,
+   "conflicts": [
+    {
+     "objection": "n3",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n5",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n6",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "formalist": {
+   "hypothesis": "Personal identity is dependent on psychological continuity, as the persistence of consciousness and memory forms the core of what makes a person the same over time.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Personal identity is dependent on psychological continuity, as the persistence of consciousness and memory forms the core of what makes a person the same over time.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7499999999999998,
+     "curiosity": 0.621,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity, including memory and personality, is necessary for a person to be considered the same individual across different times.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.446,
+     "novelty": 0.116,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "Without psychological continuity, there would be no basis for attributing the same identity to a person at different points in time, as physical and biological continuity alone do not account for subjective experience.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.442,
+     "novelty": 0.106,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "Consciousness and memory are the only factors that define personal identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.364,
+     "novelty": 0.138,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Psychological continuity is a necessary condition for personal identity, but not a sufficient one.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.262,
+     "novelty": 0.09,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 1.0,
+     "recur": 4
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "The continuity of psychological states is the only way to maintain a coherent sense of self over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.275,
+     "novelty": 0.144,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.8
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "The self is fundamentally a construct of psychological processes and not an independent entity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.197,
+     "novelty": 0.232,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.7
+    },
+    {
+     "id": "n7",
+     "type": "evidence",
+     "text": "Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.28,
+     "novelty": 0.167,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n8",
+     "type": "evidence",
+     "text": "Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.295,
+     "novelty": 0.231,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n9",
+     "type": "evidence",
+     "text": "Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.294,
+     "novelty": 0.227,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "source": "butler-circularity"
+    },
+    {
+     "id": "n10",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Personal identity is dependent on psychological continuity is false, Psychological continuity, including memory and personality, is necessary for a person to be considered the same individual across different times is true, Without psychological continuity, there would be no basis for attributing the same identity to a p",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.278,
+     "novelty": 0.158,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3,
+     "formal": true
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "Butler's circularity objection misinterprets Locke's memory theory. Locke does not claim memory *constitutes* identity but rather that memory *indicates* identity; the memory relation (e.g., 'I remember X') is a *symmetric* relation that can hold between past and present selves without presupposing identity. The objection conflates the *relation* of memory with the *identity* of the person. A pers",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.349,
+     "novelty": 0.091,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "The objection [n10] misrepresents the hypothesis by treating 'dependent on' as a strict logical entailment rather than a causal or constitutive relationship. The hypothesis claims psychological continuity is the *core* (not the sole) factor, acknowledging that other conditions (e.g., bodily continuity) may play a role. [n4] clarifies it is a necessary but not sufficient condition, which the object",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.368,
+     "novelty": 0.151,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n13",
+     "type": "counterfactual",
+     "text": "[failure world] A world where psychological continuity is disrupted by a technology that randomly erases memories and alters personalities, yet the physical body remains intact and continues to function identically. In this world, individuals experience a complete loss of memory and personality changes without any physical harm, but their bodies continue to operate as before. Despite the psycholog",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.494,
+     "novelty": 0.235,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6,
+     "mode": "failure_world",
+     "prediction": "flips"
+    },
+    {
+     "id": "n14",
+     "type": "response",
+     "text": "The claim fails in the [failure world] scenario because the hypothesis asserts psychological continuity as the *core* of personal identity, yet in [n13] the disruption of psychological continuity (memory erasure, personality alteration) occurs without physical harm, leading to a loss of subjective identity continuity. The hypothesis claims psychological continuity is the *core* (not merely one fac",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.365,
+     "novelty": 0.14,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 7
+    },
+    {
+     "id": "n15",
+     "type": "counterexample",
+     "text": "The 'teletransportation' thought experiment: If a person is scanned, disintegrated, and a perfect replica is created elsewhere with identical memories and psychological states, the replica would believe they are the same person, yet the original is dead. This challenges the idea that psychological continuity alone defines identity, as two individuals could share the same psychological continuity w",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.95,
+     "curiosity": 0.048,
+     "novelty": 0.19,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n16",
+     "type": "objection",
+     "text": "The 'brain transplant' scenario: If a person's brain is transplanted into another body, psychological continuity is maintained, but the body continuity is broken. However, if we consider the body as part of identity, this would imply the person is now a different individual, contradicting the psychological continuity hypothesis. Conversely, if the brain is transplanted but the memories are altered",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.92,
+     "curiosity": 0.074,
+     "novelty": 0.159,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n17",
+     "type": "response",
+     "text": "The teletransportation scenario does not refute psychological continuity as the core of personal identity, because the replica's psychological continuity is not continuous with the original's. The replica has *new* psychological states that are causally disconnected from the original's stream of consciousness (it is a new instantiation, not a continuation). Psychological continuity requires *causa",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.355,
+     "novelty": 0.109,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 10
+    },
+    {
+     "id": "n18",
+     "type": "response",
+     "text": "The brain transplant scenario does not refute psychological continuity as the core of personal identity. Psychological continuity (including memory and consciousness) is maintained in the transplanted brain, while bodily continuity is broken. The hypothesis does not claim bodily continuity is irrelevant; rather, it posits psychological continuity as the *core* factor. Bodily continuity may be a se",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.336,
+     "novelty": 0.051,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n14",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n15",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n16",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n17",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n18",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "evidence",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "formal",
+     "node": "n10",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "counterfactual",
+     "node": "n13",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 6
+    },
+    {
+     "id": "x3",
+     "kind": "counterexample",
+     "node": "n15",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.12,
+     "step": 9
+    },
+    {
+     "id": "x4",
+     "kind": "objection",
+     "node": "n16",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 9
+    }
+   ],
+   "confidence": 0.7499999999999998,
+   "uncertainty": 0.5699999999999998,
+   "novelty": 0.5135000000000001,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.15,
+      "reason": 0.124,
+      "imagine": 0.028,
+      "intuit": 0.0,
+      "introspect": 0.346,
+      "doubt": 0.02,
+      "counterfactual": 0.016,
+      "formalize": 0.248,
+      "inquire": 0.068,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.16,
+     "ms": 4659,
+     "d_conf": 0.0,
+     "d_unc": 0.12
+    },
+    {
+     "step": 2,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.166,
+      "reason": 0.183,
+      "imagine": 0.043,
+      "intuit": 0.0,
+      "introspect": 0.03,
+      "doubt": 0.174,
+      "counterfactual": 0.02,
+      "formalize": 0.297,
+      "inquire": 0.088,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.16,
+     "ms": 3327,
+     "d_conf": 0.0,
+     "d_unc": 0.12
+    },
+    {
+     "step": 3,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.132,
+      "reason": 0.191,
+      "imagine": 0.047,
+      "intuit": 0.024,
+      "introspect": 0.015,
+      "doubt": 0.148,
+      "counterfactual": 0.111,
+      "formalize": 0.252,
+      "inquire": 0.081,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.21,
+     "ms": 3089,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 4,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.013,
+      "reason": 0.122,
+      "imagine": 0.044,
+      "intuit": 0.019,
+      "introspect": 0.015,
+      "doubt": 0.116,
+      "counterfactual": 0.087,
+      "formalize": 0.197,
+      "inquire": 0.015,
+      "adjudicate": 0.371,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 4718,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.002,
+      "reason": 0.025,
+      "imagine": 0.013,
+      "intuit": 0.005,
+      "introspect": 0.003,
+      "doubt": 0.003,
+      "counterfactual": 0.015,
+      "formalize": 0.003,
+      "inquire": 0.003,
+      "adjudicate": 0.929,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 4100,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.015,
+      "reason": 0.158,
+      "imagine": 0.051,
+      "intuit": 0.035,
+      "introspect": 0.019,
+      "doubt": 0.021,
+      "counterfactual": 0.112,
+      "formalize": 0.018,
+      "inquire": 0.019,
+      "adjudicate": 0.552,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3545,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.035,
+      "reason": 0.341,
+      "imagine": 0.071,
+      "intuit": 0.084,
+      "introspect": 0.045,
+      "doubt": 0.054,
+      "counterfactual": 0.281,
+      "formalize": 0.044,
+      "inquire": 0.045,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 3362,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.015,
+      "reason": 0.147,
+      "imagine": 0.04,
+      "intuit": 0.036,
+      "introspect": 0.021,
+      "doubt": 0.023,
+      "counterfactual": 0.018,
+      "formalize": 0.019,
+      "inquire": 0.019,
+      "adjudicate": 0.661,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 4628,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.005,
+      "reason": 0.049,
+      "imagine": 0.009,
+      "intuit": 0.013,
+      "introspect": 0.008,
+      "doubt": 0.009,
+      "counterfactual": 0.007,
+      "formalize": 0.007,
+      "inquire": 0.007,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.886
+     },
+     "why": [],
+     "gain": 0.175,
+     "ms": 4206,
+     "d_conf": -0.15,
+     "d_unc": 0.05
+    },
+    {
+     "step": 10,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.049,
+      "reason": 0.45,
+      "imagine": 0.095,
+      "intuit": 0.109,
+      "introspect": 0.064,
+      "doubt": 0.066,
+      "counterfactual": 0.052,
+      "formalize": 0.058,
+      "inquire": 0.058,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.14,
+     "ms": 4242,
+     "d_conf": -0.04,
+     "d_unc": 0.0
+    },
+    {
+     "step": 11,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.01,
+      "imagine": 0.005,
+      "intuit": 0.002,
+      "introspect": 0.001,
+      "doubt": 0.001,
+      "counterfactual": 0.001,
+      "formalize": 0.001,
+      "inquire": 0.001,
+      "adjudicate": 0.974,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.3,
+     "ms": 1654,
+     "d_conf": 0.12,
+     "d_unc": -0.06
+    },
+    {
+     "step": 12,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.013,
+      "reason": 0.116,
+      "imagine": 0.035,
+      "intuit": 0.031,
+      "introspect": 0.018,
+      "doubt": 0.02,
+      "counterfactual": 0.016,
+      "formalize": 0.017,
+      "inquire": 0.016,
+      "adjudicate": 0.718,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3003,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 1611,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.72,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.84,
+     "novelty": 0.578,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.72,
+     "novelty": 0.434,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.82,
+     "novelty": 0.434,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.76,
+     "novelty": 0.434,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.7,
+     "novelty": 0.434,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.7,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.64,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.69,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.55,
+     "uncertainty": 0.69,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.67,
+     "uncertainty": 0.63,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.75,
+     "uncertainty": 0.57,
+     "novelty": 0.514,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.75,
+     "uncertainty": 0.57,
+     "novelty": 0.514,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "Personal identity is dependent on psychological continuity, though not exclusively so, as other factors like bodily continuity may play a secondary role.",
+    "stance": "qualified",
+    "credence": 0.75,
+    "key_reasons": [
+     "Psychological continuity, including memory and consciousness, forms the core of personal identity as it provides the necessary basis for subjective experience and self-continuity over time.",
+     "Evidence from Parfit and Locke supports that psychological connectedness and continuity (Relation R) are what matter in survival, even if identity itself is not strictly necessary or determinate.",
+     "The hypothesis correctly identifies psychological continuity as a necessary but not sufficient condition for personal identity, acknowledging that other factors may contribute."
+    ],
+    "open_objection": "The objection that psychological continuity is not sufficient for identity, as bodily continuity or other factors might also be required, and the question of whether a 'core' identity can exist without any psychological continuity at all.",
+    "open_questions": [
+     "Can psychological continuity be fully maintained without any physical or biological basis?",
+     "How do we account for cases where psychological continuity is disrupted but bodily continuity persists (e.g., severe memory loss)?",
+     "Is there a minimal threshold of psychological continuity required for identity to persist, and how is this threshold determined?"
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.1575,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.1551,
+    "doubt": 0.147,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.2499,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 2,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"locke-memory\", \"title\": \"Locke: memory theory of personal identity\", \"text\": \"A person is the same person as far back as consciousness (memory) extends"
+    },
+    {
+     "step": 3,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"P\": false, \"Q\": true, \"R\": true, \"S\": true, \"T\": true, \"U\": true, \"V\": true, \"W\": true, \"X\": true, \"Y\": t"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.621,
+   "conflicts": [
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n10",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n13",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n15",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n16",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  },
+  "skeptic": {
+   "hypothesis": "Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical body or a metaphysical soul.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical body or a metaphysical soul.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.5899999999999999,
+     "curiosity": 2.572,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity alone cannot account for the persistence of the self over time if the body or soul is discontinuous.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.456,
+     "novelty": 0.141,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "The thought experiment of teleportation, where a copy is made with identical memories but the original is destroyed, shows that identity cannot be reduced to psychological continuity alone.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.504,
+     "novelty": 0.259,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "assumption",
+     "text": "A continuous physical body is necessary for personal identity to persist over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.356,
+     "novelty": 0.111,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 1.0,
+     "recur": 2
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "A metaphysical soul is necessary for personal identity to persist over time.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.703,
+     "novelty": 0.123,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.7
+    },
+    {
+     "id": "n5",
+     "type": "thought_experiment",
+     "text": "The Ship of Theseus with Psychological Components: Imagine a ship where all physical parts are gradually replaced, but also, the crew's memories and personalities are gradually altered to match the new parts. If the ship retains its identity despite physical and psychological changes, does this challenge the need for a continuous physical body or soul? \u2192 If the ship's identity persists through bot",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.385,
+     "novelty": 0.203,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n6",
+     "type": "alternative",
+     "text": "The Memory Erasure Paradox: Consider a person who undergoes a procedure that erases all memories but retains the same brain structure and physical body. If they later regain memories through therapy, does their identity remain the same as before the erasure? \u2192 If identity is preserved despite memory loss and subsequent recovery, it implies that psychological continuity is not essential, supporting",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.48000000000000004,
+     "curiosity": 0.426,
+     "novelty": 0.179,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n7",
+     "type": "counterfactual",
+     "text": "[decisive assumption] In a world where a metaphysical soul does not exist, personal identity is entirely determined by psychological continuity and physical continuity. However, the physical body is not required to be continuous; instead, the brain's physical structure can be partially replaced or altered without affecting identity, as long as psychological continuity is maintained. For example, a",
+     "parent": "n4",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.21,
+     "novelty": 0.093,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "mode": "decisive_assumption",
+     "prediction": "holds"
+    },
+    {
+     "id": "n8",
+     "type": "counterexample",
+     "text": "Consider a person who suffers from severe memory loss due to brain damage, yet retains their core personality and sense of self. Despite the discontinuity in psychological continuity (memories), they are still recognized as the same person by friends and family, suggesting that psychological continuity is not strictly necessary for personal identity.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.182,
+     "novelty": 0.136,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n9",
+     "type": "objection",
+     "text": "The case of identical twins with merged brains (a theoretical scenario) could challenge the necessity of a continuous physical body. If two individuals' brains are merged and their psychological states become continuous, yet their physical bodies remain distinct, it would imply that a continuous physical body is not required for personal identity.",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.75,
+     "curiosity": 0.234,
+     "novelty": 0.171,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The objection conflates 'psychological continuity' with 'memory continuity'. While memory loss may disrupt specific memories, core personality and sense of self often rely on deeper psychological structures (e.g., values, dispositions) that remain continuous. The case described does not demonstrate discontinuity in psychological continuity but rather a temporary disruption in memory recall. Thus, ",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.358,
+     "novelty": 0.12,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "The objection conflates 'psychological continuity' with 'identity persistence'. Merging brains would not create a single continuous psychological state but rather a new, hybrid state. The original individuals' identities would not persist; instead, a new entity would emerge. Thus, the scenario does not challenge the necessity of a continuous physical body for the persistence of a single person's i",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.351,
+     "novelty": 0.098,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5
+    },
+    {
+     "id": "n12",
+     "type": "counterfactual",
+     "text": "[failure world] A world where metaphysical souls do not exist, and personal identity is entirely determined by psychological continuity, with physical body continuity being irrelevant. In this world, brain transplants and partial brain replacements (e.g., neural implants replacing damaged neurons) are common and do not disrupt personal identity. Psychological continuity is maintained through advan",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.448,
+     "novelty": 0.121,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6,
+     "mode": "failure_world",
+     "prediction": "flips"
+    },
+    {
+     "id": "n13",
+     "type": "response",
+     "text": "The claim [n0] does not fail in scenario [n12]. In [n12], the world explicitly assumes that psychological continuity alone suffices for identity without requiring physical continuity or a soul. This directly contradicts [n0]'s assertion that identity requires more than psychological continuity (i.e., a continuous body or soul). Thus, [n12] is a counterexample that undermines [n0], meaning [n0] fai",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.366,
+     "novelty": 0.145,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 7
+    },
+    {
+     "id": "n14",
+     "type": "counterfactual",
+     "text": "[opposite] In a world where a person's memories are completely erased and their brain structure is altered, but their core psychological dispositions (such as personality, values, and character) remain unchanged, and they later regain their memories through therapy, their identity is considered to have persisted without psychological continuity during the memory loss period. (changes: core psychol",
+     "parent": "n6",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.213,
+     "novelty": 0.107,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 9,
+     "mode": "opposite",
+     "prediction": "flips"
+    },
+    {
+     "id": "n15",
+     "type": "response",
+     "text": "The claim [n6] fails because it misidentifies memory loss as a disruption of psychological continuity. Psychological continuity depends on core dispositions (values, personality), not transient memories. In [n14], memory erasure does not disrupt core psychological continuity, so identity persists without requiring physical continuity or a soul\u2014directly contradicting [n0]'s hypothesis that identity",
+     "parent": "n6",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.162,
+     "novelty": 0.054,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 10
+    },
+    {
+     "id": "n16",
+     "type": "evidence",
+     "text": "Locke: memory theory of personal identity: A person is the same person as far back as consciousness (memory) extends. Identity of person is not identity of substance or body.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.286,
+     "novelty": 0.19,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "locke-memory"
+    },
+    {
+     "id": "n17",
+     "type": "evidence",
+     "text": "Parfit: Relation R and what matters: Psychological connectedness and continuity (Relation R) with any cause is what matters in survival; identity itself is not what matters, and can be indeterminate.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.298,
+     "novelty": 0.241,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "parfit-relation-r"
+    },
+    {
+     "id": "n18",
+     "type": "evidence",
+     "text": "Butler: circularity objection: Memory presupposes personal identity, so it cannot constitute it; genuine remembering already requires that I was the one who experienced it.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.287,
+     "novelty": 0.195,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11,
+     "source": "butler-circularity"
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n7",
+     "dst": "n4",
+     "rel": "tests"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n14",
+     "dst": "n6",
+     "rel": "tests"
+    },
+    {
+     "src": "n15",
+     "dst": "n6",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n16",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n17",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n18",
+     "dst": "n0",
+     "rel": "supports"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "counterfactual",
+     "node": "n7",
+     "target": "n4",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "counterexample",
+     "node": "n8",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.14,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "objection",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x3",
+     "kind": "counterfactual",
+     "node": "n12",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 6
+    },
+    {
+     "id": "x4",
+     "kind": "counterfactual",
+     "node": "n14",
+     "target": "n6",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 9
+    },
+    {
+     "id": "x5",
+     "kind": "evidence",
+     "node": "n16",
+     "target": "n0",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 11
+    },
+    {
+     "id": "x6",
+     "kind": "evidence",
+     "node": "n17",
+     "target": "n0",
+     "status": "pending",
+     "gain": 0.0,
+     "step": 11
+    }
+   ],
+   "confidence": 0.5899999999999999,
+   "uncertainty": 0.4099999999999998,
+   "novelty": 0.75,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.198,
+      "reason": 0.106,
+      "imagine": 0.049,
+      "intuit": 0.0,
+      "introspect": 0.331,
+      "doubt": 0.04,
+      "counterfactual": 0.032,
+      "formalize": 0.145,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.16,
+     "ms": 2560,
+     "d_conf": 0.0,
+     "d_unc": 0.12
+    },
+    {
+     "step": 2,
+     "op": "imagine",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.104,
+      "reason": 0.232,
+      "imagine": 0.035,
+      "intuit": 0.0,
+      "introspect": 0.023,
+      "doubt": 0.229,
+      "counterfactual": 0.237,
+      "formalize": 0.081,
+      "inquire": 0.06,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 3295,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "counterfactual",
+     "focus": "n4",
+     "probs": {
+      "memory": 0.041,
+      "reason": 0.082,
+      "imagine": 0.012,
+      "intuit": 0.008,
+      "introspect": 0.01,
+      "doubt": 0.081,
+      "counterfactual": 0.717,
+      "formalize": 0.029,
+      "inquire": 0.021,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption",
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 2472,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "doubt",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.125,
+      "reason": 0.069,
+      "imagine": 0.034,
+      "intuit": 0.024,
+      "introspect": 0.029,
+      "doubt": 0.236,
+      "counterfactual": 0.136,
+      "formalize": 0.083,
+      "inquire": 0.061,
+      "adjudicate": 0.203,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "no objection raised yet"
+     ],
+     "gain": 0.16,
+     "ms": 3145,
+     "d_conf": -0.06,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.001,
+      "imagine": 0.003,
+      "intuit": 0.001,
+      "introspect": 0.001,
+      "doubt": 0.0,
+      "counterfactual": 0.003,
+      "formalize": 0.002,
+      "inquire": 0.001,
+      "adjudicate": 0.986,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.32,
+     "ms": 2623,
+     "d_conf": 0.14,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.004,
+      "imagine": 0.003,
+      "intuit": 0.002,
+      "introspect": 0.002,
+      "doubt": 0.001,
+      "counterfactual": 0.008,
+      "formalize": 0.005,
+      "inquire": 0.001,
+      "adjudicate": 0.973,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2094,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 7,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.039,
+      "reason": 0.126,
+      "imagine": 0.047,
+      "intuit": 0.074,
+      "introspect": 0.062,
+      "doubt": 0.058,
+      "counterfactual": 0.314,
+      "formalize": 0.173,
+      "inquire": 0.038,
+      "adjudicate": 0.069,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 5241,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.001,
+      "reason": 0.003,
+      "imagine": 0.002,
+      "intuit": 0.002,
+      "introspect": 0.001,
+      "doubt": 0.001,
+      "counterfactual": 0.001,
+      "formalize": 0.004,
+      "inquire": 0.001,
+      "adjudicate": 0.985,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2059,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "reason",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.028,
+      "reason": 0.091,
+      "imagine": 0.03,
+      "intuit": 0.057,
+      "introspect": 0.049,
+      "doubt": 0.049,
+      "counterfactual": 0.034,
+      "formalize": 0.133,
+      "inquire": 0.028,
+      "adjudicate": 0.5,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.175,
+     "ms": 3319,
+     "d_conf": -0.15,
+     "d_unc": 0.05
+    },
+    {
+     "step": 10,
+     "op": "counterfactual",
+     "focus": "n6",
+     "probs": {
+      "memory": 0.033,
+      "reason": 0.098,
+      "imagine": 0.037,
+      "intuit": 0.056,
+      "introspect": 0.049,
+      "doubt": 0.041,
+      "counterfactual": 0.03,
+      "formalize": 0.132,
+      "inquire": 0.029,
+      "adjudicate": 0.494,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 4589,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 11,
+     "op": "adjudicate",
+     "focus": "n4",
+     "probs": {
+      "memory": 0.003,
+      "reason": 0.008,
+      "imagine": 0.003,
+      "intuit": 0.005,
+      "introspect": 0.004,
+      "doubt": 0.003,
+      "counterfactual": 0.002,
+      "formalize": 0.011,
+      "inquire": 0.002,
+      "adjudicate": 0.959,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction",
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 2269,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 12,
+     "op": "memory",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.034,
+      "reason": 0.095,
+      "imagine": 0.04,
+      "intuit": 0.059,
+      "introspect": 0.051,
+      "doubt": 0.043,
+      "counterfactual": 0.031,
+      "formalize": 0.138,
+      "inquire": 0.029,
+      "adjudicate": 0.48,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.21,
+     "ms": 3128,
+     "d_conf": 0.0,
+     "d_unc": -0.12
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 3569,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.72,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.72,
+     "novelty": 0.88,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.72,
+     "novelty": 0.96,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.44,
+     "uncertainty": 0.72,
+     "novelty": 0.96,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.66,
+     "novelty": 0.96,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.6,
+     "novelty": 0.96,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.6,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.54,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.59,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.59,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.53,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.41,
+     "novelty": 0.75,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.59,
+     "uncertainty": 0.41,
+     "novelty": 0.75,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "Personal identity is not solely dependent on psychological continuity, as it also requires a continuous physical body or a metaphysical soul.",
+    "stance": "qualified",
+    "credence": 0.59,
+    "key_reasons": [
+     "The teleportation thought experiment (n2) demonstrates that psychological continuity alone fails to preserve identity when the physical body is destroyed.",
+     "The Memory Erasure Paradox (n6) suggests that identity persists despite memory loss, indicating psychological continuity is not essential.",
+     "Butler's circularity objection (n18) challenges the use of memory as a basis for identity, supporting the need for a non-psychological component."
+    ],
+    "open_objection": "The Ship of Theseus with Psychological Components (n5) argues that identity can persist through both physical and psychological changes, potentially undermining the need for a continuous body or soul.",
+    "open_questions": [
+     "Does the Ship of Theseus scenario (n5) successfully demonstrate that identity persists without a continuous physical body or soul?",
+     "How do we reconcile Parfit's view (n17) that identity is not what matters with the necessity of a continuous body/soul for identity?"
+    ]
+   },
+   "signals": [
+    {
+     "signal": "unresolved contradiction",
+     "op": "adjudicate",
+     "node": "n0",
+     "strength": 1.3
+    },
+    {
+     "signal": "unresolved contradiction",
+     "op": "adjudicate",
+     "node": "n4",
+     "strength": 0.5
+    },
+    {
+     "signal": "argument not formally checked",
+     "op": "formalize",
+     "node": "n0",
+     "strength": 0.55
+    }
+   ],
+   "values": {
+    "memory": 0.168,
+    "reason": 0.1575,
+    "imagine": 0.135,
+    "intuit": 0.15,
+    "introspect": 0.153,
+    "doubt": 0.153,
+    "counterfactual": 0.0843,
+    "formalize": 0.15,
+    "inquire": 0.15,
+    "adjudicate": 0.2158,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 11,
+     "tool": "literature_search",
+     "ok": true,
+     "summary": "[{\"id\": \"locke-memory\", \"title\": \"Locke: memory theory of personal identity\", \"text\": \"A person is the same person as far back as consciousness (memory) extends"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 2.572,
+   "conflicts": [
+    {
+     "objection": "n7",
+     "target": "n4",
+     "status": "open"
+    },
+    {
+     "objection": "n8",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n12",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n14",
+     "target": "n6",
+     "status": "resolved"
+    },
+    {
+     "objection": "n16",
+     "target": "n0",
+     "status": "open"
+    },
+    {
+     "objection": "n17",
+     "target": "n0",
+     "status": "open"
+    }
+   ]
+  },
+  "synthesizer": {
+   "hypothesis": "Personal identity is not solely dependent on psychological continuity, as it also requires bodily continuity and a coherent narrative structure.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Personal identity is not solely dependent on psychological continuity, as it also requires bodily continuity and a coherent narrative structure.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.6599999999999999,
+     "curiosity": 1.335,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity alone cannot account for the persistence of the self across time without a physical substrate.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.54,
+     "novelty": 0.181,
+     "yield": 1.0,
+     "intuition": 0.3,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "A coherent narrative structure is necessary to unify disparate psychological states into a continuous identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.466,
+     "novelty": 0.165,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "Bodily continuity provides the necessary physical anchor for psychological continuity to be meaningful.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.565,
+     "novelty": 0.155,
+     "yield": 1.0,
+     "intuition": 0.4,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "thought_experiment",
+     "text": "The Teletransporter Scenario: Imagine a machine that scans your brain and body, then reconstructs an exact copy at a distant location while destroying the original. The copy has all your memories and psychological states. Does the copy have the same identity as you, or is it a new person? If bodily continuity is essential, the copy would not be you, but if only psychological continuity matters, it",
+     "parent": "n3",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.172,
+     "novelty": 0.191,
+     "yield": 1.0,
+     "intuition": 0.4,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n5",
+     "type": "thought_experiment",
+     "text": "The Brain Transplant Scenario: Suppose your brain is transplanted into another body. If the brain maintains all psychological states, does the new body's continuity make you the same person? If bodily continuity is essential, the person in the new body would not be 'you', but psychological continuity might suggest they are. \u2192 This scenario tests if bodily continuity is tied to the physical body or",
+     "parent": "n3",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.171,
+     "novelty": 0.111,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "The physical body is the only valid substrate for personal identity",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.248,
+     "novelty": 0.26,
+     "yield": 1.0,
+     "intuition": 0.2,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.8
+    },
+    {
+     "id": "n7",
+     "type": "assumption",
+     "text": "A coherent narrative structure is inherently tied to the physical body and cannot exist independently of it",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.483,
+     "novelty": 0.207,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.6
+    },
+    {
+     "id": "n8",
+     "type": "assumption",
+     "text": "Psychological continuity is inherently unstable without a physical anchor",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7599999999999999,
+     "curiosity": 0.214,
+     "novelty": 0.167,
+     "yield": 1.0,
+     "intuition": 0.6,
+     "surprise": 0.0,
+     "step": 1,
+     "load": 0.9
+    },
+    {
+     "id": "n9",
+     "type": "counterfactual",
+     "text": "[opposite] A scenario where a person's psychological continuity is maintained through a digital upload without any bodily continuity, and the digital entity is recognized as the same person by society and the entity itself. (changes: bodily continuity)",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.475,
+     "novelty": 0.187,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "mode": "opposite",
+     "prediction": "flips"
+    },
+    {
+     "id": "n10",
+     "type": "assumption",
+     "text": "A coherent narrative structure cannot be maintained without a physical body",
+     "parent": "n7",
+     "status": "open",
+     "conf": 0.45,
+     "curiosity": 0.165,
+     "novelty": 0.084,
+     "yield": 1.0,
+     "intuition": 0.3,
+     "surprise": 0.0,
+     "step": 3,
+     "load": 0.6
+    },
+    {
+     "id": "n11",
+     "type": "response",
+     "text": "The claim fails because the scenario [n9] demonstrates that psychological continuity alone (maintained via digital upload) can be sufficient for societal and self-recognition of identity, contradicting the necessity of bodily continuity. This directly undermines [n0]'s assertion that bodily continuity is required.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.276,
+     "novelty": 0.136,
+     "yield": 1.0,
+     "intuition": 0.1,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n12",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Bodily continuity is required for personal identity is true, A coherent narrative structure is required for personal identity is true, Psychological continuity is sufficient for personal identity is true, Personal identity is dependent on psychological continuity alone is true",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.266,
+     "novelty": 0.109,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "formal": true
+    },
+    {
+     "id": "n13",
+     "type": "thought_experiment",
+     "text": "The Memory Erasure Scenario: Imagine a person whose memories are gradually erased over time, but whose psychological states remain intact through other means (e.g., external records or neural implants). Despite the loss of personal memories, the individual continues to function with a stable sense of self. Does this scenario challenge the necessity of psychological continuity for identity, suggest",
+     "parent": "n1",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.155,
+     "novelty": 0.146,
+     "yield": 1.0,
+     "intuition": 0.3,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n14",
+     "type": "alternative",
+     "text": "Personal identity is primarily dependent on social and relational continuity rather than psychological or bodily continuity. In this view, identity is maintained through ongoing relationships and social roles, even if psychological states or physical bodies change. \u2192 This alternative hypothesis challenges the need for psychological or bodily continuity by proposing that identity is constructed and",
+     "parent": "n1",
+     "status": "open",
+     "conf": 0.4,
+     "curiosity": 0.127,
+     "novelty": 0.087,
+     "yield": 1.0,
+     "intuition": 0.1,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n15",
+     "type": "response",
+     "text": "The objection [n12] mistakenly conflates 'required' with 'sufficient'. [n0] claims psychological continuity is not *sufficient* alone (requiring bodily and narrative continuity as *necessary* conditions), while [n12] incorrectly treats 'bodily continuity is required' as incompatible with 'psychological continuity is sufficient'. In reality, [n0] posits that psychological continuity is necessary bu",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.309,
+     "novelty": 0.176,
+     "yield": 1.0,
+     "intuition": 0.2,
+     "surprise": 0.0,
+     "step": 7
+    },
+    {
+     "id": "n16",
+     "type": "counterexample",
+     "text": "The case of a person with severe dementia who loses most psychological continuity but is still recognized as the same person by family and society due to bodily continuity and social role continuity.",
+     "parent": "n8",
+     "status": "rejected",
+     "conf": 0.85,
+     "curiosity": 0.069,
+     "novelty": 0.198,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n17",
+     "type": "objection",
+     "text": "Psychological continuity can persist through gradual changes in the physical brain (e.g., neuroplasticity), showing that the physical anchor is not required for psychological continuity to be meaningful.",
+     "parent": "n8",
+     "status": "rejected",
+     "conf": 0.8,
+     "curiosity": 0.08,
+     "novelty": 0.113,
+     "yield": 1.0,
+     "intuition": 0.4,
+     "surprise": 0.0,
+     "step": 8
+    },
+    {
+     "id": "n18",
+     "type": "response",
+     "text": "The objection [n16] misinterprets the claim in [n8]. [n8] does not assert that psychological continuity *requires* a physical anchor to *persist*, but rather that psychological continuity *requires* a physical anchor to *be meaningful* as personal identity. The dementia case demonstrates that bodily continuity (and social continuity) can maintain *social recognition* of identity, but this does not",
+     "parent": "n8",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.144,
+     "novelty": 0.14,
+     "yield": 1.0,
+     "intuition": 0.2,
+     "surprise": 0.0,
+     "step": 9
+    },
+    {
+     "id": "n19",
+     "type": "alternative",
+     "text": "Hunch: The most promising node to explore next is n8, as it directly addresses the core philosophical tension between psychological continuity and physical anchoring, which is central to the hypothesis. n8's claim about psychological continuity being 'inherently unstable without a physical anchor' offers a nuanced angle that could resolve the conflict between psychological and bodily continuity ar",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.3,
+     "curiosity": 0.361,
+     "novelty": 0.213,
+     "yield": 1.0,
+     "intuition": 0.9,
+     "surprise": 0.0,
+     "step": 10
+    },
+    {
+     "id": "n20",
+     "type": "response",
+     "text": "The objection conflates psychological continuity *persisting* with psychological continuity *being meaningful as personal identity*. Neuroplasticity demonstrates that psychological states can persist through physical changes (e.g., brain rewiring), but this does not address whether the *continuity* of those states *requires* a physical anchor to be recognized as *personal* identity. [n8] argues th",
+     "parent": "n8",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.166,
+     "novelty": 0.079,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 11
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n3",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n5",
+     "dst": "n3",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n10",
+     "dst": "n7",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n13",
+     "dst": "n1",
+     "rel": "analogous_to"
+    },
+    {
+     "src": "n14",
+     "dst": "n1",
+     "rel": "refines"
+    },
+    {
+     "src": "n15",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n16",
+     "dst": "n8",
+     "rel": "attacks"
+    },
+    {
+     "src": "n17",
+     "dst": "n8",
+     "rel": "attacks"
+    },
+    {
+     "src": "n18",
+     "dst": "n8",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n19",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n20",
+     "dst": "n8",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "counterfactual",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "formal",
+     "node": "n12",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 5
+    },
+    {
+     "id": "x2",
+     "kind": "counterexample",
+     "node": "n16",
+     "target": "n8",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 8
+    },
+    {
+     "id": "x3",
+     "kind": "objection",
+     "node": "n17",
+     "target": "n8",
+     "status": "answered",
+     "gain": 0.0,
+     "step": 8
+    }
+   ],
+   "confidence": 0.6199999999999999,
+   "uncertainty": 0.744,
+   "novelty": 1.0,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "imagine",
+     "focus": "n3",
+     "probs": {
+      "memory": 0.304,
+      "reason": 0.094,
+      "imagine": 0.049,
+      "intuit": 0.0,
+      "introspect": 0.295,
+      "doubt": 0.03,
+      "counterfactual": 0.027,
+      "formalize": 0.098,
+      "inquire": 0.103,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 4486,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 2,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.289,
+      "reason": 0.077,
+      "imagine": 0.038,
+      "intuit": 0.0,
+      "introspect": 0.289,
+      "doubt": 0.12,
+      "counterfactual": 0.022,
+      "formalize": 0.08,
+      "inquire": 0.085,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.242,
+     "ms": 3892,
+     "d_conf": 0.0,
+     "d_unc": 0.184
+    },
+    {
+     "step": 3,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.171,
+      "reason": 0.162,
+      "imagine": 0.036,
+      "intuit": 0.023,
+      "introspect": 0.024,
+      "doubt": 0.079,
+      "counterfactual": 0.388,
+      "formalize": 0.053,
+      "inquire": 0.063,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption",
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 2534,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "reason",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.185,
+      "reason": 0.165,
+      "imagine": 0.082,
+      "intuit": 0.023,
+      "introspect": 0.026,
+      "doubt": 0.081,
+      "counterfactual": 0.062,
+      "formalize": 0.054,
+      "inquire": 0.064,
+      "adjudicate": 0.259,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "conclusion rests on a weak assumption"
+     ],
+     "gain": 0.1,
+     "ms": 2105,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.214,
+      "reason": 0.078,
+      "imagine": 0.083,
+      "intuit": 0.043,
+      "introspect": 0.03,
+      "doubt": 0.093,
+      "counterfactual": 0.017,
+      "formalize": 0.062,
+      "inquire": 0.079,
+      "adjudicate": 0.301,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2088,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.056,
+      "reason": 0.183,
+      "imagine": 0.072,
+      "intuit": 0.107,
+      "introspect": 0.076,
+      "doubt": 0.25,
+      "counterfactual": 0.044,
+      "formalize": 0.157,
+      "inquire": 0.054,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 2618,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 7,
+     "op": "imagine",
+     "focus": "n1",
+     "probs": {
+      "memory": 0.032,
+      "reason": 0.118,
+      "imagine": 0.077,
+      "intuit": 0.062,
+      "introspect": 0.044,
+      "doubt": 0.029,
+      "counterfactual": 0.025,
+      "formalize": 0.023,
+      "inquire": 0.033,
+      "adjudicate": 0.556,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.1,
+     "ms": 5113,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.033,
+      "reason": 0.117,
+      "imagine": 0.082,
+      "intuit": 0.061,
+      "introspect": 0.046,
+      "doubt": 0.029,
+      "counterfactual": 0.025,
+      "formalize": 0.023,
+      "inquire": 0.033,
+      "adjudicate": 0.552,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 3799,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "doubt",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.076,
+      "reason": 0.278,
+      "imagine": 0.087,
+      "intuit": 0.156,
+      "introspect": 0.117,
+      "doubt": 0.079,
+      "counterfactual": 0.067,
+      "formalize": 0.059,
+      "inquire": 0.081,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.14,
+     "ms": 2736,
+     "d_conf": -0.04,
+     "d_unc": 0.0
+    },
+    {
+     "step": 10,
+     "op": "adjudicate",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.009,
+      "reason": 0.03,
+      "imagine": 0.01,
+      "intuit": 0.017,
+      "introspect": 0.012,
+      "doubt": 0.008,
+      "counterfactual": 0.007,
+      "formalize": 0.006,
+      "inquire": 0.009,
+      "adjudicate": 0.893,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 2508,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 11,
+     "op": "intuit",
+     "focus": "n2",
+     "probs": {
+      "memory": 0.051,
+      "reason": 0.164,
+      "imagine": 0.058,
+      "intuit": 0.098,
+      "introspect": 0.074,
+      "doubt": 0.048,
+      "counterfactual": 0.041,
+      "formalize": 0.037,
+      "inquire": 0.049,
+      "adjudicate": 0.379,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [],
+     "gain": 0.05,
+     "ms": 5830,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 12,
+     "op": "adjudicate",
+     "focus": "n8",
+     "probs": {
+      "memory": 0.052,
+      "reason": 0.17,
+      "imagine": 0.062,
+      "intuit": 0.061,
+      "introspect": 0.076,
+      "doubt": 0.05,
+      "counterfactual": 0.042,
+      "formalize": 0.038,
+      "inquire": 0.05,
+      "adjudicate": 0.397,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.18,
+     "ms": 3080,
+     "d_conf": 0.0,
+     "d_unc": -0.06
+    },
+    {
+     "step": 13,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {},
+     "why": [],
+     "gain": 0.0,
+     "ms": 3147,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.784,
+     "novelty": 0.85,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.784,
+     "novelty": 0.93,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.884,
+     "novelty": 0.93,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.824,
+     "novelty": 0.93,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.924,
+     "novelty": 0.93,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.924,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.864,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.62,
+     "uncertainty": 0.864,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.62,
+     "uncertainty": 0.804,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.62,
+     "uncertainty": 0.804,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.62,
+     "uncertainty": 0.744,
+     "novelty": 1.0,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.62,
+     "uncertainty": 0.744,
+     "novelty": 1.0,
+     "surprise": 0.0
+    }
+   ],
+   "step": 13,
+   "conclusion": {
+    "position": "Personal identity is not solely dependent on psychological continuity, as it also requires bodily continuity and a coherent narrative structure.",
+    "stance": "qualified",
+    "credence": 0.55,
+    "key_reasons": [
+     "Bodily continuity provides the necessary physical anchor for psychological continuity to be meaningful, preventing identity from being arbitrarily fragmented.",
+     "A coherent narrative structure unifies disparate psychological states into a continuous identity, addressing the 'self' as a narrative construct rather than a mere sequence of states.",
+     "The Teletransporter Scenario (n4) demonstrates that psychological continuity alone (e.g., in a copy) does not suffice for identity without bodily continuity, as the copy lacks the original's physical history."
+    ],
+    "open_objection": "The Memory Erasure Scenario (n13) challenges the necessity of psychological continuity by suggesting identity can persist without personal memories, but this does not undermine the need for bodily continuity or narrative coherence.",
+    "open_questions": [
+     "How do we reconcile bodily continuity in cases of gradual bodily replacement (e.g., organ transplants) with psychological continuity?",
+     "Can a coherent narrative structure be maintained in the absence of a physical body (e.g., in digital immortality), and if so, how does this affect identity?"
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.135,
+    "imagine": 0.1245,
+    "intuit": 0.12,
+    "introspect": 0.1776,
+    "doubt": 0.147,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.15,
+    "adjudicate": 0.1928,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 5,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"B\": true, \"N\": true, \"P\": true, \"U\": true}, \"atoms\": [\"B\", \"N\", \"P\", \"U\"], \"engine\": \"propositional-fallb"
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 1.335,
+   "conflicts": [
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n12",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n16",
+     "target": "n8",
+     "status": "resolved"
+    },
+    {
+     "objection": "n17",
+     "target": "n8",
+     "status": "resolved"
+    }
+   ]
+  },
+  "minimalist": {
+   "hypothesis": "Personal identity is not entirely dependent on psychological continuity, as it also requires a continuous physical substrate or a metaphysical principle of unity.",
+   "root": "n0",
+   "nodes": [
+    {
+     "id": "n0",
+     "type": "hypothesis",
+     "text": "Personal identity is not entirely dependent on psychological continuity, as it also requires a continuous physical substrate or a metaphysical principle of unity.",
+     "parent": null,
+     "status": "stable",
+     "conf": 0.7399999999999999,
+     "curiosity": 0.731,
+     "novelty": 1,
+     "yield": 0.6,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "formalized": true
+    },
+    {
+     "id": "n1",
+     "type": "premise",
+     "text": "Psychological continuity alone cannot account for cases of memory loss or radical psychological change without disrupting identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.476,
+     "novelty": 0.191,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n2",
+     "type": "premise",
+     "text": "A continuous physical body or a non-physical soul is necessary to maintain identity across psychological changes.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.461,
+     "novelty": 0.152,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n3",
+     "type": "premise",
+     "text": "The thought experiment of the brain transplant or duplication challenges the sufficiency of psychological continuity for identity.",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.5,
+     "curiosity": 0.48,
+     "novelty": 0.2,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0
+    },
+    {
+     "id": "n4",
+     "type": "assumption",
+     "text": "Physical continuity is necessary for personal identity to persist through time",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.7,
+     "curiosity": 0.268,
+     "novelty": 0.117,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.8
+    },
+    {
+     "id": "n5",
+     "type": "assumption",
+     "text": "Psychological continuity is insufficient for identity in cases of radical change",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.8,
+     "curiosity": 0.173,
+     "novelty": 0.084,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.9
+    },
+    {
+     "id": "n6",
+     "type": "assumption",
+     "text": "A metaphysical principle of unity (e.g., a soul) must exist to maintain identity",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.374,
+     "novelty": 0.169,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 0,
+     "load": 0.7
+    },
+    {
+     "id": "n7",
+     "type": "question",
+     "text": "Does a continuous physical substrate or a metaphysical principle of unity actually exist, and if so, how can it be empirically or logically verified?",
+     "parent": "n0",
+     "status": "supported",
+     "conf": 0.5,
+     "curiosity": 0.57,
+     "novelty": 0.207,
+     "yield": 1.0,
+     "intuition": 0.8,
+     "surprise": 0.0,
+     "step": 1
+    },
+    {
+     "id": "n8",
+     "type": "counterfactual",
+     "text": "[opposite] Imagine a scenario where a person undergoes a complete psychological duplication, creating two individuals with identical memories and personality, yet no physical continuity between them. Both claim to be the original person. If psychological continuity alone were sufficient for personal identity, then both duplicates would be the original person, which is a contradiction. (changes: ps",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.5,
+     "curiosity": 0.464,
+     "novelty": 0.16,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 2,
+     "mode": "opposite",
+     "prediction": "flips"
+    },
+    {
+     "id": "n9",
+     "type": "objection",
+     "text": "A continuous physical substrate or metaphysical principle of unity cannot be empirically verified, as it lies beyond the scope of scientific inquiry. Logically, while the necessity of such a substrate can be argued (e.g., to avoid identity duplication paradoxes), its existence remains a metaphysical assumption without conclusive proof. The thought experiments (e.g., brain transplant, duplication) ",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.75,
+     "curiosity": 0.221,
+     "novelty": 0.104,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 3
+    },
+    {
+     "id": "n10",
+     "type": "response",
+     "text": "The scenario [n8] directly challenges the sufficiency of psychological continuity by presenting a duplication paradox. If psychological continuity alone were sufficient, both duplicates would be the original person, which is logically contradictory. This supports [n0]'s claim that identity requires more than psychological continuity (a physical or metaphysical substrate). However, the scenario doe",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.358,
+     "novelty": 0.119,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 4
+    },
+    {
+     "id": "n11",
+     "type": "counterexample",
+     "text": "As formalized, the premises do not entail the conclusion. Counter-assignment: Personal identity is entirely dependent on psychological continuity is true, Personal identity requires a continuous physical substrate or a metaphysical principle of unity is false, Psychological continuity alone is insufficient for identity in cases of radical change is false, A continuous physical substrate or metaphy",
+     "parent": "n0",
+     "status": "rejected",
+     "conf": 0.7,
+     "curiosity": 0.27,
+     "novelty": 0.127,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 5,
+     "formal": true
+    },
+    {
+     "id": "n12",
+     "type": "response",
+     "text": "The objection conflates verification with necessity. The thought experiments (e.g., brain duplication) demonstrate that psychological continuity alone leads to logical contradictions (both duplicates cannot be the original), thereby proving that psychological continuity is insufficient for identity. This logical necessity for a substrate (physical or metaphysical) does not require empirical verifi",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.356,
+     "novelty": 0.113,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 6
+    },
+    {
+     "id": "n13",
+     "type": "response",
+     "text": "The objection [n11] fails to recognize that the counter-assignment contradicts itself: if psychological continuity alone were sufficient (as claimed in the counter-assignment), then the brain duplication paradox would not pose a problem (since both duplicates would be the original), but the paradox explicitly demonstrates that psychological continuity alone leads to logical inconsistency (both can",
+     "parent": "n0",
+     "status": "open",
+     "conf": 0.6,
+     "curiosity": 0.358,
+     "novelty": 0.119,
+     "yield": 1.0,
+     "intuition": 0.5,
+     "surprise": 0.0,
+     "step": 7
+    }
+   ],
+   "edges": [
+    {
+     "src": "n1",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n2",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n3",
+     "dst": "n0",
+     "rel": "supports"
+    },
+    {
+     "src": "n4",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n5",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n6",
+     "dst": "n0",
+     "rel": "depends_on"
+    },
+    {
+     "src": "n7",
+     "dst": "n0",
+     "rel": "refines"
+    },
+    {
+     "src": "n8",
+     "dst": "n0",
+     "rel": "tests"
+    },
+    {
+     "src": "n9",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n10",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n11",
+     "dst": "n0",
+     "rel": "attacks"
+    },
+    {
+     "src": "n12",
+     "dst": "n0",
+     "rel": "responds_to"
+    },
+    {
+     "src": "n13",
+     "dst": "n0",
+     "rel": "responds_to"
+    }
+   ],
+   "experiments": [
+    {
+     "id": "x0",
+     "kind": "counterfactual",
+     "node": "n8",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 2
+    },
+    {
+     "id": "x1",
+     "kind": "objection",
+     "node": "n9",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 3
+    },
+    {
+     "id": "x2",
+     "kind": "formal",
+     "node": "n11",
+     "target": "n0",
+     "status": "answered",
+     "gain": 0.08,
+     "step": 5
+    }
+   ],
+   "confidence": 0.7399999999999999,
+   "uncertainty": 0.712,
+   "novelty": 0.76,
+   "surprise": 0.0,
+   "history": [
+    {
+     "step": 0,
+     "op": "start",
+     "focus": null,
+     "probs": {},
+     "why": [],
+     "gain": 0,
+     "ms": 0,
+     "d_conf": 0,
+     "d_unc": 0
+    },
+    {
+     "step": 1,
+     "op": "introspect",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.11,
+      "reason": 0.091,
+      "imagine": 0.037,
+      "intuit": 0.0,
+      "introspect": 0.499,
+      "doubt": 0.027,
+      "counterfactual": 0.023,
+      "formalize": 0.147,
+      "inquire": 0.066,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "assumptions unexamined"
+     ],
+     "gain": 0.246,
+     "ms": 3241,
+     "d_conf": 0.0,
+     "d_unc": 0.192
+    },
+    {
+     "step": 2,
+     "op": "inquire",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.142,
+      "reason": 0.158,
+      "imagine": 0.068,
+      "intuit": 0.045,
+      "introspect": 0.052,
+      "doubt": 0.202,
+      "counterfactual": 0.032,
+      "formalize": 0.201,
+      "inquire": 0.1,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced"
+     ],
+     "gain": 0.05,
+     "ms": 2473,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 3,
+     "op": "counterfactual",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.105,
+      "reason": 0.117,
+      "imagine": 0.053,
+      "intuit": 0.033,
+      "introspect": 0.038,
+      "doubt": 0.15,
+      "counterfactual": 0.13,
+      "formalize": 0.149,
+      "inquire": 0.227,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "never tested counterfactually"
+     ],
+     "gain": 0.05,
+     "ms": 1740,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 4,
+     "op": "inquire",
+     "focus": "n7",
+     "probs": {
+      "memory": 0.08,
+      "reason": 0.086,
+      "imagine": 0.076,
+      "intuit": 0.024,
+      "introspect": 0.03,
+      "doubt": 0.11,
+      "counterfactual": 0.017,
+      "formalize": 0.109,
+      "inquire": 0.167,
+      "adjudicate": 0.301,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "uncertain and under-evidenced",
+      "open question"
+     ],
+     "gain": 0.05,
+     "ms": 2977,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    },
+    {
+     "step": 5,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.022,
+      "reason": 0.022,
+      "imagine": 0.048,
+      "intuit": 0.01,
+      "introspect": 0.008,
+      "doubt": 0.005,
+      "counterfactual": 0.005,
+      "formalize": 0.03,
+      "inquire": 0.013,
+      "adjudicate": 0.838,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2625,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 6,
+     "op": "formalize",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.024,
+      "reason": 0.098,
+      "imagine": 0.068,
+      "intuit": 0.047,
+      "introspect": 0.041,
+      "doubt": 0.028,
+      "counterfactual": 0.024,
+      "formalize": 0.147,
+      "inquire": 0.024,
+      "adjudicate": 0.498,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "argument not formally checked"
+     ],
+     "gain": 0.1,
+     "ms": 3667,
+     "d_conf": 0.0,
+     "d_unc": 0.1
+    },
+    {
+     "step": 7,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.004,
+      "reason": 0.018,
+      "imagine": 0.02,
+      "intuit": 0.008,
+      "introspect": 0.007,
+      "doubt": 0.005,
+      "counterfactual": 0.004,
+      "formalize": 0.004,
+      "inquire": 0.004,
+      "adjudicate": 0.928,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2623,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 8,
+     "op": "adjudicate",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.024,
+      "reason": 0.11,
+      "imagine": 0.053,
+      "intuit": 0.05,
+      "introspect": 0.044,
+      "doubt": 0.032,
+      "counterfactual": 0.026,
+      "formalize": 0.025,
+      "inquire": 0.026,
+      "adjudicate": 0.61,
+      "revise": 0.0,
+      "conclude": 0.0
+     },
+     "why": [
+      "unresolved contradiction"
+     ],
+     "gain": 0.26,
+     "ms": 2741,
+     "d_conf": 0.08,
+     "d_unc": -0.06
+    },
+    {
+     "step": 9,
+     "op": "conclude",
+     "focus": "n0",
+     "probs": {
+      "memory": 0.01,
+      "reason": 0.048,
+      "imagine": 0.015,
+      "intuit": 0.023,
+      "introspect": 0.02,
+      "doubt": 0.016,
+      "counterfactual": 0.013,
+      "formalize": 0.012,
+      "inquire": 0.012,
+      "adjudicate": 0.0,
+      "revise": 0.0,
+      "conclude": 0.83
+     },
+     "why": [],
+     "gain": 0.0,
+     "ms": 3543,
+     "d_conf": 0.0,
+     "d_unc": 0.0
+    }
+   ],
+   "series": [
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.6,
+     "novelty": 0.8,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.68,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.5,
+     "uncertainty": 0.792,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.732,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.58,
+     "uncertainty": 0.832,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.66,
+     "uncertainty": 0.772,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.712,
+     "novelty": 0.76,
+     "surprise": 0.0
+    },
+    {
+     "confidence": 0.74,
+     "uncertainty": 0.712,
+     "novelty": 0.76,
+     "surprise": 0.0
+    }
+   ],
+   "step": 9,
+   "conclusion": {
+    "position": "Personal identity is not entirely dependent on psychological continuity, as it requires a continuous physical substrate or a metaphysical principle of unity to avoid logical contradictions in thought experiments like brain duplication.",
+    "stance": "qualified",
+    "credence": 0.65,
+    "key_reasons": [
+     "The brain duplication paradox demonstrates that psychological continuity alone leads to logical inconsistency (both duplicates cannot be the original person)",
+     "Psychological continuity fails to account for memory loss or radical psychological change without disrupting identity",
+     "A continuous physical substrate or metaphysical unity is logically necessary to maintain identity across such changes"
+    ],
+    "open_objection": "The physical substrate assumption is empirically unverifiable and may be unnecessary if identity is purely functional",
+    "open_questions": [
+     "Does a continuous physical substrate actually exist and how can it be empirically verified?",
+     "How does a metaphysical principle of unity (e.g., soul) interact with physical processes?"
+    ]
+   },
+   "signals": [],
+   "values": {
+    "memory": 0.15,
+    "reason": 0.15,
+    "imagine": 0.15,
+    "intuit": 0.15,
+    "introspect": 0.1788,
+    "doubt": 0.15,
+    "counterfactual": 0.12,
+    "formalize": 0.135,
+    "inquire": 0.099,
+    "adjudicate": 0.2223,
+    "revise": 0.15,
+    "conclude": 0.105
+   },
+   "tool_log": [
+    {
+     "step": 5,
+     "tool": "theorem_prover",
+     "ok": true,
+     "summary": "{\"valid\": false, \"consistent\": true, \"countermodel\": {\"P\": true, \"Q\": false, \"R\": false, \"S\": true, \"T\": false, \"U\": false}, \"atoms\": [\"P\", \"Q\", \"R\", \"S\", \"T\", "
+    }
+   ],
+   "recalls": [],
+   "failed_calls": 0,
+   "curiosity": 0.731,
+   "conflicts": [
+    {
+     "objection": "n8",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n9",
+     "target": "n0",
+     "status": "resolved"
+    },
+    {
+     "objection": "n11",
+     "target": "n0",
+     "status": "resolved"
+    }
+   ]
+  }
+ },
+ "metrics": {
+  "semantic_diversity": 0.153,
+  "branch_diversity": 0.426,
+  "disagreement_rate": 0.0,
+  "path_similarity": 0.461,
+  "conclusion_similarity": 0.934,
+  "unique_assumptions": 4,
+  "unique_objections": 1,
+  "unique_hypotheses": 0,
+  "unique": {
+   "explorer": {
+    "assumptions": [],
+    "objections": [],
+    "hypotheses": []
+   },
+   "formalist": {
+    "assumptions": [
+     "The self is fundamentally a construct of psychological processes and not an independent entity."
+    ],
+    "objections": [],
+    "hypotheses": []
+   },
+   "skeptic": {
+    "assumptions": [],
+    "objections": [],
+    "hypotheses": []
+   },
+   "synthesizer": {
+    "assumptions": [
+     "A coherent narrative structure is inherently tied to the physical body and cannot exist independently of it",
+     "Psychological continuity is inherently unstable without a physical anchor",
+     "A coherent narrative structure cannot be maintained without a physical body"
+    ],
+    "objections": [],
+    "hypotheses": []
+   },
+   "minimalist": {
+    "assumptions": [],
+    "objections": [
+     "A continuous physical substrate or metaphysical principle of unity cannot be empirically verified, as it lies beyond the scope of scientific inquiry. Logically, while the necessity of such a substrate can be argued (e.g., to avoid identity duplication paradoxes), its existence remains a metaphysical assumption without conclusive proof. The thought experiments (e.g., brain transplant, duplication) "
+    ],
+    "hypotheses": []
+   }
+  },
+  "per_agent": {
+   "explorer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 3,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.217,
+    "gain_per_step": 0.155,
+    "tool_calls": 2,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.309,
+     "memory": 0.211,
+     "inquire": 0.13,
+     "reason": 0.125,
+     "formalize": 0.113,
+     "conclude": 0.112
+    },
+    "steps": 8
+   },
+   "formalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 5,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.197,
+    "gain_per_step": 0.18,
+    "tool_calls": 2,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.367,
+     "introspect": 0.173,
+     "formalize": 0.102,
+     "doubt": 0.092,
+     "reason": 0.091,
+     "counterfactual": 0.073,
+     "memory": 0.067,
+     "conclude": 0.035
+    },
+    "steps": 13
+   },
+   "skeptic": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 7,
+    "resolution_rate": 0.571,
+    "defeats": 0,
+    "novelty": 0.194,
+    "gain_per_step": 0.152,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "counterfactual": 0.305,
+     "adjudicate": 0.224,
+     "conclude": 0.088,
+     "reason": 0.082,
+     "imagine": 0.082,
+     "doubt": 0.078,
+     "memory": 0.077,
+     "introspect": 0.063
+    },
+    "steps": 13
+   },
+   "synthesizer": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 4,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.195,
+    "gain_per_step": 0.136,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.261,
+     "imagine": 0.218,
+     "intuit": 0.133,
+     "introspect": 0.089,
+     "conclude": 0.072,
+     "doubt": 0.062,
+     "formalize": 0.06,
+     "counterfactual": 0.058,
+     "reason": 0.048
+    },
+    "steps": 13
+   },
+   "minimalist": {
+    "hypotheses": 1,
+    "rejected_hypotheses": 0,
+    "surviving_hypotheses": 1,
+    "experiments": 3,
+    "resolution_rate": 1.0,
+    "defeats": 0,
+    "novelty": 0.204,
+    "gain_per_step": 0.142,
+    "tool_calls": 1,
+    "recalls": 0,
+    "failed_calls": 0,
+    "compute": {
+     "adjudicate": 0.312,
+     "inquire": 0.213,
+     "formalize": 0.143,
+     "conclude": 0.138,
+     "introspect": 0.126,
+     "counterfactual": 0.068
+    },
+    "steps": 9
+   }
+  },
+  "pairs": {
+   "explorer|formalist": {
+    "semantic": 0.087,
+    "path_sim": 0.5,
+    "concl_sim": 0.958,
+    "branch": 0.362,
+    "disagree": false
+   },
+   "explorer|skeptic": {
+    "semantic": 0.125,
+    "path_sim": 0.429,
+    "concl_sim": 0.932,
+    "branch": 0.468,
+    "disagree": false
+   },
+   "explorer|synthesizer": {
+    "semantic": 0.177,
+    "path_sim": 0.357,
+    "concl_sim": 0.935,
+    "branch": 0.597,
+    "disagree": false
+   },
+   "explorer|minimalist": {
+    "semantic": 0.18,
+    "path_sim": 0.4,
+    "concl_sim": 0.918,
+    "branch": 0.471,
+    "disagree": false
+   },
+   "formalist|skeptic": {
+    "semantic": 0.115,
+    "path_sim": 0.643,
+    "concl_sim": 0.939,
+    "branch": 0.307,
+    "disagree": false
+   },
+   "formalist|synthesizer": {
+    "semantic": 0.165,
+    "path_sim": 0.5,
+    "concl_sim": 0.956,
+    "branch": 0.453,
+    "disagree": false
+   },
+   "formalist|minimalist": {
+    "semantic": 0.172,
+    "path_sim": 0.429,
+    "concl_sim": 0.92,
+    "branch": 0.368,
+    "disagree": false
+   },
+   "skeptic|synthesizer": {
+    "semantic": 0.161,
+    "path_sim": 0.357,
+    "concl_sim": 0.934,
+    "branch": 0.371,
+    "disagree": false
+   },
+   "skeptic|minimalist": {
+    "semantic": 0.162,
+    "path_sim": 0.5,
+    "concl_sim": 0.936,
+    "branch": 0.458,
+    "disagree": false
+   },
+   "synthesizer|minimalist": {
+    "semantic": 0.184,
+    "path_sim": 0.5,
+    "concl_sim": 0.909,
+    "branch": 0.409,
+    "disagree": false
+   }
+  },
+  "most_divergent": "synthesizer|minimalist"
+ }
+}
