@@ -15,7 +15,7 @@
 <script>
 // Every frame is a pure function of time: seek(t) draws the film at t seconds (render.mjs screenshots it).
 // ?play plays it in real time for preview.
-const W = 1920, H = 1080, END = 56;
+const W = 1920, H = 1080, END = 58;
 const cv = document.getElementById("c"), ctx = cv.getContext("2d");
 const BG = "#121416", INK = "#F4F1E9", DIM = "#B4BBC2", FAINT = "#808A94";
 const SERIF = (px, it) => `${it ? "italic " : ""}300 ${px}px Newsreader`, MONO = (px, w = 400) => `${w} ${px}px "IBM Plex Mono"`;
@@ -97,7 +97,7 @@ function path(k, s, d) {
   return [lerp(common[0], own[0], d), lerp(common[1], own[1], d)];
 }
 function scenePolicies(t) {
-  const a = vis(t, 23.6, 47.6, 0.8, 0.8);
+  const a = vis(t, 23.6, 43.8, 0.8, 0.6);
   if (a <= 0) return;
   const d = delta(t), g = grow(t), fade = t > 36.2 ? lerp(1, 0.07, clamp((t - 36.2) / 1)) : 1;
   dot(C4[0], C4[1], 7, INK, a);
@@ -123,6 +123,29 @@ function scenePolicies(t) {
     text("identical policies", sx, sy + 36, MONO(20), FAINT, va, "left");
     text("five cognitive policies", sx + sw, sy + 36, MONO(20), FAINT, va, "right");
   }
+}
+
+// ---------------------------------------------------------------- scene 6: the finder's filter (illustration)
+function sceneFinder(t) {
+  const a = vis(t, 43.8, 51.6, 0.6, 0.6);
+  if (a <= 0) return;
+  const g1 = 720, g2 = 1200, x0 = 320, x1 = 1560, y0 = 600, speed = 300;
+  [[g1, "checked against the literature"], [g2, "tried against two defenders"]].forEach(([gx, lbl], i) => {
+    const ga = a * clamp((t - 44.2 - i * 0.4) / 0.5);
+    ctx.globalAlpha = ga; ctx.strokeStyle = "#353B42"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(gx, y0 - 230); ctx.lineTo(gx, y0 + 230); ctx.stroke(); ctx.globalAlpha = 1;
+    text(lbl, gx, y0 + 272, MONO(22), FAINT, ga, "center");
+  });
+  for (let i = 0; i < 30; i++) {
+    const start = 44.4 + rnd(i, 7) * 1.2;
+    if (t < start) continue;
+    const pass1 = rnd(i, 5) > 0.42, pass2 = pass1 && rnd(i, 6) > 0.62;   // most objections are known or answered
+    const stop = !pass1 ? g1 - 14 : !pass2 ? g2 - 14 : x1;
+    const x = Math.min(x0 + (t - start) * speed, stop), tStop = start + (stop - x0) / speed;
+    const halted = stop !== x1 && t >= tStop;
+    dot(x, y0 + (rnd(i, 8) - 0.5) * 380, 6, R[i % 5].c, a * (halted ? 0.6 * clamp(1 - (t - tStop) / 0.8) : 1));
+  }
+  text("research directions", x1 + 34, y0, MONO(26, 500), INK, a * clamp((t - 49.4) / 0.5), "left");
 }
 
 // ---------------------------------------------------------------- logo: three open apertures (brand symbol)
@@ -168,19 +191,22 @@ function seek(t) {
   say(t, 29.8, 35.8, "One dial, Δ, sets how differently they think.", 170, 58);
 
   // 5 · measured
-  say(t, 36.4, 47.0, "Measured on Qwen3-30B, across four questions:", 170, 54, false, DIM);
+  say(t, 36.4, 43.4, "Measured on Qwen3-30B, across four questions:", 170, 54, false, DIM);
   const big = (str, y, a, b) => text(str, W / 2 + 200, y, SERIF(84), INK, vis(t, a, b, 0.6), "center", 16);
   const lab = (str, y, a, b) => text(str, W / 2 + 200, y, MONO(24), FAINT, vis(t, a, b, 0.6), "center", 8);
-  big("0.44 → 0.32", 360, 37.4, 47.0); lab("reasoning-path similarity, Δ 0 → Δ 1", 430, 37.6, 47.0);
-  big("×3.8", 570, 39.4, 47.0); lab("objections no other reasoner raised", 640, 39.6, 47.0);
-  lab("and their conclusions still converge: the next experiment", 790, 42.2, 47.0);
+  big("0.44 → 0.32", 360, 37.2, 43.4); lab("reasoning-path similarity, Δ 0 → Δ 1", 430, 37.4, 43.4);
+  big("×3.8", 570, 38.8, 43.4); lab("objections no other reasoner raised", 640, 39.0, 43.4);
+  lab("their conclusions still converge: the next experiment", 790, 40.8, 43.4);
 
-  // 6 · why it matters, end card
-  say(t, 47.6, 51.6, "Discovery needs the objection no one else would raise.", 540, 64);
+  // 6 · the finder: every objection meets the literature and two defenders
+  say(t, 44.0, 51.4, "Then the lab puts every objection to the test.", 170, 58);
+  sceneFinder(t);
+
+  // 7 · end card
   logo(W / 2, 360, 170, (t - 51.8) / 1.4, vis(t, 51.8, END + 1, 0.3));
   text("APORIA", W / 2, 520, '600 46px "Source Sans 3"', INK, vis(t, 52.2, END + 1, 0.6), "center");
-  text("The way an AI thinks, made testable.", W / 2, 610, SERIF(52, true), INK, vis(t, 52.8, END + 1, 0.7), "center", 10);
-  text("derka1385.github.io/APORIA", W / 2, 760, MONO(26), DIM, vis(t, 53.6, END + 1, 0.6), "center");
+  text("Find what is still worth arguing about.", W / 2, 610, SERIF(52, true), INK, vis(t, 52.8, END + 1, 0.7), "center", 10);
+  text("derka1385.github.io/APORIA/docs", W / 2, 760, MONO(26), DIM, vis(t, 53.6, END + 1, 0.6), "center");
   text("Hack-Nation · Agentic Scientific Discovery", W / 2, 806, MONO(22), FAINT, vis(t, 53.9, END + 1, 0.6), "center");
 }
 
