@@ -73,14 +73,14 @@ if __name__ == "__main__":
         for f in (ROOT / "runs").glob("*.json"):
             r = json.loads(f.read_text())
             if not (r.get("failed") or failed(r["agents"])):
-                done.add((r["question"], r["condition"], r["delta"], r.get("seed"), bool(r.get("quick"))))
+                done.add((r["question"], r["condition"], r["delta"], r.get("seed"), bool(r.get("quick")), r["models"][0]))
         for k, (q, cond, d) in enumerate(plan):
             if not engine.alive():  # a dropped tunnel would otherwise record empty runs for the rest of the plan
                 print(f"LLM endpoint {engine.OLLAMA} unreachable: stopping before run {k + 1}", flush=True)
                 break
             t = time.time()
             seed = 1000 + (k % 2 if "--sweep" in sys.argv else k)  # the sweep pairs seeds across Δ levels
-            if (q, cond, d, seed, "--full" not in sys.argv) in done:  # a valid run already exists: resume, don't redo
+            if (q, cond, d, seed, "--full" not in sys.argv, server.model_plan(cond, d)[0]) in done:  # valid run exists: resume
                 continue
             print(f"[{k + 1}/{len(plan)}] {cond} Δ={d} {q}", flush=True)
             try:
